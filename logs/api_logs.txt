@@ -1,0 +1,40 @@
+Request method:	POST
+Request URI:	https://qa.smartcmobile.net/SCM_10.0_S-JWTAPI/api/1/users/GenerateToken
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "username": "sew_auto01",
+    "password": "Demo@123",
+    "isTfaEnable": false
+}
+HTTP/1.1 200 OK
+Date: Thu, 23 Mar 2023 16:02:27 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Set-Cookie: ApplicationGatewayAffinityCORS=c9653e2d1c4bfdb331931808d4687ff2; Path=/; SameSite=None; Secure
+Set-Cookie: ApplicationGatewayAffinity=c9653e2d1c4bfdb331931808d4687ff2; Path=/
+Server: Microsoft-IIS/10.0
+Strict-Transport-Security: max-age=2592000
+
+{
+    "status": {
+        "type": "success",
+        "code": 200,
+        "message": "success",
+        "messageCode": "",
+        "error": false
+    },
+    "data": {
+        "accessToken": "eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoic2V3X2F1dG8wMSIsIlVzZXJJZCI6IjEyMDQ0IiwiU2Vzc2lvbklkIjoiOTdhN2U0NjktZDBhZi00ZjdmLTk1YmEtMDQ1YmNhYzA2ZDFhIiwiZXhwIjoxNjc5NTkwOTQ3LCJpc3MiOiJodHRwczovL215d2ViYXBpLmNvbSIsImF1ZCI6Imh0dHBzOi8vbXl3ZWJhcGkuY29tIn0.uNsjM1F5-S0tk8gXxjTNshd0GDXqxSgR-FpDpaiIH5E",
+        "refreshToken": "MMFs83CU5oWJdvtnLu7qpJ7Lw9pbehJXAALo30tgXLA="
+    }
+}

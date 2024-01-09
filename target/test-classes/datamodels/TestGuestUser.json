@@ -1,0 +1,33 @@
+{
+  "_____________________________________" : "___________________________________________",
+  "__________Test Data For Page_________" : "__________GUEST USER PAGE (Gup)____________",
+  "roleGuest" : "Guest User Access",
+  "rolePropertyManager" : "Property Manager Access",
+  "roleGuestUser" : "Guest User Access",
+  "guestUserName" : "ava_ardon-guest",
+  "guestUserNameGup" : "ava_ardon-guest",
+  "guestUserEmail" : "ava.ardon@mailinator.com",
+  "ownerUserEmailGup" : "guest.user1@mailinator.com",
+  "inviteNewUserName" : "Ava Ardon",
+  "inviteNewUserEmail" : "ava.ardon@mailinator.com",
+  "inviteNewUserEmailPass" : "Aysin@123",
+  "inviteExistingUserName" : "Michael Downey",
+  "inviteExistingUserEmail" : "puser@yopmail.com",
+  "existingUsername" : "sew_auto01",
+  "existingUserPassword" : "Demo@123",
+  "inviteExistingUserEmailPass" : "Demo@123",
+  "newGuestRegistrationData" : {
+    "First Name" : "Paule",
+    "Last Name" : "Domniqe",
+    "Username" : "Paule&Domniqe+09082020",
+    "Password" : "Demo@123%",
+    "Confirm Password" : "Demo@123%",
+    "Security Question 1:" : "What was your childhood nickname?",
+    "Security Answer 1" : "Paul",
+    "Security Question 2:" : "What is the name of your favourite childhood friend?",
+    "Security Answer 2" : "Loren",
+    "Primary Phone" : "9999999999",
+    "Contact Type" : "Mobile"
+  },
+  "changeEmailAddress" : "jason.dean@mailinator.com"
+}

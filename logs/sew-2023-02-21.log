@@ -1,0 +1,379 @@
+18:54:21.313 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1551) - Message Field Value is Dear Ankur Rana,
+
+Your Move In request has been received and we will contact you shortly.
+
+Please note your Request ID: SR-802511356.
+
+If you need further assistance please contact our customer service at 737 737 7777 or email us at Support@SEW1.in.
+
+Thank you,
+Smart Energy Water
+
+This is an automatically generated email. Please do not reply to this message.
+18:59:55.018 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1516) - Checking the visibility of Date Field Value on the page.
+18:59:55.196 INFO  driver.Page (    Page.java:266) - Element {} : [[ChromeDriver: chrome on WINDOWS (ed9a3913c819bda8b1520b367a55fa0e)] -> css selector: .DetailsMessageHeader > div:nth-child(11).from-name-section] is visible on the page.
+18:59:55.197 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1517) - Date Field Value visibility status {}: true
+18:59:55.370 INFO  driver.Page (    Page.java:266) - Element {} : [[ChromeDriver: chrome on WINDOWS (ed9a3913c819bda8b1520b367a55fa0e)] -> css selector: .DetailsMessageHeader > div:nth-child(11).from-name-section] is visible on the page.
+18:59:55.370 INFO  driver.Page (    Page.java:58) - Preparing for element to click.
+18:59:55.370 INFO  driver.Page (    Page.java:199) - Waiting for element to be clickable for 120 seconds.
+18:59:55.409 INFO  driver.Page (    Page.java:202) - Element is clickable now.
+18:59:55.487 INFO  driver.Page (    Page.java:61) - Element is clicked successfully.
+18:59:55.487 INFO  csp.AdminHomePage (AdminHomePage.java:82) - Admin User Profile dropdown clicked successfully.
+18:59:55.487 INFO  driver.Page (    Page.java:224) - Waiting for element to be visible for 120 seconds.
+18:59:55.517 INFO  driver.Page (    Page.java:227) - Element is visible on the page.
+18:59:55.517 INFO  csp.AdminHomePage (AdminHomePage.java:36) - SignOut Link is Visible on the page.
+18:59:55.517 INFO  driver.Page (    Page.java:58) - Preparing for element to click.
+18:59:55.517 INFO  driver.Page (    Page.java:199) - Waiting for element to be clickable for 120 seconds.
+18:59:55.553 INFO  driver.Page (    Page.java:202) - Element is clickable now.
+18:59:58.870 INFO  driver.Page (    Page.java:61) - Element is clicked successfully.
+18:59:58.870 INFO  csp.AdminHomePage (AdminHomePage.java:40) - Admin User SignOut Link clicked successfully.
+18:59:58.870 INFO  scp.HomePage (HomePage.java:128) - Wait for page loader invisibility.
+18:59:58.870 INFO  driver.Page (    Page.java:238) - Waiting for element to be invisible for 120 seconds.
+19:00:03.908 INFO  driver.Page (    Page.java:241) - Element is invisible from the page.
+19:00:06.920 INFO  driver.DriverFactory (DriverFactory.java:112) - Clearing all the cookies.
+19:01:28.428 INFO  runner.TestRunner (TestRunner.java:32) - Initializing application properties config file.
+19:01:28.433 INFO  runner.TestRunner (TestRunner.java:35) - Initializing connection to the base database.
+19:01:28.683 WARN  config.DatabaseConfiguration (DatabaseConfiguration.java:84) - QA env being used by default. No env property set. This can be set in the sentinel.yml config file with a '{}=' property or on the command line with the switch '-D{}='.
+19:01:30.287 INFO  runner.TestRunner (TestRunner.java:38) - Initializing resource path config file.
+19:01:30.288 INFO  runner.TestRunner (TestRunner.java:41) - Initializing usage months config from CSP.
+19:01:31.089 INFO  runner.TestRunner (TestRunner.java:44) - Initializing date config from CSP.
+19:01:31.826 INFO  runner.TestRunner (TestRunner.java:47) - Initializing language config from CSP.
+19:01:32.571 INFO  runner.TestRunner (TestRunner.java:50) - Initializing language config from CSP.
+19:01:33.326 INFO  runner.TestRunner (TestRunner.java:53) - Initializing language config from CSP.
+19:01:34.072 INFO  runner.TestRunner (TestRunner.java:56) - Initializing user model config.
+19:01:34.085 WARN  config.Configuration (Configuration.java:231) - QA env being used by default. No env property set. This can be set in the sew.app.yml config file with a '{}=' property or on the command line with the switch '-D{}='.
+19:01:38.821 INFO  runner.TestRunner (TestRunner.java:59) - Initializing auth token config.
+19:01:38.822 INFO  runner.TestRunner (TestRunner.java:62) - Initializing Admin User config.
+19:01:40.180 INFO  utils.ExcelUtils (ExcelUtils.java:39) - Test Runner excel row at: 1
+19:01:40.188 INFO  utils.ExcelUtils (ExcelUtils.java:39) - Test Runner excel row at: 2
+19:01:40.189 INFO  utils.ExcelUtils (ExcelUtils.java:39) - Test Runner excel row at: 3
+19:01:40.189 INFO  utils.ExcelUtils (ExcelUtils.java:39) - Test Runner excel row at: 4
+19:01:40.190 INFO  utils.ExcelUtils (ExcelUtils.java:39) - Test Runner excel row at: 5
+19:01:40.190 INFO  utils.ExcelUtils (ExcelUtils.java:39) - Test Runner excel row at: 6
+19:01:40.191 INFO  utils.ExcelUtils (ExcelUtils.java:39) - Test Runner excel row at: 7
+19:01:40.191 INFO  utils.ExcelUtils (ExcelUtils.java:39) - Test Runner excel row at: 8
+19:01:40.192 INFO  utils.ExcelUtils (ExcelUtils.java:39) - Test Runner excel row at: 9
+19:01:40.192 INFO  utils.ExcelUtils (ExcelUtils.java:39) - Test Runner excel row at: 10
+19:01:40.193 INFO  utils.ExcelUtils (ExcelUtils.java:39) - Test Runner excel row at: 11
+19:01:40.193 INFO  utils.ExcelUtils (ExcelUtils.java:39) - Test Runner excel row at: 12
+19:01:40.194 INFO  utils.ExcelUtils (ExcelUtils.java:39) - Test Runner excel row at: 13
+19:01:40.194 INFO  utils.ExcelUtils (ExcelUtils.java:39) - Test Runner excel row at: 14
+19:01:40.194 INFO  utils.ExcelUtils (ExcelUtils.java:39) - Test Runner excel row at: 15
+19:01:40.195 INFO  utils.ExcelUtils (ExcelUtils.java:39) - Test Runner excel row at: 16
+19:01:40.196 INFO  utils.ExcelUtils (ExcelUtils.java:39) - Test Runner excel row at: 17
+19:01:40.196 INFO  utils.ExcelUtils (ExcelUtils.java:39) - Test Runner excel row at: 18
+19:01:40.196 INFO  utils.ExcelUtils (ExcelUtils.java:39) - Test Runner excel row at: 19
+19:01:40.197 INFO  utils.ExcelUtils (ExcelUtils.java:39) - Test Runner excel row at: 20
+19:01:40.197 INFO  utils.ExcelUtils (ExcelUtils.java:39) - Test Runner excel row at: 21
+19:01:40.197 INFO  utils.ExcelUtils (ExcelUtils.java:39) - Test Runner excel row at: 22
+19:01:40.198 INFO  utils.ExcelUtils (ExcelUtils.java:39) - Test Runner excel row at: 23
+19:01:40.199 INFO  utils.ExcelUtils (ExcelUtils.java:39) - Test Runner excel row at: 24
+19:01:40.199 INFO  utils.ExcelUtils (ExcelUtils.java:39) - Test Runner excel row at: 25
+19:01:40.200 INFO  utils.ExcelUtils (ExcelUtils.java:39) - Test Runner excel row at: 26
+19:01:40.201 INFO  utils.ExcelUtils (ExcelUtils.java:39) - Test Runner excel row at: 27
+19:01:40.201 INFO  utils.ExcelUtils (ExcelUtils.java:39) - Test Runner excel row at: 28
+19:01:40.202 INFO  utils.ExcelUtils (ExcelUtils.java:39) - Test Runner excel row at: 29
+19:01:40.202 INFO  utils.ExcelUtils (ExcelUtils.java:39) - Test Runner excel row at: 30
+19:01:40.203 INFO  utils.ExcelUtils (ExcelUtils.java:39) - Test Runner excel row at: 31
+19:01:40.203 INFO  utils.ExcelUtils (ExcelUtils.java:39) - Test Runner excel row at: 32
+19:01:40.204 INFO  utils.ExcelUtils (ExcelUtils.java:39) - Test Runner excel row at: 33
+19:01:40.204 INFO  utils.ExcelUtils (ExcelUtils.java:39) - Test Runner excel row at: 34
+19:01:40.204 INFO  utils.ExcelUtils (ExcelUtils.java:39) - Test Runner excel row at: 35
+19:01:40.205 INFO  utils.ExcelUtils (ExcelUtils.java:39) - Test Runner excel row at: 36
+19:01:40.205 INFO  utils.ExcelUtils (ExcelUtils.java:39) - Test Runner excel row at: 37
+19:01:40.206 INFO  utils.ExcelUtils (ExcelUtils.java:39) - Test Runner excel row at: 38
+19:01:40.206 INFO  utils.ExcelUtils (ExcelUtils.java:39) - Test Runner excel row at: 39
+19:01:40.206 INFO  utils.ExcelUtils (ExcelUtils.java:39) - Test Runner excel row at: 40
+19:01:40.207 INFO  utils.ExcelUtils (ExcelUtils.java:39) - Test Runner excel row at: 41
+19:01:40.207 INFO  utils.ExcelUtils (ExcelUtils.java:39) - Test Runner excel row at: 42
+19:01:40.208 INFO  utils.ExcelUtils (ExcelUtils.java:39) - Test Runner excel row at: 43
+19:01:40.208 INFO  utils.ExcelUtils (ExcelUtils.java:39) - Test Runner excel row at: 44
+19:01:40.209 INFO  utils.ExcelUtils (ExcelUtils.java:39) - Test Runner excel row at: 45
+19:01:40.209 INFO  utils.ExcelUtils (ExcelUtils.java:39) - Test Runner excel row at: 46
+19:01:44.826 INFO  driver.WebDriverFactory (WebDriverFactory.java:207) - Setting up the browser window to its max.
+19:01:45.023 INFO  driver.WebDriverFactory (WebDriverFactory.java:196) - Initializing the implicit wait timeout for {} 5
+19:01:45.033 INFO  driver.WebDriverFactory (WebDriverFactory.java:199) - Initializing the page load timeout.
+19:01:45.043 INFO  driver.DriverFactory (DriverFactory.java:112) - Clearing all the cookies.
+19:01:45.116 INFO  driver.DriverFactory (DriverFactory.java:57) - Open the url {} https://qa.smartcmobile.net/SCM_10.0_S-CSP/ using the selenium get() method.
+19:01:53.156 INFO  csp.AdminNotificationTests (AdminNotificationTests.java:511) - To verify the tests with the below test case id's: C113236,C113238
+19:01:53.267 INFO  services.ServiceEndpoint (ServiceEndpoint.java:47) - Initializing the MoveIn Services payload.
+19:01:54.597 INFO  services.ServiceEndpoint (ServiceEndpoint.java:53) - Initializing the MoveIn Services BuildRequestSpecification.
+19:01:54.649 INFO  services.ServiceEndpoint (ServiceEndpoint.java:63) - Hit the MoveIn ServicesAPI with given request specification: io.restassured.internal.RequestSpecificationImpl@7369208e
+and the endpoint is : /Service/SubmitServiceRequest
+and with given http verb : POST
+19:01:58.251 INFO  scp.HomePage (HomePage.java:128) - Wait for page loader invisibility.
+19:01:58.251 INFO  driver.Page (    Page.java:238) - Waiting for element to be invisible for 120 seconds.
+19:02:03.289 INFO  driver.Page (    Page.java:241) - Element is invisible from the page.
+19:02:03.289 INFO  csp.AdminLoginPage (AdminLoginPage.java:334) - Checking that the current page is Admin login page.
+19:02:03.290 INFO  driver.Page (    Page.java:39) - Fetching the current URL.
+19:02:03.297 INFO  driver.Page (    Page.java:40) - The Current URL is: https://qa.smartcmobile.net/SCM_10.0_S-CSP/
+19:02:03.303 INFO  driver.Page (    Page.java:45) - Fetching the current title.
+19:02:03.309 INFO  driver.Page (    Page.java:46) - The Current Title is: SCM Admin - Login
+19:02:03.317 INFO  csp.AdminLoginPage (AdminLoginPage.java:337) - The current page is Admin login page {}: true
+19:02:03.318 INFO  csp.AdminLoginPage (AdminLoginPage.java:30) - Populating username {} :qauser
+19:02:03.336 INFO  driver.Page (    Page.java:109) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (a1b81d8e7d03cdcb20e34aa0f3b287aa)] -> css selector: [id='txtAdminLogin']] to be present in the DOM for duration of {} 120
+19:02:03.337 INFO  driver.Page (    Page.java:224) - Waiting for element to be visible for 120 seconds.
+19:02:03.373 INFO  driver.Page (    Page.java:227) - Element is visible on the page.
+19:02:03.381 INFO  driver.Page (    Page.java:111) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (a1b81d8e7d03cdcb20e34aa0f3b287aa)] -> css selector: [id='txtAdminLogin']] before sending the keys.
+19:02:03.501 INFO  driver.Page (    Page.java:113) - Sending the following keys {} qauser to the element {} [[ChromeDriver: chrome on WINDOWS (a1b81d8e7d03cdcb20e34aa0f3b287aa)] -> css selector: [id='txtAdminLogin']]
+19:02:03.631 INFO  csp.AdminLoginPage (AdminLoginPage.java:32) - Username populated successfully.
+19:02:03.631 INFO  csp.AdminLoginPage (AdminLoginPage.java:54) - Populating password {} :Sew@2021$!
+19:02:03.650 INFO  driver.Page (    Page.java:109) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (a1b81d8e7d03cdcb20e34aa0f3b287aa)] -> css selector: [id='txtpwd']] to be present in the DOM for duration of {} 120
+19:02:03.650 INFO  driver.Page (    Page.java:224) - Waiting for element to be visible for 120 seconds.
+19:02:03.679 INFO  driver.Page (    Page.java:227) - Element is visible on the page.
+19:02:03.687 INFO  driver.Page (    Page.java:111) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (a1b81d8e7d03cdcb20e34aa0f3b287aa)] -> css selector: [id='txtpwd']] before sending the keys.
+19:02:03.732 INFO  driver.Page (    Page.java:113) - Sending the following keys {} Sew@2021$! to the element {} [[ChromeDriver: chrome on WINDOWS (a1b81d8e7d03cdcb20e34aa0f3b287aa)] -> css selector: [id='txtpwd']]
+19:02:03.798 INFO  csp.AdminLoginPage (AdminLoginPage.java:56) - Password populated successfully.
+19:02:03.799 INFO  driver.Page (    Page.java:58) - Preparing for element to click.
+19:02:03.799 INFO  driver.Page (    Page.java:199) - Waiting for element to be clickable for 120 seconds.
+19:02:03.843 INFO  driver.Page (    Page.java:202) - Element is clickable now.
+19:02:13.304 INFO  driver.Page (    Page.java:61) - Element is clicked successfully.
+19:02:13.304 INFO  csp.AdminLoginPage (AdminLoginPage.java:67) - SignIn Button clicked successfully.
+19:02:13.305 INFO  scp.HomePage (HomePage.java:128) - Wait for page loader invisibility.
+19:02:13.305 INFO  driver.Page (    Page.java:238) - Waiting for element to be invisible for 120 seconds.
+19:02:13.356 INFO  driver.Page (    Page.java:241) - Element is invisible from the page.
+19:02:13.358 INFO  csp.AdminHomePage (AdminHomePage.java:170) - Checking that the current page is Admin Home page.
+19:02:13.358 INFO  driver.Page (    Page.java:39) - Fetching the current URL.
+19:02:13.365 INFO  driver.Page (    Page.java:40) - The Current URL is: https://qa.smartcmobile.net/SCM_10.0_S-CSP/Home.aspx
+19:02:13.371 INFO  driver.Page (    Page.java:45) - Fetching the current title.
+19:02:13.377 INFO  driver.Page (    Page.java:46) - The Current Title is: Dashboard
+19:02:13.383 INFO  csp.AdminHomePage (AdminHomePage.java:173) - The current page is Admin Home page {}: true
+19:02:13.388 INFO  driver.Page (    Page.java:224) - Waiting for element to be visible for 120 seconds.
+19:02:13.419 INFO  driver.Page (    Page.java:227) - Element is visible on the page.
+19:02:13.420 INFO  csp.AdminHomePage (AdminHomePage.java:50) - Notification Link is Visible on the Admin Home page.
+19:02:13.420 INFO  driver.Page (    Page.java:58) - Preparing for element to click.
+19:02:13.420 INFO  driver.Page (    Page.java:199) - Waiting for element to be clickable for 120 seconds.
+19:02:13.471 INFO  driver.Page (    Page.java:202) - Element is clickable now.
+19:02:18.261 INFO  driver.Page (    Page.java:61) - Element is clicked successfully.
+19:02:18.262 INFO  csp.AdminHomePage (AdminHomePage.java:54) - Notification Link clicked successfully.
+19:02:18.262 INFO  scp.HomePage (HomePage.java:128) - Wait for page loader invisibility.
+19:02:18.262 INFO  driver.Page (    Page.java:238) - Waiting for element to be invisible for 120 seconds.
+19:02:26.815 INFO  driver.Page (    Page.java:241) - Element is invisible from the page.
+19:02:26.815 INFO  scp.HomePage (HomePage.java:174) - Wait for Spinner Loading Image invisibility.
+19:02:26.815 INFO  driver.Page (    Page.java:238) - Waiting for element to be invisible for 120 seconds.
+19:02:31.828 INFO  driver.Page (    Page.java:241) - Element is invisible from the page.
+19:02:31.828 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:978) - Wait for Next Page visibility on Notification Page.
+19:02:31.828 INFO  driver.Page (    Page.java:224) - Waiting for element to be visible for 120 seconds.
+19:02:31.876 INFO  driver.Page (    Page.java:227) - Element is visible on the page.
+19:02:35.210 INFO  driver.Page (    Page.java:58) - Preparing for element to click.
+19:02:35.210 INFO  driver.Page (    Page.java:199) - Waiting for element to be clickable for 120 seconds.
+19:02:35.259 INFO  driver.Page (    Page.java:202) - Element is clickable now.
+19:02:35.383 INFO  driver.Page (    Page.java:61) - Element is clicked successfully.
+19:02:35.385 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1093) - Clicked on Notification Subject List at the Index 0
+19:02:35.385 INFO  scp.HomePage (HomePage.java:174) - Wait for Spinner Loading Image invisibility.
+19:02:35.386 INFO  driver.Page (    Page.java:238) - Waiting for element to be invisible for 120 seconds.
+19:02:39.271 INFO  driver.Page (    Page.java:241) - Element is invisible from the page.
+19:02:39.288 INFO  driver.Page (    Page.java:141) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (a1b81d8e7d03cdcb20e34aa0f3b287aa)] -> css selector: .DetailsMessageHeader > div:nth-child(2).from-name-section] to be visible on the page for duration of {} 120
+19:02:39.288 INFO  driver.Page (    Page.java:224) - Waiting for element to be visible for 120 seconds.
+19:02:39.321 INFO  driver.Page (    Page.java:227) - Element is visible on the page.
+19:02:39.373 INFO  driver.Page (    Page.java:144) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (a1b81d8e7d03cdcb20e34aa0f3b287aa)] -> css selector: .DetailsMessageHeader > div:nth-child(2).from-name-section] is SCMNotifications@smartcmobile.com
+19:02:39.398 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1461) - From Field Value is SCMNotifications@smartcmobile.com
+19:02:39.415 INFO  driver.Page (    Page.java:141) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (a1b81d8e7d03cdcb20e34aa0f3b287aa)] -> css selector: .DetailsMessageHeader div:nth-child(5).subject] to be visible on the page for duration of {} 120
+19:02:39.415 INFO  driver.Page (    Page.java:224) - Waiting for element to be visible for 120 seconds.
+19:02:39.437 INFO  driver.Page (    Page.java:227) - Element is visible on the page.
+19:02:39.481 INFO  driver.Page (    Page.java:144) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (a1b81d8e7d03cdcb20e34aa0f3b287aa)] -> css selector: .DetailsMessageHeader div:nth-child(5).subject] is Smart Energy Water Service - Move In request
+19:02:39.503 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1495) - Subject Field Value is Smart Energy Water Service - Move In request
+19:02:39.519 INFO  driver.Page (    Page.java:141) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (a1b81d8e7d03cdcb20e34aa0f3b287aa)] -> css selector: .DetailsMessageHeader > div:nth-child(8).from-name-section] to be visible on the page for duration of {} 120
+19:02:39.519 INFO  driver.Page (    Page.java:224) - Waiting for element to be visible for 120 seconds.
+19:02:39.554 INFO  driver.Page (    Page.java:227) - Element is visible on the page.
+19:02:39.612 INFO  driver.Page (    Page.java:144) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (a1b81d8e7d03cdcb20e34aa0f3b287aa)] -> css selector: .DetailsMessageHeader > div:nth-child(8).from-name-section] is Dear Admin,
+
+Following Service Request has been sent by -
+Name: Ankur Rana
+Account Number: 411000714880
+
+Comments: Services Request for MoveIn
+
+Thank you.
+19:02:39.636 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1551) - Message Field Value is Dear Admin,
+
+Following Service Request has been sent by -
+Name: Ankur Rana
+Account Number: 411000714880
+
+Comments: Services Request for MoveIn
+
+Thank you.
+19:02:39.650 INFO  driver.Page (    Page.java:141) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (a1b81d8e7d03cdcb20e34aa0f3b287aa)] -> css selector: .DetailsMessageHeader > div:nth-child(8).from-name-section] to be visible on the page for duration of {} 120
+19:02:39.651 INFO  driver.Page (    Page.java:224) - Waiting for element to be visible for 120 seconds.
+19:02:39.701 INFO  driver.Page (    Page.java:227) - Element is visible on the page.
+19:02:39.782 INFO  driver.Page (    Page.java:144) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (a1b81d8e7d03cdcb20e34aa0f3b287aa)] -> css selector: .DetailsMessageHeader > div:nth-child(8).from-name-section] is Dear Admin,
+
+Following Service Request has been sent by -
+Name: Ankur Rana
+Account Number: 411000714880
+
+Comments: Services Request for MoveIn
+
+Thank you.
+19:02:39.815 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1551) - Message Field Value is Dear Admin,
+
+Following Service Request has been sent by -
+Name: Ankur Rana
+Account Number: 411000714880
+
+Comments: Services Request for MoveIn
+
+Thank you.
+19:02:39.831 INFO  driver.Page (    Page.java:141) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (a1b81d8e7d03cdcb20e34aa0f3b287aa)] -> css selector: .DetailsMessageHeader > div:nth-child(8).from-name-section] to be visible on the page for duration of {} 120
+19:02:39.831 INFO  driver.Page (    Page.java:224) - Waiting for element to be visible for 120 seconds.
+19:02:39.853 INFO  driver.Page (    Page.java:227) - Element is visible on the page.
+19:02:39.917 INFO  driver.Page (    Page.java:144) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (a1b81d8e7d03cdcb20e34aa0f3b287aa)] -> css selector: .DetailsMessageHeader > div:nth-child(8).from-name-section] is Dear Admin,
+
+Following Service Request has been sent by -
+Name: Ankur Rana
+Account Number: 411000714880
+
+Comments: Services Request for MoveIn
+
+Thank you.
+19:02:39.967 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1551) - Message Field Value is Dear Admin,
+
+Following Service Request has been sent by -
+Name: Ankur Rana
+Account Number: 411000714880
+
+Comments: Services Request for MoveIn
+
+Thank you.
+19:02:39.983 INFO  driver.Page (    Page.java:141) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (a1b81d8e7d03cdcb20e34aa0f3b287aa)] -> css selector: .DetailsMessageHeader > div:nth-child(8).from-name-section] to be visible on the page for duration of {} 120
+19:02:39.983 INFO  driver.Page (    Page.java:224) - Waiting for element to be visible for 120 seconds.
+19:02:40.019 INFO  driver.Page (    Page.java:227) - Element is visible on the page.
+19:02:40.066 INFO  driver.Page (    Page.java:144) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (a1b81d8e7d03cdcb20e34aa0f3b287aa)] -> css selector: .DetailsMessageHeader > div:nth-child(8).from-name-section] is Dear Admin,
+
+Following Service Request has been sent by -
+Name: Ankur Rana
+Account Number: 411000714880
+
+Comments: Services Request for MoveIn
+
+Thank you.
+19:02:40.117 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1551) - Message Field Value is Dear Admin,
+
+Following Service Request has been sent by -
+Name: Ankur Rana
+Account Number: 411000714880
+
+Comments: Services Request for MoveIn
+
+Thank you.
+19:02:40.137 INFO  driver.Page (    Page.java:141) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (a1b81d8e7d03cdcb20e34aa0f3b287aa)] -> css selector: .DetailsMessageHeader > div:nth-child(8).from-name-section] to be visible on the page for duration of {} 120
+19:02:40.137 INFO  driver.Page (    Page.java:224) - Waiting for element to be visible for 120 seconds.
+19:02:40.185 INFO  driver.Page (    Page.java:227) - Element is visible on the page.
+19:02:40.232 INFO  driver.Page (    Page.java:144) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (a1b81d8e7d03cdcb20e34aa0f3b287aa)] -> css selector: .DetailsMessageHeader > div:nth-child(8).from-name-section] is Dear Admin,
+
+Following Service Request has been sent by -
+Name: Ankur Rana
+Account Number: 411000714880
+
+Comments: Services Request for MoveIn
+
+Thank you.
+19:02:40.265 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1551) - Message Field Value is Dear Admin,
+
+Following Service Request has been sent by -
+Name: Ankur Rana
+Account Number: 411000714880
+
+Comments: Services Request for MoveIn
+
+Thank you.
+19:02:40.283 INFO  driver.Page (    Page.java:141) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (a1b81d8e7d03cdcb20e34aa0f3b287aa)] -> css selector: .DetailsMessageHeader > div:nth-child(8).from-name-section] to be visible on the page for duration of {} 120
+19:02:40.283 INFO  driver.Page (    Page.java:224) - Waiting for element to be visible for 120 seconds.
+19:02:40.335 INFO  driver.Page (    Page.java:227) - Element is visible on the page.
+19:02:40.401 INFO  driver.Page (    Page.java:144) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (a1b81d8e7d03cdcb20e34aa0f3b287aa)] -> css selector: .DetailsMessageHeader > div:nth-child(8).from-name-section] is Dear Admin,
+
+Following Service Request has been sent by -
+Name: Ankur Rana
+Account Number: 411000714880
+
+Comments: Services Request for MoveIn
+
+Thank you.
+19:02:40.438 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1551) - Message Field Value is Dear Admin,
+
+Following Service Request has been sent by -
+Name: Ankur Rana
+Account Number: 411000714880
+
+Comments: Services Request for MoveIn
+
+Thank you.
+19:02:40.438 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1516) - Checking the visibility of Date Field Value on the page.
+19:02:40.483 INFO  driver.Page (    Page.java:266) - Element {} : [[ChromeDriver: chrome on WINDOWS (a1b81d8e7d03cdcb20e34aa0f3b287aa)] -> css selector: .DetailsMessageHeader > div:nth-child(11).from-name-section] is visible on the page.
+19:02:40.483 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1517) - Date Field Value visibility status {}: true
+19:02:40.549 INFO  driver.Page (    Page.java:266) - Element {} : [[ChromeDriver: chrome on WINDOWS (a1b81d8e7d03cdcb20e34aa0f3b287aa)] -> css selector: .DetailsMessageHeader > div:nth-child(11).from-name-section] is visible on the page.
+19:02:40.549 INFO  driver.Page (    Page.java:58) - Preparing for element to click.
+19:02:40.549 INFO  driver.Page (    Page.java:199) - Waiting for element to be clickable for 120 seconds.
+19:02:40.632 INFO  driver.Page (    Page.java:202) - Element is clickable now.
+19:02:40.740 INFO  driver.Page (    Page.java:61) - Element is clicked successfully.
+19:02:40.742 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:162) - Services link clicked {}.
+19:02:40.743 INFO  scp.HomePage (HomePage.java:174) - Wait for Spinner Loading Image invisibility.
+19:02:40.746 INFO  driver.Page (    Page.java:238) - Waiting for element to be invisible for 120 seconds.
+19:02:54.610 INFO  driver.Page (    Page.java:241) - Element is invisible from the page.
+19:02:55.436 INFO  driver.Page (    Page.java:58) - Preparing for element to click.
+19:02:55.436 INFO  driver.Page (    Page.java:199) - Waiting for element to be clickable for 120 seconds.
+19:02:55.471 INFO  driver.Page (    Page.java:202) - Element is clickable now.
+19:02:55.565 INFO  driver.Page (    Page.java:61) - Element is clicked successfully.
+19:02:55.566 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1093) - Clicked on Notification Subject List at the Index 0
+19:02:55.566 INFO  scp.HomePage (HomePage.java:174) - Wait for Spinner Loading Image invisibility.
+19:02:55.566 INFO  driver.Page (    Page.java:238) - Waiting for element to be invisible for 120 seconds.
+19:02:59.641 INFO  driver.Page (    Page.java:241) - Element is invisible from the page.
+19:03:01.189 INFO  driver.Page (    Page.java:141) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (a1b81d8e7d03cdcb20e34aa0f3b287aa)] -> css selector: .DetailsMessageHeader > div:nth-child(2).from-name-section] to be visible on the page for duration of {} 120
+19:03:01.189 INFO  driver.Page (    Page.java:224) - Waiting for element to be visible for 120 seconds.
+19:03:01.224 INFO  driver.Page (    Page.java:227) - Element is visible on the page.
+19:03:01.278 INFO  driver.Page (    Page.java:144) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (a1b81d8e7d03cdcb20e34aa0f3b287aa)] -> css selector: .DetailsMessageHeader > div:nth-child(2).from-name-section] is SCMNotifications@smartcmobile.com
+19:03:01.310 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1461) - From Field Value is SCMNotifications@smartcmobile.com
+19:03:01.328 INFO  driver.Page (    Page.java:141) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (a1b81d8e7d03cdcb20e34aa0f3b287aa)] -> css selector: .DetailsMessageHeader div:nth-child(5).subject] to be visible on the page for duration of {} 120
+19:03:01.328 INFO  driver.Page (    Page.java:224) - Waiting for element to be visible for 120 seconds.
+19:03:01.371 INFO  driver.Page (    Page.java:227) - Element is visible on the page.
+19:03:01.437 INFO  driver.Page (    Page.java:144) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (a1b81d8e7d03cdcb20e34aa0f3b287aa)] -> css selector: .DetailsMessageHeader div:nth-child(5).subject] is Smart Energy Water Message Received (Move In), (Request Id: SR-211646445)
+19:03:01.460 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1495) - Subject Field Value is Smart Energy Water Message Received (Move In), (Request Id: SR-211646445)
+19:03:01.476 INFO  driver.Page (    Page.java:141) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (a1b81d8e7d03cdcb20e34aa0f3b287aa)] -> css selector: .DetailsMessageHeader > div:nth-child(8).from-name-section] to be visible on the page for duration of {} 120
+19:03:01.476 INFO  driver.Page (    Page.java:224) - Waiting for element to be visible for 120 seconds.
+19:03:01.519 INFO  driver.Page (    Page.java:227) - Element is visible on the page.
+19:03:01.589 INFO  driver.Page (    Page.java:144) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (a1b81d8e7d03cdcb20e34aa0f3b287aa)] -> css selector: .DetailsMessageHeader > div:nth-child(8).from-name-section] is Dear Ankur Rana,
+
+Your Move In request has been received and we will contact you shortly.
+
+Please note your Request ID: SR-211646445.
+
+If you need further assistance please contact our customer service at 737 737 7777 or email us at Support@SEW1.in.
+
+Thank you,
+Smart Energy Water
+
+This is an automatically generated email. Please do not reply to this message.
+19:03:01.616 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1551) - Message Field Value is Dear Ankur Rana,
+
+Your Move In request has been received and we will contact you shortly.
+
+Please note your Request ID: SR-211646445.
+
+If you need further assistance please contact our customer service at 737 737 7777 or email us at Support@SEW1.in.
+
+Thank you,
+Smart Energy Water
+
+This is an automatically generated email. Please do not reply to this message.
+19:03:01.623 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1516) - Checking the visibility of Date Field Value on the page.
+19:03:01.672 INFO  driver.Page (    Page.java:266) - Element {} : [[ChromeDriver: chrome on WINDOWS (a1b81d8e7d03cdcb20e34aa0f3b287aa)] -> css selector: .DetailsMessageHeader > div:nth-child(11).from-name-section] is visible on the page.
+19:03:01.673 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1517) - Date Field Value visibility status {}: true
+19:03:01.720 INFO  driver.Page (    Page.java:266) - Element {} : [[ChromeDriver: chrome on WINDOWS (a1b81d8e7d03cdcb20e34aa0f3b287aa)] -> css selector: .DetailsMessageHeader > div:nth-child(11).from-name-section] is visible on the page.
+19:03:01.721 INFO  driver.Page (    Page.java:58) - Preparing for element to click.
+19:03:01.721 INFO  driver.Page (    Page.java:199) - Waiting for element to be clickable for 120 seconds.
+19:03:01.783 INFO  driver.Page (    Page.java:202) - Element is clickable now.
+19:03:01.880 INFO  driver.Page (    Page.java:61) - Element is clicked successfully.
+19:03:01.881 INFO  csp.AdminHomePage (AdminHomePage.java:82) - Admin User Profile dropdown clicked successfully.
+19:03:01.882 INFO  driver.Page (    Page.java:224) - Waiting for element to be visible for 120 seconds.
+19:03:01.945 INFO  driver.Page (    Page.java:227) - Element is visible on the page.
+19:03:01.945 INFO  csp.AdminHomePage (AdminHomePage.java:36) - SignOut Link is Visible on the page.
+19:03:01.945 INFO  driver.Page (    Page.java:58) - Preparing for element to click.
+19:03:01.946 INFO  driver.Page (    Page.java:199) - Waiting for element to be clickable for 120 seconds.
+19:03:02.072 INFO  driver.Page (    Page.java:202) - Element is clickable now.
+19:03:04.094 INFO  driver.Page (    Page.java:61) - Element is clicked successfully.
+19:03:04.095 INFO  csp.AdminHomePage (AdminHomePage.java:40) - Admin User SignOut Link clicked successfully.
+19:03:04.095 INFO  scp.HomePage (HomePage.java:128) - Wait for page loader invisibility.
+19:03:04.095 INFO  driver.Page (    Page.java:238) - Waiting for element to be invisible for 120 seconds.
+19:03:09.163 INFO  driver.Page (    Page.java:241) - Element is invisible from the page.
+19:03:11.827 INFO  driver.DriverFactory (DriverFactory.java:112) - Clearing all the cookies.

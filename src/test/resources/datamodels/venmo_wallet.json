@@ -1,0 +1,50 @@
+[
+  {
+    "firstName": "Nikhil",
+    "lastName": "Bosh",
+    "customerName": "Nikhil Venmo Wallet",
+    "addressLine1": "123 Park Avenue",
+    "addressLine2": "Street 6",
+    "city": "Manchester",
+    "state": "NH",
+    "zip": "03105",
+    "countryCode": "US",
+    "nonceToken": "fake-venmo-account-nonce"
+  },
+  {
+    "firstName": "Anshika",
+    "lastName": "Bhatija",
+    "customerName": "Anshika Venmo Wallet",
+    "addressLine1": "123 Park Avenue",
+    "addressLine2": "Street 6",
+    "city": "Irvine",
+    "state": "CA",
+    "zip": "92602",
+    "countryCode": "US",
+    "nonceToken": "fake-venmo-account-nonce"
+  },
+  {
+    "firstName": "Rahul",
+    "lastName": "Rana",
+    "customerName": "Rahul Venmo Wallet",
+    "addressLine1": "123 Park Avenue",
+    "addressLine2": "Street 6",
+    "city": "Kansas",
+    "state": "MO",
+    "zip": "65018",
+    "countryCode": "US",
+    "nonceToken": "fake-venmo-account-nonce"
+  },
+  {
+    "firstName": "Akhilesh",
+    "lastName": "Keshari",
+    "customerName": "Akhilesh Venmo Wallet",
+    "addressLine1": "123 Park Avenue",
+    "addressLine2": "Street 6",
+    "city": "Orlando",
+    "state": "FL",
+    "zip": "33034",
+    "countryCode": "US",
+    "nonceToken": "fake-venmo-account-nonce"
+  }
+]

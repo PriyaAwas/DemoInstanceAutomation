@@ -1,0 +1,539 @@
+13:59:12.182 INFO  runner.TestRunner (TestRunner.java:32) - Initializing application properties config file.
+13:59:12.231 INFO  runner.TestRunner (TestRunner.java:35) - Initializing connection to the base database.
+13:59:12.232 INFO  runner.TestRunner (TestRunner.java:38) - Initializing resource path config file.
+13:59:12.249 INFO  runner.TestRunner (TestRunner.java:41) - Initializing usage months config from CSP.
+13:59:12.249 INFO  runner.TestRunner (TestRunner.java:44) - Initializing date config from CSP.
+13:59:12.250 INFO  runner.TestRunner (TestRunner.java:47) - Initializing language config from CSP.
+13:59:12.250 INFO  runner.TestRunner (TestRunner.java:50) - Initializing language config from CSP.
+13:59:12.250 INFO  runner.TestRunner (TestRunner.java:53) - Initializing language config from CSP.
+13:59:12.251 INFO  runner.TestRunner (TestRunner.java:56) - Initializing user model config.
+13:59:12.251 INFO  runner.TestRunner (TestRunner.java:59) - Initializing auth token config.
+13:59:12.252 INFO  runner.TestRunner (TestRunner.java:62) - Initializing Admin User config.
+13:59:13.327 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 1
+13:59:13.336 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 2
+13:59:13.337 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 3
+13:59:13.337 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 4
+13:59:13.338 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 5
+13:59:13.338 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 6
+13:59:13.339 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 7
+13:59:13.339 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 8
+13:59:13.340 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 9
+13:59:13.340 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 10
+13:59:13.340 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 11
+13:59:13.341 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 12
+13:59:13.341 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 13
+13:59:13.342 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 14
+13:59:13.342 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 15
+13:59:13.343 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 16
+13:59:13.343 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 17
+13:59:13.344 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 18
+13:59:13.344 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 19
+13:59:13.345 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 20
+13:59:13.346 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 21
+13:59:13.347 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 22
+13:59:13.348 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 23
+13:59:13.348 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 24
+13:59:13.348 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 25
+13:59:13.348 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 26
+13:59:13.349 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 27
+13:59:13.349 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 28
+13:59:13.349 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 29
+13:59:13.350 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 30
+13:59:13.350 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 31
+13:59:13.351 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 32
+13:59:13.351 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 33
+13:59:13.352 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 34
+13:59:13.352 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 35
+13:59:13.354 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 36
+13:59:13.354 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 37
+13:59:13.354 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 38
+13:59:13.354 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 39
+13:59:13.355 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 40
+13:59:13.355 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 41
+13:59:13.355 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 42
+13:59:13.360 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 43
+13:59:13.362 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 44
+13:59:13.362 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 45
+13:59:13.362 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 46
+13:59:13.362 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 47
+13:59:13.365 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 48
+13:59:13.365 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 49
+13:59:13.366 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 50
+13:59:13.366 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 51
+13:59:13.367 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 52
+13:59:13.367 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 53
+13:59:13.368 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 54
+13:59:13.368 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 55
+13:59:13.368 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 56
+13:59:13.369 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 57
+13:59:13.369 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 58
+13:59:13.370 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 59
+13:59:13.370 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 60
+13:59:13.370 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 61
+13:59:13.371 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 62
+13:59:13.372 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 63
+13:59:13.373 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 64
+13:59:13.373 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 65
+13:59:13.373 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 66
+13:59:13.374 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 67
+13:59:13.375 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 68
+13:59:13.376 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 69
+13:59:13.376 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 70
+13:59:13.376 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 71
+13:59:13.376 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 72
+13:59:13.376 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 73
+13:59:13.377 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 74
+13:59:13.378 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 75
+13:59:13.378 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 76
+13:59:13.378 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 77
+13:59:13.379 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 78
+13:59:13.379 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 79
+13:59:13.379 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 80
+13:59:13.380 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 81
+13:59:13.381 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 82
+13:59:13.382 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 83
+13:59:13.382 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 84
+13:59:13.382 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 85
+13:59:13.382 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 86
+13:59:13.382 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 87
+13:59:13.383 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 88
+13:59:13.383 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 89
+13:59:13.383 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 90
+13:59:13.384 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 91
+13:59:14.019 WARN  config.Configuration (Configuration.java:231) - QA env being used by default. No env property set. This can be set in the sew.app.yml config file with a '{}=' property or on the command line with the switch '-D{}='.
+13:59:20.552 INFO  driver.WebDriverFactory (WebDriverFactory.java:192) - Setting up the browser window to its max.
+13:59:20.682 INFO  driver.WebDriverFactory (WebDriverFactory.java:181) - Initializing the implicit wait timeout for {} 5
+13:59:20.689 INFO  driver.WebDriverFactory (WebDriverFactory.java:184) - Initializing the page load timeout.
+13:59:20.694 INFO  driver.DriverFactory (DriverFactory.java:125) - Clearing all the cookies.
+13:59:20.706 INFO  driver.DriverFactory (DriverFactory.java:62) - Open the url {} https://u-ugi10s.smartcmobile.net/ using the selenium get() method.
+13:59:42.393 INFO  scp.RegistrationUGITests (RegistrationUGITests.java:27) - Test Case execution for - verifyCustomerRegistrationPage - is Initiated
+13:59:42.564 INFO  driver.Page (    Page.java:51) - Preparing for element to click.
+13:59:42.564 INFO  driver.Page (    Page.java:225) - Waiting for element to be clickable for 120 seconds.
+13:59:42.637 INFO  driver.Page (    Page.java:228) - Element is clickable now.
+13:59:42.637 INFO  driver.Page (    Page.java:215) - Returning web element for by type locator : By.cssSelector: #btnResidentialType
+14:00:00.303 INFO  driver.Page (    Page.java:54) - Element is clicked successfully.
+14:00:00.303 INFO  scp.HomePage (HomePage.java:194) - Wait for Spinner Loading Image invisibility.
+14:00:00.304 INFO  driver.Page (    Page.java:271) - Waiting for element to be invisible for 120 seconds.
+14:00:05.373 INFO  driver.Page (    Page.java:274) - Element is invisible from the page.
+14:00:10.405 INFO  scp.RegistrationUGISteps (RegistrationUGISteps.java:76) - feedback popup not displayed
+14:00:15.481 INFO  scp.RegistrationUGISteps (RegistrationUGISteps.java:95) - feedback popup not displayed
+14:00:15.481 INFO  scp.RegistrationUGIPage (RegistrationUGIPage.java:296) - Populating UtilityAccountNumber {} :421002216115
+14:00:15.498 INFO  driver.Page (    Page.java:129) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (8b7b188fa27116b19aa748ac9351e29c)] -> id: txt_4] to be present in the DOM for duration of {} 120
+14:00:15.499 INFO  driver.Page (    Page.java:257) - Waiting for element to be visible for 120 seconds.
+14:00:15.529 INFO  driver.Page (    Page.java:260) - Element is visible on the page.
+14:00:15.543 INFO  driver.Page (    Page.java:131) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (8b7b188fa27116b19aa748ac9351e29c)] -> id: txt_4] before sending the keys.
+14:00:15.618 INFO  driver.Page (    Page.java:133) - Sending the following keys {} 421002216115 to the element {} [[ChromeDriver: chrome on WINDOWS (8b7b188fa27116b19aa748ac9351e29c)] -> id: txt_4]
+14:00:15.774 INFO  scp.RegistrationUGIPage (RegistrationUGIPage.java:298) - UtilityAccountNumber populated successfully.
+14:00:15.775 INFO  scp.RegistrationUGIPage (RegistrationUGIPage.java:395) - Populating SSN Number {} :421002216115@yopmail.com
+14:00:15.840 INFO  driver.Page (    Page.java:129) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (8b7b188fa27116b19aa748ac9351e29c)] -> css selector: input[mappingname = 'EmailID']] to be present in the DOM for duration of {} 120
+14:00:15.840 INFO  driver.Page (    Page.java:257) - Waiting for element to be visible for 120 seconds.
+14:00:15.975 INFO  driver.Page (    Page.java:260) - Element is visible on the page.
+14:00:15.994 INFO  driver.Page (    Page.java:131) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (8b7b188fa27116b19aa748ac9351e29c)] -> css selector: input[mappingname = 'EmailID']] before sending the keys.
+14:00:16.206 INFO  driver.Page (    Page.java:133) - Sending the following keys {} 421002216115@yopmail.com to the element {} [[ChromeDriver: chrome on WINDOWS (8b7b188fa27116b19aa748ac9351e29c)] -> css selector: input[mappingname = 'EmailID']]
+14:00:16.544 INFO  scp.RegistrationUGIPage (RegistrationUGIPage.java:397) - Email Id populated successfully.
+14:00:16.544 INFO  scp.RegistrationUGIPage (RegistrationUGIPage.java:187) - Populating Postal Code {} :19610
+14:00:16.578 INFO  driver.Page (    Page.java:129) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (8b7b188fa27116b19aa748ac9351e29c)] -> css selector: input[mappingname='PostalCode']] to be present in the DOM for duration of {} 120
+14:00:16.578 INFO  driver.Page (    Page.java:257) - Waiting for element to be visible for 120 seconds.
+14:00:16.641 INFO  driver.Page (    Page.java:260) - Element is visible on the page.
+14:00:16.656 INFO  driver.Page (    Page.java:131) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (8b7b188fa27116b19aa748ac9351e29c)] -> css selector: input[mappingname='PostalCode']] before sending the keys.
+14:00:16.839 INFO  driver.Page (    Page.java:133) - Sending the following keys {} 19610 to the element {} [[ChromeDriver: chrome on WINDOWS (8b7b188fa27116b19aa748ac9351e29c)] -> css selector: input[mappingname='PostalCode']]
+14:00:17.044 INFO  scp.RegistrationUGIPage (RegistrationUGIPage.java:189) - Postal Code populated successfully.
+14:00:17.166 INFO  driver.Page (    Page.java:569) - Preparing for element to click.
+14:00:17.220 INFO  driver.Page (    Page.java:576) - Element is clicked successfully.
+14:00:17.220 INFO  scp.RegistrationUGIPage (RegistrationUGIPage.java:641) - Next Button clicked successfully.
+14:00:17.220 INFO  scp.HomePage (HomePage.java:194) - Wait for Spinner Loading Image invisibility.
+14:00:17.220 INFO  driver.Page (    Page.java:271) - Waiting for element to be invisible for 120 seconds.
+14:00:26.270 INFO  driver.Page (    Page.java:274) - Element is invisible from the page.
+14:00:26.270 INFO  scp.RegistrationUGIPage (RegistrationUGIPage.java:414) - Checking the visibility of Mobile Number on the page.
+14:00:26.315 INFO  driver.Page (    Page.java:305) - Element {} : [[ChromeDriver: chrome on WINDOWS (8b7b188fa27116b19aa748ac9351e29c)] -> css selector: input[mappingname='MobileNumber']] is visible on the page.
+14:00:26.316 INFO  scp.RegistrationUGIPage (RegistrationUGIPage.java:415) - Mobile Number visibility status : true
+14:00:26.353 INFO  driver.Page (    Page.java:305) - Element {} : [[ChromeDriver: chrome on WINDOWS (8b7b188fa27116b19aa748ac9351e29c)] -> css selector: input[mappingname='MobileNumber']] is visible on the page.
+14:00:26.369 INFO  scp.RegistrationUGIPage (RegistrationUGIPage.java:425) - Populating MOBILE Number {} :(123) 456-7890
+14:00:26.380 INFO  driver.Page (    Page.java:129) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (8b7b188fa27116b19aa748ac9351e29c)] -> css selector: input[mappingname='MobileNumber']] to be present in the DOM for duration of {} 120
+14:00:26.380 INFO  driver.Page (    Page.java:257) - Waiting for element to be visible for 120 seconds.
+14:00:26.407 INFO  driver.Page (    Page.java:260) - Element is visible on the page.
+14:00:26.417 INFO  driver.Page (    Page.java:131) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (8b7b188fa27116b19aa748ac9351e29c)] -> css selector: input[mappingname='MobileNumber']] before sending the keys.
+14:00:26.460 INFO  driver.Page (    Page.java:133) - Sending the following keys {} (123) 456-7890 to the element {} [[ChromeDriver: chrome on WINDOWS (8b7b188fa27116b19aa748ac9351e29c)] -> css selector: input[mappingname='MobileNumber']]
+14:00:26.541 INFO  scp.RegistrationUGIPage (RegistrationUGIPage.java:427) - MOBILE NUMBER populated successfully.
+14:00:26.542 INFO  scp.RegistrationUGIPage (RegistrationUGIPage.java:1098) - Populating UserId {} :421002216115_UAT
+14:00:26.561 INFO  driver.Page (    Page.java:129) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (8b7b188fa27116b19aa748ac9351e29c)] -> css selector: #txt_95] to be present in the DOM for duration of {} 120
+14:00:26.561 INFO  driver.Page (    Page.java:257) - Waiting for element to be visible for 120 seconds.
+14:00:26.585 INFO  driver.Page (    Page.java:260) - Element is visible on the page.
+14:00:26.596 INFO  driver.Page (    Page.java:131) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (8b7b188fa27116b19aa748ac9351e29c)] -> css selector: #txt_95] before sending the keys.
+14:00:26.644 INFO  driver.Page (    Page.java:133) - Sending the following keys {} 421002216115_UAT to the element {} [[ChromeDriver: chrome on WINDOWS (8b7b188fa27116b19aa748ac9351e29c)] -> css selector: #txt_95]
+14:00:26.735 INFO  scp.RegistrationUGIPage (RegistrationUGIPage.java:1100) - UserId populated successfully.
+14:00:26.736 INFO  scp.RegistrationUGIPage (RegistrationUGIPage.java:248) - Populating Password {} :Demo@123
+14:00:26.751 INFO  driver.Page (    Page.java:129) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (8b7b188fa27116b19aa748ac9351e29c)] -> css selector: input[mappingname='Password']:not([style='display:none;']] to be present in the DOM for duration of {} 120
+14:00:26.751 INFO  driver.Page (    Page.java:257) - Waiting for element to be visible for 120 seconds.
+14:00:26.774 INFO  driver.Page (    Page.java:260) - Element is visible on the page.
+14:00:26.782 INFO  driver.Page (    Page.java:131) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (8b7b188fa27116b19aa748ac9351e29c)] -> css selector: input[mappingname='Password']:not([style='display:none;']] before sending the keys.
+14:00:26.833 INFO  driver.Page (    Page.java:133) - Sending the following keys {} Demo@123 to the element {} [[ChromeDriver: chrome on WINDOWS (8b7b188fa27116b19aa748ac9351e29c)] -> css selector: input[mappingname='Password']:not([style='display:none;']]
+14:00:26.954 INFO  scp.RegistrationUGIPage (RegistrationUGIPage.java:250) - Password populated successfully.
+14:00:26.955 INFO  scp.RegistrationUGIPage (RegistrationUGIPage.java:275) - Populating Cinfirm Password {} :Demo@123
+14:00:26.969 INFO  driver.Page (    Page.java:129) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (8b7b188fa27116b19aa748ac9351e29c)] -> css selector: input[mappingname='ConfirmPassword']:not([style='display:none;'])] to be present in the DOM for duration of {} 120
+14:00:26.969 INFO  driver.Page (    Page.java:257) - Waiting for element to be visible for 120 seconds.
+14:00:26.994 INFO  driver.Page (    Page.java:260) - Element is visible on the page.
+14:00:27.003 INFO  driver.Page (    Page.java:131) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (8b7b188fa27116b19aa748ac9351e29c)] -> css selector: input[mappingname='ConfirmPassword']:not([style='display:none;'])] before sending the keys.
+14:00:27.051 INFO  driver.Page (    Page.java:133) - Sending the following keys {} Demo@123 to the element {} [[ChromeDriver: chrome on WINDOWS (8b7b188fa27116b19aa748ac9351e29c)] -> css selector: input[mappingname='ConfirmPassword']:not([style='display:none;'])]
+14:00:27.130 INFO  scp.RegistrationUGIPage (RegistrationUGIPage.java:277) - Confirm Password populated successfully.
+14:00:44.652 INFO  scp.RegistrationUGISteps (RegistrationUGISteps.java:90) - feedbackPopUp Canceled
+14:00:44.653 INFO  scp.RegistrationUGIPage (RegistrationUGIPage.java:296) - Populating UtilityAccountNumber {} :421002206888
+14:00:44.664 INFO  driver.Page (    Page.java:129) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (8b7b188fa27116b19aa748ac9351e29c)] -> id: txt_4] to be present in the DOM for duration of {} 120
+14:00:44.665 INFO  driver.Page (    Page.java:257) - Waiting for element to be visible for 120 seconds.
+14:00:44.692 INFO  driver.Page (    Page.java:260) - Element is visible on the page.
+14:00:44.704 INFO  driver.Page (    Page.java:131) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (8b7b188fa27116b19aa748ac9351e29c)] -> id: txt_4] before sending the keys.
+14:00:44.763 INFO  driver.Page (    Page.java:133) - Sending the following keys {} 421002206888 to the element {} [[ChromeDriver: chrome on WINDOWS (8b7b188fa27116b19aa748ac9351e29c)] -> id: txt_4]
+14:00:44.885 INFO  scp.RegistrationUGIPage (RegistrationUGIPage.java:298) - UtilityAccountNumber populated successfully.
+14:00:44.885 INFO  scp.RegistrationUGIPage (RegistrationUGIPage.java:395) - Populating SSN Number {} :421002206888@yopmail.com
+14:00:44.898 INFO  driver.Page (    Page.java:129) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (8b7b188fa27116b19aa748ac9351e29c)] -> css selector: input[mappingname = 'EmailID']] to be present in the DOM for duration of {} 120
+14:00:44.898 INFO  driver.Page (    Page.java:257) - Waiting for element to be visible for 120 seconds.
+14:00:44.928 INFO  driver.Page (    Page.java:260) - Element is visible on the page.
+14:00:44.940 INFO  driver.Page (    Page.java:131) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (8b7b188fa27116b19aa748ac9351e29c)] -> css selector: input[mappingname = 'EmailID']] before sending the keys.
+14:00:44.998 INFO  driver.Page (    Page.java:133) - Sending the following keys {} 421002206888@yopmail.com to the element {} [[ChromeDriver: chrome on WINDOWS (8b7b188fa27116b19aa748ac9351e29c)] -> css selector: input[mappingname = 'EmailID']]
+14:00:45.127 INFO  scp.RegistrationUGIPage (RegistrationUGIPage.java:397) - Email Id populated successfully.
+14:00:45.127 INFO  scp.RegistrationUGIPage (RegistrationUGIPage.java:187) - Populating Postal Code {} :19619
+14:00:45.142 INFO  driver.Page (    Page.java:129) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (8b7b188fa27116b19aa748ac9351e29c)] -> css selector: input[mappingname='PostalCode']] to be present in the DOM for duration of {} 120
+14:00:45.142 INFO  driver.Page (    Page.java:257) - Waiting for element to be visible for 120 seconds.
+14:00:45.166 INFO  driver.Page (    Page.java:260) - Element is visible on the page.
+14:00:45.178 INFO  driver.Page (    Page.java:131) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (8b7b188fa27116b19aa748ac9351e29c)] -> css selector: input[mappingname='PostalCode']] before sending the keys.
+14:00:45.232 INFO  driver.Page (    Page.java:133) - Sending the following keys {} 19619 to the element {} [[ChromeDriver: chrome on WINDOWS (8b7b188fa27116b19aa748ac9351e29c)] -> css selector: input[mappingname='PostalCode']]
+14:00:45.325 INFO  scp.RegistrationUGIPage (RegistrationUGIPage.java:189) - Postal Code populated successfully.
+14:00:45.352 INFO  driver.Page (    Page.java:569) - Preparing for element to click.
+14:00:45.387 INFO  driver.Page (    Page.java:576) - Element is clicked successfully.
+14:00:45.388 INFO  scp.RegistrationUGIPage (RegistrationUGIPage.java:641) - Next Button clicked successfully.
+14:00:45.388 INFO  scp.HomePage (HomePage.java:194) - Wait for Spinner Loading Image invisibility.
+14:00:45.388 INFO  driver.Page (    Page.java:271) - Waiting for element to be invisible for 120 seconds.
+14:00:52.655 INFO  driver.Page (    Page.java:274) - Element is invisible from the page.
+14:00:52.655 INFO  scp.RegistrationUGIPage (RegistrationUGIPage.java:414) - Checking the visibility of Mobile Number on the page.
+14:00:52.688 INFO  scp.RegistrationUGIPage (RegistrationUGIPage.java:415) - Mobile Number visibility status : false
+14:00:58.152 INFO  scp.RegistrationUGISteps (RegistrationUGISteps.java:95) - feedback popup not displayed
+14:00:58.187 INFO  driver.DriverFactory (DriverFactory.java:125) - Clearing all the cookies.
+14:16:01.776 INFO  runner.TestRunner (TestRunner.java:32) - Initializing application properties config file.
+14:16:01.792 INFO  runner.TestRunner (TestRunner.java:35) - Initializing connection to the base database.
+14:16:01.793 INFO  runner.TestRunner (TestRunner.java:38) - Initializing resource path config file.
+14:16:01.805 INFO  runner.TestRunner (TestRunner.java:41) - Initializing usage months config from CSP.
+14:16:01.805 INFO  runner.TestRunner (TestRunner.java:44) - Initializing date config from CSP.
+14:16:01.805 INFO  runner.TestRunner (TestRunner.java:47) - Initializing language config from CSP.
+14:16:01.805 INFO  runner.TestRunner (TestRunner.java:50) - Initializing language config from CSP.
+14:16:01.806 INFO  runner.TestRunner (TestRunner.java:53) - Initializing language config from CSP.
+14:16:01.806 INFO  runner.TestRunner (TestRunner.java:56) - Initializing user model config.
+14:16:01.807 INFO  runner.TestRunner (TestRunner.java:59) - Initializing auth token config.
+14:16:01.807 INFO  runner.TestRunner (TestRunner.java:62) - Initializing Admin User config.
+14:16:02.458 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 1
+14:16:02.467 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 2
+14:16:02.468 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 3
+14:16:02.469 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 4
+14:16:02.470 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 5
+14:16:02.471 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 6
+14:16:02.472 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 7
+14:16:02.472 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 8
+14:16:02.472 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 9
+14:16:02.473 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 10
+14:16:02.473 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 11
+14:16:02.474 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 12
+14:16:02.474 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 13
+14:16:02.475 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 14
+14:16:02.475 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 15
+14:16:02.476 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 16
+14:16:02.476 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 17
+14:16:02.477 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 18
+14:16:02.477 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 19
+14:16:02.478 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 20
+14:16:02.478 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 21
+14:16:02.479 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 22
+14:16:02.479 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 23
+14:16:02.480 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 24
+14:16:02.480 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 25
+14:16:02.480 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 26
+14:16:02.481 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 27
+14:16:02.482 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 28
+14:16:02.482 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 29
+14:16:02.482 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 30
+14:16:02.483 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 31
+14:16:02.483 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 32
+14:16:02.483 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 33
+14:16:02.484 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 34
+14:16:02.484 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 35
+14:16:02.484 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 36
+14:16:02.485 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 37
+14:16:02.485 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 38
+14:16:02.486 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 39
+14:16:02.486 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 40
+14:16:02.486 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 41
+14:16:02.487 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 42
+14:16:02.487 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 43
+14:16:02.487 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 44
+14:16:02.487 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 45
+14:16:02.488 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 46
+14:16:02.488 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 47
+14:16:02.490 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 48
+14:16:02.490 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 49
+14:16:02.490 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 50
+14:16:02.490 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 51
+14:16:02.491 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 52
+14:16:02.491 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 53
+14:16:02.492 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 54
+14:16:02.493 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 55
+14:16:02.493 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 56
+14:16:02.493 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 57
+14:16:02.493 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 58
+14:16:02.494 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 59
+14:16:02.494 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 60
+14:16:02.494 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 61
+14:16:02.496 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 62
+14:16:02.496 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 63
+14:16:02.496 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 64
+14:16:02.496 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 65
+14:16:02.498 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 66
+14:16:02.498 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 67
+14:16:02.498 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 68
+14:16:02.499 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 69
+14:16:02.499 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 70
+14:16:02.500 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 71
+14:16:02.501 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 72
+14:16:02.502 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 73
+14:16:02.503 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 74
+14:16:02.504 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 75
+14:16:02.504 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 76
+14:16:02.504 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 77
+14:16:02.505 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 78
+14:16:02.505 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 79
+14:16:02.506 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 80
+14:16:02.506 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 81
+14:16:02.507 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 82
+14:16:02.507 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 83
+14:16:02.508 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 84
+14:16:02.508 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 85
+14:16:02.508 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 86
+14:16:02.508 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 87
+14:16:02.509 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 88
+14:16:02.509 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 89
+14:16:02.509 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 90
+14:16:02.510 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 91
+14:16:02.830 WARN  config.Configuration (Configuration.java:231) - QA env being used by default. No env property set. This can be set in the sew.app.yml config file with a '{}=' property or on the command line with the switch '-D{}='.
+14:16:08.066 INFO  driver.WebDriverFactory (WebDriverFactory.java:192) - Setting up the browser window to its max.
+14:16:08.204 INFO  driver.WebDriverFactory (WebDriverFactory.java:181) - Initializing the implicit wait timeout for {} 5
+14:16:08.210 INFO  driver.WebDriverFactory (WebDriverFactory.java:184) - Initializing the page load timeout.
+14:16:08.216 INFO  driver.DriverFactory (DriverFactory.java:125) - Clearing all the cookies.
+14:16:08.230 INFO  driver.DriverFactory (DriverFactory.java:62) - Open the url {} https://u-ugi10s.smartcmobile.net/ using the selenium get() method.
+14:16:30.767 INFO  scp.RegistrationUGITests (RegistrationUGITests.java:27) - Test Case execution for - verifyCustomerRegistrationPage - is Initiated
+14:16:30.843 INFO  driver.Page (    Page.java:51) - Preparing for element to click.
+14:16:30.843 INFO  driver.Page (    Page.java:225) - Waiting for element to be clickable for 120 seconds.
+14:16:30.918 INFO  driver.Page (    Page.java:228) - Element is clickable now.
+14:16:30.918 INFO  driver.Page (    Page.java:215) - Returning web element for by type locator : By.cssSelector: #btnResidentialType
+14:16:47.007 INFO  driver.Page (    Page.java:54) - Element is clicked successfully.
+14:16:47.007 INFO  scp.HomePage (HomePage.java:194) - Wait for Spinner Loading Image invisibility.
+14:16:47.008 INFO  driver.Page (    Page.java:271) - Waiting for element to be invisible for 120 seconds.
+14:16:52.052 INFO  driver.Page (    Page.java:274) - Element is invisible from the page.
+14:16:52.156 INFO  scp.RegistrationUGISteps (RegistrationUGISteps.java:71) - feedbackPopUp Canceled
+14:16:57.258 INFO  scp.RegistrationUGISteps (RegistrationUGISteps.java:95) - feedback popup not displayed
+14:16:57.259 INFO  scp.RegistrationUGIPage (RegistrationUGIPage.java:296) - Populating UtilityAccountNumber {} :421002216115
+14:16:57.283 INFO  driver.Page (    Page.java:129) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (950e6b08c2a097274b89c89381ffc45a)] -> id: txt_4] to be present in the DOM for duration of {} 120
+14:16:57.284 INFO  driver.Page (    Page.java:257) - Waiting for element to be visible for 120 seconds.
+14:16:57.324 INFO  driver.Page (    Page.java:260) - Element is visible on the page.
+14:16:57.340 INFO  driver.Page (    Page.java:131) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (950e6b08c2a097274b89c89381ffc45a)] -> id: txt_4] before sending the keys.
+14:16:57.445 INFO  driver.Page (    Page.java:133) - Sending the following keys {} 421002216115 to the element {} [[ChromeDriver: chrome on WINDOWS (950e6b08c2a097274b89c89381ffc45a)] -> id: txt_4]
+14:16:57.613 INFO  scp.RegistrationUGIPage (RegistrationUGIPage.java:298) - UtilityAccountNumber populated successfully.
+14:16:57.613 INFO  scp.RegistrationUGIPage (RegistrationUGIPage.java:395) - Populating SSN Number {} :421002216115@yopmail.com
+14:16:57.632 INFO  driver.Page (    Page.java:129) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (950e6b08c2a097274b89c89381ffc45a)] -> css selector: input[mappingname = 'EmailID']] to be present in the DOM for duration of {} 120
+14:16:57.633 INFO  driver.Page (    Page.java:257) - Waiting for element to be visible for 120 seconds.
+14:16:57.673 INFO  driver.Page (    Page.java:260) - Element is visible on the page.
+14:16:57.689 INFO  driver.Page (    Page.java:131) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (950e6b08c2a097274b89c89381ffc45a)] -> css selector: input[mappingname = 'EmailID']] before sending the keys.
+14:16:57.776 INFO  driver.Page (    Page.java:133) - Sending the following keys {} 421002216115@yopmail.com to the element {} [[ChromeDriver: chrome on WINDOWS (950e6b08c2a097274b89c89381ffc45a)] -> css selector: input[mappingname = 'EmailID']]
+14:16:57.950 INFO  scp.RegistrationUGIPage (RegistrationUGIPage.java:397) - Email Id populated successfully.
+14:16:57.951 INFO  scp.RegistrationUGIPage (RegistrationUGIPage.java:187) - Populating Postal Code {} :19610
+14:16:57.974 INFO  driver.Page (    Page.java:129) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (950e6b08c2a097274b89c89381ffc45a)] -> css selector: input[mappingname='PostalCode']] to be present in the DOM for duration of {} 120
+14:16:57.974 INFO  driver.Page (    Page.java:257) - Waiting for element to be visible for 120 seconds.
+14:16:58.001 INFO  driver.Page (    Page.java:260) - Element is visible on the page.
+14:16:58.012 INFO  driver.Page (    Page.java:131) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (950e6b08c2a097274b89c89381ffc45a)] -> css selector: input[mappingname='PostalCode']] before sending the keys.
+14:16:58.062 INFO  driver.Page (    Page.java:133) - Sending the following keys {} 19610 to the element {} [[ChromeDriver: chrome on WINDOWS (950e6b08c2a097274b89c89381ffc45a)] -> css selector: input[mappingname='PostalCode']]
+14:16:58.141 INFO  scp.RegistrationUGIPage (RegistrationUGIPage.java:189) - Postal Code populated successfully.
+14:16:58.174 INFO  driver.Page (    Page.java:569) - Preparing for element to click.
+14:16:58.208 INFO  driver.Page (    Page.java:576) - Element is clicked successfully.
+14:16:58.208 INFO  scp.RegistrationUGIPage (RegistrationUGIPage.java:641) - Next Button clicked successfully.
+14:16:58.209 INFO  scp.HomePage (HomePage.java:194) - Wait for Spinner Loading Image invisibility.
+14:16:58.209 INFO  driver.Page (    Page.java:271) - Waiting for element to be invisible for 120 seconds.
+14:17:06.189 INFO  driver.Page (    Page.java:274) - Element is invisible from the page.
+14:17:06.189 INFO  scp.RegistrationUGIPage (RegistrationUGIPage.java:414) - Checking the visibility of Mobile Number on the page.
+14:17:06.249 INFO  driver.Page (    Page.java:305) - Element {} : [[ChromeDriver: chrome on WINDOWS (950e6b08c2a097274b89c89381ffc45a)] -> css selector: input[mappingname='MobileNumber']] is visible on the page.
+14:17:06.249 INFO  scp.RegistrationUGIPage (RegistrationUGIPage.java:415) - Mobile Number visibility status : true
+14:17:06.289 INFO  driver.Page (    Page.java:305) - Element {} : [[ChromeDriver: chrome on WINDOWS (950e6b08c2a097274b89c89381ffc45a)] -> css selector: input[mappingname='MobileNumber']] is visible on the page.
+14:17:06.290 INFO  scp.RegistrationUGIPage (RegistrationUGIPage.java:425) - Populating MOBILE Number {} :(123) 456-7890
+14:17:06.301 INFO  driver.Page (    Page.java:129) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (950e6b08c2a097274b89c89381ffc45a)] -> css selector: input[mappingname='MobileNumber']] to be present in the DOM for duration of {} 120
+14:17:06.301 INFO  driver.Page (    Page.java:257) - Waiting for element to be visible for 120 seconds.
+14:17:06.328 INFO  driver.Page (    Page.java:260) - Element is visible on the page.
+14:17:06.338 INFO  driver.Page (    Page.java:131) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (950e6b08c2a097274b89c89381ffc45a)] -> css selector: input[mappingname='MobileNumber']] before sending the keys.
+14:17:06.382 INFO  driver.Page (    Page.java:133) - Sending the following keys {} (123) 456-7890 to the element {} [[ChromeDriver: chrome on WINDOWS (950e6b08c2a097274b89c89381ffc45a)] -> css selector: input[mappingname='MobileNumber']]
+14:17:06.486 INFO  scp.RegistrationUGIPage (RegistrationUGIPage.java:427) - MOBILE NUMBER populated successfully.
+14:17:06.486 INFO  scp.RegistrationUGIPage (RegistrationUGIPage.java:1098) - Populating UserId {} :421002216115_UAT
+14:17:06.501 INFO  driver.Page (    Page.java:129) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (950e6b08c2a097274b89c89381ffc45a)] -> css selector: #txt_95] to be present in the DOM for duration of {} 120
+14:17:06.501 INFO  driver.Page (    Page.java:257) - Waiting for element to be visible for 120 seconds.
+14:17:06.529 INFO  driver.Page (    Page.java:260) - Element is visible on the page.
+14:17:06.540 INFO  driver.Page (    Page.java:131) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (950e6b08c2a097274b89c89381ffc45a)] -> css selector: #txt_95] before sending the keys.
+14:17:06.584 INFO  driver.Page (    Page.java:133) - Sending the following keys {} 421002216115_UAT to the element {} [[ChromeDriver: chrome on WINDOWS (950e6b08c2a097274b89c89381ffc45a)] -> css selector: #txt_95]
+14:17:06.696 INFO  scp.RegistrationUGIPage (RegistrationUGIPage.java:1100) - UserId populated successfully.
+14:17:06.696 INFO  scp.RegistrationUGIPage (RegistrationUGIPage.java:248) - Populating Password {} :Demo@123
+14:17:06.716 INFO  driver.Page (    Page.java:129) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (950e6b08c2a097274b89c89381ffc45a)] -> css selector: input[mappingname='Password']:not([style='display:none;']] to be present in the DOM for duration of {} 120
+14:17:06.716 INFO  driver.Page (    Page.java:257) - Waiting for element to be visible for 120 seconds.
+14:17:06.746 INFO  driver.Page (    Page.java:260) - Element is visible on the page.
+14:17:06.755 INFO  driver.Page (    Page.java:131) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (950e6b08c2a097274b89c89381ffc45a)] -> css selector: input[mappingname='Password']:not([style='display:none;']] before sending the keys.
+14:17:06.802 INFO  driver.Page (    Page.java:133) - Sending the following keys {} Demo@123 to the element {} [[ChromeDriver: chrome on WINDOWS (950e6b08c2a097274b89c89381ffc45a)] -> css selector: input[mappingname='Password']:not([style='display:none;']]
+14:17:06.978 INFO  scp.RegistrationUGIPage (RegistrationUGIPage.java:250) - Password populated successfully.
+14:17:06.978 INFO  scp.RegistrationUGIPage (RegistrationUGIPage.java:275) - Populating Cinfirm Password {} :Demo@123
+14:17:07.003 INFO  driver.Page (    Page.java:129) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (950e6b08c2a097274b89c89381ffc45a)] -> css selector: input[mappingname='ConfirmPassword']:not([style='display:none;'])] to be present in the DOM for duration of {} 120
+14:17:07.003 INFO  driver.Page (    Page.java:257) - Waiting for element to be visible for 120 seconds.
+14:17:07.035 INFO  driver.Page (    Page.java:260) - Element is visible on the page.
+14:17:07.048 INFO  driver.Page (    Page.java:131) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (950e6b08c2a097274b89c89381ffc45a)] -> css selector: input[mappingname='ConfirmPassword']:not([style='display:none;'])] before sending the keys.
+14:17:07.094 INFO  driver.Page (    Page.java:133) - Sending the following keys {} Demo@123 to the element {} [[ChromeDriver: chrome on WINDOWS (950e6b08c2a097274b89c89381ffc45a)] -> css selector: input[mappingname='ConfirmPassword']:not([style='display:none;'])]
+14:17:07.201 INFO  scp.RegistrationUGIPage (RegistrationUGIPage.java:277) - Confirm Password populated successfully.
+14:17:37.786 INFO  scp.RegistrationUGISteps (RegistrationUGISteps.java:95) - feedback popup not displayed
+14:17:37.787 INFO  scp.RegistrationUGIPage (RegistrationUGIPage.java:296) - Populating UtilityAccountNumber {} :421002206888
+14:17:37.809 INFO  driver.Page (    Page.java:129) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (950e6b08c2a097274b89c89381ffc45a)] -> id: txt_4] to be present in the DOM for duration of {} 120
+14:17:37.810 INFO  driver.Page (    Page.java:257) - Waiting for element to be visible for 120 seconds.
+14:17:37.848 INFO  driver.Page (    Page.java:260) - Element is visible on the page.
+14:17:37.866 INFO  driver.Page (    Page.java:131) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (950e6b08c2a097274b89c89381ffc45a)] -> id: txt_4] before sending the keys.
+14:17:37.954 INFO  driver.Page (    Page.java:133) - Sending the following keys {} 421002206888 to the element {} [[ChromeDriver: chrome on WINDOWS (950e6b08c2a097274b89c89381ffc45a)] -> id: txt_4]
+14:17:38.086 INFO  scp.RegistrationUGIPage (RegistrationUGIPage.java:298) - UtilityAccountNumber populated successfully.
+14:17:38.086 INFO  scp.RegistrationUGIPage (RegistrationUGIPage.java:395) - Populating SSN Number {} :421002206888@yopmail.com
+14:17:38.104 INFO  driver.Page (    Page.java:129) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (950e6b08c2a097274b89c89381ffc45a)] -> css selector: input[mappingname = 'EmailID']] to be present in the DOM for duration of {} 120
+14:17:38.105 INFO  driver.Page (    Page.java:257) - Waiting for element to be visible for 120 seconds.
+14:17:38.145 INFO  driver.Page (    Page.java:260) - Element is visible on the page.
+14:17:38.159 INFO  driver.Page (    Page.java:131) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (950e6b08c2a097274b89c89381ffc45a)] -> css selector: input[mappingname = 'EmailID']] before sending the keys.
+14:17:38.231 INFO  driver.Page (    Page.java:133) - Sending the following keys {} 421002206888@yopmail.com to the element {} [[ChromeDriver: chrome on WINDOWS (950e6b08c2a097274b89c89381ffc45a)] -> css selector: input[mappingname = 'EmailID']]
+14:17:38.347 INFO  scp.RegistrationUGIPage (RegistrationUGIPage.java:397) - Email Id populated successfully.
+14:17:38.348 INFO  scp.RegistrationUGIPage (RegistrationUGIPage.java:187) - Populating Postal Code {} :19619
+14:17:38.363 INFO  driver.Page (    Page.java:129) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (950e6b08c2a097274b89c89381ffc45a)] -> css selector: input[mappingname='PostalCode']] to be present in the DOM for duration of {} 120
+14:17:38.363 INFO  driver.Page (    Page.java:257) - Waiting for element to be visible for 120 seconds.
+14:17:38.392 INFO  driver.Page (    Page.java:260) - Element is visible on the page.
+14:17:38.402 INFO  driver.Page (    Page.java:131) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (950e6b08c2a097274b89c89381ffc45a)] -> css selector: input[mappingname='PostalCode']] before sending the keys.
+14:17:38.448 INFO  driver.Page (    Page.java:133) - Sending the following keys {} 19619 to the element {} [[ChromeDriver: chrome on WINDOWS (950e6b08c2a097274b89c89381ffc45a)] -> css selector: input[mappingname='PostalCode']]
+14:17:38.523 INFO  scp.RegistrationUGIPage (RegistrationUGIPage.java:189) - Postal Code populated successfully.
+14:17:38.546 INFO  driver.Page (    Page.java:569) - Preparing for element to click.
+14:17:38.577 INFO  driver.Page (    Page.java:576) - Element is clicked successfully.
+14:17:38.577 INFO  scp.RegistrationUGIPage (RegistrationUGIPage.java:641) - Next Button clicked successfully.
+14:17:38.577 INFO  scp.HomePage (HomePage.java:194) - Wait for Spinner Loading Image invisibility.
+14:17:38.577 INFO  driver.Page (    Page.java:271) - Waiting for element to be invisible for 120 seconds.
+14:17:45.822 INFO  driver.Page (    Page.java:274) - Element is invisible from the page.
+14:17:45.823 INFO  scp.RegistrationUGIPage (RegistrationUGIPage.java:414) - Checking the visibility of Mobile Number on the page.
+14:17:45.869 INFO  scp.RegistrationUGIPage (RegistrationUGIPage.java:415) - Mobile Number visibility status : false
+14:17:51.214 INFO  scp.RegistrationUGISteps (RegistrationUGISteps.java:95) - feedback popup not displayed
+14:17:51.215 INFO  scp.RegistrationUGIPage (RegistrationUGIPage.java:296) - Populating UtilityAccountNumber {} :421002206900
+14:17:51.231 INFO  driver.Page (    Page.java:129) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (950e6b08c2a097274b89c89381ffc45a)] -> id: txt_4] to be present in the DOM for duration of {} 120
+14:17:51.231 INFO  driver.Page (    Page.java:257) - Waiting for element to be visible for 120 seconds.
+14:17:51.271 INFO  driver.Page (    Page.java:260) - Element is visible on the page.
+14:17:51.283 INFO  driver.Page (    Page.java:131) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (950e6b08c2a097274b89c89381ffc45a)] -> id: txt_4] before sending the keys.
+14:17:51.357 INFO  driver.Page (    Page.java:133) - Sending the following keys {} 421002206900 to the element {} [[ChromeDriver: chrome on WINDOWS (950e6b08c2a097274b89c89381ffc45a)] -> id: txt_4]
+14:17:51.446 INFO  scp.RegistrationUGIPage (RegistrationUGIPage.java:298) - UtilityAccountNumber populated successfully.
+14:17:51.446 INFO  scp.RegistrationUGIPage (RegistrationUGIPage.java:395) - Populating SSN Number {} :421002206900@yopmail.com
+14:17:51.463 INFO  driver.Page (    Page.java:129) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (950e6b08c2a097274b89c89381ffc45a)] -> css selector: input[mappingname = 'EmailID']] to be present in the DOM for duration of {} 120
+14:17:51.463 INFO  driver.Page (    Page.java:257) - Waiting for element to be visible for 120 seconds.
+14:17:51.492 INFO  driver.Page (    Page.java:260) - Element is visible on the page.
+14:17:51.505 INFO  driver.Page (    Page.java:131) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (950e6b08c2a097274b89c89381ffc45a)] -> css selector: input[mappingname = 'EmailID']] before sending the keys.
+14:17:51.572 INFO  driver.Page (    Page.java:133) - Sending the following keys {} 421002206900@yopmail.com to the element {} [[ChromeDriver: chrome on WINDOWS (950e6b08c2a097274b89c89381ffc45a)] -> css selector: input[mappingname = 'EmailID']]
+14:17:51.678 INFO  scp.RegistrationUGIPage (RegistrationUGIPage.java:397) - Email Id populated successfully.
+14:17:51.679 INFO  scp.RegistrationUGIPage (RegistrationUGIPage.java:187) - Populating Postal Code {} :19609
+14:17:51.691 INFO  driver.Page (    Page.java:129) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (950e6b08c2a097274b89c89381ffc45a)] -> css selector: input[mappingname='PostalCode']] to be present in the DOM for duration of {} 120
+14:17:51.692 INFO  driver.Page (    Page.java:257) - Waiting for element to be visible for 120 seconds.
+14:17:51.722 INFO  driver.Page (    Page.java:260) - Element is visible on the page.
+14:17:51.735 INFO  driver.Page (    Page.java:131) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (950e6b08c2a097274b89c89381ffc45a)] -> css selector: input[mappingname='PostalCode']] before sending the keys.
+14:17:51.809 INFO  driver.Page (    Page.java:133) - Sending the following keys {} 19609 to the element {} [[ChromeDriver: chrome on WINDOWS (950e6b08c2a097274b89c89381ffc45a)] -> css selector: input[mappingname='PostalCode']]
+14:17:51.878 INFO  scp.RegistrationUGIPage (RegistrationUGIPage.java:189) - Postal Code populated successfully.
+14:17:51.905 INFO  driver.Page (    Page.java:569) - Preparing for element to click.
+14:17:51.931 INFO  driver.Page (    Page.java:576) - Element is clicked successfully.
+14:17:51.931 INFO  scp.RegistrationUGIPage (RegistrationUGIPage.java:641) - Next Button clicked successfully.
+14:17:51.931 INFO  scp.HomePage (HomePage.java:194) - Wait for Spinner Loading Image invisibility.
+14:17:51.931 INFO  driver.Page (    Page.java:271) - Waiting for element to be invisible for 120 seconds.
+14:17:59.153 INFO  driver.Page (    Page.java:274) - Element is invisible from the page.
+14:17:59.153 INFO  scp.RegistrationUGIPage (RegistrationUGIPage.java:414) - Checking the visibility of Mobile Number on the page.
+14:17:59.190 INFO  scp.RegistrationUGIPage (RegistrationUGIPage.java:415) - Mobile Number visibility status : false
+14:18:04.521 INFO  scp.RegistrationUGISteps (RegistrationUGISteps.java:95) - feedback popup not displayed
+14:18:04.522 INFO  scp.RegistrationUGIPage (RegistrationUGIPage.java:296) - Populating UtilityAccountNumber {} :421002206866
+14:18:04.539 INFO  driver.Page (    Page.java:129) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (950e6b08c2a097274b89c89381ffc45a)] -> id: txt_4] to be present in the DOM for duration of {} 120
+14:18:04.540 INFO  driver.Page (    Page.java:257) - Waiting for element to be visible for 120 seconds.
+14:18:04.580 INFO  driver.Page (    Page.java:260) - Element is visible on the page.
+14:18:04.594 INFO  driver.Page (    Page.java:131) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (950e6b08c2a097274b89c89381ffc45a)] -> id: txt_4] before sending the keys.
+14:18:04.680 INFO  driver.Page (    Page.java:133) - Sending the following keys {} 421002206866 to the element {} [[ChromeDriver: chrome on WINDOWS (950e6b08c2a097274b89c89381ffc45a)] -> id: txt_4]
+14:18:04.804 INFO  scp.RegistrationUGIPage (RegistrationUGIPage.java:298) - UtilityAccountNumber populated successfully.
+14:18:04.805 INFO  scp.RegistrationUGIPage (RegistrationUGIPage.java:395) - Populating SSN Number {} :421002206866@yopmail.com
+14:18:04.817 INFO  driver.Page (    Page.java:129) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (950e6b08c2a097274b89c89381ffc45a)] -> css selector: input[mappingname = 'EmailID']] to be present in the DOM for duration of {} 120
+14:18:04.817 INFO  driver.Page (    Page.java:257) - Waiting for element to be visible for 120 seconds.
+14:18:04.844 INFO  driver.Page (    Page.java:260) - Element is visible on the page.
+14:18:04.854 INFO  driver.Page (    Page.java:131) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (950e6b08c2a097274b89c89381ffc45a)] -> css selector: input[mappingname = 'EmailID']] before sending the keys.
+14:18:04.913 INFO  driver.Page (    Page.java:133) - Sending the following keys {} 421002206866@yopmail.com to the element {} [[ChromeDriver: chrome on WINDOWS (950e6b08c2a097274b89c89381ffc45a)] -> css selector: input[mappingname = 'EmailID']]
+14:18:04.993 INFO  scp.RegistrationUGIPage (RegistrationUGIPage.java:397) - Email Id populated successfully.
+14:18:04.994 INFO  scp.RegistrationUGIPage (RegistrationUGIPage.java:187) - Populating Postal Code {} :16193
+14:18:05.003 INFO  driver.Page (    Page.java:129) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (950e6b08c2a097274b89c89381ffc45a)] -> css selector: input[mappingname='PostalCode']] to be present in the DOM for duration of {} 120
+14:18:05.004 INFO  driver.Page (    Page.java:257) - Waiting for element to be visible for 120 seconds.
+14:18:05.030 INFO  driver.Page (    Page.java:260) - Element is visible on the page.
+14:18:05.039 INFO  driver.Page (    Page.java:131) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (950e6b08c2a097274b89c89381ffc45a)] -> css selector: input[mappingname='PostalCode']] before sending the keys.
+14:18:05.092 INFO  driver.Page (    Page.java:133) - Sending the following keys {} 16193 to the element {} [[ChromeDriver: chrome on WINDOWS (950e6b08c2a097274b89c89381ffc45a)] -> css selector: input[mappingname='PostalCode']]
+14:18:05.156 INFO  scp.RegistrationUGIPage (RegistrationUGIPage.java:189) - Postal Code populated successfully.
+14:18:05.171 INFO  driver.Page (    Page.java:569) - Preparing for element to click.
+14:18:05.194 INFO  driver.Page (    Page.java:576) - Element is clicked successfully.
+14:18:05.195 INFO  scp.RegistrationUGIPage (RegistrationUGIPage.java:641) - Next Button clicked successfully.
+14:18:05.196 INFO  scp.HomePage (HomePage.java:194) - Wait for Spinner Loading Image invisibility.
+14:18:05.196 INFO  driver.Page (    Page.java:271) - Waiting for element to be invisible for 120 seconds.
+14:18:13.349 INFO  driver.Page (    Page.java:274) - Element is invisible from the page.
+14:18:13.350 INFO  scp.RegistrationUGIPage (RegistrationUGIPage.java:414) - Checking the visibility of Mobile Number on the page.
+14:18:13.391 INFO  scp.RegistrationUGIPage (RegistrationUGIPage.java:415) - Mobile Number visibility status : false
+14:18:18.726 INFO  scp.RegistrationUGISteps (RegistrationUGISteps.java:95) - feedback popup not displayed
+14:18:18.727 INFO  scp.RegistrationUGIPage (RegistrationUGIPage.java:296) - Populating UtilityAccountNumber {} :421002206855
+14:18:18.740 INFO  driver.Page (    Page.java:129) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (950e6b08c2a097274b89c89381ffc45a)] -> id: txt_4] to be present in the DOM for duration of {} 120
+14:18:18.741 INFO  driver.Page (    Page.java:257) - Waiting for element to be visible for 120 seconds.
+14:18:18.779 INFO  driver.Page (    Page.java:260) - Element is visible on the page.
+14:18:18.794 INFO  driver.Page (    Page.java:131) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (950e6b08c2a097274b89c89381ffc45a)] -> id: txt_4] before sending the keys.
+14:18:18.880 INFO  driver.Page (    Page.java:133) - Sending the following keys {} 421002206855 to the element {} [[ChromeDriver: chrome on WINDOWS (950e6b08c2a097274b89c89381ffc45a)] -> id: txt_4]
+14:18:19.016 INFO  scp.RegistrationUGIPage (RegistrationUGIPage.java:298) - UtilityAccountNumber populated successfully.
+14:18:19.016 INFO  scp.RegistrationUGIPage (RegistrationUGIPage.java:395) - Populating SSN Number {} :421002206855@yopmail.com
+14:18:19.031 INFO  driver.Page (    Page.java:129) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (950e6b08c2a097274b89c89381ffc45a)] -> css selector: input[mappingname = 'EmailID']] to be present in the DOM for duration of {} 120
+14:18:19.031 INFO  driver.Page (    Page.java:257) - Waiting for element to be visible for 120 seconds.
+14:18:19.067 INFO  driver.Page (    Page.java:260) - Element is visible on the page.
+14:18:19.081 INFO  driver.Page (    Page.java:131) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (950e6b08c2a097274b89c89381ffc45a)] -> css selector: input[mappingname = 'EmailID']] before sending the keys.
+14:18:19.167 INFO  driver.Page (    Page.java:133) - Sending the following keys {} 421002206855@yopmail.com to the element {} [[ChromeDriver: chrome on WINDOWS (950e6b08c2a097274b89c89381ffc45a)] -> css selector: input[mappingname = 'EmailID']]
+14:18:19.291 INFO  scp.RegistrationUGIPage (RegistrationUGIPage.java:397) - Email Id populated successfully.
+14:18:19.292 INFO  scp.RegistrationUGIPage (RegistrationUGIPage.java:187) - Populating Postal Code {} :12393
+14:18:19.303 INFO  driver.Page (    Page.java:129) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (950e6b08c2a097274b89c89381ffc45a)] -> css selector: input[mappingname='PostalCode']] to be present in the DOM for duration of {} 120
+14:18:19.303 INFO  driver.Page (    Page.java:257) - Waiting for element to be visible for 120 seconds.
+14:18:19.329 INFO  driver.Page (    Page.java:260) - Element is visible on the page.
+14:18:19.339 INFO  driver.Page (    Page.java:131) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (950e6b08c2a097274b89c89381ffc45a)] -> css selector: input[mappingname='PostalCode']] before sending the keys.
+14:18:19.398 INFO  driver.Page (    Page.java:133) - Sending the following keys {} 12393 to the element {} [[ChromeDriver: chrome on WINDOWS (950e6b08c2a097274b89c89381ffc45a)] -> css selector: input[mappingname='PostalCode']]
+14:18:19.468 INFO  scp.RegistrationUGIPage (RegistrationUGIPage.java:189) - Postal Code populated successfully.
+14:18:19.486 INFO  driver.Page (    Page.java:569) - Preparing for element to click.
+14:18:19.508 INFO  driver.Page (    Page.java:576) - Element is clicked successfully.
+14:18:19.508 INFO  scp.RegistrationUGIPage (RegistrationUGIPage.java:641) - Next Button clicked successfully.
+14:18:19.509 INFO  scp.HomePage (HomePage.java:194) - Wait for Spinner Loading Image invisibility.
+14:18:19.509 INFO  driver.Page (    Page.java:271) - Waiting for element to be invisible for 120 seconds.
+14:18:26.733 INFO  driver.Page (    Page.java:274) - Element is invisible from the page.
+14:18:26.734 INFO  scp.RegistrationUGIPage (RegistrationUGIPage.java:414) - Checking the visibility of Mobile Number on the page.
+14:18:26.769 INFO  scp.RegistrationUGIPage (RegistrationUGIPage.java:415) - Mobile Number visibility status : false
+14:18:32.031 INFO  scp.RegistrationUGISteps (RegistrationUGISteps.java:95) - feedback popup not displayed
+14:18:32.032 INFO  scp.RegistrationUGIPage (RegistrationUGIPage.java:296) - Populating UtilityAccountNumber {} :421002206833
+14:18:32.050 INFO  driver.Page (    Page.java:129) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (950e6b08c2a097274b89c89381ffc45a)] -> id: txt_4] to be present in the DOM for duration of {} 120
+14:18:32.050 INFO  driver.Page (    Page.java:257) - Waiting for element to be visible for 120 seconds.
+14:18:32.084 INFO  driver.Page (    Page.java:260) - Element is visible on the page.
+14:18:32.097 INFO  driver.Page (    Page.java:131) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (950e6b08c2a097274b89c89381ffc45a)] -> id: txt_4] before sending the keys.
+14:18:32.175 INFO  driver.Page (    Page.java:133) - Sending the following keys {} 421002206833 to the element {} [[ChromeDriver: chrome on WINDOWS (950e6b08c2a097274b89c89381ffc45a)] -> id: txt_4]
+14:18:32.292 INFO  scp.RegistrationUGIPage (RegistrationUGIPage.java:298) - UtilityAccountNumber populated successfully.
+14:18:32.292 INFO  scp.RegistrationUGIPage (RegistrationUGIPage.java:395) - Populating SSN Number {} :421002206833@yopmail.com
+14:18:32.302 INFO  driver.Page (    Page.java:129) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (950e6b08c2a097274b89c89381ffc45a)] -> css selector: input[mappingname = 'EmailID']] to be present in the DOM for duration of {} 120
+14:18:32.302 INFO  driver.Page (    Page.java:257) - Waiting for element to be visible for 120 seconds.
+14:18:32.336 INFO  driver.Page (    Page.java:260) - Element is visible on the page.
+14:18:32.349 INFO  driver.Page (    Page.java:131) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (950e6b08c2a097274b89c89381ffc45a)] -> css selector: input[mappingname = 'EmailID']] before sending the keys.
+14:18:32.434 INFO  driver.Page (    Page.java:133) - Sending the following keys {} 421002206833@yopmail.com to the element {} [[ChromeDriver: chrome on WINDOWS (950e6b08c2a097274b89c89381ffc45a)] -> css selector: input[mappingname = 'EmailID']]
+14:18:32.567 INFO  scp.RegistrationUGIPage (RegistrationUGIPage.java:397) - Email Id populated successfully.
+14:18:32.568 INFO  scp.RegistrationUGIPage (RegistrationUGIPage.java:187) - Populating Postal Code {} :17619
+14:18:32.582 INFO  driver.Page (    Page.java:129) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (950e6b08c2a097274b89c89381ffc45a)] -> css selector: input[mappingname='PostalCode']] to be present in the DOM for duration of {} 120
+14:18:32.583 INFO  driver.Page (    Page.java:257) - Waiting for element to be visible for 120 seconds.
+14:18:32.614 INFO  driver.Page (    Page.java:260) - Element is visible on the page.
+14:18:32.630 INFO  driver.Page (    Page.java:131) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (950e6b08c2a097274b89c89381ffc45a)] -> css selector: input[mappingname='PostalCode']] before sending the keys.
+14:18:33.122 INFO  driver.Page (    Page.java:133) - Sending the following keys {} 17619 to the element {} [[ChromeDriver: chrome on WINDOWS (950e6b08c2a097274b89c89381ffc45a)] -> css selector: input[mappingname='PostalCode']]
+14:18:33.233 INFO  scp.RegistrationUGIPage (RegistrationUGIPage.java:189) - Postal Code populated successfully.
+14:18:33.262 INFO  driver.Page (    Page.java:569) - Preparing for element to click.
+14:18:33.298 INFO  driver.Page (    Page.java:576) - Element is clicked successfully.
+14:18:33.299 INFO  scp.RegistrationUGIPage (RegistrationUGIPage.java:641) - Next Button clicked successfully.
+14:18:33.299 INFO  scp.HomePage (HomePage.java:194) - Wait for Spinner Loading Image invisibility.
+14:18:33.300 INFO  driver.Page (    Page.java:271) - Waiting for element to be invisible for 120 seconds.
+14:18:40.487 INFO  driver.Page (    Page.java:274) - Element is invisible from the page.
+14:18:40.487 INFO  scp.RegistrationUGIPage (RegistrationUGIPage.java:414) - Checking the visibility of Mobile Number on the page.
+14:18:40.524 INFO  scp.RegistrationUGIPage (RegistrationUGIPage.java:415) - Mobile Number visibility status : false
+14:18:40.797 INFO  driver.DriverFactory (DriverFactory.java:125) - Clearing all the cookies.

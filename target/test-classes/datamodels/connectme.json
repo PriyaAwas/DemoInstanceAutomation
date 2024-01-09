@@ -1,0 +1,20 @@
+[
+  {
+    "topicName": "Outage",
+    "reason": "Outage Notification",
+    "subject": "Test Report Outage",
+    "messageBody": "test outage",
+    "customerName": "Ankur Rana",
+    "isPreLogin": false,
+    "fromEMail": "commerce.business@mailinator.com"
+  },
+  {
+    "topicName": "Programs",
+    "reason": "Programs",
+    "subject": "Test ConnectMeProgramsAPI Subject",
+    "messageBody": "test connectmeprogramapi comment",
+    "customerName": "Ankur Rana",
+    "isPreLogin": false,
+    "fromEMail": "ankur.rana@mailinator.com"
+  }
+]

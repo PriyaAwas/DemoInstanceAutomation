@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Test Execution">
+
+    <listeners>
+        <listener class-name="sew.ai.helpers.listeners.TestListeners"/>
+        <listener class-name="sew.ai.helpers.listeners.MethodInterceptor"/>
+        <listener class-name="sew.ai.helpers.listeners.AnnotationTransformer"/>
+        <listener class-name="sew.ai.helpers.testrail.TestRailListener"/>
+    </listeners>
+
+    <test name="E2E Test Suite On Web - Chrome">
+        <parameter name="platformType" value="web"/>
+        <parameter name="platformName" value="chrome"/>
+        <parameter name="portalType" value="scp"/>
+ 
+        <classes>
+     <!-- <class name="sew.ai.tests.scp.HomeTests"/>
+            <class name="sew.ai.tests.scp.LoginTests"/>
+            <class name="sew.ai.tests.scp.DashboardTests"/>
+            <class name="sew.ai.tests.csp.AdminLoginTests"/>
+            <class name="sew.ai.tests.csp.AdminHomeTests"/>
+            <class name="sew.ai.tests.csp.ForgotPasswordTests"/>
+            <class name="sew.ai.tests.csp.AdminNotificationTests"/>
+            <class name="sew.ai.tests.csp.WaysToSaveTests"/>
+            <class name="sew.ai.tests.csp.OutageTests"/>
+            <class name="sew.ai.tests.scp.ProblemSigningInTest"/>
+            <class name="sew.ai.tests.scp.ForgetUsernameTest"/>
+            <class name="sew.ai.tests.scp.PostLogConnectMeTests"/>
+            <class name="sew.ai.tests.scp.MyProfileTests"/>
+            <class name="sew.ai.tests.scp.RegistrationUGITests"/>
+            <class name="sew.test.scp.LoginSewTests"/> 
+            <class name="alectra.tests.scp.LoginAlectraTests"/>
+            <class name="alectra.tests.scp.ResBillPayHistoryTests"/> 
+            <class name="alectra.tests.scp.ResMyCurrentBillTests"/> 
+            <class name="alectra.tests.scp.ResUsageOverviewTests"/>
+            <class name="demo.tests.scp.loginTests"/> 
+            
+       		<class name="demo.tests.scp.guestUserTests"/>
+            <class name="demo.tests.scp.notificationPreferencesTests"/> 
+            <class name="demo.tests.scp.myAccountTests"/> -->
+            <class name="demo.tests.scp.paymentInfoTests"/> 
+            
+        </classes>
+    </test>
+
+    <!--    <test name="E2E Test Suite On Web - Firefox">-->
+    <!--        <parameter name="platformType" value="web"/>-->
+    <!--        <parameter name="platformName" value="firefox"/>-->
+    <!--        <classes>-->
+    <!--            <class name="tests.HomePageTest"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+
+    <!--<test name="E2E Test Suite On Android - Pixel">-->
+    <!--<parameter name="platformType" value="mobile"/>-->
+    <!--<parameter name="platformName" value="android"/>-->
+    <!--<parameter name="model" value="pixel"/>-->
+    <!--<classes>-->
+    <!--<class name="tests.HomePageTest"/>-->
+    <!--</classes>-->
+    <!--</test>-->
+
+    <!--<test name="E2E Test Suite On iOS - iPhone13Mini">
+        <parameter name="platformType" value="mobile"/>
+        <parameter name="platformName" value="ios"/>
+        <parameter name="model" value="iPhone13Mini"/>
+        <classes>
+            <class name="sew.ai.tests.scp.LoginTests"/>
+        </classes>
+    </test>-->
+</suite>

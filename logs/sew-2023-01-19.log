@@ -1,0 +1,610 @@
+12:07:51.964 INFO  driver.Page (    Page.java:177) - Element is visible on the page.
+12:07:51.980 INFO  driver.Page (    Page.java:112) - Text got from the locator {} [[ChromeDriver: chrome on MAC (b40624b19f351b6130e1065a6d28ff31)] -> link text: Forgot Username] is Forgot Username
+12:07:51.987 INFO  scp.LoginPage (LoginPage.java:274) - Forgot Username Label {}: Forgot Username
+12:07:51.993 INFO  driver.Page (    Page.java:109) - Wait for the element {} [[ChromeDriver: chrome on MAC (b40624b19f351b6130e1065a6d28ff31)] -> link text: Forgot Password] to be visible on the page for duration of {} 120
+12:07:51.994 INFO  driver.Page (    Page.java:174) - Waiting for element to be visible for 120 seconds.
+12:07:52.003 INFO  driver.Page (    Page.java:177) - Element is visible on the page.
+12:07:52.016 INFO  driver.Page (    Page.java:112) - Text got from the locator {} [[ChromeDriver: chrome on MAC (b40624b19f351b6130e1065a6d28ff31)] -> link text: Forgot Password] is Forgot Password
+12:07:52.023 INFO  scp.LoginPage (LoginPage.java:290) - Forgot Username Label {}: Forgot Password
+12:07:52.027 INFO  driver.Page (    Page.java:109) - Wait for the element {} [[ChromeDriver: chrome on MAC (b40624b19f351b6130e1065a6d28ff31)] -> css selector: .sign_in_text] to be visible on the page for duration of {} 120
+12:07:52.027 INFO  driver.Page (    Page.java:174) - Waiting for element to be visible for 120 seconds.
+12:07:52.034 INFO  driver.Page (    Page.java:177) - Element is visible on the page.
+12:07:52.044 INFO  driver.Page (    Page.java:112) - Text got from the locator {} [[ChromeDriver: chrome on MAC (b40624b19f351b6130e1065a6d28ff31)] -> css selector: .sign_in_text] is Problems Signing In
+12:07:52.050 INFO  scp.LoginPage (LoginPage.java:296) - Forgot Username Label {}: Problems Signing In
+12:07:52.054 INFO  driver.Page (    Page.java:117) - Wait for the element {} [[ChromeDriver: chrome on MAC (b40624b19f351b6130e1065a6d28ff31)] -> css selector: #btnResidentialType] to be visible on the page for duration of {} 120
+12:07:52.054 INFO  driver.Page (    Page.java:174) - Waiting for element to be visible for 120 seconds.
+12:07:52.061 INFO  driver.Page (    Page.java:177) - Element is visible on the page.
+12:07:52.072 INFO  driver.Page (    Page.java:120) - Text got from the locator {} [[ChromeDriver: chrome on MAC (b40624b19f351b6130e1065a6d28ff31)] -> css selector: #btnResidentialType] is Register
+12:07:52.080 INFO  scp.LoginPage (LoginPage.java:307) - Forgot Username Label {}: Register
+12:07:52.080 INFO  scp.LoginTests (LoginTests.java:36) - Test Case execution for - verifyLoginPageObjects - is Completed.
+12:07:55.427 INFO  driver.DriverFactory (DriverFactory.java:89) - Clearing all the cookies.
+12:07:56.393 INFO  driver.WebDriverFactory (WebDriverFactory.java:207) - Setting up the browser window to its max.
+12:07:56.825 INFO  driver.WebDriverFactory (WebDriverFactory.java:196) - Initializing the implicit wait timeout for {} 5
+12:07:56.827 INFO  driver.WebDriverFactory (WebDriverFactory.java:199) - Initializing the page load timeout.
+12:07:56.828 INFO  driver.DriverFactory (DriverFactory.java:89) - Clearing all the cookies.
+12:07:56.831 INFO  driver.DriverFactory (DriverFactory.java:56) - Open the url {} https://qa.smartcmobile.net/SCM_10.0_S-SCP/ using the selenium get() method.
+12:08:11.893 INFO  scp.LoginTests (LoginTests.java:43) - To verify the tests with the below test case id's: C77197
+12:08:11.899 INFO  scp.LoginPage (LoginPage.java:176) - Checking that the current page is login page.
+12:08:11.899 INFO  driver.Page (    Page.java:36) - Fetching the current URL.
+12:08:11.904 INFO  driver.Page (    Page.java:37) - The Current URL is: https://qa.smartcmobile.net/SCM_10.0_S-SCP/
+12:08:11.906 INFO  driver.Page (    Page.java:42) - Fetching the current title.
+12:08:11.909 INFO  driver.Page (    Page.java:43) - The Current Title is: SCM :Login
+12:08:11.911 INFO  scp.LoginPage (LoginPage.java:179) - The current page is login page {}: true
+12:08:11.911 INFO  scp.LoginPage (LoginPage.java:222) - Populating username {} :link@_-&+residential
+12:08:11.919 INFO  driver.Page (    Page.java:85) - Wait for element {} [[ChromeDriver: chrome on MAC (45551b3e272c5d9fd8fe334e96d103a5)] -> css selector: [id='txtLogin']] to be present in the DOM for duration of {} 120
+12:08:11.919 INFO  driver.Page (    Page.java:174) - Waiting for element to be visible for 120 seconds.
+12:08:11.931 INFO  driver.Page (    Page.java:177) - Element is visible on the page.
+12:08:11.935 INFO  driver.Page (    Page.java:87) - Clearing the element {} [[ChromeDriver: chrome on MAC (45551b3e272c5d9fd8fe334e96d103a5)] -> css selector: [id='txtLogin']] before sending the keys.
+12:08:11.955 INFO  driver.Page (    Page.java:89) - Sending the following keys {} link@_-&+residential to the element {} [[ChromeDriver: chrome on MAC (45551b3e272c5d9fd8fe334e96d103a5)] -> css selector: [id='txtLogin']]
+12:08:12.049 INFO  scp.LoginPage (LoginPage.java:224) - Username populated successfully.
+12:08:12.049 INFO  scp.LoginPage (LoginPage.java:240) - Populating password {} :Demo@#$%!_-&+3
+12:08:12.054 INFO  driver.Page (    Page.java:85) - Wait for element {} [[ChromeDriver: chrome on MAC (45551b3e272c5d9fd8fe334e96d103a5)] -> css selector: [id='txtpwd']] to be present in the DOM for duration of {} 120
+12:08:12.054 INFO  driver.Page (    Page.java:174) - Waiting for element to be visible for 120 seconds.
+12:08:12.063 INFO  driver.Page (    Page.java:177) - Element is visible on the page.
+12:08:12.066 INFO  driver.Page (    Page.java:87) - Clearing the element {} [[ChromeDriver: chrome on MAC (45551b3e272c5d9fd8fe334e96d103a5)] -> css selector: [id='txtpwd']] before sending the keys.
+12:08:12.082 INFO  driver.Page (    Page.java:89) - Sending the following keys {} Demo@#$%!_-&+3 to the element {} [[ChromeDriver: chrome on MAC (45551b3e272c5d9fd8fe334e96d103a5)] -> css selector: [id='txtpwd']]
+12:08:12.108 INFO  scp.LoginPage (LoginPage.java:242) - Password populated successfully.
+12:08:12.109 INFO  scp.LoginPage (LoginPage.java:267) - Clicking the sign in button.
+12:08:12.109 INFO  driver.Page (    Page.java:55) - Preparing for element to click.
+12:08:12.109 INFO  driver.Page (    Page.java:149) - Waiting for element to be clickable for 120 seconds.
+12:08:12.124 INFO  driver.Page (    Page.java:152) - Element is clickable now.
+12:08:12.143 INFO  driver.Page (    Page.java:58) - Element is clicked successfully.
+12:08:12.144 INFO  scp.LoginPage (LoginPage.java:269) - Sign in button clicked successfully.
+12:08:12.144 INFO  scp.HomePage (HomePage.java:31) - Wait for page loader visibility.
+12:08:12.144 INFO  driver.Page (    Page.java:174) - Waiting for element to be visible for 120 seconds.
+12:08:13.719 INFO  driver.Page (    Page.java:177) - Element is visible on the page.
+12:08:13.720 INFO  scp.HomePage (HomePage.java:33) - Wait for page loader invisibility.
+12:08:13.720 INFO  driver.Page (    Page.java:188) - Waiting for element to be invisible for 120 seconds.
+12:08:27.581 INFO  driver.Page (    Page.java:191) - Element is invisible from the page.
+12:08:27.586 INFO  scp.DashboardPage (DashboardPage.java:26) - Checking that the current page is dashboard page.
+12:08:27.586 INFO  driver.Page (    Page.java:36) - Fetching the current URL.
+12:08:27.588 INFO  driver.Page (    Page.java:37) - The Current URL is: https://qa.smartcmobile.net/SCM_10.0_S-SCP/Dashboard.aspx
+12:08:27.590 INFO  driver.Page (    Page.java:42) - Fetching the current title.
+12:08:27.592 INFO  driver.Page (    Page.java:43) - The Current Title is: Dashboard
+12:08:27.594 INFO  scp.DashboardPage (DashboardPage.java:29) - The current page is dashboard page {}: true
+12:08:27.601 INFO  driver.Page (    Page.java:109) - Wait for the element {} [[ChromeDriver: chrome on MAC (45551b3e272c5d9fd8fe334e96d103a5)] -> css selector: #HeaderMenu_lblCustName1] to be visible on the page for duration of {} 120
+12:08:27.601 INFO  driver.Page (    Page.java:174) - Waiting for element to be visible for 120 seconds.
+12:08:27.615 INFO  driver.Page (    Page.java:177) - Element is visible on the page.
+12:08:27.627 INFO  driver.Page (    Page.java:112) - Text got from the locator {} [[ChromeDriver: chrome on MAC (45551b3e272c5d9fd8fe334e96d103a5)] -> css selector: #HeaderMenu_lblCustName1] is Alex
+12:08:27.639 INFO  driver.Page (    Page.java:109) - Wait for the element {} [[ChromeDriver: chrome on MAC (45551b3e272c5d9fd8fe334e96d103a5)] -> css selector: #lbllistbox] to be visible on the page for duration of {} 120
+12:08:27.639 INFO  driver.Page (    Page.java:174) - Waiting for element to be visible for 120 seconds.
+12:08:27.646 INFO  driver.Page (    Page.java:177) - Element is visible on the page.
+12:08:27.657 INFO  driver.Page (    Page.java:112) - Text got from the locator {} [[ChromeDriver: chrome on MAC (45551b3e272c5d9fd8fe334e96d103a5)] -> css selector: #lbllistbox] is Select Account
+12:08:27.663 INFO  scp.LoginTests (LoginTests.java:62) - Test Case execution for - verifyValidLogin - is Completed.
+12:08:29.480 INFO  driver.DriverFactory (DriverFactory.java:89) - Clearing all the cookies.
+12:08:30.349 INFO  driver.WebDriverFactory (WebDriverFactory.java:207) - Setting up the browser window to its max.
+12:08:30.795 INFO  driver.WebDriverFactory (WebDriverFactory.java:196) - Initializing the implicit wait timeout for {} 5
+12:08:30.802 INFO  driver.WebDriverFactory (WebDriverFactory.java:199) - Initializing the page load timeout.
+12:08:30.805 INFO  driver.DriverFactory (DriverFactory.java:89) - Clearing all the cookies.
+12:08:30.813 INFO  driver.DriverFactory (DriverFactory.java:56) - Open the url {} https://qa.smartcmobile.net/SCM_10.0_S-SCP/ using the selenium get() method.
+12:08:46.625 INFO  scp.LoginTests (LoginTests.java:69) - To verify the tests with the below test case id's: C75087, C75088
+12:08:46.630 INFO  scp.LoginPage (LoginPage.java:267) - Clicking the sign in button.
+12:08:46.632 INFO  driver.Page (    Page.java:55) - Preparing for element to click.
+12:08:46.632 INFO  driver.Page (    Page.java:149) - Waiting for element to be clickable for 120 seconds.
+12:08:46.662 INFO  driver.Page (    Page.java:152) - Element is clickable now.
+12:08:46.684 INFO  driver.Page (    Page.java:58) - Element is clicked successfully.
+12:08:46.684 INFO  scp.LoginPage (LoginPage.java:269) - Sign in button clicked successfully.
+12:08:46.689 INFO  driver.Page (    Page.java:109) - Wait for the element {} [[ChromeDriver: chrome on MAC (cfe314c9592b3233dc24c0221cd7e1c0)] -> css selector: #toast-container .toast-message] to be visible on the page for duration of {} 120
+12:08:46.689 INFO  driver.Page (    Page.java:174) - Waiting for element to be visible for 120 seconds.
+12:08:46.697 INFO  driver.Page (    Page.java:177) - Element is visible on the page.
+12:08:46.708 INFO  driver.Page (    Page.java:112) - Text got from the locator {} [[ChromeDriver: chrome on MAC (cfe314c9592b3233dc24c0221cd7e1c0)] -> css selector: #toast-container .toast-message] is Please enter Username and Password.
+12:08:46.713 INFO  scp.HomePage (HomePage.java:39) - Label on toast message {}: Please enter Username and Password.
+12:08:46.713 INFO  driver.Page (    Page.java:55) - Preparing for element to click.
+12:08:46.713 INFO  driver.Page (    Page.java:149) - Waiting for element to be clickable for 120 seconds.
+12:08:46.728 INFO  driver.Page (    Page.java:152) - Element is clickable now.
+12:08:46.743 INFO  driver.Page (    Page.java:58) - Element is clicked successfully.
+12:08:46.743 INFO  scp.HomePage (HomePage.java:51) - Toast close button clicked {}
+12:08:46.743 INFO  scp.LoginPage (LoginPage.java:222) - Populating username {} :link@_-&+residential
+12:08:46.747 INFO  driver.Page (    Page.java:85) - Wait for element {} [[ChromeDriver: chrome on MAC (cfe314c9592b3233dc24c0221cd7e1c0)] -> css selector: [id='txtLogin']] to be present in the DOM for duration of {} 120
+12:08:46.747 INFO  driver.Page (    Page.java:174) - Waiting for element to be visible for 120 seconds.
+12:08:46.755 INFO  driver.Page (    Page.java:177) - Element is visible on the page.
+12:08:46.758 INFO  driver.Page (    Page.java:87) - Clearing the element {} [[ChromeDriver: chrome on MAC (cfe314c9592b3233dc24c0221cd7e1c0)] -> css selector: [id='txtLogin']] before sending the keys.
+12:08:46.774 INFO  driver.Page (    Page.java:89) - Sending the following keys {} link@_-&+residential to the element {} [[ChromeDriver: chrome on MAC (cfe314c9592b3233dc24c0221cd7e1c0)] -> css selector: [id='txtLogin']]
+12:08:46.857 INFO  scp.LoginPage (LoginPage.java:224) - Username populated successfully.
+12:08:46.862 INFO  driver.Page (    Page.java:94) - Wait for element {} [[ChromeDriver: chrome on MAC (cfe314c9592b3233dc24c0221cd7e1c0)] -> css selector: [id='txtpwd']] to be present in the DOM for duration of {} 120
+12:08:46.862 INFO  driver.Page (    Page.java:174) - Waiting for element to be visible for 120 seconds.
+12:08:46.872 INFO  driver.Page (    Page.java:177) - Element is visible on the page.
+12:08:46.874 INFO  driver.Page (    Page.java:96) - Clearing the element {} [[ChromeDriver: chrome on MAC (cfe314c9592b3233dc24c0221cd7e1c0)] -> css selector: [id='txtpwd']]
+12:08:46.890 INFO  scp.LoginPage (LoginPage.java:247) - Password field cleared {}
+12:08:46.890 INFO  scp.LoginPage (LoginPage.java:267) - Clicking the sign in button.
+12:08:46.890 INFO  driver.Page (    Page.java:55) - Preparing for element to click.
+12:08:46.890 INFO  driver.Page (    Page.java:149) - Waiting for element to be clickable for 120 seconds.
+12:08:46.903 INFO  driver.Page (    Page.java:152) - Element is clickable now.
+12:08:46.922 INFO  driver.Page (    Page.java:58) - Element is clicked successfully.
+12:08:46.922 INFO  scp.LoginPage (LoginPage.java:269) - Sign in button clicked successfully.
+12:08:46.927 INFO  driver.Page (    Page.java:109) - Wait for the element {} [[ChromeDriver: chrome on MAC (cfe314c9592b3233dc24c0221cd7e1c0)] -> css selector: span[class='error_messagecommon']] to be visible on the page for duration of {} 120
+12:08:46.927 INFO  driver.Page (    Page.java:174) - Waiting for element to be visible for 120 seconds.
+12:08:46.936 INFO  driver.Page (    Page.java:177) - Element is visible on the page.
+12:08:46.946 INFO  driver.Page (    Page.java:112) - Text got from the locator {} [[ChromeDriver: chrome on MAC (cfe314c9592b3233dc24c0221cd7e1c0)] -> css selector: span[class='error_messagecommon']] is Please enter Password.
+12:08:46.953 INFO  scp.HomePage (HomePage.java:45) - Common field validation message is {}: Please enter Password.
+12:08:46.956 INFO  driver.Page (    Page.java:94) - Wait for element {} [[ChromeDriver: chrome on MAC (cfe314c9592b3233dc24c0221cd7e1c0)] -> css selector: [id='txtLogin']] to be present in the DOM for duration of {} 120
+12:08:46.956 INFO  driver.Page (    Page.java:174) - Waiting for element to be visible for 120 seconds.
+12:08:46.963 INFO  driver.Page (    Page.java:177) - Element is visible on the page.
+12:08:46.967 INFO  driver.Page (    Page.java:96) - Clearing the element {} [[ChromeDriver: chrome on MAC (cfe314c9592b3233dc24c0221cd7e1c0)] -> css selector: [id='txtLogin']]
+12:08:46.981 INFO  scp.LoginPage (LoginPage.java:252) - Username field cleared {}
+12:08:46.981 INFO  scp.LoginPage (LoginPage.java:240) - Populating password {} :Demo@#$%!_-&+3
+12:08:46.986 INFO  driver.Page (    Page.java:85) - Wait for element {} [[ChromeDriver: chrome on MAC (cfe314c9592b3233dc24c0221cd7e1c0)] -> css selector: [id='txtpwd']] to be present in the DOM for duration of {} 120
+12:08:46.986 INFO  driver.Page (    Page.java:174) - Waiting for element to be visible for 120 seconds.
+12:08:46.992 INFO  driver.Page (    Page.java:177) - Element is visible on the page.
+12:08:46.995 INFO  driver.Page (    Page.java:87) - Clearing the element {} [[ChromeDriver: chrome on MAC (cfe314c9592b3233dc24c0221cd7e1c0)] -> css selector: [id='txtpwd']] before sending the keys.
+12:08:47.008 INFO  driver.Page (    Page.java:89) - Sending the following keys {} Demo@#$%!_-&+3 to the element {} [[ChromeDriver: chrome on MAC (cfe314c9592b3233dc24c0221cd7e1c0)] -> css selector: [id='txtpwd']]
+12:08:47.030 INFO  scp.LoginPage (LoginPage.java:242) - Password populated successfully.
+12:08:47.030 INFO  scp.LoginPage (LoginPage.java:267) - Clicking the sign in button.
+12:08:47.030 INFO  driver.Page (    Page.java:55) - Preparing for element to click.
+12:08:47.030 INFO  driver.Page (    Page.java:149) - Waiting for element to be clickable for 120 seconds.
+12:08:47.042 INFO  driver.Page (    Page.java:152) - Element is clickable now.
+12:08:47.055 INFO  driver.Page (    Page.java:58) - Element is clicked successfully.
+12:08:47.055 INFO  scp.LoginPage (LoginPage.java:269) - Sign in button clicked successfully.
+12:08:47.058 INFO  driver.Page (    Page.java:109) - Wait for the element {} [[ChromeDriver: chrome on MAC (cfe314c9592b3233dc24c0221cd7e1c0)] -> css selector: span[class='error_messagecommon']] to be visible on the page for duration of {} 120
+12:08:47.058 INFO  driver.Page (    Page.java:174) - Waiting for element to be visible for 120 seconds.
+12:08:47.066 INFO  driver.Page (    Page.java:177) - Element is visible on the page.
+12:08:47.078 INFO  driver.Page (    Page.java:112) - Text got from the locator {} [[ChromeDriver: chrome on MAC (cfe314c9592b3233dc24c0221cd7e1c0)] -> css selector: span[class='error_messagecommon']] is Please enter Username.
+12:08:47.085 INFO  scp.HomePage (HomePage.java:45) - Common field validation message is {}: Please enter Username.
+12:08:47.085 INFO  scp.LoginTests (LoginTests.java:96) - Test Case execution for - verifyValidLogin - is Completed.
+12:08:49.485 INFO  driver.DriverFactory (DriverFactory.java:89) - Clearing all the cookies.
+18:07:24.273 INFO  runner.TestRunner (TestRunner.java:32) - Initializing application properties config file.
+18:07:24.275 INFO  runner.TestRunner (TestRunner.java:35) - Initializing connection to the base database.
+18:07:24.409 WARN  config.DatabaseConfiguration (DatabaseConfiguration.java:84) - QA env being used by default. No env property set. This can be set in the sentinel.yml config file with a '{}=' property or on the command line with the switch '-D{}='.
+18:07:26.085 INFO  runner.TestRunner (TestRunner.java:38) - Initializing resource path config file.
+18:07:26.086 INFO  runner.TestRunner (TestRunner.java:41) - Initializing usage months config from CSP.
+18:07:26.927 INFO  runner.TestRunner (TestRunner.java:44) - Initializing date config from CSP.
+18:07:27.711 INFO  runner.TestRunner (TestRunner.java:47) - Initializing user model config.
+18:07:27.725 WARN  config.Configuration (Configuration.java:231) - QA env being used by default. No env property set. This can be set in the sew.app.yml config file with a '{}=' property or on the command line with the switch '-D{}='.
+18:07:28.575 INFO  runner.TestRunner (TestRunner.java:50) - Initializing auth token config.
+18:07:32.631 INFO  driver.WebDriverFactory (WebDriverFactory.java:207) - Setting up the browser window to its max.
+18:07:33.094 INFO  driver.WebDriverFactory (WebDriverFactory.java:196) - Initializing the implicit wait timeout for {} 5
+18:07:33.098 INFO  driver.WebDriverFactory (WebDriverFactory.java:199) - Initializing the page load timeout.
+18:07:33.100 INFO  driver.DriverFactory (DriverFactory.java:89) - Clearing all the cookies.
+18:07:33.106 INFO  driver.DriverFactory (DriverFactory.java:56) - Open the url {} https://qa.smartcmobile.net/SCM_10.0_S-SCP/ using the selenium get() method.
+18:07:46.401 INFO  scp.LoginTests (LoginTests.java:111) - To verify the tests with the below test case id's: C75087, C75088
+18:07:46.423 INFO  scp.LoginPage (LoginPage.java:176) - Checking that the current page is login page.
+18:07:46.423 INFO  driver.Page (    Page.java:36) - Fetching the current URL.
+18:07:46.428 INFO  driver.Page (    Page.java:37) - The Current URL is: https://qa.smartcmobile.net/SCM_10.0_S-SCP/
+18:07:46.430 INFO  driver.Page (    Page.java:42) - Fetching the current title.
+18:07:46.433 INFO  driver.Page (    Page.java:43) - The Current Title is: SCM :Login
+18:07:46.434 INFO  scp.LoginPage (LoginPage.java:179) - The current page is login page {}: true
+18:07:46.436 INFO  scp.LoginPage (LoginPage.java:222) - Populating username {} :link@_-&+residential
+18:07:46.443 INFO  driver.Page (    Page.java:101) - Wait for element {} [[ChromeDriver: chrome on MAC (dae24118e92416c7828ac6c7d2d7e568)] -> css selector: [id='txtLogin']] to be present in the DOM for duration of {} 120
+18:07:46.443 INFO  driver.Page (    Page.java:190) - Waiting for element to be visible for 120 seconds.
+18:07:46.459 INFO  driver.Page (    Page.java:193) - Element is visible on the page.
+18:07:46.462 INFO  driver.Page (    Page.java:103) - Clearing the element {} [[ChromeDriver: chrome on MAC (dae24118e92416c7828ac6c7d2d7e568)] -> css selector: [id='txtLogin']] before sending the keys.
+18:07:46.482 INFO  driver.Page (    Page.java:105) - Sending the following keys {} link@_-&+residential to the element {} [[ChromeDriver: chrome on MAC (dae24118e92416c7828ac6c7d2d7e568)] -> css selector: [id='txtLogin']]
+18:07:46.576 INFO  scp.LoginPage (LoginPage.java:224) - Username populated successfully.
+18:07:46.576 INFO  scp.LoginPage (LoginPage.java:250) - Populating password {} :Demo@#$%!_-&+3
+18:07:46.581 INFO  driver.Page (    Page.java:101) - Wait for element {} [[ChromeDriver: chrome on MAC (dae24118e92416c7828ac6c7d2d7e568)] -> css selector: [id='txtpwd']] to be present in the DOM for duration of {} 120
+18:07:46.581 INFO  driver.Page (    Page.java:190) - Waiting for element to be visible for 120 seconds.
+18:07:46.591 INFO  driver.Page (    Page.java:193) - Element is visible on the page.
+18:07:46.594 INFO  driver.Page (    Page.java:103) - Clearing the element {} [[ChromeDriver: chrome on MAC (dae24118e92416c7828ac6c7d2d7e568)] -> css selector: [id='txtpwd']] before sending the keys.
+18:07:46.611 INFO  driver.Page (    Page.java:105) - Sending the following keys {} Demo@#$%!_-&+3 to the element {} [[ChromeDriver: chrome on MAC (dae24118e92416c7828ac6c7d2d7e568)] -> css selector: [id='txtpwd']]
+18:07:46.635 INFO  scp.LoginPage (LoginPage.java:252) - Password populated successfully.
+18:07:46.636 INFO  driver.Page (    Page.java:62) - Preparing for element to click.
+18:07:46.636 INFO  driver.Page (    Page.java:165) - Waiting for element to be clickable for 120 seconds.
+18:09:50.520 INFO  driver.DriverFactory (DriverFactory.java:89) - Clearing all the cookies.
+18:33:51.446 INFO  runner.TestRunner (TestRunner.java:32) - Initializing application properties config file.
+18:33:51.449 INFO  runner.TestRunner (TestRunner.java:35) - Initializing connection to the base database.
+18:33:51.615 WARN  config.DatabaseConfiguration (DatabaseConfiguration.java:84) - QA env being used by default. No env property set. This can be set in the sentinel.yml config file with a '{}=' property or on the command line with the switch '-D{}='.
+18:33:53.270 INFO  runner.TestRunner (TestRunner.java:38) - Initializing resource path config file.
+18:33:53.271 INFO  runner.TestRunner (TestRunner.java:41) - Initializing usage months config from CSP.
+18:33:54.113 INFO  runner.TestRunner (TestRunner.java:44) - Initializing date config from CSP.
+18:33:54.894 INFO  runner.TestRunner (TestRunner.java:47) - Initializing user model config.
+18:33:54.915 WARN  config.Configuration (Configuration.java:231) - QA env being used by default. No env property set. This can be set in the sew.app.yml config file with a '{}=' property or on the command line with the switch '-D{}='.
+18:33:55.697 INFO  runner.TestRunner (TestRunner.java:50) - Initializing auth token config.
+18:33:57.470 INFO  driver.WebDriverFactory (WebDriverFactory.java:207) - Setting up the browser window to its max.
+18:33:57.934 INFO  driver.WebDriverFactory (WebDriverFactory.java:196) - Initializing the implicit wait timeout for {} 5
+18:33:57.937 INFO  driver.WebDriverFactory (WebDriverFactory.java:199) - Initializing the page load timeout.
+18:33:57.939 INFO  driver.DriverFactory (DriverFactory.java:89) - Clearing all the cookies.
+18:33:57.943 INFO  driver.DriverFactory (DriverFactory.java:56) - Open the url {} https://qa.smartcmobile.net/SCM_10.0_S-SCP/ using the selenium get() method.
+18:34:10.066 INFO  scp.LoginTests (LoginTests.java:111) - To verify the tests with the below test case id's: C75087, C75088
+18:34:10.095 INFO  scp.LoginPage (LoginPage.java:176) - Checking that the current page is login page.
+18:34:10.096 INFO  driver.Page (    Page.java:36) - Fetching the current URL.
+18:34:10.100 INFO  driver.Page (    Page.java:37) - The Current URL is: https://qa.smartcmobile.net/SCM_10.0_S-SCP/
+18:34:10.102 INFO  driver.Page (    Page.java:42) - Fetching the current title.
+18:34:10.105 INFO  driver.Page (    Page.java:43) - The Current Title is: SCM :Login
+18:34:10.107 INFO  scp.LoginPage (LoginPage.java:179) - The current page is login page {}: true
+18:34:10.109 INFO  scp.LoginPage (LoginPage.java:222) - Populating username {} :link@_-&+residential
+18:34:10.118 INFO  driver.Page (    Page.java:101) - Wait for element {} [[ChromeDriver: chrome on MAC (ac79c928f6683288dba6edaf7e2bb43f)] -> css selector: [id='txtLogin']] to be present in the DOM for duration of {} 120
+18:34:10.119 INFO  driver.Page (    Page.java:190) - Waiting for element to be visible for 120 seconds.
+18:34:10.135 INFO  driver.Page (    Page.java:193) - Element is visible on the page.
+18:34:10.138 INFO  driver.Page (    Page.java:103) - Clearing the element {} [[ChromeDriver: chrome on MAC (ac79c928f6683288dba6edaf7e2bb43f)] -> css selector: [id='txtLogin']] before sending the keys.
+18:34:10.158 INFO  driver.Page (    Page.java:105) - Sending the following keys {} link@_-&+residential to the element {} [[ChromeDriver: chrome on MAC (ac79c928f6683288dba6edaf7e2bb43f)] -> css selector: [id='txtLogin']]
+18:34:10.248 INFO  scp.LoginPage (LoginPage.java:224) - Username populated successfully.
+18:34:10.248 INFO  scp.LoginPage (LoginPage.java:250) - Populating password {} :Demo@#$%!_-&+3
+18:34:10.255 INFO  driver.Page (    Page.java:101) - Wait for element {} [[ChromeDriver: chrome on MAC (ac79c928f6683288dba6edaf7e2bb43f)] -> css selector: [id='txtpwd']] to be present in the DOM for duration of {} 120
+18:34:10.255 INFO  driver.Page (    Page.java:190) - Waiting for element to be visible for 120 seconds.
+18:34:10.267 INFO  driver.Page (    Page.java:193) - Element is visible on the page.
+18:34:10.270 INFO  driver.Page (    Page.java:103) - Clearing the element {} [[ChromeDriver: chrome on MAC (ac79c928f6683288dba6edaf7e2bb43f)] -> css selector: [id='txtpwd']] before sending the keys.
+18:34:10.289 INFO  driver.Page (    Page.java:105) - Sending the following keys {} Demo@#$%!_-&+3 to the element {} [[ChromeDriver: chrome on MAC (ac79c928f6683288dba6edaf7e2bb43f)] -> css selector: [id='txtpwd']]
+18:34:10.316 INFO  scp.LoginPage (LoginPage.java:252) - Password populated successfully.
+18:34:10.316 INFO  driver.Page (    Page.java:62) - Preparing for element to click.
+18:34:22.636 INFO  driver.Page (    Page.java:190) - Waiting for element to be visible for 120 seconds.
+18:56:28.764 INFO  runner.TestRunner (TestRunner.java:32) - Initializing application properties config file.
+18:56:28.767 INFO  runner.TestRunner (TestRunner.java:35) - Initializing connection to the base database.
+18:56:28.865 WARN  config.DatabaseConfiguration (DatabaseConfiguration.java:84) - QA env being used by default. No env property set. This can be set in the sentinel.yml config file with a '{}=' property or on the command line with the switch '-D{}='.
+18:56:31.003 INFO  runner.TestRunner (TestRunner.java:38) - Initializing resource path config file.
+18:56:31.004 INFO  runner.TestRunner (TestRunner.java:41) - Initializing usage months config from CSP.
+18:56:31.942 INFO  runner.TestRunner (TestRunner.java:44) - Initializing date config from CSP.
+18:56:32.960 INFO  runner.TestRunner (TestRunner.java:47) - Initializing user model config.
+18:56:32.975 WARN  config.Configuration (Configuration.java:231) - QA env being used by default. No env property set. This can be set in the sew.app.yml config file with a '{}=' property or on the command line with the switch '-D{}='.
+18:56:33.757 INFO  runner.TestRunner (TestRunner.java:50) - Initializing auth token config.
+18:56:35.542 INFO  driver.WebDriverFactory (WebDriverFactory.java:207) - Setting up the browser window to its max.
+18:56:36.038 INFO  driver.WebDriverFactory (WebDriverFactory.java:196) - Initializing the implicit wait timeout for {} 5
+18:56:36.064 INFO  driver.WebDriverFactory (WebDriverFactory.java:199) - Initializing the page load timeout.
+18:56:36.069 INFO  driver.DriverFactory (DriverFactory.java:89) - Clearing all the cookies.
+18:56:36.092 INFO  driver.DriverFactory (DriverFactory.java:56) - Open the url {} https://qa.smartcmobile.net/SCM_10.0_S-SCP/ using the selenium get() method.
+18:57:08.504 INFO  scp.LoginTests (LoginTests.java:111) - To verify the tests with the below test case id's: C75087, C75088
+18:57:08.546 INFO  scp.LoginPage (LoginPage.java:176) - Checking that the current page is login page.
+18:57:08.546 INFO  driver.Page (    Page.java:36) - Fetching the current URL.
+18:57:08.550 INFO  driver.Page (    Page.java:37) - The Current URL is: https://qa.smartcmobile.net/SCM_10.0_S-SCP/
+18:57:08.552 INFO  driver.Page (    Page.java:42) - Fetching the current title.
+18:57:08.554 INFO  driver.Page (    Page.java:43) - The Current Title is: SCM :Login
+18:57:08.556 INFO  scp.LoginPage (LoginPage.java:179) - The current page is login page {}: true
+18:57:08.558 INFO  scp.LoginPage (LoginPage.java:222) - Populating username {} :link@_-&+residential
+18:57:08.565 INFO  driver.Page (    Page.java:101) - Wait for element {} [[ChromeDriver: chrome on MAC (11c76233aaf3b6d5f436690c5d3b4bdf)] -> css selector: [id='txtLogin']] to be present in the DOM for duration of {} 120
+18:57:08.565 INFO  driver.Page (    Page.java:190) - Waiting for element to be visible for 120 seconds.
+18:57:08.582 INFO  driver.Page (    Page.java:193) - Element is visible on the page.
+18:57:08.585 INFO  driver.Page (    Page.java:103) - Clearing the element {} [[ChromeDriver: chrome on MAC (11c76233aaf3b6d5f436690c5d3b4bdf)] -> css selector: [id='txtLogin']] before sending the keys.
+18:57:08.606 INFO  driver.Page (    Page.java:105) - Sending the following keys {} link@_-&+residential to the element {} [[ChromeDriver: chrome on MAC (11c76233aaf3b6d5f436690c5d3b4bdf)] -> css selector: [id='txtLogin']]
+18:57:08.707 INFO  scp.LoginPage (LoginPage.java:224) - Username populated successfully.
+18:57:08.707 INFO  scp.LoginPage (LoginPage.java:250) - Populating password {} :Demo@#$%!_-&+3
+18:57:08.713 INFO  driver.Page (    Page.java:101) - Wait for element {} [[ChromeDriver: chrome on MAC (11c76233aaf3b6d5f436690c5d3b4bdf)] -> css selector: [id='txtpwd']] to be present in the DOM for duration of {} 120
+18:57:08.713 INFO  driver.Page (    Page.java:190) - Waiting for element to be visible for 120 seconds.
+18:57:08.723 INFO  driver.Page (    Page.java:193) - Element is visible on the page.
+18:57:08.727 INFO  driver.Page (    Page.java:103) - Clearing the element {} [[ChromeDriver: chrome on MAC (11c76233aaf3b6d5f436690c5d3b4bdf)] -> css selector: [id='txtpwd']] before sending the keys.
+18:57:08.746 INFO  driver.Page (    Page.java:105) - Sending the following keys {} Demo@#$%!_-&+3 to the element {} [[ChromeDriver: chrome on MAC (11c76233aaf3b6d5f436690c5d3b4bdf)] -> css selector: [id='txtpwd']]
+18:57:08.771 INFO  scp.LoginPage (LoginPage.java:252) - Password populated successfully.
+18:57:08.772 INFO  driver.Page (    Page.java:62) - Preparing for element to click.
+18:58:09.109 INFO  driver.Page (    Page.java:190) - Waiting for element to be visible for 120 seconds.
+19:00:13.811 INFO  driver.DriverFactory (DriverFactory.java:89) - Clearing all the cookies.
+19:02:28.318 INFO  runner.TestRunner (TestRunner.java:32) - Initializing application properties config file.
+19:02:28.320 INFO  runner.TestRunner (TestRunner.java:35) - Initializing connection to the base database.
+19:02:28.412 WARN  config.DatabaseConfiguration (DatabaseConfiguration.java:84) - QA env being used by default. No env property set. This can be set in the sentinel.yml config file with a '{}=' property or on the command line with the switch '-D{}='.
+19:02:30.725 INFO  runner.TestRunner (TestRunner.java:38) - Initializing resource path config file.
+19:02:30.726 INFO  runner.TestRunner (TestRunner.java:41) - Initializing usage months config from CSP.
+19:02:31.783 INFO  runner.TestRunner (TestRunner.java:44) - Initializing date config from CSP.
+19:02:32.591 INFO  runner.TestRunner (TestRunner.java:47) - Initializing user model config.
+19:02:32.604 WARN  config.Configuration (Configuration.java:231) - QA env being used by default. No env property set. This can be set in the sew.app.yml config file with a '{}=' property or on the command line with the switch '-D{}='.
+19:02:33.393 INFO  runner.TestRunner (TestRunner.java:50) - Initializing auth token config.
+19:02:35.162 INFO  driver.WebDriverFactory (WebDriverFactory.java:207) - Setting up the browser window to its max.
+19:02:35.640 INFO  driver.WebDriverFactory (WebDriverFactory.java:196) - Initializing the implicit wait timeout for {} 5
+19:02:35.652 INFO  driver.WebDriverFactory (WebDriverFactory.java:199) - Initializing the page load timeout.
+19:02:35.657 INFO  driver.DriverFactory (DriverFactory.java:89) - Clearing all the cookies.
+19:02:35.671 INFO  driver.DriverFactory (DriverFactory.java:56) - Open the url {} https://qa.smartcmobile.net/SCM_10.0_S-SCP/ using the selenium get() method.
+19:03:08.309 INFO  scp.LoginTests (LoginTests.java:111) - To verify the tests with the below test case id's: C75087, C75088
+19:03:08.345 INFO  scp.LoginPage (LoginPage.java:176) - Checking that the current page is login page.
+19:03:08.345 INFO  driver.Page (    Page.java:36) - Fetching the current URL.
+19:03:08.350 INFO  driver.Page (    Page.java:37) - The Current URL is: https://qa.smartcmobile.net/SCM_10.0_S-SCP/
+19:03:08.352 INFO  driver.Page (    Page.java:42) - Fetching the current title.
+19:03:08.355 INFO  driver.Page (    Page.java:43) - The Current Title is: SCM :Login
+19:03:08.357 INFO  scp.LoginPage (LoginPage.java:179) - The current page is login page {}: true
+19:03:08.358 INFO  scp.LoginPage (LoginPage.java:222) - Populating username {} :link@_-&+residential
+19:03:08.364 INFO  driver.Page (    Page.java:99) - Wait for element {} [[ChromeDriver: chrome on MAC (654fba12fec81437325430de7f17cc20)] -> css selector: [id='txtLogin']] to be present in the DOM for duration of {} 120
+19:03:08.364 INFO  driver.Page (    Page.java:188) - Waiting for element to be visible for 120 seconds.
+19:03:08.380 INFO  driver.Page (    Page.java:191) - Element is visible on the page.
+19:03:08.383 INFO  driver.Page (    Page.java:101) - Clearing the element {} [[ChromeDriver: chrome on MAC (654fba12fec81437325430de7f17cc20)] -> css selector: [id='txtLogin']] before sending the keys.
+19:03:08.404 INFO  driver.Page (    Page.java:103) - Sending the following keys {} link@_-&+residential to the element {} [[ChromeDriver: chrome on MAC (654fba12fec81437325430de7f17cc20)] -> css selector: [id='txtLogin']]
+19:03:08.489 INFO  scp.LoginPage (LoginPage.java:224) - Username populated successfully.
+19:03:08.489 INFO  scp.LoginPage (LoginPage.java:250) - Populating password {} :Demo@#$%!_-&+3
+19:03:08.495 INFO  driver.Page (    Page.java:99) - Wait for element {} [[ChromeDriver: chrome on MAC (654fba12fec81437325430de7f17cc20)] -> css selector: [id='txtpwd']] to be present in the DOM for duration of {} 120
+19:03:08.495 INFO  driver.Page (    Page.java:188) - Waiting for element to be visible for 120 seconds.
+19:03:08.505 INFO  driver.Page (    Page.java:191) - Element is visible on the page.
+19:03:08.509 INFO  driver.Page (    Page.java:101) - Clearing the element {} [[ChromeDriver: chrome on MAC (654fba12fec81437325430de7f17cc20)] -> css selector: [id='txtpwd']] before sending the keys.
+19:03:08.526 INFO  driver.Page (    Page.java:103) - Sending the following keys {} Demo@#$%!_-&+3 to the element {} [[ChromeDriver: chrome on MAC (654fba12fec81437325430de7f17cc20)] -> css selector: [id='txtpwd']]
+19:03:08.551 INFO  scp.LoginPage (LoginPage.java:252) - Password populated successfully.
+19:03:08.551 INFO  driver.Page (    Page.java:62) - Preparing for element to click.
+19:03:42.916 INFO  driver.DriverFactory (DriverFactory.java:89) - Clearing all the cookies.
+19:11:27.580 INFO  runner.TestRunner (TestRunner.java:32) - Initializing application properties config file.
+19:11:27.582 INFO  runner.TestRunner (TestRunner.java:35) - Initializing connection to the base database.
+19:11:27.679 WARN  config.DatabaseConfiguration (DatabaseConfiguration.java:84) - QA env being used by default. No env property set. This can be set in the sentinel.yml config file with a '{}=' property or on the command line with the switch '-D{}='.
+19:11:29.540 INFO  runner.TestRunner (TestRunner.java:38) - Initializing resource path config file.
+19:11:29.541 INFO  runner.TestRunner (TestRunner.java:41) - Initializing usage months config from CSP.
+19:11:30.457 INFO  runner.TestRunner (TestRunner.java:44) - Initializing date config from CSP.
+19:11:31.672 INFO  runner.TestRunner (TestRunner.java:47) - Initializing user model config.
+19:11:31.688 WARN  config.Configuration (Configuration.java:231) - QA env being used by default. No env property set. This can be set in the sew.app.yml config file with a '{}=' property or on the command line with the switch '-D{}='.
+19:11:32.517 INFO  runner.TestRunner (TestRunner.java:50) - Initializing auth token config.
+19:11:37.277 INFO  driver.WebDriverFactory (WebDriverFactory.java:207) - Setting up the browser window to its max.
+19:11:37.792 INFO  driver.WebDriverFactory (WebDriverFactory.java:196) - Initializing the implicit wait timeout for {} 5
+19:11:37.798 INFO  driver.WebDriverFactory (WebDriverFactory.java:199) - Initializing the page load timeout.
+19:11:37.804 INFO  driver.DriverFactory (DriverFactory.java:89) - Clearing all the cookies.
+19:11:37.817 INFO  driver.DriverFactory (DriverFactory.java:56) - Open the url {} https://qa.smartcmobile.net/SCM_10.0_S-SCP/ using the selenium get() method.
+19:11:58.974 INFO  scp.LoginTests (LoginTests.java:111) - To verify the tests with the below test case id's: C75087, C75088
+19:11:59.008 INFO  scp.LoginPage (LoginPage.java:176) - Checking that the current page is login page.
+19:11:59.008 INFO  driver.Page (    Page.java:36) - Fetching the current URL.
+19:11:59.012 INFO  driver.Page (    Page.java:37) - The Current URL is: https://qa.smartcmobile.net/SCM_10.0_S-SCP/
+19:11:59.014 INFO  driver.Page (    Page.java:42) - Fetching the current title.
+19:11:59.016 INFO  driver.Page (    Page.java:43) - The Current Title is: SCM :Login
+19:11:59.018 INFO  scp.LoginPage (LoginPage.java:179) - The current page is login page {}: true
+19:11:59.019 INFO  scp.LoginPage (LoginPage.java:222) - Populating username {} :link@_-&+residential
+19:11:59.025 INFO  driver.Page (    Page.java:99) - Wait for element {} [[ChromeDriver: chrome on MAC (1043a0f187bdf1bdabe0abd9e0f84be4)] -> css selector: [id='txtLogin']] to be present in the DOM for duration of {} 120
+19:11:59.025 INFO  driver.Page (    Page.java:188) - Waiting for element to be visible for 120 seconds.
+19:11:59.041 INFO  driver.Page (    Page.java:191) - Element is visible on the page.
+19:11:59.044 INFO  driver.Page (    Page.java:101) - Clearing the element {} [[ChromeDriver: chrome on MAC (1043a0f187bdf1bdabe0abd9e0f84be4)] -> css selector: [id='txtLogin']] before sending the keys.
+19:11:59.066 INFO  driver.Page (    Page.java:103) - Sending the following keys {} link@_-&+residential to the element {} [[ChromeDriver: chrome on MAC (1043a0f187bdf1bdabe0abd9e0f84be4)] -> css selector: [id='txtLogin']]
+19:11:59.158 INFO  scp.LoginPage (LoginPage.java:224) - Username populated successfully.
+19:11:59.158 INFO  scp.LoginPage (LoginPage.java:250) - Populating password {} :Demo@#$%!_-&+3
+19:11:59.164 INFO  driver.Page (    Page.java:99) - Wait for element {} [[ChromeDriver: chrome on MAC (1043a0f187bdf1bdabe0abd9e0f84be4)] -> css selector: [id='txtpwd']] to be present in the DOM for duration of {} 120
+19:11:59.164 INFO  driver.Page (    Page.java:188) - Waiting for element to be visible for 120 seconds.
+19:11:59.175 INFO  driver.Page (    Page.java:191) - Element is visible on the page.
+19:11:59.179 INFO  driver.Page (    Page.java:101) - Clearing the element {} [[ChromeDriver: chrome on MAC (1043a0f187bdf1bdabe0abd9e0f84be4)] -> css selector: [id='txtpwd']] before sending the keys.
+19:11:59.197 INFO  driver.Page (    Page.java:103) - Sending the following keys {} Demo@#$%!_-&+3 to the element {} [[ChromeDriver: chrome on MAC (1043a0f187bdf1bdabe0abd9e0f84be4)] -> css selector: [id='txtpwd']]
+19:11:59.222 INFO  scp.LoginPage (LoginPage.java:252) - Password populated successfully.
+19:11:59.222 INFO  driver.Page (    Page.java:62) - Preparing for element to click.
+19:12:53.633 INFO  driver.Page (    Page.java:65) - Element is clicked successfully.
+19:12:53.635 INFO  scp.LoginPage (LoginPage.java:277) - Remember me checkbox checked.
+19:12:53.635 INFO  scp.LoginPage (LoginPage.java:292) - Clicking the sign in button.
+19:12:53.635 INFO  driver.Page (    Page.java:55) - Preparing for element to click.
+19:12:53.636 INFO  driver.Page (    Page.java:163) - Waiting for element to be clickable for 120 seconds.
+19:13:04.349 INFO  runner.TestRunner (TestRunner.java:32) - Initializing application properties config file.
+19:13:04.351 INFO  runner.TestRunner (TestRunner.java:35) - Initializing connection to the base database.
+19:13:04.442 WARN  config.DatabaseConfiguration (DatabaseConfiguration.java:84) - QA env being used by default. No env property set. This can be set in the sentinel.yml config file with a '{}=' property or on the command line with the switch '-D{}='.
+19:13:06.386 INFO  runner.TestRunner (TestRunner.java:38) - Initializing resource path config file.
+19:13:06.386 INFO  runner.TestRunner (TestRunner.java:41) - Initializing usage months config from CSP.
+19:13:07.236 INFO  runner.TestRunner (TestRunner.java:44) - Initializing date config from CSP.
+19:13:08.082 INFO  runner.TestRunner (TestRunner.java:47) - Initializing user model config.
+19:13:08.097 WARN  config.Configuration (Configuration.java:231) - QA env being used by default. No env property set. This can be set in the sew.app.yml config file with a '{}=' property or on the command line with the switch '-D{}='.
+19:13:08.980 INFO  runner.TestRunner (TestRunner.java:50) - Initializing auth token config.
+19:13:10.646 INFO  driver.WebDriverFactory (WebDriverFactory.java:207) - Setting up the browser window to its max.
+19:13:11.120 INFO  driver.WebDriverFactory (WebDriverFactory.java:196) - Initializing the implicit wait timeout for {} 5
+19:13:11.139 INFO  driver.WebDriverFactory (WebDriverFactory.java:199) - Initializing the page load timeout.
+19:13:11.145 INFO  driver.DriverFactory (DriverFactory.java:89) - Clearing all the cookies.
+19:13:11.161 INFO  driver.DriverFactory (DriverFactory.java:56) - Open the url {} https://qa.smartcmobile.net/SCM_10.0_S-SCP/ using the selenium get() method.
+19:13:31.651 INFO  scp.LoginTests (LoginTests.java:111) - To verify the tests with the below test case id's: C75087, C75088
+19:13:31.697 INFO  scp.LoginPage (LoginPage.java:176) - Checking that the current page is login page.
+19:13:31.697 INFO  driver.Page (    Page.java:36) - Fetching the current URL.
+19:13:31.702 INFO  driver.Page (    Page.java:37) - The Current URL is: https://qa.smartcmobile.net/SCM_10.0_S-SCP/
+19:13:31.704 INFO  driver.Page (    Page.java:42) - Fetching the current title.
+19:13:31.706 INFO  driver.Page (    Page.java:43) - The Current Title is: SCM :Login
+19:13:31.708 INFO  scp.LoginPage (LoginPage.java:179) - The current page is login page {}: true
+19:13:31.709 INFO  scp.LoginPage (LoginPage.java:222) - Populating username {} :link@_-&+residential
+19:13:31.715 INFO  driver.Page (    Page.java:101) - Wait for element {} [[ChromeDriver: chrome on MAC (35a3672cf0dd73820934605dea9890c2)] -> css selector: [id='txtLogin']] to be present in the DOM for duration of {} 120
+19:13:31.715 INFO  driver.Page (    Page.java:190) - Waiting for element to be visible for 120 seconds.
+19:13:31.731 INFO  driver.Page (    Page.java:193) - Element is visible on the page.
+19:13:31.734 INFO  driver.Page (    Page.java:103) - Clearing the element {} [[ChromeDriver: chrome on MAC (35a3672cf0dd73820934605dea9890c2)] -> css selector: [id='txtLogin']] before sending the keys.
+19:13:31.754 INFO  driver.Page (    Page.java:105) - Sending the following keys {} link@_-&+residential to the element {} [[ChromeDriver: chrome on MAC (35a3672cf0dd73820934605dea9890c2)] -> css selector: [id='txtLogin']]
+19:13:31.849 INFO  scp.LoginPage (LoginPage.java:224) - Username populated successfully.
+19:13:31.849 INFO  scp.LoginPage (LoginPage.java:250) - Populating password {} :Demo@#$%!_-&+3
+19:13:31.854 INFO  driver.Page (    Page.java:101) - Wait for element {} [[ChromeDriver: chrome on MAC (35a3672cf0dd73820934605dea9890c2)] -> css selector: [id='txtpwd']] to be present in the DOM for duration of {} 120
+19:13:31.854 INFO  driver.Page (    Page.java:190) - Waiting for element to be visible for 120 seconds.
+19:13:31.865 INFO  driver.Page (    Page.java:193) - Element is visible on the page.
+19:13:31.868 INFO  driver.Page (    Page.java:103) - Clearing the element {} [[ChromeDriver: chrome on MAC (35a3672cf0dd73820934605dea9890c2)] -> css selector: [id='txtpwd']] before sending the keys.
+19:13:31.886 INFO  driver.Page (    Page.java:105) - Sending the following keys {} Demo@#$%!_-&+3 to the element {} [[ChromeDriver: chrome on MAC (35a3672cf0dd73820934605dea9890c2)] -> css selector: [id='txtpwd']]
+19:13:31.915 INFO  scp.LoginPage (LoginPage.java:252) - Password populated successfully.
+19:13:31.915 INFO  driver.Page (    Page.java:62) - Preparing for element to click.
+19:13:49.469 INFO  driver.Page (    Page.java:190) - Waiting for element to be visible for 120 seconds.
+19:13:49.630 INFO  driver.Page (    Page.java:193) - Element is visible on the page.
+19:13:56.741 INFO  driver.Page (    Page.java:66) - Element is clicked successfully.
+19:17:24.742 INFO  runner.TestRunner (TestRunner.java:32) - Initializing application properties config file.
+19:17:24.743 INFO  runner.TestRunner (TestRunner.java:35) - Initializing connection to the base database.
+19:17:24.828 WARN  config.DatabaseConfiguration (DatabaseConfiguration.java:84) - QA env being used by default. No env property set. This can be set in the sentinel.yml config file with a '{}=' property or on the command line with the switch '-D{}='.
+19:17:26.734 INFO  runner.TestRunner (TestRunner.java:38) - Initializing resource path config file.
+19:17:26.735 INFO  runner.TestRunner (TestRunner.java:41) - Initializing usage months config from CSP.
+19:17:27.687 INFO  runner.TestRunner (TestRunner.java:44) - Initializing date config from CSP.
+19:17:28.468 INFO  runner.TestRunner (TestRunner.java:47) - Initializing user model config.
+19:17:28.479 WARN  config.Configuration (Configuration.java:231) - QA env being used by default. No env property set. This can be set in the sew.app.yml config file with a '{}=' property or on the command line with the switch '-D{}='.
+19:17:29.283 INFO  runner.TestRunner (TestRunner.java:50) - Initializing auth token config.
+19:17:30.975 INFO  driver.WebDriverFactory (WebDriverFactory.java:207) - Setting up the browser window to its max.
+19:17:31.465 INFO  driver.WebDriverFactory (WebDriverFactory.java:196) - Initializing the implicit wait timeout for {} 5
+19:17:31.484 INFO  driver.WebDriverFactory (WebDriverFactory.java:199) - Initializing the page load timeout.
+19:17:31.489 INFO  driver.DriverFactory (DriverFactory.java:89) - Clearing all the cookies.
+19:17:31.497 INFO  driver.DriverFactory (DriverFactory.java:56) - Open the url {} https://qa.smartcmobile.net/SCM_10.0_S-SCP/ using the selenium get() method.
+19:17:59.059 INFO  scp.LoginTests (LoginTests.java:111) - To verify the tests with the below test case id's: C75087, C75088
+19:17:59.080 INFO  scp.LoginPage (LoginPage.java:176) - Checking that the current page is login page.
+19:17:59.080 INFO  driver.Page (    Page.java:36) - Fetching the current URL.
+19:17:59.084 INFO  driver.Page (    Page.java:37) - The Current URL is: https://qa.smartcmobile.net/SCM_10.0_S-SCP/
+19:17:59.086 INFO  driver.Page (    Page.java:42) - Fetching the current title.
+19:17:59.089 INFO  driver.Page (    Page.java:43) - The Current Title is: SCM :Login
+19:17:59.091 INFO  scp.LoginPage (LoginPage.java:179) - The current page is login page {}: true
+19:17:59.092 INFO  scp.LoginPage (LoginPage.java:222) - Populating username {} :link@_-&+residential
+19:17:59.100 INFO  driver.Page (    Page.java:101) - Wait for element {} [[ChromeDriver: chrome on MAC (de7d82cbaa5424079e6bf4daf5e4b6f9)] -> css selector: [id='txtLogin']] to be present in the DOM for duration of {} 120
+19:17:59.100 INFO  driver.Page (    Page.java:190) - Waiting for element to be visible for 120 seconds.
+19:17:59.116 INFO  driver.Page (    Page.java:193) - Element is visible on the page.
+19:17:59.119 INFO  driver.Page (    Page.java:103) - Clearing the element {} [[ChromeDriver: chrome on MAC (de7d82cbaa5424079e6bf4daf5e4b6f9)] -> css selector: [id='txtLogin']] before sending the keys.
+19:17:59.140 INFO  driver.Page (    Page.java:105) - Sending the following keys {} link@_-&+residential to the element {} [[ChromeDriver: chrome on MAC (de7d82cbaa5424079e6bf4daf5e4b6f9)] -> css selector: [id='txtLogin']]
+19:17:59.232 INFO  scp.LoginPage (LoginPage.java:224) - Username populated successfully.
+19:17:59.232 INFO  scp.LoginPage (LoginPage.java:250) - Populating password {} :Demo@#$%!_-&+3
+19:17:59.239 INFO  driver.Page (    Page.java:101) - Wait for element {} [[ChromeDriver: chrome on MAC (de7d82cbaa5424079e6bf4daf5e4b6f9)] -> css selector: [id='txtpwd']] to be present in the DOM for duration of {} 120
+19:17:59.239 INFO  driver.Page (    Page.java:190) - Waiting for element to be visible for 120 seconds.
+19:17:59.249 INFO  driver.Page (    Page.java:193) - Element is visible on the page.
+19:17:59.252 INFO  driver.Page (    Page.java:103) - Clearing the element {} [[ChromeDriver: chrome on MAC (de7d82cbaa5424079e6bf4daf5e4b6f9)] -> css selector: [id='txtpwd']] before sending the keys.
+19:17:59.269 INFO  driver.Page (    Page.java:105) - Sending the following keys {} Demo@#$%!_-&+3 to the element {} [[ChromeDriver: chrome on MAC (de7d82cbaa5424079e6bf4daf5e4b6f9)] -> css selector: [id='txtpwd']]
+19:17:59.294 INFO  scp.LoginPage (LoginPage.java:252) - Password populated successfully.
+19:17:59.294 INFO  driver.Page (    Page.java:62) - Preparing for element to click.
+19:17:59.294 INFO  driver.Page (    Page.java:190) - Waiting for element to be visible for 120 seconds.
+19:17:59.304 INFO  driver.Page (    Page.java:193) - Element is visible on the page.
+19:17:59.332 INFO  driver.Page (    Page.java:66) - Element is clicked successfully.
+19:17:59.333 INFO  scp.LoginPage (LoginPage.java:277) - Remember me checkbox checked.
+19:17:59.333 INFO  scp.LoginPage (LoginPage.java:292) - Clicking the sign in button.
+19:17:59.333 INFO  driver.Page (    Page.java:55) - Preparing for element to click.
+19:17:59.333 INFO  driver.Page (    Page.java:165) - Waiting for element to be clickable for 120 seconds.
+19:17:59.351 INFO  driver.Page (    Page.java:168) - Element is clickable now.
+19:17:59.372 INFO  driver.Page (    Page.java:58) - Element is clicked successfully.
+19:17:59.372 INFO  scp.LoginPage (LoginPage.java:294) - Sign in button clicked successfully.
+19:17:59.372 INFO  scp.HomePage (HomePage.java:145) - Wait for page loader visibility.
+19:17:59.372 INFO  driver.Page (    Page.java:190) - Waiting for element to be visible for 120 seconds.
+19:18:00.452 INFO  driver.Page (    Page.java:193) - Element is visible on the page.
+19:18:00.452 INFO  scp.HomePage (HomePage.java:147) - Wait for page loader invisibility.
+19:18:00.453 INFO  driver.Page (    Page.java:204) - Waiting for element to be invisible for 120 seconds.
+19:18:32.412 INFO  driver.Page (    Page.java:207) - Element is invisible from the page.
+19:18:32.420 INFO  scp.DashboardPage (DashboardPage.java:368) - Checking that the current page is dashboard page.
+19:18:32.420 INFO  driver.Page (    Page.java:36) - Fetching the current URL.
+19:18:32.424 INFO  driver.Page (    Page.java:37) - The Current URL is: https://qa.smartcmobile.net/SCM_10.0_S-SCP/Dashboard.aspx
+19:18:32.426 INFO  driver.Page (    Page.java:42) - Fetching the current title.
+19:18:32.428 INFO  driver.Page (    Page.java:43) - The Current Title is: Dashboard
+19:18:32.430 INFO  scp.DashboardPage (DashboardPage.java:371) - The current page is dashboard page {}: true
+19:18:32.430 INFO  driver.Page (    Page.java:190) - Waiting for element to be visible for 120 seconds.
+19:18:32.448 INFO  driver.Page (    Page.java:193) - Element is visible on the page.
+19:18:32.448 INFO  scp.DashboardPage (DashboardPage.java:278) - Image profile icon is visible {} on the page.
+19:18:32.449 INFO  driver.Page (    Page.java:55) - Preparing for element to click.
+19:18:32.449 INFO  driver.Page (    Page.java:165) - Waiting for element to be clickable for 120 seconds.
+19:18:32.463 INFO  driver.Page (    Page.java:168) - Element is clickable now.
+19:18:32.484 INFO  driver.Page (    Page.java:58) - Element is clicked successfully.
+19:18:32.484 INFO  scp.DashboardPage (DashboardPage.java:273) - Image profile icon clicked {}.
+19:18:46.436 INFO  driver.DriverFactory (DriverFactory.java:89) - Clearing all the cookies.
+19:21:20.293 INFO  runner.TestRunner (TestRunner.java:32) - Initializing application properties config file.
+19:21:20.295 INFO  runner.TestRunner (TestRunner.java:35) - Initializing connection to the base database.
+19:21:20.386 WARN  config.DatabaseConfiguration (DatabaseConfiguration.java:84) - QA env being used by default. No env property set. This can be set in the sentinel.yml config file with a '{}=' property or on the command line with the switch '-D{}='.
+19:21:22.301 INFO  runner.TestRunner (TestRunner.java:38) - Initializing resource path config file.
+19:21:22.302 INFO  runner.TestRunner (TestRunner.java:41) - Initializing usage months config from CSP.
+19:21:23.130 INFO  runner.TestRunner (TestRunner.java:44) - Initializing date config from CSP.
+19:21:23.951 INFO  runner.TestRunner (TestRunner.java:47) - Initializing user model config.
+19:21:23.964 WARN  config.Configuration (Configuration.java:231) - QA env being used by default. No env property set. This can be set in the sew.app.yml config file with a '{}=' property or on the command line with the switch '-D{}='.
+19:21:24.747 INFO  runner.TestRunner (TestRunner.java:50) - Initializing auth token config.
+19:21:26.453 INFO  driver.WebDriverFactory (WebDriverFactory.java:207) - Setting up the browser window to its max.
+19:21:26.945 INFO  driver.WebDriverFactory (WebDriverFactory.java:196) - Initializing the implicit wait timeout for {} 5
+19:21:26.951 INFO  driver.WebDriverFactory (WebDriverFactory.java:199) - Initializing the page load timeout.
+19:21:26.954 INFO  driver.DriverFactory (DriverFactory.java:89) - Clearing all the cookies.
+19:21:26.962 INFO  driver.DriverFactory (DriverFactory.java:56) - Open the url {} https://qa.smartcmobile.net/SCM_10.0_S-SCP/ using the selenium get() method.
+19:21:47.439 INFO  scp.LoginTests (LoginTests.java:111) - To verify the tests with the below test case id's: C75087, C75088
+19:21:47.462 INFO  scp.LoginPage (LoginPage.java:176) - Checking that the current page is login page.
+19:21:47.462 INFO  driver.Page (    Page.java:36) - Fetching the current URL.
+19:21:47.466 INFO  driver.Page (    Page.java:37) - The Current URL is: https://qa.smartcmobile.net/SCM_10.0_S-SCP/
+19:21:47.468 INFO  driver.Page (    Page.java:42) - Fetching the current title.
+19:21:47.470 INFO  driver.Page (    Page.java:43) - The Current Title is: SCM :Login
+19:21:47.472 INFO  scp.LoginPage (LoginPage.java:179) - The current page is login page {}: true
+19:21:47.473 INFO  scp.LoginPage (LoginPage.java:222) - Populating username {} :link@_-&+residential
+19:21:47.480 INFO  driver.Page (    Page.java:101) - Wait for element {} [[ChromeDriver: chrome on MAC (edc5df4e929cca04b88d586a200c3224)] -> css selector: [id='txtLogin']] to be present in the DOM for duration of {} 120
+19:21:47.480 INFO  driver.Page (    Page.java:190) - Waiting for element to be visible for 120 seconds.
+19:21:47.496 INFO  driver.Page (    Page.java:193) - Element is visible on the page.
+19:21:47.500 INFO  driver.Page (    Page.java:103) - Clearing the element {} [[ChromeDriver: chrome on MAC (edc5df4e929cca04b88d586a200c3224)] -> css selector: [id='txtLogin']] before sending the keys.
+19:21:47.519 INFO  driver.Page (    Page.java:105) - Sending the following keys {} link@_-&+residential to the element {} [[ChromeDriver: chrome on MAC (edc5df4e929cca04b88d586a200c3224)] -> css selector: [id='txtLogin']]
+19:21:47.602 INFO  scp.LoginPage (LoginPage.java:224) - Username populated successfully.
+19:21:47.602 INFO  scp.LoginPage (LoginPage.java:250) - Populating password {} :Demo@#$%!_-&+3
+19:21:47.607 INFO  driver.Page (    Page.java:101) - Wait for element {} [[ChromeDriver: chrome on MAC (edc5df4e929cca04b88d586a200c3224)] -> css selector: [id='txtpwd']] to be present in the DOM for duration of {} 120
+19:21:47.607 INFO  driver.Page (    Page.java:190) - Waiting for element to be visible for 120 seconds.
+19:21:47.618 INFO  driver.Page (    Page.java:193) - Element is visible on the page.
+19:21:47.621 INFO  driver.Page (    Page.java:103) - Clearing the element {} [[ChromeDriver: chrome on MAC (edc5df4e929cca04b88d586a200c3224)] -> css selector: [id='txtpwd']] before sending the keys.
+19:21:47.639 INFO  driver.Page (    Page.java:105) - Sending the following keys {} Demo@#$%!_-&+3 to the element {} [[ChromeDriver: chrome on MAC (edc5df4e929cca04b88d586a200c3224)] -> css selector: [id='txtpwd']]
+19:21:47.664 INFO  scp.LoginPage (LoginPage.java:252) - Password populated successfully.
+19:21:47.664 INFO  driver.Page (    Page.java:62) - Preparing for element to click.
+19:21:47.664 INFO  driver.Page (    Page.java:190) - Waiting for element to be visible for 120 seconds.
+19:21:47.682 INFO  driver.Page (    Page.java:193) - Element is visible on the page.
+19:21:47.714 INFO  driver.Page (    Page.java:66) - Element is clicked successfully.
+19:21:47.714 INFO  scp.LoginPage (LoginPage.java:277) - Remember me checkbox checked.
+19:21:47.715 INFO  scp.LoginPage (LoginPage.java:292) - Clicking the sign in button.
+19:21:47.715 INFO  driver.Page (    Page.java:55) - Preparing for element to click.
+19:21:47.715 INFO  driver.Page (    Page.java:165) - Waiting for element to be clickable for 120 seconds.
+19:21:47.735 INFO  driver.Page (    Page.java:168) - Element is clickable now.
+19:21:47.763 INFO  driver.Page (    Page.java:58) - Element is clicked successfully.
+19:21:47.763 INFO  scp.LoginPage (LoginPage.java:294) - Sign in button clicked successfully.
+19:21:47.763 INFO  scp.HomePage (HomePage.java:145) - Wait for page loader visibility.
+19:21:47.764 INFO  driver.Page (    Page.java:190) - Waiting for element to be visible for 120 seconds.
+19:21:48.815 INFO  driver.Page (    Page.java:193) - Element is visible on the page.
+19:21:48.816 INFO  scp.HomePage (HomePage.java:147) - Wait for page loader invisibility.
+19:21:48.816 INFO  driver.Page (    Page.java:204) - Waiting for element to be invisible for 120 seconds.
+19:22:14.172 INFO  driver.Page (    Page.java:207) - Element is invisible from the page.
+19:22:14.179 INFO  scp.DashboardPage (DashboardPage.java:374) - Checking that the current page is dashboard page.
+19:22:14.179 INFO  driver.Page (    Page.java:36) - Fetching the current URL.
+19:22:14.182 INFO  driver.Page (    Page.java:37) - The Current URL is: https://qa.smartcmobile.net/SCM_10.0_S-SCP/Dashboard.aspx
+19:22:14.184 INFO  driver.Page (    Page.java:42) - Fetching the current title.
+19:22:14.186 INFO  driver.Page (    Page.java:43) - The Current Title is: Dashboard
+19:22:14.188 INFO  scp.DashboardPage (DashboardPage.java:377) - The current page is dashboard page {}: true
+19:22:14.188 INFO  driver.Page (    Page.java:190) - Waiting for element to be visible for 120 seconds.
+19:22:14.200 INFO  driver.Page (    Page.java:193) - Element is visible on the page.
+19:22:14.200 INFO  scp.DashboardPage (DashboardPage.java:284) - Image profile icon is visible {} on the page.
+19:22:14.200 INFO  driver.Page (    Page.java:55) - Preparing for element to click.
+19:22:14.200 INFO  driver.Page (    Page.java:165) - Waiting for element to be clickable for 120 seconds.
+19:22:14.214 INFO  driver.Page (    Page.java:168) - Element is clickable now.
+19:22:14.235 INFO  driver.Page (    Page.java:58) - Element is clicked successfully.
+19:22:14.235 INFO  scp.DashboardPage (DashboardPage.java:279) - Image profile icon clicked {}.
+19:22:23.272 INFO  driver.Page (    Page.java:55) - Preparing for element to click.
+19:22:23.272 INFO  driver.Page (    Page.java:165) - Waiting for element to be clickable for 120 seconds.
+19:22:23.302 INFO  driver.Page (    Page.java:168) - Element is clickable now.
+19:22:33.031 INFO  driver.Page (    Page.java:58) - Element is clicked successfully.
+19:22:33.033 INFO  scp.DashboardPage (DashboardPage.java:259) - Sign out button is clicked.
+19:22:33.036 INFO  driver.Page (    Page.java:190) - Waiting for element to be visible for 120 seconds.
+19:22:33.050 INFO  driver.Page (    Page.java:193) - Element is visible on the page.
+19:22:33.050 INFO  driver.Page (    Page.java:55) - Preparing for element to click.
+19:22:33.050 INFO  driver.Page (    Page.java:165) - Waiting for element to be clickable for 120 seconds.
+19:22:33.068 INFO  driver.Page (    Page.java:168) - Element is clickable now.
+19:22:42.746 INFO  driver.Page (    Page.java:58) - Element is clicked successfully.
+19:22:42.748 INFO  scp.SignOutPage (SignOutPage.java:42) - Sign in again button clicked.
+19:22:42.749 INFO  driver.Page (    Page.java:190) - Waiting for element to be visible for 120 seconds.
+19:22:42.776 INFO  driver.Page (    Page.java:193) - Element is visible on the page.
+19:22:42.776 INFO  scp.LoginPage (LoginPage.java:234) - Wait for username field to be displayed.
+19:22:42.776 INFO  scp.LoginPage (LoginPage.java:228) - Fetching the auto populated username.
+19:22:42.780 INFO  driver.Page (    Page.java:133) - Wait for the element {} [[ChromeDriver: chrome on MAC (edc5df4e929cca04b88d586a200c3224)] -> css selector: [id='txtLogin']] to be visible on the page for duration of {} 120
+19:22:42.780 INFO  driver.Page (    Page.java:190) - Waiting for element to be visible for 120 seconds.
+19:22:42.790 INFO  driver.Page (    Page.java:193) - Element is visible on the page.
+19:22:42.804 INFO  driver.Page (    Page.java:136) - Text got from the locator {} [[ChromeDriver: chrome on MAC (edc5df4e929cca04b88d586a200c3224)] -> css selector: [id='txtLogin']] is link@_-&+residential
+19:22:49.112 INFO  driver.DriverFactory (DriverFactory.java:89) - Clearing all the cookies.
+19:23:32.179 INFO  runner.TestRunner (TestRunner.java:32) - Initializing application properties config file.
+19:23:32.180 INFO  runner.TestRunner (TestRunner.java:35) - Initializing connection to the base database.
+19:23:32.282 WARN  config.DatabaseConfiguration (DatabaseConfiguration.java:84) - QA env being used by default. No env property set. This can be set in the sentinel.yml config file with a '{}=' property or on the command line with the switch '-D{}='.
+19:23:34.675 INFO  runner.TestRunner (TestRunner.java:38) - Initializing resource path config file.
+19:23:34.676 INFO  runner.TestRunner (TestRunner.java:41) - Initializing usage months config from CSP.
+19:23:35.514 INFO  runner.TestRunner (TestRunner.java:44) - Initializing date config from CSP.
+19:23:36.451 INFO  runner.TestRunner (TestRunner.java:47) - Initializing user model config.
+19:23:36.465 WARN  config.Configuration (Configuration.java:231) - QA env being used by default. No env property set. This can be set in the sew.app.yml config file with a '{}=' property or on the command line with the switch '-D{}='.
+19:23:37.249 INFO  runner.TestRunner (TestRunner.java:50) - Initializing auth token config.
+19:23:38.915 INFO  driver.WebDriverFactory (WebDriverFactory.java:207) - Setting up the browser window to its max.
+19:23:39.408 INFO  driver.WebDriverFactory (WebDriverFactory.java:196) - Initializing the implicit wait timeout for {} 5
+19:23:39.422 INFO  driver.WebDriverFactory (WebDriverFactory.java:199) - Initializing the page load timeout.
+19:23:39.426 INFO  driver.DriverFactory (DriverFactory.java:89) - Clearing all the cookies.
+19:23:39.434 INFO  driver.DriverFactory (DriverFactory.java:56) - Open the url {} https://qa.smartcmobile.net/SCM_10.0_S-SCP/ using the selenium get() method.
+19:24:07.003 INFO  scp.LoginTests (LoginTests.java:111) - To verify the tests with the below test case id's: C75087, C75088
+19:24:07.048 INFO  scp.LoginPage (LoginPage.java:176) - Checking that the current page is login page.
+19:24:07.048 INFO  driver.Page (    Page.java:36) - Fetching the current URL.
+19:24:07.053 INFO  driver.Page (    Page.java:37) - The Current URL is: https://qa.smartcmobile.net/SCM_10.0_S-SCP/
+19:24:07.055 INFO  driver.Page (    Page.java:42) - Fetching the current title.
+19:24:07.058 INFO  driver.Page (    Page.java:43) - The Current Title is: SCM :Login
+19:24:07.059 INFO  scp.LoginPage (LoginPage.java:179) - The current page is login page {}: true
+19:24:07.061 INFO  scp.LoginPage (LoginPage.java:222) - Populating username {} :link@_-&+residential
+19:24:07.067 INFO  driver.Page (    Page.java:101) - Wait for element {} [[ChromeDriver: chrome on MAC (aff5a6b3be710ec3c161484d198d67ed)] -> css selector: [id='txtLogin']] to be present in the DOM for duration of {} 120
+19:24:07.067 INFO  driver.Page (    Page.java:190) - Waiting for element to be visible for 120 seconds.
+19:24:07.083 INFO  driver.Page (    Page.java:193) - Element is visible on the page.
+19:24:07.086 INFO  driver.Page (    Page.java:103) - Clearing the element {} [[ChromeDriver: chrome on MAC (aff5a6b3be710ec3c161484d198d67ed)] -> css selector: [id='txtLogin']] before sending the keys.
+19:24:07.105 INFO  driver.Page (    Page.java:105) - Sending the following keys {} link@_-&+residential to the element {} [[ChromeDriver: chrome on MAC (aff5a6b3be710ec3c161484d198d67ed)] -> css selector: [id='txtLogin']]
+19:24:07.207 INFO  scp.LoginPage (LoginPage.java:224) - Username populated successfully.
+19:24:07.208 INFO  scp.LoginPage (LoginPage.java:250) - Populating password {} :Demo@#$%!_-&+3
+19:24:07.213 INFO  driver.Page (    Page.java:101) - Wait for element {} [[ChromeDriver: chrome on MAC (aff5a6b3be710ec3c161484d198d67ed)] -> css selector: [id='txtpwd']] to be present in the DOM for duration of {} 120
+19:24:07.214 INFO  driver.Page (    Page.java:190) - Waiting for element to be visible for 120 seconds.
+19:24:07.224 INFO  driver.Page (    Page.java:193) - Element is visible on the page.
+19:24:07.227 INFO  driver.Page (    Page.java:103) - Clearing the element {} [[ChromeDriver: chrome on MAC (aff5a6b3be710ec3c161484d198d67ed)] -> css selector: [id='txtpwd']] before sending the keys.
+19:24:07.246 INFO  driver.Page (    Page.java:105) - Sending the following keys {} Demo@#$%!_-&+3 to the element {} [[ChromeDriver: chrome on MAC (aff5a6b3be710ec3c161484d198d67ed)] -> css selector: [id='txtpwd']]
+19:24:07.273 INFO  scp.LoginPage (LoginPage.java:252) - Password populated successfully.
+19:24:07.273 INFO  driver.Page (    Page.java:62) - Preparing for element to click.
+19:24:07.273 INFO  driver.Page (    Page.java:190) - Waiting for element to be visible for 120 seconds.
+19:24:07.284 INFO  driver.Page (    Page.java:193) - Element is visible on the page.
+19:24:07.316 INFO  driver.Page (    Page.java:66) - Element is clicked successfully.
+19:24:07.316 INFO  scp.LoginPage (LoginPage.java:277) - Remember me checkbox checked.
+19:24:07.316 INFO  scp.LoginPage (LoginPage.java:292) - Clicking the sign in button.
+19:24:07.316 INFO  driver.Page (    Page.java:55) - Preparing for element to click.
+19:24:07.316 INFO  driver.Page (    Page.java:165) - Waiting for element to be clickable for 120 seconds.
+19:24:07.335 INFO  driver.Page (    Page.java:168) - Element is clickable now.
+19:24:07.356 INFO  driver.Page (    Page.java:58) - Element is clicked successfully.
+19:24:07.356 INFO  scp.LoginPage (LoginPage.java:294) - Sign in button clicked successfully.
+19:24:07.356 INFO  scp.HomePage (HomePage.java:145) - Wait for page loader visibility.
+19:24:07.356 INFO  driver.Page (    Page.java:190) - Waiting for element to be visible for 120 seconds.
+19:24:08.412 INFO  driver.Page (    Page.java:193) - Element is visible on the page.
+19:24:08.412 INFO  scp.HomePage (HomePage.java:147) - Wait for page loader invisibility.
+19:24:08.413 INFO  driver.Page (    Page.java:204) - Waiting for element to be invisible for 120 seconds.
+19:24:42.544 INFO  driver.Page (    Page.java:207) - Element is invisible from the page.
+19:24:42.553 INFO  scp.DashboardPage (DashboardPage.java:374) - Checking that the current page is dashboard page.
+19:24:42.554 INFO  driver.Page (    Page.java:36) - Fetching the current URL.
+19:24:42.556 INFO  driver.Page (    Page.java:37) - The Current URL is: https://qa.smartcmobile.net/SCM_10.0_S-SCP/Dashboard.aspx
+19:24:42.558 INFO  driver.Page (    Page.java:42) - Fetching the current title.
+19:24:42.560 INFO  driver.Page (    Page.java:43) - The Current Title is: Dashboard
+19:24:42.562 INFO  scp.DashboardPage (DashboardPage.java:377) - The current page is dashboard page {}: true
+19:24:42.562 INFO  driver.Page (    Page.java:190) - Waiting for element to be visible for 120 seconds.
+19:24:42.574 INFO  driver.Page (    Page.java:193) - Element is visible on the page.
+19:24:42.574 INFO  scp.DashboardPage (DashboardPage.java:284) - Image profile icon is visible {} on the page.
+19:24:42.574 INFO  driver.Page (    Page.java:55) - Preparing for element to click.
+19:24:42.574 INFO  driver.Page (    Page.java:165) - Waiting for element to be clickable for 120 seconds.
+19:24:42.588 INFO  driver.Page (    Page.java:168) - Element is clickable now.
+19:24:42.606 INFO  driver.Page (    Page.java:58) - Element is clicked successfully.
+19:24:42.606 INFO  scp.DashboardPage (DashboardPage.java:279) - Image profile icon clicked {}.
+19:24:51.665 INFO  driver.Page (    Page.java:55) - Preparing for element to click.
+19:24:51.666 INFO  driver.Page (    Page.java:165) - Waiting for element to be clickable for 120 seconds.
+19:24:51.696 INFO  driver.Page (    Page.java:168) - Element is clickable now.
+19:25:22.072 INFO  driver.Page (    Page.java:58) - Element is clicked successfully.
+19:25:22.072 INFO  scp.DashboardPage (DashboardPage.java:259) - Sign out button is clicked.
+19:25:22.079 INFO  driver.Page (    Page.java:190) - Waiting for element to be visible for 120 seconds.
+19:25:22.100 INFO  driver.Page (    Page.java:193) - Element is visible on the page.
+19:25:22.100 INFO  driver.Page (    Page.java:55) - Preparing for element to click.
+19:25:22.101 INFO  driver.Page (    Page.java:165) - Waiting for element to be clickable for 120 seconds.
+19:25:22.120 INFO  driver.Page (    Page.java:168) - Element is clickable now.
+19:25:40.747 INFO  driver.Page (    Page.java:58) - Element is clicked successfully.
+19:25:40.748 INFO  scp.SignOutPage (SignOutPage.java:42) - Sign in again button clicked.
+19:25:40.749 INFO  driver.Page (    Page.java:190) - Waiting for element to be visible for 120 seconds.
+19:25:40.771 INFO  driver.Page (    Page.java:193) - Element is visible on the page.
+19:25:40.771 INFO  scp.LoginPage (LoginPage.java:234) - Wait for username field to be displayed.
+19:31:11.857 INFO  scp.LoginPage (LoginPage.java:228) - Fetching the auto populated username.

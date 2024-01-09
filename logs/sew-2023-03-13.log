@@ -1,0 +1,861 @@
+23:09:34.950 INFO  driver.Page (    Page.java:41) - The Current URL is: https://qa.smartcmobile.net/SCM_10.0_S-CSP/Home.aspx
+23:09:34.959 INFO  driver.Page (    Page.java:46) - Fetching the current title.
+23:09:34.966 INFO  driver.Page (    Page.java:47) - The Current Title is: Dashboard
+23:09:34.971 INFO  csp.AdminHomePage (AdminHomePage.java:184) - The current page is Admin Home page {}: true
+23:09:34.972 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+23:09:35.005 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+23:09:35.005 INFO  csp.AdminHomePage (AdminHomePage.java:61) - Notification Link is Visible on the Admin Home page.
+23:09:35.005 INFO  driver.Page (    Page.java:59) - Preparing for element to click.
+23:09:35.005 INFO  driver.Page (    Page.java:211) - Waiting for element to be clickable for 120 seconds.
+23:09:35.050 INFO  driver.Page (    Page.java:214) - Element is clickable now.
+23:09:41.659 INFO  driver.Page (    Page.java:62) - Element is clicked successfully.
+23:09:41.659 INFO  csp.AdminHomePage (AdminHomePage.java:65) - Notification Link clicked successfully.
+23:09:41.659 INFO  scp.HomePage (HomePage.java:132) - Wait for page loader invisibility.
+23:09:41.659 INFO  driver.Page (    Page.java:250) - Waiting for element to be invisible for 120 seconds.
+23:09:46.056 INFO  driver.Page (    Page.java:253) - Element is invisible from the page.
+23:09:46.056 INFO  scp.HomePage (HomePage.java:183) - Wait for Spinner Loading Image invisibility.
+23:09:46.056 INFO  driver.Page (    Page.java:250) - Waiting for element to be invisible for 120 seconds.
+23:09:51.094 INFO  driver.Page (    Page.java:253) - Element is invisible from the page.
+23:09:51.094 INFO  csp.AdminNotificationPage (AdminNotificationPage.java:1017) - Wait for Next Page visibility on Notification Page.
+23:09:51.094 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+23:09:51.122 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+23:09:51.122 INFO  driver.Page (    Page.java:59) - Preparing for element to click.
+23:09:51.122 INFO  driver.Page (    Page.java:211) - Waiting for element to be clickable for 120 seconds.
+23:09:51.175 INFO  driver.Page (    Page.java:214) - Element is clickable now.
+23:09:51.244 INFO  driver.Page (    Page.java:62) - Element is clicked successfully.
+23:09:51.245 INFO  csp.AdminNotificationPage (AdminNotificationPage.java:42) - Connect Me link clicked {}.
+23:09:51.245 INFO  scp.HomePage (HomePage.java:183) - Wait for Spinner Loading Image invisibility.
+23:09:51.245 INFO  driver.Page (    Page.java:250) - Waiting for element to be invisible for 120 seconds.
+23:09:55.575 INFO  driver.Page (    Page.java:253) - Element is invisible from the page.
+23:09:55.576 INFO  driver.Page (    Page.java:59) - Preparing for element to click.
+23:09:55.576 INFO  driver.Page (    Page.java:211) - Waiting for element to be clickable for 120 seconds.
+23:09:55.628 INFO  driver.Page (    Page.java:214) - Element is clickable now.
+23:09:55.714 INFO  driver.Page (    Page.java:62) - Element is clicked successfully.
+23:09:55.715 INFO  csp.AdminNotificationPage (AdminNotificationPage.java:1093) - Notifications Save Header Button clicked {}.
+23:09:56.291 INFO  driver.Page (    Page.java:161) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (e9345e7917f4c598a58f55078c5cce9f)] -> css selector: #toast-container .toast-message] is Please select message(s)
+23:09:56.312 INFO  scp.HomePage (HomePage.java:167) - Label on toast message {}: Please select message(s)
+23:09:56.312 INFO  scp.HomePage (HomePage.java:146) - Wait for toast message invisibility.
+23:09:56.313 INFO  driver.Page (    Page.java:250) - Waiting for element to be invisible for 120 seconds.
+23:10:03.446 INFO  driver.Page (    Page.java:253) - Element is invisible from the page.
+23:10:03.446 INFO  driver.Page (    Page.java:59) - Preparing for element to click.
+23:10:03.446 INFO  driver.Page (    Page.java:211) - Waiting for element to be clickable for 120 seconds.
+23:10:03.489 INFO  driver.Page (    Page.java:214) - Element is clickable now.
+23:10:03.553 INFO  driver.Page (    Page.java:62) - Element is clicked successfully.
+23:10:03.553 INFO  csp.AdminNotificationPage (AdminNotificationPage.java:42) - Connect Me link clicked {}.
+23:10:03.553 INFO  scp.HomePage (HomePage.java:183) - Wait for Spinner Loading Image invisibility.
+23:10:03.553 INFO  driver.Page (    Page.java:250) - Waiting for element to be invisible for 120 seconds.
+23:10:13.438 INFO  driver.Page (    Page.java:253) - Element is invisible from the page.
+23:10:13.438 INFO  driver.Page (    Page.java:194) - Returning web element for by type locator : By.xpath: //span[@class='msgSubject'][contains(text(),'CM-470566852')]/preceding::div[@class='SaveImageContainer']/img
+23:10:21.271 INFO  driver.DriverFactory (DriverFactory.java:122) - Clearing all the cookies.
+23:10:25.059 INFO  driver.WebDriverFactory (WebDriverFactory.java:210) - Setting up the browser window to its max.
+23:10:25.179 INFO  driver.WebDriverFactory (WebDriverFactory.java:199) - Initializing the implicit wait timeout for {} 5
+23:10:25.181 INFO  driver.WebDriverFactory (WebDriverFactory.java:202) - Initializing the page load timeout.
+23:10:25.186 INFO  driver.DriverFactory (DriverFactory.java:122) - Clearing all the cookies.
+23:10:25.193 INFO  driver.DriverFactory (DriverFactory.java:59) - Open the url {} https://qa.smartcmobile.net/SCM_10.0_S-CSP/ using the selenium get() method.
+23:10:38.803 INFO  csp.AdminNotificationTests (AdminNotificationTests.java:1032) - To verify the tests with the below test case id's: C101619
+23:10:38.820 INFO  connectme.ConnectMeEndpoints (ConnectMeEndpoints.java:76) - Initializing the add Connect me payload.
+23:10:40.109 INFO  connectme.ConnectMeEndpoints (ConnectMeEndpoints.java:82) - Initializing the add  Outage connect me specification.
+23:10:40.114 INFO  connectme.ConnectMeEndpoints (ConnectMeEndpoints.java:93) - Hit the add Outage ConnectMe with given request specification: io.restassured.internal.RequestSpecificationImpl@64501474
+and the endpoint is : /ContactUs/SetConnectMeRequest
+and with given http verb : POST
+23:10:41.847 INFO  connectme.ConnectMeEndpoints (ConnectMeEndpoints.java:76) - Initializing the add Connect me payload.
+23:10:43.083 INFO  connectme.ConnectMeEndpoints (ConnectMeEndpoints.java:82) - Initializing the add  Outage connect me specification.
+23:10:43.088 INFO  connectme.ConnectMeEndpoints (ConnectMeEndpoints.java:93) - Hit the add Outage ConnectMe with given request specification: io.restassured.internal.RequestSpecificationImpl@35b9d340
+and the endpoint is : /ContactUs/SetConnectMeRequest
+and with given http verb : POST
+23:10:44.948 INFO  connectme.ConnectMeEndpoints (ConnectMeEndpoints.java:76) - Initializing the add Connect me payload.
+23:10:46.166 INFO  connectme.ConnectMeEndpoints (ConnectMeEndpoints.java:82) - Initializing the add  Outage connect me specification.
+23:10:46.171 INFO  connectme.ConnectMeEndpoints (ConnectMeEndpoints.java:93) - Hit the add Outage ConnectMe with given request specification: io.restassured.internal.RequestSpecificationImpl@36b0670
+and the endpoint is : /ContactUs/SetConnectMeRequest
+and with given http verb : POST
+23:10:47.824 INFO  driver.DriverFactory (DriverFactory.java:59) - Open the url {} https://qa.smartcmobile.net/SCM_10.0_S-CSP/ using the selenium get() method.
+23:10:55.261 INFO  scp.HomePage (HomePage.java:132) - Wait for page loader invisibility.
+23:10:55.261 INFO  driver.Page (    Page.java:250) - Waiting for element to be invisible for 120 seconds.
+23:11:00.300 INFO  driver.Page (    Page.java:253) - Element is invisible from the page.
+23:11:00.300 INFO  csp.AdminLoginPage (AdminLoginPage.java:334) - Checking that the current page is Admin login page.
+23:11:00.300 INFO  driver.Page (    Page.java:40) - Fetching the current URL.
+23:11:00.307 INFO  driver.Page (    Page.java:41) - The Current URL is: https://qa.smartcmobile.net/SCM_10.0_S-CSP/
+23:11:00.312 INFO  driver.Page (    Page.java:46) - Fetching the current title.
+23:11:00.319 INFO  driver.Page (    Page.java:47) - The Current Title is: SCM Admin - Login
+23:11:00.325 INFO  csp.AdminLoginPage (AdminLoginPage.java:337) - The current page is Admin login page {}: true
+23:11:00.325 INFO  csp.AdminLoginPage (AdminLoginPage.java:30) - Populating username {} :qauser
+23:11:00.345 INFO  driver.Page (    Page.java:121) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (ad3605d802ce401785e611e92766e916)] -> css selector: [id='txtAdminLogin']] to be present in the DOM for duration of {} 120
+23:11:00.346 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+23:11:00.377 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+23:11:00.386 INFO  driver.Page (    Page.java:123) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (ad3605d802ce401785e611e92766e916)] -> css selector: [id='txtAdminLogin']] before sending the keys.
+23:11:00.457 INFO  driver.Page (    Page.java:125) - Sending the following keys {} qauser to the element {} [[ChromeDriver: chrome on WINDOWS (ad3605d802ce401785e611e92766e916)] -> css selector: [id='txtAdminLogin']]
+23:11:00.530 INFO  csp.AdminLoginPage (AdminLoginPage.java:32) - Username populated successfully.
+23:11:00.530 INFO  csp.AdminLoginPage (AdminLoginPage.java:54) - Populating password {} :Sew@2021$!
+23:11:00.551 INFO  driver.Page (    Page.java:121) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (ad3605d802ce401785e611e92766e916)] -> css selector: [id='txtpwd']] to be present in the DOM for duration of {} 120
+23:11:00.551 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+23:11:00.585 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+23:11:00.596 INFO  driver.Page (    Page.java:123) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (ad3605d802ce401785e611e92766e916)] -> css selector: [id='txtpwd']] before sending the keys.
+23:11:00.664 INFO  driver.Page (    Page.java:125) - Sending the following keys {} Sew@2021$! to the element {} [[ChromeDriver: chrome on WINDOWS (ad3605d802ce401785e611e92766e916)] -> css selector: [id='txtpwd']]
+23:11:00.783 INFO  csp.AdminLoginPage (AdminLoginPage.java:56) - Password populated successfully.
+23:11:00.783 INFO  driver.Page (    Page.java:59) - Preparing for element to click.
+23:11:00.783 INFO  driver.Page (    Page.java:211) - Waiting for element to be clickable for 120 seconds.
+23:11:00.856 INFO  driver.Page (    Page.java:214) - Element is clickable now.
+23:11:07.021 INFO  driver.Page (    Page.java:62) - Element is clicked successfully.
+23:11:07.021 INFO  csp.AdminLoginPage (AdminLoginPage.java:67) - SignIn Button clicked successfully.
+23:11:07.021 INFO  scp.HomePage (HomePage.java:132) - Wait for page loader invisibility.
+23:11:07.022 INFO  driver.Page (    Page.java:250) - Waiting for element to be invisible for 120 seconds.
+23:11:07.058 INFO  driver.Page (    Page.java:253) - Element is invisible from the page.
+23:11:07.059 INFO  csp.AdminHomePage (AdminHomePage.java:181) - Checking that the current page is Admin Home page.
+23:11:07.059 INFO  driver.Page (    Page.java:40) - Fetching the current URL.
+23:11:07.063 INFO  driver.Page (    Page.java:41) - The Current URL is: https://qa.smartcmobile.net/SCM_10.0_S-CSP/Home.aspx
+23:11:07.068 INFO  driver.Page (    Page.java:46) - Fetching the current title.
+23:11:07.072 INFO  driver.Page (    Page.java:47) - The Current Title is: Dashboard
+23:11:07.077 INFO  csp.AdminHomePage (AdminHomePage.java:184) - The current page is Admin Home page {}: true
+23:11:07.078 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+23:11:07.121 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+23:11:07.121 INFO  csp.AdminHomePage (AdminHomePage.java:61) - Notification Link is Visible on the Admin Home page.
+23:11:07.121 INFO  driver.Page (    Page.java:59) - Preparing for element to click.
+23:11:07.121 INFO  driver.Page (    Page.java:211) - Waiting for element to be clickable for 120 seconds.
+23:11:07.174 INFO  driver.Page (    Page.java:214) - Element is clickable now.
+23:11:12.773 INFO  driver.Page (    Page.java:62) - Element is clicked successfully.
+23:11:12.773 INFO  csp.AdminHomePage (AdminHomePage.java:65) - Notification Link clicked successfully.
+23:11:12.773 INFO  scp.HomePage (HomePage.java:132) - Wait for page loader invisibility.
+23:11:12.773 INFO  driver.Page (    Page.java:250) - Waiting for element to be invisible for 120 seconds.
+23:11:17.102 INFO  driver.Page (    Page.java:253) - Element is invisible from the page.
+23:11:17.103 INFO  scp.HomePage (HomePage.java:183) - Wait for Spinner Loading Image invisibility.
+23:11:17.103 INFO  driver.Page (    Page.java:250) - Waiting for element to be invisible for 120 seconds.
+23:11:22.124 INFO  driver.Page (    Page.java:253) - Element is invisible from the page.
+23:11:22.125 INFO  csp.AdminNotificationPage (AdminNotificationPage.java:1017) - Wait for Next Page visibility on Notification Page.
+23:11:22.125 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+23:11:22.160 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+23:11:22.160 INFO  driver.Page (    Page.java:59) - Preparing for element to click.
+23:11:22.160 INFO  driver.Page (    Page.java:211) - Waiting for element to be clickable for 120 seconds.
+23:11:22.211 INFO  driver.Page (    Page.java:214) - Element is clickable now.
+23:11:22.282 INFO  driver.Page (    Page.java:62) - Element is clicked successfully.
+23:11:22.283 INFO  csp.AdminNotificationPage (AdminNotificationPage.java:42) - Connect Me link clicked {}.
+23:11:22.283 INFO  scp.HomePage (HomePage.java:183) - Wait for Spinner Loading Image invisibility.
+23:11:22.283 INFO  driver.Page (    Page.java:250) - Waiting for element to be invisible for 120 seconds.
+23:11:31.659 INFO  driver.Page (    Page.java:253) - Element is invisible from the page.
+23:11:31.659 INFO  driver.Page (    Page.java:194) - Returning web element for by type locator : By.xpath: //span[@class='msgSubject'][contains(text(),'CM-550414518')]/preceding::input[1]
+23:11:39.132 INFO  driver.DriverFactory (DriverFactory.java:122) - Clearing all the cookies.
+23:11:45.722 INFO  driver.WebDriverFactory (WebDriverFactory.java:210) - Setting up the browser window to its max.
+23:11:45.866 INFO  driver.WebDriverFactory (WebDriverFactory.java:199) - Initializing the implicit wait timeout for {} 5
+23:11:45.867 INFO  driver.WebDriverFactory (WebDriverFactory.java:202) - Initializing the page load timeout.
+23:11:45.869 INFO  driver.DriverFactory (DriverFactory.java:122) - Clearing all the cookies.
+23:11:45.874 INFO  driver.DriverFactory (DriverFactory.java:59) - Open the url {} https://qa.smartcmobile.net/SCM_10.0_S-CSP/ using the selenium get() method.
+23:11:57.863 INFO  csp.AdminNotificationTests (AdminNotificationTests.java:330) - To verify the tests with the below test case id's: C99044,C99045,C99046,C99047,C99048,C99054
+23:11:57.870 INFO  connectme.ConnectMeEndpoints (ConnectMeEndpoints.java:76) - Initializing the add Connect me payload.
+23:11:59.181 INFO  connectme.ConnectMeEndpoints (ConnectMeEndpoints.java:82) - Initializing the add  Outage connect me specification.
+23:11:59.187 INFO  connectme.ConnectMeEndpoints (ConnectMeEndpoints.java:93) - Hit the add Outage ConnectMe with given request specification: io.restassured.internal.RequestSpecificationImpl@1021f1ae
+and the endpoint is : /ContactUs/SetConnectMeRequest
+and with given http verb : POST
+23:12:06.699 INFO  driver.DriverFactory (DriverFactory.java:122) - Clearing all the cookies.
+23:12:14.065 INFO  driver.WebDriverFactory (WebDriverFactory.java:210) - Setting up the browser window to its max.
+23:12:14.196 INFO  driver.WebDriverFactory (WebDriverFactory.java:199) - Initializing the implicit wait timeout for {} 5
+23:12:14.198 INFO  driver.WebDriverFactory (WebDriverFactory.java:202) - Initializing the page load timeout.
+23:12:14.200 INFO  driver.DriverFactory (DriverFactory.java:122) - Clearing all the cookies.
+23:12:14.214 INFO  driver.DriverFactory (DriverFactory.java:59) - Open the url {} https://qa.smartcmobile.net/SCM_10.0_S-CSP/ using the selenium get() method.
+23:12:27.264 INFO  csp.AdminNotificationTests (AdminNotificationTests.java:365) - To verify the tests with the below test case id's: C99051, C99052, C99053, C99059, C99060
+23:12:27.272 INFO  driver.DriverFactory (DriverFactory.java:59) - Open the url {} https://qa.smartcmobile.net/SCM_10.0_S-CSP/ using the selenium get() method.
+23:12:36.284 INFO  scp.HomePage (HomePage.java:132) - Wait for page loader invisibility.
+23:12:36.284 INFO  driver.Page (    Page.java:250) - Waiting for element to be invisible for 120 seconds.
+23:12:41.334 INFO  driver.Page (    Page.java:253) - Element is invisible from the page.
+23:12:41.334 INFO  csp.AdminLoginPage (AdminLoginPage.java:334) - Checking that the current page is Admin login page.
+23:12:41.334 INFO  driver.Page (    Page.java:40) - Fetching the current URL.
+23:12:41.341 INFO  driver.Page (    Page.java:41) - The Current URL is: https://qa.smartcmobile.net/SCM_10.0_S-CSP/
+23:12:41.346 INFO  driver.Page (    Page.java:46) - Fetching the current title.
+23:12:41.352 INFO  driver.Page (    Page.java:47) - The Current Title is: SCM Admin - Login
+23:12:41.356 INFO  csp.AdminLoginPage (AdminLoginPage.java:337) - The current page is Admin login page {}: true
+23:12:41.356 INFO  csp.AdminLoginPage (AdminLoginPage.java:30) - Populating username {} :qauser
+23:12:41.372 INFO  driver.Page (    Page.java:121) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (1ac2f990a325592279d3c8827c002558)] -> css selector: [id='txtAdminLogin']] to be present in the DOM for duration of {} 120
+23:12:41.373 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+23:12:41.412 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+23:12:41.422 INFO  driver.Page (    Page.java:123) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (1ac2f990a325592279d3c8827c002558)] -> css selector: [id='txtAdminLogin']] before sending the keys.
+23:12:41.493 INFO  driver.Page (    Page.java:125) - Sending the following keys {} qauser to the element {} [[ChromeDriver: chrome on WINDOWS (1ac2f990a325592279d3c8827c002558)] -> css selector: [id='txtAdminLogin']]
+23:12:41.562 INFO  csp.AdminLoginPage (AdminLoginPage.java:32) - Username populated successfully.
+23:12:41.562 INFO  csp.AdminLoginPage (AdminLoginPage.java:54) - Populating password {} :Sew@2021$!
+23:12:41.581 INFO  driver.Page (    Page.java:121) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (1ac2f990a325592279d3c8827c002558)] -> css selector: [id='txtpwd']] to be present in the DOM for duration of {} 120
+23:12:41.582 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+23:12:41.618 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+23:12:41.629 INFO  driver.Page (    Page.java:123) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (1ac2f990a325592279d3c8827c002558)] -> css selector: [id='txtpwd']] before sending the keys.
+23:12:41.710 INFO  driver.Page (    Page.java:125) - Sending the following keys {} Sew@2021$! to the element {} [[ChromeDriver: chrome on WINDOWS (1ac2f990a325592279d3c8827c002558)] -> css selector: [id='txtpwd']]
+23:12:41.837 INFO  csp.AdminLoginPage (AdminLoginPage.java:56) - Password populated successfully.
+23:12:41.837 INFO  driver.Page (    Page.java:59) - Preparing for element to click.
+23:12:41.837 INFO  driver.Page (    Page.java:211) - Waiting for element to be clickable for 120 seconds.
+23:12:41.912 INFO  driver.Page (    Page.java:214) - Element is clickable now.
+23:12:51.118 INFO  driver.Page (    Page.java:62) - Element is clicked successfully.
+23:12:51.118 INFO  csp.AdminLoginPage (AdminLoginPage.java:67) - SignIn Button clicked successfully.
+23:12:51.118 INFO  scp.HomePage (HomePage.java:132) - Wait for page loader invisibility.
+23:12:51.118 INFO  driver.Page (    Page.java:250) - Waiting for element to be invisible for 120 seconds.
+23:12:51.147 INFO  driver.Page (    Page.java:253) - Element is invisible from the page.
+23:12:51.148 INFO  csp.AdminHomePage (AdminHomePage.java:181) - Checking that the current page is Admin Home page.
+23:12:51.148 INFO  driver.Page (    Page.java:40) - Fetching the current URL.
+23:12:51.152 INFO  driver.Page (    Page.java:41) - The Current URL is: https://qa.smartcmobile.net/SCM_10.0_S-CSP/Home.aspx
+23:12:51.155 INFO  driver.Page (    Page.java:46) - Fetching the current title.
+23:12:51.159 INFO  driver.Page (    Page.java:47) - The Current Title is: Dashboard
+23:12:51.164 INFO  csp.AdminHomePage (AdminHomePage.java:184) - The current page is Admin Home page {}: true
+23:12:51.165 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+23:12:51.200 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+23:12:51.200 INFO  csp.AdminHomePage (AdminHomePage.java:61) - Notification Link is Visible on the Admin Home page.
+23:12:51.200 INFO  driver.Page (    Page.java:59) - Preparing for element to click.
+23:12:51.200 INFO  driver.Page (    Page.java:211) - Waiting for element to be clickable for 120 seconds.
+23:12:51.240 INFO  driver.Page (    Page.java:214) - Element is clickable now.
+23:12:55.836 INFO  driver.Page (    Page.java:62) - Element is clicked successfully.
+23:12:55.836 INFO  csp.AdminHomePage (AdminHomePage.java:65) - Notification Link clicked successfully.
+23:12:55.836 INFO  scp.HomePage (HomePage.java:132) - Wait for page loader invisibility.
+23:12:55.836 INFO  driver.Page (    Page.java:250) - Waiting for element to be invisible for 120 seconds.
+23:13:00.212 INFO  driver.Page (    Page.java:253) - Element is invisible from the page.
+23:13:00.212 INFO  scp.HomePage (HomePage.java:183) - Wait for Spinner Loading Image invisibility.
+23:13:00.212 INFO  driver.Page (    Page.java:250) - Waiting for element to be invisible for 120 seconds.
+23:13:05.217 INFO  driver.Page (    Page.java:253) - Element is invisible from the page.
+23:13:05.218 INFO  csp.AdminNotificationPage (AdminNotificationPage.java:1017) - Wait for Next Page visibility on Notification Page.
+23:13:05.218 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+23:13:05.247 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+23:13:05.249 INFO  driver.Page (    Page.java:59) - Preparing for element to click.
+23:13:05.249 INFO  driver.Page (    Page.java:211) - Waiting for element to be clickable for 120 seconds.
+23:13:05.300 INFO  driver.Page (    Page.java:214) - Element is clickable now.
+23:13:05.368 INFO  driver.Page (    Page.java:62) - Element is clicked successfully.
+23:13:05.368 INFO  csp.AdminNotificationPage (AdminNotificationPage.java:42) - Connect Me link clicked {}.
+23:13:05.368 INFO  scp.HomePage (HomePage.java:183) - Wait for Spinner Loading Image invisibility.
+23:13:05.368 INFO  driver.Page (    Page.java:250) - Waiting for element to be invisible for 120 seconds.
+23:13:15.229 INFO  driver.Page (    Page.java:253) - Element is invisible from the page.
+23:13:15.272 INFO  driver.Page (    Page.java:278) - Element {} : [[ChromeDriver: chrome on WINDOWS (1ac2f990a325592279d3c8827c002558)] -> css selector: #ddlSearch] is visible on the page.
+23:13:15.272 INFO  csp.AdminNotificationPage (AdminNotificationPage.java:679) - SearchBy Dropdown visibility status {}true
+23:13:15.320 INFO  driver.Page (    Page.java:278) - Element {} : [[ChromeDriver: chrome on WINDOWS (1ac2f990a325592279d3c8827c002558)] -> css selector: #txtEmailorAccountno] is visible on the page.
+23:13:15.320 INFO  csp.AdminNotificationPage (AdminNotificationPage.java:715) - SearchBy TextBox visibility status {}true
+23:13:15.367 INFO  driver.Page (    Page.java:278) - Element {} : [[ChromeDriver: chrome on WINDOWS (1ac2f990a325592279d3c8827c002558)] -> css selector: #btnsearch] is visible on the page.
+23:13:15.367 INFO  csp.AdminNotificationPage (AdminNotificationPage.java:741) - Search Button visibility status {}true
+23:13:15.412 INFO  driver.Page (    Page.java:278) - Element {} : [[ChromeDriver: chrome on WINDOWS (1ac2f990a325592279d3c8827c002558)] -> css selector: #buttonClear] is visible on the page.
+23:13:15.412 INFO  csp.AdminNotificationPage (AdminNotificationPage.java:776) - Clear Button visibility status {}true
+23:13:15.889 INFO  csp.AdminNotificationPage (AdminNotificationPage.java:684) - Search By Dropdown Values are [--Select--, Email, Service Account]
+23:13:16.337 INFO  driver.Page (    Page.java:59) - Preparing for element to click.
+23:13:16.337 INFO  driver.Page (    Page.java:211) - Waiting for element to be clickable for 120 seconds.
+23:13:16.383 INFO  driver.Page (    Page.java:214) - Element is clickable now.
+23:13:16.460 INFO  driver.Page (    Page.java:62) - Element is clicked successfully.
+23:13:16.460 INFO  csp.AdminNotificationPage (AdminNotificationPage.java:753) - Search Button clicked {}.
+23:13:17.023 INFO  driver.Page (    Page.java:161) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (1ac2f990a325592279d3c8827c002558)] -> css selector: #toast-container .toast-message] is Please Select Search By field.
+23:13:17.039 INFO  scp.HomePage (HomePage.java:167) - Label on toast message {}: Please Select Search By field.
+23:13:17.039 INFO  scp.HomePage (HomePage.java:146) - Wait for toast message invisibility.
+23:13:17.039 INFO  driver.Page (    Page.java:250) - Waiting for element to be invisible for 120 seconds.
+23:13:24.219 INFO  driver.Page (    Page.java:253) - Element is invisible from the page.
+23:13:24.219 INFO  driver.Page (    Page.java:353) - Selecting the option by visible text {}: Email
+23:13:24.259 INFO  driver.Page (    Page.java:355) - Selecting the given option to the web element {}: [[ChromeDriver: chrome on WINDOWS (1ac2f990a325592279d3c8827c002558)] -> css selector: #ddlSearch]
+23:13:24.367 INFO  driver.Page (    Page.java:357) - Given text is selected as the option to the given select web element.
+23:13:24.367 INFO  csp.AdminNotificationPage (AdminNotificationPage.java:696) - SearchBy Value is selected in SearchBy drop-down {}.
+23:13:24.380 INFO  driver.Page (    Page.java:138) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (1ac2f990a325592279d3c8827c002558)] -> css selector: #txtEmailorAccountno] to be present in the DOM for duration of {} 120
+23:13:24.380 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+23:13:24.402 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+23:13:24.409 INFO  driver.Page (    Page.java:140) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (1ac2f990a325592279d3c8827c002558)] -> css selector: #txtEmailorAccountno]
+23:13:24.460 INFO  csp.AdminNotificationPage (AdminNotificationPage.java:721) - SearchBy Textbox field is cleared.
+23:13:24.461 INFO  driver.Page (    Page.java:59) - Preparing for element to click.
+23:13:24.461 INFO  driver.Page (    Page.java:211) - Waiting for element to be clickable for 120 seconds.
+23:13:24.502 INFO  driver.Page (    Page.java:214) - Element is clickable now.
+23:13:24.552 INFO  driver.Page (    Page.java:62) - Element is clicked successfully.
+23:13:24.552 INFO  csp.AdminNotificationPage (AdminNotificationPage.java:753) - Search Button clicked {}.
+23:13:25.102 INFO  driver.Page (    Page.java:161) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (1ac2f990a325592279d3c8827c002558)] -> css selector: #toast-container .toast-message] is Please enter Email.
+23:13:25.120 INFO  scp.HomePage (HomePage.java:167) - Label on toast message {}: Please enter Email.
+23:13:25.120 INFO  scp.HomePage (HomePage.java:146) - Wait for toast message invisibility.
+23:13:25.120 INFO  driver.Page (    Page.java:250) - Waiting for element to be invisible for 120 seconds.
+23:13:32.312 INFO  driver.Page (    Page.java:253) - Element is invisible from the page.
+23:13:32.312 INFO  driver.Page (    Page.java:59) - Preparing for element to click.
+23:13:32.312 INFO  driver.Page (    Page.java:211) - Waiting for element to be clickable for 120 seconds.
+23:13:32.365 INFO  driver.Page (    Page.java:214) - Element is clickable now.
+23:13:32.437 INFO  driver.Page (    Page.java:62) - Element is clicked successfully.
+23:13:32.438 INFO  csp.AdminNotificationPage (AdminNotificationPage.java:788) - Clear Button clicked {}.
+23:13:32.438 INFO  scp.HomePage (HomePage.java:183) - Wait for Spinner Loading Image invisibility.
+23:13:32.438 INFO  driver.Page (    Page.java:250) - Waiting for element to be invisible for 120 seconds.
+23:13:37.464 INFO  driver.Page (    Page.java:253) - Element is invisible from the page.
+23:13:37.464 INFO  driver.Page (    Page.java:353) - Selecting the option by visible text {}: Service Account
+23:13:37.527 INFO  driver.Page (    Page.java:355) - Selecting the given option to the web element {}: [[ChromeDriver: chrome on WINDOWS (1ac2f990a325592279d3c8827c002558)] -> css selector: #ddlSearch]
+23:13:37.639 INFO  driver.Page (    Page.java:357) - Given text is selected as the option to the given select web element.
+23:13:37.639 INFO  csp.AdminNotificationPage (AdminNotificationPage.java:696) - SearchBy Value is selected in SearchBy drop-down {}.
+23:13:37.650 INFO  driver.Page (    Page.java:138) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (1ac2f990a325592279d3c8827c002558)] -> css selector: #txtEmailorAccountno] to be present in the DOM for duration of {} 120
+23:13:37.650 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+23:13:37.676 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+23:13:37.685 INFO  driver.Page (    Page.java:140) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (1ac2f990a325592279d3c8827c002558)] -> css selector: #txtEmailorAccountno]
+23:13:37.716 INFO  csp.AdminNotificationPage (AdminNotificationPage.java:721) - SearchBy Textbox field is cleared.
+23:13:37.716 INFO  driver.Page (    Page.java:59) - Preparing for element to click.
+23:13:37.716 INFO  driver.Page (    Page.java:211) - Waiting for element to be clickable for 120 seconds.
+23:13:37.753 INFO  driver.Page (    Page.java:214) - Element is clickable now.
+23:13:37.817 INFO  driver.Page (    Page.java:62) - Element is clicked successfully.
+23:13:37.817 INFO  csp.AdminNotificationPage (AdminNotificationPage.java:753) - Search Button clicked {}.
+23:13:38.382 INFO  driver.Page (    Page.java:161) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (1ac2f990a325592279d3c8827c002558)] -> css selector: #toast-container .toast-message] is Please enter Service Account.
+23:13:38.396 INFO  scp.HomePage (HomePage.java:167) - Label on toast message {}: Please enter Service Account.
+23:13:38.397 INFO  scp.HomePage (HomePage.java:146) - Wait for toast message invisibility.
+23:13:38.397 INFO  driver.Page (    Page.java:250) - Waiting for element to be invisible for 120 seconds.
+23:13:45.564 INFO  driver.Page (    Page.java:253) - Element is invisible from the page.
+23:13:45.564 INFO  driver.Page (    Page.java:59) - Preparing for element to click.
+23:13:45.565 INFO  driver.Page (    Page.java:211) - Waiting for element to be clickable for 120 seconds.
+23:13:45.628 INFO  driver.Page (    Page.java:214) - Element is clickable now.
+23:13:45.703 INFO  driver.Page (    Page.java:62) - Element is clicked successfully.
+23:13:45.703 INFO  csp.AdminNotificationPage (AdminNotificationPage.java:788) - Clear Button clicked {}.
+23:13:45.703 INFO  scp.HomePage (HomePage.java:183) - Wait for Spinner Loading Image invisibility.
+23:13:45.703 INFO  driver.Page (    Page.java:250) - Waiting for element to be invisible for 120 seconds.
+23:13:50.742 INFO  driver.Page (    Page.java:253) - Element is invisible from the page.
+23:13:50.742 INFO  driver.Page (    Page.java:353) - Selecting the option by visible text {}: Email
+23:13:50.780 INFO  driver.Page (    Page.java:355) - Selecting the given option to the web element {}: [[ChromeDriver: chrome on WINDOWS (1ac2f990a325592279d3c8827c002558)] -> css selector: #ddlSearch]
+23:13:50.877 INFO  driver.Page (    Page.java:357) - Given text is selected as the option to the given select web element.
+23:13:50.877 INFO  csp.AdminNotificationPage (AdminNotificationPage.java:696) - SearchBy Value is selected in SearchBy drop-down {}.
+23:13:50.891 INFO  driver.Page (    Page.java:138) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (1ac2f990a325592279d3c8827c002558)] -> css selector: #txtEmailorAccountno] to be present in the DOM for duration of {} 120
+23:13:50.891 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+23:13:50.914 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+23:13:50.925 INFO  driver.Page (    Page.java:140) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (1ac2f990a325592279d3c8827c002558)] -> css selector: #txtEmailorAccountno]
+23:13:50.962 INFO  csp.AdminNotificationPage (AdminNotificationPage.java:721) - SearchBy Textbox field is cleared.
+23:13:50.962 INFO  csp.AdminNotificationPage (AdminNotificationPage.java:725) - Populating SearchBy TextBox {} :xyz@abc.in/com
+23:13:50.973 INFO  driver.Page (    Page.java:121) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (1ac2f990a325592279d3c8827c002558)] -> css selector: #txtEmailorAccountno] to be present in the DOM for duration of {} 120
+23:13:50.974 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+23:13:50.996 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+23:13:51.009 INFO  driver.Page (    Page.java:123) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (1ac2f990a325592279d3c8827c002558)] -> css selector: #txtEmailorAccountno] before sending the keys.
+23:13:51.051 INFO  driver.Page (    Page.java:125) - Sending the following keys {} xyz@abc.in/com to the element {} [[ChromeDriver: chrome on WINDOWS (1ac2f990a325592279d3c8827c002558)] -> css selector: #txtEmailorAccountno]
+23:13:51.184 INFO  csp.AdminNotificationPage (AdminNotificationPage.java:727) - SearchBy TextBox populated successfully with Value xyz@abc.in/com
+23:13:51.184 INFO  driver.Page (    Page.java:59) - Preparing for element to click.
+23:13:51.184 INFO  driver.Page (    Page.java:211) - Waiting for element to be clickable for 120 seconds.
+23:13:51.220 INFO  driver.Page (    Page.java:214) - Element is clickable now.
+23:13:51.282 INFO  driver.Page (    Page.java:62) - Element is clicked successfully.
+23:13:51.282 INFO  csp.AdminNotificationPage (AdminNotificationPage.java:753) - Search Button clicked {}.
+23:13:51.825 INFO  driver.Page (    Page.java:161) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (1ac2f990a325592279d3c8827c002558)] -> css selector: #toast-container .toast-message] is Please enter valid Email.
+23:13:51.841 INFO  scp.HomePage (HomePage.java:167) - Label on toast message {}: Please enter valid Email.
+23:13:51.841 INFO  scp.HomePage (HomePage.java:146) - Wait for toast message invisibility.
+23:13:51.841 INFO  driver.Page (    Page.java:250) - Waiting for element to be invisible for 120 seconds.
+23:13:59.021 INFO  driver.Page (    Page.java:253) - Element is invisible from the page.
+23:13:59.021 INFO  driver.Page (    Page.java:59) - Preparing for element to click.
+23:13:59.021 INFO  driver.Page (    Page.java:211) - Waiting for element to be clickable for 120 seconds.
+23:13:59.066 INFO  driver.Page (    Page.java:214) - Element is clickable now.
+23:13:59.132 INFO  driver.Page (    Page.java:62) - Element is clicked successfully.
+23:13:59.132 INFO  csp.AdminNotificationPage (AdminNotificationPage.java:788) - Clear Button clicked {}.
+23:13:59.132 INFO  scp.HomePage (HomePage.java:183) - Wait for Spinner Loading Image invisibility.
+23:13:59.132 INFO  driver.Page (    Page.java:250) - Waiting for element to be invisible for 120 seconds.
+23:14:04.208 INFO  driver.Page (    Page.java:253) - Element is invisible from the page.
+23:14:04.209 INFO  driver.Page (    Page.java:353) - Selecting the option by visible text {}: Service Account
+23:14:04.271 INFO  driver.Page (    Page.java:355) - Selecting the given option to the web element {}: [[ChromeDriver: chrome on WINDOWS (1ac2f990a325592279d3c8827c002558)] -> css selector: #ddlSearch]
+23:14:04.360 INFO  driver.Page (    Page.java:357) - Given text is selected as the option to the given select web element.
+23:14:04.360 INFO  csp.AdminNotificationPage (AdminNotificationPage.java:696) - SearchBy Value is selected in SearchBy drop-down {}.
+23:14:04.373 INFO  driver.Page (    Page.java:138) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (1ac2f990a325592279d3c8827c002558)] -> css selector: #txtEmailorAccountno] to be present in the DOM for duration of {} 120
+23:14:04.373 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+23:14:04.399 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+23:14:04.413 INFO  driver.Page (    Page.java:140) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (1ac2f990a325592279d3c8827c002558)] -> css selector: #txtEmailorAccountno]
+23:14:04.455 INFO  csp.AdminNotificationPage (AdminNotificationPage.java:721) - SearchBy Textbox field is cleared.
+23:14:04.455 INFO  csp.AdminNotificationPage (AdminNotificationPage.java:725) - Populating SearchBy TextBox {} :xyz@abc.in/com
+23:14:04.464 INFO  driver.Page (    Page.java:121) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (1ac2f990a325592279d3c8827c002558)] -> css selector: #txtEmailorAccountno] to be present in the DOM for duration of {} 120
+23:14:04.464 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+23:14:04.488 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+23:14:04.496 INFO  driver.Page (    Page.java:123) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (1ac2f990a325592279d3c8827c002558)] -> css selector: #txtEmailorAccountno] before sending the keys.
+23:14:04.542 INFO  driver.Page (    Page.java:125) - Sending the following keys {} xyz@abc.in/com to the element {} [[ChromeDriver: chrome on WINDOWS (1ac2f990a325592279d3c8827c002558)] -> css selector: #txtEmailorAccountno]
+23:14:04.670 INFO  csp.AdminNotificationPage (AdminNotificationPage.java:727) - SearchBy TextBox populated successfully with Value xyz@abc.in/com
+23:14:04.670 INFO  driver.Page (    Page.java:59) - Preparing for element to click.
+23:14:04.670 INFO  driver.Page (    Page.java:211) - Waiting for element to be clickable for 120 seconds.
+23:14:04.709 INFO  driver.Page (    Page.java:214) - Element is clickable now.
+23:14:05.215 INFO  driver.Page (    Page.java:62) - Element is clicked successfully.
+23:14:05.215 INFO  csp.AdminNotificationPage (AdminNotificationPage.java:753) - Search Button clicked {}.
+23:14:05.786 INFO  driver.Page (    Page.java:161) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (1ac2f990a325592279d3c8827c002558)] -> css selector: #toast-container .toast-message] is Service Account is not valid.
+23:14:05.807 INFO  scp.HomePage (HomePage.java:167) - Label on toast message {}: Service Account is not valid.
+23:14:05.808 INFO  scp.HomePage (HomePage.java:146) - Wait for toast message invisibility.
+23:14:05.808 INFO  driver.Page (    Page.java:250) - Waiting for element to be invisible for 120 seconds.
+23:14:13.037 INFO  driver.Page (    Page.java:253) - Element is invisible from the page.
+23:14:13.037 INFO  driver.Page (    Page.java:59) - Preparing for element to click.
+23:14:13.037 INFO  driver.Page (    Page.java:211) - Waiting for element to be clickable for 120 seconds.
+23:14:13.085 INFO  driver.Page (    Page.java:214) - Element is clickable now.
+23:14:13.174 INFO  driver.Page (    Page.java:62) - Element is clicked successfully.
+23:14:13.174 INFO  csp.AdminNotificationPage (AdminNotificationPage.java:788) - Clear Button clicked {}.
+23:14:13.174 INFO  scp.HomePage (HomePage.java:183) - Wait for Spinner Loading Image invisibility.
+23:14:13.174 INFO  driver.Page (    Page.java:250) - Waiting for element to be invisible for 120 seconds.
+23:14:18.227 INFO  driver.Page (    Page.java:253) - Element is invisible from the page.
+23:14:18.227 INFO  driver.Page (    Page.java:353) - Selecting the option by visible text {}: Email
+23:14:18.259 INFO  driver.Page (    Page.java:355) - Selecting the given option to the web element {}: [[ChromeDriver: chrome on WINDOWS (1ac2f990a325592279d3c8827c002558)] -> css selector: #ddlSearch]
+23:14:18.350 INFO  driver.Page (    Page.java:357) - Given text is selected as the option to the given select web element.
+23:14:18.350 INFO  csp.AdminNotificationPage (AdminNotificationPage.java:696) - SearchBy Value is selected in SearchBy drop-down {}.
+23:14:18.361 INFO  driver.Page (    Page.java:138) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (1ac2f990a325592279d3c8827c002558)] -> css selector: #txtEmailorAccountno] to be present in the DOM for duration of {} 120
+23:14:18.361 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+23:14:18.383 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+23:14:18.391 INFO  driver.Page (    Page.java:140) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (1ac2f990a325592279d3c8827c002558)] -> css selector: #txtEmailorAccountno]
+23:14:18.421 INFO  csp.AdminNotificationPage (AdminNotificationPage.java:721) - SearchBy Textbox field is cleared.
+23:14:18.422 INFO  csp.AdminNotificationPage (AdminNotificationPage.java:725) - Populating SearchBy TextBox {} :xyz123@abc.in
+23:14:18.428 INFO  driver.Page (    Page.java:121) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (1ac2f990a325592279d3c8827c002558)] -> css selector: #txtEmailorAccountno] to be present in the DOM for duration of {} 120
+23:14:18.428 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+23:14:18.449 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+23:14:18.459 INFO  driver.Page (    Page.java:123) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (1ac2f990a325592279d3c8827c002558)] -> css selector: #txtEmailorAccountno] before sending the keys.
+23:14:18.505 INFO  driver.Page (    Page.java:125) - Sending the following keys {} xyz123@abc.in to the element {} [[ChromeDriver: chrome on WINDOWS (1ac2f990a325592279d3c8827c002558)] -> css selector: #txtEmailorAccountno]
+23:14:18.616 INFO  csp.AdminNotificationPage (AdminNotificationPage.java:727) - SearchBy TextBox populated successfully with Value xyz123@abc.in
+23:14:18.616 INFO  driver.Page (    Page.java:59) - Preparing for element to click.
+23:14:18.616 INFO  driver.Page (    Page.java:211) - Waiting for element to be clickable for 120 seconds.
+23:14:18.651 INFO  driver.Page (    Page.java:214) - Element is clickable now.
+23:14:19.435 INFO  driver.Page (    Page.java:62) - Element is clicked successfully.
+23:14:19.435 INFO  csp.AdminNotificationPage (AdminNotificationPage.java:753) - Search Button clicked {}.
+23:14:19.435 INFO  scp.HomePage (HomePage.java:183) - Wait for Spinner Loading Image invisibility.
+23:14:19.435 INFO  driver.Page (    Page.java:250) - Waiting for element to be invisible for 120 seconds.
+23:14:28.296 INFO  driver.Page (    Page.java:253) - Element is invisible from the page.
+23:14:28.316 INFO  driver.Page (    Page.java:153) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (1ac2f990a325592279d3c8827c002558)] -> css selector: #nodata] to be visible on the page for duration of {} 120
+23:14:28.317 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+23:14:28.343 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+23:14:28.381 INFO  driver.Page (    Page.java:156) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (1ac2f990a325592279d3c8827c002558)] -> css selector: #nodata] is We didn’t find anything to show here.
+23:14:28.401 INFO  csp.AdminNotificationPage (AdminNotificationPage.java:1950) - No Data Label is We didn’t find anything to show here.
+23:14:28.401 INFO  driver.Page (    Page.java:59) - Preparing for element to click.
+23:14:28.401 INFO  driver.Page (    Page.java:211) - Waiting for element to be clickable for 120 seconds.
+23:14:28.443 INFO  driver.Page (    Page.java:214) - Element is clickable now.
+23:14:28.547 INFO  driver.Page (    Page.java:62) - Element is clicked successfully.
+23:14:28.547 INFO  csp.AdminNotificationPage (AdminNotificationPage.java:788) - Clear Button clicked {}.
+23:14:28.547 INFO  scp.HomePage (HomePage.java:183) - Wait for Spinner Loading Image invisibility.
+23:14:28.547 INFO  driver.Page (    Page.java:250) - Waiting for element to be invisible for 120 seconds.
+23:14:33.570 INFO  driver.Page (    Page.java:253) - Element is invisible from the page.
+23:14:33.570 INFO  driver.Page (    Page.java:353) - Selecting the option by visible text {}: Service Account
+23:14:33.620 INFO  driver.Page (    Page.java:355) - Selecting the given option to the web element {}: [[ChromeDriver: chrome on WINDOWS (1ac2f990a325592279d3c8827c002558)] -> css selector: #ddlSearch]
+23:14:33.718 INFO  driver.Page (    Page.java:357) - Given text is selected as the option to the given select web element.
+23:14:33.718 INFO  csp.AdminNotificationPage (AdminNotificationPage.java:696) - SearchBy Value is selected in SearchBy drop-down {}.
+23:14:33.731 INFO  driver.Page (    Page.java:138) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (1ac2f990a325592279d3c8827c002558)] -> css selector: #txtEmailorAccountno] to be present in the DOM for duration of {} 120
+23:14:33.731 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+23:14:33.758 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+23:14:33.768 INFO  driver.Page (    Page.java:140) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (1ac2f990a325592279d3c8827c002558)] -> css selector: #txtEmailorAccountno]
+23:14:33.798 INFO  csp.AdminNotificationPage (AdminNotificationPage.java:721) - SearchBy Textbox field is cleared.
+23:14:33.798 INFO  csp.AdminNotificationPage (AdminNotificationPage.java:725) - Populating SearchBy TextBox {} :1234567890
+23:14:33.806 INFO  driver.Page (    Page.java:121) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (1ac2f990a325592279d3c8827c002558)] -> css selector: #txtEmailorAccountno] to be present in the DOM for duration of {} 120
+23:14:33.806 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+23:14:33.831 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+23:14:33.841 INFO  driver.Page (    Page.java:123) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (1ac2f990a325592279d3c8827c002558)] -> css selector: #txtEmailorAccountno] before sending the keys.
+23:14:33.885 INFO  driver.Page (    Page.java:125) - Sending the following keys {} 1234567890 to the element {} [[ChromeDriver: chrome on WINDOWS (1ac2f990a325592279d3c8827c002558)] -> css selector: #txtEmailorAccountno]
+23:14:33.989 INFO  csp.AdminNotificationPage (AdminNotificationPage.java:727) - SearchBy TextBox populated successfully with Value 1234567890
+23:14:33.989 INFO  driver.Page (    Page.java:59) - Preparing for element to click.
+23:14:33.989 INFO  driver.Page (    Page.java:211) - Waiting for element to be clickable for 120 seconds.
+23:14:34.028 INFO  driver.Page (    Page.java:214) - Element is clickable now.
+23:14:34.563 INFO  driver.Page (    Page.java:62) - Element is clicked successfully.
+23:14:34.563 INFO  csp.AdminNotificationPage (AdminNotificationPage.java:753) - Search Button clicked {}.
+23:14:34.563 INFO  scp.HomePage (HomePage.java:183) - Wait for Spinner Loading Image invisibility.
+23:14:34.563 INFO  driver.Page (    Page.java:250) - Waiting for element to be invisible for 120 seconds.
+23:14:39.604 INFO  driver.Page (    Page.java:253) - Element is invisible from the page.
+23:14:39.604 INFO  scp.HomePage (HomePage.java:146) - Wait for toast message invisibility.
+23:14:39.604 INFO  driver.Page (    Page.java:250) - Waiting for element to be invisible for 120 seconds.
+23:14:44.658 INFO  driver.Page (    Page.java:253) - Element is invisible from the page.
+23:14:44.659 INFO  driver.Page (    Page.java:59) - Preparing for element to click.
+23:14:44.659 INFO  driver.Page (    Page.java:211) - Waiting for element to be clickable for 120 seconds.
+23:14:44.743 INFO  driver.Page (    Page.java:214) - Element is clickable now.
+23:14:44.829 INFO  driver.Page (    Page.java:62) - Element is clicked successfully.
+23:14:44.829 INFO  csp.AdminHomePage (AdminHomePage.java:93) - Admin User Profile dropdown clicked successfully.
+23:14:44.829 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+23:14:44.868 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+23:14:44.868 INFO  csp.AdminHomePage (AdminHomePage.java:36) - SignOut Link is Visible on the page.
+23:14:44.868 INFO  driver.Page (    Page.java:59) - Preparing for element to click.
+23:14:44.868 INFO  driver.Page (    Page.java:211) - Waiting for element to be clickable for 120 seconds.
+23:14:44.913 INFO  driver.Page (    Page.java:214) - Element is clickable now.
+23:14:48.279 INFO  driver.Page (    Page.java:62) - Element is clicked successfully.
+23:14:48.279 INFO  csp.AdminHomePage (AdminHomePage.java:40) - Admin User SignOut Link clicked successfully.
+23:14:48.279 INFO  scp.HomePage (HomePage.java:132) - Wait for page loader invisibility.
+23:14:48.279 INFO  driver.Page (    Page.java:250) - Waiting for element to be invisible for 120 seconds.
+23:14:53.338 INFO  driver.Page (    Page.java:253) - Element is invisible from the page.
+23:14:53.339 INFO  csp.AdminNotificationTests (AdminNotificationTests.java:384) - Test Case execution for - verifySearchByValidationMessages - is Completed.
+23:14:57.424 INFO  driver.DriverFactory (DriverFactory.java:122) - Clearing all the cookies.
+23:15:03.794 INFO  driver.WebDriverFactory (WebDriverFactory.java:210) - Setting up the browser window to its max.
+23:15:03.967 INFO  driver.WebDriverFactory (WebDriverFactory.java:199) - Initializing the implicit wait timeout for {} 5
+23:15:03.969 INFO  driver.WebDriverFactory (WebDriverFactory.java:202) - Initializing the page load timeout.
+23:15:03.976 INFO  driver.DriverFactory (DriverFactory.java:122) - Clearing all the cookies.
+23:15:03.987 INFO  driver.DriverFactory (DriverFactory.java:59) - Open the url {} https://qa.smartcmobile.net/SCM_10.0_S-CSP/ using the selenium get() method.
+23:15:21.780 INFO  csp.AdminNotificationTests (AdminNotificationTests.java:445) - To verify the tests with the below test case id's: C99062
+23:15:21.857 INFO  driver.DriverFactory (DriverFactory.java:59) - Open the url {} https://qa.smartcmobile.net/SCM_10.0_S-CSP/ using the selenium get() method.
+23:15:30.368 INFO  scp.HomePage (HomePage.java:132) - Wait for page loader invisibility.
+23:15:30.368 INFO  driver.Page (    Page.java:250) - Waiting for element to be invisible for 120 seconds.
+23:15:35.431 INFO  driver.Page (    Page.java:253) - Element is invisible from the page.
+23:15:35.432 INFO  csp.AdminLoginPage (AdminLoginPage.java:334) - Checking that the current page is Admin login page.
+23:15:35.432 INFO  driver.Page (    Page.java:40) - Fetching the current URL.
+23:15:35.438 INFO  driver.Page (    Page.java:41) - The Current URL is: https://qa.smartcmobile.net/SCM_10.0_S-CSP/
+23:15:35.443 INFO  driver.Page (    Page.java:46) - Fetching the current title.
+23:15:35.449 INFO  driver.Page (    Page.java:47) - The Current Title is: SCM Admin - Login
+23:15:35.453 INFO  csp.AdminLoginPage (AdminLoginPage.java:337) - The current page is Admin login page {}: true
+23:15:35.454 INFO  csp.AdminLoginPage (AdminLoginPage.java:30) - Populating username {} :qauser
+23:15:35.476 INFO  driver.Page (    Page.java:121) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (fe361bafe750631b7c6731e21939f186)] -> css selector: [id='txtAdminLogin']] to be present in the DOM for duration of {} 120
+23:15:35.476 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+23:15:35.515 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+23:15:35.527 INFO  driver.Page (    Page.java:123) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (fe361bafe750631b7c6731e21939f186)] -> css selector: [id='txtAdminLogin']] before sending the keys.
+23:15:35.628 INFO  driver.Page (    Page.java:125) - Sending the following keys {} qauser to the element {} [[ChromeDriver: chrome on WINDOWS (fe361bafe750631b7c6731e21939f186)] -> css selector: [id='txtAdminLogin']]
+23:15:35.702 INFO  csp.AdminLoginPage (AdminLoginPage.java:32) - Username populated successfully.
+23:15:35.702 INFO  csp.AdminLoginPage (AdminLoginPage.java:54) - Populating password {} :Sew@2021$!
+23:15:35.722 INFO  driver.Page (    Page.java:121) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (fe361bafe750631b7c6731e21939f186)] -> css selector: [id='txtpwd']] to be present in the DOM for duration of {} 120
+23:15:35.722 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+23:15:35.759 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+23:15:35.769 INFO  driver.Page (    Page.java:123) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (fe361bafe750631b7c6731e21939f186)] -> css selector: [id='txtpwd']] before sending the keys.
+23:15:35.861 INFO  driver.Page (    Page.java:125) - Sending the following keys {} Sew@2021$! to the element {} [[ChromeDriver: chrome on WINDOWS (fe361bafe750631b7c6731e21939f186)] -> css selector: [id='txtpwd']]
+23:15:36.006 INFO  csp.AdminLoginPage (AdminLoginPage.java:56) - Password populated successfully.
+23:15:36.006 INFO  driver.Page (    Page.java:59) - Preparing for element to click.
+23:15:36.006 INFO  driver.Page (    Page.java:211) - Waiting for element to be clickable for 120 seconds.
+23:15:36.185 INFO  driver.Page (    Page.java:214) - Element is clickable now.
+23:15:52.241 INFO  driver.Page (    Page.java:62) - Element is clicked successfully.
+23:15:52.241 INFO  csp.AdminLoginPage (AdminLoginPage.java:67) - SignIn Button clicked successfully.
+23:15:52.241 INFO  scp.HomePage (HomePage.java:132) - Wait for page loader invisibility.
+23:15:52.241 INFO  driver.Page (    Page.java:250) - Waiting for element to be invisible for 120 seconds.
+23:15:52.289 INFO  driver.Page (    Page.java:253) - Element is invisible from the page.
+23:15:52.290 INFO  csp.AdminHomePage (AdminHomePage.java:181) - Checking that the current page is Admin Home page.
+23:15:52.291 INFO  driver.Page (    Page.java:40) - Fetching the current URL.
+23:15:52.298 INFO  driver.Page (    Page.java:41) - The Current URL is: https://qa.smartcmobile.net/SCM_10.0_S-CSP/Home.aspx
+23:15:52.304 INFO  driver.Page (    Page.java:46) - Fetching the current title.
+23:15:52.311 INFO  driver.Page (    Page.java:47) - The Current Title is: Dashboard
+23:15:52.317 INFO  csp.AdminHomePage (AdminHomePage.java:184) - The current page is Admin Home page {}: true
+23:15:52.318 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+23:15:52.361 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+23:15:52.361 INFO  csp.AdminHomePage (AdminHomePage.java:61) - Notification Link is Visible on the Admin Home page.
+23:15:52.361 INFO  driver.Page (    Page.java:59) - Preparing for element to click.
+23:15:52.361 INFO  driver.Page (    Page.java:211) - Waiting for element to be clickable for 120 seconds.
+23:15:52.418 INFO  driver.Page (    Page.java:214) - Element is clickable now.
+23:16:00.906 INFO  driver.Page (    Page.java:62) - Element is clicked successfully.
+23:16:00.906 INFO  csp.AdminHomePage (AdminHomePage.java:65) - Notification Link clicked successfully.
+23:16:00.906 INFO  scp.HomePage (HomePage.java:132) - Wait for page loader invisibility.
+23:16:00.906 INFO  driver.Page (    Page.java:250) - Waiting for element to be invisible for 120 seconds.
+23:16:04.127 INFO  driver.Page (    Page.java:253) - Element is invisible from the page.
+23:16:04.127 INFO  scp.HomePage (HomePage.java:183) - Wait for Spinner Loading Image invisibility.
+23:16:04.127 INFO  driver.Page (    Page.java:250) - Waiting for element to be invisible for 120 seconds.
+23:16:09.132 INFO  driver.Page (    Page.java:253) - Element is invisible from the page.
+23:16:09.133 INFO  csp.AdminNotificationPage (AdminNotificationPage.java:1017) - Wait for Next Page visibility on Notification Page.
+23:16:09.133 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+23:16:09.171 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+23:16:09.173 INFO  driver.Page (    Page.java:59) - Preparing for element to click.
+23:16:09.173 INFO  driver.Page (    Page.java:211) - Waiting for element to be clickable for 120 seconds.
+23:16:09.230 INFO  driver.Page (    Page.java:214) - Element is clickable now.
+23:16:09.334 INFO  driver.Page (    Page.java:62) - Element is clicked successfully.
+23:16:09.334 INFO  csp.AdminNotificationPage (AdminNotificationPage.java:42) - Connect Me link clicked {}.
+23:16:09.335 INFO  scp.HomePage (HomePage.java:183) - Wait for Spinner Loading Image invisibility.
+23:16:09.335 INFO  driver.Page (    Page.java:250) - Waiting for element to be invisible for 120 seconds.
+23:16:18.696 INFO  driver.Page (    Page.java:253) - Element is invisible from the page.
+23:16:20.424 INFO  driver.Page (    Page.java:353) - Selecting the option by visible text {}: Email
+23:16:20.466 INFO  driver.Page (    Page.java:355) - Selecting the given option to the web element {}: [[ChromeDriver: chrome on WINDOWS (fe361bafe750631b7c6731e21939f186)] -> css selector: #ddlSearch]
+23:16:20.595 INFO  driver.Page (    Page.java:357) - Given text is selected as the option to the given select web element.
+23:16:20.595 INFO  csp.AdminNotificationPage (AdminNotificationPage.java:696) - SearchBy Value is selected in SearchBy drop-down {}.
+23:16:20.596 INFO  csp.AdminNotificationPage (AdminNotificationPage.java:725) - Populating SearchBy TextBox {} :SCMNotifications@smartcmobile.com
+23:16:20.614 INFO  driver.Page (    Page.java:121) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (fe361bafe750631b7c6731e21939f186)] -> css selector: #txtEmailorAccountno] to be present in the DOM for duration of {} 120
+23:16:20.614 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+23:16:20.643 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+23:16:20.651 INFO  driver.Page (    Page.java:123) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (fe361bafe750631b7c6731e21939f186)] -> css selector: #txtEmailorAccountno] before sending the keys.
+23:16:20.708 INFO  driver.Page (    Page.java:125) - Sending the following keys {} SCMNotifications@smartcmobile.com to the element {} [[ChromeDriver: chrome on WINDOWS (fe361bafe750631b7c6731e21939f186)] -> css selector: #txtEmailorAccountno]
+23:16:20.929 INFO  csp.AdminNotificationPage (AdminNotificationPage.java:727) - SearchBy TextBox populated successfully with Value SCMNotifications@smartcmobile.com
+23:16:20.929 INFO  driver.Page (    Page.java:59) - Preparing for element to click.
+23:16:20.929 INFO  driver.Page (    Page.java:211) - Waiting for element to be clickable for 120 seconds.
+23:16:20.980 INFO  driver.Page (    Page.java:214) - Element is clickable now.
+23:16:21.774 INFO  driver.Page (    Page.java:62) - Element is clicked successfully.
+23:16:21.774 INFO  csp.AdminNotificationPage (AdminNotificationPage.java:753) - Search Button clicked {}.
+23:16:21.775 INFO  scp.HomePage (HomePage.java:183) - Wait for Spinner Loading Image invisibility.
+23:16:21.776 INFO  driver.Page (    Page.java:250) - Waiting for element to be invisible for 120 seconds.
+23:16:31.126 INFO  driver.Page (    Page.java:253) - Element is invisible from the page.
+23:16:31.126 INFO  csp.AdminNotificationPage (AdminNotificationPage.java:2030) - Wait for Pagination Label visibility on Notification Page.
+23:16:31.126 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+23:16:31.159 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+23:16:31.198 INFO  driver.Page (    Page.java:161) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (fe361bafe750631b7c6731e21939f186)] -> css selector: #legends b] is 1 - 50 of 54
+23:16:31.218 INFO  csp.AdminNotificationPage (AdminNotificationPage.java:2025) - Notifications Pagination label is 1 - 50 of 54
+23:16:31.218 INFO  driver.Page (    Page.java:59) - Preparing for element to click.
+23:16:31.218 INFO  driver.Page (    Page.java:211) - Waiting for element to be clickable for 120 seconds.
+23:16:31.283 INFO  driver.Page (    Page.java:214) - Element is clickable now.
+23:16:31.390 INFO  driver.Page (    Page.java:62) - Element is clicked successfully.
+23:16:31.390 INFO  csp.AdminHomePage (AdminHomePage.java:93) - Admin User Profile dropdown clicked successfully.
+23:16:31.390 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+23:16:31.428 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+23:16:31.428 INFO  csp.AdminHomePage (AdminHomePage.java:36) - SignOut Link is Visible on the page.
+23:16:31.428 INFO  driver.Page (    Page.java:59) - Preparing for element to click.
+23:16:31.428 INFO  driver.Page (    Page.java:211) - Waiting for element to be clickable for 120 seconds.
+23:16:31.470 INFO  driver.Page (    Page.java:214) - Element is clickable now.
+23:16:34.425 INFO  driver.Page (    Page.java:62) - Element is clicked successfully.
+23:16:34.425 INFO  csp.AdminHomePage (AdminHomePage.java:40) - Admin User SignOut Link clicked successfully.
+23:16:34.425 INFO  scp.HomePage (HomePage.java:132) - Wait for page loader invisibility.
+23:16:34.425 INFO  driver.Page (    Page.java:250) - Waiting for element to be invisible for 120 seconds.
+23:16:39.499 INFO  driver.Page (    Page.java:253) - Element is invisible from the page.
+23:16:39.499 INFO  csp.AdminNotificationTests (AdminNotificationTests.java:462) - Test Case execution for - verifySearchResultsRefreshSearchBy - is Completed.
+23:16:41.269 INFO  driver.DriverFactory (DriverFactory.java:122) - Clearing all the cookies.
+23:16:47.334 INFO  driver.WebDriverFactory (WebDriverFactory.java:210) - Setting up the browser window to its max.
+23:16:47.545 INFO  driver.WebDriverFactory (WebDriverFactory.java:199) - Initializing the implicit wait timeout for {} 5
+23:16:47.546 INFO  driver.WebDriverFactory (WebDriverFactory.java:202) - Initializing the page load timeout.
+23:16:47.555 INFO  driver.DriverFactory (DriverFactory.java:122) - Clearing all the cookies.
+23:16:47.599 INFO  driver.DriverFactory (DriverFactory.java:59) - Open the url {} https://qa.smartcmobile.net/SCM_10.0_S-CSP/ using the selenium get() method.
+23:17:02.134 INFO  csp.AdminNotificationTests (AdminNotificationTests.java:1186) - To verify the tests with the below test case id's: C80453, C80454, C80484, C80485
+23:17:02.141 INFO  driver.DriverFactory (DriverFactory.java:59) - Open the url {} https://qa.smartcmobile.net/SCM_10.0_S-CSP/ using the selenium get() method.
+23:17:12.031 INFO  scp.HomePage (HomePage.java:132) - Wait for page loader invisibility.
+23:17:12.031 INFO  driver.Page (    Page.java:250) - Waiting for element to be invisible for 120 seconds.
+23:17:17.097 INFO  driver.Page (    Page.java:253) - Element is invisible from the page.
+23:17:17.097 INFO  csp.AdminLoginPage (AdminLoginPage.java:334) - Checking that the current page is Admin login page.
+23:17:17.097 INFO  driver.Page (    Page.java:40) - Fetching the current URL.
+23:17:17.105 INFO  driver.Page (    Page.java:41) - The Current URL is: https://qa.smartcmobile.net/SCM_10.0_S-CSP/
+23:17:17.111 INFO  driver.Page (    Page.java:46) - Fetching the current title.
+23:17:17.118 INFO  driver.Page (    Page.java:47) - The Current Title is: SCM Admin - Login
+23:17:17.123 INFO  csp.AdminLoginPage (AdminLoginPage.java:337) - The current page is Admin login page {}: true
+23:17:17.123 INFO  csp.AdminLoginPage (AdminLoginPage.java:30) - Populating username {} :qauser
+23:17:17.142 INFO  driver.Page (    Page.java:121) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (d0e6fee0525c5850c4f4cb7f75c3e665)] -> css selector: [id='txtAdminLogin']] to be present in the DOM for duration of {} 120
+23:17:17.143 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+23:17:17.189 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+23:17:17.205 INFO  driver.Page (    Page.java:123) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (d0e6fee0525c5850c4f4cb7f75c3e665)] -> css selector: [id='txtAdminLogin']] before sending the keys.
+23:17:17.291 INFO  driver.Page (    Page.java:125) - Sending the following keys {} qauser to the element {} [[ChromeDriver: chrome on WINDOWS (d0e6fee0525c5850c4f4cb7f75c3e665)] -> css selector: [id='txtAdminLogin']]
+23:17:17.369 INFO  csp.AdminLoginPage (AdminLoginPage.java:32) - Username populated successfully.
+23:17:17.369 INFO  csp.AdminLoginPage (AdminLoginPage.java:54) - Populating password {} :Sew@2021$!
+23:17:17.390 INFO  driver.Page (    Page.java:121) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (d0e6fee0525c5850c4f4cb7f75c3e665)] -> css selector: [id='txtpwd']] to be present in the DOM for duration of {} 120
+23:17:17.390 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+23:17:17.423 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+23:17:17.433 INFO  driver.Page (    Page.java:123) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (d0e6fee0525c5850c4f4cb7f75c3e665)] -> css selector: [id='txtpwd']] before sending the keys.
+23:17:17.506 INFO  driver.Page (    Page.java:125) - Sending the following keys {} Sew@2021$! to the element {} [[ChromeDriver: chrome on WINDOWS (d0e6fee0525c5850c4f4cb7f75c3e665)] -> css selector: [id='txtpwd']]
+23:17:17.621 INFO  csp.AdminLoginPage (AdminLoginPage.java:56) - Password populated successfully.
+23:17:17.622 INFO  driver.Page (    Page.java:59) - Preparing for element to click.
+23:17:17.622 INFO  driver.Page (    Page.java:211) - Waiting for element to be clickable for 120 seconds.
+23:17:17.692 INFO  driver.Page (    Page.java:214) - Element is clickable now.
+23:17:27.982 INFO  driver.Page (    Page.java:62) - Element is clicked successfully.
+23:17:27.982 INFO  csp.AdminLoginPage (AdminLoginPage.java:67) - SignIn Button clicked successfully.
+23:17:27.982 INFO  scp.HomePage (HomePage.java:132) - Wait for page loader invisibility.
+23:17:27.982 INFO  driver.Page (    Page.java:250) - Waiting for element to be invisible for 120 seconds.
+23:17:28.015 INFO  driver.Page (    Page.java:253) - Element is invisible from the page.
+23:17:28.016 INFO  csp.AdminHomePage (AdminHomePage.java:181) - Checking that the current page is Admin Home page.
+23:17:28.016 INFO  driver.Page (    Page.java:40) - Fetching the current URL.
+23:17:28.023 INFO  driver.Page (    Page.java:41) - The Current URL is: https://qa.smartcmobile.net/SCM_10.0_S-CSP/Home.aspx
+23:17:28.028 INFO  driver.Page (    Page.java:46) - Fetching the current title.
+23:17:28.033 INFO  driver.Page (    Page.java:47) - The Current Title is: Dashboard
+23:17:28.040 INFO  csp.AdminHomePage (AdminHomePage.java:184) - The current page is Admin Home page {}: true
+23:17:28.041 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+23:17:28.079 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+23:17:28.079 INFO  csp.AdminHomePage (AdminHomePage.java:61) - Notification Link is Visible on the Admin Home page.
+23:17:28.079 INFO  driver.Page (    Page.java:59) - Preparing for element to click.
+23:17:28.080 INFO  driver.Page (    Page.java:211) - Waiting for element to be clickable for 120 seconds.
+23:17:28.136 INFO  driver.Page (    Page.java:214) - Element is clickable now.
+23:17:32.832 INFO  driver.Page (    Page.java:62) - Element is clicked successfully.
+23:17:32.832 INFO  csp.AdminHomePage (AdminHomePage.java:65) - Notification Link clicked successfully.
+23:17:32.832 INFO  scp.HomePage (HomePage.java:132) - Wait for page loader invisibility.
+23:17:32.832 INFO  driver.Page (    Page.java:250) - Waiting for element to be invisible for 120 seconds.
+23:17:37.194 INFO  driver.Page (    Page.java:253) - Element is invisible from the page.
+23:17:37.195 INFO  scp.HomePage (HomePage.java:183) - Wait for Spinner Loading Image invisibility.
+23:17:37.195 INFO  driver.Page (    Page.java:250) - Waiting for element to be invisible for 120 seconds.
+23:17:42.272 INFO  driver.Page (    Page.java:253) - Element is invisible from the page.
+23:17:42.272 INFO  csp.AdminNotificationPage (AdminNotificationPage.java:1017) - Wait for Next Page visibility on Notification Page.
+23:17:42.272 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+23:17:42.303 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+23:17:42.303 INFO  csp.AdminNotificationSteps (AdminNotificationSteps.java:1431) - Checking that the current page is Admin Notification Inbox page.
+23:17:42.303 INFO  driver.Page (    Page.java:40) - Fetching the current URL.
+23:17:42.308 INFO  driver.Page (    Page.java:41) - The Current URL is: https://qa.smartcmobile.net/SCM_10.0_S-CSP/Notification/Notification-Inbox.aspx
+23:17:42.311 INFO  driver.Page (    Page.java:46) - Fetching the current title.
+23:17:42.315 INFO  driver.Page (    Page.java:47) - The Current Title is: Notification
+23:17:42.320 INFO  csp.AdminNotificationSteps (AdminNotificationSteps.java:1434) - The current page is Admin Notification Inbox page {}: true
+23:17:42.320 INFO  csp.AdminNotificationSteps (AdminNotificationSteps.java:1440) - Checking that the current page is Admin Notification Outbox page.
+23:17:42.320 INFO  driver.Page (    Page.java:40) - Fetching the current URL.
+23:17:42.324 INFO  driver.Page (    Page.java:41) - The Current URL is: https://qa.smartcmobile.net/SCM_10.0_S-CSP/Notification/Notification-Inbox.aspx
+23:17:42.328 INFO  csp.AdminNotificationSteps (AdminNotificationSteps.java:1443) - The current page is Admin Notification Inbox page {}: false
+23:17:46.334 INFO  driver.DriverFactory (DriverFactory.java:122) - Clearing all the cookies.
+23:17:53.015 INFO  driver.WebDriverFactory (WebDriverFactory.java:210) - Setting up the browser window to its max.
+23:17:53.155 INFO  driver.WebDriverFactory (WebDriverFactory.java:199) - Initializing the implicit wait timeout for {} 5
+23:17:53.156 INFO  driver.WebDriverFactory (WebDriverFactory.java:202) - Initializing the page load timeout.
+23:17:53.157 INFO  driver.DriverFactory (DriverFactory.java:122) - Clearing all the cookies.
+23:17:53.165 INFO  driver.DriverFactory (DriverFactory.java:59) - Open the url {} https://qa.smartcmobile.net/SCM_10.0_S-CSP/ using the selenium get() method.
+23:18:06.834 INFO  csp.AdminNotificationTests (AdminNotificationTests.java:72) - To verify the tests with the below test case id's: C80455, C80456, C80473
+23:18:06.840 INFO  connectme.ConnectMeEndpoints (ConnectMeEndpoints.java:76) - Initializing the add Connect me payload.
+23:18:08.068 INFO  connectme.ConnectMeEndpoints (ConnectMeEndpoints.java:82) - Initializing the add  Outage connect me specification.
+23:18:08.074 INFO  connectme.ConnectMeEndpoints (ConnectMeEndpoints.java:93) - Hit the add Outage ConnectMe with given request specification: io.restassured.internal.RequestSpecificationImpl@2b1ed385
+and the endpoint is : /ContactUs/SetConnectMeRequest
+and with given http verb : POST
+23:18:09.926 INFO  driver.DriverFactory (DriverFactory.java:59) - Open the url {} https://qa.smartcmobile.net/SCM_10.0_S-CSP/ using the selenium get() method.
+23:18:18.372 INFO  scp.HomePage (HomePage.java:132) - Wait for page loader invisibility.
+23:18:18.372 INFO  driver.Page (    Page.java:250) - Waiting for element to be invisible for 120 seconds.
+23:18:23.414 INFO  driver.Page (    Page.java:253) - Element is invisible from the page.
+23:18:23.414 INFO  csp.AdminLoginPage (AdminLoginPage.java:334) - Checking that the current page is Admin login page.
+23:18:23.414 INFO  driver.Page (    Page.java:40) - Fetching the current URL.
+23:18:23.431 INFO  driver.Page (    Page.java:41) - The Current URL is: https://qa.smartcmobile.net/SCM_10.0_S-CSP/
+23:18:23.443 INFO  driver.Page (    Page.java:46) - Fetching the current title.
+23:18:23.456 INFO  driver.Page (    Page.java:47) - The Current Title is: SCM Admin - Login
+23:18:23.472 INFO  csp.AdminLoginPage (AdminLoginPage.java:337) - The current page is Admin login page {}: true
+23:18:23.473 INFO  csp.AdminLoginPage (AdminLoginPage.java:30) - Populating username {} :qauser
+23:18:23.503 INFO  driver.Page (    Page.java:121) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (e75a4cc7de85599a6ed641cb588c85f2)] -> css selector: [id='txtAdminLogin']] to be present in the DOM for duration of {} 120
+23:18:23.503 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+23:18:23.564 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+23:18:23.577 INFO  driver.Page (    Page.java:123) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (e75a4cc7de85599a6ed641cb588c85f2)] -> css selector: [id='txtAdminLogin']] before sending the keys.
+23:18:23.668 INFO  driver.Page (    Page.java:125) - Sending the following keys {} qauser to the element {} [[ChromeDriver: chrome on WINDOWS (e75a4cc7de85599a6ed641cb588c85f2)] -> css selector: [id='txtAdminLogin']]
+23:18:23.755 INFO  csp.AdminLoginPage (AdminLoginPage.java:32) - Username populated successfully.
+23:18:23.755 INFO  csp.AdminLoginPage (AdminLoginPage.java:54) - Populating password {} :Sew@2021$!
+23:18:23.781 INFO  driver.Page (    Page.java:121) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (e75a4cc7de85599a6ed641cb588c85f2)] -> css selector: [id='txtpwd']] to be present in the DOM for duration of {} 120
+23:18:23.781 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+23:18:23.826 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+23:18:23.839 INFO  driver.Page (    Page.java:123) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (e75a4cc7de85599a6ed641cb588c85f2)] -> css selector: [id='txtpwd']] before sending the keys.
+23:18:23.953 INFO  driver.Page (    Page.java:125) - Sending the following keys {} Sew@2021$! to the element {} [[ChromeDriver: chrome on WINDOWS (e75a4cc7de85599a6ed641cb588c85f2)] -> css selector: [id='txtpwd']]
+23:18:24.084 INFO  csp.AdminLoginPage (AdminLoginPage.java:56) - Password populated successfully.
+23:18:24.085 INFO  driver.Page (    Page.java:59) - Preparing for element to click.
+23:18:24.085 INFO  driver.Page (    Page.java:211) - Waiting for element to be clickable for 120 seconds.
+23:18:24.166 INFO  driver.Page (    Page.java:214) - Element is clickable now.
+23:18:32.179 INFO  driver.Page (    Page.java:62) - Element is clicked successfully.
+23:18:32.179 INFO  csp.AdminLoginPage (AdminLoginPage.java:67) - SignIn Button clicked successfully.
+23:18:32.179 INFO  scp.HomePage (HomePage.java:132) - Wait for page loader invisibility.
+23:18:32.179 INFO  driver.Page (    Page.java:250) - Waiting for element to be invisible for 120 seconds.
+23:18:32.221 INFO  driver.Page (    Page.java:253) - Element is invisible from the page.
+23:18:32.222 INFO  csp.AdminHomePage (AdminHomePage.java:181) - Checking that the current page is Admin Home page.
+23:18:32.222 INFO  driver.Page (    Page.java:40) - Fetching the current URL.
+23:18:32.229 INFO  driver.Page (    Page.java:41) - The Current URL is: https://qa.smartcmobile.net/SCM_10.0_S-CSP/Home.aspx
+23:18:32.237 INFO  driver.Page (    Page.java:46) - Fetching the current title.
+23:18:32.243 INFO  driver.Page (    Page.java:47) - The Current Title is: Dashboard
+23:18:32.250 INFO  csp.AdminHomePage (AdminHomePage.java:184) - The current page is Admin Home page {}: true
+23:18:32.251 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+23:18:32.299 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+23:18:32.299 INFO  csp.AdminHomePage (AdminHomePage.java:61) - Notification Link is Visible on the Admin Home page.
+23:18:32.299 INFO  driver.Page (    Page.java:59) - Preparing for element to click.
+23:18:32.300 INFO  driver.Page (    Page.java:211) - Waiting for element to be clickable for 120 seconds.
+23:18:32.367 INFO  driver.Page (    Page.java:214) - Element is clickable now.
+23:18:39.924 INFO  driver.Page (    Page.java:62) - Element is clicked successfully.
+23:18:39.924 INFO  csp.AdminHomePage (AdminHomePage.java:65) - Notification Link clicked successfully.
+23:18:39.924 INFO  scp.HomePage (HomePage.java:132) - Wait for page loader invisibility.
+23:18:39.925 INFO  driver.Page (    Page.java:250) - Waiting for element to be invisible for 120 seconds.
+23:18:44.294 INFO  driver.Page (    Page.java:253) - Element is invisible from the page.
+23:18:44.295 INFO  scp.HomePage (HomePage.java:183) - Wait for Spinner Loading Image invisibility.
+23:18:44.295 INFO  driver.Page (    Page.java:250) - Waiting for element to be invisible for 120 seconds.
+23:18:49.334 INFO  driver.Page (    Page.java:253) - Element is invisible from the page.
+23:18:49.334 INFO  csp.AdminNotificationPage (AdminNotificationPage.java:1017) - Wait for Next Page visibility on Notification Page.
+23:18:49.334 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+23:18:49.371 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+23:18:49.373 INFO  driver.Page (    Page.java:59) - Preparing for element to click.
+23:18:49.373 INFO  driver.Page (    Page.java:211) - Waiting for element to be clickable for 120 seconds.
+23:18:49.429 INFO  driver.Page (    Page.java:214) - Element is clickable now.
+23:18:49.503 INFO  driver.Page (    Page.java:62) - Element is clicked successfully.
+23:18:49.503 INFO  csp.AdminNotificationPage (AdminNotificationPage.java:42) - Connect Me link clicked {}.
+23:18:49.504 INFO  scp.HomePage (HomePage.java:183) - Wait for Spinner Loading Image invisibility.
+23:18:49.504 INFO  driver.Page (    Page.java:250) - Waiting for element to be invisible for 120 seconds.
+23:18:59.390 INFO  driver.Page (    Page.java:253) - Element is invisible from the page.
+23:19:00.442 INFO  driver.Page (    Page.java:59) - Preparing for element to click.
+23:19:00.442 INFO  driver.Page (    Page.java:211) - Waiting for element to be clickable for 120 seconds.
+23:21:03.683 INFO  driver.DriverFactory (DriverFactory.java:122) - Clearing all the cookies.
+23:21:10.269 INFO  driver.WebDriverFactory (WebDriverFactory.java:210) - Setting up the browser window to its max.
+23:21:10.399 INFO  driver.WebDriverFactory (WebDriverFactory.java:199) - Initializing the implicit wait timeout for {} 5
+23:21:10.401 INFO  driver.WebDriverFactory (WebDriverFactory.java:202) - Initializing the page load timeout.
+23:21:10.402 INFO  driver.DriverFactory (DriverFactory.java:122) - Clearing all the cookies.
+23:21:10.409 INFO  driver.DriverFactory (DriverFactory.java:59) - Open the url {} https://qa.smartcmobile.net/SCM_10.0_S-CSP/ using the selenium get() method.
+23:21:23.609 INFO  csp.AdminNotificationTests (AdminNotificationTests.java:503) - To verify the tests with the below test case id's: C99043
+23:21:23.616 INFO  connectme.ConnectMeEndpoints (ConnectMeEndpoints.java:76) - Initializing the add Connect me payload.
+23:21:24.912 INFO  connectme.ConnectMeEndpoints (ConnectMeEndpoints.java:82) - Initializing the add  Outage connect me specification.
+23:21:24.917 INFO  connectme.ConnectMeEndpoints (ConnectMeEndpoints.java:93) - Hit the add Outage ConnectMe with given request specification: io.restassured.internal.RequestSpecificationImpl@2d639729
+and the endpoint is : /ContactUs/SetConnectMeRequest
+and with given http verb : POST
+23:21:26.726 INFO  services.ServiceEndpoint (ServiceEndpoint.java:62) - Initializing the MoveIn Services payload.
+23:21:27.966 INFO  services.ServiceEndpoint (ServiceEndpoint.java:68) - Initializing the MoveIn Services BuildRequestSpecification.
+23:21:27.971 INFO  services.ServiceEndpoint (ServiceEndpoint.java:78) - Hit the MoveIn ServicesAPI with given request specification: io.restassured.internal.RequestSpecificationImpl@6dacda9e
+and the endpoint is : /Service/SubmitServiceRequest
+and with given http verb : POST
+23:21:31.165 INFO  driver.DriverFactory (DriverFactory.java:59) - Open the url {} https://qa.smartcmobile.net/SCM_10.0_S-CSP/ using the selenium get() method.
+23:21:38.737 INFO  scp.HomePage (HomePage.java:132) - Wait for page loader invisibility.
+23:21:38.737 INFO  driver.Page (    Page.java:250) - Waiting for element to be invisible for 120 seconds.
+23:21:43.801 INFO  driver.Page (    Page.java:253) - Element is invisible from the page.
+23:21:43.801 INFO  csp.AdminLoginPage (AdminLoginPage.java:334) - Checking that the current page is Admin login page.
+23:21:43.801 INFO  driver.Page (    Page.java:40) - Fetching the current URL.
+23:21:43.808 INFO  driver.Page (    Page.java:41) - The Current URL is: https://qa.smartcmobile.net/SCM_10.0_S-CSP/
+23:21:43.813 INFO  driver.Page (    Page.java:46) - Fetching the current title.
+23:21:43.819 INFO  driver.Page (    Page.java:47) - The Current Title is: SCM Admin - Login
+23:21:43.824 INFO  csp.AdminLoginPage (AdminLoginPage.java:337) - The current page is Admin login page {}: true
+23:21:43.824 INFO  csp.AdminLoginPage (AdminLoginPage.java:30) - Populating username {} :qauser
+23:21:43.843 INFO  driver.Page (    Page.java:121) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (92f50a1732ba73ef78ee21cd988975be)] -> css selector: [id='txtAdminLogin']] to be present in the DOM for duration of {} 120
+23:21:43.844 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+23:21:43.881 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+23:21:43.893 INFO  driver.Page (    Page.java:123) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (92f50a1732ba73ef78ee21cd988975be)] -> css selector: [id='txtAdminLogin']] before sending the keys.
+23:21:43.976 INFO  driver.Page (    Page.java:125) - Sending the following keys {} qauser to the element {} [[ChromeDriver: chrome on WINDOWS (92f50a1732ba73ef78ee21cd988975be)] -> css selector: [id='txtAdminLogin']]
+23:21:44.046 INFO  csp.AdminLoginPage (AdminLoginPage.java:32) - Username populated successfully.
+23:21:44.046 INFO  csp.AdminLoginPage (AdminLoginPage.java:54) - Populating password {} :Sew@2021$!
+23:21:44.066 INFO  driver.Page (    Page.java:121) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (92f50a1732ba73ef78ee21cd988975be)] -> css selector: [id='txtpwd']] to be present in the DOM for duration of {} 120
+23:21:44.066 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+23:21:44.101 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+23:21:44.112 INFO  driver.Page (    Page.java:123) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (92f50a1732ba73ef78ee21cd988975be)] -> css selector: [id='txtpwd']] before sending the keys.
+23:21:44.196 INFO  driver.Page (    Page.java:125) - Sending the following keys {} Sew@2021$! to the element {} [[ChromeDriver: chrome on WINDOWS (92f50a1732ba73ef78ee21cd988975be)] -> css selector: [id='txtpwd']]
+23:21:44.313 INFO  csp.AdminLoginPage (AdminLoginPage.java:56) - Password populated successfully.
+23:21:44.313 INFO  driver.Page (    Page.java:59) - Preparing for element to click.
+23:21:44.313 INFO  driver.Page (    Page.java:211) - Waiting for element to be clickable for 120 seconds.
+23:21:44.384 INFO  driver.Page (    Page.java:214) - Element is clickable now.
+23:21:53.740 INFO  driver.Page (    Page.java:62) - Element is clicked successfully.
+23:21:53.740 INFO  csp.AdminLoginPage (AdminLoginPage.java:67) - SignIn Button clicked successfully.
+23:21:53.741 INFO  scp.HomePage (HomePage.java:132) - Wait for page loader invisibility.
+23:21:53.741 INFO  driver.Page (    Page.java:250) - Waiting for element to be invisible for 120 seconds.
+23:21:53.777 INFO  driver.Page (    Page.java:253) - Element is invisible from the page.
+23:21:53.778 INFO  csp.AdminHomePage (AdminHomePage.java:181) - Checking that the current page is Admin Home page.
+23:21:53.778 INFO  driver.Page (    Page.java:40) - Fetching the current URL.
+23:21:53.783 INFO  driver.Page (    Page.java:41) - The Current URL is: https://qa.smartcmobile.net/SCM_10.0_S-CSP/Home.aspx
+23:21:53.790 INFO  driver.Page (    Page.java:46) - Fetching the current title.
+23:21:53.794 INFO  driver.Page (    Page.java:47) - The Current Title is: Dashboard
+23:21:53.798 INFO  csp.AdminHomePage (AdminHomePage.java:184) - The current page is Admin Home page {}: true
+23:21:53.800 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+23:21:53.839 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+23:21:53.839 INFO  csp.AdminHomePage (AdminHomePage.java:61) - Notification Link is Visible on the Admin Home page.
+23:21:53.839 INFO  driver.Page (    Page.java:59) - Preparing for element to click.
+23:21:53.839 INFO  driver.Page (    Page.java:211) - Waiting for element to be clickable for 120 seconds.
+23:21:53.888 INFO  driver.Page (    Page.java:214) - Element is clickable now.
+23:21:59.603 INFO  driver.Page (    Page.java:62) - Element is clicked successfully.
+23:21:59.603 INFO  csp.AdminHomePage (AdminHomePage.java:65) - Notification Link clicked successfully.
+23:21:59.603 INFO  scp.HomePage (HomePage.java:132) - Wait for page loader invisibility.
+23:21:59.603 INFO  driver.Page (    Page.java:250) - Waiting for element to be invisible for 120 seconds.
+23:22:02.905 INFO  driver.Page (    Page.java:253) - Element is invisible from the page.
+23:22:02.906 INFO  scp.HomePage (HomePage.java:183) - Wait for Spinner Loading Image invisibility.
+23:22:02.906 INFO  driver.Page (    Page.java:250) - Waiting for element to be invisible for 120 seconds.
+23:22:07.976 INFO  driver.Page (    Page.java:253) - Element is invisible from the page.
+23:22:07.976 INFO  csp.AdminNotificationPage (AdminNotificationPage.java:1017) - Wait for Next Page visibility on Notification Page.
+23:22:07.976 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+23:22:08.012 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+23:22:08.013 INFO  driver.Page (    Page.java:59) - Preparing for element to click.
+23:22:08.013 INFO  driver.Page (    Page.java:211) - Waiting for element to be clickable for 120 seconds.
+23:22:08.066 INFO  driver.Page (    Page.java:214) - Element is clickable now.
+23:22:08.182 INFO  driver.Page (    Page.java:62) - Element is clicked successfully.
+23:22:08.183 INFO  csp.AdminNotificationPage (AdminNotificationPage.java:42) - Connect Me link clicked {}.
+23:22:08.183 INFO  scp.HomePage (HomePage.java:183) - Wait for Spinner Loading Image invisibility.
+23:22:08.183 INFO  driver.Page (    Page.java:250) - Waiting for element to be invisible for 120 seconds.
+23:22:18.010 INFO  driver.Page (    Page.java:253) - Element is invisible from the page.
+23:22:23.930 INFO  driver.Page (    Page.java:153) - Wait for the element {} Proxy element for: DefaultElementLocator 'By.cssSelector: .DetailsMessageHeader > div:nth-child(2).from-name-section' to be visible on the page for duration of {} 120
+23:22:23.930 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+23:24:32.471 INFO  driver.DriverFactory (DriverFactory.java:122) - Clearing all the cookies.
+23:24:39.069 INFO  driver.WebDriverFactory (WebDriverFactory.java:210) - Setting up the browser window to its max.
+23:24:39.576 INFO  driver.WebDriverFactory (WebDriverFactory.java:199) - Initializing the implicit wait timeout for {} 5
+23:24:39.578 INFO  driver.WebDriverFactory (WebDriverFactory.java:202) - Initializing the page load timeout.
+23:24:39.580 INFO  driver.DriverFactory (DriverFactory.java:122) - Clearing all the cookies.
+23:24:39.699 INFO  driver.DriverFactory (DriverFactory.java:59) - Open the url {} https://qa.smartcmobile.net/SCM_10.0_S-CSP/ using the selenium get() method.
+23:24:59.140 INFO  csp.AdminNotificationTests (AdminNotificationTests.java:685) - To verify the tests with the below test case id's: C80465
+23:24:59.150 INFO  connectme.ConnectMeEndpoints (ConnectMeEndpoints.java:76) - Initializing the add Connect me payload.
+23:25:00.797 INFO  connectme.ConnectMeEndpoints (ConnectMeEndpoints.java:82) - Initializing the add  Outage connect me specification.
+23:25:00.802 INFO  connectme.ConnectMeEndpoints (ConnectMeEndpoints.java:93) - Hit the add Outage ConnectMe with given request specification: io.restassured.internal.RequestSpecificationImpl@3a9637ce
+and the endpoint is : /ContactUs/SetConnectMeRequest
+and with given http verb : POST
+23:25:03.010 INFO  driver.DriverFactory (DriverFactory.java:59) - Open the url {} https://qa.smartcmobile.net/SCM_10.0_S-CSP/ using the selenium get() method.
+23:25:13.523 INFO  scp.HomePage (HomePage.java:132) - Wait for page loader invisibility.
+23:25:13.524 INFO  driver.Page (    Page.java:250) - Waiting for element to be invisible for 120 seconds.
+23:25:18.764 INFO  driver.Page (    Page.java:253) - Element is invisible from the page.
+23:25:18.764 INFO  csp.AdminLoginPage (AdminLoginPage.java:334) - Checking that the current page is Admin login page.
+23:25:18.764 INFO  driver.Page (    Page.java:40) - Fetching the current URL.
+23:25:18.821 INFO  driver.Page (    Page.java:41) - The Current URL is: https://qa.smartcmobile.net/SCM_10.0_S-CSP/
+23:25:18.832 INFO  driver.Page (    Page.java:46) - Fetching the current title.
+23:25:18.849 INFO  driver.Page (    Page.java:47) - The Current Title is: SCM Admin - Login
+23:25:18.859 INFO  csp.AdminLoginPage (AdminLoginPage.java:337) - The current page is Admin login page {}: true
+23:25:18.859 INFO  csp.AdminLoginPage (AdminLoginPage.java:30) - Populating username {} :qauser
+23:25:18.892 INFO  driver.Page (    Page.java:121) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (b4eeb3209820ddddc0d71c7775ca0310)] -> css selector: [id='txtAdminLogin']] to be present in the DOM for duration of {} 120
+23:25:18.892 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+23:25:19.210 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+23:25:19.292 INFO  driver.Page (    Page.java:123) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (b4eeb3209820ddddc0d71c7775ca0310)] -> css selector: [id='txtAdminLogin']] before sending the keys.
+23:25:19.661 INFO  driver.Page (    Page.java:125) - Sending the following keys {} qauser to the element {} [[ChromeDriver: chrome on WINDOWS (b4eeb3209820ddddc0d71c7775ca0310)] -> css selector: [id='txtAdminLogin']]
+23:25:19.813 INFO  csp.AdminLoginPage (AdminLoginPage.java:32) - Username populated successfully.
+23:25:19.814 INFO  csp.AdminLoginPage (AdminLoginPage.java:54) - Populating password {} :Sew@2021$!
+23:25:19.865 INFO  driver.Page (    Page.java:121) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (b4eeb3209820ddddc0d71c7775ca0310)] -> css selector: [id='txtpwd']] to be present in the DOM for duration of {} 120
+23:25:19.866 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+23:25:19.948 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+23:25:19.967 INFO  driver.Page (    Page.java:123) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (b4eeb3209820ddddc0d71c7775ca0310)] -> css selector: [id='txtpwd']] before sending the keys.
+23:25:20.096 INFO  driver.Page (    Page.java:125) - Sending the following keys {} Sew@2021$! to the element {} [[ChromeDriver: chrome on WINDOWS (b4eeb3209820ddddc0d71c7775ca0310)] -> css selector: [id='txtpwd']]
+23:25:20.256 INFO  csp.AdminLoginPage (AdminLoginPage.java:56) - Password populated successfully.
+23:25:20.256 INFO  driver.Page (    Page.java:59) - Preparing for element to click.
+23:25:20.256 INFO  driver.Page (    Page.java:211) - Waiting for element to be clickable for 120 seconds.
+23:25:20.345 INFO  driver.Page (    Page.java:214) - Element is clickable now.
+23:25:35.848 INFO  driver.Page (    Page.java:62) - Element is clicked successfully.
+23:25:35.848 INFO  csp.AdminLoginPage (AdminLoginPage.java:67) - SignIn Button clicked successfully.
+23:25:35.849 INFO  scp.HomePage (HomePage.java:132) - Wait for page loader invisibility.
+23:25:35.850 INFO  driver.Page (    Page.java:250) - Waiting for element to be invisible for 120 seconds.
+23:25:35.896 INFO  driver.Page (    Page.java:253) - Element is invisible from the page.
+23:25:35.897 INFO  csp.AdminHomePage (AdminHomePage.java:181) - Checking that the current page is Admin Home page.
+23:25:35.897 INFO  driver.Page (    Page.java:40) - Fetching the current URL.
+23:25:35.903 INFO  driver.Page (    Page.java:41) - The Current URL is: https://qa.smartcmobile.net/SCM_10.0_S-CSP/Home.aspx
+23:25:35.912 INFO  driver.Page (    Page.java:46) - Fetching the current title.
+23:25:35.918 INFO  driver.Page (    Page.java:47) - The Current Title is: Dashboard
+23:25:35.924 INFO  csp.AdminHomePage (AdminHomePage.java:184) - The current page is Admin Home page {}: true
+23:25:35.926 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+23:25:35.980 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+23:25:35.980 INFO  csp.AdminHomePage (AdminHomePage.java:61) - Notification Link is Visible on the Admin Home page.
+23:25:35.980 INFO  driver.Page (    Page.java:59) - Preparing for element to click.
+23:25:35.981 INFO  driver.Page (    Page.java:211) - Waiting for element to be clickable for 120 seconds.
+23:25:36.064 INFO  driver.Page (    Page.java:214) - Element is clickable now.
+23:25:48.534 INFO  driver.Page (    Page.java:62) - Element is clicked successfully.
+23:25:48.534 INFO  csp.AdminHomePage (AdminHomePage.java:65) - Notification Link clicked successfully.
+23:25:48.534 INFO  scp.HomePage (HomePage.java:132) - Wait for page loader invisibility.
+23:25:48.534 INFO  driver.Page (    Page.java:250) - Waiting for element to be invisible for 120 seconds.
+23:25:51.051 INFO  driver.Page (    Page.java:253) - Element is invisible from the page.
+23:25:51.051 INFO  scp.HomePage (HomePage.java:183) - Wait for Spinner Loading Image invisibility.
+23:25:51.051 INFO  driver.Page (    Page.java:250) - Waiting for element to be invisible for 120 seconds.
+23:25:56.084 INFO  driver.Page (    Page.java:253) - Element is invisible from the page.
+23:25:56.084 INFO  csp.AdminNotificationPage (AdminNotificationPage.java:1017) - Wait for Next Page visibility on Notification Page.
+23:25:56.084 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+23:25:56.125 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+23:25:56.125 INFO  driver.Page (    Page.java:59) - Preparing for element to click.
+23:25:56.125 INFO  driver.Page (    Page.java:211) - Waiting for element to be clickable for 120 seconds.
+23:25:56.391 INFO  driver.Page (    Page.java:214) - Element is clickable now.
+23:25:56.497 INFO  driver.Page (    Page.java:62) - Element is clicked successfully.
+23:25:56.497 INFO  csp.AdminNotificationPage (AdminNotificationPage.java:42) - Connect Me link clicked {}.
+23:25:56.497 INFO  scp.HomePage (HomePage.java:183) - Wait for Spinner Loading Image invisibility.
+23:25:56.497 INFO  driver.Page (    Page.java:250) - Waiting for element to be invisible for 120 seconds.
+23:26:06.380 INFO  driver.Page (    Page.java:253) - Element is invisible from the page.
+23:26:07.403 INFO  driver.Page (    Page.java:59) - Preparing for element to click.
+23:26:07.404 INFO  driver.Page (    Page.java:211) - Waiting for element to be clickable for 120 seconds.
+23:26:07.458 INFO  driver.Page (    Page.java:214) - Element is clickable now.
+23:26:07.539 INFO  driver.Page (    Page.java:62) - Element is clicked successfully.
+23:26:07.539 INFO  csp.AdminNotificationPage (AdminNotificationPage.java:1117) - Notifications Delete Header Button clicked {}.
+23:27:39.737 INFO  driver.DriverFactory (DriverFactory.java:122) - Clearing all the cookies.

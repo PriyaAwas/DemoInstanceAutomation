@@ -1,0 +1,47 @@
+[
+  {
+    "id": "tokenize_payment_scenario_1",
+    "amount": 5.03,
+    "convenienceFee": 1.05,
+    "isLoggedIn": false,
+    "isAutoPay": false,
+    "saveProfileAfterPayment": false,
+    "token": ""
+  },
+  {
+    "id": "tokenize_payment_scenario_2",
+    "amount": 10,
+    "convenienceFee": 2.05,
+    "isLoggedIn": false,
+    "isAutoPay": false,
+    "saveProfileAfterPayment": false,
+    "token": ""
+  },
+  {
+    "id": "tokenize_payment_scenario_3",
+    "amount": 15,
+    "convenienceFee": 1.05,
+    "isLoggedIn": false,
+    "isAutoPay": false,
+    "saveProfileAfterPayment": false,
+    "token": ""
+  },
+  {
+    "id": "tokenize_payment_scenario_4",
+    "amount": 105.03,
+    "convenienceFee": 1.05,
+    "isLoggedIn": false,
+    "isAutoPay": false,
+    "saveProfileAfterPayment": false,
+    "token": ""
+  },
+  {
+    "id": "tokenize_payment_scenario_5",
+    "amount": 209,
+    "convenienceFee": 7.05,
+    "isLoggedIn": false,
+    "isAutoPay": false,
+    "saveProfileAfterPayment": false,
+    "token": ""
+  }
+]

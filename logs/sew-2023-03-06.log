@@ -1,0 +1,95 @@
+19:51:40.043 INFO  driver.Page (    Page.java:153) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (cbfda852aa9b71704621a001b6174d1a)] -> css selector: #spanTxt1] to be visible on the page for duration of {} 120
+19:51:40.059 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+19:51:40.096 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+19:51:40.150 INFO  driver.Page (    Page.java:156) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (cbfda852aa9b71704621a001b6174d1a)] -> css selector: #spanTxt1] is Max. length: 8000 characters
+19:51:40.177 INFO  csp.WaysToSavePage (WaysToSavePage.java:674) - Max Character Length Label Spanish Label Text is Max. length: 8000 characters
+19:51:40.235 INFO  driver.Page (    Page.java:278) - Element {} : [[ChromeDriver: chrome on WINDOWS (cbfda852aa9b71704621a001b6174d1a)] -> css selector: #PopupAddTopic .tip_title_wrapper_box > label.AddUserContentLabel:nth-of-type(5)] is visible on the page.
+19:51:40.236 INFO  csp.WaysToSavePage (WaysToSavePage.java:570) - Topic Name French Label visibility status {}true
+19:51:40.251 INFO  driver.Page (    Page.java:153) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (cbfda852aa9b71704621a001b6174d1a)] -> css selector: #PopupAddTopic .tip_title_wrapper_box > label.AddUserContentLabel:nth-of-type(5)] to be visible on the page for duration of {} 120
+19:51:40.252 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+19:51:40.295 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+19:51:40.347 INFO  driver.Page (    Page.java:156) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (cbfda852aa9b71704621a001b6174d1a)] -> css selector: #PopupAddTopic .tip_title_wrapper_box > label.AddUserContentLabel:nth-of-type(5)] is Topic Name (French)
+19:51:40.375 INFO  csp.WaysToSavePage (WaysToSavePage.java:576) - Topic Name French Label Text is Topic Name (French)
+19:51:40.426 INFO  driver.Page (    Page.java:278) - Element {} : [[ChromeDriver: chrome on WINDOWS (cbfda852aa9b71704621a001b6174d1a)] -> css selector: #txtQuestionFR] is visible on the page.
+19:51:40.426 INFO  csp.WaysToSavePage (WaysToSavePage.java:682) - Topic Name French TextBox visibility status {}true
+19:51:40.479 INFO  driver.Page (    Page.java:278) - Element {} : [[ChromeDriver: chrome on WINDOWS (cbfda852aa9b71704621a001b6174d1a)] -> css selector: #PopupAddTopic .tip_title_wrapper_box > label.AddUserContentLabel:nth-of-type(6)] is visible on the page.
+19:51:40.480 INFO  csp.WaysToSavePage (WaysToSavePage.java:584) - Description Name French Label visibility status {}true
+19:51:40.498 INFO  driver.Page (    Page.java:153) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (cbfda852aa9b71704621a001b6174d1a)] -> css selector: #PopupAddTopic .tip_title_wrapper_box > label.AddUserContentLabel:nth-of-type(6)] to be visible on the page for duration of {} 120
+19:51:40.499 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+19:51:40.536 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+19:51:40.602 INFO  driver.Page (    Page.java:156) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (cbfda852aa9b71704621a001b6174d1a)] -> css selector: #PopupAddTopic .tip_title_wrapper_box > label.AddUserContentLabel:nth-of-type(6)] is Description (French)
+19:51:40.628 INFO  csp.WaysToSavePage (WaysToSavePage.java:590) - Description Name French Label Text is Description (French)
+19:51:40.692 INFO  driver.Page (    Page.java:278) - Element {} : [[ChromeDriver: chrome on WINDOWS (cbfda852aa9b71704621a001b6174d1a)] -> xpath: //div[@id='SummernoteFrench']/following::div[1]/div[@class='note-editing-area']/div[@class='note-editable']] is visible on the page.
+19:51:40.693 INFO  csp.WaysToSavePage (WaysToSavePage.java:698) - Description French TextBox visibility status {}true
+19:51:40.760 INFO  driver.Page (    Page.java:278) - Element {} : [[ChromeDriver: chrome on WINDOWS (cbfda852aa9b71704621a001b6174d1a)] -> css selector: #spanTxt2] is visible on the page.
+19:51:40.761 INFO  csp.WaysToSavePage (WaysToSavePage.java:714) - Max Character Length Label French visibility status {}true
+19:51:40.771 INFO  driver.Page (    Page.java:153) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (cbfda852aa9b71704621a001b6174d1a)] -> css selector: #spanTxt2] to be visible on the page for duration of {} 120
+19:51:40.771 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+19:51:40.801 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+19:51:40.858 INFO  driver.Page (    Page.java:156) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (cbfda852aa9b71704621a001b6174d1a)] -> css selector: #spanTxt2] is Max. length: 8000 characters
+19:51:40.887 INFO  csp.WaysToSavePage (WaysToSavePage.java:720) - Max Character Length Label French Label Text is Max. length: 8000 characters
+19:51:40.959 INFO  driver.Page (    Page.java:278) - Element {} : [[ChromeDriver: chrome on WINDOWS (cbfda852aa9b71704621a001b6174d1a)] -> xpath: //label[text()='Image']] is visible on the page.
+19:51:40.960 INFO  csp.WaysToSavePage (WaysToSavePage.java:437) - Image Field on Add Ways To Save visibility status {}true
+19:51:40.973 INFO  driver.Page (    Page.java:153) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (cbfda852aa9b71704621a001b6174d1a)] -> xpath: //label[text()='Image']] to be visible on the page for duration of {} 120
+19:51:40.974 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+19:51:41.004 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+19:51:41.074 INFO  driver.Page (    Page.java:156) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (cbfda852aa9b71704621a001b6174d1a)] -> xpath: //label[text()='Image']] is Image
+19:51:41.104 INFO  csp.WaysToSavePage (WaysToSavePage.java:443) - Image Field on Add Ways To Save Label Text is Image
+19:51:41.145 INFO  driver.Page (    Page.java:307) - Element {} : [[[ChromeDriver: chrome on WINDOWS (cbfda852aa9b71704621a001b6174d1a)] -> css selector: #fileUpload]] is visible on the page.
+19:51:41.146 INFO  csp.WaysToSavePage (WaysToSavePage.java:301) - Upload File Button on Add Ways To Save Popup visibility status is true
+19:51:41.165 INFO  driver.Page (    Page.java:153) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (cbfda852aa9b71704621a001b6174d1a)] -> css selector: #lblFileupload] to be visible on the page for duration of {} 120
+19:51:41.165 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+19:51:41.200 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+19:51:41.247 INFO  driver.Page (    Page.java:156) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (cbfda852aa9b71704621a001b6174d1a)] -> css selector: #lblFileupload] is Choose File
+19:51:41.280 INFO  csp.WaysToSavePage (WaysToSavePage.java:309) - Upload File Button Label on Add Ways To Save Popup Choose File
+19:51:41.346 INFO  driver.Page (    Page.java:278) - Element {} : [[ChromeDriver: chrome on WINDOWS (cbfda852aa9b71704621a001b6174d1a)] -> css selector: #nofile] is visible on the page.
+19:51:41.347 INFO  csp.WaysToSavePage (WaysToSavePage.java:451) - Attached File Name on Add Ways To Save visibility status {}true
+19:51:41.363 INFO  driver.Page (    Page.java:153) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (cbfda852aa9b71704621a001b6174d1a)] -> css selector: #nofile] to be visible on the page for duration of {} 120
+19:51:41.363 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+19:51:41.403 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+19:51:41.461 INFO  driver.Page (    Page.java:156) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (cbfda852aa9b71704621a001b6174d1a)] -> css selector: #nofile] is No File Chosen
+19:51:41.496 INFO  csp.WaysToSavePage (WaysToSavePage.java:457) - Attached File Name on Add Ways To Save is No File Chosen
+19:51:41.560 INFO  driver.Page (    Page.java:278) - Element {} : [[ChromeDriver: chrome on WINDOWS (cbfda852aa9b71704621a001b6174d1a)] -> css selector: #lblFileAllowExtension] is visible on the page.
+19:51:41.561 INFO  csp.WaysToSavePage (WaysToSavePage.java:468) - Allowed File Types Label on Add Ways To Save visibility status {}true
+19:51:41.573 INFO  driver.Page (    Page.java:153) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (cbfda852aa9b71704621a001b6174d1a)] -> css selector: #lblFileAllowExtension] to be visible on the page for duration of {} 120
+19:51:41.573 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+19:51:41.601 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+19:51:41.656 INFO  driver.Page (    Page.java:156) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (cbfda852aa9b71704621a001b6174d1a)] -> css selector: #lblFileAllowExtension] is Allowed file types: GIF, PNG, BMP, JPEG, JPG
+19:51:41.685 INFO  csp.WaysToSavePage (WaysToSavePage.java:474) - Allowed File Types Label on Add Ways To Save is Allowed file types: GIF, PNG, BMP, JPEG, JPG
+19:51:41.740 INFO  driver.Page (    Page.java:278) - Element {} : [[ChromeDriver: chrome on WINDOWS (cbfda852aa9b71704621a001b6174d1a)] -> css selector: #BtnAdd] is visible on the page.
+19:51:41.740 INFO  csp.WaysToSavePage (WaysToSavePage.java:325) - Add Button on Add Ways To Save Popup visibility status is true
+19:51:41.803 INFO  driver.Page (    Page.java:278) - Element {} : [[ChromeDriver: chrome on WINDOWS (cbfda852aa9b71704621a001b6174d1a)] -> css selector: #PopupAddTopic button.close[aria-label='Click to Close']] is visible on the page.
+19:51:41.803 INFO  csp.WaysToSavePage (WaysToSavePage.java:485) - Close Button on Add Ways To Save Popup visibility status {}true
+19:51:41.804 INFO  driver.Page (    Page.java:529) - Preparing for element to click.
+19:51:41.850 INFO  driver.Page (    Page.java:532) - Element is clicked successfully.
+19:51:41.850 INFO  csp.WaysToSavePage (WaysToSavePage.java:490) - Close Button on Add Ways To Save Popup clicked successfully.
+19:51:41.850 INFO  driver.Page (    Page.java:529) - Preparing for element to click.
+19:51:41.913 INFO  driver.Page (    Page.java:532) - Element is clicked successfully.
+19:51:41.913 INFO  csp.WaysToSavePage (WaysToSavePage.java:331) - Add Button on Add Ways To Save Popup clicked successfully.
+19:51:42.494 INFO  driver.Page (    Page.java:161) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (cbfda852aa9b71704621a001b6174d1a)] -> css selector: #toast-container .toast-message] is Please enter all the mandatory information
+19:51:42.521 INFO  scp.HomePage (HomePage.java:155) - Label on toast message {}: Please enter all the mandatory information
+19:51:42.521 INFO  driver.Page (    Page.java:58) - Preparing for element to click.
+19:51:42.521 INFO  driver.Page (    Page.java:211) - Waiting for element to be clickable for 120 seconds.
+19:51:42.602 INFO  driver.Page (    Page.java:214) - Element is clickable now.
+19:51:42.676 INFO  driver.Page (    Page.java:61) - Element is clicked successfully.
+19:51:42.677 INFO  scp.HomePage (HomePage.java:147) - Wait for toast message invisibility.
+19:51:42.677 INFO  driver.Page (    Page.java:250) - Waiting for element to be invisible for 120 seconds.
+19:51:48.863 INFO  driver.Page (    Page.java:253) - Element is invisible from the page.
+19:51:48.864 INFO  driver.Page (    Page.java:58) - Preparing for element to click.
+19:51:48.864 INFO  driver.Page (    Page.java:211) - Waiting for element to be clickable for 120 seconds.
+19:51:48.951 INFO  driver.Page (    Page.java:214) - Element is clickable now.
+19:51:49.038 INFO  driver.Page (    Page.java:61) - Element is clicked successfully.
+19:51:49.038 INFO  csp.AdminHomePage (AdminHomePage.java:93) - Admin User Profile dropdown clicked successfully.
+19:51:49.039 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+19:51:49.082 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+19:51:49.083 INFO  csp.AdminHomePage (AdminHomePage.java:36) - SignOut Link is Visible on the page.
+19:51:49.083 INFO  driver.Page (    Page.java:58) - Preparing for element to click.
+19:51:49.083 INFO  driver.Page (    Page.java:211) - Waiting for element to be clickable for 120 seconds.
+19:51:49.140 INFO  driver.Page (    Page.java:214) - Element is clickable now.
+19:51:53.223 INFO  driver.Page (    Page.java:61) - Element is clicked successfully.
+19:51:53.225 INFO  csp.AdminHomePage (AdminHomePage.java:40) - Admin User SignOut Link clicked successfully.
+19:51:53.225 INFO  scp.HomePage (HomePage.java:133) - Wait for page loader invisibility.
+19:51:53.225 INFO  driver.Page (    Page.java:250) - Waiting for element to be invisible for 120 seconds.
+19:51:58.277 INFO  driver.Page (    Page.java:253) - Element is invisible from the page.
+19:51:58.278 INFO  csp.WaysToSaveTests (WaysToSaveTests.java:86) - Test Case execution for - verifyAddEfficiencyForm - is Completed.
+19:52:04.542 INFO  driver.DriverFactory (DriverFactory.java:122) - Clearing all the cookies.

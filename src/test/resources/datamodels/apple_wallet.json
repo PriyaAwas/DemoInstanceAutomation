@@ -1,0 +1,58 @@
+[
+  {
+    "firstName": "Nikhil",
+    "lastName": "Bosh",
+    "customerName": "Nikhil Apple Wallet",
+    "addressLine1": "123 Park Avenue",
+    "addressLine2": "Street 6",
+    "city": "Manchester",
+    "state": "NH",
+    "zip": "03105",
+    "countryCode": "US",
+    "nonceToken": "fake-apple-account-nonce",
+    "aPayCryptogram": "fake-cryptogram-ujhhs-kklss",
+    "aPayECommerceIndicator": "07"
+  },
+  {
+    "firstName": "Anshika",
+    "lastName": "Bhatija",
+    "customerName": "Anshika Apple Wallet",
+    "addressLine1": "123 Park Avenue",
+    "addressLine2": "Street 6",
+    "city": "Irvine",
+    "state": "CA",
+    "zip": "92602",
+    "countryCode": "US",
+    "nonceToken": "fake-apple-account-nonce",
+    "aPayCryptogram": "fake-cryptogram-ujhhs-kklss",
+    "aPayECommerceIndicator": "07"
+  },
+  {
+    "firstName": "Rahul",
+    "lastName": "Rana",
+    "customerName": "Rahul Apple Wallet",
+    "addressLine1": "123 Park Avenue",
+    "addressLine2": "Street 6",
+    "city": "Kansas",
+    "state": "MO",
+    "zip": "65018",
+    "countryCode": "US",
+    "nonceToken": "fake-apple-account-nonce",
+    "aPayCryptogram": "fake-cryptogram-ujhhs-kklss",
+    "aPayECommerceIndicator": "07"
+  },
+  {
+    "firstName": "Akhilesh",
+    "lastName": "Keshari",
+    "customerName": "Akhilesh Apple Wallet",
+    "addressLine1": "123 Park Avenue",
+    "addressLine2": "Street 6",
+    "city": "Orlando",
+    "state": "FL",
+    "zip": "33034",
+    "countryCode": "US",
+    "nonceToken": "fake-apple-account-nonce",
+    "aPayCryptogram": "fake-cryptogram-ujhhs-kklss",
+    "aPayECommerceIndicator": "07"
+  }
+]

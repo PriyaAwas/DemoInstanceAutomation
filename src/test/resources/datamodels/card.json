@@ -1,0 +1,67 @@
+[
+  {
+    "nameOnCard": "John Wick Visa Card",
+    "issuingNetwork": "Visa Card",
+    "cardNumber": "4111111111111111",
+    "expiry": "202408",
+    "cvv": "123",
+    "firstName": "John",
+    "lastName": "Wick",
+    "address": "123, Park Avenue",
+    "city": "Irvine",
+    "state": "CA",
+    "zipCode": "92602"
+  },
+  {
+    "nameOnCard": "Terrance Luis Master Card",
+    "issuingNetwork": "MasterCard",
+    "cardNumber": "5454545454545454",
+    "expiry": "202407",
+    "cvv": "123",
+    "firstName": "Terrance",
+    "lastName": "Luis",
+    "address": "123, Park Avenue",
+    "city": "Irvine",
+    "state": "CA",
+    "zipCode": "92602"
+  },
+  {
+    "nameOnCard": "Hanna Jones AMEX",
+    "issuingNetwork": "American Express",
+    "cardNumber": "379002000552199",
+    "expiry": "202406",
+    "cvv": "1234",
+    "firstName": "Hanna",
+    "lastName": "Jones",
+    "address": "123, Park Avenue",
+    "city": "Irvine",
+    "state": "CA",
+    "zipCode": "92602"
+  },
+  {
+    "nameOnCard": "John Doe Discover Card",
+    "issuingNetwork": "Discover Card",
+    "cardNumber": "6500000000000002",
+    "expiry": "202405",
+    "cvv": "123",
+    "firstName": "John",
+    "lastName": "Doe",
+    "address": "123, Park Avenue",
+    "city": "Irvine",
+    "state": "CA",
+    "zipCode": "92602"
+  },
+  {
+    "nameOnCard": "Not Supported",
+    "issuingNetwork": "DCB",
+    "cardNumber": "3566002020360505",
+    "expiry": "202304",
+    "cvv": "123",
+    "firstName": "Not",
+    "lastName": "Supported",
+    "address": "123, Park Avenue",
+    "city": "Irvine",
+    "state": "CA",
+    "zipCode": "92602"
+  }
+]

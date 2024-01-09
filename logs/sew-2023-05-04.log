@@ -1,0 +1,437 @@
+17:19:43.102 INFO  runner.TestRunner (TestRunner.java:32) - Initializing application properties config file.
+17:19:43.121 INFO  runner.TestRunner (TestRunner.java:35) - Initializing connection to the base database.
+17:19:43.122 INFO  runner.TestRunner (TestRunner.java:38) - Initializing resource path config file.
+17:19:43.124 INFO  runner.TestRunner (TestRunner.java:41) - Initializing usage months config from CSP.
+17:19:43.125 INFO  runner.TestRunner (TestRunner.java:44) - Initializing date config from CSP.
+17:19:43.125 INFO  runner.TestRunner (TestRunner.java:47) - Initializing language config from CSP.
+17:19:43.126 INFO  runner.TestRunner (TestRunner.java:50) - Initializing language config from CSP.
+17:19:43.126 INFO  runner.TestRunner (TestRunner.java:53) - Initializing language config from CSP.
+17:19:43.127 INFO  runner.TestRunner (TestRunner.java:56) - Initializing user model config.
+17:19:43.127 INFO  runner.TestRunner (TestRunner.java:59) - Initializing auth token config.
+17:19:43.128 INFO  runner.TestRunner (TestRunner.java:62) - Initializing Admin User config.
+17:19:44.956 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 1
+17:19:44.971 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 2
+17:19:44.974 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 3
+17:19:44.975 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 4
+17:19:44.978 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 5
+17:19:44.979 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 6
+17:19:44.980 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 7
+17:19:44.982 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 8
+17:19:44.983 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 9
+17:19:44.984 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 10
+17:19:44.988 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 11
+17:19:44.990 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 12
+17:19:44.990 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 13
+17:19:44.991 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 14
+17:19:44.992 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 15
+17:19:44.993 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 16
+17:19:44.995 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 17
+17:19:44.996 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 18
+17:19:44.998 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 19
+17:19:44.999 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 20
+17:19:45.000 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 21
+17:19:45.001 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 22
+17:19:45.002 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 23
+17:19:45.005 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 24
+17:19:45.006 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 25
+17:19:45.007 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 26
+17:19:45.008 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 27
+17:19:45.010 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 28
+17:19:45.011 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 29
+17:19:45.012 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 30
+17:19:45.012 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 31
+17:19:45.013 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 32
+17:19:45.014 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 33
+17:19:45.015 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 34
+17:19:45.016 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 35
+17:19:45.016 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 36
+17:19:45.019 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 37
+17:19:45.020 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 38
+17:19:45.021 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 39
+17:19:45.022 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 40
+17:19:45.022 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 41
+17:19:45.023 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 42
+17:19:45.024 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 43
+17:19:45.025 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 44
+17:19:45.026 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 45
+17:19:45.027 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 46
+17:19:45.028 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 47
+17:19:45.028 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 48
+17:19:45.029 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 49
+17:19:45.029 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 50
+17:19:45.030 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 51
+17:19:45.031 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 52
+17:19:45.032 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 53
+17:19:45.032 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 54
+17:19:45.033 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 55
+17:19:45.034 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 56
+17:19:45.035 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 57
+17:19:45.041 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 58
+17:19:45.046 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 59
+17:19:45.050 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 60
+17:19:45.052 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 61
+17:19:45.055 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 62
+17:19:45.056 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 63
+17:19:45.059 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 64
+17:19:45.061 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 65
+17:19:45.062 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 66
+17:19:45.063 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 67
+17:19:45.064 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 68
+17:19:45.065 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 69
+17:19:45.066 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 70
+17:19:45.067 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 71
+17:19:45.069 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 72
+17:19:45.071 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 73
+17:19:45.072 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 74
+17:19:45.072 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 75
+17:19:45.074 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 76
+17:19:45.075 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 77
+17:19:45.077 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 78
+17:19:45.079 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 79
+17:19:45.079 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 80
+17:19:45.092 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 81
+17:19:45.092 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 82
+17:19:45.095 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 83
+17:19:45.096 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 84
+17:19:45.702 WARN  config.Configuration (Configuration.java:231) - QA env being used by default. No env property set. This can be set in the sew.app.yml config file with a '{}=' property or on the command line with the switch '-D{}='.
+17:19:56.400 INFO  driver.WebDriverFactory (WebDriverFactory.java:192) - Setting up the browser window to its max.
+17:19:56.557 INFO  driver.WebDriverFactory (WebDriverFactory.java:181) - Initializing the implicit wait timeout for {} 5
+17:19:56.568 INFO  driver.WebDriverFactory (WebDriverFactory.java:184) - Initializing the page load timeout.
+17:19:56.580 INFO  driver.DriverFactory (DriverFactory.java:125) - Clearing all the cookies.
+17:19:56.602 INFO  driver.DriverFactory (DriverFactory.java:62) - Open the url {} https://u-wgl-r2.smartcmobile.net/Portal/ using the selenium get() method.
+17:20:11.984 INFO  scp.LoginTests (LoginTests.java:53) - To verify the tests with the below test case id's: C77197
+17:20:12.089 INFO  scp.LoginPage (LoginPage.java:518) - Checking that the current page is login page.
+17:20:12.089 INFO  driver.Page (    Page.java:40) - Fetching the current URL.
+17:20:12.102 INFO  driver.Page (    Page.java:41) - The Current URL is: https://u-wgl-r2.smartcmobile.net/Portal/
+17:20:12.114 INFO  driver.Page (    Page.java:46) - Fetching the current title.
+17:20:12.130 INFO  driver.Page (    Page.java:47) - The Current Title is: WGL: Login
+17:20:12.141 INFO  scp.LoginPage (LoginPage.java:521) - The current page is login page {}: true
+17:20:12.146 INFO  scp.LoginPage (LoginPage.java:106) - Populating username {} :zytcllc1212
+17:20:12.170 INFO  driver.Page (    Page.java:121) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (c06402191e550a66c1b217b7111d362f)] -> css selector: [id='txtLogin']] to be present in the DOM for duration of {} 120
+17:20:12.171 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+17:20:12.235 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+17:20:12.252 INFO  driver.Page (    Page.java:123) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (c06402191e550a66c1b217b7111d362f)] -> css selector: [id='txtLogin']] before sending the keys.
+17:20:12.356 INFO  driver.Page (    Page.java:125) - Sending the following keys {} zytcllc1212 to the element {} [[ChromeDriver: chrome on WINDOWS (c06402191e550a66c1b217b7111d362f)] -> css selector: [id='txtLogin']]
+17:20:12.505 INFO  scp.LoginPage (LoginPage.java:108) - Username populated successfully.
+17:20:12.506 INFO  scp.LoginPage (LoginPage.java:150) - Populating password {} :Test@1234
+17:20:12.541 INFO  driver.Page (    Page.java:121) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (c06402191e550a66c1b217b7111d362f)] -> css selector: [id='txtpwd']] to be present in the DOM for duration of {} 120
+17:20:12.541 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+17:20:12.702 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+17:20:12.748 INFO  driver.Page (    Page.java:123) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (c06402191e550a66c1b217b7111d362f)] -> css selector: [id='txtpwd']] before sending the keys.
+17:20:12.908 INFO  driver.Page (    Page.java:125) - Sending the following keys {} Test@1234 to the element {} [[ChromeDriver: chrome on WINDOWS (c06402191e550a66c1b217b7111d362f)] -> css selector: [id='txtpwd']]
+17:20:13.127 INFO  scp.LoginPage (LoginPage.java:152) - Password populated successfully.
+17:20:13.127 INFO  scp.LoginPage (LoginPage.java:186) - Clicking the sign in button.
+17:20:13.128 INFO  driver.Page (    Page.java:59) - Preparing for element to click.
+17:20:13.128 INFO  driver.Page (    Page.java:211) - Waiting for element to be clickable for 120 seconds.
+17:20:13.238 INFO  driver.Page (    Page.java:214) - Element is clickable now.
+17:20:13.431 INFO  driver.Page (    Page.java:62) - Element is clicked successfully.
+17:20:13.432 INFO  scp.LoginPage (LoginPage.java:188) - Sign in button clicked successfully.
+17:20:13.432 INFO  scp.HomePage (HomePage.java:120) - Wait for page loader visibility.
+17:20:13.433 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+17:20:14.977 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+17:20:14.977 INFO  scp.HomePage (HomePage.java:122) - Wait for page loader invisibility.
+17:20:14.977 INFO  driver.Page (    Page.java:250) - Waiting for element to be invisible for 120 seconds.
+17:20:30.678 INFO  driver.Page (    Page.java:253) - Element is invisible from the page.
+17:20:30.849 INFO  scp.DashboardSteps (DashboardSteps.java:916) - Checking that the current page is dashboard page.
+17:20:30.850 INFO  driver.Page (    Page.java:40) - Fetching the current URL.
+17:20:30.863 INFO  driver.Page (    Page.java:41) - The Current URL is: https://u-wgl-r2.smartcmobile.net/Portal/Dashboard.aspx
+17:20:30.876 INFO  driver.Page (    Page.java:46) - Fetching the current title.
+17:20:30.890 INFO  driver.Page (    Page.java:47) - The Current Title is: Home
+17:20:30.903 INFO  scp.DashboardSteps (DashboardSteps.java:919) - The current page is dashboard page {}: true
+17:20:30.937 INFO  driver.Page (    Page.java:153) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (c06402191e550a66c1b217b7111d362f)] -> css selector: #HeaderMenu_lblCustName1] to be visible on the page for duration of {} 120
+17:20:30.937 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+17:20:31.006 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+17:20:31.079 INFO  driver.Page (    Page.java:156) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (c06402191e550a66c1b217b7111d362f)] -> css selector: #HeaderMenu_lblCustName1] is TJB Management LLC
+17:20:31.128 INFO  scp.LoginTests (LoginTests.java:81) - Test Case execution for - verifyValidLogin - is Completed.
+17:20:33.018 INFO  driver.DriverFactory (DriverFactory.java:125) - Clearing all the cookies.
+18:03:52.530 INFO  runner.TestRunner (TestRunner.java:32) - Initializing application properties config file.
+18:03:52.540 INFO  runner.TestRunner (TestRunner.java:35) - Initializing connection to the base database.
+18:03:52.541 INFO  runner.TestRunner (TestRunner.java:38) - Initializing resource path config file.
+18:03:52.542 INFO  runner.TestRunner (TestRunner.java:41) - Initializing usage months config from CSP.
+18:03:52.543 INFO  runner.TestRunner (TestRunner.java:44) - Initializing date config from CSP.
+18:03:52.543 INFO  runner.TestRunner (TestRunner.java:47) - Initializing language config from CSP.
+18:03:52.544 INFO  runner.TestRunner (TestRunner.java:50) - Initializing language config from CSP.
+18:03:52.544 INFO  runner.TestRunner (TestRunner.java:53) - Initializing language config from CSP.
+18:03:52.544 INFO  runner.TestRunner (TestRunner.java:56) - Initializing user model config.
+18:03:52.545 INFO  runner.TestRunner (TestRunner.java:59) - Initializing auth token config.
+18:03:52.545 INFO  runner.TestRunner (TestRunner.java:62) - Initializing Admin User config.
+18:03:53.830 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 1
+18:03:53.842 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 2
+18:03:53.843 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 3
+18:03:53.844 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 4
+18:03:53.846 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 5
+18:03:53.846 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 6
+18:03:53.848 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 7
+18:03:53.850 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 8
+18:03:53.851 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 9
+18:03:53.852 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 10
+18:03:53.853 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 11
+18:03:53.854 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 12
+18:03:53.854 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 13
+18:03:53.855 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 14
+18:03:53.856 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 15
+18:03:53.856 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 16
+18:03:53.857 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 17
+18:03:53.858 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 18
+18:03:53.859 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 19
+18:03:53.860 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 20
+18:03:53.860 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 21
+18:03:53.861 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 22
+18:03:53.863 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 23
+18:03:53.864 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 24
+18:03:53.865 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 25
+18:03:53.866 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 26
+18:03:53.868 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 27
+18:03:53.868 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 28
+18:03:53.869 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 29
+18:03:53.870 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 30
+18:03:53.870 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 31
+18:03:53.871 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 32
+18:03:53.871 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 33
+18:03:53.872 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 34
+18:03:53.873 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 35
+18:03:53.873 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 36
+18:03:53.874 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 37
+18:03:53.875 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 38
+18:03:53.876 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 39
+18:03:53.877 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 40
+18:03:53.878 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 41
+18:03:53.880 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 42
+18:03:53.883 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 43
+18:03:53.884 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 44
+18:03:53.886 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 45
+18:03:53.886 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 46
+18:03:53.887 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 47
+18:03:53.888 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 48
+18:03:53.888 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 49
+18:03:53.889 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 50
+18:03:53.890 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 51
+18:03:53.894 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 52
+18:03:53.895 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 53
+18:03:53.896 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 54
+18:03:53.896 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 55
+18:03:53.901 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 56
+18:03:53.901 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 57
+18:03:53.902 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 58
+18:03:53.903 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 59
+18:03:53.904 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 60
+18:03:53.905 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 61
+18:03:53.906 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 62
+18:03:53.906 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 63
+18:03:53.906 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 64
+18:03:53.907 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 65
+18:03:53.911 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 66
+18:03:53.913 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 67
+18:03:53.913 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 68
+18:03:53.916 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 69
+18:03:53.917 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 70
+18:03:53.917 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 71
+18:03:53.919 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 72
+18:03:53.920 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 73
+18:03:53.921 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 74
+18:03:53.921 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 75
+18:03:53.922 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 76
+18:03:53.922 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 77
+18:03:53.923 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 78
+18:03:53.924 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 79
+18:03:53.924 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 80
+18:03:53.925 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 81
+18:03:53.925 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 82
+18:03:53.925 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 83
+18:03:53.926 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 84
+18:03:54.395 WARN  config.Configuration (Configuration.java:231) - QA env being used by default. No env property set. This can be set in the sew.app.yml config file with a '{}=' property or on the command line with the switch '-D{}='.
+18:04:05.638 INFO  driver.WebDriverFactory (WebDriverFactory.java:192) - Setting up the browser window to its max.
+18:04:05.887 INFO  driver.WebDriverFactory (WebDriverFactory.java:181) - Initializing the implicit wait timeout for {} 5
+18:04:05.898 INFO  driver.WebDriverFactory (WebDriverFactory.java:184) - Initializing the page load timeout.
+18:04:05.907 INFO  driver.DriverFactory (DriverFactory.java:125) - Clearing all the cookies.
+18:04:05.927 INFO  driver.DriverFactory (DriverFactory.java:62) - Open the url {} https://u-wgl-r2.smartcmobile.net/Portal/ using the selenium get() method.
+18:04:22.365 INFO  scp.LoginTests (LoginTests.java:53) - To verify the tests with the below test case id's: C77197
+18:04:22.497 INFO  scp.LoginPage (LoginPage.java:518) - Checking that the current page is login page.
+18:04:22.497 INFO  driver.Page (    Page.java:40) - Fetching the current URL.
+18:04:22.513 INFO  driver.Page (    Page.java:41) - The Current URL is: https://u-wgl-r2.smartcmobile.net/Portal/
+18:04:22.529 INFO  driver.Page (    Page.java:46) - Fetching the current title.
+18:04:22.543 INFO  driver.Page (    Page.java:47) - The Current Title is: WGL: Login
+18:04:22.565 INFO  scp.LoginPage (LoginPage.java:521) - The current page is login page {}: true
+18:04:22.573 INFO  scp.LoginPage (LoginPage.java:106) - Populating username {} :zytcllc1212
+18:04:22.623 INFO  driver.Page (    Page.java:121) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (a5f659d1273b8d632a4d4f0e05cb85b0)] -> css selector: [id='txtLogin']] to be present in the DOM for duration of {} 120
+18:04:22.624 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+18:04:22.728 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+18:04:22.755 INFO  driver.Page (    Page.java:123) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (a5f659d1273b8d632a4d4f0e05cb85b0)] -> css selector: [id='txtLogin']] before sending the keys.
+18:04:22.908 INFO  driver.Page (    Page.java:125) - Sending the following keys {} zytcllc1212 to the element {} [[ChromeDriver: chrome on WINDOWS (a5f659d1273b8d632a4d4f0e05cb85b0)] -> css selector: [id='txtLogin']]
+18:04:23.108 INFO  scp.LoginPage (LoginPage.java:108) - Username populated successfully.
+18:04:23.109 INFO  scp.LoginPage (LoginPage.java:150) - Populating password {} :Test@1234
+18:04:23.144 INFO  driver.Page (    Page.java:121) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (a5f659d1273b8d632a4d4f0e05cb85b0)] -> css selector: [id='txtpwd']] to be present in the DOM for duration of {} 120
+18:04:23.145 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+18:04:23.233 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+18:04:23.261 INFO  driver.Page (    Page.java:123) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (a5f659d1273b8d632a4d4f0e05cb85b0)] -> css selector: [id='txtpwd']] before sending the keys.
+18:04:23.462 INFO  driver.Page (    Page.java:125) - Sending the following keys {} Test@1234 to the element {} [[ChromeDriver: chrome on WINDOWS (a5f659d1273b8d632a4d4f0e05cb85b0)] -> css selector: [id='txtpwd']]
+18:04:24.023 INFO  scp.LoginPage (LoginPage.java:152) - Password populated successfully.
+18:04:24.023 INFO  scp.LoginPage (LoginPage.java:186) - Clicking the sign in button.
+18:04:24.023 INFO  driver.Page (    Page.java:59) - Preparing for element to click.
+18:04:24.023 INFO  driver.Page (    Page.java:211) - Waiting for element to be clickable for 120 seconds.
+18:04:24.230 INFO  driver.Page (    Page.java:214) - Element is clickable now.
+18:04:24.464 INFO  driver.Page (    Page.java:62) - Element is clicked successfully.
+18:04:24.464 INFO  scp.LoginPage (LoginPage.java:188) - Sign in button clicked successfully.
+18:04:24.465 INFO  scp.HomePage (HomePage.java:120) - Wait for page loader visibility.
+18:04:24.465 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+18:04:26.041 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+18:04:26.043 INFO  scp.HomePage (HomePage.java:122) - Wait for page loader invisibility.
+18:04:26.043 INFO  driver.Page (    Page.java:250) - Waiting for element to be invisible for 120 seconds.
+18:04:53.513 INFO  driver.Page (    Page.java:253) - Element is invisible from the page.
+18:04:53.542 INFO  scp.DashboardSteps (DashboardSteps.java:916) - Checking that the current page is dashboard page.
+18:04:53.542 INFO  driver.Page (    Page.java:40) - Fetching the current URL.
+18:04:53.551 INFO  driver.Page (    Page.java:41) - The Current URL is: https://u-wgl-r2.smartcmobile.net/Portal/Dashboard.aspx
+18:04:53.560 INFO  driver.Page (    Page.java:46) - Fetching the current title.
+18:04:53.568 INFO  driver.Page (    Page.java:47) - The Current Title is: Home
+18:04:53.578 INFO  scp.DashboardSteps (DashboardSteps.java:919) - The current page is dashboard page {}: true
+18:04:53.598 INFO  driver.Page (    Page.java:153) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (a5f659d1273b8d632a4d4f0e05cb85b0)] -> css selector: #HeaderMenu_lblCustName1] to be visible on the page for duration of {} 120
+18:04:53.598 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+18:04:53.632 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+18:04:53.685 INFO  driver.Page (    Page.java:156) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (a5f659d1273b8d632a4d4f0e05cb85b0)] -> css selector: #HeaderMenu_lblCustName1] is TJB Management LLC
+18:04:53.718 INFO  scp.LoginTests (LoginTests.java:81) - Test Case execution for - verifyValidLogin - is Completed.
+18:04:54.521 INFO  driver.DriverFactory (DriverFactory.java:125) - Clearing all the cookies.
+18:07:24.541 INFO  runner.TestRunner (TestRunner.java:32) - Initializing application properties config file.
+18:07:24.549 INFO  runner.TestRunner (TestRunner.java:35) - Initializing connection to the base database.
+18:07:24.549 INFO  runner.TestRunner (TestRunner.java:38) - Initializing resource path config file.
+18:07:24.550 INFO  runner.TestRunner (TestRunner.java:41) - Initializing usage months config from CSP.
+18:07:24.552 INFO  runner.TestRunner (TestRunner.java:44) - Initializing date config from CSP.
+18:07:24.552 INFO  runner.TestRunner (TestRunner.java:47) - Initializing language config from CSP.
+18:07:24.552 INFO  runner.TestRunner (TestRunner.java:50) - Initializing language config from CSP.
+18:07:24.552 INFO  runner.TestRunner (TestRunner.java:53) - Initializing language config from CSP.
+18:07:24.553 INFO  runner.TestRunner (TestRunner.java:56) - Initializing user model config.
+18:07:24.553 INFO  runner.TestRunner (TestRunner.java:59) - Initializing auth token config.
+18:07:24.553 INFO  runner.TestRunner (TestRunner.java:62) - Initializing Admin User config.
+18:07:25.673 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 1
+18:07:25.681 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 2
+18:07:25.682 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 3
+18:07:25.683 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 4
+18:07:25.684 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 5
+18:07:25.684 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 6
+18:07:25.684 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 7
+18:07:25.685 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 8
+18:07:25.686 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 9
+18:07:25.686 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 10
+18:07:25.687 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 11
+18:07:25.688 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 12
+18:07:25.688 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 13
+18:07:25.689 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 14
+18:07:25.690 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 15
+18:07:25.690 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 16
+18:07:25.691 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 17
+18:07:25.691 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 18
+18:07:25.692 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 19
+18:07:25.693 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 20
+18:07:25.694 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 21
+18:07:25.694 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 22
+18:07:25.695 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 23
+18:07:25.696 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 24
+18:07:25.696 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 25
+18:07:25.697 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 26
+18:07:25.699 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 27
+18:07:25.700 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 28
+18:07:25.700 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 29
+18:07:25.702 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 30
+18:07:25.702 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 31
+18:07:25.702 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 32
+18:07:25.703 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 33
+18:07:25.704 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 34
+18:07:25.704 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 35
+18:07:25.705 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 36
+18:07:25.705 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 37
+18:07:25.705 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 38
+18:07:25.706 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 39
+18:07:25.706 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 40
+18:07:25.706 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 41
+18:07:25.707 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 42
+18:07:25.707 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 43
+18:07:25.708 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 44
+18:07:25.709 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 45
+18:07:25.709 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 46
+18:07:25.709 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 47
+18:07:25.710 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 48
+18:07:25.710 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 49
+18:07:25.712 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 50
+18:07:25.712 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 51
+18:07:25.713 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 52
+18:07:25.713 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 53
+18:07:25.714 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 54
+18:07:25.714 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 55
+18:07:25.716 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 56
+18:07:25.717 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 57
+18:07:25.718 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 58
+18:07:25.718 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 59
+18:07:25.719 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 60
+18:07:25.720 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 61
+18:07:25.721 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 62
+18:07:25.721 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 63
+18:07:25.721 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 64
+18:07:25.721 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 65
+18:07:25.723 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 66
+18:07:25.723 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 67
+18:07:25.724 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 68
+18:07:25.724 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 69
+18:07:25.725 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 70
+18:07:25.725 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 71
+18:07:25.726 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 72
+18:07:25.727 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 73
+18:07:25.728 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 74
+18:07:25.729 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 75
+18:07:25.730 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 76
+18:07:25.732 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 77
+18:07:25.733 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 78
+18:07:25.733 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 79
+18:07:25.735 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 80
+18:07:25.736 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 81
+18:07:25.736 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 82
+18:07:25.737 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 83
+18:07:25.738 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 84
+18:07:26.402 WARN  config.Configuration (Configuration.java:231) - QA env being used by default. No env property set. This can be set in the sew.app.yml config file with a '{}=' property or on the command line with the switch '-D{}='.
+18:07:35.252 INFO  driver.WebDriverFactory (WebDriverFactory.java:192) - Setting up the browser window to its max.
+18:07:35.459 INFO  driver.WebDriverFactory (WebDriverFactory.java:181) - Initializing the implicit wait timeout for {} 5
+18:07:35.470 INFO  driver.WebDriverFactory (WebDriverFactory.java:184) - Initializing the page load timeout.
+18:07:35.477 INFO  driver.DriverFactory (DriverFactory.java:125) - Clearing all the cookies.
+18:07:35.492 INFO  driver.DriverFactory (DriverFactory.java:62) - Open the url {} https://u-wgl-r2.smartcmobile.net/Portal/ using the selenium get() method.
+18:07:50.543 INFO  scp.LoginTests (LoginTests.java:53) - To verify the tests with the below test case id's: C77197
+18:07:50.623 INFO  scp.LoginPage (LoginPage.java:518) - Checking that the current page is login page.
+18:07:50.624 INFO  driver.Page (    Page.java:40) - Fetching the current URL.
+18:07:50.634 INFO  driver.Page (    Page.java:41) - The Current URL is: https://u-wgl-r2.smartcmobile.net/Portal/
+18:07:50.644 INFO  driver.Page (    Page.java:46) - Fetching the current title.
+18:07:50.653 INFO  driver.Page (    Page.java:47) - The Current Title is: WGL: Login
+18:07:50.662 INFO  scp.LoginPage (LoginPage.java:521) - The current page is login page {}: true
+18:07:50.667 INFO  scp.LoginPage (LoginPage.java:106) - Populating username {} :zytcllc1212
+18:07:50.690 INFO  driver.Page (    Page.java:121) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (21e92a71c3d537df2f3a7efd64559e0e)] -> css selector: [id='txtLogin']] to be present in the DOM for duration of {} 120
+18:07:50.690 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+18:07:50.768 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+18:07:50.787 INFO  driver.Page (    Page.java:123) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (21e92a71c3d537df2f3a7efd64559e0e)] -> css selector: [id='txtLogin']] before sending the keys.
+18:07:50.903 INFO  driver.Page (    Page.java:125) - Sending the following keys {} zytcllc1212 to the element {} [[ChromeDriver: chrome on WINDOWS (21e92a71c3d537df2f3a7efd64559e0e)] -> css selector: [id='txtLogin']]
+18:07:51.097 INFO  scp.LoginPage (LoginPage.java:108) - Username populated successfully.
+18:07:51.097 INFO  scp.LoginPage (LoginPage.java:150) - Populating password {} :Test@1234
+18:07:51.120 INFO  driver.Page (    Page.java:121) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (21e92a71c3d537df2f3a7efd64559e0e)] -> css selector: [id='txtpwd']] to be present in the DOM for duration of {} 120
+18:07:51.120 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+18:07:51.176 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+18:07:51.194 INFO  driver.Page (    Page.java:123) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (21e92a71c3d537df2f3a7efd64559e0e)] -> css selector: [id='txtpwd']] before sending the keys.
+18:07:51.268 INFO  driver.Page (    Page.java:125) - Sending the following keys {} Test@1234 to the element {} [[ChromeDriver: chrome on WINDOWS (21e92a71c3d537df2f3a7efd64559e0e)] -> css selector: [id='txtpwd']]
+18:07:51.405 INFO  scp.LoginPage (LoginPage.java:152) - Password populated successfully.
+18:07:51.405 INFO  scp.LoginPage (LoginPage.java:186) - Clicking the sign in button.
+18:07:51.405 INFO  driver.Page (    Page.java:59) - Preparing for element to click.
+18:07:51.406 INFO  driver.Page (    Page.java:211) - Waiting for element to be clickable for 120 seconds.
+18:07:51.508 INFO  driver.Page (    Page.java:214) - Element is clickable now.
+18:07:51.664 INFO  driver.Page (    Page.java:62) - Element is clicked successfully.
+18:07:51.664 INFO  scp.LoginPage (LoginPage.java:188) - Sign in button clicked successfully.
+18:07:51.665 INFO  scp.HomePage (HomePage.java:120) - Wait for page loader visibility.
+18:07:51.665 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+18:07:53.500 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+18:07:53.501 INFO  scp.HomePage (HomePage.java:122) - Wait for page loader invisibility.
+18:07:53.501 INFO  driver.Page (    Page.java:250) - Waiting for element to be invisible for 120 seconds.
+18:08:21.679 INFO  driver.Page (    Page.java:253) - Element is invisible from the page.
+18:08:21.712 INFO  scp.DashboardSteps (DashboardSteps.java:916) - Checking that the current page is dashboard page.
+18:08:21.712 INFO  driver.Page (    Page.java:40) - Fetching the current URL.
+18:08:21.727 INFO  driver.Page (    Page.java:41) - The Current URL is: https://u-wgl-r2.smartcmobile.net/Portal/Dashboard.aspx
+18:08:21.741 INFO  driver.Page (    Page.java:46) - Fetching the current title.
+18:08:21.757 INFO  driver.Page (    Page.java:47) - The Current Title is: Home
+18:08:21.770 INFO  scp.DashboardSteps (DashboardSteps.java:919) - The current page is dashboard page {}: true
+18:08:21.791 INFO  driver.Page (    Page.java:153) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (21e92a71c3d537df2f3a7efd64559e0e)] -> css selector: #HeaderMenu_lblCustName1] to be visible on the page for duration of {} 120
+18:08:21.792 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+18:08:21.829 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+18:08:21.892 INFO  driver.Page (    Page.java:156) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (21e92a71c3d537df2f3a7efd64559e0e)] -> css selector: #HeaderMenu_lblCustName1] is TJB Management LLC
+18:08:22.606 INFO  driver.DriverFactory (DriverFactory.java:125) - Clearing all the cookies.

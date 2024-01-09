@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Surefire suite]" verbose="0">
+  <test thread-count="5" name="Surefire test(failed)" verbose="0">
+    <classes>
+      <class name="sew.ai.tests.scp.MyProfileTests">
+        <methods>
+          <include name="verifyChangeUsernameNotAvailable"/>
+          <include name="verifyDeleteMyProfile"/>
+          <include name="verifyDropdownOnLinkDeLinkAccounts"/>
+          <include name="verifyProfileInformationPageUI"/>
+          <include name="verifyPersonalInfoSection"/>
+          <include name="verifyUpdateProfileInformation"/>
+          <include name="classPreRequisites"/>
+          <include name="tearDownMethods"/>
+          <include name="validationMsgAndChangeUsername"/>
+          <include name="validateChangeUsername"/>
+          <include name="verifyTimeZoneSaveFunctionality"/>
+          <include name="verifyChangeUsernameAcceptanceCriteria"/>
+          <include name="tearDownClasses"/>
+          <include name="verifyDefaultServiceAddress"/>
+          <include name="methodsPreRequisites"/>
+          <include name="verifyDownloadMyPersonalData"/>
+          <include name="verifyContactTypeProfileInformation"/>
+          <include name="verifyDefaultTimeZoneOfNewRegisteredUser"/>
+          <include name="verifyValidationsProfileInformation"/>
+          <include name="verifyNewUserDownloadMyPersonalData"/>
+        </methods>
+      </class> <!-- sew.ai.tests.scp.MyProfileTests -->
+      <class name="sew.ai.tests.csp.AdminHomeTests">
+        <methods>
+          <include name="verifyChangePassword"/>
+          <include name="tearDownClasses"/>
+          <include name="verifyWelcomeMsgAndSignOut"/>
+          <include name="methodsPreRequisites"/>
+          <include name="tearDownMethods"/>
+          <include name="classPreRequisites"/>
+        </methods>
+      </class> <!-- sew.ai.tests.csp.AdminHomeTests -->
+      <class name="sew.ai.tests.scp.UsagesTests">
+        <methods>
+          <include name="verifyWaterUsagePageObjects"/>
+          <include name="verifyDailyElectricUsageData"/>
+          <include name="verifyWeatherOverlayElectricData"/>
+          <include name="verifyDailyGasUsageData"/>
+          <include name="verifySolarUsageData"/>
+          <include name="verifyMinutesGasUsageData"/>
+          <include name="verifySolarUsagePageObjects"/>
+          <include name="verifyGasUsageColorLogic"/>
+          <include name="verifyElectricUsageColorLogic"/>
+          <include name="verifyElectricUsagePageObjects"/>
+          <include name="verifyMinutesElectricUsageData"/>
+          <include name="verifyMonthlyElectricUsageData"/>
+          <include name="verifyMinutesWaterUsageData"/>
+          <include name="verifyWaterUsageColorLogic"/>
+          <include name="tearDownClasses"/>
+          <include name="verifyExportToExcelGenerationData"/>
+          <include name="verifyExportToExcelElectricData"/>
+          <include name="verifyHourlyElectricUsageData"/>
+          <include name="verifyGasUsagePageObjects"/>
+          <include name="verifyAverageHighestWaterUsage"/>
+          <include name="verifySoFarProjectedElectricUsage"/>
+          <include name="verifyAverageHighestGasUsage"/>
+          <include name="verifyMonthlyGasUsageData"/>
+          <include name="tearDownMethods"/>
+          <include name="classPreRequisites"/>
+          <include name="verifyMonthlyWaterUsageData"/>
+          <include name="verifyHourlyWaterUsageData"/>
+          <include name="verifyAverageHighestElectricUsage"/>
+          <include name="verifyExportToExcelWaterData"/>
+          <include name="methodsPreRequisites"/>
+          <include name="verifySoFarProjectedWaterUsage"/>
+          <include name="verifyHourlyGasUsageData"/>
+          <include name="verifyExportToExcelGasData"/>
+          <include name="verifyDailyWaterUsageData"/>
+          <include name="verifySoFarProjectedGasUsage"/>
+        </methods>
+      </class> <!-- sew.ai.tests.scp.UsagesTests -->
+      <class name="sew.ai.tests.csp.AdminCustomerTests">
+        <methods>
+          <include name="verifyCSRworkbenchUI"/>
+          <include name="verifyAdvanceFilterCustomerWithAccountType"/>
+          <include name="verifyPropertyTab360View"/>
+          <include name="verifyBillTypeStatusesDetailsView"/>
+          <include name="verifyCSRTabPaginationFeature"/>
+          <include name="verifyMarketingPreferences"/>
+          <include name="verifyUsersDataGridSorting"/>
+          <include name="verifyPayment360View"/>
+          <include name="verifyResetButtonAdvanceSearchServiceAccountTab"/>
+          <include name="verifyExportSCMUserFile"/>
+          <include name="verifyServicePlanProfileView"/>
+          <include name="verifySearchServiceAccountTab"/>
+          <include name="verifyLockUnLockUser"/>
+          <include name="verifyCountRegUnRegAccountsAdvSearchWithDB"/>
+          <include name="verifySendNotification"/>
+          <include name="verifyExportCustomerFileServiceTab"/>
+          <include name="verifyRegistrationPendingActivationLink"/>
+          <include name="verifyLoginToCustomerPortal"/>
+          <include name="tearDownMethods"/>
+          <include name="classPreRequisites"/>
+          <include name="verifyExportCustomerFile"/>
+          <include name="verifySCMUserEditRecord"/>
+          <include name="verifyUserDetails360View"/>
+          <include name="verifyActionAdvSearchFilterForUsersTab"/>
+          <include name="verifyAdvanceSearchFilterSCMCustomerTab"/>
+          <include name="verifyEfficiency360View"/>
+          <include name="verifyActionAdvSearchFilterForCustomerTab"/>
+          <include name="verifyCustomerDetailsPopUpTabs"/>
+          <include name="verifyAdvanceSearchFilterServiceAccountTab"/>
+          <include name="verifyRegisteredServiceAccountDetailsC360AndSCPWithDB"/>
+          <include name="verifyRegisterUserGridUIFields"/>
+          <include name="verifyAdvanceSearchFilterSCMUserTab"/>
+          <include name="verifyCSRTabFunctionality"/>
+          <include name="verifyBillTypeDetails360View"/>
+          <include name="tearDownClasses"/>
+          <include name="verifyResetButtonAdvanceSearchUser"/>
+          <include name="verifyResetTemporaryPasswordCSP"/>
+          <include name="verifyCustomerInformation360View"/>
+          <include name="verifyUserStatusDBValueAndColor"/>
+          <include name="verifyResetButtonAdvanceSearchCustomer"/>
+          <include name="verifyPrepaidUserDetailsView"/>
+          <include name="verifyUserLinkedAccount"/>
+          <include name="verifyBilling360View"/>
+          <include name="verifyAdvFilterServiceAccTab"/>
+          <include name="verifyCSRTabSortingFeature"/>
+          <include name="verifyGuest360View"/>
+          <include name="verifyAdvanceFilterCustomerWithZipAndEmail"/>
+          <include name="verifyLastLogin"/>
+          <include name="verifyEditCustomer"/>
+          <include name="verifyAddCustomerLinkCSR"/>
+          <include name="verifyActionsAdvSearchFilterServiceAcc"/>
+          <include name="methodsPreRequisites"/>
+          <include name="verifyUnRegisteredServiceAccountDetailsC360AndSCP"/>
+          <include name="verifyRegisteredUsertabsAndCount"/>
+          <include name="verifyFieldsCSRActiveInactiveUsersTab"/>
+          <include name="verifyOutage360View"/>
+          <include name="verifyUserPageSize"/>
+          <include name="verifyPostpaidUserDetailsView"/>
+        </methods>
+      </class> <!-- sew.ai.tests.csp.AdminCustomerTests -->
+      <class name="sew.ai.tests.scp.PreLogServiceRequestTests">
+        <methods>
+          <include name="validatePreLogTrackReqPage"/>
+          <include name="validatePreLogOthersReqPage"/>
+          <include name="tearDownClasses"/>
+          <include name="validatePreLogServiceReqPage"/>
+          <include name="validatePreLogSaveServiceReqPage"/>
+          <include name="validatePreLogMoveOutReqPage"/>
+          <include name="methodsPreRequisites"/>
+          <include name="tearDownMethods"/>
+          <include name="classPreRequisites"/>
+          <include name="validatePreLogServiceTransferReqPage"/>
+        </methods>
+      </class> <!-- sew.ai.tests.scp.PreLogServiceRequestTests -->
+      <class name="sew.ai.tests.csp.AdminNotificationTests">
+        <methods>
+          <include name="verifyNotifyPreLogConnectMeServices"/>
+          <include name="verifyInboxConnectMeNotifications"/>
+          <include name="verifyTrashTabFunctionality"/>
+          <include name="verifyFromColumnNotificationInbox"/>
+          <include name="verifySearchByValidationMessages"/>
+          <include name="verifyClearButtonSearchBy"/>
+          <include name="verifyPutBackFeatureNotification"/>
+          <include name="verifyPaginationNotificationInbox"/>
+          <include name="verifyReplySectionNotification"/>
+          <include name="verifyCompleteFeatureConnectMeFolder"/>
+          <include name="tearDownClasses"/>
+          <include name="verifyReadUnreadMessagesText"/>
+          <include name="verifySearchByFeature"/>
+          <include name="verifyCompleteFeatureToSavedFolder"/>
+          <include name="verifySavedFolderToCompleteFeature"/>
+          <include name="verifyInboxServiceNotifications"/>
+          <include name="verifySendNotificationTab"/>
+          <include name="verifySaveMessageFunctionality"/>
+          <include name="verifyCustNameMobileNotClickableNotification"/>
+          <include name="verifySentMailTab"/>
+          <include name="verifyNotificationUIAndSubTabs"/>
+          <include name="verifyMessageDetailsNotification"/>
+          <include name="verifyCustomerInformationInboxMail"/>
+          <include name="classPreRequisites"/>
+          <include name="tearDownMethods"/>
+          <include name="verifyNotificationMsgBoxLenCriteria"/>
+          <include name="verifyDoneFunctionalityTrashFolder"/>
+          <include name="verifyAllEmailTabAndMultipleSelection"/>
+          <include name="verifyThreadsModuleNotifications"/>
+          <include name="verifySearchResultsRefreshSearchBy"/>
+          <include name="verifyInboxNewRepliedNotifications"/>
+          <include name="verifyCommentsFieldOnNotification"/>
+          <include name="verifyCheckBoxOnNotifications"/>
+          <include name="methodsPreRequisites"/>
+          <include name="verifyNoDataForTabNotification"/>
+          <include name="verifyNotificationSorting"/>
+          <include name="verifyNotificationAutoResponseEditor"/>
+          <include name="verifyProblemsSigningInCSPNotificationRequest"/>
+        </methods>
+      </class> <!-- sew.ai.tests.csp.AdminNotificationTests -->
+      <class name="sew.ai.tests.scp.AccountInformationTests">
+        <methods>
+          <include name="verifyMultiAccountDelinkAndregistration"/>
+          <include name="verifyLinkAccountAndDeleteLinkedAccount"/>
+          <include name="verifyLinkAlreadyRegisteredActiveAccount"/>
+          <include name="tearDownMethods"/>
+          <include name="verifyUnableLinkResidentialAccountInCommercialSectionAndViceVersa"/>
+          <include name="classPreRequisites"/>
+          <include name="verifyMultiAccountregistrationandDelinkedAccount"/>
+          <include name="tearDownClasses"/>
+          <include name="verifyMakeDefaultForMultiLinkAccount"/>
+          <include name="methodsPreRequisites"/>
+          <include name="verifyMultiLinkAccountAndDeleteLinkedAccount"/>
+          <include name="verifyMultiLinkAccountAndDeleteAgainLinkedAccount"/>
+          <include name="verifyCISValidationMessageForLinkAccount"/>
+          <include name="verifyDropdownOnLinkDeLinkAccounts"/>
+          <include name="verifyLinkInactiveAccount"/>
+          <include name="verifyLinkAccountUIAndValidation"/>
+          <include name="verifyMultiLinkAccountAndDeleteCommericalLinkedAccount"/>
+          <include name="verifyLinkRegisteredButItsActivationLinkExpiredAccount"/>
+        </methods>
+      </class> <!-- sew.ai.tests.scp.AccountInformationTests -->
+      <class name="sew.ai.tests.csp.AdminUniversalSearchTests">
+        <methods>
+          <include name="verifyUniversalSearchField"/>
+          <include name="tearDownClasses"/>
+          <include name="methodsPreRequisites"/>
+          <include name="verifyHyperLinkCustomerName"/>
+          <include name="verifyBlankSearch"/>
+          <include name="classPreRequisites"/>
+          <include name="verifyUniversalSearchFieldsAndReportGridInfo"/>
+          <include name="tearDownMethods"/>
+        </methods>
+      </class> <!-- sew.ai.tests.csp.AdminUniversalSearchTests -->
+      <class name="sew.ai.tests.scp.DashboardTests">
+        <methods>
+          <include name="verifyBillingSectionWithMultipleAcc"/>
+          <include name="verifyBillingSummarySectionObjects"/>
+          <include name="tearDownClasses"/>
+          <include name="methodsPreRequisites"/>
+          <include name="verifyAutoPayCarousel"/>
+          <include name="verifySmartHomeCarousel"/>
+          <include name="verifyBillingSectionForPayAsYouGo"/>
+          <include name="verifyUsageFeatureOnDashboard"/>
+          <include name="tearDownMethods"/>
+          <include name="classPreRequisites"/>
+          <include name="verifyDashboardPageObjects"/>
+        </methods>
+      </class> <!-- sew.ai.tests.scp.DashboardTests -->
+      <class name="sew.ai.tests.scp.ForgetUsernameTest">
+        <methods>
+          <include name="resetUsernameUsingWrongEmail"/>
+          <include name="tearDownClasses"/>
+          <include name="methodsPreRequisites"/>
+          <include name="verifyForgotUsernameWithInactiveAcc"/>
+          <include name="verifyMinMaxValueForgotUsername"/>
+          <include name="validateResetUsername"/>
+          <include name="classPreRequisites"/>
+          <include name="tearDownMethods"/>
+          <include name="verifyMaxResetUsernameAccountBlock"/>
+        </methods>
+      </class> <!-- sew.ai.tests.scp.ForgetUsernameTest -->
+      <class name="sew.ai.tests.scp.RegistrationUGITests">
+        <methods>
+          <include name="tearDownClasses"/>
+          <include name="fillRegFormWithPaperLessBilling"/>
+          <include name="methodsPreRequisites"/>
+          <include name="classPreRequisites"/>
+          <include name="tearDownMethods"/>
+        </methods>
+      </class> <!-- sew.ai.tests.scp.RegistrationUGITests -->
+      <class name="sew.ai.tests.scp.MultiFactorAuthTests">
+        <methods>
+          <include name="tearDownClasses"/>
+          <include name="verifyContactMethodOnMFAScreen"/>
+          <include name="verifyMFAExpirationFeature"/>
+          <include name="verifyMFAUIAndValidation"/>
+          <include name="methodsPreRequisites"/>
+          <include name="tearDownMethods"/>
+          <include name="verifyExceededResendOTPForMFA_Email_And_Text"/>
+          <include name="classPreRequisites"/>
+          <include name="verifyMFAwithEmailORText"/>
+          <include name="verifyUserNotLockedForMaxWrongAttemptMFA"/>
+        </methods>
+      </class> <!-- sew.ai.tests.scp.MultiFactorAuthTests -->
+      <class name="sew.test.scp.LoginSewTests">
+        <methods>
+          <include name="makePayment"/>
+          <include name="tearDownClasses"/>
+          <include name="BillingQuery"/>
+          <include name="methodsPreRequisites"/>
+          <include name="usageOverview"/>
+          <include name="tearDownMethods"/>
+          <include name="classPreRequisites"/>
+        </methods>
+      </class> <!-- sew.test.scp.LoginSewTests -->
+      <class name="sew.ai.tests.scp.PostLogConnectMeTests">
+        <methods>
+          <include name="tearDownClasses"/>
+          <include name="verifyPostLoginSavedFormsPage"/>
+          <include name="methodsPreRequisites"/>
+          <include name="verifyPostLoginConnectMePage"/>
+          <include name="verifyPostLoginSocialMediaPage"/>
+          <include name="verifySubmitBillingQueryWithValidAttachment"/>
+          <include name="classPreRequisites"/>
+          <include name="tearDownMethods"/>
+          <include name="verifyAttachmentsForSubmitingForm"/>
+          <include name="verifyPostLogCreateTrackContactReq"/>
+        </methods>
+      </class> <!-- sew.ai.tests.scp.PostLogConnectMeTests -->
+      <class name="sew.ai.tests.scp.LoginTests">
+        <methods>
+          <include name="verifyUsernamePasswordAcceptanceCriteria"/>
+          <include name="verifyAccountBlockOnLogin"/>
+          <include name="verifySwitchLanguageFunctionality"/>
+          <include name="verifyValidLogin"/>
+          <include name="verifyLoginWithDeactiveUser"/>
+          <include name="verifyLoginWithClosedAccounts"/>
+          <include name="verifyRememberMeLoginFunctionality"/>
+          <include name="tearDownMethods"/>
+          <include name="classPreRequisites"/>
+          <include name="verifyEfficiencyWidgetsProgram"/>
+          <include name="verifyChatWindow"/>
+          <include name="tearDownClasses"/>
+          <include name="methodsPreRequisites"/>
+          <include name="verifyIPBlockOnLogin"/>
+          <include name="verifyLoginForMigratedUser"/>
+          <include name="verifyInvalidLogin"/>
+          <include name="verifyLoginPageObjects"/>
+        </methods>
+      </class> <!-- sew.ai.tests.scp.LoginTests -->
+      <class name="sew.ai.tests.csp.WaysToSaveTests">
+        <methods>
+          <include name="verifyWaysToSaveDashboard"/>
+          <include name="verifyAddUpdateDeleteEfficiency"/>
+          <include name="verifyAddUpdateDeleteSavingsTipsEfficiency"/>
+          <include name="verifyProgramsOrderAndTitle"/>
+          <include name="verifyFieldsAfterSelectingCategory"/>
+          <include name="tearDownMethods"/>
+          <include name="classPreRequisites"/>
+          <include name="verifySavingTipsOrderAndTitle"/>
+          <include name="verifyAddWaysToSaveMultiAcctType"/>
+          <include name="verifyInactiveActiveWaysToSave"/>
+          <include name="verifyUpdateWaysToSaveMultiAcctType"/>
+          <include name="verifyAddUpdateDeleteEducationalTipsEfficiency"/>
+          <include name="tearDownClasses"/>
+          <include name="verifyEducationalTipsOrderAndTitle"/>
+          <include name="verifyUpdateWaysToSaveFieldsAndValidationMsg"/>
+          <include name="methodsPreRequisites"/>
+          <include name="verifyImageFunctionality"/>
+          <include name="verifyAddUpdateDeleteProgramsEfficiency"/>
+          <include name="verifyWaysToSaveViewPopupDetailsCSP"/>
+          <include name="verifyRebatesOrderAndTitle"/>
+          <include name="verifyExternalLinkEfficiency"/>
+          <include name="verifyAddUpdateDeleteRebatesEfficiency"/>
+          <include name="verifyAddEfficiencyForm"/>
+        </methods>
+      </class> <!-- sew.ai.tests.csp.WaysToSaveTests -->
+      <class name="sew.ai.tests.scp.MyAccountAboutMyHomeTests">
+        <methods>
+          <include name="tearDownClasses"/>
+          <include name="methodsPreRequisites"/>
+          <include name="classPreRequisites"/>
+          <include name="tearDownMethods"/>
+          <include name="verifyAboutMyHomePageNavigation"/>
+        </methods>
+      </class> <!-- sew.ai.tests.scp.MyAccountAboutMyHomeTests -->
+      <class name="sew.ai.tests.scp.NotificationTests">
+        <methods>
+          <include name="verifyOutageNotificationMails"/>
+          <include name="tearDownClasses"/>
+          <include name="methodsPreRequisites"/>
+          <include name="classPreRequisites"/>
+          <include name="tearDownMethods"/>
+          <include name="verifyNotificationsPageNavigationAndUI"/>
+        </methods>
+      </class> <!-- sew.ai.tests.scp.NotificationTests -->
+      <class name="alectra.tests.scp.LoginAlectraTests">
+        <methods>
+          <include name="tearDownClasses"/>
+          <include name="methodsPreRequisites"/>
+          <include name="verifyValidLogin"/>
+          <include name="tearDownMethods"/>
+          <include name="classPreRequisites"/>
+        </methods>
+      </class> <!-- alectra.tests.scp.LoginAlectraTests -->
+      <class name="sew.ai.tests.scp.ForgetPasswordTests">
+        <methods>
+          <include name="verifyResetPasswordUsingEmail"/>
+          <include name="tearDownClasses"/>
+          <include name="methodsPreRequisites"/>
+          <include name="verifyForgotPwdWithInactiveAcc"/>
+          <include name="verifyResetPasswordLinkFunctionality"/>
+          <include name="validateForgotPassword"/>
+          <include name="classPreRequisites"/>
+          <include name="tearDownMethods"/>
+          <include name="verifyUserStatusTempLock"/>
+        </methods>
+      </class> <!-- sew.ai.tests.scp.ForgetPasswordTests -->
+      <class name="sew.ai.tests.scp.GuestUserTests">
+        <methods>
+          <include name="verifyInviteExistingUserWithGuestAccess"/>
+          <include name="verifyInviteNewUserAsGuest"/>
+          <include name="verifyGuestUserEditPrimaryEmail"/>
+          <include name="verifyEditAndResendGuestUserInvites"/>
+          <include name="classPreRequisites"/>
+          <include name="tearDownMethods"/>
+          <include name="verifyGuestUserPageObject"/>
+          <include name="verifyGuestUserRegistrationFieldValidations"/>
+          <include name="tearDownClasses"/>
+          <include name="verifyUpdateNickNameForGuestAccountCard"/>
+          <include name="verifyGuestAccessExpireOnEndDate"/>
+          <include name="methodsPreRequisites"/>
+          <include name="verifyMaxNoGuestUserInvite"/>
+          <include name="verifyLinkExpirationForNewUserAsGuest"/>
+          <include name="verifyErrorMsgForInviteUserPopup"/>
+          <include name="verifyPropertyManagerAccessExpireOnEndDate"/>
+        </methods>
+      </class> <!-- sew.ai.tests.scp.GuestUserTests -->
+      <class name="sew.ai.tests.scp.PostLogServiceRequestTests">
+        <methods>
+          <include name="validatePostLoginServiceTransferReqPage"/>
+          <include name="tearDownClasses"/>
+          <include name="validatePostLogTrackReqPage"/>
+          <include name="validatePostLogOthersReqPage"/>
+          <include name="methodsPreRequisites"/>
+          <include name="validatePostLoginMoveInPage"/>
+          <include name="validatePostLogSavedServiceReq"/>
+          <include name="validatePostLogServiceReqPage"/>
+          <include name="validatePostLoginMoveOutPage"/>
+          <include name="classPreRequisites"/>
+          <include name="tearDownMethods"/>
+        </methods>
+      </class> <!-- sew.ai.tests.scp.PostLogServiceRequestTests -->
+      <class name="sew.ai.tests.csp.OutageTests">
+        <methods>
+          <include name="verifySelectedOutageDetails"/>
+          <include name="tearDownClasses"/>
+          <include name="verifyObjectsAdminOutagePage"/>
+          <include name="methodsPreRequisites"/>
+          <include name="classPreRequisites"/>
+          <include name="tearDownMethods"/>
+        </methods>
+      </class> <!-- sew.ai.tests.csp.OutageTests -->
+      <class name="sew.ai.tests.csp.ForgotPasswordTests">
+        <methods>
+          <include name="tearDownClasses"/>
+          <include name="methodsPreRequisites"/>
+          <include name="classPreRequisites"/>
+          <include name="verifyForgotPassword"/>
+          <include name="tearDownMethods"/>
+        </methods>
+      </class> <!-- sew.ai.tests.csp.ForgotPasswordTests -->
+      <class name="sew.ai.tests.scp.FootPrintTests">
+        <methods>
+          <include name="tearDownClasses"/>
+          <include name="methodsPreRequisites"/>
+          <include name="verifyPinedPopUpDetails"/>
+          <include name="classPreRequisites"/>
+          <include name="tearDownMethods"/>
+          <include name="verifyFootPrintPageObjects"/>
+        </methods>
+      </class> <!-- sew.ai.tests.scp.FootPrintTests -->
+      <class name="sew.ai.tests.scp.NotificationPreferenceTests">
+        <methods>
+          <include name="verifyNotificationsChannelsValidations"/>
+          <include name="verifyNotificationPreferencePageObjects"/>
+          <include name="verifyNotificationInboxOnNoPreferenceAlert"/>
+          <include name="verifyQuietHoursFunctionalityAndUIforEmailAddress"/>
+          <include name="verifyTcpaCompliancePopup"/>
+          <include name="verifyNotificationAlertsValidationMessages"/>
+          <include name="verifyQuietHoursFunctionalityAndUI"/>
+          <include name="classPreRequisites"/>
+          <include name="tearDownMethods"/>
+          <include name="tearDownClasses"/>
+          <include name="verifyNotificationMobileNumberEmailAddress"/>
+          <include name="verifyNotificationMaintainOnAccountLevel"/>
+          <include name="hideAndUnHideNotificationPreference"/>
+          <include name="methodsPreRequisites"/>
+          <include name="verifyAddNotificationChannelFunctionality"/>
+          <include name="verifyNotificationPreferenceForRegisteredUser"/>
+          <include name="verifyNotificationAlertStatusAndNoImpactOfQuietHOursOnEmail"/>
+        </methods>
+      </class> <!-- sew.ai.tests.scp.NotificationPreferenceTests -->
+      <class name="sew.ai.tests.scp.ProblemSigningInTest">
+        <methods>
+          <include name="verifyMinMaxValueProblemsSignIn"/>
+          <include name="tearDownClasses"/>
+          <include name="methodsPreRequisites"/>
+          <include name="verifyProbSignInReqForInactiveUser"/>
+          <include name="tearDownMethods"/>
+          <include name="classPreRequisites"/>
+          <include name="verifyProblemSignInFieldValidations"/>
+          <include name="validateProblemSignInPage"/>
+        </methods>
+      </class> <!-- sew.ai.tests.scp.ProblemSigningInTest -->
+      <class name="sew.ai.tests.scp.MarketingPreferenceTests">
+        <methods>
+          <include name="tearDownClasses"/>
+          <include name="verifyMarketingPreferencesObjects"/>
+          <include name="methodsPreRequisites"/>
+          <include name="tearDownMethods"/>
+          <include name="classPreRequisites"/>
+          <include name="verifyMarketingPreferencesNewUser"/>
+        </methods>
+      </class> <!-- sew.ai.tests.scp.MarketingPreferenceTests -->
+      <class name="sew.ai.tests.scp.PreLogConnectMeTests">
+        <methods>
+          <include name="verifyPreLoginSavedFormsPage"/>
+          <include name="verifyPreLogTrackContactReq"/>
+          <include name="tearDownClasses"/>
+          <include name="verifyPreLogConnectMePage"/>
+          <include name="verifyPreLoginSocialMediaPage"/>
+          <include name="methodsPreRequisites"/>
+          <include name="verifyPreLoginConnectMeFaqModule"/>
+          <include name="tearDownMethods"/>
+          <include name="classPreRequisites"/>
+        </methods>
+      </class> <!-- sew.ai.tests.scp.PreLogConnectMeTests -->
+      <class name="sew.ai.tests.scp.RegistrationTests">
+        <methods>
+          <include name="verifyMultipleAccountsAfterResidentialRegistration"/>
+          <include name="verifyFieldNotRetainValuesOnRegFail"/>
+          <include name="verifyRegMFA_Validations"/>
+          <include name="verifyPasswordFieldValidations"/>
+          <include name="verifyEmailFieldValidation"/>
+          <include name="verifyTabOrderForRegForm"/>
+          <include name="verifyCommercialRegistrationResidentialTemp"/>
+          <include name="verifyRegistrationTemplate"/>
+          <include name="classPreRequisites"/>
+          <include name="tearDownMethods"/>
+          <include name="verifyRegByOptingPaperLessPref"/>
+          <include name="verifyRegByOptingBothPreferences"/>
+          <include name="verifyPasswordMismatch"/>
+          <include name="verifyRegistrationPageObjects"/>
+          <include name="tearDownClasses"/>
+          <include name="verifyRegByOptingPaperBillPref"/>
+          <include name="verifyFieldValidationsCommercialTemp"/>
+          <include name="methodsPreRequisites"/>
+          <include name="verifyRegByInActiveAccount"/>
+          <include name="verifyResidentialRegistrationCommercialTemp"/>
+          <include name="verifyMultipleAccountsAfterCommercialRegistration"/>
+          <include name="verifyFieldValidationsResidentialTemp"/>
+        </methods>
+      </class> <!-- sew.ai.tests.scp.RegistrationTests -->
+      <class name="alectra.tests.scp.ResBillPayHistoryTests">
+        <methods>
+          <include name="tearDownClasses"/>
+          <include name="usageOverview"/>
+          <include name="methodsPreRequisites"/>
+          <include name="tearDownMethods"/>
+          <include name="classPreRequisites"/>
+        </methods>
+      </class> <!-- alectra.tests.scp.ResBillPayHistoryTests -->
+      <class name="sew.ai.tests.csp.AdminLoginTests">
+        <methods>
+          <include name="verifyUnlockingUserIP"/>
+          <include name="verifyCSPRememberMeCheckBox"/>
+          <include name="verifyInvalidAdminLogin"/>
+          <include name="tearDownClasses"/>
+          <include name="methodsPreRequisites"/>
+          <include name="verifyValidAdminLogin"/>
+          <include name="tearDownMethods"/>
+          <include name="classPreRequisites"/>
+          <include name="verifyAlertMessageBlankLoginFields"/>
+          <include name="verifyLoginObjectAndCommonElements"/>
+          <include name="verifySEWlogoAndAppVersion"/>
+        </methods>
+      </class> <!-- sew.ai.tests.csp.AdminLoginTests -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->

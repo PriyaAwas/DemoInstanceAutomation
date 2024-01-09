@@ -1,0 +1,126 @@
+20:22:34.689 INFO  driver.Page (    Page.java:278) - Element {} : [[ChromeDriver: chrome on WINDOWS (231f822fd6282f2e70a33b1d8c3a0f96)] -> css selector: p#lblDescription] is visible on the page.
+20:22:34.692 INFO  csp.WaysToSavePage (WaysToSavePage.java:726) - Description Value on View Popup visibility status {}true
+20:22:34.692 INFO  driver.Page (    Page.java:527) - Preparing for element to click.
+20:22:34.825 INFO  driver.Page (    Page.java:534) - Element is clicked successfully.
+20:22:34.825 INFO  csp.WaysToSavePage (WaysToSavePage.java:752) - Close X Button on View Popup clicked successfully.
+20:22:35.539 INFO  csp.WaysToSavePage (WaysToSavePage.java:605) - Ways To Save View Details Popup is now disappeared
+20:22:35.544 INFO  driver.Page (    Page.java:353) - Selecting the option by visible text {}: Rebates
+20:22:36.029 INFO  driver.Page (    Page.java:355) - Selecting the given option to the web element {}: [[ChromeDriver: chrome on WINDOWS (231f822fd6282f2e70a33b1d8c3a0f96)] -> css selector: #filter]
+20:22:44.150 INFO  driver.Page (    Page.java:357) - Given text is selected as the option to the given select web element.
+20:22:44.150 INFO  csp.WaysToSavePage (WaysToSavePage.java:40) - Ways To Save Filter Dropdwon has been selected with the value Rebates
+20:22:46.174 INFO  driver.Page (    Page.java:527) - Preparing for element to click.
+20:22:46.397 INFO  driver.Page (    Page.java:534) - Element is clicked successfully.
+20:22:46.397 INFO  csp.WaysToSavePage (WaysToSavePage.java:68) - Add Ways To Save Button on Ways To Save Dashboard Clicked successfully.
+20:22:46.397 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+20:22:46.733 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+20:22:46.733 INFO  csp.WaysToSavePage (WaysToSavePage.java:406) - Add Button is Visible on the Add Ways To Save Popup page.
+20:22:46.733 INFO  driver.Page (    Page.java:353) - Selecting the option by visible text {}: Rebates
+20:22:46.887 INFO  driver.Page (    Page.java:355) - Selecting the given option to the web element {}: [[ChromeDriver: chrome on WINDOWS (231f822fd6282f2e70a33b1d8c3a0f96)] -> css selector: #ddlCategory]
+20:22:47.063 INFO  driver.Page (    Page.java:357) - Given text is selected as the option to the given select web element.
+20:22:47.565 INFO  csp.WaysToSavePage (WaysToSavePage.java:231) - Category dropdown on Add Ways To Save Popup is selected with the value Rebates
+20:22:47.567 INFO  driver.Page (    Page.java:353) - Selecting the option by visible text {}: Solar
+20:22:47.797 INFO  driver.Page (    Page.java:355) - Selecting the given option to the web element {}: [[ChromeDriver: chrome on WINDOWS (231f822fd6282f2e70a33b1d8c3a0f96)] -> css selector: #ddlServiceType]
+20:22:48.175 INFO  driver.Page (    Page.java:357) - Given text is selected as the option to the given select web element.
+20:22:48.713 INFO  csp.WaysToSavePage (WaysToSavePage.java:270) - MeterType dropdown on Add Ways To Save Popup is selected with the value Solar
+20:22:48.713 INFO  driver.Page (    Page.java:527) - Preparing for element to click.
+20:22:48.805 INFO  driver.Page (    Page.java:534) - Element is clicked successfully.
+20:22:48.805 INFO  csp.WaysToSavePage (WaysToSavePage.java:303) - Clicked on AccountType Dropdown on Add Ways To Save Popup
+20:22:48.805 INFO  driver.Page (    Page.java:59) - Preparing for element to click.
+20:22:48.806 INFO  driver.Page (    Page.java:211) - Waiting for element to be clickable for 120 seconds.
+20:22:48.874 INFO  driver.Page (    Page.java:214) - Element is clickable now.
+20:22:48.948 INFO  driver.Page (    Page.java:62) - Element is clicked successfully.
+20:22:49.453 INFO  csp.WaysToSavePage (WaysToSavePage.java:336) - Clicked on Residential AccountType Dropdown on Add Ways To Save Popup
+20:22:49.454 INFO  driver.Page (    Page.java:527) - Preparing for element to click.
+20:22:49.515 INFO  driver.Page (    Page.java:534) - Element is clicked successfully.
+20:22:49.515 INFO  csp.WaysToSavePage (WaysToSavePage.java:303) - Clicked on AccountType Dropdown on Add Ways To Save Popup
+20:22:49.516 INFO  driver.Page (    Page.java:77) - Preparing for element to click.
+20:22:49.516 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+20:22:49.592 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+20:22:49.655 INFO  driver.Page (    Page.java:81) - Element is clicked successfully.
+20:22:49.655 INFO  csp.WaysToSavePage (WaysToSavePage.java:462) - Internal checkbox is checked successfully.
+20:22:49.717 INFO  driver.Page (    Page.java:121) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (231f822fd6282f2e70a33b1d8c3a0f96)] -> css selector: #txtQuestionEN] to be present in the DOM for duration of {} 120
+20:22:49.717 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+20:22:49.816 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+20:22:49.827 INFO  driver.Page (    Page.java:123) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (231f822fd6282f2e70a33b1d8c3a0f96)] -> css selector: #txtQuestionEN] before sending the keys.
+20:22:49.879 INFO  driver.Page (    Page.java:125) - Sending the following keys {} RebatesTopic 35897 to the element {} [[ChromeDriver: chrome on WINDOWS (231f822fd6282f2e70a33b1d8c3a0f96)] -> css selector: #txtQuestionEN]
+20:22:50.328 INFO  csp.WaysToSavePage (WaysToSavePage.java:1124) - Topic Name English TextBox populated successfully with Value RebatesTopic 35897
+20:22:50.359 INFO  driver.Page (    Page.java:121) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (231f822fd6282f2e70a33b1d8c3a0f96)] -> xpath: //div[@id='summernoteEnglish']/following::div[1]/div[@class='note-editing-area']/div[@class='note-editable']] to be present in the DOM for duration of {} 120
+20:22:50.359 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+20:22:50.432 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+20:22:50.446 INFO  driver.Page (    Page.java:123) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (231f822fd6282f2e70a33b1d8c3a0f96)] -> xpath: //div[@id='summernoteEnglish']/following::div[1]/div[@class='note-editing-area']/div[@class='note-editable']] before sending the keys.
+20:22:50.512 INFO  driver.Page (    Page.java:125) - Sending the following keys {} RebatesDescription 00466 to the element {} [[ChromeDriver: chrome on WINDOWS (231f822fd6282f2e70a33b1d8c3a0f96)] -> xpath: //div[@id='summernoteEnglish']/following::div[1]/div[@class='note-editing-area']/div[@class='note-editable']]
+20:22:51.890 INFO  csp.WaysToSavePage (WaysToSavePage.java:1149) - Description English TextBox populated successfully with Value RebatesDescription 00466
+20:22:51.930 INFO  driver.Page (    Page.java:121) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (231f822fd6282f2e70a33b1d8c3a0f96)] -> css selector: input.txtAmount] to be present in the DOM for duration of {} 120
+20:22:51.930 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+20:22:52.028 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+20:22:52.070 INFO  driver.Page (    Page.java:123) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (231f822fd6282f2e70a33b1d8c3a0f96)] -> css selector: input.txtAmount] before sending the keys.
+20:22:52.328 INFO  driver.Page (    Page.java:125) - Sending the following keys {} 96 to the element {} [[ChromeDriver: chrome on WINDOWS (231f822fd6282f2e70a33b1d8c3a0f96)] -> css selector: input.txtAmount]
+20:22:52.628 INFO  csp.WaysToSavePage (WaysToSavePage.java:540) - Annual Saving TextBox populated successfully with Value 96
+20:22:52.668 INFO  driver.Page (    Page.java:130) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (231f822fd6282f2e70a33b1d8c3a0f96)] -> css selector: #fileUpload] to be present in the DOM for duration of {} 120
+20:22:52.668 INFO  driver.Page (    Page.java:131) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (231f822fd6282f2e70a33b1d8c3a0f96)] -> css selector: #fileUpload] before sending the keys.
+20:22:52.798 INFO  driver.Page (    Page.java:133) - Sending the following keys {} C:\Users\kragavendr001\Desktop\SEW\SCMBase10sUIWorkspace\SCM10SFunctionalTests\src\test\resources\uploads\Test.jpg to the element {} [[ChromeDriver: chrome on WINDOWS (231f822fd6282f2e70a33b1d8c3a0f96)] -> css selector: #fileUpload]
+20:22:52.953 INFO  csp.WaysToSavePage (WaysToSavePage.java:387) - Choose File Button added successfully with File Value C:\Users\kragavendr001\Desktop\SEW\SCMBase10sUIWorkspace\SCM10SFunctionalTests\src\test\resources\uploads\Test.jpg
+20:22:52.953 INFO  driver.Page (    Page.java:527) - Preparing for element to click.
+20:22:54.182 INFO  driver.Page (    Page.java:534) - Element is clicked successfully.
+20:22:54.182 INFO  csp.WaysToSavePage (WaysToSavePage.java:433) - Add Button on Add Ways To Save Popup clicked successfully.
+20:23:02.143 INFO  driver.Page (    Page.java:161) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (231f822fd6282f2e70a33b1d8c3a0f96)] -> css selector: #toast-container .toast-message] is A new Rebate added successfully
+20:23:02.263 INFO  scp.HomePage (HomePage.java:167) - Label on toast message {}: A new Rebate added successfully
+20:23:02.264 INFO  scp.HomePage (HomePage.java:146) - Wait for toast message invisibility.
+20:23:02.264 INFO  driver.Page (    Page.java:250) - Waiting for element to be invisible for 120 seconds.
+20:23:08.156 INFO  driver.Page (    Page.java:253) - Element is invisible from the page.
+20:23:08.156 INFO  driver.Page (    Page.java:194) - Returning web element for by type locator : By.xpath: //table[@id='WaysToSaveReport']/tbody/tr/td[4]/div/a[contains(text(),'RebatesTopic 35897')]
+20:23:08.226 INFO  driver.Page (    Page.java:527) - Preparing for element to click.
+20:23:08.348 INFO  driver.Page (    Page.java:534) - Element is clicked successfully.
+20:23:08.952 INFO  csp.WaysToSavePage (WaysToSavePage.java:611) - Ways To Save View Details Popup is now Appeared
+20:23:08.952 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+20:23:08.997 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+20:23:08.997 INFO  csp.WaysToSavePage (WaysToSavePage.java:738) - Description Value on View Popup is is visible
+20:23:08.997 INFO  driver.Page (    Page.java:527) - Preparing for element to click.
+20:23:09.035 INFO  driver.Page (    Page.java:534) - Element is clicked successfully.
+20:23:09.036 INFO  csp.WaysToSavePage (WaysToSavePage.java:752) - Close X Button on View Popup clicked successfully.
+20:23:09.660 INFO  csp.WaysToSavePage (WaysToSavePage.java:605) - Ways To Save View Details Popup is now disappeared
+20:23:09.661 INFO  driver.Page (    Page.java:194) - Returning web element for by type locator : By.xpath: //table[@id='WaysToSaveReport']/tbody/tr/td[4]/div/a[contains(text(),'RebatesTopic 35897')]
+20:23:09.673 INFO  driver.Page (    Page.java:527) - Preparing for element to click.
+20:23:09.770 INFO  driver.Page (    Page.java:534) - Element is clicked successfully.
+20:23:10.376 INFO  csp.WaysToSavePage (WaysToSavePage.java:611) - Ways To Save View Details Popup is now Appeared
+20:23:10.376 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+20:23:10.464 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+20:23:10.464 INFO  csp.WaysToSavePage (WaysToSavePage.java:738) - Description Value on View Popup is is visible
+20:23:10.627 INFO  driver.Page (    Page.java:278) - Element {} : [[ChromeDriver: chrome on WINDOWS (231f822fd6282f2e70a33b1d8c3a0f96)] -> css selector: #WaystosavePopup div.modal-dialog.popup_area h4] is visible on the page.
+20:23:10.627 INFO  csp.WaysToSavePage (WaysToSavePage.java:621) - Ways To Save Title on View Popup visibility status {}true
+20:23:10.743 INFO  driver.Page (    Page.java:278) - Element {} : [[ChromeDriver: chrome on WINDOWS (231f822fd6282f2e70a33b1d8c3a0f96)] -> css selector: #WaystosavePopup div.modal-dialog.popup_area #btnClose] is visible on the page.
+20:23:10.743 INFO  csp.WaysToSavePage (WaysToSavePage.java:746) - Close X button on View Popup visibility status {}true
+20:23:10.822 INFO  csp.WaysToSavePage (WaysToSavePage.java:760) - Image on View Popup visibility status {}false
+20:23:10.946 INFO  driver.Page (    Page.java:278) - Element {} : [[ChromeDriver: chrome on WINDOWS (231f822fd6282f2e70a33b1d8c3a0f96)] -> css selector: #lblView] is visible on the page.
+20:23:10.946 INFO  csp.WaysToSavePage (WaysToSavePage.java:667) - Viewed Count Label on View Popup visibility status {}true
+20:23:10.974 INFO  driver.Page (    Page.java:153) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (231f822fd6282f2e70a33b1d8c3a0f96)] -> css selector: #lblView] to be visible on the page for duration of {} 120
+20:23:10.974 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+20:23:11.028 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+20:23:11.137 INFO  driver.Page (    Page.java:156) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (231f822fd6282f2e70a33b1d8c3a0f96)] -> css selector: #lblView] is Viewed:
+20:23:11.205 INFO  csp.WaysToSavePage (WaysToSavePage.java:673) - Viewed Count Label on View Popup is Viewed:
+20:23:11.353 INFO  driver.Page (    Page.java:278) - Element {} : [[ChromeDriver: chrome on WINDOWS (231f822fd6282f2e70a33b1d8c3a0f96)] -> css selector: #lbl_viewed] is visible on the page.
+20:23:11.353 INFO  csp.WaysToSavePage (WaysToSavePage.java:682) - Viewed Count Value on View Popup visibility status {}true
+20:23:11.514 INFO  driver.Page (    Page.java:278) - Element {} : [[ChromeDriver: chrome on WINDOWS (231f822fd6282f2e70a33b1d8c3a0f96)] -> css selector: #lblType12] is visible on the page.
+20:23:11.514 INFO  csp.WaysToSavePage (WaysToSavePage.java:697) - SaveUpto Count Label on View Popup visibility status {}true
+20:23:11.540 INFO  driver.Page (    Page.java:153) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (231f822fd6282f2e70a33b1d8c3a0f96)] -> css selector: #lblType12] to be visible on the page for duration of {} 120
+20:23:11.540 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+20:23:11.605 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+20:23:11.660 INFO  driver.Page (    Page.java:156) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (231f822fd6282f2e70a33b1d8c3a0f96)] -> css selector: #lblType12] is Save Up to:
+20:23:11.751 INFO  csp.WaysToSavePage (WaysToSavePage.java:703) - SaveUpto Count Label on View Popup is Save Up to:
+20:23:11.991 INFO  driver.Page (    Page.java:278) - Element {} : [[ChromeDriver: chrome on WINDOWS (231f822fd6282f2e70a33b1d8c3a0f96)] -> css selector: span[id*='lbl_type']] is visible on the page.
+20:23:11.991 INFO  csp.WaysToSavePage (WaysToSavePage.java:712) - SaveUpto Count Value on View Popup visibility status {}true
+20:23:12.084 INFO  driver.Page (    Page.java:278) - Element {} : [[ChromeDriver: chrome on WINDOWS (231f822fd6282f2e70a33b1d8c3a0f96)] -> css selector: p#lblDescription] is visible on the page.
+20:23:12.084 INFO  csp.WaysToSavePage (WaysToSavePage.java:726) - Description Value on View Popup visibility status {}true
+20:23:12.084 INFO  driver.Page (    Page.java:527) - Preparing for element to click.
+20:23:12.195 INFO  driver.Page (    Page.java:534) - Element is clicked successfully.
+20:23:12.195 INFO  csp.WaysToSavePage (WaysToSavePage.java:752) - Close X Button on View Popup clicked successfully.
+20:23:12.773 INFO  csp.WaysToSavePage (WaysToSavePage.java:605) - Ways To Save View Details Popup is now disappeared
+20:23:16.805 INFO  utils.DataBaseUtils (DataBaseUtils.java:299) - Connected to the database...
+20:23:17.077 INFO  utils.DataBaseUtils (DataBaseUtils.java:308) - SQL Exception:[Ljava.lang.StackTraceElement;@670460d1
+20:23:18.610 INFO  utils.DataBaseUtils (DataBaseUtils.java:299) - Connected to the database...
+20:23:18.930 INFO  utils.DataBaseUtils (DataBaseUtils.java:308) - SQL Exception:[Ljava.lang.StackTraceElement;@46aa2240
+20:23:20.459 INFO  utils.DataBaseUtils (DataBaseUtils.java:299) - Connected to the database...
+20:23:20.766 INFO  utils.DataBaseUtils (DataBaseUtils.java:308) - SQL Exception:[Ljava.lang.StackTraceElement;@3176c6d
+20:23:22.359 INFO  utils.DataBaseUtils (DataBaseUtils.java:299) - Connected to the database...
+20:23:22.607 INFO  utils.DataBaseUtils (DataBaseUtils.java:308) - SQL Exception:[Ljava.lang.StackTraceElement;@180e004
+20:23:24.955 INFO  driver.DriverFactory (DriverFactory.java:125) - Clearing all the cookies.

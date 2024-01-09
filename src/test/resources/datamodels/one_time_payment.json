@@ -1,0 +1,52 @@
+[
+  {
+    "id": "one_time_payment_scenario_1",
+    "amount": 5.03,
+    "convenienceFee": 1.05,
+    "isLoggedIn": false,
+    "isAutoPay": false,
+    "saveProfileAfterPayment": false,
+    "isDuplicatePayment": false,
+    "setDefaultPayment": false
+  },
+  {
+    "id": "one_time_payment_scenario_2",
+    "amount": 15,
+    "convenienceFee": 0.05,
+    "isLoggedIn": true,
+    "isAutoPay": false,
+    "saveProfileAfterPayment": true,
+    "isDuplicatePayment": false,
+    "setDefaultPayment": false
+  },
+  {
+    "id": "one_time_payment_scenario_3",
+    "amount": 45.05,
+    "convenienceFee": 0,
+    "isLoggedIn": false,
+    "isAutoPay": false,
+    "saveProfileAfterPayment": false,
+    "isDuplicatePayment": false,
+    "setDefaultPayment": false
+  },
+  {
+    "id": "one_time_payment_scenario_4",
+    "amount": 100.04,
+    "convenienceFee": 2.05,
+    "isLoggedIn": true,
+    "isAutoPay": false,
+    "saveProfileAfterPayment": true,
+    "isDuplicatePayment": false,
+    "setDefaultPayment": false
+  },
+  {
+    "id": "one_time_payment_scenario_5",
+    "amount": 150.34,
+    "convenienceFee": 7.05,
+    "isLoggedIn": false,
+    "isAutoPay": false,
+    "saveProfileAfterPayment": true,
+    "isDuplicatePayment": false,
+    "setDefaultPayment": false
+  }
+]

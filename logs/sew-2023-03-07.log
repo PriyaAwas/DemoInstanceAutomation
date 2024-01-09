@@ -1,0 +1,51 @@
+18:27:25.736 INFO  driver.Page (    Page.java:235) - Waiting for element to be visible for 120 seconds.
+18:27:25.835 INFO  driver.Page (    Page.java:238) - Element is visible on the page.
+18:27:25.859 INFO  driver.Page (    Page.java:122) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (42d8e523027fceee04c12fba92cd86d8)] -> css selector: #txtQuestionEN] before sending the keys.
+18:27:25.953 INFO  driver.Page (    Page.java:124) - Sending the following keys {} Saving Tips Topic59945 to the element {} [[ChromeDriver: chrome on WINDOWS (42d8e523027fceee04c12fba92cd86d8)] -> css selector: #txtQuestionEN]
+18:27:26.155 INFO  csp.WaysToSavePage (WaysToSavePage.java:713) - Topic Name English TextBox populated successfully with Value Saving Tips Topic59945
+18:27:26.211 INFO  driver.Page (    Page.java:120) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (42d8e523027fceee04c12fba92cd86d8)] -> xpath: //div[@id='summernoteEnglish']/following::div[1]/div[@class='note-editing-area']/div[@class='note-editable']] to be present in the DOM for duration of {} 120
+18:27:26.212 INFO  driver.Page (    Page.java:235) - Waiting for element to be visible for 120 seconds.
+18:27:26.273 INFO  driver.Page (    Page.java:238) - Element is visible on the page.
+18:27:26.290 INFO  driver.Page (    Page.java:122) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (42d8e523027fceee04c12fba92cd86d8)] -> xpath: //div[@id='summernoteEnglish']/following::div[1]/div[@class='note-editing-area']/div[@class='note-editable']] before sending the keys.
+18:27:26.402 INFO  driver.Page (    Page.java:124) - Sending the following keys {} Saving Tips Description54995 to the element {} [[ChromeDriver: chrome on WINDOWS (42d8e523027fceee04c12fba92cd86d8)] -> xpath: //div[@id='summernoteEnglish']/following::div[1]/div[@class='note-editing-area']/div[@class='note-editable']]
+18:27:26.819 INFO  csp.WaysToSavePage (WaysToSavePage.java:732) - Description English TextBox populated successfully with Value Saving Tips Description54995
+18:27:26.855 INFO  driver.Page (    Page.java:120) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (42d8e523027fceee04c12fba92cd86d8)] -> css selector: input.txtAmount] to be present in the DOM for duration of {} 120
+18:27:26.855 INFO  driver.Page (    Page.java:235) - Waiting for element to be visible for 120 seconds.
+18:27:26.902 INFO  driver.Page (    Page.java:238) - Element is visible on the page.
+18:27:26.915 INFO  driver.Page (    Page.java:122) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (42d8e523027fceee04c12fba92cd86d8)] -> css selector: input.txtAmount] before sending the keys.
+18:27:26.984 INFO  driver.Page (    Page.java:124) - Sending the following keys {} 05001 to the element {} [[ChromeDriver: chrome on WINDOWS (42d8e523027fceee04c12fba92cd86d8)] -> css selector: input.txtAmount]
+18:27:27.120 INFO  csp.WaysToSavePage (WaysToSavePage.java:470) - Annual Saving TextBox populated successfully with Value 05001
+18:27:27.229 INFO  driver.Page (    Page.java:129) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (42d8e523027fceee04c12fba92cd86d8)] -> css selector: #fileUpload] to be present in the DOM for duration of {} 120
+18:27:27.229 INFO  driver.Page (    Page.java:130) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (42d8e523027fceee04c12fba92cd86d8)] -> css selector: #fileUpload] before sending the keys.
+18:27:27.321 INFO  driver.Page (    Page.java:132) - Sending the following keys {} C:\Users\kragavendr001\Desktop\SEW\SCMBase10sUIWorkspace\SCM10SFunctionalTests\src\test\resources\uploads\meter-reading.jpg to the element {} [[ChromeDriver: chrome on WINDOWS (42d8e523027fceee04c12fba92cd86d8)] -> css selector: #fileUpload]
+18:27:27.372 INFO  csp.WaysToSavePage (WaysToSavePage.java:338) - Choose File Button added successfully with File Value C:\Users\kragavendr001\Desktop\SEW\SCMBase10sUIWorkspace\SCM10SFunctionalTests\src\test\resources\uploads\meter-reading.jpg
+18:27:27.372 INFO  driver.Page (    Page.java:527) - Preparing for element to click.
+18:27:32.456 INFO  driver.Page (    Page.java:530) - Element is clicked successfully.
+18:27:32.457 INFO  csp.WaysToSavePage (WaysToSavePage.java:367) - Add Button on Add Ways To Save Popup clicked successfully.
+18:27:38.862 INFO  driver.Page (    Page.java:160) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (42d8e523027fceee04c12fba92cd86d8)] -> css selector: #toast-container .toast-message] is A new Saving Tip added successfully
+18:27:38.911 INFO  scp.HomePage (HomePage.java:163) - Label on toast message {}: A new Saving Tip added successfully
+18:27:38.913 INFO  scp.HomePage (HomePage.java:147) - Wait for toast message invisibility.
+18:27:38.914 INFO  driver.Page (    Page.java:249) - Waiting for element to be invisible for 120 seconds.
+18:27:45.091 INFO  driver.Page (    Page.java:252) - Element is invisible from the page.
+18:27:45.165 INFO  driver.Page (    Page.java:152) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (42d8e523027fceee04c12fba92cd86d8)] -> css selector: #WaysToSaveReport tbody td:nth-child(4) div a] to be visible on the page for duration of {} 120
+18:27:45.166 INFO  driver.Page (    Page.java:235) - Waiting for element to be visible for 120 seconds.
+18:27:45.204 INFO  driver.Page (    Page.java:238) - Element is visible on the page.
+18:27:45.247 INFO  driver.Page (    Page.java:155) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (42d8e523027fceee04c12fba92cd86d8)] -> css selector: #WaysToSaveReport tbody td:nth-child(4) div a] is Saving Tips Topic59945
+18:27:45.274 INFO  csp.WaysToSavePage (WaysToSavePage.java:856) - Name for the First Ways To Save present on Grid is Saving Tips Topic59945
+18:27:46.026 INFO  driver.Page (    Page.java:58) - Preparing for element to click.
+18:27:46.027 INFO  driver.Page (    Page.java:210) - Waiting for element to be clickable for 120 seconds.
+18:27:46.198 INFO  driver.Page (    Page.java:213) - Element is clickable now.
+18:27:46.391 INFO  driver.Page (    Page.java:61) - Element is clicked successfully.
+18:27:46.392 INFO  csp.AdminHomePage (AdminHomePage.java:93) - Admin User Profile dropdown clicked successfully.
+18:27:46.392 INFO  driver.Page (    Page.java:235) - Waiting for element to be visible for 120 seconds.
+18:27:46.472 INFO  driver.Page (    Page.java:238) - Element is visible on the page.
+18:27:46.472 INFO  csp.AdminHomePage (AdminHomePage.java:36) - SignOut Link is Visible on the page.
+18:27:46.473 INFO  driver.Page (    Page.java:58) - Preparing for element to click.
+18:27:46.473 INFO  driver.Page (    Page.java:210) - Waiting for element to be clickable for 120 seconds.
+18:27:46.595 INFO  driver.Page (    Page.java:213) - Element is clickable now.
+18:27:51.305 INFO  driver.Page (    Page.java:61) - Element is clicked successfully.
+18:27:51.306 INFO  csp.AdminHomePage (AdminHomePage.java:40) - Admin User SignOut Link clicked successfully.
+18:27:51.306 INFO  scp.HomePage (HomePage.java:133) - Wait for page loader invisibility.
+18:27:51.306 INFO  driver.Page (    Page.java:249) - Waiting for element to be invisible for 120 seconds.
+18:27:56.361 INFO  driver.Page (    Page.java:252) - Element is invisible from the page.
+18:28:01.832 INFO  driver.DriverFactory (DriverFactory.java:122) - Clearing all the cookies.

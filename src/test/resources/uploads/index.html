@@ -1,0 +1,1169 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet"/>
+	<title>To verify that RPU Twitter page shall take the display the feeds from page http://twitter.com/rpuoutages - TestRail</title>
+
+			<link type="text/css" rel="stylesheet" href="https://static.testrail.io/5.7.0.3951/css/app-combined.css" 
+			media="all" />
+	
+
+<link rel="shortcut icon" href="https://static.testrail.io/5.7.0.3951/images/favicon.ico"/>
+
+
+<script type="text/javascript" src="https://static.testrail.io/5.7.0.3951/js/jquery.js"></script>
+</head>
+				<body style="min-width: 1034px">
+
+
+<script type="text/javascript">
+	$(document).ready(
+		function()
+		{
+			$('#body').css('display', 'table');
+		}
+	);
+</script>
+
+	
+
+<script type="text/javascript">
+			$(document).ready(function(){
+				$.datepicker.setDefaults(
+					{
+						dateFormat: 'dd-mm-yy',
+						dayNames: ['रविवार','सोमवार','मंगलवार','बुधवार','गुरुवार','शुक्रवार','शनिवार'],
+						dayNamesShort: ['रवि.','सोम.','मंगल.','बुध.','गुरु.','शुक्र.','शनि.'],
+						dayNamesMin: ['रवि.','सोम.','मंगल.','बुध.','गुरु.','शुक्र.','शनि.'],
+						monthNames: ['जनवरी','फरवरी','मार्च','अप्रैल','मई','जून','जुलाई','अगस्त','सितम्बर','अक्तूबर','नवम्बर','दिसम्बर'],
+						monthNamesShort: ['जनवरी','फरवरी','मार्च','अप्रैल','मई','जून','जुलाई','अगस्त','सितम्बर','अक्तूबर','नवम्बर','दिसम्बर'],
+						firstDay: 1
+					}
+				);
+			});
+		</script>
+
+	
+<div id="top">
+	<div class="top-panel">
+		<div class="top-panel-inner">
+			<div class="top-social">
+				<a href="http://blog.gurock.com/" tooltip-text="Learn more about new TestRail versions and features on the Gurock blog."
+					target="_blank" tabindex="-1" class="top-social-link link-tooltip"><img
+					src="https://static.testrail.io/5.7.0.3951/images/header/blog.png" width="16" height="16" /></a>
+				<a href="http://twitter.com/testrail" tooltip-text="Follow TestRail on Twitter for relevant TestRail updates."
+					target="_blank" tabindex="-1" class="top-social-link link-tooltip"><img
+					src="https://static.testrail.io/5.7.0.3951/images/header/twitter.png" width="16" height="16" /></a>
+				<a  href="javascript:void(0)" onclick="this.blur(); App.Help.subscribeNewsletter('Akhilesh.Keshari@smartenergywater.in'); return false;" 					tooltip-text="Subscribe to Gurock's newsletter to receive TestRail updates in your inbox."
+					class="top-social-link link-tooltip"><img
+					src="https://static.testrail.io/5.7.0.3951/images/header/mail.png" width="16" height="16" /></a>
+			</div>
+			<ul class="top-menu pull-right"><li class="top-menu-item"><a id="inProgressLink"
+				 href="javascript:void(0)" onclick="this.blur(); App.Tests.showInProgress(); return false;" >Working On</a>
+				<span class="caret" style="vertical-align: 2px"></span></li><li
+				class="top-menu-item"><a class="dropdownLink" href="#userDropdown">Akhilesh Kumar. Keshari</a>
+				<span class="caret" style="vertical-align: 2px"></span></li><li class="top-menu-item"><a
+				class="dropdownLink top-menu-highlight" href="#helpDropdown" tabindex="-1">Help &amp; Feedback</a>
+				<span class="caret top-menu-highlight" style="vertical-align: 2px"></span></li><li></li>
+			</ul>
+									<div class="top-search">
+								<form action="index.php?/search/index/36" style="display: inline" method="post" >					<input type="hidden" name="_token" value="dDMRVzRJqbzArZe2Ljk6" />					<input class="top-search-control" type="text" name="query"
+						tabindex="-1" />
+				</form>			</div>
+					</div>
+	</div>
+			<div class="top-section top-section-with-return text-ppp">
+			<a class="link-noline"
+				href="index.php?/projects/overview/36">Rochester Public Utilities-RPU</a>
+		</div>
+	</div>
+
+<span id="return" class=""><a
+	class="link-noline"
+	href="index.php?/dashboard">&larr; Return to Dashboard</a></span>
+
+<form id="newsletterForm" target="_blank"
+	action="https://gurock.createsend.com/t/y/s/ahdml/" method="post">
+	<input name="cm-ahdml-ahdml" id="newsletter" type="hidden" />
+</form>
+
+<div id="header">
+	<ul class="header-menu">
+		
+<li class="header-menu-item"><a tabindex="-1" href="index.php?/projects/overview/36">Overview</a></li><li class="header-menu-item"><a tabindex="-1" href="index.php?/todos/overview/36">Todo</a></li><li class="header-menu-item"><a tabindex="-1" href="index.php?/milestones/overview/36">Milestones</a></li><li class="header-menu-item header-menu-item-selected"><a tabindex="-1" href="index.php?/runs/overview/36">Test Runs &amp; Results</a></li>
+<li class="header-menu-item"><a tabindex="-1" href="index.php?/suites/view/36">Test Cases</a></li>
+<li class="header-menu-item"><a tabindex="-1" href="index.php?/reports/overview/36">Reports</a></li>	</ul>
+</div>
+
+<div id="separator"></div>
+
+<div id="body-container" class="">
+	<div id="body" class="table">
+	<div id="content" class="column content">
+					<div id="content-header" class="content-header content-header-default" style="">
+	<div class="content-header-inner">
+							<div class="toolbar content-header-toolbar"><a class="toolbar-button toolbar-button-last content-header-button button-responsive button-edit" href="index.php?/cases/edit/22332/4/107178"><span class="button-text">Edit Case</span></a><a class="toolbar-button toolbar-button-first content-header-button button-responsive button-view" href="index.php?/cases/view/22332"><span class="button-text">View Case</span></a></div><span class="content-header-icon"><a class="popupLink link-tooltip" rel="print" href="index.php?/tests/plot/107178" tooltip-header="Print Test" tooltip-text="Opens a print view of this test and its results."><img src="https://static.testrail.io/5.7.0.3951/images/icons/print.png" width="16" height="16" /></a></span>		
+	<span id="unsubscribed" class="content-header-icon ">
+		<a class="subscribe link-tooltip"  href="javascript:void(0)" onclick="this.blur(); App.Tests.subscribe(107178); return false;" 			tooltip-text="Subscribe to receive emails on changes for this test." >
+			<img src="https://static.testrail.io/5.7.0.3951/images/icons/subscribe.png" width="16" height="16" alt="" />
+		</a>
+		<span class="hidden busy">
+			<img src="https://static.testrail.io/5.7.0.3951/images/animations/progressStandard.gif" width="16" height="16" alt="" />
+		</span>					
+	</span>
+	<span id="subscribed" class="content-header-icon hidden">
+		<a class="unsubscribe link-tooltip"  href="javascript:void(0)" onclick="this.blur(); App.Tests.unsubscribe(107178); return false;" 			tooltip-text="Unsubscribe from email updates on changes for this test." >
+			<img src="https://static.testrail.io/5.7.0.3951/images/icons/unsubscribe.png" width="16" height="16" alt="" />
+		</a>
+		<span class="hidden busy">
+			<img src="https://static.testrail.io/5.7.0.3951/images/animations/progressStandard.gif" width="16" height="16" alt="" />
+		</span>					
+	</span>
+<div id="directionDropdown" class="dropdown dropdown-menu" style="width: 165px">
+	<ul>
+		<li>
+			<a class="dropdown-menu-link"  href="javascript:void(0)" onclick="this.blur(); App.Tests.setDirectionMode('run'); return false;" >
+				<img src="https://static.testrail.io/5.7.0.3951/images/app/run10.png" 
+					style="vertical-align: -1px" />
+				All tests in this run			</a>
+		</li>
+		<li class="dropdown-menu-separator"></li>
+		<li>
+			<a class="dropdown-menu-link"  href="javascript:void(0)" onclick="this.blur(); App.Tests.setDirectionMode('run_assigned'); return false;" >
+				<img src="https://static.testrail.io/5.7.0.3951/images/app/runAssigned10.png" 
+					style="vertical-align: -1px" />
+				My tests in this run			</a>
+		</li>
+	</ul>
+</div>
+
+<span class="content-header-icon" id="directionNext" rel="run" style="margin: 2px 0 0 0"><a  href="javascript:void(0)" onclick="this.blur(); App.Tests.loadNext(107178); return false;" 	class="link-tooltip"
+	tooltip-text="Go to the next test in this test run."><img src="https://static.testrail.io/5.7.0.3951/images/direction/next.png" width="22" 
+	height="20" /></a></span>
+<span class="content-header-icon hidden" id="directionNextDisabled" style="margin: 2px 0 0 0"><img
+	class="link-tooltip" tooltip-text="There are no more tests after the current test."
+	src="https://static.testrail.io/5.7.0.3951/images/direction/nextDisabled.png"
+	width="22" height="20" /></span>
+<span class="content-header-icon " id="directionRun" style="margin: 2px 0 0 0"><a
+	class="dropdownLink" href="#directionDropdown"><img src="https://static.testrail.io/5.7.0.3951/images/direction/run.png" width="22" 
+	height="20" /></a></span>
+<span class="content-header-icon hidden" id="directionRunAssigned" style="margin: 2px 0 0 0"><a
+	class="dropdownLink" href="#directionDropdown"><img src="https://static.testrail.io/5.7.0.3951/images/direction/assigned.png" width="22" 
+	height="20" /></a></span>
+<span class="content-header-icon" id="directionPrev" rel="run" style="margin-top: 2px"><a  href="javascript:void(0)" onclick="this.blur(); App.Tests.loadPrev(107178); return false;"  
+	class="link-tooltip"
+	tooltip-text="Go to the previous test in this test run."><img src="https://static.testrail.io/5.7.0.3951/images/direction/prev.png" width="22"
+	height="20" /></a></span>
+<span class="content-header-icon hidden" id="directionPrevDisabled" style="margin-top: 2px"><img
+	class="link-tooltip" tooltip-text="There are no more tests before the current test."
+	src="https://static.testrail.io/5.7.0.3951/images/direction/prevDisabled.png"
+	width="22" height="20" /></span><div class="content-header-id">T107178</div>		        		<div class="content-header-title">
+													<span class="link-tooltip content-header-title-tooltip" 
+					tooltip-width="350"
+					tooltip-text="To verify that RPU Twitter page shall take the display the feeds from page http://twitter.com/rpuoutages">To verify that RPU Twitter page shall take the display the feeds from page http://twitter.com/rpuoutages <a href="#changes" class="link-tooltip" tooltip-text="Jump to the results of this test."><img src="https://static.testrail.io/5.7.0.3951/images/icons/smallDown.png" width="10" height="10" /></a></span>
+					</div>
+	</div>
+</div>
+                <script type="text/javascript">
+                    $("#sites").prop("selectedIndex", 0);
+			   </script>
+								<div class="content-breadcrumb">
+																																											<a href="index.php?/runs/view/141" tabindex="-1">RPU_Test Run 5/2/2019</a>
+																																			&rsaquo;
+										<a href="index.php?/runs/view/141/&group_by=cases:section_id&group_id=1061" tabindex="-1">Delta Test Cases</a>
+																																			&rsaquo;
+										<a href="index.php?/runs/view/141/&group_by=cases:section_id&group_id=913" tabindex="-1">Connect Me</a>
+																												</div>
+																			<div id="content-inner" class="content-inner content-inner-compact ">
+																	            
+<script type="text/javascript">
+$(document).ready(function() {
+	Highcharts.setOptions({
+		chart: {
+			style: {
+				fontSize: '12px',
+				fontFamily: 'Verdana, Geneva, Arial, Helvetica, sans-serif'
+			},
+			events: {
+				load: function() 
+				{
+					$.publish('charts.loaded', { chart: this });
+				}
+			}
+		},
+		credits: {
+			enabled: false
+		},
+		title: {
+			text: ''
+		},
+		xAxis: {
+			labels: {
+				useHTML: true,
+				style: {
+					fontSize: '12px',
+				}
+			}
+		},
+		yAxis: {
+			labels: {
+				useHTML: true,
+				style: {
+					fontSize: '12px',
+				}				
+			}
+		},
+		legend: {
+			enabled: false
+		},
+		tooltip: {
+			enabled: true,
+			useHTML: true,
+			style: {
+				padding: '4px',
+				fontSize: '12px'
+			}
+		},
+		plotOptions: {
+			series: {
+				animation: false,
+				shadow: false,
+				showInLegend: false,
+				lineWidth: 2,
+				marker: {
+					enabled: false
+				}
+			},
+			pie: {
+				size: '100%',
+				showInLegend: false,
+				dataLabels: {
+					enabled: false
+				},
+				states: {
+					hover: {
+						enabled: false
+					}
+				}
+			}
+		}
+	});
+});
+</script>
+<script type="text/javascript">
+$(document).ready(function()
+{
+		App.Translations.add(
+		"attachments_drop",
+		"Drop files here to attach, or click to browse."	);
+		App.Translations.add(
+		"attachments_drop_image",
+		"Drop images here to embed, or click to browse."	);
+		App.Translations.add(
+		"attachments_drop_image_nobrowse",
+		"Drop images here to embed."	);
+		App.Translations.add(
+		"attachments_drop_notype",
+		"You can only add images to this text field (example: PNG or JPG files)."	);
+		App.Translations.add(
+		"attachments_drop_notype_canattach",
+		"You can only add images to this text field (example: PNG or JPG files). You can attach other file types to a case or result from the sidebar or result dialogs."	);
+		App.Translations.add(
+		"attachments_file_here",
+		"Drop file here, or click to browse."	);
+	});
+</script>
+<script type="text/javascript">
+$(document).ready(
+	function()
+	{
+		App.Dropzone.init();
+	}
+);
+</script>
+<div id="addResultNextDropdown" class="dropdown dropdown-menu" 
+	style="width: 175px; z-index: 10000">
+	<ul>
+		<li><a class="dropdown-menu-link"
+			 href="javascript:void(0)" onclick="this.blur(); App.Tests.setResultNext(true); return false;" >Jump to next test: Yes</a></li>
+		<li class="dropdown-menu-separator"></li>
+		<li><a class="dropdown-menu-link"
+			 href="javascript:void(0)" onclick="this.blur(); App.Tests.setResultNext(false); return false;" >Jump to next test: No</a></li>
+	</ul>
+</div>
+
+<div class="dialog" id="addResultDialog" 
+	style="width: 650px; height: 425px">
+	<div class="dialog-title">
+		<span class="addResult">Add Result</span>
+		<span class="editResult">Edit Result</span>
+	</div>
+	
+	<form id="addResultForm">
+		<div class="dialog-body result-dialog-body">
+			<div class="result-dialog-busy resultBusy" style="margin: auto">
+				<img src="https://static.testrail.io/5.7.0.3951/images/animations/progressLarge.gif" width="32" 
+					height="32" alt="" />
+				<p></p>
+			</div>
+			<div class="result-dialog-container resultContainer hidden" ></div>
+		</div>
+	</form>
+
+	<div class="dialog-buttons-pane-container dialog-buttons-pane-container-dark">
+		<div id="addResultButtons" class="button-group dialog-buttons-pane">
+			<button type="submit" id="addResultSubmit" style="display: none"
+				class="button button-left button-positive button-ok button-dark">
+				<span 
+					class="addResult">Add Result</span><span 
+					class="editResult">Edit Result</span>
+			</button>
+			<button type="submit" id="addResultSubmitDisabled"
+				class="button button-left button-positive button-disabled button-ok-disabled button-dark">
+				<span 
+					class="addResult">Add Result</span><span 
+					class="editResult">Edit Result</span>
+			</button>			
+			<a id="addResultClose" 
+				class="button button-left button-negative button-cancel button-dark dialog-action-close">
+				Cancel			</a>
+			<span id="addResultNext" rel="1" class="pull-right button-extra text-soft">
+				<a href="#addResultNextDropdown" class="dropdownLink link-noline">
+					<span id="addResultNextYes">Jump to next test: Yes</span>
+					<span id="addResultNextNo" class="hidden">Jump to next test: No</span>
+					<span class="caret"></span>
+				</a>
+			</span>
+		</div>
+	</div>
+</div>
+<div class="dialog" id="attachmentDialog" style="width: 450px">
+	<div class="dialog-title">
+		<span class="addAttachment">Add Attachment</span>
+		<span class="addImage">Add Images</span>
+	</div>
+	<form id="attachmentForm" action="post">
+		<div class="dialog-body">
+			<div class="message message-error validationError" id="attachmentErrors"></div>
+			<div class="form-group bottom">
+				<div id="attachmentDropzone" class="dropzone dz-persistent" style="min-height: 100px"></div>
+			</div>
+			<div id="attachmentScreenshotMac" class="hidden">
+				<div class="shortcut">
+					<p class="top">How to take a screenshot on your Mac:</p>
+					<kbd>^ Ctrl</kbd>
+					<span class="shortcut-plus">+</span>
+					<kbd>&#8984; Cmd</kbd>
+					<span class="shortcut-plus">+</span>
+					<kbd>&#x21E7; Shift</kbd>
+					<span class="shortcut-plus">+</span>
+					<kbd>4</kbd>
+				</div>
+				<div class="shortcut">
+					<p class="top">Then paste it:</p>
+					<kbd>&#8984; Cmd</kbd>
+					<span class="shortcut-plus">+</span>
+					<kbd>v</kbd>
+				</div>
+			</div>
+			<div id="attachmentScreenshotWin" class="hidden">
+				<div class="shortcut">
+					<p class="top">How to take a screenshot on Windows:</p>
+					<kbd>Alt</kbd>
+					<span class="shortcut-plus">+</span>
+					<kbd>PrtSc</kbd>
+					<span class="shortcut-plus">or</span>
+					<kbd>PrtSc</kbd>
+				</div>
+				<div class="shortcut">
+					<p class="top">Then paste it:</p>
+					<kbd>Ctrl</kbd>
+					<span class="shortcut-plus">+</span>
+					<kbd>v</kbd>
+				</div>
+			</div>			
+		</div>		
+		<div id="attachmentButtons" class="button-group dialog-buttons">
+			<button id="attachmentSubmit" type="submit"
+				class="button button-left button-positive button-ok dialog-action-default">
+				<span
+					class="addAttachment">Add Attachment</span><span
+					class="addImage">Add Images</span>
+			</button>
+			<a class="button button-left button-negative button-cancel dialog-action-close">
+				Cancel			</a>		
+		</div>
+	</form>
+</div>
+
+
+<script type="text/javascript">
+$(document).ready(
+	function()
+	{
+		App.Editor.init(36);
+	}
+);
+</script>
+
+<div class="dialog" id="addCommentDialog" style="width: 500px">
+	<div class="dialog-title">
+		<span class="addComment">Add Comment or File</span>
+		<span class="editComment">Edit Comment</span>
+		<span class="assignTo">Assign To</span>
+		<span class="editAssignTo">Edit Assign To</span>
+	</div>
+	
+	<form id="addCommentForm">
+		<div class="dialog-body" style="padding-bottom: 0">
+			<div class="message message-error validationError" id="addCommentErrors"></div>
+			<div class="form-group">
+				<label for="addCommentAssignTo">Assign To</label>
+				<select class="form-control form-control-small form-select" name="addCommentComment"
+					id="addCommentAssignTo" >
+					<option value=""></option>
+					<option value="unassign">Nobody (Unassigned)</option>
+					<option value="34">Me</option>
+					<optgroup disabled="disabled" label="&ndash;&ndash;&ndash;"></optgroup>
+											<option value="18">Akash Sharma</option>
+											<option value="34">Akhilesh Kumar. Keshari</option>
+											<option value="60">Aman Singh</option>
+											<option value="5">Amit Kumar. Das</option>
+											<option value="30">Amit Rai</option>
+											<option value="58">Ankit Sharma</option>
+											<option value="9">Anubhuti Saxena</option>
+											<option value="6">Ashu Jain</option>
+											<option value="41">Atul Hasija</option>
+											<option value="19">Atul Singh</option>
+											<option value="33">Baban Gupta</option>
+											<option value="52">Babita Yadav</option>
+											<option value="39">Bibhudatta Mishra</option>
+											<option value="56">Chad.Curtis</option>
+											<option value="26">Harpreet Singh</option>
+											<option value="57">Hemant Kalra</option>
+											<option value="15">Jon DeBergh</option>
+											<option value="53">Karandeep Singh</option>
+											<option value="44">Kevin Dang</option>
+											<option value="59">Kevin Hwang</option>
+											<option value="55">Klaudia.Bibashani</option>
+											<option value="13">Kundan Kumar</option>
+											<option value="3">Manish Khatri</option>
+											<option value="42">Manoj Singh</option>
+											<option value="17">Mashal Dhawan</option>
+											<option value="27">Mayank Chaturvedi</option>
+											<option value="50">Mohnish Saxena</option>
+											<option value="38">Nitika Sardana</option>
+											<option value="35">Nu Pho</option>
+											<option value="48">Pooja Sasi</option>
+											<option value="51">Prashant Vashisht</option>
+											<option value="49">Rahul Rana</option>
+											<option value="14">Rajiv Gupta</option>
+											<option value="31">Ranjit Biswal</option>
+											<option value="1">Ray Howlett</option>
+											<option value="45">Rini Tejasvi</option>
+											<option value="23">Rohan Kalyanshetty</option>
+											<option value="20">Rupesh Mishra</option>
+											<option value="36">Sachin Jain</option>
+											<option value="37">Shobhit Rana</option>
+											<option value="54">Shubha Prasad</option>
+											<option value="29">Sohit Tyagi</option>
+											<option value="46">Souradeep Ghosh</option>
+											<option value="25">Sugandha Seth</option>
+											<option value="2">Sujoy Banerjee</option>
+											<option value="22">Thuy An Nguyen</option>
+											<option value="10">Umesh Kumar</option>
+											<option value="28">Vaibhav Saini</option>
+											<option value="47">Yashpreet Singh</option>
+									</select>
+				<div class="form-description">Assign to another team member.</div>
+			</div>
+			<div class="form-group">
+				<label for="addCommentComment">
+					<span class="form-toolbar" style="padding-top: 0px">
+	<a  href="javascript:void(0)" onclick="this.blur(); App.Editor.addTable('#addCommentComment'); return false;" 		class="link-tooltip" tooltip-text="Add a table to this text field."
+		tabindex="-1">
+		<img src="https://static.testrail.io/5.7.0.3951/images/icons/markdownTable.png" width="16" height="16" alt=""
+			 /></a>
+			<a  href="javascript:void(0)" onclick="this.blur(); App.Editor.addImage('#addCommentComment', 36); return false;" 			class="link-tooltip" tooltip-text="Add an image to this text field."
+			tabindex="-1">
+			<img src="https://static.testrail.io/5.7.0.3951/images/icons/markdownImage.png" width="16" height="16" alt=""
+				 /></a>
+		<a href="http://docs.gurock.com/testrail-userguide/userguide-editor" 
+		class="link-tooltip" tooltip-text="Open the editor formatting reference."
+		target="_blank" tabindex="-1">
+		<img style="margin-right: 0" 
+			src="https://static.testrail.io/5.7.0.3951/images/icons/markdownHelp.png" width="16" height="16" alt="" />
+	</a>
+</span>
+					Comment				</label>
+				<textarea class="form-control form-control-full" rows="8"
+					name="addCommentComment" id="addCommentComment"></textarea>
+				
+		<div id="addCommentComment_drop" class="dropzone" rel="addCommentComment"
+				dialog="addCommentDialog"
+			></div>
+					<div class="form-description form-description-full addComment">Add a new comment to this test.</div>
+				<div class="form-description form-description-full editComment">Edit your comment to this test.</div>
+				<div class="form-description form-description-full assignTo">Add a comment for the tester.</div>
+				<div class="form-description form-description-full editAssignTo">Edit your comment for the tester.</div>
+			</div>
+						<div id="addCommentAttachments" class="form-group">
+				<div id="addCommentDropzone" class="dropzone dz-persistent"></div>
+			</div>
+				</div>
+		<div class="button-group dialog-buttons top">
+			<button id="addCommentSubmit" type="submit" 
+				class="button button-left button-positive button-ok dialog-action-default">
+				<span 
+					class="addComment">Add Comment or File</span><span 
+					class="editComment">Edit Comment</span><span 
+					class="assignTo">Assign To</span><span 
+					class="editAssignTo">Edit Assign To</span>
+			</button>
+			<a class="button button-left button-negative button-cancel dialog-action-close">
+				Cancel			</a>		
+		</div>
+	</form>
+</div>
+
+
+		<script type="text/javascript">
+	$(document).ready(
+		function()
+		{
+			App.Editor.applyDrop(
+				'#' + 'addCommentComment_drop',
+				'#' + 'addCommentComment',
+				36,
+				true			);
+		}
+	);
+	</script>
+
+<script type="text/javascript">
+$(document).ready(
+	function()
+	{
+		App.Tests.Attachments.init('#addCommentDropzone', 36);
+	}
+);
+</script>
+
+
+
+<div class="io-container io-framed">
+	<table class="io">
+		<tr>
+			<td style="width: 25%" id="cell_type_id"> 
+				<label class="io-label">Type</label>
+				Functional 
+			</td> 
+			<td style="width: 25%" id="cell_priority_id">
+				<label class="io-label">Priority</label>
+				Medium			</td>
+									<td style="width: 25%" id="cell_estimate">
+				<label class="io-label">Estimate</label>
+													None							</td>
+																		<td style="width: 25%" id="cell_refs">
+					<label class="io-label">References</label>
+																																<a target="_blank" class="referenceLink" rel="RPU-36" href="https://smartenergywaternet.atlassian.net/browse/RPU-36">RPU-36</a>									</td>
+															</tr>
+			<tr>
+																											<td style="width: 25%" id="cell_custom_platform">
+						<label class="io-label">Platform</label>
+						 All 					</td>
+																			<td style="width: 25%"></td>
+											<td style="width: 25%"></td>
+											<td style="width: 25%"></td>
+									</tr>
+	</table>
+</div>
+
+
+				<div class="field-title"
+			style="margin-top: 1.5em">
+			<span class="field-title-inner">Objective</span>
+		</div>
+		<div class="field-content">
+			<div class="markdown"><p>To verify that RPU Twitter page shall take the display the feeds from page <a href="http://twitter.com/rpuoutages">http://twitter.com/rpuoutages</a></p>
+</div>		</div>
+					<div class="field-title"
+			style="margin-top: 2em">
+			<span class="field-title-inner">Preconditions</span>
+		</div>
+		<div class="field-content">
+			<div class="markdown"><p>User shall be logged into the application</p>
+</div>		</div>
+					<div class="field-title"
+			style="margin-top: 2em">
+			<span class="field-title-inner">Steps</span>
+		</div>
+		<div class="field-content">
+			<table class="steps" cellspacing="0">
+	<colgroup>
+		<col class="index"></col>
+				<col style="width: 49%" class="hidden-vertical"></col>
+		<col style="width: 49%" class="hidden-vertical"></col>
+		<col class="visible-vertical hidden"></col>
+			</colgroup>
+		<tr class="header hidden-vertical">
+		<th class="no"></th>
+		<th class="content">Step</th>
+		<th class="content">Expected Result</th>
+	</tr>
+			<tr>
+		<td class="step-index">
+			<div class="step-index-circle">
+				<span class="step-index-inner">1</span>
+			</div>
+		</td>
+		<td class="step-content" style="background: white">
+												<div class="markdown"><p>Click on Connect Me</p>
+</div>
+																		<div class="visible-vertical hidden">
+					<div class="step-header">
+						Expected Result					</div>
+											<div class="markdown"><p>System shall take the user to Connect Me page.</p>
+</div>
+												</div>
+					</td>
+				<td class="step-content hidden-vertical" style="background: white">
+												<div class="markdown"><p>System shall take the user to Connect Me page.</p>
+</div>
+									</td>
+			</tr>
+		<tr>
+		<td class="step-index">
+			<div class="step-index-circle">
+				<span class="step-index-inner">2</span>
+			</div>
+		</td>
+		<td class="step-content" style="background: white">
+												<div class="markdown"><p>Click on Twitter</p>
+</div>
+																		<div class="visible-vertical hidden">
+					<div class="step-header">
+						Expected Result					</div>
+											<div class="markdown"><p>System shall display the Twitter feeds based on the link:- <a href="http://twitter.com/rpuoutages">http://twitter.com/rpuoutages</a></p>
+</div>
+												</div>
+					</td>
+				<td class="step-content hidden-vertical" style="background: white">
+												<div class="markdown"><p>System shall display the Twitter feeds based on the link:- <a href="http://twitter.com/rpuoutages">http://twitter.com/rpuoutages</a></p>
+</div>
+									</td>
+			</tr>
+	</table>		</div>
+			
+
+<div id="resultsHelp" class="tooltip tooltip-help">
+	<div class="tooltip-help-body">
+		<p style="margin: 0">The <strong>Results &amp; Comments</strong> tab shows the results, comments and
+assignments for the current test in this run in chronological order.</p>
+	</div>
+</div><div id="historyHelp" class="tooltip tooltip-help">
+	<div class="tooltip-help-body">
+		<p style="margin: 0">The <strong>History &amp; Context</strong> tab shows all related tests over time
+(all tests of the same <em>test case</em>). This can include related tests of other configurations in the same
+test plan or past test runs. The current test in this run is highlighted.
+<br /><br />
+A line chart at the top displays recent and related test results with the recorded statuses.</p>
+	</div>
+</div><div id="defectsHelp" class="tooltip tooltip-help">
+	<div class="tooltip-help-body">
+		<p style="margin: 0">The <strong>Defects</strong> tab shows all logged defects for related tests over time
+(all defects of the same <em>test case</em>). Defects of the current test in this run are highlighted.</p>
+	</div>
+</div>
+<div class="bubble integration-bubble" id="defectBubble">
+	<div class="integration-bubble-busy busy">
+		<img src="https://static.testrail.io/5.7.0.3951/images/animations/progressLarge.gif" width="32" 
+			height="32" alt="" />
+	</div>	
+	<div class="error">
+		<div class="integration-bubble-error-header">
+			An Error Occurred		</div>
+		<div class="integration-bubble-error-body" id="defectBubbleError"></div>
+	</div>
+	<div class="content"></div>
+</div>
+<div class="bubble integration-bubble" id="referenceBubble">
+	<div class="integration-bubble-busy busy">
+		<img src="https://static.testrail.io/5.7.0.3951/images/animations/progressLarge.gif" width="32" 
+			height="32" alt="" />
+	</div>	
+	<div class="error">
+		<div class="integration-bubble-error-header">
+			An Error Occurred		</div>
+		<div class="integration-bubble-error-body" id="referenceBubbleError"></div>
+	</div>
+	<div class="content"></div>
+</div>
+
+<div class="tabs" style="margin-top: 2em">
+	<div class="tab-header">
+		<a href="javascript:void(0)" id="resultsTab" class="tab1 current" rel="1"
+      		onclick="App.Tests.onResultsClick(this, 107178)">Results &amp; Comments<div
+      		class="link-tooltip tab-header-help-link tooltip-help-link" tooltip-id="#resultsHelp"
+      		tooltip-position="top" tooltip-width="300"></div><span id="resultsBusy" class="busy"
+      		style="margin-left: 5px"><img src="https://static.testrail.io/5.7.0.3951/images/animations/progressInline.gif"
+			width="16" height="9" alt="" /></span></a>
+      			<a href="javascript:void(0)" id="historyTab" class="tab2" rel="2"
+      		onclick="App.Tests.onHistoryClick(this, 107178)">History &amp; Context<div
+      		class="link-tooltip tab-header-help-link tooltip-help-link" tooltip-id="#historyHelp"
+      		tooltip-position="top" tooltip-width="300"></div><span id="historyBusy" class="busy"
+      		style="margin-left: 5px"><img src="https://static.testrail.io/5.7.0.3951/images/animations/progressInline.gif"
+			width="16" height="9" alt="" /></span></a>
+		<a href="javascript:void(0)" id="defectsTab" class="tab3" rel="3"
+      		onclick="App.Tests.onDefectsClick(this, 107178)">Defects<div
+      		class="link-tooltip tab-header-help-link tooltip-help-link" tooltip-id="#defectsHelp"
+      		tooltip-position="top" tooltip-width="300"></div><span id="defectsBusy" class="busy"
+      		style="margin-left: 5px"><img src="https://static.testrail.io/5.7.0.3951/images/animations/progressInline.gif"
+			width="16" height="9" alt="" /></span></a>
+			</div>
+	<div class="tab-body">
+		<div class="tab tab1">
+			<div id="resultsContainer">
+				
+
+
+<div id="changes" class="changes" style="margin-top: 5px">
+		<textarea class="form-control form-control-full processed"
+		name="addCommentInline" id="addCommentInline" style="height: 16px"
+		placeholder="Add a comment .."></textarea>
+	
+		<div id="addCommentInline_drop" class="dropzone" rel="addCommentInline"
+			></div>
+		
+		<script type="text/javascript">
+	$(document).ready(
+		function()
+		{
+			App.Editor.applyDrop(
+				'#' + 'addCommentInline_drop',
+				'#' + 'addCommentInline',
+				36,
+				false			);
+		}
+	);
+	</script>
+			<div id="addCommentInlineAttachments" class="hidden textarea-dropzone">
+		<div id="addCommentInlineDropzone" class="dropzone dz-persistent"></div>
+	</div>
+		<div id="addCommentInlineButtons" class="hidden textarea-buttons">
+		<div class="button-group">
+			<a id="addCommentInlineSubmit"  href="javascript:void(0)" onclick="this.blur(); App.Tests.addCommentNoDialog(107178); return false;" 				class="button button-left button-add link-tooltip"
+				tooltip-text="Submit comment with Ctrl+Enter or Meta+Enter.">
+				Add Comment			</a>
+			<span id="addCommentInlineEmpty" class="pull-left text-error button-extra hidden">
+				The Comment field is required.			</span>
+			<span class="form-toolbar" style="padding-top: 5px">
+	<a  href="javascript:void(0)" onclick="this.blur(); App.Editor.addTable('#addCommentInline'); return false;" 		class="link-tooltip" tooltip-text="Add a table to this text field."
+		tabindex="-1">
+		<img src="https://static.testrail.io/5.7.0.3951/images/icons/markdownTable.png" width="16" height="16" alt=""
+			 /></a>
+			<a  href="javascript:void(0)" onclick="this.blur(); App.Editor.addImage('#addCommentInline', 36); return false;" 			class="link-tooltip" tooltip-text="Add an image to this text field."
+			tabindex="-1">
+			<img src="https://static.testrail.io/5.7.0.3951/images/icons/markdownImage.png" width="16" height="16" alt=""
+				 /></a>
+		<a href="http://docs.gurock.com/testrail-userguide/userguide-editor" 
+		class="link-tooltip" tooltip-text="Open the editor formatting reference."
+		target="_blank" tabindex="-1">
+		<img style="margin-right: 0" 
+			src="https://static.testrail.io/5.7.0.3951/images/icons/markdownHelp.png" width="16" height="16" alt="" />
+	</a>
+</span>
+		</div>
+	</div>
+		<p>No test results or comments so far.</p>
+</div>
+
+<script type="text/javascript">
+	$(document).ready(
+		function()
+		{
+			var changes = $('#changes'); 
+			App.applyFancyBox(changes);
+						App.Defects.applyLookup(36, changes);
+			
+			$('#addCommentInline').focus(
+				function(e)
+				{
+					$(this).unbind('focus');
+					App.Tests.addCommentNoDialogActivate(107178);
+					return false;
+				}
+			);
+		}
+	);
+</script>
+
+<script type="text/javascript">
+$(document).ready(
+	function()
+	{
+		App.Tests.Attachments.init('#addCommentInlineDropzone', 36);
+	}
+);
+</script>
+
+			</div>
+ 		</div>
+ 				<div class="tab tab2 hidden">
+			<div id="historyContainer"></div>
+ 		</div>
+		<div class="tab tab3 hidden">
+			<div id="defectsContainer"></div>
+ 		</div>
+ 			</div>
+</div>
+<div class="button-group form-buttons">
+	<a id="addResult"  href="javascript:void(0)" onclick="this.blur(); App.Tests.addResult(36, 107178); return false;" 		class="button button-left button-add">
+		Add Result	</a>
+	<a id="assign"  href="javascript:void(0)" onclick="this.blur(); App.Tests.assignTo(107178); return false;" 		class="button button-left button-assign">
+		Assign To	</a>		
+</div>	
+
+
+<script type="text/javascript">
+$(document).ready(function()
+{
+			var reloadTimerRepeat = function(interval)
+		{
+			interval = Math.min(7200000, interval);
+
+			window.setTimeout(
+				function()
+				{
+					App.Tests.reloadTimer(107178);
+					reloadTimerRepeat(interval * 2);
+				},
+				interval
+			);
+		};
+
+		reloadTimerRepeat(60000);
+	});
+</script>
+
+<script type="text/javascript">
+var statuses = {};
+statuses[1] = {"id":1,"name":"passed","system_name":"passed","label":"Passed","color_dark":"65bb63","color_medium":"95d96d","color_bright":"c1edc1","color_gradient_a":"559e54","color_gradient_b":"468245"};
+statuses[2] = {"id":2,"name":"blocked","system_name":"blocked","label":"Blocked","color_dark":"909090","color_medium":"d0d0d0","color_bright":"e0e0e0","color_gradient_a":"7a7a7a","color_gradient_b":"646464"};
+statuses[3] = {"id":3,"name":"untested","system_name":"untested","label":"Untested","color_dark":"b0b0b0","color_medium":"eaeaea","color_bright":"f0f0f0","color_gradient_a":"959595","color_gradient_b":"7b7b7b"};
+statuses[4] = {"id":4,"name":"retest","system_name":"retest","label":"Retest","color_dark":"c6c634","color_medium":"edee80","color_bright":"fafab6","color_gradient_a":"a8a82c","color_gradient_b":"8a8a24"};
+statuses[5] = {"id":5,"name":"failed","system_name":"failed","label":"Failed","color_dark":"d97373","color_medium":"f1888f","color_bright":"fdc7c7","color_gradient_a":"b86161","color_gradient_b":"975050"};
+statuses[6] = {"id":6,"name":"custom_status1","system_name":"custom_status1","label":"Not Applicable","color_dark":"000000","color_medium":"a1a1a1","color_bright":"d0d0d0","color_gradient_a":"404040","color_gradient_b":"101010"};
+statuses[9] = {"id":9,"name":"custom_status4","system_name":"custom_status4","label":"Not Applicable for this Release","color_dark":"000000","color_medium":"a0a0a0","color_bright":"d0d0d0","color_gradient_a":"404040","color_gradient_b":"101010"};
+statuses[7] = {"id":7,"name":"custom_status2","system_name":"custom_status2","label":"Need Clarification","color_dark":"000000","color_medium":"a0a0a0","color_bright":"d0d0d0","color_gradient_a":"404040","color_gradient_b":"101010"};
+statuses[8] = {"id":8,"name":"custom_status3","system_name":"custom_status3","label":"untested","color_dark":"d0d0d0","color_medium":"a0a0a0","color_bright":"d0d0d0","color_gradient_a":"b0b0b0","color_gradient_b":"919191"};
+statuses[10] = {"id":10,"name":"custom_status5","system_name":"custom_status5","label":"Unnamed 5","color_dark":"000000","color_medium":"a0a0a0","color_bright":"d0d0d0","color_gradient_a":"404040","color_gradient_b":"101010"};
+statuses[11] = {"id":11,"name":"custom_status6","system_name":"custom_status6","label":"Unnamed 6","color_dark":"000000","color_medium":"a0a0a0","color_bright":"d0d0d0","color_gradient_a":"404040","color_gradient_b":"101010"};
+statuses[12] = {"id":12,"name":"custom_status7","system_name":"custom_status7","label":"Unnamed 7","color_dark":"000000","color_medium":"a0a0a0","color_bright":"d0d0d0","color_gradient_a":"404040","color_gradient_b":"101010"};
+var status_default_id = 1;
+</script>
+		</div>
+	</div>
+	<div id="qpane-splitter" class="column splitter qpane-splitter"
+		style="display: none">
+	</div>
+		<div id="qpane" class="column qpane" style="width: 500px; display: none">
+		<div id="qpane-empty" class="qpane-empty hidden">
+			<div class="qpane-empty-header">
+				No test case selected.			</div>
+			<div class="qpane-empty-body">
+				You can select a different group or change the filters.			</div>
+		</div>
+		<div id="qpane-inner">
+			<div id="qpaneSticky">
+				<div id="qpane-content">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="sidebar-splitter" class="column splitter sidebar-splitter">
+	</div>
+		<div id="sidebar" class="column sidebar" style="width: 324px">
+
+
+<div class="sidebar-inner">
+				<a class="sidebar-button bottom"  href="javascript:void(0)" onclick="this.blur(); App.Tests.addResult(36, 107178); return false;" >
+			<span>Add Result</span>
+		</a>
+		<a class="sidebar-button"  href="javascript:void(0)" onclick="this.blur(); App.Tests.addComment(107178); return false;" >
+			<span>Add Comment or File</span>
+		</a>
+									<p class="top">Assigned to <strong class="text-softer">Aman Singh</strong>. <a  href="javascript:void(0)" onclick="this.blur(); App.Tests.assignTo(107178); return false;" >Change</a></p>
+						
+			
+			<div class="field-title">
+			<span class="field-title-inner">Progress</span>
+		</div>
+		<div class="field-content">
+			<div id="testTimer">
+					<div id="startTimer">
+		<div class="button-group form-buttons">
+			<a class="button button-left button-start"
+				 href="javascript:void(0)" onclick="this.blur(); App.Tests.startTimer(107178); return false;" >
+				Start Progress			</a>
+		</div>
+			</div>
+			</div>
+		</div>
+	</div>
+
+<script type="text/javascript">
+$(document).ready(function()
+{
+	App.Tests.applyResponsive();
+
+	$.subscribe(
+		'body.drag_started',
+		'tests',
+		function()
+		{
+			var dialog = App.Dialogs.getActive();
+			if (!dialog)
+			{
+				App.Tests.addCommentNoDialogActivate(107178);
+			}
+		}
+	);	
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function()
+{
+		App.Hotkeys.register(
+		'e',
+		function()
+		{
+			App.Page.load('cases/edit/22332/4/107178');
+		}
+	);
+			App.Hotkeys.register(
+		'a',
+		function()
+		{
+			App.Tests.assignTo(107178);
+		}
+	);
+	App.Hotkeys.register(
+		'm',
+		function()
+		{
+			App.Tests.addComment(107178);
+		}
+	);
+	App.Hotkeys.register(
+		'r',
+		function()
+		{
+			App.Tests.addResult(36, 107178);
+		}
+	);
+			App.Hotkeys.register(
+		'c',
+		function()
+		{
+			App.Page.load('cases/view/22332');
+		}
+	);
+		App.Hotkeys.register(
+		'j',
+		function()
+		{
+			App.Tests.loadNext(107178);
+		}
+	);
+	App.Hotkeys.register(
+		'k',
+		function()
+		{
+			App.Tests.loadPrev(107178);
+		}
+	);
+
+		App.References.applyLookup(36);
+	});
+</script>
+
+
+	</div>
+	</div>
+
+</div>
+
+
+<script type="text/javascript">
+	var Consts = {};
+	Consts.ajaxBaseUrl = 'index.php?';
+		Consts.ajaxErrorMessage = 'An error occurred during the last operation or your installation is currently in maintenance mode. Please try again or refresh the current page.';
+		Consts.ajaxCsrf = 'dDMRVzRJqbzArZe2Ljk6';
+	Consts.ajaxVersion = '5.7.0.3951';
+	Consts.resourceBaseUrl = 'https://static.testrail.io/5.7.0.3951/';
+	Consts.dialogTitleError = 'Error';
+	Consts.statusFailed = 5;
+	Consts.statusRetest = 4;
+	Consts.statusBlocked = 2;
+	Consts.statusPassed = 1;
+	Consts.statusUntested = 3;
+	Consts.minWidth = 700;
+	Consts.minWidthOffset = 300;
+	Consts.minWidthVariable = 50;
+</script>
+
+
+<div id="userDropdown" class="dropdown dropdown-menu user-menu" rel="helpMenu" style="width: 125px">
+	<ul><li><a class="dropdown-menu-link" href="index.php?/mysettings">
+			My Settings</a></li><li><a 
+			class="dropdown-menu-link" href="index.php?/auth/logout">Logout</a></li></ul>
+</div>
+<div class="dialog" id="messageDialog" style="width: 350px; word-wrap: break-word">
+	<div class="dialog-title"></div>
+	<div class="dialog-body">
+		<p style="margin: 0" class="dialog-message"></p>
+	</div>
+	<div class="button-group dialog-buttons">
+		<a class="button button-ok button-left button-positive dialog-action-default">
+			OK		</a>
+	</div>
+</div><div class="dialog" id="confirmDialog" style="width: 350px">
+	<div class="dialog-title">Confirmation</div>
+	<div class="dialog-body">
+		<p style="margin: 0" class="dialog-message"></p>
+	</div>
+	<div class="button-group dialog-buttons">
+		<a class="button button-ok button-left button-positive dialog-action-default">
+			Yes		</a>
+		<a class="button button-cancel button-left button-negative dialog-action-close">
+			No		</a>		
+	</div>
+</div><div id="tooltip" class="tooltip">
+	<div class="tooltip-pointer-up"></div>
+	<div class="tooltip-pointer-right"></div>
+	<div class="tooltip-header"></div>
+	<p style="margin: 0"></p>
+</div><div class="dialog" id="deleteDialog" style="width: 425px">
+	<div class="dialog-title">Confirmation</div>
+	<div class="dialog-body">
+		<p class="top bottom dialog-message"></p>
+		<p class="dialog-extra text-delete"></p>
+		<div class="message message-delete bottom delete-confirm-container"
+			style="margin-top: 12px; line-height: 1">
+			<div class="checkbox">
+				<label>
+					<span class="dialog-confirm"></span>
+					<span class="dialog-confirm-busy"><img src="https://static.testrail.io/5.7.0.3951/images/animations/progressInline.gif"
+						width="16" height="9" alt="" /></span>
+					<input type="checkbox" value="1" name="deleteCheckbox" />
+				</label>
+			</div>
+		</div>
+	</div>
+	<div class="button-group dialog-buttons">
+		<a class="button button-ok button-ok-disabled button-left button-positive button-disabled dialog-action-default">
+			OK		</a>
+		<a class="button button-cancel button-left button-negative dialog-action-close">
+			Cancel		</a>
+	</div>
+</div><div class="dialog" id="dpaDialog" style="max-width: 725px">
+    <div class="dialog-title">Confirmation</div>
+    <div class="dialog-body">
+        <p class="top bottom dialog-message"></p>
+        <p class="dialog-extra text-delete"></p>
+
+        <form action="index.php?/admin/users/accept_data_processing_agreement" id="dpa_form" method="post" >        <input type="hidden" name="_token" value="dDMRVzRJqbzArZe2Ljk6" />
+        <div class="form-group">
+            <label for="name">Please enter your full name:<span class="form-required">*</span></label>
+            <input class="form-control " type="text" name="full_name" id="full_name" maxlength="250" value="">
+        </div>
+
+        </form>
+        <div class="message message-delete bottom delete-confirm-container"
+             style="margin-top: 12px; line-height: 1; padding-bottom: 50px">
+            <div class="checkbox">
+                <label>
+                    <span class="dialog-confirm"></span>
+                    <input type="checkbox" value="1" name="deleteCheckbox" />
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="button-group dialog-buttons" style="padding-bottom: 10px">
+        <a class="button button-ok button-ok-disabled button-left button-positive button-disabled dialog-action-default">
+            Submit        </a>
+        <a class="button button-cancel button-left button-negative dialog-action-close">
+            Cancel        </a>
+    </div>
+</div>
+<div class="dialog" id="ranorexDialog" style="width: 350px; word-wrap: break-word">
+    <div class="dialog-title"></div>
+    <form action="index.php?/mysettings/ranorex_banner_setting" id="ranorex_form" method="post" >    <input type="hidden" name="_token" value="dDMRVzRJqbzArZe2Ljk6" />    <div class="dialog-body">
+        <p style="margin: 0" class="dialog-message"></p>
+        <div class="form-group">
+            <div class="radio">
+                <label>
+                    <input type="radio" class="radio"  name="ranorex_banner_display" value="0" checked>
+                    <p>Remove for this Session</p>
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" class="radio"  name="ranorex_banner_display" value="1">
+                    <p>Remove forever</p>
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="button-group dialog-buttons">
+        <input type="submit" value="Submit" class="button button-ok button-left button-positive dialog-action-default">
+        <a class="button button-cancel button-left button-negative dialog-action-close">
+            Cancel        </a>
+    </div>
+    </form></div> 
+
+
+	
+<div id="helpDropdown" class="dropdown dropdown-menu help-menu" rel="helpMenu" style="width: 175px">
+	<ul><li><a class="dropdown-menu-link" target="_blank" 
+		href="http://docs.gurock.com/testrail-userguide/start">TestRail User Guide</a></li><li><a 
+		class="dropdown-menu-link" target="_blank" href="http://www.gurock.com/testrail/support/">Support &amp; Videos</a></li><li><a class="dropdown-menu-link" target="_blank" 
+		href="http://forum.gurock.com/">Community Forum</a></li><li 
+		class="dropdown-menu-separator"></li><li><a class="dropdown-menu-link" target="_blank" 
+		href="http://docs.gurock.com/testrail-userguide/userguide-shortcuts">Keyboard Shortcuts</a></li><li 
+		class="dropdown-menu-separator"></li><li><a 
+		class="dropdown-menu-link" target="_blank" href="http://blog.gurock.com/">Gurock Blog</a></li><li><a class="dropdown-menu-link"
+		target="_blank" href="http://twitter.com/testrail">TestRail on Twitter</a></li><li><a class="dropdown-menu-link"
+		target="_blank" href="http://www.gurock.com/testrail/">TestRail on the Web</a></li><li class="dropdown-menu-separator"></li><li><a 
+		class="dropdown-menu-link dropdown-menu-link-highlighted" target="_blank" 
+		 href="javascript:void(0)" onclick="this.blur(); App.Help.subscribeNewsletter('Akhilesh.Keshari@smartenergywater.in'); return false;" >Subscribe to Newsletter</a></li><li class="dropdown-menu-separator"></li><li><a 
+		class="dropdown-menu-link"  href="javascript:void(0)" onclick="this.blur(); App.Help.showAbout(); return false;" >About TestRail</a></li></ul>
+</div>
+
+
+			<script type="text/javascript" src="https://static.testrail.io/5.7.0.3951/js/extensions-combined.js"></script>
+		<script type="text/javascript" src="https://static.testrail.io/5.7.0.3951/js/application-combined.js"></script>
+	
+<script type="text/javascript">
+	$(document).ready(
+		function() 
+		{
+			App.Sidebar.init();
+		}
+	);
+</script>
+
+
+</body>
+</html>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        
+    });
+</script>

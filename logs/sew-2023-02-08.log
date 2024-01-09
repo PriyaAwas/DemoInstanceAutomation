@@ -1,0 +1,100 @@
+18:28:35.600 INFO  driver.Page (    Page.java:187) - Element is clickable now.
+18:28:35.650 INFO  driver.Page (    Page.java:59) - Element is clicked successfully.
+18:28:35.651 INFO  csp.ForgotPasswordPage (ForgotPasswordPage.java:38) - Submit Button clicked successfully.
+18:28:35.975 INFO  driver.Page (    Page.java:126) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (ed4ea379c6826dfdd807347421345723)] -> css selector: #toast-container .toast-message] to be visible on the page for duration of {} 120
+18:28:35.976 INFO  driver.Page (    Page.java:209) - Waiting for element to be visible for 120 seconds.
+18:28:36.000 INFO  driver.Page (    Page.java:212) - Element is visible on the page.
+18:28:36.032 INFO  driver.Page (    Page.java:129) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (ed4ea379c6826dfdd807347421345723)] -> css selector: #toast-container .toast-message] is A link to reset password has been e-mailed to you
+18:28:36.059 INFO  scp.HomePage (HomePage.java:44) - Label on toast message {}: A link to reset password has been e-mailed to you
+18:34:27.822 WARN  config.Configuration (Configuration.java:231) - QA env being used by default. No env property set. This can be set in the sew.app.yml config file with a '{}=' property or on the command line with the switch '-D{}='.
+18:34:28.300 INFO  runner.TestRunner (TestRunner.java:32) - Initializing application properties config file.
+18:34:28.300 INFO  runner.TestRunner (TestRunner.java:35) - Initializing connection to the base database.
+18:34:28.332 WARN  config.DatabaseConfiguration (DatabaseConfiguration.java:84) - QA env being used by default. No env property set. This can be set in the sentinel.yml config file with a '{}=' property or on the command line with the switch '-D{}='.
+18:34:30.011 INFO  runner.TestRunner (TestRunner.java:38) - Initializing resource path config file.
+18:34:30.013 INFO  runner.TestRunner (TestRunner.java:41) - Initializing usage months config from CSP.
+18:34:30.824 INFO  runner.TestRunner (TestRunner.java:44) - Initializing date config from CSP.
+18:34:31.580 INFO  runner.TestRunner (TestRunner.java:47) - Initializing language config from CSP.
+18:34:32.319 INFO  runner.TestRunner (TestRunner.java:50) - Initializing language config from CSP.
+18:34:33.078 INFO  runner.TestRunner (TestRunner.java:53) - Initializing language config from CSP.
+18:34:33.831 INFO  runner.TestRunner (TestRunner.java:56) - Initializing user model config.
+18:34:34.576 INFO  runner.TestRunner (TestRunner.java:59) - Initializing auth token config.
+18:34:35.413 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 1
+18:34:35.423 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 2
+18:34:35.425 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 3
+18:34:35.426 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 4
+18:34:35.427 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 5
+18:34:35.428 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 6
+18:34:35.429 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 7
+18:34:35.430 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 8
+18:34:35.431 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 9
+18:34:35.433 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 10
+18:34:35.435 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 11
+18:34:35.436 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 12
+18:34:35.437 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 13
+18:34:35.437 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 14
+18:34:35.438 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 15
+18:34:35.439 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 16
+18:34:35.440 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 17
+18:34:35.440 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 18
+18:34:35.441 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 19
+18:34:35.442 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 20
+18:34:35.443 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 21
+18:34:35.443 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 22
+18:34:35.444 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 23
+18:34:35.445 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 24
+18:34:35.446 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 25
+18:34:35.447 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 26
+18:34:35.447 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 27
+18:34:39.007 INFO  driver.WebDriverFactory (WebDriverFactory.java:207) - Setting up the browser window to its max.
+18:34:39.163 INFO  driver.WebDriverFactory (WebDriverFactory.java:196) - Initializing the implicit wait timeout for {} 5
+18:34:39.170 INFO  driver.WebDriverFactory (WebDriverFactory.java:199) - Initializing the page load timeout.
+18:34:39.180 INFO  driver.DriverFactory (DriverFactory.java:97) - Clearing all the cookies.
+18:34:39.195 INFO  driver.DriverFactory (DriverFactory.java:58) - Open the url {} https://qa.smartcmobile.net/SCM_10.0_S-CSP/ using the selenium get() method.
+18:34:46.406 INFO  csp.ForgotPasswordTests (ForgotPasswordTests.java:31) - To verify the tests with the below test case id's: C72378, C72377, C72376
+18:34:46.460 INFO  driver.Page (    Page.java:56) - Preparing for element to click.
+18:34:46.460 INFO  driver.Page (    Page.java:184) - Waiting for element to be clickable for 120 seconds.
+18:34:46.559 INFO  driver.Page (    Page.java:187) - Element is clickable now.
+18:34:48.739 INFO  driver.Page (    Page.java:59) - Element is clicked successfully.
+18:34:48.739 INFO  csp.AdminLoginPage (AdminLoginPage.java:105) - Forgot Password Link clicked successfully.
+18:34:48.740 INFO  scp.HomePage (HomePage.java:35) - Wait for page loader invisibility.
+18:34:48.740 INFO  driver.Page (    Page.java:223) - Waiting for element to be invisible for 120 seconds.
+18:34:53.814 INFO  driver.Page (    Page.java:226) - Element is invisible from the page.
+18:34:53.815 INFO  csp.ForgotPasswordPage (ForgotPasswordPage.java:99) - Checking that the current page is Forgot Password page.
+18:34:53.815 INFO  driver.Page (    Page.java:37) - Fetching the current URL.
+18:34:53.828 INFO  driver.Page (    Page.java:38) - The Current URL is: https://qa.smartcmobile.net/SCM_10.0_S-CSP/ForgotPassword.aspx
+18:34:53.836 INFO  driver.Page (    Page.java:43) - Fetching the current title.
+18:34:53.846 INFO  driver.Page (    Page.java:44) - The Current Title is: Forgot Password
+18:34:53.858 INFO  csp.ForgotPasswordPage (ForgotPasswordPage.java:102) - The current page is Forgot Password page {}: true
+18:34:53.861 INFO  driver.Page (    Page.java:209) - Waiting for element to be visible for 120 seconds.
+18:34:53.919 INFO  driver.Page (    Page.java:212) - Element is visible on the page.
+18:34:53.920 INFO  csp.ForgotPasswordPage (ForgotPasswordPage.java:42) - Submit Button on Forgot Password Page is Visible
+18:34:53.946 INFO  driver.Page (    Page.java:111) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (62bf12217ea12e2000258693e3189746)] -> css selector: #txtEmail] to be present in the DOM for duration of {} 120
+18:34:53.947 INFO  driver.Page (    Page.java:209) - Waiting for element to be visible for 120 seconds.
+18:34:53.999 INFO  driver.Page (    Page.java:212) - Element is visible on the page.
+18:34:54.015 INFO  driver.Page (    Page.java:113) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (62bf12217ea12e2000258693e3189746)] -> css selector: #txtEmail]
+18:34:54.086 INFO  csp.ForgotPasswordPage (ForgotPasswordPage.java:27) - Email Address field cleared {}
+18:34:54.087 INFO  csp.ForgotPasswordPage (ForgotPasswordPage.java:30) - Populating Email Address {} :krishna.prasath@smartenergywater.in
+18:34:54.109 INFO  driver.Page (    Page.java:102) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (62bf12217ea12e2000258693e3189746)] -> css selector: #txtEmail] to be present in the DOM for duration of {} 120
+18:34:54.110 INFO  driver.Page (    Page.java:209) - Waiting for element to be visible for 120 seconds.
+18:34:54.156 INFO  driver.Page (    Page.java:212) - Element is visible on the page.
+18:34:54.173 INFO  driver.Page (    Page.java:104) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (62bf12217ea12e2000258693e3189746)] -> css selector: #txtEmail] before sending the keys.
+18:34:54.262 INFO  driver.Page (    Page.java:106) - Sending the following keys {} krishna.prasath@smartenergywater.in to the element {} [[ChromeDriver: chrome on WINDOWS (62bf12217ea12e2000258693e3189746)] -> css selector: #txtEmail]
+18:34:54.517 INFO  csp.ForgotPasswordPage (ForgotPasswordPage.java:32) - EmailAddress populated successfully.
+18:34:54.518 INFO  driver.Page (    Page.java:56) - Preparing for element to click.
+18:34:54.518 INFO  driver.Page (    Page.java:184) - Waiting for element to be clickable for 120 seconds.
+18:34:54.569 INFO  driver.Page (    Page.java:187) - Element is clickable now.
+18:34:54.631 INFO  driver.Page (    Page.java:59) - Element is clicked successfully.
+18:34:54.632 INFO  csp.ForgotPasswordPage (ForgotPasswordPage.java:38) - Submit Button clicked successfully.
+18:34:55.018 INFO  driver.Page (    Page.java:126) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (62bf12217ea12e2000258693e3189746)] -> css selector: #toast-container .toast-message] to be visible on the page for duration of {} 120
+18:34:55.018 INFO  driver.Page (    Page.java:209) - Waiting for element to be visible for 120 seconds.
+18:34:55.045 INFO  driver.Page (    Page.java:212) - Element is visible on the page.
+18:34:55.084 INFO  driver.Page (    Page.java:129) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (62bf12217ea12e2000258693e3189746)] -> css selector: #toast-container .toast-message] is A link to reset password has been e-mailed to you
+18:34:55.108 INFO  scp.HomePage (HomePage.java:44) - Label on toast message {}: A link to reset password has been e-mailed to you
+18:35:01.958 INFO  driver.DriverFactory (DriverFactory.java:63) - Open the url {} https://qa.smartcmobile.net/SCM_10.0_S-CSP/password_reset.aspx?d=X3x9r%2fPjdiNhCVou%2bPD8hi4NrkUMEZKxGKq2PA%3d%3d&c=Bi9XjvfibilzF1pwJq3vENnm0TL3aKoNmW2K4gIohZJJHwMkZgtdxecmBSwCWZ7arqTVqpbjlGRctCjQ using the selenium navigate().to() method.
+18:35:04.274 INFO  scp.HomePage (HomePage.java:35) - Wait for page loader invisibility.
+18:35:04.275 INFO  driver.Page (    Page.java:223) - Waiting for element to be invisible for 120 seconds.
+18:35:09.330 INFO  driver.Page (    Page.java:226) - Element is invisible from the page.
+18:35:09.333 INFO  csp.ForgotPasswordPage (ForgotPasswordPage.java:61) - Populating New Password {} :KY27ZbBoSY!1
+18:35:09.348 INFO  driver.Page (    Page.java:102) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (62bf12217ea12e2000258693e3189746)] -> css selector: #txtpwd] to be present in the DOM for duration of {} 120
+18:35:09.349 INFO  driver.Page (    Page.java:209) - Waiting for element to be visible for 120 seconds.
+18:37:12.976 INFO  driver.DriverFactory (DriverFactory.java:97) - Clearing all the cookies.

@@ -1,0 +1,69 @@
+---
+dataBaseConfig:
+  qa:
+    base_db:
+      driver: "jdbc:sqlserver:"
+      encrypt: true
+      trustServerCertificate: true
+      host: "10.0.40.135"
+      database: "SCM10_S"
+      user: "autoqa"
+      password: "SmartAutoQA@2017$"
+    chase_db:
+      driver: "jdbc:sqlserver:"
+      encrypt: true
+      trustServerCertificate: true
+      host: "10.0.40.135"
+      database: "SCM10_S_API_Payment"
+      user: "autoqa"
+      password: "SmartAutoQA@2017$"
+    paypal_db:
+      driver: "jdbc:sqlserver:"
+      encrypt: true
+      trustServerCertificate: true
+      host: "10.0.42.199"
+      database: "SCMBase10s_Paypal_Payment_API"
+      user: "PayPalQA"
+      password: "paypal_qa"
+    postgresql_db:
+      driver: "jdbc:postgresql:"
+      encrypt: true
+      trustServerCertificate: true
+      host: "10.0.32.132:5432"
+      database: "scm10_usage"
+      user: "rahul"
+      password: "rahul@321"
+  uat:
+    base_db:
+      driver: "jdbc:sqlserver:"
+      encrypt: true
+      trustServerCertificate: true
+      host: "10.0.40.135"
+      database: "SCM10_S"
+      user: "autoqa"
+      password: "SmartAutoQA@2017$"
+    chase_db:
+      driver: "jdbc:sqlserver:"
+      encrypt: true
+      trustServerCertificate: true
+      host: "10.0.40.135"
+      database: "SCM10_S"
+      user: "autoqa"
+      password: "SmartAutoQA@2017$"
+    paypal_db:
+      driver: "jdbc:sqlserver:"
+      encrypt: true
+      trustServerCertificate: true
+      host: "10.0.40.135"
+      database: "SCM10_S"
+      user: "autoqa"
+      password: "SmartAutoQA@2017$"
+    postgresql_db:
+      driver: "jdbc:postgresql:"
+      encrypt: true
+      trustServerCertificate: true
+      host: "10.0.32.132:5432"
+      database: "scm10_usage"
+      user: "rahul"
+      password: "rahul@321"
+...

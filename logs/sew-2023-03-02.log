@@ -1,0 +1,581 @@
+19:47:06.455 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 3
+19:47:06.466 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 4
+19:47:06.467 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 5
+19:47:06.468 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 6
+19:47:06.469 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 7
+19:47:06.470 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 8
+19:47:06.471 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 9
+19:47:06.473 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 10
+19:47:06.474 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 11
+19:47:06.475 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 12
+19:47:06.476 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 13
+19:47:06.477 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 14
+19:47:06.478 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 15
+19:47:06.478 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 16
+19:47:06.479 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 17
+19:47:06.480 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 18
+19:47:06.481 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 19
+19:47:06.481 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 20
+19:47:06.482 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 21
+19:47:06.483 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 22
+19:47:06.483 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 23
+19:47:06.484 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 24
+19:47:06.485 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 25
+19:47:06.485 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 26
+19:47:06.486 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 27
+19:47:06.487 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 28
+19:47:06.487 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 29
+19:47:06.488 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 30
+19:47:06.488 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 31
+19:47:06.489 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 32
+19:47:06.489 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 33
+19:47:06.490 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 34
+19:47:06.490 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 35
+19:47:06.491 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 36
+19:47:06.492 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 37
+19:47:06.492 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 38
+19:47:06.493 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 39
+19:47:06.493 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 40
+19:47:06.494 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 41
+19:47:06.494 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 42
+19:47:06.495 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 43
+19:47:06.495 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 44
+19:47:06.496 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 45
+19:47:06.496 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 46
+19:47:06.497 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 47
+19:47:06.497 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 48
+19:47:06.498 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 49
+19:47:06.498 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 50
+19:47:06.499 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 51
+19:47:06.499 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 52
+19:47:06.500 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 53
+19:47:06.500 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 54
+19:47:06.501 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 55
+19:47:06.501 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 56
+19:47:06.502 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 57
+19:47:06.503 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 58
+19:47:06.504 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 59
+19:47:06.504 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 60
+19:47:06.505 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 61
+19:47:06.505 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 62
+19:47:10.633 INFO  driver.WebDriverFactory (WebDriverFactory.java:209) - Setting up the browser window to its max.
+19:47:10.791 INFO  driver.WebDriverFactory (WebDriverFactory.java:198) - Initializing the implicit wait timeout for {} 5
+19:47:10.799 INFO  driver.WebDriverFactory (WebDriverFactory.java:201) - Initializing the page load timeout.
+19:47:10.805 INFO  driver.DriverFactory (DriverFactory.java:122) - Clearing all the cookies.
+19:47:10.819 INFO  driver.DriverFactory (DriverFactory.java:59) - Open the url {} https://qa.smartcmobile.net/SCM_10.0_S-CSP/ using the selenium get() method.
+19:47:23.684 INFO  csp.AdminNotificationTests (AdminNotificationTests.java:1167) - To verify the tests with the below test case id's: C80453, C80454, C80455, C80473, C80484, C80485
+19:47:23.753 INFO  scp.HomePage (HomePage.java:133) - Wait for page loader invisibility.
+19:47:23.754 INFO  driver.Page (    Page.java:249) - Waiting for element to be invisible for 120 seconds.
+19:47:28.850 INFO  driver.Page (    Page.java:252) - Element is invisible from the page.
+19:47:28.851 INFO  csp.AdminLoginPage (AdminLoginPage.java:334) - Checking that the current page is Admin login page.
+19:47:28.852 INFO  driver.Page (    Page.java:39) - Fetching the current URL.
+19:47:28.863 INFO  driver.Page (    Page.java:40) - The Current URL is: https://qa.smartcmobile.net/SCM_10.0_S-CSP/
+19:47:28.872 INFO  driver.Page (    Page.java:45) - Fetching the current title.
+19:47:28.881 INFO  driver.Page (    Page.java:46) - The Current Title is: SCM Admin - Login
+19:47:28.891 INFO  csp.AdminLoginPage (AdminLoginPage.java:337) - The current page is Admin login page {}: true
+19:47:28.894 INFO  csp.AdminLoginPage (AdminLoginPage.java:30) - Populating username {} :qauser
+19:47:28.916 INFO  driver.Page (    Page.java:120) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: [id='txtAdminLogin']] to be present in the DOM for duration of {} 120
+19:47:28.917 INFO  driver.Page (    Page.java:235) - Waiting for element to be visible for 120 seconds.
+19:47:28.962 INFO  driver.Page (    Page.java:238) - Element is visible on the page.
+19:47:28.972 INFO  driver.Page (    Page.java:122) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: [id='txtAdminLogin']] before sending the keys.
+19:47:29.015 INFO  driver.Page (    Page.java:124) - Sending the following keys {} qauser to the element {} [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: [id='txtAdminLogin']]
+19:47:29.051 INFO  csp.AdminLoginPage (AdminLoginPage.java:32) - Username populated successfully.
+19:47:29.052 INFO  csp.AdminLoginPage (AdminLoginPage.java:54) - Populating password {} :Sew@2021$!
+19:47:29.062 INFO  driver.Page (    Page.java:120) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: [id='txtpwd']] to be present in the DOM for duration of {} 120
+19:47:29.062 INFO  driver.Page (    Page.java:235) - Waiting for element to be visible for 120 seconds.
+19:47:29.083 INFO  driver.Page (    Page.java:238) - Element is visible on the page.
+19:47:29.091 INFO  driver.Page (    Page.java:122) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: [id='txtpwd']] before sending the keys.
+19:47:29.133 INFO  driver.Page (    Page.java:124) - Sending the following keys {} Sew@2021$! to the element {} [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: [id='txtpwd']]
+19:47:29.181 INFO  csp.AdminLoginPage (AdminLoginPage.java:56) - Password populated successfully.
+19:47:29.181 INFO  driver.Page (    Page.java:58) - Preparing for element to click.
+19:47:29.182 INFO  driver.Page (    Page.java:210) - Waiting for element to be clickable for 120 seconds.
+19:47:29.223 INFO  driver.Page (    Page.java:213) - Element is clickable now.
+19:47:43.141 INFO  driver.Page (    Page.java:61) - Element is clicked successfully.
+19:47:43.142 INFO  csp.AdminLoginPage (AdminLoginPage.java:67) - SignIn Button clicked successfully.
+19:47:43.142 INFO  scp.HomePage (HomePage.java:133) - Wait for page loader invisibility.
+19:47:43.142 INFO  driver.Page (    Page.java:249) - Waiting for element to be invisible for 120 seconds.
+19:47:43.175 INFO  driver.Page (    Page.java:252) - Element is invisible from the page.
+19:47:43.178 INFO  csp.AdminHomePage (AdminHomePage.java:170) - Checking that the current page is Admin Home page.
+19:47:43.178 INFO  driver.Page (    Page.java:39) - Fetching the current URL.
+19:47:43.187 INFO  driver.Page (    Page.java:40) - The Current URL is: https://qa.smartcmobile.net/SCM_10.0_S-CSP/Home.aspx
+19:47:43.193 INFO  driver.Page (    Page.java:45) - Fetching the current title.
+19:47:43.200 INFO  driver.Page (    Page.java:46) - The Current Title is: Dashboard
+19:47:43.206 INFO  csp.AdminHomePage (AdminHomePage.java:173) - The current page is Admin Home page {}: true
+19:47:43.209 INFO  driver.Page (    Page.java:235) - Waiting for element to be visible for 120 seconds.
+19:47:43.242 INFO  driver.Page (    Page.java:238) - Element is visible on the page.
+19:47:43.242 INFO  csp.AdminHomePage (AdminHomePage.java:50) - Notification Link is Visible on the Admin Home page.
+19:47:43.242 INFO  driver.Page (    Page.java:58) - Preparing for element to click.
+19:47:43.242 INFO  driver.Page (    Page.java:210) - Waiting for element to be clickable for 120 seconds.
+19:47:43.288 INFO  driver.Page (    Page.java:213) - Element is clickable now.
+19:47:49.277 INFO  driver.Page (    Page.java:61) - Element is clicked successfully.
+19:47:49.277 INFO  csp.AdminHomePage (AdminHomePage.java:54) - Notification Link clicked successfully.
+19:47:49.278 INFO  scp.HomePage (HomePage.java:133) - Wait for page loader invisibility.
+19:47:49.278 INFO  driver.Page (    Page.java:249) - Waiting for element to be invisible for 120 seconds.
+19:47:52.530 INFO  driver.Page (    Page.java:252) - Element is invisible from the page.
+19:47:52.530 INFO  scp.HomePage (HomePage.java:179) - Wait for Spinner Loading Image invisibility.
+19:47:52.531 INFO  driver.Page (    Page.java:249) - Waiting for element to be invisible for 120 seconds.
+19:47:57.642 INFO  driver.Page (    Page.java:252) - Element is invisible from the page.
+19:47:57.643 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1014) - Wait for Next Page visibility on Notification Page.
+19:47:57.643 INFO  driver.Page (    Page.java:235) - Waiting for element to be visible for 120 seconds.
+19:47:57.685 INFO  driver.Page (    Page.java:238) - Element is visible on the page.
+19:47:57.685 INFO  csp.AdminNotificationSteps (AdminNotificationSteps.java:1461) - Checking that the current page is Admin Notification Inbox page.
+19:47:57.686 INFO  driver.Page (    Page.java:39) - Fetching the current URL.
+19:47:57.692 INFO  driver.Page (    Page.java:40) - The Current URL is: https://qa.smartcmobile.net/SCM_10.0_S-CSP/Notification/Notification-Inbox.aspx
+19:47:57.701 INFO  driver.Page (    Page.java:45) - Fetching the current title.
+19:47:57.709 INFO  driver.Page (    Page.java:46) - The Current Title is: Notification
+19:47:57.736 INFO  csp.AdminNotificationSteps (AdminNotificationSteps.java:1464) - The current page is Admin Notification Inbox page {}: true
+19:47:57.738 INFO  driver.Page (    Page.java:58) - Preparing for element to click.
+19:47:57.738 INFO  driver.Page (    Page.java:210) - Waiting for element to be clickable for 120 seconds.
+19:47:57.827 INFO  driver.Page (    Page.java:213) - Element is clickable now.
+19:48:21.867 INFO  driver.Page (    Page.java:61) - Element is clicked successfully.
+19:48:21.867 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:538) - Send Notification Link clicked {}.
+19:48:21.867 INFO  scp.HomePage (HomePage.java:179) - Wait for Spinner Loading Image invisibility.
+19:48:21.867 INFO  driver.Page (    Page.java:249) - Waiting for element to be invisible for 120 seconds.
+19:48:26.895 INFO  driver.Page (    Page.java:252) - Element is invisible from the page.
+19:48:26.896 INFO  csp.AdminNotificationSteps (AdminNotificationSteps.java:1470) - Checking that the current page is Admin Notification Outbox page.
+19:48:26.896 INFO  driver.Page (    Page.java:39) - Fetching the current URL.
+19:48:26.902 INFO  driver.Page (    Page.java:40) - The Current URL is: https://qa.smartcmobile.net/SCM_10.0_S-CSP/Notification/Notification-Outbox.aspx
+19:48:26.907 INFO  driver.Page (    Page.java:45) - Fetching the current title.
+19:48:26.913 INFO  driver.Page (    Page.java:46) - The Current Title is: Notification-Outbox
+19:48:26.918 INFO  csp.AdminNotificationSteps (AdminNotificationSteps.java:1473) - The current page is Admin Notification Inbox page {}: true
+19:48:26.918 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1754) - Checking the visibility of Notification Inbox Button on the Send Notification page.
+19:48:26.954 INFO  driver.Page (    Page.java:277) - Element {} : [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: .redirect_button] is visible on the page.
+19:48:26.954 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1755) - Notification Inbox Button on the Send Notification visibility status {}: true
+19:48:26.981 INFO  driver.Page (    Page.java:277) - Element {} : [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: .redirect_button] is visible on the page.
+19:48:26.990 INFO  driver.Page (    Page.java:152) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: .redirect_button] to be visible on the page for duration of {} 120
+19:48:26.990 INFO  driver.Page (    Page.java:235) - Waiting for element to be visible for 120 seconds.
+19:48:27.017 INFO  driver.Page (    Page.java:238) - Element is visible on the page.
+19:48:27.054 INFO  driver.Page (    Page.java:155) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: .redirect_button] is Notification Inbox
+19:48:27.069 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1761) - Notification Inbox Button Text is Notification Inbox
+19:48:27.070 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1314) - Wait for Message Type Dropdwon visibility on Notification Page.
+19:48:27.070 INFO  driver.Page (    Page.java:235) - Waiting for element to be visible for 120 seconds.
+19:48:27.092 INFO  driver.Page (    Page.java:238) - Element is visible on the page.
+19:48:27.121 INFO  driver.Page (    Page.java:277) - Element {} : [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: #outboxmsg tr:nth-child(1) td:nth-child(1)>div.user-outbox-area label] is visible on the page.
+19:48:27.121 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1191) - Type Of Message Label visibility status {}true
+19:48:27.133 INFO  driver.Page (    Page.java:152) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: #outboxmsg tr:nth-child(1) td:nth-child(1)>div.user-outbox-area label] to be visible on the page for duration of {} 120
+19:48:27.133 INFO  driver.Page (    Page.java:235) - Waiting for element to be visible for 120 seconds.
+19:48:27.153 INFO  driver.Page (    Page.java:238) - Element is visible on the page.
+19:48:27.184 INFO  driver.Page (    Page.java:155) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: #outboxmsg tr:nth-child(1) td:nth-child(1)>div.user-outbox-area label] is Type of Message:
+19:48:27.204 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1198) - Type of Message label Text is Type of Message:
+19:48:27.231 INFO  driver.Page (    Page.java:277) - Element {} : [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: #ddltypeofmessage] is visible on the page.
+19:48:27.231 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1320) - MessageType Dropdown visibility status {}true
+19:48:27.328 INFO  driver.Page (    Page.java:548) - User gets the selection as  --Message Type-- from Dropdown
+19:48:28.495 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1339) - The Select Options in Message Type Dropdown are [Billing, Connect Me, Demand Response, Leak Alert, Login Issues, Outages, Service]
+19:48:28.495 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1359) - Wait for Account Type Dropdwon visibility on Notification Page.
+19:48:28.495 INFO  driver.Page (    Page.java:235) - Waiting for element to be visible for 120 seconds.
+19:48:28.520 INFO  driver.Page (    Page.java:238) - Element is visible on the page.
+19:48:28.555 INFO  driver.Page (    Page.java:277) - Element {} : [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: #outboxmsg tr:nth-child(1) td:nth-child(2)>div.user-outbox-area label] is visible on the page.
+19:48:28.555 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1206) - AccountType Label visibility status {}true
+19:48:28.567 INFO  driver.Page (    Page.java:152) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: #outboxmsg tr:nth-child(1) td:nth-child(2)>div.user-outbox-area label] to be visible on the page for duration of {} 120
+19:48:28.567 INFO  driver.Page (    Page.java:235) - Waiting for element to be visible for 120 seconds.
+19:48:28.597 INFO  driver.Page (    Page.java:238) - Element is visible on the page.
+19:48:28.636 INFO  driver.Page (    Page.java:155) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: #outboxmsg tr:nth-child(1) td:nth-child(2)>div.user-outbox-area label] is Account Type:
+19:48:28.656 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1213) - AccountType label Text is Account Type:
+19:48:28.683 INFO  driver.Page (    Page.java:277) - Element {} : [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: #radioAccountType] is visible on the page.
+19:48:28.683 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1353) - AccountType Dropdown visibility status {}true
+19:48:28.770 INFO  driver.Page (    Page.java:548) - User gets the selection as  --Account Type-- from Dropdown
+19:48:29.256 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1378) - The Select Options in Account Type Dropdown are [Residential, Business]
+19:48:29.313 INFO  driver.Page (    Page.java:277) - Element {} : [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: #outboxmsg tr:nth-child(2) td:nth-child(1)>div.user-outbox-area label] is visible on the page.
+19:48:29.314 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1222) - Location Label visibility status {}true
+19:48:29.321 INFO  driver.Page (    Page.java:152) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: #outboxmsg tr:nth-child(2) td:nth-child(1)>div.user-outbox-area label] to be visible on the page for duration of {} 120
+19:48:29.323 INFO  driver.Page (    Page.java:235) - Waiting for element to be visible for 120 seconds.
+19:48:29.344 INFO  driver.Page (    Page.java:238) - Element is visible on the page.
+19:48:29.393 INFO  driver.Page (    Page.java:155) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: #outboxmsg tr:nth-child(2) td:nth-child(1)>div.user-outbox-area label] is Location:
+19:48:29.410 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1229) - Location label Text is Location:
+19:48:29.454 INFO  driver.Page (    Page.java:277) - Element {} : [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: #ddlcity] is visible on the page.
+19:48:29.456 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1392) - Location Dropdown visibility status {}true
+19:48:29.640 INFO  driver.Page (    Page.java:548) - User gets the selection as  --Location-- from Dropdown
+19:48:29.640 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1415) - Wait for Mode Of Message Dropdown visibility on Notification Page.
+19:48:29.641 INFO  driver.Page (    Page.java:235) - Waiting for element to be visible for 120 seconds.
+19:48:29.673 INFO  driver.Page (    Page.java:238) - Element is visible on the page.
+19:48:29.716 INFO  driver.Page (    Page.java:277) - Element {} : [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: #outboxmsg tr:nth-child(2) td:nth-child(2)>div.user-outbox-area label] is visible on the page.
+19:48:29.717 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1238) - ModeOfMessage Label visibility status {}true
+19:48:29.727 INFO  driver.Page (    Page.java:152) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: #outboxmsg tr:nth-child(2) td:nth-child(2)>div.user-outbox-area label] to be visible on the page for duration of {} 120
+19:48:29.728 INFO  driver.Page (    Page.java:235) - Waiting for element to be visible for 120 seconds.
+19:48:29.756 INFO  driver.Page (    Page.java:238) - Element is visible on the page.
+19:48:29.833 INFO  driver.Page (    Page.java:155) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: #outboxmsg tr:nth-child(2) td:nth-child(2)>div.user-outbox-area label] is Mode Of Message:
+19:48:29.862 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1245) - ModeOfMessage label Text is Mode Of Message:
+19:48:29.910 INFO  driver.Page (    Page.java:277) - Element {} : [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: #ddlMessageMode] is visible on the page.
+19:48:29.911 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1427) - ModeOfMessage Dropdown visibility status {}true
+19:48:30.123 INFO  driver.Page (    Page.java:548) - User gets the selection as  --Mode Of Message-- from Dropdown
+19:48:31.584 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1441) - The Select Options in Mode Of Message Dropdown are [Text, Email, Push Notification, Robo Call, WhatsApp]
+19:48:31.663 INFO  driver.Page (    Page.java:277) - Element {} : [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: #outboxmsg tr:nth-child(3) td:nth-child(1)>div.user-outbox-area label] is visible on the page.
+19:48:31.664 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1256) - CustomerName Label visibility status {}true
+19:48:31.681 INFO  driver.Page (    Page.java:152) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: #outboxmsg tr:nth-child(3) td:nth-child(1)>div.user-outbox-area label] to be visible on the page for duration of {} 120
+19:48:31.681 INFO  driver.Page (    Page.java:235) - Waiting for element to be visible for 120 seconds.
+19:48:31.718 INFO  driver.Page (    Page.java:238) - Element is visible on the page.
+19:48:31.776 INFO  driver.Page (    Page.java:155) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: #outboxmsg tr:nth-child(3) td:nth-child(1)>div.user-outbox-area label] is Customer Name:
+19:48:31.809 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1263) - CustomerName label Text is Customer Name:
+19:48:31.891 INFO  driver.Page (    Page.java:277) - Element {} : [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: .Text-outbox-area #txtcustomername] is visible on the page.
+19:48:31.892 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1282) - CustomerName Textbox visibility status {}true
+19:48:31.892 INFO  driver.Page (    Page.java:343) - Selecting the option by visible text {}: Email
+19:48:31.979 INFO  driver.Page (    Page.java:345) - Selecting the given option to the web element {}: [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: #ddlMessageMode]
+19:48:32.385 INFO  driver.Page (    Page.java:347) - Given text is selected as the option to the given select web element.
+19:48:32.908 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1435) - Mode of Message has been Selected with the value[[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: #ddlMessageMode]
+19:48:32.968 INFO  driver.Page (    Page.java:277) - Element {} : [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: div.subjectboxoutage.email label] is visible on the page.
+19:48:32.968 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1272) - Subject Label visibility status {}true
+19:48:32.979 INFO  driver.Page (    Page.java:152) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: div.subjectboxoutage.email label] to be visible on the page for duration of {} 120
+19:48:32.980 INFO  driver.Page (    Page.java:235) - Waiting for element to be visible for 120 seconds.
+19:48:33.013 INFO  driver.Page (    Page.java:238) - Element is visible on the page.
+19:48:33.076 INFO  driver.Page (    Page.java:155) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: div.subjectboxoutage.email label] is Subject:
+19:48:33.110 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1302) - Subject label Text is Subject:
+19:48:33.172 INFO  driver.Page (    Page.java:277) - Element {} : [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: #txtmsgsubject] is visible on the page.
+19:48:33.174 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1450) - Subject TextBox visibility status {}true
+19:48:33.244 INFO  driver.Page (    Page.java:277) - Element {} : [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: .note-editable] is visible on the page.
+19:48:33.244 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1510) - Email Body TextBox visibility status {}true
+19:48:33.290 INFO  driver.Page (    Page.java:297) - Element {} : [[[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: #fileupd]] is visible on the page.
+19:48:33.291 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1602) - Choose Button visibility status {}true
+19:48:33.291 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1963) - Checking the visibility of AllowedFileTypes Label on the page.
+19:48:33.365 INFO  driver.Page (    Page.java:277) - Element {} : [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: #lblFileAllowExtension] is visible on the page.
+19:48:33.366 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1964) - AllowedFileTypes Label  visibility status {}: true
+19:48:33.416 INFO  driver.Page (    Page.java:277) - Element {} : [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: #lblFileAllowExtension] is visible on the page.
+19:48:33.488 INFO  driver.Page (    Page.java:277) - Element {} : [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: #lblFileAllowExtension] is visible on the page.
+19:48:33.505 INFO  driver.Page (    Page.java:152) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: #lblFileAllowExtension] to be visible on the page for duration of {} 120
+19:48:33.505 INFO  driver.Page (    Page.java:235) - Waiting for element to be visible for 120 seconds.
+19:48:33.544 INFO  driver.Page (    Page.java:238) - Element is visible on the page.
+19:48:33.602 INFO  driver.Page (    Page.java:155) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: #lblFileAllowExtension] is Allowed file types:  gif,png,jpeg,jpg,pdf,mp4 with maximum size of 5 MB.
+19:48:33.625 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1971) - AllowedFileTypes Label is Allowed file types:  gif,png,jpeg,jpg,pdf,mp4 with maximum size of 5 MB.
+19:48:33.634 INFO  driver.Page (    Page.java:152) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: #lblFileAllowExtension] to be visible on the page for duration of {} 120
+19:48:33.634 INFO  driver.Page (    Page.java:235) - Waiting for element to be visible for 120 seconds.
+19:48:33.659 INFO  driver.Page (    Page.java:238) - Element is visible on the page.
+19:48:33.691 INFO  driver.Page (    Page.java:155) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: #lblFileAllowExtension] is Allowed file types:  gif,png,jpeg,jpg,pdf,mp4 with maximum size of 5 MB.
+19:48:33.712 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1971) - AllowedFileTypes Label is Allowed file types:  gif,png,jpeg,jpg,pdf,mp4 with maximum size of 5 MB.
+19:48:33.731 INFO  driver.Page (    Page.java:152) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: #nofile] to be visible on the page for duration of {} 120
+19:48:33.732 INFO  driver.Page (    Page.java:235) - Waiting for element to be visible for 120 seconds.
+19:48:33.763 INFO  driver.Page (    Page.java:238) - Element is visible on the page.
+19:48:33.816 INFO  driver.Page (    Page.java:155) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: #nofile] is No File Chosen
+19:48:33.842 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:2044) - File Name Label is No File Chosen
+19:48:33.874 INFO  driver.Page (    Page.java:297) - Element {} : [[[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: #btnSubmitReply]] is visible on the page.
+19:48:33.875 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1472) - Send Button on Send Notification visibility status {}true
+19:48:33.896 INFO  driver.Page (    Page.java:165) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: #btnSubmitReply] to be visible on the page for duration of {} 120
+19:48:33.896 INFO  driver.Page (    Page.java:235) - Waiting for element to be visible for 120 seconds.
+19:48:33.928 INFO  driver.Page (    Page.java:238) - Element is visible on the page.
+19:48:33.980 INFO  driver.Page (    Page.java:168) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: #btnSubmitReply] is Send
+19:48:34.010 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1487) - Send Button on Send Notification label Text is Send
+19:48:34.011 INFO  driver.Page (    Page.java:343) - Selecting the option by visible text {}: Text
+19:48:34.062 INFO  driver.Page (    Page.java:345) - Selecting the given option to the web element {}: [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: #ddlMessageMode]
+19:48:34.195 INFO  driver.Page (    Page.java:347) - Given text is selected as the option to the given select web element.
+19:48:34.710 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1435) - Mode of Message has been Selected with the value[[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: #ddlMessageMode]
+19:48:34.740 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1272) - Subject Label visibility status {}false
+19:48:34.767 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1450) - Subject TextBox visibility status {}false
+19:48:34.809 INFO  driver.Page (    Page.java:277) - Element {} : [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: textarea#txtMessage] is visible on the page.
+19:48:34.809 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1536) - Non-Email Body TextBox visibility status {}true
+19:48:34.809 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1963) - Checking the visibility of AllowedFileTypes Label on the page.
+19:48:34.830 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1964) - AllowedFileTypes Label  visibility status {}: false
+19:48:34.868 INFO  driver.Page (    Page.java:343) - Selecting the option by visible text {}: Push Notification
+19:48:34.906 INFO  driver.Page (    Page.java:345) - Selecting the given option to the web element {}: [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: #ddlMessageMode]
+19:48:35.030 INFO  driver.Page (    Page.java:347) - Given text is selected as the option to the given select web element.
+19:48:35.556 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1435) - Mode of Message has been Selected with the value[[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: #ddlMessageMode]
+19:48:35.579 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1272) - Subject Label visibility status {}false
+19:48:35.605 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1450) - Subject TextBox visibility status {}false
+19:48:35.644 INFO  driver.Page (    Page.java:277) - Element {} : [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: textarea#txtMessage] is visible on the page.
+19:48:35.644 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1536) - Non-Email Body TextBox visibility status {}true
+19:48:35.645 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1963) - Checking the visibility of AllowedFileTypes Label on the page.
+19:48:35.673 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1964) - AllowedFileTypes Label  visibility status {}: false
+19:48:35.726 INFO  driver.Page (    Page.java:343) - Selecting the option by visible text {}: Robo Call
+19:48:35.771 INFO  driver.Page (    Page.java:345) - Selecting the given option to the web element {}: [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: #ddlMessageMode]
+19:48:35.898 INFO  driver.Page (    Page.java:347) - Given text is selected as the option to the given select web element.
+19:48:36.416 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1435) - Mode of Message has been Selected with the value[[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: #ddlMessageMode]
+19:48:36.439 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1272) - Subject Label visibility status {}false
+19:48:36.458 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1450) - Subject TextBox visibility status {}false
+19:48:36.489 INFO  driver.Page (    Page.java:277) - Element {} : [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: textarea#txtMessage] is visible on the page.
+19:48:36.489 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1536) - Non-Email Body TextBox visibility status {}true
+19:48:36.489 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1963) - Checking the visibility of AllowedFileTypes Label on the page.
+19:48:36.512 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1964) - AllowedFileTypes Label  visibility status {}: false
+19:48:36.558 INFO  driver.Page (    Page.java:343) - Selecting the option by visible text {}: WhatsApp
+19:48:36.596 INFO  driver.Page (    Page.java:345) - Selecting the given option to the web element {}: [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: #ddlMessageMode]
+19:48:36.692 INFO  driver.Page (    Page.java:347) - Given text is selected as the option to the given select web element.
+19:48:37.204 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1435) - Mode of Message has been Selected with the value[[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: #ddlMessageMode]
+19:48:37.227 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1272) - Subject Label visibility status {}false
+19:48:37.248 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1450) - Subject TextBox visibility status {}false
+19:48:37.288 INFO  driver.Page (    Page.java:277) - Element {} : [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: textarea#txtMessage] is visible on the page.
+19:48:37.288 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1536) - Non-Email Body TextBox visibility status {}true
+19:48:37.288 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1963) - Checking the visibility of AllowedFileTypes Label on the page.
+19:48:37.309 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1964) - AllowedFileTypes Label  visibility status {}: false
+19:48:37.361 INFO  driver.Page (    Page.java:58) - Preparing for element to click.
+19:48:37.361 INFO  driver.Page (    Page.java:210) - Waiting for element to be clickable for 120 seconds.
+19:48:37.411 INFO  driver.Page (    Page.java:213) - Element is clickable now.
+19:48:44.533 INFO  driver.Page (    Page.java:61) - Element is clicked successfully.
+19:48:44.534 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:538) - Send Notification Link clicked {}.
+19:48:44.534 INFO  scp.HomePage (HomePage.java:179) - Wait for Spinner Loading Image invisibility.
+19:48:44.534 INFO  driver.Page (    Page.java:249) - Waiting for element to be invisible for 120 seconds.
+19:48:49.557 INFO  driver.Page (    Page.java:252) - Element is invisible from the page.
+19:48:49.557 INFO  driver.Page (    Page.java:343) - Selecting the option by visible text {}: Email
+19:48:49.587 INFO  driver.Page (    Page.java:345) - Selecting the given option to the web element {}: [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: #ddlMessageMode]
+19:48:49.678 INFO  driver.Page (    Page.java:347) - Given text is selected as the option to the given select web element.
+19:48:50.196 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1435) - Mode of Message has been Selected with the value[[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: #ddlMessageMode]
+19:48:50.196 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1631) - Wait for Send Reply BUtton visibility on Notification Page.
+19:48:50.196 INFO  driver.Page (    Page.java:235) - Waiting for element to be visible for 120 seconds.
+19:48:50.221 INFO  driver.Page (    Page.java:238) - Element is visible on the page.
+19:48:50.221 INFO  driver.Page (    Page.java:58) - Preparing for element to click.
+19:48:50.221 INFO  driver.Page (    Page.java:210) - Waiting for element to be clickable for 120 seconds.
+19:48:50.249 INFO  driver.Page (    Page.java:213) - Element is clickable now.
+19:48:50.303 INFO  driver.Page (    Page.java:61) - Element is clicked successfully.
+19:48:50.304 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1494) - Clicked on Send Button on Send Notification
+19:48:50.319 INFO  driver.Page (    Page.java:152) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: #toast-container .toast-message] to be visible on the page for duration of {} 120
+19:48:50.320 INFO  driver.Page (    Page.java:235) - Waiting for element to be visible for 120 seconds.
+19:48:50.335 INFO  driver.Page (    Page.java:238) - Element is visible on the page.
+19:48:50.359 INFO  driver.Page (    Page.java:155) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: #toast-container .toast-message] is Please enter all the mandatory information
+19:48:50.371 INFO  scp.HomePage (HomePage.java:142) - Label on toast message {}: Please enter all the mandatory information
+19:48:50.372 INFO  scp.HomePage (HomePage.java:147) - Wait for toast message invisibility.
+19:48:50.372 INFO  driver.Page (    Page.java:249) - Waiting for element to be invisible for 120 seconds.
+19:48:58.098 INFO  driver.Page (    Page.java:252) - Element is invisible from the page.
+19:48:58.099 INFO  driver.Page (    Page.java:343) - Selecting the option by visible text {}: Billing
+19:48:58.128 INFO  driver.Page (    Page.java:345) - Selecting the given option to the web element {}: [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: #ddltypeofmessage]
+19:48:58.203 INFO  driver.Page (    Page.java:347) - Given text is selected as the option to the given select web element.
+19:48:58.214 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1327) - Type of Message dropdown has been Selected with the value [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: #ddltypeofmessage]
+19:48:58.214 INFO  driver.Page (    Page.java:343) - Selecting the option by visible text {}: Residential
+19:48:58.245 INFO  driver.Page (    Page.java:345) - Selecting the given option to the web element {}: [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: #radioAccountType]
+19:48:58.332 INFO  driver.Page (    Page.java:347) - Given text is selected as the option to the given select web element.
+19:48:58.339 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1372) - Account Type dropdown has been Selected with the value [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: #radioAccountType]
+19:48:58.340 INFO  driver.Page (    Page.java:343) - Selecting the option by visible text {}: 92602
+19:48:58.370 INFO  driver.Page (    Page.java:345) - Selecting the given option to the web element {}: [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: #ddlcity]
+19:48:58.435 INFO  driver.Page (    Page.java:347) - Given text is selected as the option to the given select web element.
+19:48:58.441 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1398) - Location dropdown has been Selected with the value [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: #ddlcity]
+19:48:58.442 INFO  driver.Page (    Page.java:343) - Selecting the option by visible text {}: Email
+19:48:58.461 INFO  driver.Page (    Page.java:345) - Selecting the given option to the web element {}: [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: #ddlMessageMode]
+19:48:58.491 INFO  driver.Page (    Page.java:347) - Given text is selected as the option to the given select web element.
+19:48:58.999 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1435) - Mode of Message has been Selected with the value[[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: #ddlMessageMode]
+19:48:58.999 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1499) - Wait for Send Button visibility on Send Notification Page
+19:48:58.999 INFO  driver.Page (    Page.java:235) - Waiting for element to be visible for 120 seconds.
+19:48:59.015 INFO  driver.Page (    Page.java:238) - Element is visible on the page.
+19:48:59.015 INFO  driver.Page (    Page.java:359) - Selecting the option by index {}: 0
+19:48:59.037 INFO  driver.Page (    Page.java:361) - Selecting the given option to the web element {}: [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: #ddltypeofmessage]
+19:48:59.118 INFO  driver.Page (    Page.java:363) - Given index is selected as the option to the given select web element.
+19:48:59.633 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1333) - Type of Message dropdown has been Selected with the default value
+19:48:59.633 INFO  driver.Page (    Page.java:58) - Preparing for element to click.
+19:48:59.633 INFO  driver.Page (    Page.java:210) - Waiting for element to be clickable for 120 seconds.
+19:48:59.705 INFO  driver.Page (    Page.java:213) - Element is clickable now.
+19:48:59.746 INFO  driver.Page (    Page.java:61) - Element is clicked successfully.
+19:48:59.747 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1494) - Clicked on Send Button on Send Notification
+19:48:59.753 INFO  driver.Page (    Page.java:152) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: #toast-container .toast-message] to be visible on the page for duration of {} 120
+19:48:59.754 INFO  driver.Page (    Page.java:235) - Waiting for element to be visible for 120 seconds.
+19:48:59.770 INFO  driver.Page (    Page.java:238) - Element is visible on the page.
+19:48:59.795 INFO  driver.Page (    Page.java:155) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: #toast-container .toast-message] is Please select Type of Message
+19:48:59.810 INFO  scp.HomePage (HomePage.java:142) - Label on toast message {}: Please select Type of Message
+19:48:59.810 INFO  scp.HomePage (HomePage.java:147) - Wait for toast message invisibility.
+19:48:59.810 INFO  driver.Page (    Page.java:249) - Waiting for element to be invisible for 120 seconds.
+19:49:07.541 INFO  driver.Page (    Page.java:252) - Element is invisible from the page.
+19:49:07.542 INFO  driver.Page (    Page.java:343) - Selecting the option by visible text {}: Billing
+19:49:07.570 INFO  driver.Page (    Page.java:345) - Selecting the given option to the web element {}: [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: #ddltypeofmessage]
+19:49:07.625 INFO  driver.Page (    Page.java:347) - Given text is selected as the option to the given select web element.
+19:49:07.634 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1327) - Type of Message dropdown has been Selected with the value [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: #ddltypeofmessage]
+19:49:07.634 INFO  driver.Page (    Page.java:359) - Selecting the option by index {}: 0
+19:49:07.655 INFO  driver.Page (    Page.java:361) - Selecting the given option to the web element {}: [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: #radioAccountType]
+19:49:07.726 INFO  driver.Page (    Page.java:363) - Given index is selected as the option to the given select web element.
+19:49:08.227 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1366) - Account Type dropdown has been Selected with the default value
+19:49:08.227 INFO  driver.Page (    Page.java:58) - Preparing for element to click.
+19:49:08.227 INFO  driver.Page (    Page.java:210) - Waiting for element to be clickable for 120 seconds.
+19:49:08.279 INFO  driver.Page (    Page.java:213) - Element is clickable now.
+19:49:08.329 INFO  driver.Page (    Page.java:61) - Element is clicked successfully.
+19:49:08.329 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1494) - Clicked on Send Button on Send Notification
+19:49:08.337 INFO  driver.Page (    Page.java:152) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: #toast-container .toast-message] to be visible on the page for duration of {} 120
+19:49:08.337 INFO  driver.Page (    Page.java:235) - Waiting for element to be visible for 120 seconds.
+19:49:08.353 INFO  driver.Page (    Page.java:238) - Element is visible on the page.
+19:49:08.386 INFO  driver.Page (    Page.java:155) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: #toast-container .toast-message] is Please select Account Type
+19:49:08.399 INFO  scp.HomePage (HomePage.java:142) - Label on toast message {}: Please select Account Type
+19:49:08.399 INFO  scp.HomePage (HomePage.java:147) - Wait for toast message invisibility.
+19:49:08.399 INFO  driver.Page (    Page.java:249) - Waiting for element to be invisible for 120 seconds.
+19:49:16.117 INFO  driver.Page (    Page.java:252) - Element is invisible from the page.
+19:49:16.118 INFO  driver.Page (    Page.java:343) - Selecting the option by visible text {}: Residential
+19:49:16.147 INFO  driver.Page (    Page.java:345) - Selecting the given option to the web element {}: [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: #radioAccountType]
+19:49:16.196 INFO  driver.Page (    Page.java:347) - Given text is selected as the option to the given select web element.
+19:49:16.203 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1372) - Account Type dropdown has been Selected with the value [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: #radioAccountType]
+19:49:16.203 INFO  driver.Page (    Page.java:359) - Selecting the option by index {}: 0
+19:49:16.228 INFO  driver.Page (    Page.java:361) - Selecting the given option to the web element {}: [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: #ddlcity]
+19:49:16.322 INFO  driver.Page (    Page.java:363) - Given index is selected as the option to the given select web element.
+19:49:16.830 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1404) - Location dropdown has been Selected with the default value
+19:49:16.830 INFO  driver.Page (    Page.java:58) - Preparing for element to click.
+19:49:16.830 INFO  driver.Page (    Page.java:210) - Waiting for element to be clickable for 120 seconds.
+19:49:16.870 INFO  driver.Page (    Page.java:213) - Element is clickable now.
+19:49:16.945 INFO  driver.Page (    Page.java:61) - Element is clicked successfully.
+19:49:16.946 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1494) - Clicked on Send Button on Send Notification
+19:49:16.953 INFO  driver.Page (    Page.java:152) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: #toast-container .toast-message] to be visible on the page for duration of {} 120
+19:49:16.953 INFO  driver.Page (    Page.java:235) - Waiting for element to be visible for 120 seconds.
+19:49:16.969 INFO  driver.Page (    Page.java:238) - Element is visible on the page.
+19:49:16.993 INFO  driver.Page (    Page.java:155) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: #toast-container .toast-message] is Please select Location
+19:49:17.006 INFO  scp.HomePage (HomePage.java:142) - Label on toast message {}: Please select Location
+19:49:17.006 INFO  scp.HomePage (HomePage.java:147) - Wait for toast message invisibility.
+19:49:17.006 INFO  driver.Page (    Page.java:249) - Waiting for element to be invisible for 120 seconds.
+19:49:24.753 INFO  driver.Page (    Page.java:252) - Element is invisible from the page.
+19:49:24.754 INFO  driver.Page (    Page.java:343) - Selecting the option by visible text {}: 92602
+19:49:24.815 INFO  driver.Page (    Page.java:345) - Selecting the given option to the web element {}: [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: #ddlcity]
+19:49:24.897 INFO  driver.Page (    Page.java:347) - Given text is selected as the option to the given select web element.
+19:49:24.905 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1398) - Location dropdown has been Selected with the value [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: #ddlcity]
+19:49:24.905 INFO  driver.Page (    Page.java:359) - Selecting the option by index {}: 0
+19:49:24.926 INFO  driver.Page (    Page.java:361) - Selecting the given option to the web element {}: [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: #ddlMessageMode]
+19:49:24.996 INFO  driver.Page (    Page.java:363) - Given index is selected as the option to the given select web element.
+19:49:25.502 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1422) - Mode of Message dropdown has been Selected with the default value
+19:49:25.502 INFO  driver.Page (    Page.java:58) - Preparing for element to click.
+19:49:25.503 INFO  driver.Page (    Page.java:210) - Waiting for element to be clickable for 120 seconds.
+19:49:25.561 INFO  driver.Page (    Page.java:213) - Element is clickable now.
+19:49:25.621 INFO  driver.Page (    Page.java:61) - Element is clicked successfully.
+19:49:25.621 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1494) - Clicked on Send Button on Send Notification
+19:49:25.630 INFO  driver.Page (    Page.java:152) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: #toast-container .toast-message] to be visible on the page for duration of {} 120
+19:49:25.630 INFO  driver.Page (    Page.java:235) - Waiting for element to be visible for 120 seconds.
+19:49:25.649 INFO  driver.Page (    Page.java:238) - Element is visible on the page.
+19:49:25.678 INFO  driver.Page (    Page.java:155) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: #toast-container .toast-message] is Please select Mode of Message
+19:49:25.693 INFO  scp.HomePage (HomePage.java:142) - Label on toast message {}: Please select Mode of Message
+19:49:25.693 INFO  scp.HomePage (HomePage.java:147) - Wait for toast message invisibility.
+19:49:25.693 INFO  driver.Page (    Page.java:249) - Waiting for element to be invisible for 120 seconds.
+19:49:33.417 INFO  driver.Page (    Page.java:252) - Element is invisible from the page.
+19:49:33.417 INFO  driver.Page (    Page.java:343) - Selecting the option by visible text {}: Email
+19:49:33.440 INFO  driver.Page (    Page.java:345) - Selecting the given option to the web element {}: [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: #ddlMessageMode]
+19:49:33.500 INFO  driver.Page (    Page.java:347) - Given text is selected as the option to the given select web element.
+19:49:34.019 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1435) - Mode of Message has been Selected with the value[[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: #ddlMessageMode]
+19:49:34.019 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1499) - Wait for Send Button visibility on Send Notification Page
+19:49:34.020 INFO  driver.Page (    Page.java:235) - Waiting for element to be visible for 120 seconds.
+19:49:34.042 INFO  driver.Page (    Page.java:238) - Element is visible on the page.
+19:49:34.055 INFO  driver.Page (    Page.java:137) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: .note-editable] to be present in the DOM for duration of {} 120
+19:49:34.055 INFO  driver.Page (    Page.java:235) - Waiting for element to be visible for 120 seconds.
+19:49:34.072 INFO  driver.Page (    Page.java:238) - Element is visible on the page.
+19:49:34.078 INFO  driver.Page (    Page.java:139) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: .note-editable]
+19:49:36.104 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1518) - Email Body Textbox field is cleared.
+19:49:36.105 INFO  driver.Page (    Page.java:58) - Preparing for element to click.
+19:49:36.106 INFO  driver.Page (    Page.java:210) - Waiting for element to be clickable for 120 seconds.
+19:49:36.169 INFO  driver.Page (    Page.java:213) - Element is clickable now.
+19:49:36.218 INFO  driver.Page (    Page.java:61) - Element is clicked successfully.
+19:49:36.218 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1494) - Clicked on Send Button on Send Notification
+19:49:36.225 INFO  driver.Page (    Page.java:152) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: #toast-container .toast-message] to be visible on the page for duration of {} 120
+19:49:36.225 INFO  driver.Page (    Page.java:235) - Waiting for element to be visible for 120 seconds.
+19:49:36.242 INFO  driver.Page (    Page.java:238) - Element is visible on the page.
+19:49:36.271 INFO  driver.Page (    Page.java:155) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: #toast-container .toast-message] is Please Enter Message
+19:49:36.288 INFO  scp.HomePage (HomePage.java:142) - Label on toast message {}: Please Enter Message
+19:49:36.289 INFO  scp.HomePage (HomePage.java:147) - Wait for toast message invisibility.
+19:49:36.289 INFO  driver.Page (    Page.java:249) - Waiting for element to be invisible for 120 seconds.
+19:49:43.976 INFO  driver.Page (    Page.java:252) - Element is invisible from the page.
+19:49:43.976 INFO  driver.Page (    Page.java:343) - Selecting the option by visible text {}: Text
+19:49:44.004 INFO  driver.Page (    Page.java:345) - Selecting the given option to the web element {}: [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: #ddlMessageMode]
+19:49:44.085 INFO  driver.Page (    Page.java:347) - Given text is selected as the option to the given select web element.
+19:49:44.605 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1435) - Mode of Message has been Selected with the value[[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: #ddlMessageMode]
+19:49:44.605 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1499) - Wait for Send Button visibility on Send Notification Page
+19:49:44.605 INFO  driver.Page (    Page.java:235) - Waiting for element to be visible for 120 seconds.
+19:49:44.622 INFO  driver.Page (    Page.java:238) - Element is visible on the page.
+19:49:44.633 INFO  driver.Page (    Page.java:137) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: textarea#txtMessage] to be present in the DOM for duration of {} 120
+19:49:44.633 INFO  driver.Page (    Page.java:235) - Waiting for element to be visible for 120 seconds.
+19:49:44.650 INFO  driver.Page (    Page.java:238) - Element is visible on the page.
+19:49:44.656 INFO  driver.Page (    Page.java:139) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: textarea#txtMessage]
+19:49:46.684 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1543) - Non-Email Body Textbox field is cleared.
+19:49:46.684 INFO  driver.Page (    Page.java:58) - Preparing for element to click.
+19:49:46.684 INFO  driver.Page (    Page.java:210) - Waiting for element to be clickable for 120 seconds.
+19:49:46.724 INFO  driver.Page (    Page.java:213) - Element is clickable now.
+19:49:46.772 INFO  driver.Page (    Page.java:61) - Element is clicked successfully.
+19:49:46.773 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1494) - Clicked on Send Button on Send Notification
+19:49:46.782 INFO  driver.Page (    Page.java:152) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: #toast-container .toast-message] to be visible on the page for duration of {} 120
+19:49:46.782 INFO  driver.Page (    Page.java:235) - Waiting for element to be visible for 120 seconds.
+19:49:46.798 INFO  driver.Page (    Page.java:238) - Element is visible on the page.
+19:49:46.822 INFO  driver.Page (    Page.java:155) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: #toast-container .toast-message] is Please enter Text Message
+19:49:46.836 INFO  scp.HomePage (HomePage.java:142) - Label on toast message {}: Please enter Text Message
+19:49:46.836 INFO  scp.HomePage (HomePage.java:147) - Wait for toast message invisibility.
+19:49:46.836 INFO  driver.Page (    Page.java:249) - Waiting for element to be invisible for 120 seconds.
+19:49:54.605 INFO  driver.Page (    Page.java:252) - Element is invisible from the page.
+19:49:54.605 INFO  driver.Page (    Page.java:343) - Selecting the option by visible text {}: Push Notification
+19:49:54.636 INFO  driver.Page (    Page.java:345) - Selecting the given option to the web element {}: [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: #ddlMessageMode]
+19:49:54.745 INFO  driver.Page (    Page.java:347) - Given text is selected as the option to the given select web element.
+19:49:55.271 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1435) - Mode of Message has been Selected with the value[[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: #ddlMessageMode]
+19:49:55.272 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1499) - Wait for Send Button visibility on Send Notification Page
+19:49:55.272 INFO  driver.Page (    Page.java:235) - Waiting for element to be visible for 120 seconds.
+19:49:55.295 INFO  driver.Page (    Page.java:238) - Element is visible on the page.
+19:49:55.302 INFO  driver.Page (    Page.java:137) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: textarea#txtMessage] to be present in the DOM for duration of {} 120
+19:49:55.302 INFO  driver.Page (    Page.java:235) - Waiting for element to be visible for 120 seconds.
+19:49:55.318 INFO  driver.Page (    Page.java:238) - Element is visible on the page.
+19:49:55.324 INFO  driver.Page (    Page.java:139) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: textarea#txtMessage]
+19:49:57.352 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1543) - Non-Email Body Textbox field is cleared.
+19:49:57.352 INFO  driver.Page (    Page.java:58) - Preparing for element to click.
+19:49:57.352 INFO  driver.Page (    Page.java:210) - Waiting for element to be clickable for 120 seconds.
+19:49:57.384 INFO  driver.Page (    Page.java:213) - Element is clickable now.
+19:49:57.423 INFO  driver.Page (    Page.java:61) - Element is clicked successfully.
+19:49:57.424 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1494) - Clicked on Send Button on Send Notification
+19:49:57.432 INFO  driver.Page (    Page.java:152) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: #toast-container .toast-message] to be visible on the page for duration of {} 120
+19:49:57.432 INFO  driver.Page (    Page.java:235) - Waiting for element to be visible for 120 seconds.
+19:49:57.448 INFO  driver.Page (    Page.java:238) - Element is visible on the page.
+19:49:57.471 INFO  driver.Page (    Page.java:155) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: #toast-container .toast-message] is Please enter Push Message
+19:49:57.481 INFO  scp.HomePage (HomePage.java:142) - Label on toast message {}: Please enter Push Message
+19:49:57.481 INFO  scp.HomePage (HomePage.java:147) - Wait for toast message invisibility.
+19:49:57.481 INFO  driver.Page (    Page.java:249) - Waiting for element to be invisible for 120 seconds.
+19:50:05.210 INFO  driver.Page (    Page.java:252) - Element is invisible from the page.
+19:50:05.210 INFO  driver.Page (    Page.java:343) - Selecting the option by visible text {}: Robo Call
+19:50:05.254 INFO  driver.Page (    Page.java:345) - Selecting the given option to the web element {}: [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: #ddlMessageMode]
+19:50:05.341 INFO  driver.Page (    Page.java:347) - Given text is selected as the option to the given select web element.
+19:50:05.860 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1435) - Mode of Message has been Selected with the value[[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: #ddlMessageMode]
+19:50:05.861 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1499) - Wait for Send Button visibility on Send Notification Page
+19:50:05.861 INFO  driver.Page (    Page.java:235) - Waiting for element to be visible for 120 seconds.
+19:50:05.896 INFO  driver.Page (    Page.java:238) - Element is visible on the page.
+19:50:05.913 INFO  driver.Page (    Page.java:137) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: textarea#txtMessage] to be present in the DOM for duration of {} 120
+19:50:05.913 INFO  driver.Page (    Page.java:235) - Waiting for element to be visible for 120 seconds.
+19:50:05.944 INFO  driver.Page (    Page.java:238) - Element is visible on the page.
+19:50:05.951 INFO  driver.Page (    Page.java:139) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: textarea#txtMessage]
+19:50:07.974 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1543) - Non-Email Body Textbox field is cleared.
+19:50:07.976 INFO  driver.Page (    Page.java:58) - Preparing for element to click.
+19:50:07.976 INFO  driver.Page (    Page.java:210) - Waiting for element to be clickable for 120 seconds.
+19:50:08.030 INFO  driver.Page (    Page.java:213) - Element is clickable now.
+19:50:08.084 INFO  driver.Page (    Page.java:61) - Element is clicked successfully.
+19:50:08.084 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1494) - Clicked on Send Button on Send Notification
+19:50:08.094 INFO  driver.Page (    Page.java:152) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: #toast-container .toast-message] to be visible on the page for duration of {} 120
+19:50:08.094 INFO  driver.Page (    Page.java:235) - Waiting for element to be visible for 120 seconds.
+19:50:08.115 INFO  driver.Page (    Page.java:238) - Element is visible on the page.
+19:50:08.138 INFO  driver.Page (    Page.java:155) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: #toast-container .toast-message] is Please enter IVR message
+19:50:08.150 INFO  scp.HomePage (HomePage.java:142) - Label on toast message {}: Please enter IVR message
+19:50:08.150 INFO  scp.HomePage (HomePage.java:147) - Wait for toast message invisibility.
+19:50:08.150 INFO  driver.Page (    Page.java:249) - Waiting for element to be invisible for 120 seconds.
+19:50:15.863 INFO  driver.Page (    Page.java:252) - Element is invisible from the page.
+19:50:15.864 INFO  driver.Page (    Page.java:343) - Selecting the option by visible text {}: WhatsApp
+19:50:15.889 INFO  driver.Page (    Page.java:345) - Selecting the given option to the web element {}: [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: #ddlMessageMode]
+19:50:15.955 INFO  driver.Page (    Page.java:347) - Given text is selected as the option to the given select web element.
+19:50:16.484 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1435) - Mode of Message has been Selected with the value[[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: #ddlMessageMode]
+19:50:16.484 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1499) - Wait for Send Button visibility on Send Notification Page
+19:50:16.485 INFO  driver.Page (    Page.java:235) - Waiting for element to be visible for 120 seconds.
+19:50:16.508 INFO  driver.Page (    Page.java:238) - Element is visible on the page.
+19:50:16.515 INFO  driver.Page (    Page.java:137) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: textarea#txtMessage] to be present in the DOM for duration of {} 120
+19:50:16.515 INFO  driver.Page (    Page.java:235) - Waiting for element to be visible for 120 seconds.
+19:50:16.533 INFO  driver.Page (    Page.java:238) - Element is visible on the page.
+19:50:16.542 INFO  driver.Page (    Page.java:139) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: textarea#txtMessage]
+19:50:18.560 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1543) - Non-Email Body Textbox field is cleared.
+19:50:18.560 INFO  driver.Page (    Page.java:58) - Preparing for element to click.
+19:50:18.560 INFO  driver.Page (    Page.java:210) - Waiting for element to be clickable for 120 seconds.
+19:50:18.583 INFO  driver.Page (    Page.java:213) - Element is clickable now.
+19:50:18.624 INFO  driver.Page (    Page.java:61) - Element is clicked successfully.
+19:50:18.625 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1494) - Clicked on Send Button on Send Notification
+19:50:18.633 INFO  driver.Page (    Page.java:152) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: #toast-container .toast-message] to be visible on the page for duration of {} 120
+19:50:18.633 INFO  driver.Page (    Page.java:235) - Waiting for element to be visible for 120 seconds.
+19:50:18.649 INFO  driver.Page (    Page.java:238) - Element is visible on the page.
+19:50:18.673 INFO  driver.Page (    Page.java:155) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (6e036eca7f51a054b300ffdfd7e0407c)] -> css selector: #toast-container .toast-message] is Please enter IVR message
+19:50:18.682 INFO  scp.HomePage (HomePage.java:142) - Label on toast message {}: Please enter IVR message
+19:50:18.682 INFO  scp.HomePage (HomePage.java:147) - Wait for toast message invisibility.
+19:50:18.682 INFO  driver.Page (    Page.java:249) - Waiting for element to be invisible for 120 seconds.
+19:50:26.354 INFO  driver.Page (    Page.java:252) - Element is invisible from the page.
+19:50:26.355 INFO  driver.Page (    Page.java:58) - Preparing for element to click.
+19:50:26.355 INFO  driver.Page (    Page.java:210) - Waiting for element to be clickable for 120 seconds.
+19:50:26.423 INFO  driver.Page (    Page.java:213) - Element is clickable now.
+19:50:36.030 INFO  driver.Page (    Page.java:61) - Element is clicked successfully.
+19:50:36.030 INFO  scp.AboutMyHomePage (AdminNotificationPage.java:1767) - Notification Inbox Button Clicked Successfully {}.
+19:50:36.030 INFO  scp.HomePage (HomePage.java:133) - Wait for page loader invisibility.
+19:50:36.030 INFO  driver.Page (    Page.java:249) - Waiting for element to be invisible for 120 seconds.
+19:50:39.366 INFO  driver.Page (    Page.java:252) - Element is invisible from the page.
+19:50:39.366 INFO  scp.HomePage (HomePage.java:179) - Wait for Spinner Loading Image invisibility.
+19:50:39.366 INFO  driver.Page (    Page.java:249) - Waiting for element to be invisible for 120 seconds.
+19:50:44.380 INFO  driver.Page (    Page.java:252) - Element is invisible from the page.
+19:50:44.381 INFO  csp.AdminNotificationSteps (AdminNotificationSteps.java:1461) - Checking that the current page is Admin Notification Inbox page.
+19:50:44.381 INFO  driver.Page (    Page.java:39) - Fetching the current URL.
+19:50:44.389 INFO  driver.Page (    Page.java:40) - The Current URL is: https://qa.smartcmobile.net/SCM_10.0_S-CSP/Notification/Notification-Inbox.aspx
+19:50:44.395 INFO  driver.Page (    Page.java:45) - Fetching the current title.
+19:50:44.401 INFO  driver.Page (    Page.java:46) - The Current Title is: Notification
+19:50:44.405 INFO  csp.AdminNotificationSteps (AdminNotificationSteps.java:1464) - The current page is Admin Notification Inbox page {}: true
+19:50:44.405 INFO  driver.Page (    Page.java:58) - Preparing for element to click.
+19:50:44.405 INFO  driver.Page (    Page.java:210) - Waiting for element to be clickable for 120 seconds.
+19:50:44.442 INFO  driver.Page (    Page.java:213) - Element is clickable now.
+19:50:44.492 INFO  driver.Page (    Page.java:61) - Element is clicked successfully.
+19:50:44.492 INFO  csp.AdminHomePage (AdminHomePage.java:82) - Admin User Profile dropdown clicked successfully.
+19:50:44.492 INFO  driver.Page (    Page.java:235) - Waiting for element to be visible for 120 seconds.
+19:50:44.514 INFO  driver.Page (    Page.java:238) - Element is visible on the page.
+19:50:44.515 INFO  csp.AdminHomePage (AdminHomePage.java:36) - SignOut Link is Visible on the page.
+19:50:44.515 INFO  driver.Page (    Page.java:58) - Preparing for element to click.
+19:50:44.515 INFO  driver.Page (    Page.java:210) - Waiting for element to be clickable for 120 seconds.
+19:50:44.545 INFO  driver.Page (    Page.java:213) - Element is clickable now.
+19:50:47.622 INFO  driver.Page (    Page.java:61) - Element is clicked successfully.
+19:50:47.622 INFO  csp.AdminHomePage (AdminHomePage.java:40) - Admin User SignOut Link clicked successfully.
+19:50:47.623 INFO  scp.HomePage (HomePage.java:133) - Wait for page loader invisibility.
+19:50:47.623 INFO  driver.Page (    Page.java:249) - Waiting for element to be invisible for 120 seconds.
+19:50:52.648 INFO  driver.Page (    Page.java:252) - Element is invisible from the page.
+19:50:52.649 INFO  csp.AdminNotificationTests (AdminNotificationTests.java:1196) - Test Case execution for - verifySendNotificationTab - is Completed.
+19:53:20.116 INFO  driver.DriverFactory (DriverFactory.java:122) - Clearing all the cookies.

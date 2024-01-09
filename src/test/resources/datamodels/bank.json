@@ -1,0 +1,67 @@
+[
+  {
+    "accountHolderName": "Henry Jacob Bank Account",
+    "bankAccountNumber": "4012888888881881",
+    "routingNumber": "011000390",
+    "bankName": "BANK OF AMERICA N.A",
+    "accountType": "Personal Savings",
+    "firstName": "Henry",
+    "lastName": "Jacob",
+    "address": "123, Park Avenue",
+    "city": "Irvine",
+    "state": "CA",
+    "zipCode": "92602"
+  },
+  {
+    "accountHolderName": "Mat Patrick Bank Account",
+    "bankAccountNumber": "3344464575676876",
+    "routingNumber": "022000046",
+    "bankName": "M&T Test Bank",
+    "accountType": "Personal Checking",
+    "firstName": "Mat",
+    "lastName": "Patrick",
+    "address": "123, Park Avenue",
+    "city": "Irvine",
+    "state": "CA",
+    "zipCode": "92602"
+  },
+  {
+    "accountHolderName": "John Doe Bank Account",
+    "bankAccountNumber": "000111111113",
+    "routingNumber": "011000028",
+    "bankName": "STATE STREET BOSTON",
+    "accountType": "Business Checking",
+    "firstName": "John",
+    "lastName": "Doe",
+    "address": "123, Park Avenue",
+    "city": "Irvine",
+    "state": "CA",
+    "zipCode": "92602"
+  },
+  {
+    "accountHolderName": "Karl Mathew Bank Account",
+    "bankAccountNumber": "9883833",
+    "routingNumber": "091000019",
+    "bankName": "Wells Fargo Bank Na (minnesota)",
+    "accountType": "Personal Savings",
+    "firstName": "Karl",
+    "lastName": "Mathew",
+    "address": "123, Park Avenue",
+    "city": "Irvine",
+    "state": "CA",
+    "zipCode": "92602"
+  },
+  {
+    "accountHolderName": "James Night Bank Account",
+    "bankAccountNumber": "8398477748",
+    "routingNumber": "021000021",
+    "bankName": "JPMORGAN CHASE BANK, NA",
+    "accountType": "Personal Checking",
+    "firstName": "James",
+    "lastName": "Night",
+    "address": "123, Park Avenue",
+    "city": "Irvine",
+    "state": "CA",
+    "zipCode": "92602"
+  }
+]

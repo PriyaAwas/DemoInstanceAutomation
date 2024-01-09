@@ -1,0 +1,14 @@
+[
+  {
+    "guestRole": "Guest",
+    "guestName": "Guest User",
+    "guestEmail": "newguest@yopmail.com",
+    "gustAccessPeriod": ""    
+  },
+  {
+    "guestRole": "PropertyManager",
+    "guestName": "Property Manager",
+    "guestEmail": "newpropertymanager@yopmail.com",
+    "gustAccessPeriod": ""    
+  }  
+]

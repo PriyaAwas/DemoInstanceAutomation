@@ -1,0 +1,63 @@
+---
+configurations:
+  qa:
+    name: "SEW Functional Tests QA Run"
+    headless: false
+    isSetProfile: false
+    profileName: "Profile 4"
+    pageTimeout: 100
+    implicitTimeout: 5
+    explicitTimeout: 120
+    build: "1.0.5"
+    tags: "api_tests_qa"
+    os: "Mac10.15.7"
+    browser: "Chrome"
+    model: "iPhone12"
+    browserVersion: "latest"
+    downloadDirectory: "downloads/"
+    testrailRunId: "1212"
+    testrailPlatform: "3"
+    postResultsTestrail: true
+    //scp.url: "https://qa.smartcmobile.net/SCM_10.0_S-SCP/"
+    scp.url: "https://pwccx.smartcmobile.com/Portal/default.aspx"
+    //scp.url: "https://pwccx.smartcmobile.com/portal/"
+    //scp.url: "https://u-ugi10s.smartcmobile.net/"
+    // scp.url: "https://pwccx.smartcmobile.com/Portal/default.aspx"
+    csp.url: "https://qa.smartcmobile.net/SCM_10.0_S-CSP/"
+    userName: "sew_auto01"
+    password: "Demo@123"
+    utilityAccountNumber: "411000714880"
+    commercialUserName: "ab-ios12"
+    commercialPassword: "Demo@1234"
+    multiFamilyUserName: "IronManMultifamily"
+    multiFamilyPassword: "Demo@123"
+    adminUsername: "qauser"
+    adminPassword: "Sew@2021$!"
+    ScpReg.url: "https://u-ugi10s.smartcmobile.net/portal/customerregistrations.aspx"
+  uat:
+  
+  
+    name: "SEW Functional Tests UAT Run"
+    headless: false
+    pageTimeout: 20
+    implicitTimeout: 4
+    explicitTimeout: 60
+    build: "1.0.5"
+    tags: "api_tests_uat"
+    os: "Windows 11"
+    browser: "Edge"
+    model: "Pixel 6"
+    browserVersion: "latest"
+    downloadDirectory: "downloads/"
+    testrailRunId: "1036"
+    testrailPlatform: "3"
+    postResultsTestrail: true
+    scp.url: "https://u.smartcmobile.net/SCM_10.0_S-SCP/"
+    csp.url: "https://u.smartcmobile.net/SCM_10.0_S-CSP/"
+    SewScp.url: "https://pwccx.smartcmobile.com/adminPortal/default.aspx"   
+    userName: "sew_auto01"
+    password: "Demo@123"
+    utilityAccountNumber: "411000714880"
+    adminUsername: "qauser"
+    adminPassword: "Sew@2021$!"
+...

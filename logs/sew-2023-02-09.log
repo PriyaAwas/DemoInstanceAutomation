@@ -1,0 +1,180 @@
+17:39:20.465 INFO  driver.Page (    Page.java:56) - Preparing for element to click.
+17:39:20.485 INFO  driver.Page (    Page.java:184) - Waiting for element to be clickable for 120 seconds.
+17:39:20.548 INFO  driver.Page (    Page.java:187) - Element is clickable now.
+17:39:20.618 INFO  driver.Page (    Page.java:59) - Element is clicked successfully.
+17:39:20.619 INFO  csp.AdminHomePage (AdminHomePage.java:127) - Submit Button on Change Password Popup is clicked successfully.
+17:39:20.635 INFO  driver.Page (    Page.java:126) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (ad5c16ce9dc2244a36ca30b47aa0dedc)] -> css selector: #toast-container .toast-message] to be visible on the page for duration of {} 120
+17:39:20.635 INFO  driver.Page (    Page.java:209) - Waiting for element to be visible for 120 seconds.
+17:39:20.671 INFO  driver.Page (    Page.java:212) - Element is visible on the page.
+17:39:20.724 INFO  driver.Page (    Page.java:129) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (ad5c16ce9dc2244a36ca30b47aa0dedc)] -> css selector: #toast-container .toast-message] is Please enter Existing Password
+17:39:20.760 INFO  scp.HomePage (HomePage.java:44) - Label on toast message {}: Please enter Existing Password
+17:39:20.761 INFO  scp.HomePage (HomePage.java:49) - Wait for toast message invisibility.
+17:39:20.763 INFO  driver.Page (    Page.java:223) - Waiting for element to be invisible for 120 seconds.
+17:39:28.676 INFO  driver.Page (    Page.java:226) - Element is invisible from the page.
+17:39:28.691 INFO  driver.Page (    Page.java:111) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (ad5c16ce9dc2244a36ca30b47aa0dedc)] -> css selector: #txtPass] to be present in the DOM for duration of {} 120
+17:39:28.691 INFO  driver.Page (    Page.java:209) - Waiting for element to be visible for 120 seconds.
+17:39:28.723 INFO  driver.Page (    Page.java:212) - Element is visible on the page.
+17:39:28.742 INFO  driver.Page (    Page.java:113) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (ad5c16ce9dc2244a36ca30b47aa0dedc)] -> css selector: #txtPass]
+17:39:28.793 INFO  csp.AdminHomePage (AdminHomePage.java:112) - Existing Password field cleared {}
+17:39:28.793 INFO  csp.AdminHomePage (AdminHomePage.java:115) - Populating Existing password {} :demo1
+17:39:28.810 INFO  driver.Page (    Page.java:102) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (ad5c16ce9dc2244a36ca30b47aa0dedc)] -> css selector: #txtPass] to be present in the DOM for duration of {} 120
+17:39:28.810 INFO  driver.Page (    Page.java:209) - Waiting for element to be visible for 120 seconds.
+17:39:28.850 INFO  driver.Page (    Page.java:212) - Element is visible on the page.
+17:39:28.866 INFO  driver.Page (    Page.java:104) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (ad5c16ce9dc2244a36ca30b47aa0dedc)] -> css selector: #txtPass] before sending the keys.
+17:39:28.931 INFO  driver.Page (    Page.java:106) - Sending the following keys {} demo1 to the element {} [[ChromeDriver: chrome on WINDOWS (ad5c16ce9dc2244a36ca30b47aa0dedc)] -> css selector: #txtPass]
+17:39:29.002 INFO  csp.AdminHomePage (AdminHomePage.java:117) - Existing Password field populated successfully.
+17:39:29.002 INFO  csp.AdminHomePage (AdminHomePage.java:93) - Populating New password {} :Demo@123442
+17:39:29.020 INFO  driver.Page (    Page.java:102) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (ad5c16ce9dc2244a36ca30b47aa0dedc)] -> css selector: #txtNewPass] to be present in the DOM for duration of {} 120
+17:39:29.021 INFO  driver.Page (    Page.java:209) - Waiting for element to be visible for 120 seconds.
+17:39:29.060 INFO  driver.Page (    Page.java:212) - Element is visible on the page.
+17:39:29.079 INFO  driver.Page (    Page.java:104) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (ad5c16ce9dc2244a36ca30b47aa0dedc)] -> css selector: #txtNewPass] before sending the keys.
+17:39:29.181 INFO  driver.Page (    Page.java:106) - Sending the following keys {} Demo@123442 to the element {} [[ChromeDriver: chrome on WINDOWS (ad5c16ce9dc2244a36ca30b47aa0dedc)] -> css selector: #txtNewPass]
+17:39:29.339 INFO  csp.AdminHomePage (AdminHomePage.java:95) - New Password field populated successfully.
+17:39:29.340 INFO  csp.AdminHomePage (AdminHomePage.java:104) - Populating Confirm password {} :Demo@123442
+17:39:29.353 INFO  driver.Page (    Page.java:102) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (ad5c16ce9dc2244a36ca30b47aa0dedc)] -> css selector: #txtConfirmPass] to be present in the DOM for duration of {} 120
+17:39:29.354 INFO  driver.Page (    Page.java:209) - Waiting for element to be visible for 120 seconds.
+17:39:29.389 INFO  driver.Page (    Page.java:212) - Element is visible on the page.
+17:39:29.401 INFO  driver.Page (    Page.java:104) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (ad5c16ce9dc2244a36ca30b47aa0dedc)] -> css selector: #txtConfirmPass] before sending the keys.
+17:39:29.472 INFO  driver.Page (    Page.java:106) - Sending the following keys {} Demo@123442 to the element {} [[ChromeDriver: chrome on WINDOWS (ad5c16ce9dc2244a36ca30b47aa0dedc)] -> css selector: #txtConfirmPass]
+17:39:29.566 INFO  csp.AdminHomePage (AdminHomePage.java:106) - Confirm Password field populated successfully.
+17:39:29.566 INFO  driver.Page (    Page.java:56) - Preparing for element to click.
+17:39:29.567 INFO  driver.Page (    Page.java:184) - Waiting for element to be clickable for 120 seconds.
+17:39:29.634 INFO  driver.Page (    Page.java:187) - Element is clickable now.
+17:39:30.062 INFO  driver.Page (    Page.java:59) - Element is clicked successfully.
+17:39:30.062 INFO  csp.AdminHomePage (AdminHomePage.java:127) - Submit Button on Change Password Popup is clicked successfully.
+17:39:31.400 INFO  driver.Page (    Page.java:126) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (ad5c16ce9dc2244a36ca30b47aa0dedc)] -> css selector: #toast-container .toast-message] to be visible on the page for duration of {} 120
+17:39:31.400 INFO  driver.Page (    Page.java:209) - Waiting for element to be visible for 120 seconds.
+17:39:31.443 INFO  driver.Page (    Page.java:212) - Element is visible on the page.
+17:39:31.499 INFO  driver.Page (    Page.java:129) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (ad5c16ce9dc2244a36ca30b47aa0dedc)] -> css selector: #toast-container .toast-message] is Password updation failed.
+17:39:31.528 INFO  scp.HomePage (HomePage.java:44) - Label on toast message {}: Password updation failed.
+17:39:31.529 INFO  scp.HomePage (HomePage.java:49) - Wait for toast message invisibility.
+17:39:31.529 INFO  driver.Page (    Page.java:223) - Waiting for element to be invisible for 120 seconds.
+17:39:39.256 INFO  driver.Page (    Page.java:226) - Element is invisible from the page.
+17:39:39.266 INFO  driver.Page (    Page.java:111) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (ad5c16ce9dc2244a36ca30b47aa0dedc)] -> css selector: #txtPass] to be present in the DOM for duration of {} 120
+17:39:39.266 INFO  driver.Page (    Page.java:209) - Waiting for element to be visible for 120 seconds.
+17:39:39.282 INFO  driver.Page (    Page.java:212) - Element is visible on the page.
+17:39:39.289 INFO  driver.Page (    Page.java:113) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (ad5c16ce9dc2244a36ca30b47aa0dedc)] -> css selector: #txtPass]
+17:39:39.321 INFO  csp.AdminHomePage (AdminHomePage.java:112) - Existing Password field cleared {}
+17:39:39.321 INFO  csp.AdminHomePage (AdminHomePage.java:115) - Populating Existing password {} :Demo@1234
+17:39:39.329 INFO  driver.Page (    Page.java:102) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (ad5c16ce9dc2244a36ca30b47aa0dedc)] -> css selector: #txtPass] to be present in the DOM for duration of {} 120
+17:39:39.329 INFO  driver.Page (    Page.java:209) - Waiting for element to be visible for 120 seconds.
+17:39:39.348 INFO  driver.Page (    Page.java:212) - Element is visible on the page.
+17:39:39.356 INFO  driver.Page (    Page.java:104) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (ad5c16ce9dc2244a36ca30b47aa0dedc)] -> css selector: #txtPass] before sending the keys.
+17:39:39.393 INFO  driver.Page (    Page.java:106) - Sending the following keys {} Demo@1234 to the element {} [[ChromeDriver: chrome on WINDOWS (ad5c16ce9dc2244a36ca30b47aa0dedc)] -> css selector: #txtPass]
+17:39:39.458 INFO  csp.AdminHomePage (AdminHomePage.java:117) - Existing Password field populated successfully.
+17:39:39.469 INFO  driver.Page (    Page.java:111) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (ad5c16ce9dc2244a36ca30b47aa0dedc)] -> css selector: #txtNewPass] to be present in the DOM for duration of {} 120
+17:39:39.469 INFO  driver.Page (    Page.java:209) - Waiting for element to be visible for 120 seconds.
+17:39:39.492 INFO  driver.Page (    Page.java:212) - Element is visible on the page.
+17:39:39.503 INFO  driver.Page (    Page.java:113) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (ad5c16ce9dc2244a36ca30b47aa0dedc)] -> css selector: #txtNewPass]
+17:39:39.543 INFO  csp.AdminHomePage (AdminHomePage.java:90) - New Password field cleared {}
+17:39:39.543 INFO  csp.AdminHomePage (AdminHomePage.java:104) - Populating Confirm password {} :Demo@123442
+17:39:39.554 INFO  driver.Page (    Page.java:102) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (ad5c16ce9dc2244a36ca30b47aa0dedc)] -> css selector: #txtConfirmPass] to be present in the DOM for duration of {} 120
+17:39:39.554 INFO  driver.Page (    Page.java:209) - Waiting for element to be visible for 120 seconds.
+17:39:39.578 INFO  driver.Page (    Page.java:212) - Element is visible on the page.
+17:39:39.588 INFO  driver.Page (    Page.java:104) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (ad5c16ce9dc2244a36ca30b47aa0dedc)] -> css selector: #txtConfirmPass] before sending the keys.
+17:39:39.632 INFO  driver.Page (    Page.java:106) - Sending the following keys {} Demo@123442 to the element {} [[ChromeDriver: chrome on WINDOWS (ad5c16ce9dc2244a36ca30b47aa0dedc)] -> css selector: #txtConfirmPass]
+17:39:39.710 INFO  csp.AdminHomePage (AdminHomePage.java:106) - Confirm Password field populated successfully.
+17:39:39.710 INFO  driver.Page (    Page.java:56) - Preparing for element to click.
+17:39:39.711 INFO  driver.Page (    Page.java:184) - Waiting for element to be clickable for 120 seconds.
+17:39:39.755 INFO  driver.Page (    Page.java:187) - Element is clickable now.
+17:39:39.805 INFO  driver.Page (    Page.java:59) - Element is clicked successfully.
+17:39:39.806 INFO  csp.AdminHomePage (AdminHomePage.java:127) - Submit Button on Change Password Popup is clicked successfully.
+17:39:39.819 INFO  driver.Page (    Page.java:126) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (ad5c16ce9dc2244a36ca30b47aa0dedc)] -> css selector: #toast-container .toast-message] to be visible on the page for duration of {} 120
+17:39:39.820 INFO  driver.Page (    Page.java:209) - Waiting for element to be visible for 120 seconds.
+17:39:39.844 INFO  driver.Page (    Page.java:212) - Element is visible on the page.
+17:39:39.877 INFO  driver.Page (    Page.java:129) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (ad5c16ce9dc2244a36ca30b47aa0dedc)] -> css selector: #toast-container .toast-message] is Please enter New Password
+17:39:39.894 INFO  scp.HomePage (HomePage.java:44) - Label on toast message {}: Please enter New Password
+17:39:39.895 INFO  scp.HomePage (HomePage.java:49) - Wait for toast message invisibility.
+17:39:39.895 INFO  driver.Page (    Page.java:223) - Waiting for element to be invisible for 120 seconds.
+17:39:47.618 INFO  driver.Page (    Page.java:226) - Element is invisible from the page.
+17:39:47.618 INFO  csp.AdminHomePage (AdminHomePage.java:93) - Populating New password {} :Demo@123442
+17:39:47.632 INFO  driver.Page (    Page.java:102) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (ad5c16ce9dc2244a36ca30b47aa0dedc)] -> css selector: #txtNewPass] to be present in the DOM for duration of {} 120
+17:39:47.632 INFO  driver.Page (    Page.java:209) - Waiting for element to be visible for 120 seconds.
+17:39:47.654 INFO  driver.Page (    Page.java:212) - Element is visible on the page.
+17:39:47.662 INFO  driver.Page (    Page.java:104) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (ad5c16ce9dc2244a36ca30b47aa0dedc)] -> css selector: #txtNewPass] before sending the keys.
+17:39:47.710 INFO  driver.Page (    Page.java:106) - Sending the following keys {} Demo@123442 to the element {} [[ChromeDriver: chrome on WINDOWS (ad5c16ce9dc2244a36ca30b47aa0dedc)] -> css selector: #txtNewPass]
+17:39:47.811 INFO  csp.AdminHomePage (AdminHomePage.java:95) - New Password field populated successfully.
+17:39:47.821 INFO  driver.Page (    Page.java:111) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (ad5c16ce9dc2244a36ca30b47aa0dedc)] -> css selector: #txtConfirmPass] to be present in the DOM for duration of {} 120
+17:39:47.821 INFO  driver.Page (    Page.java:209) - Waiting for element to be visible for 120 seconds.
+17:39:47.858 INFO  driver.Page (    Page.java:212) - Element is visible on the page.
+17:39:47.870 INFO  driver.Page (    Page.java:113) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (ad5c16ce9dc2244a36ca30b47aa0dedc)] -> css selector: #txtConfirmPass]
+17:39:47.921 INFO  csp.AdminHomePage (AdminHomePage.java:101) - Confirm Password field cleared {}
+17:39:47.921 INFO  driver.Page (    Page.java:56) - Preparing for element to click.
+17:39:47.921 INFO  driver.Page (    Page.java:184) - Waiting for element to be clickable for 120 seconds.
+17:39:47.963 INFO  driver.Page (    Page.java:187) - Element is clickable now.
+17:39:48.011 INFO  driver.Page (    Page.java:59) - Element is clicked successfully.
+17:39:48.011 INFO  csp.AdminHomePage (AdminHomePage.java:127) - Submit Button on Change Password Popup is clicked successfully.
+17:39:48.019 INFO  driver.Page (    Page.java:126) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (ad5c16ce9dc2244a36ca30b47aa0dedc)] -> css selector: #toast-container .toast-message] to be visible on the page for duration of {} 120
+17:39:48.019 INFO  driver.Page (    Page.java:209) - Waiting for element to be visible for 120 seconds.
+17:39:48.049 INFO  driver.Page (    Page.java:212) - Element is visible on the page.
+17:39:48.100 INFO  driver.Page (    Page.java:129) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (ad5c16ce9dc2244a36ca30b47aa0dedc)] -> css selector: #toast-container .toast-message] is Please confirm the Password
+17:39:48.121 INFO  scp.HomePage (HomePage.java:44) - Label on toast message {}: Please confirm the Password
+17:39:48.122 INFO  scp.HomePage (HomePage.java:49) - Wait for toast message invisibility.
+17:39:48.122 INFO  driver.Page (    Page.java:223) - Waiting for element to be invisible for 120 seconds.
+17:39:55.800 INFO  driver.Page (    Page.java:226) - Element is invisible from the page.
+17:39:55.800 INFO  csp.AdminHomePage (AdminHomePage.java:104) - Populating Confirm password {} :Demo@12344212
+17:39:55.808 INFO  driver.Page (    Page.java:102) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (ad5c16ce9dc2244a36ca30b47aa0dedc)] -> css selector: #txtConfirmPass] to be present in the DOM for duration of {} 120
+17:39:55.808 INFO  driver.Page (    Page.java:209) - Waiting for element to be visible for 120 seconds.
+17:39:55.828 INFO  driver.Page (    Page.java:212) - Element is visible on the page.
+17:39:55.838 INFO  driver.Page (    Page.java:104) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (ad5c16ce9dc2244a36ca30b47aa0dedc)] -> css selector: #txtConfirmPass] before sending the keys.
+17:39:55.868 INFO  driver.Page (    Page.java:106) - Sending the following keys {} Demo@12344212 to the element {} [[ChromeDriver: chrome on WINDOWS (ad5c16ce9dc2244a36ca30b47aa0dedc)] -> css selector: #txtConfirmPass]
+17:39:55.919 INFO  csp.AdminHomePage (AdminHomePage.java:106) - Confirm Password field populated successfully.
+17:39:55.919 INFO  driver.Page (    Page.java:56) - Preparing for element to click.
+17:39:55.919 INFO  driver.Page (    Page.java:184) - Waiting for element to be clickable for 120 seconds.
+17:39:55.949 INFO  driver.Page (    Page.java:187) - Element is clickable now.
+17:39:55.979 INFO  driver.Page (    Page.java:59) - Element is clicked successfully.
+17:39:55.979 INFO  csp.AdminHomePage (AdminHomePage.java:127) - Submit Button on Change Password Popup is clicked successfully.
+17:39:55.979 INFO  driver.Page (    Page.java:56) - Preparing for element to click.
+17:39:55.979 INFO  driver.Page (    Page.java:184) - Waiting for element to be clickable for 120 seconds.
+17:39:56.011 INFO  driver.Page (    Page.java:187) - Element is clickable now.
+17:39:56.056 INFO  driver.Page (    Page.java:59) - Element is clicked successfully.
+17:39:56.057 INFO  csp.AdminHomePage (AdminHomePage.java:127) - Submit Button on Change Password Popup is clicked successfully.
+17:39:56.068 INFO  driver.Page (    Page.java:126) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (ad5c16ce9dc2244a36ca30b47aa0dedc)] -> css selector: #toast-container .toast-message] to be visible on the page for duration of {} 120
+17:39:56.068 INFO  driver.Page (    Page.java:209) - Waiting for element to be visible for 120 seconds.
+17:39:56.090 INFO  driver.Page (    Page.java:212) - Element is visible on the page.
+17:39:56.123 INFO  driver.Page (    Page.java:129) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (ad5c16ce9dc2244a36ca30b47aa0dedc)] -> css selector: #toast-container .toast-message] is Passwords do not match, please enter the same password
+17:39:56.139 INFO  scp.HomePage (HomePage.java:44) - Label on toast message {}: Passwords do not match, please enter the same password
+17:39:56.139 INFO  scp.HomePage (HomePage.java:49) - Wait for toast message invisibility.
+17:39:56.139 INFO  driver.Page (    Page.java:223) - Waiting for element to be invisible for 120 seconds.
+17:40:03.836 INFO  driver.Page (    Page.java:226) - Element is invisible from the page.
+17:40:03.845 INFO  driver.Page (    Page.java:111) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (ad5c16ce9dc2244a36ca30b47aa0dedc)] -> css selector: #txtNewPass] to be present in the DOM for duration of {} 120
+17:40:03.845 INFO  driver.Page (    Page.java:209) - Waiting for element to be visible for 120 seconds.
+17:40:03.867 INFO  driver.Page (    Page.java:212) - Element is visible on the page.
+17:40:03.876 INFO  driver.Page (    Page.java:113) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (ad5c16ce9dc2244a36ca30b47aa0dedc)] -> css selector: #txtNewPass]
+17:40:03.911 INFO  csp.AdminHomePage (AdminHomePage.java:90) - New Password field cleared {}
+17:40:03.920 INFO  driver.Page (    Page.java:111) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (ad5c16ce9dc2244a36ca30b47aa0dedc)] -> css selector: #txtPass] to be present in the DOM for duration of {} 120
+17:40:03.920 INFO  driver.Page (    Page.java:209) - Waiting for element to be visible for 120 seconds.
+17:40:03.941 INFO  driver.Page (    Page.java:212) - Element is visible on the page.
+17:40:03.947 INFO  driver.Page (    Page.java:113) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (ad5c16ce9dc2244a36ca30b47aa0dedc)] -> css selector: #txtPass]
+17:40:03.975 INFO  csp.AdminHomePage (AdminHomePage.java:112) - Existing Password field cleared {}
+17:40:03.975 INFO  csp.AdminHomePage (AdminHomePage.java:93) - Populating New password {} :demo12
+17:40:03.981 INFO  driver.Page (    Page.java:102) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (ad5c16ce9dc2244a36ca30b47aa0dedc)] -> css selector: #txtNewPass] to be present in the DOM for duration of {} 120
+17:40:03.981 INFO  driver.Page (    Page.java:209) - Waiting for element to be visible for 120 seconds.
+17:40:03.995 INFO  driver.Page (    Page.java:212) - Element is visible on the page.
+17:40:04.001 INFO  driver.Page (    Page.java:104) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (ad5c16ce9dc2244a36ca30b47aa0dedc)] -> css selector: #txtNewPass] before sending the keys.
+17:40:04.028 INFO  driver.Page (    Page.java:106) - Sending the following keys {} demo12 to the element {} [[ChromeDriver: chrome on WINDOWS (ad5c16ce9dc2244a36ca30b47aa0dedc)] -> css selector: #txtNewPass]
+17:40:04.092 INFO  csp.AdminHomePage (AdminHomePage.java:95) - New Password field populated successfully.
+17:40:04.093 INFO  csp.AdminHomePage (AdminHomePage.java:104) - Populating Confirm password {} :demo12
+17:40:04.102 INFO  driver.Page (    Page.java:102) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (ad5c16ce9dc2244a36ca30b47aa0dedc)] -> css selector: #txtConfirmPass] to be present in the DOM for duration of {} 120
+17:40:04.102 INFO  driver.Page (    Page.java:209) - Waiting for element to be visible for 120 seconds.
+17:40:04.123 INFO  driver.Page (    Page.java:212) - Element is visible on the page.
+17:40:04.132 INFO  driver.Page (    Page.java:104) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (ad5c16ce9dc2244a36ca30b47aa0dedc)] -> css selector: #txtConfirmPass] before sending the keys.
+17:40:04.172 INFO  driver.Page (    Page.java:106) - Sending the following keys {} demo12 to the element {} [[ChromeDriver: chrome on WINDOWS (ad5c16ce9dc2244a36ca30b47aa0dedc)] -> css selector: #txtConfirmPass]
+17:40:04.213 INFO  csp.AdminHomePage (AdminHomePage.java:106) - Confirm Password field populated successfully.
+17:40:04.213 INFO  driver.Page (    Page.java:56) - Preparing for element to click.
+17:40:04.213 INFO  driver.Page (    Page.java:184) - Waiting for element to be clickable for 120 seconds.
+17:40:04.241 INFO  driver.Page (    Page.java:187) - Element is clickable now.
+17:40:04.271 INFO  driver.Page (    Page.java:59) - Element is clicked successfully.
+17:40:04.271 INFO  csp.AdminHomePage (AdminHomePage.java:127) - Submit Button on Change Password Popup is clicked successfully.
+17:40:04.278 INFO  driver.Page (    Page.java:126) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (ad5c16ce9dc2244a36ca30b47aa0dedc)] -> css selector: #toast-container .toast-message] to be visible on the page for duration of {} 120
+17:40:04.278 INFO  driver.Page (    Page.java:209) - Waiting for element to be visible for 120 seconds.
+17:40:04.298 INFO  driver.Page (    Page.java:212) - Element is visible on the page.
+17:40:04.337 INFO  driver.Page (    Page.java:129) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (ad5c16ce9dc2244a36ca30b47aa0dedc)] -> css selector: #toast-container .toast-message] is Please enter Existing Password
+17:40:04.360 INFO  scp.HomePage (HomePage.java:44) - Label on toast message {}: Please enter Existing Password
+17:40:04.366 INFO  scp.HomePage (HomePage.java:49) - Wait for toast message invisibility.
+17:40:04.366 INFO  driver.Page (    Page.java:223) - Waiting for element to be invisible for 120 seconds.
+17:40:12.116 INFO  driver.Page (    Page.java:226) - Element is invisible from the page.
+17:40:12.117 INFO  driver.Page (    Page.java:56) - Preparing for element to click.
+17:40:12.117 INFO  driver.Page (    Page.java:184) - Waiting for element to be clickable for 120 seconds.
+17:40:12.158 INFO  driver.Page (    Page.java:187) - Element is clickable now.
+17:40:18.580 INFO  driver.DriverFactory (DriverFactory.java:112) - Clearing all the cookies.

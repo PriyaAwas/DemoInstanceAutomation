@@ -1,0 +1,479 @@
+11:06:49.037 INFO  runner.TestRunner (TestRunner.java:32) - Initializing application properties config file.
+11:06:49.082 INFO  runner.TestRunner (TestRunner.java:35) - Initializing connection to the base database.
+11:06:50.025 WARN  config.DatabaseConfiguration (DatabaseConfiguration.java:84) - QA env being used by default. No env property set. This can be set in the sentinel.yml config file with a '{}=' property or on the command line with the switch '-D{}='.
+11:06:52.070 INFO  runner.TestRunner (TestRunner.java:38) - Initializing resource path config file.
+11:06:52.083 INFO  runner.TestRunner (TestRunner.java:41) - Initializing usage months config from CSP.
+11:06:52.901 INFO  runner.TestRunner (TestRunner.java:44) - Initializing date config from CSP.
+11:06:53.647 INFO  runner.TestRunner (TestRunner.java:47) - Initializing language config from CSP.
+11:06:54.425 INFO  runner.TestRunner (TestRunner.java:50) - Initializing language config from CSP.
+11:06:55.184 INFO  runner.TestRunner (TestRunner.java:53) - Initializing language config from CSP.
+11:06:55.923 INFO  runner.TestRunner (TestRunner.java:56) - Initializing user model config.
+11:06:55.957 WARN  config.Configuration (Configuration.java:231) - QA env being used by default. No env property set. This can be set in the sew.app.yml config file with a '{}=' property or on the command line with the switch '-D{}='.
+11:07:02.004 INFO  runner.TestRunner (TestRunner.java:59) - Initializing auth token config.
+11:07:02.005 INFO  runner.TestRunner (TestRunner.java:62) - Initializing Admin User config.
+11:07:06.234 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 1
+11:07:06.248 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 2
+11:07:06.249 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 3
+11:07:06.250 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 4
+11:07:06.251 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 5
+11:07:06.252 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 6
+11:07:06.253 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 7
+11:07:06.254 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 8
+11:07:06.254 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 9
+11:07:06.255 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 10
+11:07:06.256 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 11
+11:07:06.260 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 12
+11:07:06.265 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 13
+11:07:06.266 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 14
+11:07:06.267 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 15
+11:07:06.268 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 16
+11:07:06.269 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 17
+11:07:06.270 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 18
+11:07:06.271 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 19
+11:07:06.272 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 20
+11:07:06.273 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 21
+11:07:06.274 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 22
+11:07:06.275 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 23
+11:07:06.277 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 24
+11:07:06.278 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 25
+11:07:06.279 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 26
+11:07:06.280 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 27
+11:07:06.280 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 28
+11:07:06.281 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 29
+11:07:06.282 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 30
+11:07:06.283 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 31
+11:07:06.283 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 32
+11:07:06.284 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 33
+11:07:06.285 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 34
+11:07:06.286 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 35
+11:07:06.289 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 36
+11:07:06.290 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 37
+11:07:06.291 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 38
+11:07:06.293 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 39
+11:07:06.294 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 40
+11:07:06.295 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 41
+11:07:06.295 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 42
+11:07:06.296 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 43
+11:07:06.297 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 44
+11:07:06.298 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 45
+11:07:06.298 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 46
+11:07:06.299 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 47
+11:07:06.300 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 48
+11:07:06.300 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 49
+11:07:06.301 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 50
+11:07:06.303 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 51
+11:07:06.303 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 52
+11:07:06.303 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 53
+11:07:06.304 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 54
+11:07:06.305 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 55
+11:07:06.305 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 56
+11:07:06.308 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 57
+11:07:06.310 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 58
+11:07:06.311 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 59
+11:07:06.312 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 60
+11:07:06.312 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 61
+11:07:06.314 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 62
+11:07:06.314 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 63
+11:07:06.315 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 64
+11:07:06.316 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 65
+11:07:06.318 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 66
+11:07:06.320 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 67
+11:07:06.322 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 68
+11:07:06.322 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 69
+11:07:06.324 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 70
+11:07:06.324 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 71
+11:07:06.325 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 72
+11:07:06.328 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 73
+11:07:06.329 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 74
+11:07:06.329 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 75
+11:07:06.331 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 76
+11:07:06.332 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 77
+11:07:06.332 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 78
+11:07:06.333 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 79
+11:07:06.334 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 80
+11:07:06.334 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 81
+11:07:06.336 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 82
+11:07:06.337 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 83
+11:07:22.444 INFO  driver.WebDriverFactory (WebDriverFactory.java:192) - Setting up the browser window to its max.
+11:07:22.644 INFO  driver.WebDriverFactory (WebDriverFactory.java:181) - Initializing the implicit wait timeout for {} 5
+11:07:22.658 INFO  driver.WebDriverFactory (WebDriverFactory.java:184) - Initializing the page load timeout.
+11:07:22.684 INFO  driver.DriverFactory (DriverFactory.java:125) - Clearing all the cookies.
+11:07:22.720 INFO  driver.DriverFactory (DriverFactory.java:62) - Open the url {} https://qa.smartcmobile.net/SCM_10.0_S-SCP/ using the selenium get() method.
+11:07:38.608 INFO  csp.OutageTests (OutageTests.java:28) - To verify the tests with the below test case id's: C93611, C93612, C93613, C93614
+11:07:38.702 INFO  driver.DriverFactory (DriverFactory.java:62) - Open the url {} https://qa.smartcmobile.net/SCM_10.0_S-CSP/ using the selenium get() method.
+11:07:46.908 INFO  scp.HomePage (HomePage.java:132) - Wait for page loader invisibility.
+11:07:46.911 INFO  driver.Page (    Page.java:250) - Waiting for element to be invisible for 120 seconds.
+11:07:51.975 INFO  driver.Page (    Page.java:253) - Element is invisible from the page.
+11:07:51.975 INFO  csp.AdminLoginPage (AdminLoginPage.java:334) - Checking that the current page is Admin login page.
+11:07:51.975 INFO  driver.Page (    Page.java:40) - Fetching the current URL.
+11:07:51.982 INFO  driver.Page (    Page.java:41) - The Current URL is: https://qa.smartcmobile.net/SCM_10.0_S-CSP/
+11:07:51.988 INFO  driver.Page (    Page.java:46) - Fetching the current title.
+11:07:51.996 INFO  driver.Page (    Page.java:47) - The Current Title is: SCM Admin - Login
+11:07:52.002 INFO  csp.AdminLoginPage (AdminLoginPage.java:337) - The current page is Admin login page {}: true
+11:07:52.005 INFO  csp.AdminLoginPage (AdminLoginPage.java:30) - Populating username {} :qauser
+11:07:52.021 INFO  driver.Page (    Page.java:121) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (8b43d9163815cef83d24f6652809fdf0)] -> css selector: [id='txtAdminLogin']] to be present in the DOM for duration of {} 120
+11:07:52.021 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+11:07:52.060 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+11:07:52.076 INFO  driver.Page (    Page.java:123) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (8b43d9163815cef83d24f6652809fdf0)] -> css selector: [id='txtAdminLogin']] before sending the keys.
+11:07:52.153 INFO  driver.Page (    Page.java:125) - Sending the following keys {} qauser to the element {} [[ChromeDriver: chrome on WINDOWS (8b43d9163815cef83d24f6652809fdf0)] -> css selector: [id='txtAdminLogin']]
+11:07:52.218 INFO  csp.AdminLoginPage (AdminLoginPage.java:32) - Username populated successfully.
+11:07:52.219 INFO  csp.AdminLoginPage (AdminLoginPage.java:54) - Populating password {} :Sew@2021$!
+11:07:52.234 INFO  driver.Page (    Page.java:121) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (8b43d9163815cef83d24f6652809fdf0)] -> css selector: [id='txtpwd']] to be present in the DOM for duration of {} 120
+11:07:52.234 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+11:07:52.266 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+11:07:52.280 INFO  driver.Page (    Page.java:123) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (8b43d9163815cef83d24f6652809fdf0)] -> css selector: [id='txtpwd']] before sending the keys.
+11:07:52.352 INFO  driver.Page (    Page.java:125) - Sending the following keys {} Sew@2021$! to the element {} [[ChromeDriver: chrome on WINDOWS (8b43d9163815cef83d24f6652809fdf0)] -> css selector: [id='txtpwd']]
+11:07:52.447 INFO  csp.AdminLoginPage (AdminLoginPage.java:56) - Password populated successfully.
+11:07:52.447 INFO  driver.Page (    Page.java:59) - Preparing for element to click.
+11:07:52.448 INFO  driver.Page (    Page.java:211) - Waiting for element to be clickable for 120 seconds.
+11:07:52.533 INFO  driver.Page (    Page.java:214) - Element is clickable now.
+11:08:02.765 INFO  driver.Page (    Page.java:62) - Element is clicked successfully.
+11:08:02.767 INFO  csp.AdminLoginPage (AdminLoginPage.java:67) - SignIn Button clicked successfully.
+11:08:02.767 INFO  scp.HomePage (HomePage.java:132) - Wait for page loader invisibility.
+11:08:02.768 INFO  driver.Page (    Page.java:250) - Waiting for element to be invisible for 120 seconds.
+11:08:02.791 INFO  driver.Page (    Page.java:253) - Element is invisible from the page.
+11:08:02.796 INFO  csp.AdminHomePage (AdminHomePage.java:192) - Checking that the current page is Admin Home page.
+11:08:02.797 INFO  driver.Page (    Page.java:40) - Fetching the current URL.
+11:08:02.807 INFO  driver.Page (    Page.java:41) - The Current URL is: https://qa.smartcmobile.net/SCM_10.0_S-CSP/Home.aspx
+11:08:02.814 INFO  driver.Page (    Page.java:46) - Fetching the current title.
+11:08:02.823 INFO  driver.Page (    Page.java:47) - The Current Title is: Dashboard
+11:08:02.830 INFO  csp.AdminHomePage (AdminHomePage.java:195) - The current page is Admin Home page {}: true
+11:08:02.864 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+11:08:02.892 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+11:08:02.892 INFO  csp.AdminHomePage (AdminHomePage.java:60) - Outages Link is Visible on the page.
+11:08:02.892 INFO  driver.Page (    Page.java:527) - Preparing for element to click.
+11:08:10.753 INFO  driver.Page (    Page.java:534) - Element is clicked successfully.
+11:08:10.754 INFO  csp.AdminHomePage (AdminHomePage.java:65) - Outages Link clicked successfully.
+11:08:10.754 INFO  scp.HomePage (HomePage.java:132) - Wait for page loader invisibility.
+11:08:10.754 INFO  driver.Page (    Page.java:250) - Waiting for element to be invisible for 120 seconds.
+11:08:13.868 INFO  driver.Page (    Page.java:253) - Element is invisible from the page.
+11:08:13.869 INFO  scp.HomePage (HomePage.java:183) - Wait for Spinner Loading Image invisibility.
+11:08:13.869 INFO  driver.Page (    Page.java:250) - Waiting for element to be invisible for 120 seconds.
+11:08:18.907 INFO  driver.Page (    Page.java:253) - Element is invisible from the page.
+11:08:18.907 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+11:08:18.932 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+11:08:18.932 INFO  csp.OutagePage (OutagePage.java:231) - Next Button on the Outage List Page is visible
+11:08:18.961 INFO  csp.OutageSteps (OutageSteps.java:152) - Checking that the current page is Outages page.
+11:08:18.961 INFO  driver.Page (    Page.java:40) - Fetching the current URL.
+11:08:18.966 INFO  driver.Page (    Page.java:41) - The Current URL is: https://qa.smartcmobile.net/SCM_10.0_S-CSP/configuration/Outages.aspx
+11:08:18.971 INFO  driver.Page (    Page.java:46) - Fetching the current title.
+11:08:18.974 INFO  driver.Page (    Page.java:47) - The Current Title is: Outage List
+11:08:18.978 INFO  csp.OutageSteps (OutageSteps.java:155) - The current page is Outages page {}: true
+11:08:18.992 INFO  driver.Page (    Page.java:153) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (8b43d9163815cef83d24f6652809fdf0)] -> css selector: .toptb_lnk_outage > a[href='Outages.aspx']] to be visible on the page for duration of {} 120
+11:08:18.992 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+11:08:19.019 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+11:08:19.057 INFO  driver.Page (    Page.java:156) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (8b43d9163815cef83d24f6652809fdf0)] -> css selector: .toptb_lnk_outage > a[href='Outages.aspx']] is OUTAGE
+11:08:19.077 INFO  csp.OutagePage (OutagePage.java:25) - Admin outage page heading is OUTAGE
+11:08:19.119 INFO  driver.Page (    Page.java:278) - Element {} : [[ChromeDriver: chrome on WINDOWS (8b43d9163815cef83d24f6652809fdf0)] -> css selector: a[onclick='openExportDataPopUp()']] is visible on the page.
+11:08:19.120 INFO  csp.OutagePage (OutagePage.java:33) - Admin outage export link visibility status istrue
+11:08:19.133 INFO  driver.Page (    Page.java:153) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (8b43d9163815cef83d24f6652809fdf0)] -> css selector: a[onclick='openExportDataPopUp()']] to be visible on the page for duration of {} 120
+11:08:19.134 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+11:08:19.161 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+11:08:19.206 INFO  driver.Page (    Page.java:156) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (8b43d9163815cef83d24f6652809fdf0)] -> css selector: a[onclick='openExportDataPopUp()']] is Export
+11:08:19.226 INFO  csp.OutagePage (OutagePage.java:39) - Admin outage export link Text is Export
+11:08:19.237 INFO  driver.Page (    Page.java:153) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (8b43d9163815cef83d24f6652809fdf0)] -> id: btnAdd] to be visible on the page for duration of {} 120
+11:08:19.237 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+11:08:19.254 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+11:08:19.274 INFO  driver.Page (    Page.java:156) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (8b43d9163815cef83d24f6652809fdf0)] -> id: btnAdd] is ADD OUTAGE
+11:08:19.285 INFO  csp.OutagePage (OutagePage.java:52) - Add outage link Text is ADD OUTAGE
+11:08:19.294 INFO  driver.Page (    Page.java:153) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (8b43d9163815cef83d24f6652809fdf0)] -> id: demandusagetext] to be visible on the page for duration of {} 120
+11:08:19.294 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+11:08:19.311 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+11:08:19.344 INFO  driver.Page (    Page.java:156) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (8b43d9163815cef83d24f6652809fdf0)] -> id: demandusagetext] is PLANNED OUTAGES
+11:08:19.363 INFO  csp.OutagePage (OutagePage.java:59) - Planned outage tab Text is PLANNED OUTAGES
+11:08:19.379 INFO  driver.Page (    Page.java:153) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (8b43d9163815cef83d24f6652809fdf0)] -> id: unplannedtext] to be visible on the page for duration of {} 120
+11:08:19.379 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+11:08:19.407 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+11:08:19.442 INFO  driver.Page (    Page.java:156) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (8b43d9163815cef83d24f6652809fdf0)] -> id: unplannedtext] is UNPLANNED OUTAGES
+11:08:19.458 INFO  csp.OutagePage (OutagePage.java:66) - Unplanned outage tab Text is UNPLANNED OUTAGES
+11:08:19.470 INFO  driver.Page (    Page.java:153) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (8b43d9163815cef83d24f6652809fdf0)] -> id: totaltext] to be visible on the page for duration of {} 120
+11:08:19.470 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+11:08:19.487 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+11:08:19.509 INFO  driver.Page (    Page.java:156) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (8b43d9163815cef83d24f6652809fdf0)] -> id: totaltext] is TOTAL OUTAGES
+11:08:19.525 INFO  csp.OutagePage (OutagePage.java:73) - Total outage tab Text is TOTAL OUTAGES
+11:08:19.539 INFO  driver.Page (    Page.java:153) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (8b43d9163815cef83d24f6652809fdf0)] -> id: lblplanned] to be visible on the page for duration of {} 120
+11:08:19.539 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+11:08:19.561 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+11:08:19.594 INFO  driver.Page (    Page.java:156) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (8b43d9163815cef83d24f6652809fdf0)] -> id: lblplanned] is 483
+11:08:19.613 INFO  csp.OutagePage (OutagePage.java:80) - Planned Outages Count is 483
+11:08:19.647 INFO  driver.Page (    Page.java:161) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (8b43d9163815cef83d24f6652809fdf0)] -> id: lblunplanned] is 655
+11:08:19.661 INFO  csp.OutagePage (OutagePage.java:87) - Unplanned Outages Count is 655
+11:08:19.670 INFO  driver.Page (    Page.java:153) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (8b43d9163815cef83d24f6652809fdf0)] -> id: lbltotal] to be visible on the page for duration of {} 120
+11:08:19.670 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+11:08:19.685 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+11:08:19.706 INFO  driver.Page (    Page.java:156) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (8b43d9163815cef83d24f6652809fdf0)] -> id: lbltotal] is 1138
+11:08:19.723 INFO  csp.OutagePage (OutagePage.java:94) - Total Outages Count is 1138
+11:08:19.755 INFO  driver.Page (    Page.java:278) - Element {} : [[ChromeDriver: chrome on WINDOWS (8b43d9163815cef83d24f6652809fdf0)] -> id: gridView] is visible on the page.
+11:08:19.756 INFO  csp.OutagePage (OutagePage.java:101) - Grid view tab visibility status istrue
+11:08:19.763 INFO  driver.Page (    Page.java:153) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (8b43d9163815cef83d24f6652809fdf0)] -> id: gridView] to be visible on the page for duration of {} 120
+11:08:19.763 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+11:08:19.788 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+11:08:19.829 INFO  driver.Page (    Page.java:156) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (8b43d9163815cef83d24f6652809fdf0)] -> id: gridView] is GRID VIEW
+11:08:19.848 INFO  csp.OutagePage (OutagePage.java:106) - Grid view tab Label is GRID VIEW
+11:08:19.875 INFO  driver.Page (    Page.java:278) - Element {} : [[ChromeDriver: chrome on WINDOWS (8b43d9163815cef83d24f6652809fdf0)] -> id: mapView] is visible on the page.
+11:08:19.876 INFO  csp.OutagePage (OutagePage.java:114) - Map view tab visibility status istrue
+11:08:19.881 INFO  driver.Page (    Page.java:153) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (8b43d9163815cef83d24f6652809fdf0)] -> id: mapView] to be visible on the page for duration of {} 120
+11:08:19.881 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+11:08:19.894 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+11:08:19.918 INFO  driver.Page (    Page.java:156) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (8b43d9163815cef83d24f6652809fdf0)] -> id: mapView] is MAP VIEW
+11:08:19.930 INFO  csp.OutagePage (OutagePage.java:119) - Map view tab Label is MAP VIEW
+11:08:19.966 INFO  driver.Page (    Page.java:278) - Element {} : [[ChromeDriver: chrome on WINDOWS (8b43d9163815cef83d24f6652809fdf0)] -> id: lnkPlanned] is visible on the page.
+11:08:19.968 INFO  csp.OutagePage (OutagePage.java:126) - Filter Planned outage link on Grid visibility status istrue
+11:08:19.978 INFO  driver.Page (    Page.java:153) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (8b43d9163815cef83d24f6652809fdf0)] -> id: lnkPlanned] to be visible on the page for duration of {} 120
+11:08:19.978 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+11:08:20.012 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+11:08:20.058 INFO  driver.Page (    Page.java:156) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (8b43d9163815cef83d24f6652809fdf0)] -> id: lnkPlanned] is Planned Outages
+11:08:20.075 INFO  csp.OutagePage (OutagePage.java:131) - Filter Planned outage link text on Grid is Planned Outages
+11:08:20.104 INFO  driver.Page (    Page.java:278) - Element {} : [[ChromeDriver: chrome on WINDOWS (8b43d9163815cef83d24f6652809fdf0)] -> id: lnkCurrent] is visible on the page.
+11:08:20.105 INFO  csp.OutagePage (OutagePage.java:145) - Filter Current outage link on Grid visibility status istrue
+11:08:20.111 INFO  driver.Page (    Page.java:153) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (8b43d9163815cef83d24f6652809fdf0)] -> id: lnkCurrent] to be visible on the page for duration of {} 120
+11:08:20.111 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+11:08:20.128 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+11:08:20.172 INFO  driver.Page (    Page.java:156) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (8b43d9163815cef83d24f6652809fdf0)] -> id: lnkCurrent] is Current Outages
+11:08:20.190 INFO  csp.OutagePage (OutagePage.java:150) - Filter Current outage link text on Grid is Current Outages
+11:08:20.241 INFO  driver.Page (    Page.java:278) - Element {} : [[ChromeDriver: chrome on WINDOWS (8b43d9163815cef83d24f6652809fdf0)] -> id: lnkUnplan] is visible on the page.
+11:08:20.241 INFO  csp.OutagePage (OutagePage.java:162) - Filter Unplanned outage link on Grid visibility status istrue
+11:08:20.259 INFO  driver.Page (    Page.java:153) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (8b43d9163815cef83d24f6652809fdf0)] -> id: lnkUnplan] to be visible on the page for duration of {} 120
+11:08:20.260 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+11:08:20.280 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+11:08:20.310 INFO  driver.Page (    Page.java:156) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (8b43d9163815cef83d24f6652809fdf0)] -> id: lnkUnplan] is Unplanned Outages
+11:08:20.328 INFO  csp.OutagePage (OutagePage.java:167) - Filter Unplanned outage link text on Grid is Unplanned Outages
+11:08:20.328 INFO  driver.Page (    Page.java:527) - Preparing for element to click.
+11:08:20.389 INFO  driver.Page (    Page.java:534) - Element is clicked successfully.
+11:08:20.390 INFO  csp.OutagePage (OutagePage.java:173) - Filter Unplanned outage link clicked successfully.
+11:08:20.390 INFO  scp.HomePage (HomePage.java:183) - Wait for Spinner Loading Image invisibility.
+11:08:20.390 INFO  driver.Page (    Page.java:250) - Waiting for element to be invisible for 120 seconds.
+11:08:27.413 INFO  driver.Page (    Page.java:253) - Element is invisible from the page.
+11:08:27.473 INFO  driver.Page (    Page.java:153) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (8b43d9163815cef83d24f6652809fdf0)] -> css selector: #OutageGrid_info] to be visible on the page for duration of {} 120
+11:08:27.473 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+11:08:27.496 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+11:08:27.529 INFO  driver.Page (    Page.java:156) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (8b43d9163815cef83d24f6652809fdf0)] -> css selector: #OutageGrid_info] is Showing 1 to 10 of 655 entries
+11:08:27.549 INFO  csp.OutagePage (OutagePage.java:411) - Showing Entries Label Value is Showing 1 to 10 of 655 entries
+11:08:27.549 INFO  driver.Page (    Page.java:527) - Preparing for element to click.
+11:08:27.572 INFO  driver.Page (    Page.java:534) - Element is clicked successfully.
+11:08:27.572 INFO  csp.OutagePage (OutagePage.java:136) - Filter Planned outage link clicked successfully.
+11:08:27.572 INFO  scp.HomePage (HomePage.java:183) - Wait for Spinner Loading Image invisibility.
+11:08:27.572 INFO  driver.Page (    Page.java:250) - Waiting for element to be invisible for 120 seconds.
+11:08:34.321 INFO  driver.Page (    Page.java:253) - Element is invisible from the page.
+11:08:34.342 INFO  driver.Page (    Page.java:153) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (8b43d9163815cef83d24f6652809fdf0)] -> css selector: #OutageGrid_info] to be visible on the page for duration of {} 120
+11:08:34.342 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+11:08:34.356 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+11:08:34.375 INFO  driver.Page (    Page.java:156) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (8b43d9163815cef83d24f6652809fdf0)] -> css selector: #OutageGrid_info] is Showing 1 to 10 of 483 entries
+11:08:34.387 INFO  csp.OutagePage (OutagePage.java:411) - Showing Entries Label Value is Showing 1 to 10 of 483 entries
+11:08:34.410 INFO  driver.Page (    Page.java:278) - Element {} : [[ChromeDriver: chrome on WINDOWS (8b43d9163815cef83d24f6652809fdf0)] -> id: lnkAll] is visible on the page.
+11:08:34.410 INFO  csp.OutagePage (OutagePage.java:183) - View all filter link on Grid visibility status istrue
+11:08:34.418 INFO  driver.Page (    Page.java:153) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (8b43d9163815cef83d24f6652809fdf0)] -> id: lnkAll] to be visible on the page for duration of {} 120
+11:08:34.418 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+11:08:34.434 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+11:08:34.457 INFO  driver.Page (    Page.java:156) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (8b43d9163815cef83d24f6652809fdf0)] -> id: lnkAll] is View All
+11:08:34.476 INFO  csp.OutagePage (OutagePage.java:188) - View all filter link text on Grid is View All
+11:08:34.476 INFO  driver.Page (    Page.java:527) - Preparing for element to click.
+11:08:34.511 INFO  driver.Page (    Page.java:534) - Element is clicked successfully.
+11:08:34.511 INFO  csp.OutagePage (OutagePage.java:193) - View all filter link clicked successfully.
+11:08:34.512 INFO  scp.HomePage (HomePage.java:183) - Wait for Spinner Loading Image invisibility.
+11:08:34.512 INFO  driver.Page (    Page.java:250) - Waiting for element to be invisible for 120 seconds.
+11:08:42.981 INFO  driver.Page (    Page.java:253) - Element is invisible from the page.
+11:08:43.015 INFO  driver.Page (    Page.java:153) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (8b43d9163815cef83d24f6652809fdf0)] -> css selector: #OutageGrid_info] to be visible on the page for duration of {} 120
+11:08:43.015 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+11:08:43.033 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+11:08:43.062 INFO  driver.Page (    Page.java:156) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (8b43d9163815cef83d24f6652809fdf0)] -> css selector: #OutageGrid_info] is Showing 1 to 10 of 1,138 entries
+11:08:43.081 INFO  csp.OutagePage (OutagePage.java:411) - Showing Entries Label Value is Showing 1 to 10 of 1,138 entries
+11:08:43.081 INFO  driver.Page (    Page.java:59) - Preparing for element to click.
+11:08:43.082 INFO  driver.Page (    Page.java:211) - Waiting for element to be clickable for 120 seconds.
+11:08:43.310 INFO  driver.Page (    Page.java:214) - Element is clickable now.
+11:08:43.365 INFO  driver.Page (    Page.java:62) - Element is clicked successfully.
+11:08:43.366 INFO  csp.AdminHomePage (AdminHomePage.java:104) - Admin User Profile dropdown clicked successfully.
+11:08:43.366 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+11:08:43.395 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+11:08:43.396 INFO  csp.AdminHomePage (AdminHomePage.java:36) - SignOut Link is Visible on the page.
+11:08:43.396 INFO  driver.Page (    Page.java:59) - Preparing for element to click.
+11:08:43.396 INFO  driver.Page (    Page.java:211) - Waiting for element to be clickable for 120 seconds.
+11:08:43.428 INFO  driver.Page (    Page.java:214) - Element is clickable now.
+11:08:46.397 INFO  driver.Page (    Page.java:62) - Element is clicked successfully.
+11:08:46.398 INFO  csp.AdminHomePage (AdminHomePage.java:40) - Admin User SignOut Link clicked successfully.
+11:08:46.398 INFO  scp.HomePage (HomePage.java:132) - Wait for page loader invisibility.
+11:08:46.398 INFO  driver.Page (    Page.java:250) - Waiting for element to be invisible for 120 seconds.
+11:08:51.431 INFO  driver.Page (    Page.java:253) - Element is invisible from the page.
+11:08:51.431 INFO  csp.OutageTests (OutageTests.java:48) - Test Case execution for - verifyObjectsAdminOutagePage - is Completed.
+11:08:54.756 INFO  driver.DriverFactory (DriverFactory.java:125) - Clearing all the cookies.
+11:58:07.822 INFO  runner.TestRunner (TestRunner.java:32) - Initializing application properties config file.
+11:58:07.839 INFO  runner.TestRunner (TestRunner.java:35) - Initializing connection to the base database.
+11:58:08.342 WARN  config.DatabaseConfiguration (DatabaseConfiguration.java:84) - QA env being used by default. No env property set. This can be set in the sentinel.yml config file with a '{}=' property or on the command line with the switch '-D{}='.
+11:58:10.190 INFO  runner.TestRunner (TestRunner.java:38) - Initializing resource path config file.
+11:58:10.199 INFO  runner.TestRunner (TestRunner.java:41) - Initializing usage months config from CSP.
+11:58:11.127 INFO  runner.TestRunner (TestRunner.java:44) - Initializing date config from CSP.
+11:58:11.880 INFO  runner.TestRunner (TestRunner.java:47) - Initializing language config from CSP.
+11:58:12.622 INFO  runner.TestRunner (TestRunner.java:50) - Initializing language config from CSP.
+11:58:13.391 INFO  runner.TestRunner (TestRunner.java:53) - Initializing language config from CSP.
+11:58:14.142 INFO  runner.TestRunner (TestRunner.java:56) - Initializing user model config.
+11:58:14.218 WARN  config.Configuration (Configuration.java:231) - QA env being used by default. No env property set. This can be set in the sew.app.yml config file with a '{}=' property or on the command line with the switch '-D{}='.
+11:58:20.472 INFO  runner.TestRunner (TestRunner.java:59) - Initializing auth token config.
+11:58:20.473 INFO  runner.TestRunner (TestRunner.java:62) - Initializing Admin User config.
+11:58:22.248 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 1
+11:58:22.255 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 2
+11:58:22.257 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 3
+11:58:22.257 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 4
+11:58:22.258 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 5
+11:58:22.259 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 6
+11:58:22.259 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 7
+11:58:22.260 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 8
+11:58:22.261 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 9
+11:58:22.262 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 10
+11:58:22.262 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 11
+11:58:22.263 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 12
+11:58:22.264 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 13
+11:58:22.265 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 14
+11:58:22.265 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 15
+11:58:22.266 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 16
+11:58:22.266 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 17
+11:58:22.267 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 18
+11:58:22.268 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 19
+11:58:22.268 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 20
+11:58:22.269 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 21
+11:58:22.269 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 22
+11:58:22.269 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 23
+11:58:22.270 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 24
+11:58:22.270 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 25
+11:58:22.271 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 26
+11:58:22.272 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 27
+11:58:22.272 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 28
+11:58:22.273 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 29
+11:58:22.273 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 30
+11:58:22.274 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 31
+11:58:22.274 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 32
+11:58:22.275 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 33
+11:58:22.276 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 34
+11:58:22.276 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 35
+11:58:22.277 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 36
+11:58:22.278 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 37
+11:58:22.278 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 38
+11:58:22.279 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 39
+11:58:22.279 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 40
+11:58:22.280 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 41
+11:58:22.280 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 42
+11:58:22.281 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 43
+11:58:22.282 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 44
+11:58:22.282 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 45
+11:58:22.283 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 46
+11:58:22.284 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 47
+11:58:22.284 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 48
+11:58:22.285 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 49
+11:58:22.285 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 50
+11:58:22.285 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 51
+11:58:22.286 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 52
+11:58:22.286 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 53
+11:58:22.287 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 54
+11:58:22.288 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 55
+11:58:22.288 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 56
+11:58:22.289 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 57
+11:58:22.289 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 58
+11:58:22.290 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 59
+11:58:22.290 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 60
+11:58:22.291 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 61
+11:58:22.291 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 62
+11:58:22.291 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 63
+11:58:22.292 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 64
+11:58:22.292 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 65
+11:58:22.293 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 66
+11:58:22.293 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 67
+11:58:22.294 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 68
+11:58:22.294 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 69
+11:58:22.295 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 70
+11:58:22.295 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 71
+11:58:22.295 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 72
+11:58:22.296 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 73
+11:58:22.296 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 74
+11:58:22.297 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 75
+11:58:22.297 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 76
+11:58:22.298 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 77
+11:58:22.299 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 78
+11:58:22.300 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 79
+11:58:22.301 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 80
+11:58:22.301 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 81
+11:58:22.302 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 82
+11:58:22.302 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 83
+11:58:22.303 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 84
+11:58:29.540 INFO  driver.WebDriverFactory (WebDriverFactory.java:192) - Setting up the browser window to its max.
+11:58:29.931 INFO  driver.WebDriverFactory (WebDriverFactory.java:181) - Initializing the implicit wait timeout for {} 5
+11:58:29.939 INFO  driver.WebDriverFactory (WebDriverFactory.java:184) - Initializing the page load timeout.
+11:58:29.943 INFO  driver.DriverFactory (DriverFactory.java:125) - Clearing all the cookies.
+11:58:29.970 INFO  driver.DriverFactory (DriverFactory.java:62) - Open the url {} https://qa.smartcmobile.net/SCM_10.0_S-SCP/ using the selenium get() method.
+11:58:45.329 INFO  csp.OutageTests (OutageTests.java:55) - To verify the tests with the below test case id's: C93616, C93617, C93618, C93619, C93620
+11:58:45.432 INFO  driver.DriverFactory (DriverFactory.java:62) - Open the url {} https://qa.smartcmobile.net/SCM_10.0_S-CSP/ using the selenium get() method.
+11:58:52.793 INFO  scp.HomePage (HomePage.java:132) - Wait for page loader invisibility.
+11:58:52.795 INFO  driver.Page (    Page.java:250) - Waiting for element to be invisible for 120 seconds.
+11:58:57.889 INFO  driver.Page (    Page.java:253) - Element is invisible from the page.
+11:58:57.889 INFO  csp.AdminLoginPage (AdminLoginPage.java:334) - Checking that the current page is Admin login page.
+11:58:57.889 INFO  driver.Page (    Page.java:40) - Fetching the current URL.
+11:58:57.896 INFO  driver.Page (    Page.java:41) - The Current URL is: https://qa.smartcmobile.net/SCM_10.0_S-CSP/
+11:58:57.903 INFO  driver.Page (    Page.java:46) - Fetching the current title.
+11:58:57.911 INFO  driver.Page (    Page.java:47) - The Current Title is: SCM Admin - Login
+11:58:57.919 INFO  csp.AdminLoginPage (AdminLoginPage.java:337) - The current page is Admin login page {}: true
+11:58:57.922 INFO  csp.AdminLoginPage (AdminLoginPage.java:30) - Populating username {} :qauser
+11:58:57.941 INFO  driver.Page (    Page.java:121) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (c812b9e6fe18da596df24286cb527ef1)] -> css selector: [id='txtAdminLogin']] to be present in the DOM for duration of {} 120
+11:58:57.941 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+11:58:57.983 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+11:58:57.994 INFO  driver.Page (    Page.java:123) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (c812b9e6fe18da596df24286cb527ef1)] -> css selector: [id='txtAdminLogin']] before sending the keys.
+11:58:58.059 INFO  driver.Page (    Page.java:125) - Sending the following keys {} qauser to the element {} [[ChromeDriver: chrome on WINDOWS (c812b9e6fe18da596df24286cb527ef1)] -> css selector: [id='txtAdminLogin']]
+11:58:58.119 INFO  csp.AdminLoginPage (AdminLoginPage.java:32) - Username populated successfully.
+11:58:58.120 INFO  csp.AdminLoginPage (AdminLoginPage.java:54) - Populating password {} :Sew@2021$!
+11:58:58.140 INFO  driver.Page (    Page.java:121) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (c812b9e6fe18da596df24286cb527ef1)] -> css selector: [id='txtpwd']] to be present in the DOM for duration of {} 120
+11:58:58.141 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+11:58:58.180 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+11:58:58.205 INFO  driver.Page (    Page.java:123) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (c812b9e6fe18da596df24286cb527ef1)] -> css selector: [id='txtpwd']] before sending the keys.
+11:58:58.284 INFO  driver.Page (    Page.java:125) - Sending the following keys {} Sew@2021$! to the element {} [[ChromeDriver: chrome on WINDOWS (c812b9e6fe18da596df24286cb527ef1)] -> css selector: [id='txtpwd']]
+11:58:58.391 INFO  csp.AdminLoginPage (AdminLoginPage.java:56) - Password populated successfully.
+11:58:58.392 INFO  driver.Page (    Page.java:59) - Preparing for element to click.
+11:58:58.393 INFO  driver.Page (    Page.java:211) - Waiting for element to be clickable for 120 seconds.
+11:58:58.476 INFO  driver.Page (    Page.java:214) - Element is clickable now.
+11:59:17.900 INFO  driver.Page (    Page.java:62) - Element is clicked successfully.
+11:59:17.900 INFO  csp.AdminLoginPage (AdminLoginPage.java:67) - SignIn Button clicked successfully.
+11:59:17.900 INFO  scp.HomePage (HomePage.java:132) - Wait for page loader invisibility.
+11:59:17.901 INFO  driver.Page (    Page.java:250) - Waiting for element to be invisible for 120 seconds.
+11:59:17.927 INFO  driver.Page (    Page.java:253) - Element is invisible from the page.
+11:59:17.932 INFO  csp.AdminHomePage (AdminHomePage.java:192) - Checking that the current page is Admin Home page.
+11:59:17.933 INFO  driver.Page (    Page.java:40) - Fetching the current URL.
+11:59:17.938 INFO  driver.Page (    Page.java:41) - The Current URL is: https://qa.smartcmobile.net/SCM_10.0_S-CSP/Home.aspx
+11:59:17.943 INFO  driver.Page (    Page.java:46) - Fetching the current title.
+11:59:17.949 INFO  driver.Page (    Page.java:47) - The Current Title is: Dashboard
+11:59:17.954 INFO  csp.AdminHomePage (AdminHomePage.java:195) - The current page is Admin Home page {}: true
+11:59:17.970 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+11:59:18.001 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+11:59:18.001 INFO  csp.AdminHomePage (AdminHomePage.java:60) - Outages Link is Visible on the page.
+11:59:18.001 INFO  driver.Page (    Page.java:527) - Preparing for element to click.
+11:59:26.741 INFO  driver.Page (    Page.java:534) - Element is clicked successfully.
+11:59:26.741 INFO  csp.AdminHomePage (AdminHomePage.java:65) - Outages Link clicked successfully.
+11:59:26.741 INFO  scp.HomePage (HomePage.java:132) - Wait for page loader invisibility.
+11:59:26.741 INFO  driver.Page (    Page.java:250) - Waiting for element to be invisible for 120 seconds.
+11:59:30.466 INFO  driver.Page (    Page.java:253) - Element is invisible from the page.
+11:59:30.466 INFO  scp.HomePage (HomePage.java:183) - Wait for Spinner Loading Image invisibility.
+11:59:30.466 INFO  driver.Page (    Page.java:250) - Waiting for element to be invisible for 120 seconds.
+11:59:35.492 INFO  driver.Page (    Page.java:253) - Element is invisible from the page.
+11:59:35.493 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+11:59:35.525 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+11:59:35.525 INFO  csp.OutagePage (OutagePage.java:233) - Next Button on the Outage List Page is visible
+11:59:35.541 INFO  csp.OutageSteps (OutageSteps.java:163) - Checking that the current page is Outages page.
+11:59:35.541 INFO  driver.Page (    Page.java:40) - Fetching the current URL.
+11:59:35.550 INFO  driver.Page (    Page.java:41) - The Current URL is: https://qa.smartcmobile.net/SCM_10.0_S-CSP/configuration/Outages.aspx
+11:59:35.557 INFO  driver.Page (    Page.java:46) - Fetching the current title.
+11:59:35.564 INFO  driver.Page (    Page.java:47) - The Current Title is: Outage List
+11:59:35.570 INFO  csp.OutageSteps (OutageSteps.java:166) - The current page is Outages page {}: true
+11:59:35.787 INFO  driver.Page (    Page.java:549) - The list contains the following values : [ACTION, OUTAGE ID, OUTAGE TITLE, OUTAGE TYPE, OUTAGE STATUS, ETR, LAST UPDATED, OUTAGE INFORMATION]
+11:59:35.796 INFO  driver.Page (    Page.java:59) - Preparing for element to click.
+11:59:35.797 INFO  driver.Page (    Page.java:211) - Waiting for element to be clickable for 120 seconds.
+11:59:35.851 INFO  driver.Page (    Page.java:214) - Element is clickable now.
+11:59:35.900 INFO  driver.Page (    Page.java:62) - Element is clicked successfully.
+11:59:35.900 INFO  csp.AdminHomePage (AdminHomePage.java:104) - Admin User Profile dropdown clicked successfully.
+11:59:35.900 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+11:59:35.943 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+11:59:35.944 INFO  csp.AdminHomePage (AdminHomePage.java:36) - SignOut Link is Visible on the page.
+11:59:35.944 INFO  driver.Page (    Page.java:59) - Preparing for element to click.
+11:59:35.944 INFO  driver.Page (    Page.java:211) - Waiting for element to be clickable for 120 seconds.
+11:59:36.001 INFO  driver.Page (    Page.java:214) - Element is clickable now.
+11:59:39.488 INFO  driver.Page (    Page.java:62) - Element is clicked successfully.
+11:59:39.488 INFO  csp.AdminHomePage (AdminHomePage.java:40) - Admin User SignOut Link clicked successfully.
+11:59:39.489 INFO  scp.HomePage (HomePage.java:132) - Wait for page loader invisibility.
+11:59:39.489 INFO  driver.Page (    Page.java:250) - Waiting for element to be invisible for 120 seconds.
+11:59:44.538 INFO  driver.Page (    Page.java:253) - Element is invisible from the page.
+11:59:44.539 INFO  csp.OutageTests (OutageTests.java:75) - Test Case execution for - verifySelectedOutageDetails - is Completed.
+11:59:48.357 INFO  driver.DriverFactory (DriverFactory.java:125) - Clearing all the cookies.

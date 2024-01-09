@@ -1,0 +1,302 @@
+19:27:35.576 INFO  driver.Page (    Page.java:61) - Element is clicked successfully.
+19:27:35.588 INFO  pageobjects.myAccountPage (myAccountPage.java:48) - LogIn Button clicked successfully.
+19:27:39.325 INFO  driver.Page (    Page.java:305) - Element {} : [[ChromeDriver: chrome on windows (37feab5225e982b7e48b0addb1b4a2f0)] -> xpath: //*[@id='dtHome']] is visible on the page.
+19:27:49.338 INFO  driver.Page (    Page.java:257) - Waiting for element to be visible for 120 seconds.
+19:27:49.417 INFO  driver.Page (    Page.java:260) - Element is visible on the page.
+19:27:49.417 INFO  driver.Page (    Page.java:569) - Preparing for element to click.
+19:27:49.553 INFO  driver.Page (    Page.java:576) - Element is clicked successfully.
+19:27:49.553 INFO  pageobjects.myAccountPage (myAccountPage.java:65) - Account dropdown clicked successfully.
+19:27:52.897 INFO  driver.Page (    Page.java:58) - Preparing for element to click.
+19:27:52.897 INFO  driver.Page (    Page.java:232) - Waiting for element to be clickable for 120 seconds.
+19:27:53.033 INFO  driver.Page (    Page.java:235) - Element is clickable now.
+19:27:53.395 INFO  driver.Page (    Page.java:61) - Element is clicked successfully.
+19:27:53.395 INFO  pageobjects.myAccountPage (myAccountPage.java:561) -  Notification Preference Option Clicked successfully. 
+19:27:54.958 INFO  driver.Page (    Page.java:569) - Preparing for element to click.
+19:27:55.160 INFO  driver.Page (    Page.java:576) - Element is clicked successfully.
+19:27:55.166 INFO  pageobjects.myAccountPage (myAccountPage.java:569) -  Daily Usg Alert Dwn Arrow Clicked successfully. 
+19:27:56.755 INFO  driver.Page (    Page.java:569) - Preparing for element to click.
+19:28:01.855 INFO  driver.Page (    Page.java:576) - Element is clicked successfully.
+19:28:01.855 INFO  pageobjects.myAccountPage (myAccountPage.java:577) -  Daily Usg Alert Email Chkbox Clicked successfully. 
+19:28:03.408 INFO  driver.Page (    Page.java:569) - Preparing for element to click.
+19:28:03.607 INFO  driver.Page (    Page.java:576) - Element is clicked successfully.
+19:28:03.609 INFO  pageobjects.myAccountPage (myAccountPage.java:585) -  Daily Usg Alert Email Save Opt Clicked successfully. 
+19:28:09.767 INFO  driver.Page (    Page.java:569) - Preparing for element to click.
+19:28:10.211 INFO  driver.Page (    Page.java:576) - Element is clicked successfully.
+19:28:10.211 INFO  pageobjects.myAccountPage (myAccountPage.java:593) -  Edit Quiet Hrs Button Clicked successfully. 
+19:28:11.740 INFO  driver.Page (    Page.java:569) - Preparing for element to click.
+19:28:11.936 INFO  driver.Page (    Page.java:576) - Element is clicked successfully.
+19:28:11.936 INFO  pageobjects.myAccountPage (myAccountPage.java:602) -  Enable Quiet Hrs Chkbox Clicked successfully. 
+19:28:13.495 INFO  driver.Page (    Page.java:569) - Preparing for element to click.
+19:28:13.731 INFO  driver.Page (    Page.java:576) - Element is clicked successfully.
+19:28:13.731 INFO  pageobjects.myAccountPage (myAccountPage.java:611) -  Enable Quiet Hrs Save Opt Clicked successfully. 
+19:28:18.483 INFO  driver.DriverFactory (DriverFactory.java:125) - Clearing all the cookies.
+19:28:28.133 INFO  driver.WebDriverFactory (WebDriverFactory.java:192) - Setting up the browser window to its max.
+19:28:28.280 INFO  driver.WebDriverFactory (WebDriverFactory.java:181) - Initializing the implicit wait timeout for {} 5
+19:28:28.287 INFO  driver.WebDriverFactory (WebDriverFactory.java:184) - Initializing the page load timeout.
+19:28:28.290 INFO  driver.DriverFactory (DriverFactory.java:125) - Clearing all the cookies.
+19:28:28.311 INFO  driver.DriverFactory (DriverFactory.java:62) - Open the url {} https://u2-alectra.smartcmobile.net/portal/#/login using the selenium get() method.
+19:28:34.736 INFO  scp.myAccountTests (myAccountTests.java:66) - To perform sanity on Payment Information Submodule
+19:28:43.450 INFO  pageobjects.myAccountPage (myAccountPage.java:29) - Populating User Name {} :0023826434
+19:28:43.831 INFO  driver.Page (    Page.java:129) - Wait for element {} [[ChromeDriver: chrome on windows (6d3d9724122f7a8fb510493810d19b62)] -> xpath: //*[@id='username']] to be present in the DOM for duration of {} 120
+19:28:43.831 INFO  driver.Page (    Page.java:257) - Waiting for element to be visible for 120 seconds.
+19:28:44.091 INFO  driver.Page (    Page.java:260) - Element is visible on the page.
+19:28:44.109 INFO  driver.Page (    Page.java:131) - Clearing the element {} [[ChromeDriver: chrome on windows (6d3d9724122f7a8fb510493810d19b62)] -> xpath: //*[@id='username']] before sending the keys.
+19:28:44.326 INFO  driver.Page (    Page.java:133) - Sending the following keys {} 0023826434 to the element {} [[ChromeDriver: chrome on windows (6d3d9724122f7a8fb510493810d19b62)] -> xpath: //*[@id='username']]
+19:28:44.824 INFO  pageobjects.myAccountPage (myAccountPage.java:31) - User Username populated successfully.
+19:28:44.825 INFO  pageobjects.myAccountPage (myAccountPage.java:38) - Populating Password {} :Demo@123
+19:28:44.857 INFO  driver.Page (    Page.java:129) - Wait for element {} [[ChromeDriver: chrome on windows (6d3d9724122f7a8fb510493810d19b62)] -> xpath: //*[@id='password']] to be present in the DOM for duration of {} 120
+19:28:44.858 INFO  driver.Page (    Page.java:257) - Waiting for element to be visible for 120 seconds.
+19:28:44.920 INFO  driver.Page (    Page.java:260) - Element is visible on the page.
+19:28:44.940 INFO  driver.Page (    Page.java:131) - Clearing the element {} [[ChromeDriver: chrome on windows (6d3d9724122f7a8fb510493810d19b62)] -> xpath: //*[@id='password']] before sending the keys.
+19:28:45.044 INFO  driver.Page (    Page.java:133) - Sending the following keys {} Demo@123 to the element {} [[ChromeDriver: chrome on windows (6d3d9724122f7a8fb510493810d19b62)] -> xpath: //*[@id='password']]
+19:28:45.246 INFO  pageobjects.myAccountPage (myAccountPage.java:40) - Password populated successfully.
+19:28:45.252 INFO  driver.Page (    Page.java:58) - Preparing for element to click.
+19:28:45.252 INFO  driver.Page (    Page.java:232) - Waiting for element to be clickable for 120 seconds.
+19:28:45.433 INFO  driver.Page (    Page.java:235) - Element is clickable now.
+19:28:45.861 INFO  driver.Page (    Page.java:61) - Element is clicked successfully.
+19:28:45.861 INFO  pageobjects.myAccountPage (myAccountPage.java:48) - LogIn Button clicked successfully.
+19:29:03.959 INFO  driver.Page (    Page.java:257) - Waiting for element to be visible for 120 seconds.
+19:29:04.015 INFO  driver.Page (    Page.java:260) - Element is visible on the page.
+19:29:04.015 INFO  driver.Page (    Page.java:569) - Preparing for element to click.
+19:29:04.108 INFO  driver.Page (    Page.java:576) - Element is clicked successfully.
+19:29:04.109 INFO  pageobjects.myAccountPage (myAccountPage.java:65) - Account dropdown clicked successfully.
+19:29:04.109 INFO  driver.Page (    Page.java:58) - Preparing for element to click.
+19:29:04.109 INFO  driver.Page (    Page.java:232) - Waiting for element to be clickable for 120 seconds.
+19:29:04.191 INFO  driver.Page (    Page.java:235) - Element is clickable now.
+19:29:04.382 INFO  driver.Page (    Page.java:61) - Element is clicked successfully.
+19:29:04.382 INFO  pageobjects.myAccountPage (myAccountPage.java:619) - Payment information hyperlink clicked successfully.
+19:29:05.916 INFO  driver.Page (    Page.java:58) - Preparing for element to click.
+19:29:05.917 INFO  driver.Page (    Page.java:232) - Waiting for element to be clickable for 120 seconds.
+19:29:06.048 INFO  driver.Page (    Page.java:235) - Element is clickable now.
+19:29:06.268 INFO  driver.Page (    Page.java:61) - Element is clicked successfully.
+19:29:06.268 INFO  pageobjects.myAccountPage (myAccountPage.java:628) - Add Payment hyperlink clicked successfully.
+19:29:07.805 INFO  pageobjects.myAccountPage (myAccountPage.java:635) - Populating Name on the card {} :DummyCardTest
+19:29:07.833 INFO  driver.Page (    Page.java:129) - Wait for element {} [[ChromeDriver: chrome on windows (6d3d9724122f7a8fb510493810d19b62)] -> xpath: //*[@id="NameOnCard"]] to be present in the DOM for duration of {} 120
+19:29:07.834 INFO  driver.Page (    Page.java:257) - Waiting for element to be visible for 120 seconds.
+19:29:07.877 INFO  driver.Page (    Page.java:260) - Element is visible on the page.
+19:29:07.896 INFO  driver.Page (    Page.java:131) - Clearing the element {} [[ChromeDriver: chrome on windows (6d3d9724122f7a8fb510493810d19b62)] -> xpath: //*[@id="NameOnCard"]] before sending the keys.
+19:29:08.009 INFO  driver.Page (    Page.java:133) - Sending the following keys {} DummyCardTest to the element {} [[ChromeDriver: chrome on windows (6d3d9724122f7a8fb510493810d19b62)] -> xpath: //*[@id="NameOnCard"]]
+19:29:08.260 INFO  pageobjects.myAccountPage (myAccountPage.java:637) - Name on the card populated successfully.
+19:29:08.260 INFO  pageobjects.myAccountPage (myAccountPage.java:652) - Populating Card number {} :371100001000131
+19:29:08.288 INFO  driver.Page (    Page.java:129) - Wait for element {} [[ChromeDriver: chrome on windows (6d3d9724122f7a8fb510493810d19b62)] -> xpath: //*[@id='cardNumber']] to be present in the DOM for duration of {} 120
+19:29:08.289 INFO  driver.Page (    Page.java:257) - Waiting for element to be visible for 120 seconds.
+19:29:08.320 INFO  driver.Page (    Page.java:260) - Element is visible on the page.
+19:29:08.339 INFO  driver.Page (    Page.java:131) - Clearing the element {} [[ChromeDriver: chrome on windows (6d3d9724122f7a8fb510493810d19b62)] -> xpath: //*[@id='cardNumber']] before sending the keys.
+19:29:08.421 INFO  driver.Page (    Page.java:133) - Sending the following keys {} 371100001000131 to the element {} [[ChromeDriver: chrome on windows (6d3d9724122f7a8fb510493810d19b62)] -> xpath: //*[@id='cardNumber']]
+19:29:08.762 INFO  pageobjects.myAccountPage (myAccountPage.java:654) - Card number populated successfully.
+19:29:08.765 INFO  pageobjects.myAccountPage (myAccountPage.java:670) - Populating CVV {} :1234
+19:29:08.790 INFO  driver.Page (    Page.java:129) - Wait for element {} [[ChromeDriver: chrome on windows (6d3d9724122f7a8fb510493810d19b62)] -> xpath: //*[@id='securityCode']] to be present in the DOM for duration of {} 120
+19:29:08.791 INFO  driver.Page (    Page.java:257) - Waiting for element to be visible for 120 seconds.
+19:29:08.825 INFO  driver.Page (    Page.java:260) - Element is visible on the page.
+19:29:08.842 INFO  driver.Page (    Page.java:131) - Clearing the element {} [[ChromeDriver: chrome on windows (6d3d9724122f7a8fb510493810d19b62)] -> xpath: //*[@id='securityCode']] before sending the keys.
+19:29:08.945 INFO  driver.Page (    Page.java:133) - Sending the following keys {} 1234 to the element {} [[ChromeDriver: chrome on windows (6d3d9724122f7a8fb510493810d19b62)] -> xpath: //*[@id='securityCode']]
+19:29:09.109 INFO  pageobjects.myAccountPage (myAccountPage.java:672) - CVV populated successfully.
+19:29:09.109 INFO  driver.Page (    Page.java:58) - Preparing for element to click.
+19:29:09.109 INFO  driver.Page (    Page.java:232) - Waiting for element to be clickable for 120 seconds.
+19:29:09.200 INFO  driver.Page (    Page.java:235) - Element is clickable now.
+19:29:09.363 INFO  driver.Page (    Page.java:61) - Element is clicked successfully.
+19:29:09.363 INFO  pageobjects.myAccountPage (myAccountPage.java:699) - Month clicked successfully.
+19:29:09.363 INFO  driver.Page (    Page.java:58) - Preparing for element to click.
+19:29:09.363 INFO  driver.Page (    Page.java:232) - Waiting for element to be clickable for 120 seconds.
+19:29:09.523 INFO  driver.Page (    Page.java:235) - Element is clickable now.
+19:29:09.650 INFO  driver.Page (    Page.java:61) - Element is clicked successfully.
+19:29:09.650 INFO  pageobjects.myAccountPage (myAccountPage.java:708) - Month selected successfully.
+19:29:09.650 INFO  driver.Page (    Page.java:58) - Preparing for element to click.
+19:29:09.650 INFO  driver.Page (    Page.java:232) - Waiting for element to be clickable for 120 seconds.
+19:29:09.740 INFO  driver.Page (    Page.java:235) - Element is clickable now.
+19:29:10.064 INFO  driver.Page (    Page.java:61) - Element is clicked successfully.
+19:29:10.064 INFO  pageobjects.myAccountPage (myAccountPage.java:717) - Year clicked successfully.
+19:29:10.064 INFO  driver.Page (    Page.java:58) - Preparing for element to click.
+19:29:10.064 INFO  driver.Page (    Page.java:232) - Waiting for element to be clickable for 120 seconds.
+19:29:10.223 INFO  driver.Page (    Page.java:235) - Element is clickable now.
+19:29:10.646 INFO  driver.Page (    Page.java:61) - Element is clicked successfully.
+19:29:10.646 INFO  pageobjects.myAccountPage (myAccountPage.java:726) - Year selected successfully.
+19:29:10.646 INFO  driver.Page (    Page.java:58) - Preparing for element to click.
+19:29:10.646 INFO  driver.Page (    Page.java:232) - Waiting for element to be clickable for 120 seconds.
+19:29:11.217 INFO  driver.Page (    Page.java:235) - Element is clickable now.
+19:29:11.334 INFO  driver.Page (    Page.java:61) - Element is clicked successfully.
+19:29:11.336 INFO  pageobjects.myAccountPage (myAccountPage.java:735) - Save Button successfully.
+19:29:24.077 INFO  driver.Page (    Page.java:58) - Preparing for element to click.
+19:29:24.077 INFO  driver.Page (    Page.java:232) - Waiting for element to be clickable for 120 seconds.
+19:29:24.283 INFO  driver.Page (    Page.java:235) - Element is clickable now.
+19:29:24.475 INFO  driver.Page (    Page.java:61) - Element is clicked successfully.
+19:29:24.475 INFO  pageobjects.myAccountPage (myAccountPage.java:767) - Payment Three dot icon clicked successfully.
+19:29:26.008 INFO  driver.Page (    Page.java:58) - Preparing for element to click.
+19:29:26.008 INFO  driver.Page (    Page.java:232) - Waiting for element to be clickable for 120 seconds.
+19:29:26.177 INFO  driver.Page (    Page.java:235) - Element is clickable now.
+19:29:26.639 INFO  driver.Page (    Page.java:61) - Element is clicked successfully.
+19:29:26.647 INFO  pageobjects.myAccountPage (myAccountPage.java:776) - Edit option clicked successfully.
+19:29:28.209 INFO  pageobjects.myAccountPage (myAccountPage.java:679) - Populating CVV {} :1234
+19:29:28.315 INFO  driver.Page (    Page.java:129) - Wait for element {} [[ChromeDriver: chrome on windows (6d3d9724122f7a8fb510493810d19b62)] -> xpath: //*[@id='securityCode']] to be present in the DOM for duration of {} 120
+19:29:28.315 INFO  driver.Page (    Page.java:257) - Waiting for element to be visible for 120 seconds.
+19:29:28.574 INFO  driver.Page (    Page.java:260) - Element is visible on the page.
+19:29:28.590 INFO  driver.Page (    Page.java:131) - Clearing the element {} [[ChromeDriver: chrome on windows (6d3d9724122f7a8fb510493810d19b62)] -> xpath: //*[@id='securityCode']] before sending the keys.
+19:29:28.710 INFO  driver.Page (    Page.java:133) - Sending the following keys {} 1234 to the element {} [[ChromeDriver: chrome on windows (6d3d9724122f7a8fb510493810d19b62)] -> xpath: //*[@id='securityCode']]
+19:29:28.883 INFO  pageobjects.myAccountPage (myAccountPage.java:681) - CVV populated successfully.
+19:29:28.883 INFO  driver.Page (    Page.java:58) - Preparing for element to click.
+19:29:28.883 INFO  driver.Page (    Page.java:232) - Waiting for element to be clickable for 120 seconds.
+19:29:28.989 INFO  driver.Page (    Page.java:235) - Element is clickable now.
+19:29:29.132 INFO  driver.Page (    Page.java:61) - Element is clicked successfully.
+19:29:29.132 INFO  pageobjects.myAccountPage (myAccountPage.java:699) - Month clicked successfully.
+19:29:29.133 INFO  driver.Page (    Page.java:58) - Preparing for element to click.
+19:29:29.133 INFO  driver.Page (    Page.java:232) - Waiting for element to be clickable for 120 seconds.
+19:29:29.288 INFO  driver.Page (    Page.java:235) - Element is clickable now.
+19:29:29.404 INFO  driver.Page (    Page.java:61) - Element is clicked successfully.
+19:29:29.404 INFO  pageobjects.myAccountPage (myAccountPage.java:708) - Month selected successfully.
+19:29:29.404 INFO  driver.Page (    Page.java:58) - Preparing for element to click.
+19:29:29.409 INFO  driver.Page (    Page.java:232) - Waiting for element to be clickable for 120 seconds.
+19:29:29.514 INFO  driver.Page (    Page.java:235) - Element is clickable now.
+19:29:29.896 INFO  driver.Page (    Page.java:61) - Element is clicked successfully.
+19:29:29.896 INFO  pageobjects.myAccountPage (myAccountPage.java:717) - Year clicked successfully.
+19:29:29.896 INFO  driver.Page (    Page.java:58) - Preparing for element to click.
+19:29:29.896 INFO  driver.Page (    Page.java:232) - Waiting for element to be clickable for 120 seconds.
+19:29:30.002 INFO  driver.Page (    Page.java:235) - Element is clickable now.
+19:29:30.098 INFO  driver.Page (    Page.java:61) - Element is clicked successfully.
+19:29:30.098 INFO  pageobjects.myAccountPage (myAccountPage.java:726) - Year selected successfully.
+19:29:30.098 INFO  driver.Page (    Page.java:58) - Preparing for element to click.
+19:29:30.098 INFO  driver.Page (    Page.java:232) - Waiting for element to be clickable for 120 seconds.
+19:29:30.192 INFO  driver.Page (    Page.java:235) - Element is clickable now.
+19:29:30.511 INFO  driver.Page (    Page.java:61) - Element is clicked successfully.
+19:29:30.511 INFO  pageobjects.myAccountPage (myAccountPage.java:735) - Save Button successfully.
+19:29:35.316 INFO  driver.Page (    Page.java:58) - Preparing for element to click.
+19:29:35.316 INFO  driver.Page (    Page.java:232) - Waiting for element to be clickable for 120 seconds.
+19:29:35.386 INFO  driver.Page (    Page.java:235) - Element is clickable now.
+19:29:35.483 INFO  driver.Page (    Page.java:61) - Element is clicked successfully.
+19:29:35.483 INFO  pageobjects.myAccountPage (myAccountPage.java:767) - Payment Three dot icon clicked successfully.
+19:29:37.055 INFO  driver.Page (    Page.java:58) - Preparing for element to click.
+19:29:37.055 INFO  driver.Page (    Page.java:232) - Waiting for element to be clickable for 120 seconds.
+19:29:37.237 INFO  driver.Page (    Page.java:235) - Element is clickable now.
+19:29:37.364 INFO  driver.Page (    Page.java:61) - Element is clicked successfully.
+19:29:37.364 INFO  pageobjects.myAccountPage (myAccountPage.java:810) - Delete Option clicked successfully.
+19:29:38.914 INFO  driver.Page (    Page.java:569) - Preparing for element to click.
+19:29:39.330 INFO  driver.Page (    Page.java:576) - Element is clicked successfully.
+19:29:39.330 INFO  pageobjects.myAccountPage (myAccountPage.java:834) - Yes Button Clicked successfully.
+19:29:41.392 INFO  driver.Page (    Page.java:305) - Element {} : [[ChromeDriver: chrome on windows (6d3d9724122f7a8fb510493810d19b62)] -> xpath: /html/body/div[2]/div/div[3]/section/div[2]/div/div[1]/div/div[2]/div/div/div[3]/span] is visible on the page.
+19:29:41.392 INFO  driver.Page (    Page.java:58) - Preparing for element to click.
+19:29:41.392 INFO  driver.Page (    Page.java:232) - Waiting for element to be clickable for 120 seconds.
+19:29:41.447 INFO  driver.Page (    Page.java:235) - Element is clickable now.
+19:29:41.582 INFO  driver.Page (    Page.java:61) - Element is clicked successfully.
+19:29:41.582 INFO  pageobjects.myAccountPage (myAccountPage.java:628) - Add Payment hyperlink clicked successfully.
+19:29:43.131 INFO  driver.Page (    Page.java:58) - Preparing for element to click.
+19:29:43.131 INFO  driver.Page (    Page.java:232) - Waiting for element to be clickable for 120 seconds.
+19:29:43.211 INFO  driver.Page (    Page.java:235) - Element is clickable now.
+19:29:43.306 INFO  driver.Page (    Page.java:61) - Element is clicked successfully.
+19:29:43.306 INFO  pageobjects.myAccountPage (myAccountPage.java:735) - Save Button successfully.
+19:29:44.905 INFO  driver.Page (    Page.java:305) - Element {} : [[ChromeDriver: chrome on windows (6d3d9724122f7a8fb510493810d19b62)] -> xpath: //*[@id='1']/div[1]] is visible on the page.
+19:29:45.158 INFO  pageobjects.myAccountPage (myAccountPage.java:643) - Populating Name on the Card {} :DummyCardTest
+19:29:45.175 INFO  driver.Page (    Page.java:129) - Wait for element {} [[ChromeDriver: chrome on windows (6d3d9724122f7a8fb510493810d19b62)] -> xpath: //*[@id='NameOnCard']] to be present in the DOM for duration of {} 120
+19:29:45.175 INFO  driver.Page (    Page.java:257) - Waiting for element to be visible for 120 seconds.
+19:29:45.223 INFO  driver.Page (    Page.java:260) - Element is visible on the page.
+19:29:45.237 INFO  driver.Page (    Page.java:131) - Clearing the element {} [[ChromeDriver: chrome on windows (6d3d9724122f7a8fb510493810d19b62)] -> xpath: //*[@id='NameOnCard']] before sending the keys.
+19:29:45.316 INFO  driver.Page (    Page.java:133) - Sending the following keys {} DummyCardTest to the element {} [[ChromeDriver: chrome on windows (6d3d9724122f7a8fb510493810d19b62)] -> xpath: //*[@id='NameOnCard']]
+19:29:45.484 INFO  pageobjects.myAccountPage (myAccountPage.java:645) - Name on the card populated successfully.
+19:29:45.484 INFO  pageobjects.myAccountPage (myAccountPage.java:661) - Populating Card number {} :2223000048400011
+19:29:45.503 INFO  driver.Page (    Page.java:129) - Wait for element {} [[ChromeDriver: chrome on windows (6d3d9724122f7a8fb510493810d19b62)] -> xpath: //*[@id='cardNumber']] to be present in the DOM for duration of {} 120
+19:29:45.503 INFO  driver.Page (    Page.java:257) - Waiting for element to be visible for 120 seconds.
+19:29:45.549 INFO  driver.Page (    Page.java:260) - Element is visible on the page.
+19:29:45.567 INFO  driver.Page (    Page.java:131) - Clearing the element {} [[ChromeDriver: chrome on windows (6d3d9724122f7a8fb510493810d19b62)] -> xpath: //*[@id='cardNumber']] before sending the keys.
+19:29:45.670 INFO  driver.Page (    Page.java:133) - Sending the following keys {} 2223000048400011 to the element {} [[ChromeDriver: chrome on windows (6d3d9724122f7a8fb510493810d19b62)] -> xpath: //*[@id='cardNumber']]
+19:29:45.972 INFO  pageobjects.myAccountPage (myAccountPage.java:663) - Card number populated successfully.
+19:29:45.972 INFO  pageobjects.myAccountPage (myAccountPage.java:689) - Populating CVV {} :1234
+19:29:45.987 INFO  driver.Page (    Page.java:129) - Wait for element {} [[ChromeDriver: chrome on windows (6d3d9724122f7a8fb510493810d19b62)] -> xpath: //*[@id='securityCode']] to be present in the DOM for duration of {} 120
+19:29:45.987 INFO  driver.Page (    Page.java:257) - Waiting for element to be visible for 120 seconds.
+19:29:46.043 INFO  driver.Page (    Page.java:260) - Element is visible on the page.
+19:29:46.052 INFO  driver.Page (    Page.java:131) - Clearing the element {} [[ChromeDriver: chrome on windows (6d3d9724122f7a8fb510493810d19b62)] -> xpath: //*[@id='securityCode']] before sending the keys.
+19:29:46.154 INFO  driver.Page (    Page.java:133) - Sending the following keys {} 1234 to the element {} [[ChromeDriver: chrome on windows (6d3d9724122f7a8fb510493810d19b62)] -> xpath: //*[@id='securityCode']]
+19:29:46.290 INFO  pageobjects.myAccountPage (myAccountPage.java:691) - CVV populated successfully.
+19:29:46.296 INFO  driver.Page (    Page.java:58) - Preparing for element to click.
+19:29:46.296 INFO  driver.Page (    Page.java:232) - Waiting for element to be clickable for 120 seconds.
+19:29:46.353 INFO  driver.Page (    Page.java:235) - Element is clickable now.
+19:29:46.464 INFO  driver.Page (    Page.java:61) - Element is clicked successfully.
+19:29:46.464 INFO  pageobjects.myAccountPage (myAccountPage.java:699) - Month clicked successfully.
+19:29:46.466 INFO  driver.Page (    Page.java:58) - Preparing for element to click.
+19:29:46.466 INFO  driver.Page (    Page.java:232) - Waiting for element to be clickable for 120 seconds.
+19:29:46.538 INFO  driver.Page (    Page.java:235) - Element is clickable now.
+19:29:46.700 INFO  driver.Page (    Page.java:61) - Element is clicked successfully.
+19:29:46.700 INFO  pageobjects.myAccountPage (myAccountPage.java:708) - Month selected successfully.
+19:29:46.700 INFO  driver.Page (    Page.java:58) - Preparing for element to click.
+19:29:46.700 INFO  driver.Page (    Page.java:232) - Waiting for element to be clickable for 120 seconds.
+19:29:46.828 INFO  driver.Page (    Page.java:235) - Element is clickable now.
+19:29:47.163 INFO  driver.Page (    Page.java:61) - Element is clicked successfully.
+19:29:47.163 INFO  pageobjects.myAccountPage (myAccountPage.java:717) - Year clicked successfully.
+19:29:47.163 INFO  driver.Page (    Page.java:58) - Preparing for element to click.
+19:29:47.163 INFO  driver.Page (    Page.java:232) - Waiting for element to be clickable for 120 seconds.
+19:29:47.253 INFO  driver.Page (    Page.java:235) - Element is clickable now.
+19:29:47.367 INFO  driver.Page (    Page.java:61) - Element is clicked successfully.
+19:29:47.367 INFO  pageobjects.myAccountPage (myAccountPage.java:726) - Year selected successfully.
+19:29:47.367 INFO  driver.Page (    Page.java:58) - Preparing for element to click.
+19:29:47.367 INFO  driver.Page (    Page.java:232) - Waiting for element to be clickable for 120 seconds.
+19:29:47.497 INFO  driver.Page (    Page.java:235) - Element is clickable now.
+19:29:47.807 INFO  driver.Page (    Page.java:61) - Element is clicked successfully.
+19:29:47.807 INFO  pageobjects.myAccountPage (myAccountPage.java:735) - Save Button successfully.
+19:29:49.405 INFO  driver.Page (    Page.java:305) - Element {} : [[ChromeDriver: chrome on windows (6d3d9724122f7a8fb510493810d19b62)] -> xpath: /html/body/div[6]/div/div/div/div[1]] is visible on the page.
+19:29:49.673 INFO  driver.Page (    Page.java:569) - Preparing for element to click.
+19:29:49.789 INFO  driver.Page (    Page.java:576) - Element is clicked successfully.
+19:29:49.789 INFO  pageobjects.myAccountPage (myAccountPage.java:792) - cancel Button Clicked successfully.
+19:29:56.333 INFO  driver.Page (    Page.java:58) - Preparing for element to click.
+19:29:56.335 INFO  driver.Page (    Page.java:232) - Waiting for element to be clickable for 120 seconds.
+19:29:56.405 INFO  driver.Page (    Page.java:235) - Element is clickable now.
+19:29:56.523 INFO  driver.Page (    Page.java:61) - Element is clicked successfully.
+19:29:56.523 INFO  pageobjects.myAccountPage (myAccountPage.java:767) - Payment Three dot icon clicked successfully.
+19:29:58.047 INFO  driver.Page (    Page.java:58) - Preparing for element to click.
+19:29:58.047 INFO  driver.Page (    Page.java:232) - Waiting for element to be clickable for 120 seconds.
+19:29:58.125 INFO  driver.Page (    Page.java:235) - Element is clickable now.
+19:29:58.290 INFO  driver.Page (    Page.java:61) - Element is clicked successfully.
+19:29:58.290 INFO  pageobjects.myAccountPage (myAccountPage.java:776) - Edit option clicked successfully.
+19:29:59.830 INFO  driver.Page (    Page.java:58) - Preparing for element to click.
+19:29:59.830 INFO  driver.Page (    Page.java:232) - Waiting for element to be clickable for 120 seconds.
+19:29:59.926 INFO  driver.Page (    Page.java:235) - Element is clickable now.
+19:30:00.090 INFO  driver.Page (    Page.java:61) - Element is clicked successfully.
+19:30:00.090 INFO  pageobjects.myAccountPage (myAccountPage.java:735) - Save Button successfully.
+19:30:02.099 INFO  driver.Page (    Page.java:305) - Element {} : [[ChromeDriver: chrome on windows (6d3d9724122f7a8fb510493810d19b62)] -> xpath: //*[@id='securityCodespan']] is visible on the page.
+19:30:02.523 INFO  driver.Page (    Page.java:569) - Preparing for element to click.
+19:30:04.848 INFO  driver.Page (    Page.java:576) - Element is clicked successfully.
+19:30:04.848 INFO  pageobjects.myAccountPage (myAccountPage.java:792) - cancel Button Clicked successfully.
+19:30:04.848 INFO  driver.Page (    Page.java:58) - Preparing for element to click.
+19:30:04.848 INFO  driver.Page (    Page.java:232) - Waiting for element to be clickable for 120 seconds.
+19:30:06.079 INFO  driver.Page (    Page.java:235) - Element is clickable now.
+19:30:06.185 INFO  driver.Page (    Page.java:61) - Element is clicked successfully.
+19:30:06.185 INFO  pageobjects.myAccountPage (myAccountPage.java:767) - Payment Three dot icon clicked successfully.
+19:30:07.726 INFO  driver.Page (    Page.java:58) - Preparing for element to click.
+19:30:07.726 INFO  driver.Page (    Page.java:232) - Waiting for element to be clickable for 120 seconds.
+19:30:07.821 INFO  driver.Page (    Page.java:235) - Element is clickable now.
+19:30:07.948 INFO  driver.Page (    Page.java:61) - Element is clicked successfully.
+19:30:07.948 INFO  pageobjects.myAccountPage (myAccountPage.java:801) - Delete Option clicked successfully.
+19:30:09.490 INFO  driver.Page (    Page.java:58) - Preparing for element to click.
+19:30:09.490 INFO  driver.Page (    Page.java:232) - Waiting for element to be clickable for 120 seconds.
+19:30:10.045 INFO  driver.Page (    Page.java:235) - Element is clickable now.
+19:30:10.135 INFO  driver.Page (    Page.java:61) - Element is clicked successfully.
+19:30:10.135 INFO  pageobjects.myAccountPage (myAccountPage.java:826) - Remove Button Clicked successfully.
+19:30:13.963 INFO  driver.DriverFactory (DriverFactory.java:125) - Clearing all the cookies.
+19:30:41.772 INFO  driver.WebDriverFactory (WebDriverFactory.java:192) - Setting up the browser window to its max.
+19:30:42.061 INFO  driver.WebDriverFactory (WebDriverFactory.java:181) - Initializing the implicit wait timeout for {} 5
+19:30:42.132 INFO  driver.WebDriverFactory (WebDriverFactory.java:184) - Initializing the page load timeout.
+19:30:42.264 INFO  driver.DriverFactory (DriverFactory.java:125) - Clearing all the cookies.
+19:30:43.236 INFO  driver.DriverFactory (DriverFactory.java:62) - Open the url {} https://u2-alectra.smartcmobile.net/portal/#/login using the selenium get() method.
+19:31:12.418 INFO  scp.myAccountTests (myAccountTests.java:76) - To perform sanity on green button connect page
+19:31:14.108 INFO  pageobjects.myAccountPage (myAccountPage.java:29) - Populating User Name {} :0023826434
+19:31:14.134 INFO  driver.Page (    Page.java:129) - Wait for element {} [[ChromeDriver: chrome on windows (d3db26d0b0e69f7f0d6ec9eb93312517)] -> xpath: //*[@id='username']] to be present in the DOM for duration of {} 120
+19:31:14.134 INFO  driver.Page (    Page.java:257) - Waiting for element to be visible for 120 seconds.
+19:31:14.194 INFO  driver.Page (    Page.java:260) - Element is visible on the page.
+19:31:14.209 INFO  driver.Page (    Page.java:131) - Clearing the element {} [[ChromeDriver: chrome on windows (d3db26d0b0e69f7f0d6ec9eb93312517)] -> xpath: //*[@id='username']] before sending the keys.
+19:31:14.439 INFO  driver.Page (    Page.java:133) - Sending the following keys {} 0023826434 to the element {} [[ChromeDriver: chrome on windows (d3db26d0b0e69f7f0d6ec9eb93312517)] -> xpath: //*[@id='username']]
+19:31:14.998 INFO  pageobjects.myAccountPage (myAccountPage.java:31) - User Username populated successfully.
+19:31:14.999 INFO  pageobjects.myAccountPage (myAccountPage.java:38) - Populating Password {} :Demo@123
+19:31:15.041 INFO  driver.Page (    Page.java:129) - Wait for element {} [[ChromeDriver: chrome on windows (d3db26d0b0e69f7f0d6ec9eb93312517)] -> xpath: //*[@id='password']] to be present in the DOM for duration of {} 120
+19:31:15.041 INFO  driver.Page (    Page.java:257) - Waiting for element to be visible for 120 seconds.
+19:31:15.132 INFO  driver.Page (    Page.java:260) - Element is visible on the page.
+19:31:15.159 INFO  driver.Page (    Page.java:131) - Clearing the element {} [[ChromeDriver: chrome on windows (d3db26d0b0e69f7f0d6ec9eb93312517)] -> xpath: //*[@id='password']] before sending the keys.
+19:31:15.280 INFO  driver.Page (    Page.java:133) - Sending the following keys {} Demo@123 to the element {} [[ChromeDriver: chrome on windows (d3db26d0b0e69f7f0d6ec9eb93312517)] -> xpath: //*[@id='password']]
+19:31:15.881 INFO  pageobjects.myAccountPage (myAccountPage.java:40) - Password populated successfully.
+19:31:15.881 INFO  driver.Page (    Page.java:58) - Preparing for element to click.
+19:31:15.881 INFO  driver.Page (    Page.java:232) - Waiting for element to be clickable for 120 seconds.
+19:31:15.953 INFO  driver.Page (    Page.java:235) - Element is clickable now.
+19:31:16.062 INFO  driver.Page (    Page.java:61) - Element is clicked successfully.
+19:31:16.062 INFO  pageobjects.myAccountPage (myAccountPage.java:48) - LogIn Button clicked successfully.
+19:31:27.686 INFO  driver.Page (    Page.java:257) - Waiting for element to be visible for 120 seconds.
+19:31:35.495 INFO  driver.Page (    Page.java:260) - Element is visible on the page.
+19:31:35.495 INFO  driver.Page (    Page.java:569) - Preparing for element to click.
+19:31:35.643 INFO  driver.Page (    Page.java:576) - Element is clicked successfully.
+19:31:35.643 INFO  pageobjects.myAccountPage (myAccountPage.java:866) - Clicked on account
+19:31:35.643 INFO  driver.Page (    Page.java:257) - Waiting for element to be visible for 120 seconds.
+19:33:36.543 INFO  driver.DriverFactory (DriverFactory.java:125) - Clearing all the cookies.

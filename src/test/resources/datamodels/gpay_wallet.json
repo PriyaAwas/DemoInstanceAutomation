@@ -1,0 +1,50 @@
+[
+  {
+    "firstName": "Nikhil",
+    "lastName": "Bosh",
+    "customerName": "Nikhil GPay Wallet",
+    "addressLine1": "123 Park Avenue",
+    "addressLine2": "Street 6",
+    "city": "Manchester",
+    "state": "NH",
+    "zip": "03105",
+    "countryCode": "US",
+    "nonceToken": ""
+  },
+  {
+    "firstName": "Anshika",
+    "lastName": "Bhatija",
+    "customerName": "Anshika GPay Wallet",
+    "addressLine1": "123 Park Avenue",
+    "addressLine2": "Street 6",
+    "city": "Irvine",
+    "state": "CA",
+    "zip": "92602",
+    "countryCode": "US",
+    "nonceToken": ""
+  },
+  {
+    "firstName": "Rahul",
+    "lastName": "Rana",
+    "customerName": "Rahul GPay Wallet",
+    "addressLine1": "123 Park Avenue",
+    "addressLine2": "Street 6",
+    "city": "Kansas",
+    "state": "MO",
+    "zip": "65018",
+    "countryCode": "US",
+    "nonceToken": ""
+  },
+  {
+    "firstName": "Akhilesh",
+    "lastName": "Keshari",
+    "customerName": "Akhilesh GPay Wallet",
+    "addressLine1": "123 Park Avenue",
+    "addressLine2": "Street 6",
+    "city": "Orlando",
+    "state": "FL",
+    "zip": "33034",
+    "countryCode": "US",
+    "nonceToken": ""
+  }
+]

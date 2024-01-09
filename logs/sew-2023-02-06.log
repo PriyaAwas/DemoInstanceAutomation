@@ -1,0 +1,592 @@
+17:31:29.121 WARN  config.Configuration (Configuration.java:231) - QA env being used by default. No env property set. This can be set in the sew.app.yml config file with a '{}=' property or on the command line with the switch '-D{}='.
+17:31:29.457 INFO  runner.TestRunner (TestRunner.java:32) - Initializing application properties config file.
+17:31:29.464 INFO  runner.TestRunner (TestRunner.java:35) - Initializing connection to the base database.
+17:31:29.537 WARN  config.DatabaseConfiguration (DatabaseConfiguration.java:84) - QA env being used by default. No env property set. This can be set in the sentinel.yml config file with a '{}=' property or on the command line with the switch '-D{}='.
+17:31:31.545 INFO  runner.TestRunner (TestRunner.java:38) - Initializing resource path config file.
+17:31:31.552 INFO  runner.TestRunner (TestRunner.java:41) - Initializing usage months config from CSP.
+17:31:32.458 INFO  runner.TestRunner (TestRunner.java:44) - Initializing date config from CSP.
+17:31:33.276 INFO  runner.TestRunner (TestRunner.java:47) - Initializing language config from CSP.
+17:31:34.077 INFO  runner.TestRunner (TestRunner.java:50) - Initializing language config from CSP.
+17:31:34.890 INFO  runner.TestRunner (TestRunner.java:53) - Initializing language config from CSP.
+17:31:35.690 INFO  runner.TestRunner (TestRunner.java:56) - Initializing user model config.
+17:31:36.547 INFO  runner.TestRunner (TestRunner.java:59) - Initializing auth token config.
+17:31:37.307 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 1
+17:31:37.312 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 2
+17:31:37.313 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 3
+17:31:37.314 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 4
+17:31:37.315 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 5
+17:31:37.315 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 6
+17:31:37.316 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 7
+17:31:37.317 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 8
+17:31:37.318 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 9
+17:31:37.319 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 10
+17:31:37.319 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 11
+17:31:37.320 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 12
+17:31:37.320 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 13
+17:31:37.321 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 14
+17:31:37.321 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 15
+17:31:37.322 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 16
+17:31:37.322 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 17
+17:31:37.322 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 18
+17:31:37.323 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 19
+17:31:37.323 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 20
+17:44:19.549 WARN  config.Configuration (Configuration.java:231) - QA env being used by default. No env property set. This can be set in the sew.app.yml config file with a '{}=' property or on the command line with the switch '-D{}='.
+17:44:20.096 INFO  runner.TestRunner (TestRunner.java:32) - Initializing application properties config file.
+17:44:20.109 INFO  runner.TestRunner (TestRunner.java:35) - Initializing connection to the base database.
+17:44:20.203 WARN  config.DatabaseConfiguration (DatabaseConfiguration.java:84) - QA env being used by default. No env property set. This can be set in the sentinel.yml config file with a '{}=' property or on the command line with the switch '-D{}='.
+17:44:22.189 INFO  runner.TestRunner (TestRunner.java:38) - Initializing resource path config file.
+17:44:22.202 INFO  runner.TestRunner (TestRunner.java:41) - Initializing usage months config from CSP.
+17:44:23.080 INFO  runner.TestRunner (TestRunner.java:44) - Initializing date config from CSP.
+17:44:23.863 INFO  runner.TestRunner (TestRunner.java:47) - Initializing language config from CSP.
+17:44:24.642 INFO  runner.TestRunner (TestRunner.java:50) - Initializing language config from CSP.
+17:44:25.418 INFO  runner.TestRunner (TestRunner.java:53) - Initializing language config from CSP.
+17:44:26.196 INFO  runner.TestRunner (TestRunner.java:56) - Initializing user model config.
+17:44:27.019 INFO  runner.TestRunner (TestRunner.java:59) - Initializing auth token config.
+17:44:27.877 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 1
+17:44:27.886 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 2
+17:44:27.888 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 3
+17:44:27.888 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 4
+17:44:27.888 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 5
+17:44:27.890 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 6
+17:44:27.891 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 7
+17:44:27.892 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 8
+17:44:27.892 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 9
+17:44:27.893 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 10
+17:44:27.894 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 11
+17:44:27.894 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 12
+17:44:27.895 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 13
+17:44:27.896 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 14
+17:44:27.897 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 15
+17:44:27.897 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 16
+17:44:27.898 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 17
+17:44:27.899 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 18
+17:44:27.900 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 19
+17:44:27.902 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 20
+17:44:42.360 INFO  driver.WebDriverFactory (WebDriverFactory.java:207) - Setting up the browser window to its max.
+17:44:42.688 INFO  driver.WebDriverFactory (WebDriverFactory.java:196) - Initializing the implicit wait timeout for {} 5
+17:44:42.704 INFO  driver.WebDriverFactory (WebDriverFactory.java:199) - Initializing the page load timeout.
+17:44:42.709 INFO  driver.DriverFactory (DriverFactory.java:96) - Clearing all the cookies.
+17:44:43.185 INFO  driver.DriverFactory (DriverFactory.java:57) - Open the url {} https://qa.smartcmobile.net/SCM_10.0_S-SCP/ using the selenium get() method.
+17:45:13.471 INFO  csp.AdminLoginTests (AdminLoginTests.java:20) - To verify the tests with the below test case id's: C72381
+17:45:16.200 INFO  driver.DriverFactory (DriverFactory.java:96) - Clearing all the cookies.
+17:54:18.084 WARN  config.Configuration (Configuration.java:231) - QA env being used by default. No env property set. This can be set in the sew.app.yml config file with a '{}=' property or on the command line with the switch '-D{}='.
+17:54:18.444 INFO  runner.TestRunner (TestRunner.java:32) - Initializing application properties config file.
+17:54:18.445 INFO  runner.TestRunner (TestRunner.java:35) - Initializing connection to the base database.
+17:54:18.464 WARN  config.DatabaseConfiguration (DatabaseConfiguration.java:84) - QA env being used by default. No env property set. This can be set in the sentinel.yml config file with a '{}=' property or on the command line with the switch '-D{}='.
+17:54:20.126 INFO  runner.TestRunner (TestRunner.java:38) - Initializing resource path config file.
+17:54:20.127 INFO  runner.TestRunner (TestRunner.java:41) - Initializing usage months config from CSP.
+17:54:20.932 INFO  runner.TestRunner (TestRunner.java:44) - Initializing date config from CSP.
+17:54:21.679 INFO  runner.TestRunner (TestRunner.java:47) - Initializing language config from CSP.
+17:54:22.423 INFO  runner.TestRunner (TestRunner.java:50) - Initializing language config from CSP.
+17:54:23.180 INFO  runner.TestRunner (TestRunner.java:53) - Initializing language config from CSP.
+17:54:23.929 INFO  runner.TestRunner (TestRunner.java:56) - Initializing user model config.
+17:54:24.677 INFO  runner.TestRunner (TestRunner.java:59) - Initializing auth token config.
+17:54:25.323 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 1
+17:54:25.330 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 2
+17:54:25.332 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 3
+17:54:25.332 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 4
+17:54:25.332 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 5
+17:54:25.334 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 6
+17:54:25.334 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 7
+17:54:25.334 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 8
+17:54:25.334 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 9
+17:54:25.335 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 10
+17:54:25.335 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 11
+17:54:25.336 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 12
+17:54:25.337 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 13
+17:54:25.337 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 14
+17:54:25.337 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 15
+17:54:25.339 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 16
+17:54:25.339 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 17
+17:54:25.339 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 18
+17:54:25.340 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 19
+17:54:25.340 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 20
+17:54:34.015 INFO  driver.WebDriverFactory (WebDriverFactory.java:207) - Setting up the browser window to its max.
+17:54:34.316 INFO  driver.WebDriverFactory (WebDriverFactory.java:196) - Initializing the implicit wait timeout for {} 5
+17:54:34.337 INFO  driver.WebDriverFactory (WebDriverFactory.java:199) - Initializing the page load timeout.
+17:54:34.347 INFO  driver.DriverFactory (DriverFactory.java:97) - Clearing all the cookies.
+17:54:34.374 INFO  driver.DriverFactory (DriverFactory.java:58) - Open the url {} https://qa.smartcmobile.net/SCM_10.0_S-CSP/ using the selenium get() method.
+17:54:41.962 INFO  csp.AdminLoginTests (AdminLoginTests.java:20) - To verify the tests with the below test case id's: C72381
+17:54:43.845 INFO  driver.DriverFactory (DriverFactory.java:97) - Clearing all the cookies.
+17:57:43.211 WARN  config.Configuration (Configuration.java:231) - QA env being used by default. No env property set. This can be set in the sew.app.yml config file with a '{}=' property or on the command line with the switch '-D{}='.
+17:57:43.888 INFO  runner.TestRunner (TestRunner.java:32) - Initializing application properties config file.
+17:57:43.889 INFO  runner.TestRunner (TestRunner.java:35) - Initializing connection to the base database.
+17:57:43.921 WARN  config.DatabaseConfiguration (DatabaseConfiguration.java:84) - QA env being used by default. No env property set. This can be set in the sentinel.yml config file with a '{}=' property or on the command line with the switch '-D{}='.
+17:57:45.718 INFO  runner.TestRunner (TestRunner.java:38) - Initializing resource path config file.
+17:57:45.719 INFO  runner.TestRunner (TestRunner.java:41) - Initializing usage months config from CSP.
+17:57:46.573 INFO  runner.TestRunner (TestRunner.java:44) - Initializing date config from CSP.
+17:57:47.333 INFO  runner.TestRunner (TestRunner.java:47) - Initializing language config from CSP.
+17:57:48.081 INFO  runner.TestRunner (TestRunner.java:50) - Initializing language config from CSP.
+17:57:48.927 INFO  runner.TestRunner (TestRunner.java:53) - Initializing language config from CSP.
+17:57:49.674 INFO  runner.TestRunner (TestRunner.java:56) - Initializing user model config.
+17:57:50.431 INFO  runner.TestRunner (TestRunner.java:59) - Initializing auth token config.
+17:57:51.575 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 1
+17:57:51.589 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 2
+17:57:51.591 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 3
+17:57:51.592 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 4
+17:57:51.593 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 5
+17:57:51.594 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 6
+17:57:51.595 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 7
+17:57:51.596 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 8
+17:57:51.597 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 9
+17:57:51.598 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 10
+17:57:51.599 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 11
+17:57:51.602 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 12
+17:57:51.603 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 13
+17:57:51.604 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 14
+17:57:51.605 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 15
+17:57:51.606 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 16
+17:57:51.607 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 17
+17:57:51.607 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 18
+17:57:51.608 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 19
+17:57:51.609 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 20
+17:57:55.281 INFO  driver.WebDriverFactory (WebDriverFactory.java:207) - Setting up the browser window to its max.
+17:57:55.447 INFO  driver.WebDriverFactory (WebDriverFactory.java:196) - Initializing the implicit wait timeout for {} 5
+17:57:55.461 INFO  driver.WebDriverFactory (WebDriverFactory.java:199) - Initializing the page load timeout.
+17:57:55.469 INFO  driver.DriverFactory (DriverFactory.java:97) - Clearing all the cookies.
+17:57:55.491 INFO  driver.DriverFactory (DriverFactory.java:58) - Open the url {} https://qa.smartcmobile.net/SCM_10.0_S-CSP/ using the selenium get() method.
+17:58:02.917 INFO  csp.AdminLoginTests (AdminLoginTests.java:20) - To verify the tests with the below test case id's: C72381
+17:58:02.943 INFO  csp.AdminLoginPage (AdminLoginPage.java:97) - Checking that the current page is Admin login page.
+17:58:02.943 INFO  driver.Page (    Page.java:36) - Fetching the current URL.
+17:58:02.952 INFO  driver.Page (    Page.java:37) - The Current URL is: https://qa.smartcmobile.net/SCM_10.0_S-CSP/
+17:58:02.957 INFO  driver.Page (    Page.java:42) - Fetching the current title.
+17:58:02.967 INFO  driver.Page (    Page.java:43) - The Current Title is: SCM Admin - Login
+17:58:02.973 INFO  csp.AdminLoginPage (AdminLoginPage.java:100) - The current page is Admin login page {}: true
+17:58:02.975 INFO  csp.AdminLoginPage (AdminLoginPage.java:22) - Populating username {} :qauser
+17:58:02.989 INFO  driver.Page (    Page.java:101) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (9a3b839c452cfd887b83888422130e9f)] -> css selector: [id='txtAdminLogin']] to be present in the DOM for duration of {} 120
+17:58:02.990 INFO  driver.Page (    Page.java:208) - Waiting for element to be visible for 120 seconds.
+17:58:03.024 INFO  driver.Page (    Page.java:211) - Element is visible on the page.
+17:58:03.033 INFO  driver.Page (    Page.java:103) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (9a3b839c452cfd887b83888422130e9f)] -> css selector: [id='txtAdminLogin']] before sending the keys.
+17:58:03.075 INFO  driver.Page (    Page.java:105) - Sending the following keys {} qauser to the element {} [[ChromeDriver: chrome on WINDOWS (9a3b839c452cfd887b83888422130e9f)] -> css selector: [id='txtAdminLogin']]
+17:58:03.115 INFO  csp.AdminLoginPage (AdminLoginPage.java:24) - Username populated successfully.
+17:58:03.115 INFO  csp.AdminLoginPage (AdminLoginPage.java:30) - Populating password {} :Sew@2021$!
+17:58:03.126 INFO  driver.Page (    Page.java:101) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (9a3b839c452cfd887b83888422130e9f)] -> css selector: [id='txtpwd']] to be present in the DOM for duration of {} 120
+17:58:03.126 INFO  driver.Page (    Page.java:208) - Waiting for element to be visible for 120 seconds.
+17:58:03.150 INFO  driver.Page (    Page.java:211) - Element is visible on the page.
+17:58:03.158 INFO  driver.Page (    Page.java:103) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (9a3b839c452cfd887b83888422130e9f)] -> css selector: [id='txtpwd']] before sending the keys.
+17:58:03.228 INFO  driver.Page (    Page.java:105) - Sending the following keys {} Sew@2021$! to the element {} [[ChromeDriver: chrome on WINDOWS (9a3b839c452cfd887b83888422130e9f)] -> css selector: [id='txtpwd']]
+17:58:03.304 INFO  csp.AdminLoginPage (AdminLoginPage.java:32) - Password populated successfully.
+17:58:03.305 INFO  driver.Page (    Page.java:55) - Preparing for element to click.
+17:58:03.305 INFO  driver.Page (    Page.java:183) - Waiting for element to be clickable for 120 seconds.
+17:58:03.361 INFO  driver.Page (    Page.java:186) - Element is clickable now.
+17:58:39.951 INFO  driver.Page (    Page.java:58) - Element is clicked successfully.
+17:58:39.952 INFO  csp.AdminLoginPage (AdminLoginPage.java:38) - SignIn Button clicked successfully.
+17:58:39.952 INFO  scp.HomePage (HomePage.java:23) - Wait for page loader visibility.
+17:58:39.952 INFO  driver.Page (    Page.java:208) - Waiting for element to be visible for 120 seconds.
+18:00:43.718 INFO  driver.DriverFactory (DriverFactory.java:97) - Clearing all the cookies.
+18:05:13.964 WARN  config.Configuration (Configuration.java:231) - QA env being used by default. No env property set. This can be set in the sew.app.yml config file with a '{}=' property or on the command line with the switch '-D{}='.
+18:05:14.781 INFO  runner.TestRunner (TestRunner.java:32) - Initializing application properties config file.
+18:05:14.811 INFO  runner.TestRunner (TestRunner.java:35) - Initializing connection to the base database.
+18:05:14.946 WARN  config.DatabaseConfiguration (DatabaseConfiguration.java:84) - QA env being used by default. No env property set. This can be set in the sentinel.yml config file with a '{}=' property or on the command line with the switch '-D{}='.
+18:05:17.064 INFO  runner.TestRunner (TestRunner.java:38) - Initializing resource path config file.
+18:05:17.078 INFO  runner.TestRunner (TestRunner.java:41) - Initializing usage months config from CSP.
+18:05:18.003 INFO  runner.TestRunner (TestRunner.java:44) - Initializing date config from CSP.
+18:05:18.784 INFO  runner.TestRunner (TestRunner.java:47) - Initializing language config from CSP.
+18:05:19.549 INFO  runner.TestRunner (TestRunner.java:50) - Initializing language config from CSP.
+18:05:20.310 INFO  runner.TestRunner (TestRunner.java:53) - Initializing language config from CSP.
+18:05:21.059 INFO  runner.TestRunner (TestRunner.java:56) - Initializing user model config.
+18:05:21.836 INFO  runner.TestRunner (TestRunner.java:59) - Initializing auth token config.
+18:05:22.737 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 1
+18:05:22.749 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 2
+18:05:22.750 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 3
+18:05:22.751 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 4
+18:05:22.752 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 5
+18:05:22.753 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 6
+18:05:22.754 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 7
+18:05:22.756 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 8
+18:05:22.756 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 9
+18:05:22.757 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 10
+18:05:22.759 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 11
+18:05:22.760 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 12
+18:05:22.761 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 13
+18:05:22.762 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 14
+18:05:22.763 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 15
+18:05:22.763 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 16
+18:05:22.764 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 17
+18:05:22.765 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 18
+18:05:22.766 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 19
+18:05:22.767 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 20
+18:05:33.870 INFO  driver.WebDriverFactory (WebDriverFactory.java:207) - Setting up the browser window to its max.
+18:05:34.025 INFO  driver.WebDriverFactory (WebDriverFactory.java:196) - Initializing the implicit wait timeout for {} 5
+18:05:34.036 INFO  driver.WebDriverFactory (WebDriverFactory.java:199) - Initializing the page load timeout.
+18:05:34.042 INFO  driver.DriverFactory (DriverFactory.java:97) - Clearing all the cookies.
+18:05:34.058 INFO  driver.DriverFactory (DriverFactory.java:58) - Open the url {} https://qa.smartcmobile.net/SCM_10.0_S-CSP/ using the selenium get() method.
+18:05:41.904 INFO  csp.AdminLoginTests (AdminLoginTests.java:20) - To verify the tests with the below test case id's: C72381
+18:05:41.957 INFO  csp.AdminLoginPage (AdminLoginPage.java:97) - Checking that the current page is Admin login page.
+18:05:41.957 INFO  driver.Page (    Page.java:36) - Fetching the current URL.
+18:05:41.978 INFO  driver.Page (    Page.java:37) - The Current URL is: https://qa.smartcmobile.net/SCM_10.0_S-CSP/
+18:05:41.985 INFO  driver.Page (    Page.java:42) - Fetching the current title.
+18:05:41.994 INFO  driver.Page (    Page.java:43) - The Current Title is: SCM Admin - Login
+18:05:42.003 INFO  csp.AdminLoginPage (AdminLoginPage.java:100) - The current page is Admin login page {}: true
+18:05:42.007 INFO  csp.AdminLoginPage (AdminLoginPage.java:22) - Populating username {} :qauser
+18:05:42.030 INFO  driver.Page (    Page.java:101) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (75e66335d6fb1ba8be170ffaaee32130)] -> css selector: [id='txtAdminLogin']] to be present in the DOM for duration of {} 120
+18:05:42.031 INFO  driver.Page (    Page.java:208) - Waiting for element to be visible for 120 seconds.
+18:05:42.091 INFO  driver.Page (    Page.java:211) - Element is visible on the page.
+18:05:42.102 INFO  driver.Page (    Page.java:103) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (75e66335d6fb1ba8be170ffaaee32130)] -> css selector: [id='txtAdminLogin']] before sending the keys.
+18:05:42.169 INFO  driver.Page (    Page.java:105) - Sending the following keys {} qauser to the element {} [[ChromeDriver: chrome on WINDOWS (75e66335d6fb1ba8be170ffaaee32130)] -> css selector: [id='txtAdminLogin']]
+18:05:42.235 INFO  csp.AdminLoginPage (AdminLoginPage.java:24) - Username populated successfully.
+18:05:42.236 INFO  csp.AdminLoginPage (AdminLoginPage.java:30) - Populating password {} :Sew@2021$!
+18:05:42.257 INFO  driver.Page (    Page.java:101) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (75e66335d6fb1ba8be170ffaaee32130)] -> css selector: [id='txtpwd']] to be present in the DOM for duration of {} 120
+18:05:42.257 INFO  driver.Page (    Page.java:208) - Waiting for element to be visible for 120 seconds.
+18:05:42.299 INFO  driver.Page (    Page.java:211) - Element is visible on the page.
+18:05:42.313 INFO  driver.Page (    Page.java:103) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (75e66335d6fb1ba8be170ffaaee32130)] -> css selector: [id='txtpwd']] before sending the keys.
+18:05:42.396 INFO  driver.Page (    Page.java:105) - Sending the following keys {} Sew@2021$! to the element {} [[ChromeDriver: chrome on WINDOWS (75e66335d6fb1ba8be170ffaaee32130)] -> css selector: [id='txtpwd']]
+18:05:42.528 INFO  csp.AdminLoginPage (AdminLoginPage.java:32) - Password populated successfully.
+18:05:42.528 INFO  driver.Page (    Page.java:55) - Preparing for element to click.
+18:05:42.528 INFO  driver.Page (    Page.java:183) - Waiting for element to be clickable for 120 seconds.
+18:05:42.613 INFO  driver.Page (    Page.java:186) - Element is clickable now.
+18:06:21.031 INFO  driver.Page (    Page.java:58) - Element is clicked successfully.
+18:06:21.031 INFO  csp.AdminLoginPage (AdminLoginPage.java:38) - SignIn Button clicked successfully.
+18:06:21.032 INFO  scp.HomePage (HomePage.java:35) - Wait for page loader invisibility.
+18:06:21.032 INFO  driver.Page (    Page.java:222) - Waiting for element to be invisible for 120 seconds.
+18:06:21.068 INFO  driver.Page (    Page.java:225) - Element is invisible from the page.
+18:06:23.122 INFO  driver.DriverFactory (DriverFactory.java:97) - Clearing all the cookies.
+18:09:33.906 WARN  config.Configuration (Configuration.java:231) - QA env being used by default. No env property set. This can be set in the sew.app.yml config file with a '{}=' property or on the command line with the switch '-D{}='.
+18:09:34.313 INFO  runner.TestRunner (TestRunner.java:32) - Initializing application properties config file.
+18:09:34.314 INFO  runner.TestRunner (TestRunner.java:35) - Initializing connection to the base database.
+18:09:34.334 WARN  config.DatabaseConfiguration (DatabaseConfiguration.java:84) - QA env being used by default. No env property set. This can be set in the sentinel.yml config file with a '{}=' property or on the command line with the switch '-D{}='.
+18:09:35.940 INFO  runner.TestRunner (TestRunner.java:38) - Initializing resource path config file.
+18:09:35.941 INFO  runner.TestRunner (TestRunner.java:41) - Initializing usage months config from CSP.
+18:09:36.766 INFO  runner.TestRunner (TestRunner.java:44) - Initializing date config from CSP.
+18:09:37.513 INFO  runner.TestRunner (TestRunner.java:47) - Initializing language config from CSP.
+18:09:38.254 INFO  runner.TestRunner (TestRunner.java:50) - Initializing language config from CSP.
+18:09:39.016 INFO  runner.TestRunner (TestRunner.java:53) - Initializing language config from CSP.
+18:09:39.769 INFO  runner.TestRunner (TestRunner.java:56) - Initializing user model config.
+18:09:40.518 INFO  runner.TestRunner (TestRunner.java:59) - Initializing auth token config.
+18:09:41.174 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 1
+18:09:41.183 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 2
+18:09:41.184 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 3
+18:09:41.185 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 4
+18:09:41.186 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 5
+18:09:41.186 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 6
+18:09:41.187 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 7
+18:09:41.188 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 8
+18:09:41.188 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 9
+18:09:41.189 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 10
+18:09:41.190 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 11
+18:09:41.190 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 12
+18:09:41.192 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 13
+18:09:41.193 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 14
+18:09:41.194 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 15
+18:09:41.194 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 16
+18:09:41.195 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 17
+18:09:41.195 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 18
+18:09:41.196 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 19
+18:09:41.196 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 20
+18:09:44.593 INFO  driver.WebDriverFactory (WebDriverFactory.java:207) - Setting up the browser window to its max.
+18:09:44.754 INFO  driver.WebDriverFactory (WebDriverFactory.java:196) - Initializing the implicit wait timeout for {} 5
+18:09:44.764 INFO  driver.WebDriverFactory (WebDriverFactory.java:199) - Initializing the page load timeout.
+18:09:44.772 INFO  driver.DriverFactory (DriverFactory.java:97) - Clearing all the cookies.
+18:09:44.787 INFO  driver.DriverFactory (DriverFactory.java:58) - Open the url {} https://qa.smartcmobile.net/SCM_10.0_S-CSP/ using the selenium get() method.
+18:09:53.242 INFO  csp.AdminLoginTests (AdminLoginTests.java:20) - To verify the tests with the below test case id's: C72381
+18:09:53.252 INFO  csp.AdminLoginPage (AdminLoginPage.java:97) - Checking that the current page is Admin login page.
+18:09:53.252 INFO  driver.Page (    Page.java:36) - Fetching the current URL.
+18:09:53.260 INFO  driver.Page (    Page.java:37) - The Current URL is: https://qa.smartcmobile.net/SCM_10.0_S-CSP/
+18:09:53.263 INFO  driver.Page (    Page.java:42) - Fetching the current title.
+18:09:53.268 INFO  driver.Page (    Page.java:43) - The Current Title is: SCM Admin - Login
+18:09:53.273 INFO  csp.AdminLoginPage (AdminLoginPage.java:100) - The current page is Admin login page {}: true
+18:09:53.275 INFO  csp.AdminLoginPage (AdminLoginPage.java:22) - Populating username {} :qauser
+18:09:53.288 INFO  driver.Page (    Page.java:101) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (852bb45edaebe319f7cac668b438daf3)] -> css selector: [id='txtAdminLogin']] to be present in the DOM for duration of {} 120
+18:09:53.288 INFO  driver.Page (    Page.java:208) - Waiting for element to be visible for 120 seconds.
+18:09:53.317 INFO  driver.Page (    Page.java:211) - Element is visible on the page.
+18:09:53.324 INFO  driver.Page (    Page.java:103) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (852bb45edaebe319f7cac668b438daf3)] -> css selector: [id='txtAdminLogin']] before sending the keys.
+18:09:53.365 INFO  driver.Page (    Page.java:105) - Sending the following keys {} qauser to the element {} [[ChromeDriver: chrome on WINDOWS (852bb45edaebe319f7cac668b438daf3)] -> css selector: [id='txtAdminLogin']]
+18:09:53.402 INFO  csp.AdminLoginPage (AdminLoginPage.java:24) - Username populated successfully.
+18:09:53.402 INFO  csp.AdminLoginPage (AdminLoginPage.java:30) - Populating password {} :Sew@2021$!
+18:09:53.416 INFO  driver.Page (    Page.java:101) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (852bb45edaebe319f7cac668b438daf3)] -> css selector: [id='txtpwd']] to be present in the DOM for duration of {} 120
+18:09:53.416 INFO  driver.Page (    Page.java:208) - Waiting for element to be visible for 120 seconds.
+18:09:53.443 INFO  driver.Page (    Page.java:211) - Element is visible on the page.
+18:09:53.453 INFO  driver.Page (    Page.java:103) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (852bb45edaebe319f7cac668b438daf3)] -> css selector: [id='txtpwd']] before sending the keys.
+18:09:53.498 INFO  driver.Page (    Page.java:105) - Sending the following keys {} Sew@2021$! to the element {} [[ChromeDriver: chrome on WINDOWS (852bb45edaebe319f7cac668b438daf3)] -> css selector: [id='txtpwd']]
+18:09:53.564 INFO  csp.AdminLoginPage (AdminLoginPage.java:32) - Password populated successfully.
+18:09:53.564 INFO  driver.Page (    Page.java:55) - Preparing for element to click.
+18:09:53.564 INFO  driver.Page (    Page.java:183) - Waiting for element to be clickable for 120 seconds.
+18:09:53.624 INFO  driver.Page (    Page.java:186) - Element is clickable now.
+18:10:18.856 INFO  driver.Page (    Page.java:58) - Element is clicked successfully.
+18:10:18.856 INFO  csp.AdminLoginPage (AdminLoginPage.java:38) - SignIn Button clicked successfully.
+18:10:18.856 INFO  scp.HomePage (HomePage.java:35) - Wait for page loader invisibility.
+18:10:18.857 INFO  driver.Page (    Page.java:222) - Waiting for element to be invisible for 120 seconds.
+18:10:18.885 INFO  driver.Page (    Page.java:225) - Element is invisible from the page.
+18:10:20.970 INFO  driver.DriverFactory (DriverFactory.java:97) - Clearing all the cookies.
+18:16:47.530 WARN  config.Configuration (Configuration.java:231) - QA env being used by default. No env property set. This can be set in the sew.app.yml config file with a '{}=' property or on the command line with the switch '-D{}='.
+18:16:47.968 INFO  runner.TestRunner (TestRunner.java:32) - Initializing application properties config file.
+18:16:47.969 INFO  runner.TestRunner (TestRunner.java:35) - Initializing connection to the base database.
+18:16:48.004 WARN  config.DatabaseConfiguration (DatabaseConfiguration.java:84) - QA env being used by default. No env property set. This can be set in the sentinel.yml config file with a '{}=' property or on the command line with the switch '-D{}='.
+18:16:49.755 INFO  runner.TestRunner (TestRunner.java:38) - Initializing resource path config file.
+18:16:49.758 INFO  runner.TestRunner (TestRunner.java:41) - Initializing usage months config from CSP.
+18:16:50.593 INFO  runner.TestRunner (TestRunner.java:44) - Initializing date config from CSP.
+18:16:51.362 INFO  runner.TestRunner (TestRunner.java:47) - Initializing language config from CSP.
+18:16:52.106 INFO  runner.TestRunner (TestRunner.java:50) - Initializing language config from CSP.
+18:16:52.860 INFO  runner.TestRunner (TestRunner.java:53) - Initializing language config from CSP.
+18:16:53.612 INFO  runner.TestRunner (TestRunner.java:56) - Initializing user model config.
+18:16:54.391 INFO  runner.TestRunner (TestRunner.java:59) - Initializing auth token config.
+18:16:55.325 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 1
+18:16:55.337 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 2
+18:16:55.338 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 3
+18:16:55.340 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 4
+18:16:55.340 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 5
+18:16:55.341 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 6
+18:16:55.342 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 7
+18:16:55.343 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 8
+18:16:55.344 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 9
+18:16:55.344 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 10
+18:16:55.345 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 11
+18:16:55.346 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 12
+18:16:55.347 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 13
+18:16:55.347 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 14
+18:16:55.348 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 15
+18:16:55.348 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 16
+18:16:55.349 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 17
+18:16:55.350 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 18
+18:16:55.351 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 19
+18:16:55.352 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 20
+18:16:59.802 INFO  driver.WebDriverFactory (WebDriverFactory.java:207) - Setting up the browser window to its max.
+18:17:00.089 INFO  driver.WebDriverFactory (WebDriverFactory.java:196) - Initializing the implicit wait timeout for {} 5
+18:17:00.097 INFO  driver.WebDriverFactory (WebDriverFactory.java:199) - Initializing the page load timeout.
+18:17:00.105 INFO  driver.DriverFactory (DriverFactory.java:97) - Clearing all the cookies.
+18:17:00.145 INFO  driver.DriverFactory (DriverFactory.java:58) - Open the url {} https://qa.smartcmobile.net/SCM_10.0_S-CSP/ using the selenium get() method.
+18:17:16.943 INFO  csp.AdminLoginTests (AdminLoginTests.java:20) - To verify the tests with the below test case id's: C72381
+18:17:16.960 INFO  csp.AdminLoginPage (AdminLoginPage.java:97) - Checking that the current page is Admin login page.
+18:17:16.961 INFO  driver.Page (    Page.java:36) - Fetching the current URL.
+18:17:16.969 INFO  driver.Page (    Page.java:37) - The Current URL is: https://qa.smartcmobile.net/SCM_10.0_S-CSP/
+18:17:16.974 INFO  driver.Page (    Page.java:42) - Fetching the current title.
+18:17:16.982 INFO  driver.Page (    Page.java:43) - The Current Title is: SCM Admin - Login
+18:17:16.989 INFO  csp.AdminLoginPage (AdminLoginPage.java:100) - The current page is Admin login page {}: true
+18:17:16.992 INFO  csp.AdminLoginPage (AdminLoginPage.java:22) - Populating username {} :qauser
+18:17:17.011 INFO  driver.Page (    Page.java:101) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (83a3b92a8c22c145d13594ebd0112263)] -> css selector: [id='txtAdminLogin']] to be present in the DOM for duration of {} 120
+18:17:17.012 INFO  driver.Page (    Page.java:208) - Waiting for element to be visible for 120 seconds.
+18:17:17.061 INFO  driver.Page (    Page.java:211) - Element is visible on the page.
+18:17:17.072 INFO  driver.Page (    Page.java:103) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (83a3b92a8c22c145d13594ebd0112263)] -> css selector: [id='txtAdminLogin']] before sending the keys.
+18:17:17.116 INFO  driver.Page (    Page.java:105) - Sending the following keys {} qauser to the element {} [[ChromeDriver: chrome on WINDOWS (83a3b92a8c22c145d13594ebd0112263)] -> css selector: [id='txtAdminLogin']]
+18:17:17.161 INFO  csp.AdminLoginPage (AdminLoginPage.java:24) - Username populated successfully.
+18:17:17.161 INFO  csp.AdminLoginPage (AdminLoginPage.java:30) - Populating password {} :Sew@2021$!
+18:17:17.174 INFO  driver.Page (    Page.java:101) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (83a3b92a8c22c145d13594ebd0112263)] -> css selector: [id='txtpwd']] to be present in the DOM for duration of {} 120
+18:17:17.175 INFO  driver.Page (    Page.java:208) - Waiting for element to be visible for 120 seconds.
+18:17:17.205 INFO  driver.Page (    Page.java:211) - Element is visible on the page.
+18:17:17.217 INFO  driver.Page (    Page.java:103) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (83a3b92a8c22c145d13594ebd0112263)] -> css selector: [id='txtpwd']] before sending the keys.
+18:17:17.271 INFO  driver.Page (    Page.java:105) - Sending the following keys {} Sew@2021$! to the element {} [[ChromeDriver: chrome on WINDOWS (83a3b92a8c22c145d13594ebd0112263)] -> css selector: [id='txtpwd']]
+18:17:17.331 INFO  csp.AdminLoginPage (AdminLoginPage.java:32) - Password populated successfully.
+18:17:17.332 INFO  driver.Page (    Page.java:55) - Preparing for element to click.
+18:17:17.333 INFO  driver.Page (    Page.java:183) - Waiting for element to be clickable for 120 seconds.
+18:17:17.375 INFO  driver.Page (    Page.java:186) - Element is clickable now.
+18:17:54.610 INFO  driver.Page (    Page.java:58) - Element is clicked successfully.
+18:17:54.610 INFO  csp.AdminLoginPage (AdminLoginPage.java:38) - SignIn Button clicked successfully.
+18:17:54.611 INFO  scp.HomePage (HomePage.java:35) - Wait for page loader invisibility.
+18:17:54.611 INFO  driver.Page (    Page.java:222) - Waiting for element to be invisible for 120 seconds.
+18:17:54.643 INFO  driver.Page (    Page.java:225) - Element is invisible from the page.
+18:17:56.779 INFO  driver.DriverFactory (DriverFactory.java:97) - Clearing all the cookies.
+18:21:05.061 WARN  config.Configuration (Configuration.java:231) - QA env being used by default. No env property set. This can be set in the sew.app.yml config file with a '{}=' property or on the command line with the switch '-D{}='.
+18:21:05.681 INFO  runner.TestRunner (TestRunner.java:32) - Initializing application properties config file.
+18:21:05.683 INFO  runner.TestRunner (TestRunner.java:35) - Initializing connection to the base database.
+18:21:05.715 WARN  config.DatabaseConfiguration (DatabaseConfiguration.java:84) - QA env being used by default. No env property set. This can be set in the sentinel.yml config file with a '{}=' property or on the command line with the switch '-D{}='.
+18:21:09.956 INFO  runner.TestRunner (TestRunner.java:38) - Initializing resource path config file.
+18:21:09.957 INFO  runner.TestRunner (TestRunner.java:41) - Initializing usage months config from CSP.
+18:21:10.760 INFO  runner.TestRunner (TestRunner.java:44) - Initializing date config from CSP.
+18:21:11.511 INFO  runner.TestRunner (TestRunner.java:47) - Initializing language config from CSP.
+18:21:12.255 INFO  runner.TestRunner (TestRunner.java:50) - Initializing language config from CSP.
+18:21:13.008 INFO  runner.TestRunner (TestRunner.java:53) - Initializing language config from CSP.
+18:21:13.758 INFO  runner.TestRunner (TestRunner.java:56) - Initializing user model config.
+18:21:14.513 INFO  runner.TestRunner (TestRunner.java:59) - Initializing auth token config.
+18:21:15.122 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 1
+18:21:15.128 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 2
+18:21:15.129 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 3
+18:21:15.129 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 4
+18:21:15.130 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 5
+18:21:15.130 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 6
+18:21:15.131 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 7
+18:21:15.131 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 8
+18:21:15.132 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 9
+18:21:15.132 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 10
+18:21:15.132 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 11
+18:21:15.133 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 12
+18:21:15.133 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 13
+18:21:15.134 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 14
+18:21:15.134 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 15
+18:21:15.134 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 16
+18:21:15.135 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 17
+18:21:15.135 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 18
+18:21:15.136 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 19
+18:21:15.136 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 20
+18:21:18.413 INFO  driver.WebDriverFactory (WebDriverFactory.java:207) - Setting up the browser window to its max.
+18:21:18.568 INFO  driver.WebDriverFactory (WebDriverFactory.java:196) - Initializing the implicit wait timeout for {} 5
+18:21:18.579 INFO  driver.WebDriverFactory (WebDriverFactory.java:199) - Initializing the page load timeout.
+18:21:18.586 INFO  driver.DriverFactory (DriverFactory.java:97) - Clearing all the cookies.
+18:21:18.601 INFO  driver.DriverFactory (DriverFactory.java:58) - Open the url {} https://qa.smartcmobile.net/SCM_10.0_S-CSP/ using the selenium get() method.
+18:21:26.175 INFO  csp.AdminLoginTests (AdminLoginTests.java:20) - To verify the tests with the below test case id's: C72381
+18:21:26.204 INFO  csp.AdminLoginPage (AdminLoginPage.java:97) - Checking that the current page is Admin login page.
+18:21:26.204 INFO  driver.Page (    Page.java:36) - Fetching the current URL.
+18:21:26.211 INFO  driver.Page (    Page.java:37) - The Current URL is: https://qa.smartcmobile.net/SCM_10.0_S-CSP/
+18:21:26.222 INFO  driver.Page (    Page.java:42) - Fetching the current title.
+18:21:26.228 INFO  driver.Page (    Page.java:43) - The Current Title is: SCM Admin - Login
+18:21:26.236 INFO  csp.AdminLoginPage (AdminLoginPage.java:100) - The current page is Admin login page {}: true
+18:21:26.238 INFO  csp.AdminLoginPage (AdminLoginPage.java:22) - Populating username {} :qauser
+18:21:26.255 INFO  driver.Page (    Page.java:101) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (699436a8916e101377591d7c92848d4c)] -> css selector: [id='txtAdminLogin']] to be present in the DOM for duration of {} 120
+18:21:26.255 INFO  driver.Page (    Page.java:208) - Waiting for element to be visible for 120 seconds.
+18:21:26.291 INFO  driver.Page (    Page.java:211) - Element is visible on the page.
+18:21:26.302 INFO  driver.Page (    Page.java:103) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (699436a8916e101377591d7c92848d4c)] -> css selector: [id='txtAdminLogin']] before sending the keys.
+18:21:26.379 INFO  driver.Page (    Page.java:105) - Sending the following keys {} qauser to the element {} [[ChromeDriver: chrome on WINDOWS (699436a8916e101377591d7c92848d4c)] -> css selector: [id='txtAdminLogin']]
+18:21:26.434 INFO  csp.AdminLoginPage (AdminLoginPage.java:24) - Username populated successfully.
+18:21:26.434 INFO  csp.AdminLoginPage (AdminLoginPage.java:30) - Populating password {} :Sew@2021$!
+18:21:26.454 INFO  driver.Page (    Page.java:101) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (699436a8916e101377591d7c92848d4c)] -> css selector: [id='txtpwd']] to be present in the DOM for duration of {} 120
+18:21:26.454 INFO  driver.Page (    Page.java:208) - Waiting for element to be visible for 120 seconds.
+18:21:26.490 INFO  driver.Page (    Page.java:211) - Element is visible on the page.
+18:21:26.502 INFO  driver.Page (    Page.java:103) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (699436a8916e101377591d7c92848d4c)] -> css selector: [id='txtpwd']] before sending the keys.
+18:21:26.579 INFO  driver.Page (    Page.java:105) - Sending the following keys {} Sew@2021$! to the element {} [[ChromeDriver: chrome on WINDOWS (699436a8916e101377591d7c92848d4c)] -> css selector: [id='txtpwd']]
+18:21:26.653 INFO  csp.AdminLoginPage (AdminLoginPage.java:32) - Password populated successfully.
+18:21:26.654 INFO  driver.Page (    Page.java:55) - Preparing for element to click.
+18:21:26.654 INFO  driver.Page (    Page.java:183) - Waiting for element to be clickable for 120 seconds.
+18:21:26.717 INFO  driver.Page (    Page.java:186) - Element is clickable now.
+18:21:53.812 INFO  driver.Page (    Page.java:58) - Element is clicked successfully.
+18:21:53.812 INFO  csp.AdminLoginPage (AdminLoginPage.java:38) - SignIn Button clicked successfully.
+18:21:53.813 INFO  scp.HomePage (HomePage.java:35) - Wait for page loader invisibility.
+18:21:53.813 INFO  driver.Page (    Page.java:222) - Waiting for element to be invisible for 120 seconds.
+18:21:53.842 INFO  driver.Page (    Page.java:225) - Element is invisible from the page.
+18:21:55.874 INFO  driver.DriverFactory (DriverFactory.java:97) - Clearing all the cookies.
+18:23:18.968 WARN  config.Configuration (Configuration.java:231) - QA env being used by default. No env property set. This can be set in the sew.app.yml config file with a '{}=' property or on the command line with the switch '-D{}='.
+18:23:19.466 INFO  runner.TestRunner (TestRunner.java:32) - Initializing application properties config file.
+18:23:19.468 INFO  runner.TestRunner (TestRunner.java:35) - Initializing connection to the base database.
+18:23:19.491 WARN  config.DatabaseConfiguration (DatabaseConfiguration.java:84) - QA env being used by default. No env property set. This can be set in the sentinel.yml config file with a '{}=' property or on the command line with the switch '-D{}='.
+18:23:21.906 INFO  runner.TestRunner (TestRunner.java:38) - Initializing resource path config file.
+18:23:21.909 INFO  runner.TestRunner (TestRunner.java:41) - Initializing usage months config from CSP.
+18:23:22.766 INFO  runner.TestRunner (TestRunner.java:44) - Initializing date config from CSP.
+18:23:23.510 INFO  runner.TestRunner (TestRunner.java:47) - Initializing language config from CSP.
+18:23:24.259 INFO  runner.TestRunner (TestRunner.java:50) - Initializing language config from CSP.
+18:23:25.021 INFO  runner.TestRunner (TestRunner.java:53) - Initializing language config from CSP.
+18:23:25.761 INFO  runner.TestRunner (TestRunner.java:56) - Initializing user model config.
+18:23:26.504 INFO  runner.TestRunner (TestRunner.java:59) - Initializing auth token config.
+18:23:27.338 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 1
+18:23:27.346 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 2
+18:23:27.348 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 3
+18:23:27.349 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 4
+18:23:27.350 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 5
+18:23:27.351 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 6
+18:23:27.352 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 7
+18:23:27.353 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 8
+18:23:27.354 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 9
+18:23:27.355 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 10
+18:23:27.356 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 11
+18:23:27.356 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 12
+18:23:27.357 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 13
+18:23:27.358 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 14
+18:23:27.358 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 15
+18:23:27.360 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 16
+18:23:27.360 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 17
+18:23:27.360 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 18
+18:23:27.361 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 19
+18:23:27.362 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 20
+18:23:30.634 INFO  driver.WebDriverFactory (WebDriverFactory.java:207) - Setting up the browser window to its max.
+18:23:30.785 INFO  driver.WebDriverFactory (WebDriverFactory.java:196) - Initializing the implicit wait timeout for {} 5
+18:23:30.795 INFO  driver.WebDriverFactory (WebDriverFactory.java:199) - Initializing the page load timeout.
+18:23:30.800 INFO  driver.DriverFactory (DriverFactory.java:97) - Clearing all the cookies.
+18:23:30.814 INFO  driver.DriverFactory (DriverFactory.java:58) - Open the url {} https://qa.smartcmobile.net/SCM_10.0_S-CSP/ using the selenium get() method.
+18:23:39.837 INFO  csp.AdminLoginTests (AdminLoginTests.java:20) - To verify the tests with the below test case id's: C72381
+18:23:39.849 INFO  csp.AdminLoginPage (AdminLoginPage.java:97) - Checking that the current page is Admin login page.
+18:23:39.850 INFO  driver.Page (    Page.java:36) - Fetching the current URL.
+18:23:39.856 INFO  driver.Page (    Page.java:37) - The Current URL is: https://qa.smartcmobile.net/SCM_10.0_S-CSP/
+18:23:39.863 INFO  driver.Page (    Page.java:42) - Fetching the current title.
+18:23:39.871 INFO  driver.Page (    Page.java:43) - The Current Title is: SCM Admin - Login
+18:23:39.877 INFO  csp.AdminLoginPage (AdminLoginPage.java:100) - The current page is Admin login page {}: true
+18:23:39.880 INFO  csp.AdminLoginPage (AdminLoginPage.java:22) - Populating username {} :qauser
+18:23:39.900 INFO  driver.Page (    Page.java:101) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (b45bc3ae68b9bb70b2176d6149a9c0c9)] -> css selector: [id='txtAdminLogin']] to be present in the DOM for duration of {} 120
+18:23:39.900 INFO  driver.Page (    Page.java:208) - Waiting for element to be visible for 120 seconds.
+18:23:39.945 INFO  driver.Page (    Page.java:211) - Element is visible on the page.
+18:23:39.955 INFO  driver.Page (    Page.java:103) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (b45bc3ae68b9bb70b2176d6149a9c0c9)] -> css selector: [id='txtAdminLogin']] before sending the keys.
+18:23:40.010 INFO  driver.Page (    Page.java:105) - Sending the following keys {} qauser to the element {} [[ChromeDriver: chrome on WINDOWS (b45bc3ae68b9bb70b2176d6149a9c0c9)] -> css selector: [id='txtAdminLogin']]
+18:23:40.055 INFO  csp.AdminLoginPage (AdminLoginPage.java:24) - Username populated successfully.
+18:23:40.057 INFO  csp.AdminLoginPage (AdminLoginPage.java:30) - Populating password {} :Sew@2021$!
+18:23:40.075 INFO  driver.Page (    Page.java:101) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (b45bc3ae68b9bb70b2176d6149a9c0c9)] -> css selector: [id='txtpwd']] to be present in the DOM for duration of {} 120
+18:23:40.076 INFO  driver.Page (    Page.java:208) - Waiting for element to be visible for 120 seconds.
+18:23:40.108 INFO  driver.Page (    Page.java:211) - Element is visible on the page.
+18:23:40.123 INFO  driver.Page (    Page.java:103) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (b45bc3ae68b9bb70b2176d6149a9c0c9)] -> css selector: [id='txtpwd']] before sending the keys.
+18:23:40.192 INFO  driver.Page (    Page.java:105) - Sending the following keys {} Sew@2021$! to the element {} [[ChromeDriver: chrome on WINDOWS (b45bc3ae68b9bb70b2176d6149a9c0c9)] -> css selector: [id='txtpwd']]
+18:23:40.252 INFO  csp.AdminLoginPage (AdminLoginPage.java:32) - Password populated successfully.
+18:23:40.253 INFO  driver.Page (    Page.java:55) - Preparing for element to click.
+18:23:40.253 INFO  driver.Page (    Page.java:183) - Waiting for element to be clickable for 120 seconds.
+18:23:40.292 INFO  driver.Page (    Page.java:186) - Element is clickable now.
+18:24:09.456 INFO  driver.Page (    Page.java:58) - Element is clicked successfully.
+18:24:09.456 INFO  csp.AdminLoginPage (AdminLoginPage.java:38) - SignIn Button clicked successfully.
+18:24:09.457 INFO  scp.HomePage (HomePage.java:35) - Wait for page loader invisibility.
+18:24:09.457 INFO  driver.Page (    Page.java:222) - Waiting for element to be invisible for 120 seconds.
+18:24:09.486 INFO  driver.Page (    Page.java:225) - Element is invisible from the page.
+18:24:09.491 INFO  csp.AdminHomePage (AdminHomePage.java:89) - Checking that the current page is Admin Home page.
+18:24:09.492 INFO  driver.Page (    Page.java:36) - Fetching the current URL.
+18:24:09.498 INFO  driver.Page (    Page.java:37) - The Current URL is: https://qa.smartcmobile.net/SCM_10.0_S-CSP/Home.aspx
+18:24:09.504 INFO  driver.Page (    Page.java:42) - Fetching the current title.
+18:24:09.508 INFO  driver.Page (    Page.java:43) - The Current Title is: Dashboard
+18:24:09.516 INFO  csp.AdminHomePage (AdminHomePage.java:92) - The current page is Admin Home page {}: true
+18:24:09.516 INFO  csp.AdminLoginTests (AdminLoginTests.java:26) - Test Case execution for - verifyValidAdminLogin - is Completed.
+18:24:14.489 INFO  driver.DriverFactory (DriverFactory.java:97) - Clearing all the cookies.
+18:27:15.880 WARN  config.Configuration (Configuration.java:231) - QA env being used by default. No env property set. This can be set in the sew.app.yml config file with a '{}=' property or on the command line with the switch '-D{}='.
+18:27:16.243 INFO  runner.TestRunner (TestRunner.java:32) - Initializing application properties config file.
+18:27:16.244 INFO  runner.TestRunner (TestRunner.java:35) - Initializing connection to the base database.
+18:27:16.273 WARN  config.DatabaseConfiguration (DatabaseConfiguration.java:84) - QA env being used by default. No env property set. This can be set in the sentinel.yml config file with a '{}=' property or on the command line with the switch '-D{}='.
+18:27:17.927 INFO  runner.TestRunner (TestRunner.java:38) - Initializing resource path config file.
+18:27:17.927 INFO  runner.TestRunner (TestRunner.java:41) - Initializing usage months config from CSP.
+18:27:18.734 INFO  runner.TestRunner (TestRunner.java:44) - Initializing date config from CSP.
+18:27:19.497 INFO  runner.TestRunner (TestRunner.java:47) - Initializing language config from CSP.
+18:27:20.253 INFO  runner.TestRunner (TestRunner.java:50) - Initializing language config from CSP.
+18:27:21.141 INFO  runner.TestRunner (TestRunner.java:53) - Initializing language config from CSP.
+18:27:21.885 INFO  runner.TestRunner (TestRunner.java:56) - Initializing user model config.
+18:27:22.629 INFO  runner.TestRunner (TestRunner.java:59) - Initializing auth token config.
+18:27:24.166 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 1
+18:27:24.184 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 2
+18:27:24.187 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 3
+18:27:24.190 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 4
+18:27:24.191 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 5
+18:27:24.192 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 6
+18:27:24.193 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 7
+18:27:24.195 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 8
+18:27:24.196 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 9
+18:27:24.197 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 10
+18:27:24.199 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 11
+18:27:24.200 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 12
+18:27:24.201 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 13
+18:27:24.202 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 14
+18:27:24.206 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 15
+18:27:24.208 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 16
+18:27:24.208 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 17
+18:27:24.209 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 18
+18:27:24.210 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 19
+18:27:24.211 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 20
+18:27:28.818 INFO  driver.WebDriverFactory (WebDriverFactory.java:207) - Setting up the browser window to its max.
+18:27:28.965 INFO  driver.WebDriverFactory (WebDriverFactory.java:196) - Initializing the implicit wait timeout for {} 5
+18:27:28.976 INFO  driver.WebDriverFactory (WebDriverFactory.java:199) - Initializing the page load timeout.
+18:27:28.997 INFO  driver.DriverFactory (DriverFactory.java:97) - Clearing all the cookies.
+18:27:29.010 INFO  driver.DriverFactory (DriverFactory.java:58) - Open the url {} https://qa.smartcmobile.net/SCM_10.0_S-CSP/ using the selenium get() method.
+18:27:37.538 INFO  csp.AdminLoginTests (AdminLoginTests.java:20) - To verify the tests with the below test case id's: C72381
+18:27:37.549 INFO  csp.AdminLoginPage (AdminLoginPage.java:97) - Checking that the current page is Admin login page.
+18:27:37.549 INFO  driver.Page (    Page.java:36) - Fetching the current URL.
+18:27:37.558 INFO  driver.Page (    Page.java:37) - The Current URL is: https://qa.smartcmobile.net/SCM_10.0_S-CSP/
+18:27:37.564 INFO  driver.Page (    Page.java:42) - Fetching the current title.
+18:27:37.570 INFO  driver.Page (    Page.java:43) - The Current Title is: SCM Admin - Login
+18:27:37.576 INFO  csp.AdminLoginPage (AdminLoginPage.java:100) - The current page is Admin login page {}: true
+18:27:37.578 INFO  csp.AdminLoginPage (AdminLoginPage.java:22) - Populating username {} :qauser
+18:27:37.591 INFO  driver.Page (    Page.java:101) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (56d9b7b5a14caf1b1395e8e7d74b652f)] -> css selector: [id='txtAdminLogin']] to be present in the DOM for duration of {} 120
+18:27:37.591 INFO  driver.Page (    Page.java:208) - Waiting for element to be visible for 120 seconds.
+18:27:37.626 INFO  driver.Page (    Page.java:211) - Element is visible on the page.
+18:27:37.635 INFO  driver.Page (    Page.java:103) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (56d9b7b5a14caf1b1395e8e7d74b652f)] -> css selector: [id='txtAdminLogin']] before sending the keys.
+18:27:37.680 INFO  driver.Page (    Page.java:105) - Sending the following keys {} qauser to the element {} [[ChromeDriver: chrome on WINDOWS (56d9b7b5a14caf1b1395e8e7d74b652f)] -> css selector: [id='txtAdminLogin']]
+18:27:37.718 INFO  csp.AdminLoginPage (AdminLoginPage.java:24) - Username populated successfully.
+18:27:37.719 INFO  csp.AdminLoginPage (AdminLoginPage.java:30) - Populating password {} :Sew@2021$!
+18:27:37.730 INFO  driver.Page (    Page.java:101) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (56d9b7b5a14caf1b1395e8e7d74b652f)] -> css selector: [id='txtpwd']] to be present in the DOM for duration of {} 120
+18:27:37.731 INFO  driver.Page (    Page.java:208) - Waiting for element to be visible for 120 seconds.
+18:27:37.752 INFO  driver.Page (    Page.java:211) - Element is visible on the page.
+18:27:37.759 INFO  driver.Page (    Page.java:103) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (56d9b7b5a14caf1b1395e8e7d74b652f)] -> css selector: [id='txtpwd']] before sending the keys.
+18:27:37.804 INFO  driver.Page (    Page.java:105) - Sending the following keys {} Sew@2021$! to the element {} [[ChromeDriver: chrome on WINDOWS (56d9b7b5a14caf1b1395e8e7d74b652f)] -> css selector: [id='txtpwd']]
+18:27:37.878 INFO  csp.AdminLoginPage (AdminLoginPage.java:32) - Password populated successfully.
+18:27:37.878 INFO  driver.Page (    Page.java:55) - Preparing for element to click.
+18:27:37.878 INFO  driver.Page (    Page.java:183) - Waiting for element to be clickable for 120 seconds.
+18:27:37.924 INFO  driver.Page (    Page.java:186) - Element is clickable now.
+18:27:58.261 INFO  driver.Page (    Page.java:58) - Element is clicked successfully.
+18:27:58.261 INFO  csp.AdminLoginPage (AdminLoginPage.java:38) - SignIn Button clicked successfully.
+18:27:58.261 INFO  scp.HomePage (HomePage.java:35) - Wait for page loader invisibility.
+18:27:58.262 INFO  driver.Page (    Page.java:222) - Waiting for element to be invisible for 120 seconds.
+18:27:58.287 INFO  driver.Page (    Page.java:225) - Element is invisible from the page.
+18:27:58.293 INFO  csp.AdminHomePage (AdminHomePage.java:89) - Checking that the current page is Admin Home page.
+18:27:58.293 INFO  driver.Page (    Page.java:36) - Fetching the current URL.
+18:27:58.298 INFO  driver.Page (    Page.java:37) - The Current URL is: https://qa.smartcmobile.net/SCM_10.0_S-CSP/Home.aspx
+18:27:58.304 INFO  driver.Page (    Page.java:42) - Fetching the current title.
+18:27:58.310 INFO  driver.Page (    Page.java:43) - The Current Title is: Dashboard
+18:27:58.315 INFO  csp.AdminHomePage (AdminHomePage.java:92) - The current page is Admin Home page {}: true
+18:27:58.315 INFO  csp.AdminLoginTests (AdminLoginTests.java:26) - Test Case execution for - verifyValidAdminLogin - is Completed.
+18:28:00.170 INFO  driver.DriverFactory (DriverFactory.java:97) - Clearing all the cookies.

@@ -1,0 +1,152 @@
+18:02:22.489 INFO  driver.Page (    Page.java:128) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (9ca3dab415b15fd13ab44cb266ee7242)] -> css selector: #user] is Please enter Username
+18:02:22.534 INFO  csp.AdminLoginPage (AdminLoginPage.java:177) - Username Field Validation Message is: Please enter Username
+18:02:22.534 INFO  driver.DriverFactory (DriverFactory.java:52) - Refreshing the browser {}.
+18:02:24.329 INFO  driver.DriverFactory (DriverFactory.java:54) - Browser refreshed successfully.
+18:02:24.330 INFO  scp.HomePage (HomePage.java:35) - Wait for page loader invisibility.
+18:02:24.331 INFO  driver.Page (    Page.java:222) - Waiting for element to be invisible for 120 seconds.
+18:02:29.423 INFO  driver.Page (    Page.java:225) - Element is invisible from the page.
+18:02:29.436 INFO  driver.Page (    Page.java:110) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (9ca3dab415b15fd13ab44cb266ee7242)] -> css selector: [id='txtpwd']] to be present in the DOM for duration of {} 120
+18:02:29.436 INFO  driver.Page (    Page.java:208) - Waiting for element to be visible for 120 seconds.
+18:02:29.467 INFO  driver.Page (    Page.java:211) - Element is visible on the page.
+18:02:29.478 INFO  driver.Page (    Page.java:112) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (9ca3dab415b15fd13ab44cb266ee7242)] -> css selector: [id='txtpwd']]
+18:02:29.538 INFO  csp.AdminLoginPage (AdminLoginPage.java:51) - Password field cleared {}
+18:02:29.538 INFO  csp.AdminLoginPage (AdminLoginPage.java:30) - Populating username {} :DemoUsername
+18:02:29.550 INFO  driver.Page (    Page.java:101) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (9ca3dab415b15fd13ab44cb266ee7242)] -> css selector: [id='txtAdminLogin']] to be present in the DOM for duration of {} 120
+18:02:29.551 INFO  driver.Page (    Page.java:208) - Waiting for element to be visible for 120 seconds.
+18:02:29.582 INFO  driver.Page (    Page.java:211) - Element is visible on the page.
+18:02:29.593 INFO  driver.Page (    Page.java:103) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (9ca3dab415b15fd13ab44cb266ee7242)] -> css selector: [id='txtAdminLogin']] before sending the keys.
+18:02:29.664 INFO  driver.Page (    Page.java:105) - Sending the following keys {} DemoUsername to the element {} [[ChromeDriver: chrome on WINDOWS (9ca3dab415b15fd13ab44cb266ee7242)] -> css selector: [id='txtAdminLogin']]
+18:02:29.745 INFO  csp.AdminLoginPage (AdminLoginPage.java:32) - Username populated successfully.
+18:02:29.745 INFO  driver.Page (    Page.java:55) - Preparing for element to click.
+18:02:29.746 INFO  driver.Page (    Page.java:183) - Waiting for element to be clickable for 120 seconds.
+18:02:29.803 INFO  driver.Page (    Page.java:186) - Element is clickable now.
+18:02:29.877 INFO  driver.Page (    Page.java:58) - Element is clicked successfully.
+18:02:29.878 INFO  csp.AdminLoginPage (AdminLoginPage.java:67) - SignIn Button clicked successfully.
+18:02:29.879 INFO  driver.Page (    Page.java:208) - Waiting for element to be visible for 120 seconds.
+18:02:29.925 INFO  driver.Page (    Page.java:211) - Element is visible on the page.
+18:02:29.926 INFO  csp.AdminLoginPage (AdminLoginPage.java:171) - Password Field Validation Message is Visible on the page.
+18:02:29.942 INFO  driver.Page (    Page.java:125) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (9ca3dab415b15fd13ab44cb266ee7242)] -> css selector: #pswd] to be visible on the page for duration of {} 120
+18:02:29.942 INFO  driver.Page (    Page.java:208) - Waiting for element to be visible for 120 seconds.
+18:02:29.977 INFO  driver.Page (    Page.java:211) - Element is visible on the page.
+18:02:30.023 INFO  driver.Page (    Page.java:128) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (9ca3dab415b15fd13ab44cb266ee7242)] -> css selector: #pswd] is Please enter Password
+18:02:30.046 INFO  csp.AdminLoginPage (AdminLoginPage.java:166) - Password Field Validation Message is: Please enter Password
+18:02:33.963 INFO  driver.DriverFactory (DriverFactory.java:97) - Clearing all the cookies.
+18:05:29.069 WARN  config.Configuration (Configuration.java:231) - QA env being used by default. No env property set. This can be set in the sew.app.yml config file with a '{}=' property or on the command line with the switch '-D{}='.
+18:05:29.835 INFO  runner.TestRunner (TestRunner.java:32) - Initializing application properties config file.
+18:05:29.837 INFO  runner.TestRunner (TestRunner.java:35) - Initializing connection to the base database.
+18:05:29.881 WARN  config.DatabaseConfiguration (DatabaseConfiguration.java:84) - QA env being used by default. No env property set. This can be set in the sentinel.yml config file with a '{}=' property or on the command line with the switch '-D{}='.
+18:05:31.955 INFO  runner.TestRunner (TestRunner.java:38) - Initializing resource path config file.
+18:05:31.957 INFO  runner.TestRunner (TestRunner.java:41) - Initializing usage months config from CSP.
+18:05:32.840 INFO  runner.TestRunner (TestRunner.java:44) - Initializing date config from CSP.
+18:05:33.585 INFO  runner.TestRunner (TestRunner.java:47) - Initializing language config from CSP.
+18:05:34.708 INFO  runner.TestRunner (TestRunner.java:50) - Initializing language config from CSP.
+18:05:35.659 INFO  runner.TestRunner (TestRunner.java:53) - Initializing language config from CSP.
+18:05:36.491 INFO  runner.TestRunner (TestRunner.java:56) - Initializing user model config.
+18:05:37.259 INFO  runner.TestRunner (TestRunner.java:59) - Initializing auth token config.
+18:05:38.472 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 1
+18:05:38.484 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 2
+18:05:38.486 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 3
+18:05:38.487 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 4
+18:05:38.488 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 5
+18:05:38.489 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 6
+18:05:38.490 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 7
+18:05:38.490 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 8
+18:05:38.492 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 9
+18:05:38.493 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 10
+18:05:38.493 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 11
+18:05:38.494 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 12
+18:05:38.495 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 13
+18:05:38.496 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 14
+18:05:38.497 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 15
+18:05:38.498 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 16
+18:05:38.499 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 17
+18:05:38.499 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 18
+18:05:38.500 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 19
+18:05:38.501 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 20
+18:05:38.502 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 21
+18:05:38.503 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 22
+18:05:38.504 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 23
+18:05:38.505 INFO  utils.ExcelUtils (ExcelUtils.java:35) - Test Runner excel row at: 24
+18:05:43.647 INFO  driver.WebDriverFactory (WebDriverFactory.java:207) - Setting up the browser window to its max.
+18:05:43.790 INFO  driver.WebDriverFactory (WebDriverFactory.java:196) - Initializing the implicit wait timeout for {} 5
+18:05:43.804 INFO  driver.WebDriverFactory (WebDriverFactory.java:199) - Initializing the page load timeout.
+18:05:43.813 INFO  driver.DriverFactory (DriverFactory.java:97) - Clearing all the cookies.
+18:05:43.828 INFO  driver.DriverFactory (DriverFactory.java:58) - Open the url {} https://qa.smartcmobile.net/SCM_10.0_S-CSP/ using the selenium get() method.
+18:05:54.415 INFO  csp.AdminLoginTests (AdminLoginTests.java:83) - To verify the tests with the below test case id's: C72375, C72374, C72373
+18:05:54.500 INFO  driver.Page (    Page.java:55) - Preparing for element to click.
+18:05:54.502 INFO  driver.Page (    Page.java:183) - Waiting for element to be clickable for 120 seconds.
+18:05:54.746 INFO  driver.Page (    Page.java:186) - Element is clickable now.
+18:05:54.837 INFO  driver.Page (    Page.java:58) - Element is clicked successfully.
+18:05:54.838 INFO  csp.AdminLoginPage (AdminLoginPage.java:67) - SignIn Button clicked successfully.
+18:05:54.867 INFO  driver.Page (    Page.java:125) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (a2a597b80f44a03e39e210db6b397035)] -> css selector: #user] to be visible on the page for duration of {} 120
+18:05:54.868 INFO  driver.Page (    Page.java:208) - Waiting for element to be visible for 120 seconds.
+18:05:54.934 INFO  driver.Page (    Page.java:211) - Element is visible on the page.
+18:05:55.003 INFO  driver.Page (    Page.java:128) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (a2a597b80f44a03e39e210db6b397035)] -> css selector: #user] is Please enter Username
+18:05:55.037 INFO  csp.AdminLoginPage (AdminLoginPage.java:177) - Username Field Validation Message is: Please enter Username
+18:05:55.066 INFO  driver.Page (    Page.java:125) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (a2a597b80f44a03e39e210db6b397035)] -> css selector: #pswd] to be visible on the page for duration of {} 120
+18:05:55.067 INFO  driver.Page (    Page.java:208) - Waiting for element to be visible for 120 seconds.
+18:05:55.116 INFO  driver.Page (    Page.java:211) - Element is visible on the page.
+18:05:55.183 INFO  driver.Page (    Page.java:128) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (a2a597b80f44a03e39e210db6b397035)] -> css selector: #pswd] is Please enter Password
+18:05:55.217 INFO  csp.AdminLoginPage (AdminLoginPage.java:166) - Password Field Validation Message is: Please enter Password
+18:05:55.218 INFO  driver.DriverFactory (DriverFactory.java:52) - Refreshing the browser {}.
+18:05:57.819 INFO  driver.DriverFactory (DriverFactory.java:54) - Browser refreshed successfully.
+18:05:57.820 INFO  scp.HomePage (HomePage.java:35) - Wait for page loader invisibility.
+18:05:57.820 INFO  driver.Page (    Page.java:222) - Waiting for element to be invisible for 120 seconds.
+18:06:02.898 INFO  driver.Page (    Page.java:225) - Element is invisible from the page.
+18:06:02.919 INFO  driver.Page (    Page.java:110) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (a2a597b80f44a03e39e210db6b397035)] -> css selector: [id='txtAdminLogin']] to be present in the DOM for duration of {} 120
+18:06:02.920 INFO  driver.Page (    Page.java:208) - Waiting for element to be visible for 120 seconds.
+18:06:02.957 INFO  driver.Page (    Page.java:211) - Element is visible on the page.
+18:06:02.970 INFO  driver.Page (    Page.java:112) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (a2a597b80f44a03e39e210db6b397035)] -> css selector: [id='txtAdminLogin']]
+18:06:03.025 INFO  csp.AdminLoginPage (AdminLoginPage.java:26) - Username field cleared {}
+18:06:03.026 INFO  csp.AdminLoginPage (AdminLoginPage.java:54) - Populating password {} :DemoPassword123
+18:06:03.046 INFO  driver.Page (    Page.java:101) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (a2a597b80f44a03e39e210db6b397035)] -> css selector: [id='txtpwd']] to be present in the DOM for duration of {} 120
+18:06:03.046 INFO  driver.Page (    Page.java:208) - Waiting for element to be visible for 120 seconds.
+18:06:03.081 INFO  driver.Page (    Page.java:211) - Element is visible on the page.
+18:06:03.093 INFO  driver.Page (    Page.java:103) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (a2a597b80f44a03e39e210db6b397035)] -> css selector: [id='txtpwd']] before sending the keys.
+18:06:03.179 INFO  driver.Page (    Page.java:105) - Sending the following keys {} DemoPassword123 to the element {} [[ChromeDriver: chrome on WINDOWS (a2a597b80f44a03e39e210db6b397035)] -> css selector: [id='txtpwd']]
+18:06:03.300 INFO  csp.AdminLoginPage (AdminLoginPage.java:56) - Password populated successfully.
+18:06:03.301 INFO  driver.Page (    Page.java:55) - Preparing for element to click.
+18:06:03.301 INFO  driver.Page (    Page.java:183) - Waiting for element to be clickable for 120 seconds.
+18:06:03.379 INFO  driver.Page (    Page.java:186) - Element is clickable now.
+18:06:03.471 INFO  driver.Page (    Page.java:58) - Element is clicked successfully.
+18:06:03.472 INFO  csp.AdminLoginPage (AdminLoginPage.java:67) - SignIn Button clicked successfully.
+18:06:03.472 INFO  driver.Page (    Page.java:208) - Waiting for element to be visible for 120 seconds.
+18:06:03.508 INFO  driver.Page (    Page.java:211) - Element is visible on the page.
+18:06:03.508 INFO  csp.AdminLoginPage (AdminLoginPage.java:183) - Username Field Validation Message is Visible on the page.
+18:06:03.524 INFO  driver.Page (    Page.java:125) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (a2a597b80f44a03e39e210db6b397035)] -> css selector: #user] to be visible on the page for duration of {} 120
+18:06:03.524 INFO  driver.Page (    Page.java:208) - Waiting for element to be visible for 120 seconds.
+18:06:03.572 INFO  driver.Page (    Page.java:211) - Element is visible on the page.
+18:06:03.628 INFO  driver.Page (    Page.java:128) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (a2a597b80f44a03e39e210db6b397035)] -> css selector: #user] is Please enter Username
+18:06:03.655 INFO  csp.AdminLoginPage (AdminLoginPage.java:177) - Username Field Validation Message is: Please enter Username
+18:06:03.655 INFO  driver.DriverFactory (DriverFactory.java:52) - Refreshing the browser {}.
+18:06:05.480 INFO  driver.DriverFactory (DriverFactory.java:54) - Browser refreshed successfully.
+18:06:05.480 INFO  scp.HomePage (HomePage.java:35) - Wait for page loader invisibility.
+18:06:05.481 INFO  driver.Page (    Page.java:222) - Waiting for element to be invisible for 120 seconds.
+18:06:10.524 INFO  driver.Page (    Page.java:225) - Element is invisible from the page.
+18:06:10.538 INFO  driver.Page (    Page.java:110) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (a2a597b80f44a03e39e210db6b397035)] -> css selector: [id='txtpwd']] to be present in the DOM for duration of {} 120
+18:06:10.539 INFO  driver.Page (    Page.java:208) - Waiting for element to be visible for 120 seconds.
+18:06:10.576 INFO  driver.Page (    Page.java:211) - Element is visible on the page.
+18:06:10.590 INFO  driver.Page (    Page.java:112) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (a2a597b80f44a03e39e210db6b397035)] -> css selector: [id='txtpwd']]
+18:06:10.655 INFO  csp.AdminLoginPage (AdminLoginPage.java:51) - Password field cleared {}
+18:06:10.656 INFO  csp.AdminLoginPage (AdminLoginPage.java:30) - Populating username {} :DemoUsername
+18:06:10.668 INFO  driver.Page (    Page.java:101) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (a2a597b80f44a03e39e210db6b397035)] -> css selector: [id='txtAdminLogin']] to be present in the DOM for duration of {} 120
+18:06:10.669 INFO  driver.Page (    Page.java:208) - Waiting for element to be visible for 120 seconds.
+18:06:10.712 INFO  driver.Page (    Page.java:211) - Element is visible on the page.
+18:06:10.729 INFO  driver.Page (    Page.java:103) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (a2a597b80f44a03e39e210db6b397035)] -> css selector: [id='txtAdminLogin']] before sending the keys.
+18:06:10.830 INFO  driver.Page (    Page.java:105) - Sending the following keys {} DemoUsername to the element {} [[ChromeDriver: chrome on WINDOWS (a2a597b80f44a03e39e210db6b397035)] -> css selector: [id='txtAdminLogin']]
+18:06:10.915 INFO  csp.AdminLoginPage (AdminLoginPage.java:32) - Username populated successfully.
+18:06:10.915 INFO  driver.Page (    Page.java:55) - Preparing for element to click.
+18:06:10.916 INFO  driver.Page (    Page.java:183) - Waiting for element to be clickable for 120 seconds.
+18:06:10.982 INFO  driver.Page (    Page.java:186) - Element is clickable now.
+18:06:11.073 INFO  driver.Page (    Page.java:58) - Element is clicked successfully.
+18:06:11.073 INFO  csp.AdminLoginPage (AdminLoginPage.java:67) - SignIn Button clicked successfully.
+18:06:11.074 INFO  driver.Page (    Page.java:208) - Waiting for element to be visible for 120 seconds.
+18:06:11.113 INFO  driver.Page (    Page.java:211) - Element is visible on the page.
+18:06:11.113 INFO  csp.AdminLoginPage (AdminLoginPage.java:171) - Password Field Validation Message is Visible on the page.
+18:06:11.131 INFO  driver.Page (    Page.java:125) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (a2a597b80f44a03e39e210db6b397035)] -> css selector: #pswd] to be visible on the page for duration of {} 120
+18:06:11.132 INFO  driver.Page (    Page.java:208) - Waiting for element to be visible for 120 seconds.
+18:06:11.180 INFO  driver.Page (    Page.java:211) - Element is visible on the page.
+18:06:11.263 INFO  driver.Page (    Page.java:128) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (a2a597b80f44a03e39e210db6b397035)] -> css selector: #pswd] is Please enter Password
+18:06:11.295 INFO  csp.AdminLoginPage (AdminLoginPage.java:166) - Password Field Validation Message is: Please enter Password
+18:06:11.296 INFO  csp.AdminLoginTests (AdminLoginTests.java:91) - Test Case execution for - verifyAlertMessageBlankLoginFields - is Completed.
+18:06:15.668 INFO  driver.DriverFactory (DriverFactory.java:97) - Clearing all the cookies.

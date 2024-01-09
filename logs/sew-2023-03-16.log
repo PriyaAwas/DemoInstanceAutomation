@@ -1,0 +1,851 @@
+13:19:48.370 INFO  csp.AdminHomePage (AdminHomePage.java:52) - Ways To Save Link clicked successfully.
+13:19:48.382 INFO  scp.HomePage (HomePage.java:132) - Wait for page loader invisibility.
+13:19:48.383 INFO  driver.Page (    Page.java:250) - Waiting for element to be invisible for 120 seconds.
+13:19:48.498 INFO  driver.Page (    Page.java:253) - Element is invisible from the page.
+13:19:48.499 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+13:19:48.543 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+13:19:48.543 INFO  csp.WaysToSavePage (WaysToSavePage.java:1309) - Next Button is Visible on the Ways To Save page.
+13:19:48.693 INFO  csp.WaysToSaveSteps (WaysToSaveSteps.java:1163) - Checking that the current page is Ways To Save page.
+13:19:48.695 INFO  driver.Page (    Page.java:40) - Fetching the current URL.
+13:19:48.718 INFO  driver.Page (    Page.java:41) - The Current URL is: https://qa.smartcmobile.net/SCM_10.0_S-CSP/configuration/WaysToSave.aspx
+13:19:48.775 INFO  driver.Page (    Page.java:46) - Fetching the current title.
+13:19:48.801 INFO  driver.Page (    Page.java:47) - The Current Title is: Ways To Save
+13:19:48.809 INFO  csp.WaysToSaveSteps (WaysToSaveSteps.java:1166) - The current page is Ways To Save page {}: true
+13:19:48.990 INFO  driver.Page (    Page.java:353) - Selecting the option by visible text {}: Saving Tips
+13:19:49.072 INFO  driver.Page (    Page.java:355) - Selecting the given option to the web element {}: [[ChromeDriver: chrome on WINDOWS (813948294838d4f084535ffee4c205fa)] -> css selector: #filter]
+13:19:53.104 INFO  driver.Page (    Page.java:357) - Given text is selected as the option to the given select web element.
+13:19:53.104 INFO  csp.WaysToSavePage (WaysToSavePage.java:40) - Ways To Save Filter Dropdwon has been selected with the value Saving Tips
+13:19:55.129 INFO  driver.Page (    Page.java:527) - Preparing for element to click.
+13:19:55.252 INFO  driver.Page (    Page.java:534) - Element is clicked successfully.
+13:19:55.252 INFO  csp.WaysToSavePage (WaysToSavePage.java:68) - Add Ways To Save Button on Ways To Save Dashboard Clicked successfully.
+13:19:55.253 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+13:19:55.884 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+13:19:55.884 INFO  csp.WaysToSavePage (WaysToSavePage.java:406) - Add Button is Visible on the Add Ways To Save Popup page.
+13:19:55.885 INFO  driver.Page (    Page.java:353) - Selecting the option by visible text {}: Saving Tips
+13:19:55.966 INFO  driver.Page (    Page.java:355) - Selecting the given option to the web element {}: [[ChromeDriver: chrome on WINDOWS (813948294838d4f084535ffee4c205fa)] -> css selector: #ddlCategory]
+13:19:56.217 INFO  driver.Page (    Page.java:357) - Given text is selected as the option to the given select web element.
+13:19:56.725 INFO  csp.WaysToSavePage (WaysToSavePage.java:231) - Category dropdown on Add Ways To Save Popup is selected with the value Saving Tips
+13:19:56.725 INFO  driver.Page (    Page.java:353) - Selecting the option by visible text {}: Power
+13:19:56.791 INFO  driver.Page (    Page.java:355) - Selecting the given option to the web element {}: [[ChromeDriver: chrome on WINDOWS (813948294838d4f084535ffee4c205fa)] -> css selector: #ddlServiceType]
+13:19:57.015 INFO  driver.Page (    Page.java:357) - Given text is selected as the option to the given select web element.
+13:19:57.524 INFO  csp.WaysToSavePage (WaysToSavePage.java:270) - MeterType dropdown on Add Ways To Save Popup is selected with the value Power
+13:19:57.525 INFO  driver.Page (    Page.java:527) - Preparing for element to click.
+13:19:57.590 INFO  driver.Page (    Page.java:534) - Element is clicked successfully.
+13:19:57.590 INFO  csp.WaysToSavePage (WaysToSavePage.java:303) - Clicked on AccountType Dropdown on Add Ways To Save Popup
+13:19:57.591 INFO  driver.Page (    Page.java:59) - Preparing for element to click.
+13:19:57.591 INFO  driver.Page (    Page.java:211) - Waiting for element to be clickable for 120 seconds.
+13:19:57.680 INFO  driver.Page (    Page.java:214) - Element is clickable now.
+13:19:57.801 INFO  driver.Page (    Page.java:62) - Element is clicked successfully.
+13:19:58.308 INFO  csp.WaysToSavePage (WaysToSavePage.java:336) - Clicked on Residential AccountType Dropdown on Add Ways To Save Popup
+13:19:58.309 INFO  driver.Page (    Page.java:527) - Preparing for element to click.
+13:19:58.337 INFO  driver.Page (    Page.java:534) - Element is clicked successfully.
+13:19:58.337 INFO  csp.WaysToSavePage (WaysToSavePage.java:303) - Clicked on AccountType Dropdown on Add Ways To Save Popup
+13:19:58.338 INFO  driver.Page (    Page.java:77) - Preparing for element to click.
+13:19:58.338 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+13:19:58.410 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+13:19:58.448 INFO  driver.Page (    Page.java:81) - Element is clicked successfully.
+13:19:58.448 INFO  csp.WaysToSavePage (WaysToSavePage.java:445) - Internal checkbox is checked successfully.
+13:19:58.469 INFO  driver.Page (    Page.java:121) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (813948294838d4f084535ffee4c205fa)] -> css selector: #txtQuestionEN] to be present in the DOM for duration of {} 120
+13:19:58.469 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+13:19:58.504 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+13:19:58.517 INFO  driver.Page (    Page.java:123) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (813948294838d4f084535ffee4c205fa)] -> css selector: #txtQuestionEN] before sending the keys.
+13:19:58.620 INFO  driver.Page (    Page.java:125) - Sending the following keys {} SavingTipsTopic 49839 to the element {} [[ChromeDriver: chrome on WINDOWS (813948294838d4f084535ffee4c205fa)] -> css selector: #txtQuestionEN]
+13:19:58.925 INFO  csp.WaysToSavePage (WaysToSavePage.java:1107) - Topic Name English TextBox populated successfully with Value SavingTipsTopic 49839
+13:19:58.960 INFO  driver.Page (    Page.java:121) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (813948294838d4f084535ffee4c205fa)] -> xpath: //div[@id='summernoteEnglish']/following::div[1]/div[@class='note-editing-area']/div[@class='note-editable']] to be present in the DOM for duration of {} 120
+13:19:58.960 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+13:19:59.013 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+13:19:59.028 INFO  driver.Page (    Page.java:123) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (813948294838d4f084535ffee4c205fa)] -> xpath: //div[@id='summernoteEnglish']/following::div[1]/div[@class='note-editing-area']/div[@class='note-editable']] before sending the keys.
+13:19:59.131 INFO  driver.Page (    Page.java:125) - Sending the following keys {} SavingTipsDescription 97662 to the element {} [[ChromeDriver: chrome on WINDOWS (813948294838d4f084535ffee4c205fa)] -> xpath: //div[@id='summernoteEnglish']/following::div[1]/div[@class='note-editing-area']/div[@class='note-editable']]
+13:19:59.890 INFO  csp.WaysToSavePage (WaysToSavePage.java:1132) - Description English TextBox populated successfully with Value SavingTipsDescription 97662
+13:19:59.955 INFO  driver.Page (    Page.java:121) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (813948294838d4f084535ffee4c205fa)] -> css selector: input.txtAmount] to be present in the DOM for duration of {} 120
+13:19:59.955 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+13:19:59.993 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+13:20:00.020 INFO  driver.Page (    Page.java:123) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (813948294838d4f084535ffee4c205fa)] -> css selector: input.txtAmount] before sending the keys.
+13:20:00.123 INFO  driver.Page (    Page.java:125) - Sending the following keys {} 96 to the element {} [[ChromeDriver: chrome on WINDOWS (813948294838d4f084535ffee4c205fa)] -> css selector: input.txtAmount]
+13:20:00.258 INFO  csp.WaysToSavePage (WaysToSavePage.java:523) - Annual Saving TextBox populated successfully with Value 96
+13:20:00.293 INFO  driver.Page (    Page.java:130) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (813948294838d4f084535ffee4c205fa)] -> css selector: #fileUpload] to be present in the DOM for duration of {} 120
+13:20:00.294 INFO  driver.Page (    Page.java:131) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (813948294838d4f084535ffee4c205fa)] -> css selector: #fileUpload] before sending the keys.
+13:20:00.420 INFO  driver.Page (    Page.java:133) - Sending the following keys {} C:\Users\kragavendr001\Desktop\SEW\SCMBase10sUIWorkspace\SCM10SFunctionalTests\src\test\resources\uploads\Test.jpg to the element {} [[ChromeDriver: chrome on WINDOWS (813948294838d4f084535ffee4c205fa)] -> css selector: #fileUpload]
+13:20:00.466 INFO  csp.WaysToSavePage (WaysToSavePage.java:387) - Choose File Button added successfully with File Value C:\Users\kragavendr001\Desktop\SEW\SCMBase10sUIWorkspace\SCM10SFunctionalTests\src\test\resources\uploads\Test.jpg
+13:20:00.466 INFO  driver.Page (    Page.java:527) - Preparing for element to click.
+13:20:08.454 INFO  driver.Page (    Page.java:534) - Element is clicked successfully.
+13:20:08.454 INFO  csp.WaysToSavePage (WaysToSavePage.java:416) - Add Button on Add Ways To Save Popup clicked successfully.
+13:20:09.789 INFO  driver.Page (    Page.java:161) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (813948294838d4f084535ffee4c205fa)] -> css selector: #toast-container .toast-message] is A new Saving Tip added successfully
+13:20:09.826 INFO  scp.HomePage (HomePage.java:167) - Label on toast message {}: A new Saving Tip added successfully
+13:20:09.827 INFO  scp.HomePage (HomePage.java:146) - Wait for toast message invisibility.
+13:20:09.827 INFO  driver.Page (    Page.java:250) - Waiting for element to be invisible for 120 seconds.
+13:20:17.049 INFO  driver.Page (    Page.java:253) - Element is invisible from the page.
+13:20:17.831 INFO  driver.Page (    Page.java:353) - Selecting the option by visible text {}: Saving Tips
+13:20:17.887 INFO  driver.Page (    Page.java:355) - Selecting the given option to the web element {}: [[ChromeDriver: chrome on WINDOWS (813948294838d4f084535ffee4c205fa)] -> css selector: #filter]
+13:20:17.968 INFO  driver.Page (    Page.java:357) - Given text is selected as the option to the given select web element.
+13:20:17.969 INFO  csp.WaysToSavePage (WaysToSavePage.java:40) - Ways To Save Filter Dropdwon has been selected with the value Saving Tips
+13:26:33.821 INFO  driver.Page (    Page.java:194) - Returning web element for by type locator : By.xpath: //a[text()='SavingTipsTopic 49839']/preceding::a[@aria-label='Click to kebab menu'][1]
+13:59:10.831 INFO  runner.TestRunner (TestRunner.java:32) - Initializing application properties config file.
+13:59:10.882 INFO  runner.TestRunner (TestRunner.java:35) - Initializing connection to the base database.
+13:59:11.536 WARN  config.DatabaseConfiguration (DatabaseConfiguration.java:84) - QA env being used by default. No env property set. This can be set in the sentinel.yml config file with a '{}=' property or on the command line with the switch '-D{}='.
+13:59:13.550 INFO  runner.TestRunner (TestRunner.java:38) - Initializing resource path config file.
+13:59:13.564 INFO  runner.TestRunner (TestRunner.java:41) - Initializing usage months config from CSP.
+13:59:14.442 INFO  runner.TestRunner (TestRunner.java:44) - Initializing date config from CSP.
+13:59:15.192 INFO  runner.TestRunner (TestRunner.java:47) - Initializing language config from CSP.
+13:59:15.934 INFO  runner.TestRunner (TestRunner.java:50) - Initializing language config from CSP.
+13:59:16.685 INFO  runner.TestRunner (TestRunner.java:53) - Initializing language config from CSP.
+13:59:17.437 INFO  runner.TestRunner (TestRunner.java:56) - Initializing user model config.
+13:59:17.515 WARN  config.Configuration (Configuration.java:231) - QA env being used by default. No env property set. This can be set in the sew.app.yml config file with a '{}=' property or on the command line with the switch '-D{}='.
+13:59:24.527 INFO  runner.TestRunner (TestRunner.java:59) - Initializing auth token config.
+13:59:24.528 INFO  runner.TestRunner (TestRunner.java:62) - Initializing Admin User config.
+13:59:26.985 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 1
+13:59:26.996 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 2
+13:59:26.998 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 3
+13:59:26.999 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 4
+13:59:27.000 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 5
+13:59:27.001 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 6
+13:59:27.002 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 7
+13:59:27.002 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 8
+13:59:27.003 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 9
+13:59:27.004 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 10
+13:59:27.005 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 11
+13:59:27.006 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 12
+13:59:27.010 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 13
+13:59:27.011 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 14
+13:59:27.012 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 15
+13:59:27.013 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 16
+13:59:27.015 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 17
+13:59:27.017 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 18
+13:59:27.018 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 19
+13:59:27.019 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 20
+13:59:27.020 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 21
+13:59:27.021 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 22
+13:59:27.022 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 23
+13:59:27.023 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 24
+13:59:27.023 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 25
+13:59:27.025 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 26
+13:59:27.025 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 27
+13:59:27.025 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 28
+13:59:27.026 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 29
+13:59:27.027 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 30
+13:59:27.028 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 31
+13:59:27.028 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 32
+13:59:27.029 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 33
+13:59:27.030 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 34
+13:59:27.030 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 35
+13:59:27.031 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 36
+13:59:27.032 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 37
+13:59:27.032 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 38
+13:59:27.034 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 39
+13:59:27.034 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 40
+13:59:27.035 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 41
+13:59:27.035 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 42
+13:59:27.036 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 43
+13:59:27.037 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 44
+13:59:27.038 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 45
+13:59:27.038 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 46
+13:59:27.038 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 47
+13:59:27.040 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 48
+13:59:27.040 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 49
+13:59:27.040 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 50
+13:59:27.041 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 51
+13:59:27.042 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 52
+13:59:27.043 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 53
+13:59:27.043 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 54
+13:59:27.044 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 55
+13:59:27.046 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 56
+13:59:27.047 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 57
+13:59:27.048 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 58
+13:59:27.050 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 59
+13:59:27.050 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 60
+13:59:27.051 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 61
+13:59:27.052 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 62
+13:59:27.053 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 63
+13:59:27.054 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 64
+13:59:27.055 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 65
+13:59:27.056 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 66
+13:59:27.057 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 67
+13:59:27.058 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 68
+13:59:27.058 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 69
+13:59:27.058 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 70
+13:59:27.059 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 71
+13:59:27.059 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 72
+13:59:27.060 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 73
+13:59:27.060 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 74
+13:59:27.061 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 75
+13:59:27.061 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 76
+13:59:27.061 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 77
+13:59:27.062 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 78
+13:59:27.062 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 79
+13:59:27.063 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 80
+13:59:27.064 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 81
+13:59:27.064 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 82
+13:59:34.493 INFO  driver.WebDriverFactory (WebDriverFactory.java:192) - Setting up the browser window to its max.
+13:59:35.035 INFO  driver.WebDriverFactory (WebDriverFactory.java:181) - Initializing the implicit wait timeout for {} 5
+13:59:35.079 INFO  driver.WebDriverFactory (WebDriverFactory.java:184) - Initializing the page load timeout.
+13:59:35.115 INFO  driver.DriverFactory (DriverFactory.java:122) - Clearing all the cookies.
+13:59:35.156 INFO  driver.DriverFactory (DriverFactory.java:59) - Open the url {} https://qa.smartcmobile.net/SCM_10.0_S-SCP/ using the selenium get() method.
+13:59:58.013 INFO  csp.AdminNotificationTests (AdminNotificationTests.java:72) - To verify the tests with the below test case id's: C80455, C80456, C80473
+14:00:01.547 INFO  driver.DriverFactory (DriverFactory.java:122) - Clearing all the cookies.
+14:03:28.068 INFO  runner.TestRunner (TestRunner.java:32) - Initializing application properties config file.
+14:03:28.077 INFO  runner.TestRunner (TestRunner.java:35) - Initializing connection to the base database.
+14:03:28.685 WARN  config.DatabaseConfiguration (DatabaseConfiguration.java:84) - QA env being used by default. No env property set. This can be set in the sentinel.yml config file with a '{}=' property or on the command line with the switch '-D{}='.
+14:03:30.553 INFO  runner.TestRunner (TestRunner.java:38) - Initializing resource path config file.
+14:03:30.554 INFO  runner.TestRunner (TestRunner.java:41) - Initializing usage months config from CSP.
+14:03:31.390 INFO  runner.TestRunner (TestRunner.java:44) - Initializing date config from CSP.
+14:03:32.132 INFO  runner.TestRunner (TestRunner.java:47) - Initializing language config from CSP.
+14:03:32.879 INFO  runner.TestRunner (TestRunner.java:50) - Initializing language config from CSP.
+14:03:33.629 INFO  runner.TestRunner (TestRunner.java:53) - Initializing language config from CSP.
+14:03:34.374 INFO  runner.TestRunner (TestRunner.java:56) - Initializing user model config.
+14:03:34.390 WARN  config.Configuration (Configuration.java:231) - QA env being used by default. No env property set. This can be set in the sew.app.yml config file with a '{}=' property or on the command line with the switch '-D{}='.
+14:03:41.610 INFO  runner.TestRunner (TestRunner.java:59) - Initializing auth token config.
+14:03:41.611 INFO  runner.TestRunner (TestRunner.java:62) - Initializing Admin User config.
+14:03:44.016 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 1
+14:03:44.027 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 2
+14:03:44.029 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 3
+14:03:44.030 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 4
+14:03:44.031 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 5
+14:03:44.032 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 6
+14:03:44.033 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 7
+14:03:44.033 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 8
+14:03:44.034 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 9
+14:03:44.035 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 10
+14:03:44.036 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 11
+14:03:44.037 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 12
+14:03:44.038 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 13
+14:03:44.038 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 14
+14:03:44.045 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 15
+14:03:44.047 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 16
+14:03:44.048 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 17
+14:03:44.049 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 18
+14:03:44.050 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 19
+14:03:44.052 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 20
+14:03:44.054 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 21
+14:03:44.055 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 22
+14:03:44.060 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 23
+14:03:44.061 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 24
+14:03:44.062 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 25
+14:03:44.063 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 26
+14:03:44.063 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 27
+14:03:44.065 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 28
+14:03:44.065 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 29
+14:03:44.066 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 30
+14:03:44.067 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 31
+14:03:44.067 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 32
+14:03:44.068 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 33
+14:03:44.068 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 34
+14:03:44.069 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 35
+14:03:44.070 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 36
+14:03:44.070 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 37
+14:03:44.071 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 38
+14:03:44.071 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 39
+14:03:44.072 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 40
+14:03:44.073 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 41
+14:03:44.073 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 42
+14:03:44.074 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 43
+14:03:44.075 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 44
+14:03:44.075 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 45
+14:03:44.076 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 46
+14:03:44.076 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 47
+14:03:44.077 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 48
+14:03:44.077 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 49
+14:03:44.078 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 50
+14:03:44.078 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 51
+14:03:44.079 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 52
+14:03:44.079 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 53
+14:03:44.080 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 54
+14:03:44.080 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 55
+14:03:44.081 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 56
+14:03:44.081 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 57
+14:03:44.083 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 58
+14:03:44.083 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 59
+14:03:44.083 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 60
+14:03:44.086 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 61
+14:03:44.088 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 62
+14:03:44.089 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 63
+14:03:44.092 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 64
+14:03:44.093 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 65
+14:03:44.093 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 66
+14:03:44.094 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 67
+14:03:44.094 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 68
+14:03:44.095 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 69
+14:03:44.096 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 70
+14:03:44.096 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 71
+14:03:44.097 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 72
+14:03:44.098 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 73
+14:03:44.099 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 74
+14:03:44.099 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 75
+14:03:44.100 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 76
+14:03:44.100 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 77
+14:03:44.101 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 78
+14:03:44.101 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 79
+14:03:44.102 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 80
+14:03:44.102 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 81
+14:03:44.103 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 82
+14:03:51.318 INFO  driver.WebDriverFactory (WebDriverFactory.java:192) - Setting up the browser window to its max.
+14:03:51.583 INFO  driver.WebDriverFactory (WebDriverFactory.java:181) - Initializing the implicit wait timeout for {} 5
+14:03:51.604 INFO  driver.WebDriverFactory (WebDriverFactory.java:184) - Initializing the page load timeout.
+14:03:51.626 INFO  driver.DriverFactory (DriverFactory.java:122) - Clearing all the cookies.
+14:03:51.676 INFO  driver.DriverFactory (DriverFactory.java:59) - Open the url {} https://qa.smartcmobile.net/SCM_10.0_S-SCP/ using the selenium get() method.
+14:04:20.987 INFO  csp.AdminNotificationTests (AdminNotificationTests.java:72) - To verify the tests with the below test case id's: C80455, C80456, C80473
+14:04:21.221 INFO  connectme.ConnectMeEndpoints (ConnectMeEndpoints.java:76) - Initializing the add Connect me payload.
+14:04:22.602 INFO  connectme.ConnectMeEndpoints (ConnectMeEndpoints.java:82) - Initializing the add  Outage connect me specification.
+14:04:22.804 INFO  connectme.ConnectMeEndpoints (ConnectMeEndpoints.java:93) - Hit the add Outage ConnectMe with given request specification: io.restassured.internal.RequestSpecificationImpl@4df5f119
+and the endpoint is : /ContactUs/SetConnectMeRequest
+and with given http verb : POST
+14:04:26.053 INFO  driver.DriverFactory (DriverFactory.java:59) - Open the url {} https://qa.smartcmobile.net/SCM_10.0_S-CSP/ using the selenium get() method.
+14:04:39.996 INFO  scp.HomePage (HomePage.java:132) - Wait for page loader invisibility.
+14:04:39.997 INFO  driver.Page (    Page.java:250) - Waiting for element to be invisible for 120 seconds.
+14:04:45.090 INFO  driver.Page (    Page.java:253) - Element is invisible from the page.
+14:04:45.090 INFO  csp.AdminLoginPage (AdminLoginPage.java:334) - Checking that the current page is Admin login page.
+14:04:45.091 INFO  driver.Page (    Page.java:40) - Fetching the current URL.
+14:04:45.103 INFO  driver.Page (    Page.java:41) - The Current URL is: https://qa.smartcmobile.net/SCM_10.0_S-CSP/
+14:04:45.114 INFO  driver.Page (    Page.java:46) - Fetching the current title.
+14:04:45.124 INFO  driver.Page (    Page.java:47) - The Current Title is: SCM Admin - Login
+14:04:45.141 INFO  csp.AdminLoginPage (AdminLoginPage.java:337) - The current page is Admin login page {}: true
+14:04:45.141 INFO  csp.AdminLoginPage (AdminLoginPage.java:30) - Populating username {} :qauser
+14:04:45.170 INFO  driver.Page (    Page.java:121) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (2b1efc04e339a6cd05f61dee3a6a6cb3)] -> css selector: [id='txtAdminLogin']] to be present in the DOM for duration of {} 120
+14:04:45.171 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+14:04:45.234 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+14:04:45.249 INFO  driver.Page (    Page.java:123) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (2b1efc04e339a6cd05f61dee3a6a6cb3)] -> css selector: [id='txtAdminLogin']] before sending the keys.
+14:04:45.361 INFO  driver.Page (    Page.java:125) - Sending the following keys {} qauser to the element {} [[ChromeDriver: chrome on WINDOWS (2b1efc04e339a6cd05f61dee3a6a6cb3)] -> css selector: [id='txtAdminLogin']]
+14:04:45.438 INFO  csp.AdminLoginPage (AdminLoginPage.java:32) - Username populated successfully.
+14:04:45.439 INFO  csp.AdminLoginPage (AdminLoginPage.java:54) - Populating password {} :Sew@2021$!
+14:04:45.460 INFO  driver.Page (    Page.java:121) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (2b1efc04e339a6cd05f61dee3a6a6cb3)] -> css selector: [id='txtpwd']] to be present in the DOM for duration of {} 120
+14:04:45.460 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+14:04:45.506 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+14:04:45.521 INFO  driver.Page (    Page.java:123) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (2b1efc04e339a6cd05f61dee3a6a6cb3)] -> css selector: [id='txtpwd']] before sending the keys.
+14:04:45.607 INFO  driver.Page (    Page.java:125) - Sending the following keys {} Sew@2021$! to the element {} [[ChromeDriver: chrome on WINDOWS (2b1efc04e339a6cd05f61dee3a6a6cb3)] -> css selector: [id='txtpwd']]
+14:04:45.743 INFO  csp.AdminLoginPage (AdminLoginPage.java:56) - Password populated successfully.
+14:04:45.743 INFO  driver.Page (    Page.java:59) - Preparing for element to click.
+14:04:45.744 INFO  driver.Page (    Page.java:211) - Waiting for element to be clickable for 120 seconds.
+14:04:45.832 INFO  driver.Page (    Page.java:214) - Element is clickable now.
+14:05:14.696 INFO  driver.Page (    Page.java:62) - Element is clicked successfully.
+14:05:14.697 INFO  csp.AdminLoginPage (AdminLoginPage.java:67) - SignIn Button clicked successfully.
+14:05:14.697 INFO  scp.HomePage (HomePage.java:132) - Wait for page loader invisibility.
+14:05:14.697 INFO  driver.Page (    Page.java:250) - Waiting for element to be invisible for 120 seconds.
+14:05:14.741 INFO  driver.Page (    Page.java:253) - Element is invisible from the page.
+14:05:14.744 INFO  csp.AdminHomePage (AdminHomePage.java:181) - Checking that the current page is Admin Home page.
+14:05:14.744 INFO  driver.Page (    Page.java:40) - Fetching the current URL.
+14:05:14.753 INFO  driver.Page (    Page.java:41) - The Current URL is: https://qa.smartcmobile.net/SCM_10.0_S-CSP/Home.aspx
+14:05:14.759 INFO  driver.Page (    Page.java:46) - Fetching the current title.
+14:05:14.771 INFO  driver.Page (    Page.java:47) - The Current Title is: Dashboard
+14:05:14.779 INFO  csp.AdminHomePage (AdminHomePage.java:184) - The current page is Admin Home page {}: true
+14:05:14.785 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+14:05:14.831 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+14:05:14.832 INFO  csp.AdminHomePage (AdminHomePage.java:61) - Notification Link is Visible on the Admin Home page.
+14:05:14.832 INFO  driver.Page (    Page.java:59) - Preparing for element to click.
+14:05:14.832 INFO  driver.Page (    Page.java:211) - Waiting for element to be clickable for 120 seconds.
+14:05:14.912 INFO  driver.Page (    Page.java:214) - Element is clickable now.
+14:05:26.720 INFO  driver.Page (    Page.java:62) - Element is clicked successfully.
+14:05:26.720 INFO  csp.AdminHomePage (AdminHomePage.java:65) - Notification Link clicked successfully.
+14:05:26.721 INFO  scp.HomePage (HomePage.java:132) - Wait for page loader invisibility.
+14:05:26.721 INFO  driver.Page (    Page.java:250) - Waiting for element to be invisible for 120 seconds.
+14:05:30.051 INFO  driver.Page (    Page.java:253) - Element is invisible from the page.
+14:05:30.051 INFO  scp.HomePage (HomePage.java:183) - Wait for Spinner Loading Image invisibility.
+14:05:30.052 INFO  driver.Page (    Page.java:250) - Waiting for element to be invisible for 120 seconds.
+14:05:35.065 INFO  driver.Page (    Page.java:253) - Element is invisible from the page.
+14:05:35.066 INFO  csp.AdminNotificationPage (AdminNotificationPage.java:1017) - Wait for Next Page visibility on Notification Page.
+14:05:35.066 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+14:05:35.112 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+14:05:35.112 INFO  driver.Page (    Page.java:59) - Preparing for element to click.
+14:05:35.113 INFO  driver.Page (    Page.java:211) - Waiting for element to be clickable for 120 seconds.
+14:05:35.191 INFO  driver.Page (    Page.java:214) - Element is clickable now.
+14:05:35.322 INFO  driver.Page (    Page.java:62) - Element is clicked successfully.
+14:05:35.323 INFO  csp.AdminNotificationPage (AdminNotificationPage.java:42) - Connect Me link clicked {}.
+14:05:35.323 INFO  scp.HomePage (HomePage.java:183) - Wait for Spinner Loading Image invisibility.
+14:05:35.323 INFO  driver.Page (    Page.java:250) - Waiting for element to be invisible for 120 seconds.
+14:05:46.411 INFO  driver.Page (    Page.java:253) - Element is invisible from the page.
+14:05:48.210 INFO  driver.Page (    Page.java:59) - Preparing for element to click.
+14:05:48.210 INFO  driver.Page (    Page.java:211) - Waiting for element to be clickable for 120 seconds.
+14:07:51.737 INFO  driver.DriverFactory (DriverFactory.java:122) - Clearing all the cookies.
+17:03:25.921 INFO  runner.TestRunner (TestRunner.java:32) - Initializing application properties config file.
+17:03:25.967 INFO  runner.TestRunner (TestRunner.java:35) - Initializing connection to the base database.
+17:03:26.892 WARN  config.DatabaseConfiguration (DatabaseConfiguration.java:84) - QA env being used by default. No env property set. This can be set in the sentinel.yml config file with a '{}=' property or on the command line with the switch '-D{}='.
+17:03:29.199 INFO  runner.TestRunner (TestRunner.java:38) - Initializing resource path config file.
+17:03:29.273 INFO  runner.TestRunner (TestRunner.java:41) - Initializing usage months config from CSP.
+17:03:30.382 INFO  runner.TestRunner (TestRunner.java:44) - Initializing date config from CSP.
+17:03:31.177 INFO  runner.TestRunner (TestRunner.java:47) - Initializing language config from CSP.
+17:03:31.916 INFO  runner.TestRunner (TestRunner.java:50) - Initializing language config from CSP.
+17:03:32.674 INFO  runner.TestRunner (TestRunner.java:53) - Initializing language config from CSP.
+17:03:33.413 INFO  runner.TestRunner (TestRunner.java:56) - Initializing user model config.
+17:03:33.537 WARN  config.Configuration (Configuration.java:231) - QA env being used by default. No env property set. This can be set in the sew.app.yml config file with a '{}=' property or on the command line with the switch '-D{}='.
+17:03:42.240 INFO  runner.TestRunner (TestRunner.java:59) - Initializing auth token config.
+17:03:42.241 INFO  runner.TestRunner (TestRunner.java:62) - Initializing Admin User config.
+17:03:45.357 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 1
+17:03:45.371 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 2
+17:03:45.373 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 3
+17:03:45.375 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 4
+17:03:45.376 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 5
+17:03:45.377 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 6
+17:03:45.378 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 7
+17:03:45.379 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 8
+17:03:45.379 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 9
+17:03:45.380 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 10
+17:03:45.381 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 11
+17:03:45.382 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 12
+17:03:45.383 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 13
+17:03:45.384 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 14
+17:03:45.385 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 15
+17:03:45.386 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 16
+17:03:45.388 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 17
+17:03:45.389 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 18
+17:03:45.390 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 19
+17:03:45.391 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 20
+17:03:45.394 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 21
+17:03:45.396 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 22
+17:03:45.401 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 23
+17:03:45.409 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 24
+17:03:45.410 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 25
+17:03:45.413 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 26
+17:03:45.417 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 27
+17:03:45.426 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 28
+17:03:45.429 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 29
+17:03:45.431 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 30
+17:03:45.432 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 31
+17:03:45.434 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 32
+17:03:45.435 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 33
+17:03:45.442 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 34
+17:03:45.443 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 35
+17:03:45.444 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 36
+17:03:45.446 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 37
+17:03:45.449 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 38
+17:03:45.451 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 39
+17:03:45.455 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 40
+17:03:45.457 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 41
+17:03:45.459 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 42
+17:03:45.464 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 43
+17:03:45.465 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 44
+17:03:45.470 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 45
+17:03:45.473 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 46
+17:03:45.475 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 47
+17:03:45.479 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 48
+17:03:45.480 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 49
+17:03:45.482 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 50
+17:03:45.483 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 51
+17:03:45.485 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 52
+17:03:45.490 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 53
+17:03:45.491 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 54
+17:03:45.492 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 55
+17:03:45.493 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 56
+17:03:45.495 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 57
+17:03:45.496 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 58
+17:03:45.497 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 59
+17:03:45.498 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 60
+17:03:45.499 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 61
+17:03:45.500 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 62
+17:03:45.501 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 63
+17:03:45.502 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 64
+17:03:45.503 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 65
+17:03:45.505 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 66
+17:03:45.505 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 67
+17:03:45.506 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 68
+17:03:45.506 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 69
+17:03:45.509 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 70
+17:03:45.510 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 71
+17:03:45.511 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 72
+17:03:45.513 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 73
+17:03:45.514 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 74
+17:03:45.515 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 75
+17:03:45.515 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 76
+17:03:45.516 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 77
+17:03:45.516 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 78
+17:03:45.517 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 79
+17:03:45.517 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 80
+17:03:45.518 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 81
+17:03:45.519 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 82
+17:04:07.957 INFO  driver.WebDriverFactory (WebDriverFactory.java:192) - Setting up the browser window to its max.
+17:04:08.460 INFO  driver.WebDriverFactory (WebDriverFactory.java:181) - Initializing the implicit wait timeout for {} 5
+17:04:08.477 INFO  driver.WebDriverFactory (WebDriverFactory.java:184) - Initializing the page load timeout.
+17:04:08.496 INFO  driver.DriverFactory (DriverFactory.java:122) - Clearing all the cookies.
+17:04:08.555 INFO  driver.DriverFactory (DriverFactory.java:59) - Open the url {} https://qa.smartcmobile.net/SCM_10.0_S-SCP/ using the selenium get() method.
+17:04:35.829 INFO  csp.WaysToSaveTests (WaysToSaveTests.java:94) - To verify the tests with the below test case id's: C80134, C80135, C80136, C80137, C80138, C80139, C80161, C80162, C80164
+17:04:36.085 INFO  driver.DriverFactory (DriverFactory.java:59) - Open the url {} https://qa.smartcmobile.net/SCM_10.0_S-CSP/ using the selenium get() method.
+17:04:48.659 INFO  scp.HomePage (HomePage.java:132) - Wait for page loader invisibility.
+17:04:48.660 INFO  driver.Page (    Page.java:250) - Waiting for element to be invisible for 120 seconds.
+17:04:53.870 INFO  driver.Page (    Page.java:253) - Element is invisible from the page.
+17:04:53.870 INFO  csp.AdminLoginPage (AdminLoginPage.java:334) - Checking that the current page is Admin login page.
+17:04:53.871 INFO  driver.Page (    Page.java:40) - Fetching the current URL.
+17:04:53.913 INFO  driver.Page (    Page.java:41) - The Current URL is: https://qa.smartcmobile.net/SCM_10.0_S-CSP/
+17:04:53.950 INFO  driver.Page (    Page.java:46) - Fetching the current title.
+17:04:53.975 INFO  driver.Page (    Page.java:47) - The Current Title is: SCM Admin - Login
+17:04:54.042 INFO  csp.AdminLoginPage (AdminLoginPage.java:337) - The current page is Admin login page {}: true
+17:04:54.046 INFO  csp.AdminLoginPage (AdminLoginPage.java:30) - Populating username {} :qauser
+17:04:54.281 INFO  driver.Page (    Page.java:121) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (904d542f2d0ad576c1096a273b8ec6db)] -> css selector: [id='txtAdminLogin']] to be present in the DOM for duration of {} 120
+17:04:54.282 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+17:04:54.492 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+17:04:54.650 INFO  driver.Page (    Page.java:123) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (904d542f2d0ad576c1096a273b8ec6db)] -> css selector: [id='txtAdminLogin']] before sending the keys.
+17:04:55.038 INFO  driver.Page (    Page.java:125) - Sending the following keys {} qauser to the element {} [[ChromeDriver: chrome on WINDOWS (904d542f2d0ad576c1096a273b8ec6db)] -> css selector: [id='txtAdminLogin']]
+17:04:55.486 INFO  csp.AdminLoginPage (AdminLoginPage.java:32) - Username populated successfully.
+17:04:55.487 INFO  csp.AdminLoginPage (AdminLoginPage.java:54) - Populating password {} :Sew@2021$!
+17:04:55.536 INFO  driver.Page (    Page.java:121) - Wait for element {} [[ChromeDriver: chrome on WINDOWS (904d542f2d0ad576c1096a273b8ec6db)] -> css selector: [id='txtpwd']] to be present in the DOM for duration of {} 120
+17:04:55.536 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+17:04:55.634 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+17:04:55.665 INFO  driver.Page (    Page.java:123) - Clearing the element {} [[ChromeDriver: chrome on WINDOWS (904d542f2d0ad576c1096a273b8ec6db)] -> css selector: [id='txtpwd']] before sending the keys.
+17:04:56.039 INFO  driver.Page (    Page.java:125) - Sending the following keys {} Sew@2021$! to the element {} [[ChromeDriver: chrome on WINDOWS (904d542f2d0ad576c1096a273b8ec6db)] -> css selector: [id='txtpwd']]
+17:04:56.331 INFO  csp.AdminLoginPage (AdminLoginPage.java:56) - Password populated successfully.
+17:04:56.331 INFO  driver.Page (    Page.java:59) - Preparing for element to click.
+17:04:56.332 INFO  driver.Page (    Page.java:211) - Waiting for element to be clickable for 120 seconds.
+17:04:56.618 INFO  driver.Page (    Page.java:214) - Element is clickable now.
+17:05:27.417 INFO  driver.Page (    Page.java:62) - Element is clicked successfully.
+17:05:27.417 INFO  csp.AdminLoginPage (AdminLoginPage.java:67) - SignIn Button clicked successfully.
+17:05:27.417 INFO  scp.HomePage (HomePage.java:132) - Wait for page loader invisibility.
+17:05:27.417 INFO  driver.Page (    Page.java:250) - Waiting for element to be invisible for 120 seconds.
+17:05:27.469 INFO  driver.Page (    Page.java:253) - Element is invisible from the page.
+17:05:27.501 INFO  csp.AdminHomePage (AdminHomePage.java:181) - Checking that the current page is Admin Home page.
+17:05:27.501 INFO  driver.Page (    Page.java:40) - Fetching the current URL.
+17:05:27.515 INFO  driver.Page (    Page.java:41) - The Current URL is: https://qa.smartcmobile.net/SCM_10.0_S-CSP/Home.aspx
+17:05:27.536 INFO  driver.Page (    Page.java:46) - Fetching the current title.
+17:05:27.550 INFO  driver.Page (    Page.java:47) - The Current Title is: Dashboard
+17:05:27.563 INFO  csp.AdminHomePage (AdminHomePage.java:184) - The current page is Admin Home page {}: true
+17:05:27.639 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+17:05:27.776 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+17:05:27.776 INFO  csp.AdminHomePage (AdminHomePage.java:47) - Ways To Save Link is Visible on the page.
+17:05:27.776 INFO  driver.Page (    Page.java:527) - Preparing for element to click.
+17:06:15.796 INFO  driver.Page (    Page.java:534) - Element is clicked successfully.
+17:06:15.797 INFO  csp.AdminHomePage (AdminHomePage.java:52) - Ways To Save Link clicked successfully.
+17:06:15.797 INFO  scp.HomePage (HomePage.java:132) - Wait for page loader invisibility.
+17:06:15.798 INFO  driver.Page (    Page.java:250) - Waiting for element to be invisible for 120 seconds.
+17:06:15.865 INFO  driver.Page (    Page.java:253) - Element is invisible from the page.
+17:06:15.866 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+17:06:15.935 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+17:06:15.936 INFO  csp.WaysToSavePage (WaysToSavePage.java:1309) - Next Button is Visible on the Ways To Save page.
+17:06:16.148 INFO  csp.WaysToSaveSteps (WaysToSaveSteps.java:1163) - Checking that the current page is Ways To Save page.
+17:06:16.149 INFO  driver.Page (    Page.java:40) - Fetching the current URL.
+17:06:16.175 INFO  driver.Page (    Page.java:41) - The Current URL is: https://qa.smartcmobile.net/SCM_10.0_S-CSP/configuration/WaysToSave.aspx
+17:06:16.187 INFO  driver.Page (    Page.java:46) - Fetching the current title.
+17:06:16.214 INFO  driver.Page (    Page.java:47) - The Current Title is: Ways To Save
+17:06:16.227 INFO  csp.WaysToSaveSteps (WaysToSaveSteps.java:1166) - The current page is Ways To Save page {}: true
+17:06:16.228 INFO  driver.Page (    Page.java:527) - Preparing for element to click.
+17:06:16.387 INFO  driver.Page (    Page.java:534) - Element is clicked successfully.
+17:06:16.387 INFO  csp.WaysToSavePage (WaysToSavePage.java:68) - Add Ways To Save Button on Ways To Save Dashboard Clicked successfully.
+17:06:16.387 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+17:06:16.982 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+17:06:16.983 INFO  csp.WaysToSavePage (WaysToSavePage.java:406) - Add Button is Visible on the Add Ways To Save Popup page.
+17:06:17.296 INFO  driver.Page (    Page.java:561) - User gets the selection as  --Select-- from Dropdown
+17:06:17.297 INFO  csp.WaysToSavePage (WaysToSavePage.java:224) - Selected option in the Ways To Save Filter is --Select--
+17:06:17.299 INFO  driver.Page (    Page.java:353) - Selecting the option by visible text {}: Saving Tips
+17:06:17.486 INFO  driver.Page (    Page.java:355) - Selecting the given option to the web element {}: [[ChromeDriver: chrome on WINDOWS (904d542f2d0ad576c1096a273b8ec6db)] -> css selector: #ddlCategory]
+17:06:17.784 INFO  driver.Page (    Page.java:357) - Given text is selected as the option to the given select web element.
+17:06:18.301 INFO  csp.WaysToSavePage (WaysToSavePage.java:231) - Category dropdown on Add Ways To Save Popup is selected with the value Saving Tips
+17:06:18.487 INFO  driver.Page (    Page.java:278) - Element {} : [[ChromeDriver: chrome on WINDOWS (904d542f2d0ad576c1096a273b8ec6db)] -> css selector: #popuptitle] is visible on the page.
+17:06:18.488 INFO  csp.WaysToSavePage (WaysToSavePage.java:184) - Add Ways To Save Popup Title visibility status is true
+17:06:18.548 INFO  driver.Page (    Page.java:153) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (904d542f2d0ad576c1096a273b8ec6db)] -> css selector: #popuptitle] to be visible on the page for duration of {} 120
+17:06:18.548 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+17:06:18.585 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+17:06:18.643 INFO  driver.Page (    Page.java:156) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (904d542f2d0ad576c1096a273b8ec6db)] -> css selector: #popuptitle] is Add Ways To Save
+17:06:18.690 INFO  csp.WaysToSavePage (WaysToSavePage.java:190) - Add Ways To Save Popup Title Label isAdd Ways To Save
+17:06:18.812 INFO  driver.Page (    Page.java:278) - Element {} : [[ChromeDriver: chrome on WINDOWS (904d542f2d0ad576c1096a273b8ec6db)] -> xpath: (//div[@class='eff_cat_space']/label)[1]] is visible on the page.
+17:06:18.812 INFO  csp.WaysToSavePage (WaysToSavePage.java:199) - Category Label on Add Ways To Save Popup visibility status is true
+17:06:18.834 INFO  driver.Page (    Page.java:153) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (904d542f2d0ad576c1096a273b8ec6db)] -> xpath: (//div[@class='eff_cat_space']/label)[1]] to be visible on the page for duration of {} 120
+17:06:18.834 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+17:06:18.894 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+17:06:18.957 INFO  driver.Page (    Page.java:156) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (904d542f2d0ad576c1096a273b8ec6db)] -> xpath: (//div[@class='eff_cat_space']/label)[1]] is Category
+17:06:19.076 INFO  csp.WaysToSavePage (WaysToSavePage.java:205) - Category Label Text on Add Ways To Save Popup is Category
+17:06:19.168 INFO  driver.Page (    Page.java:278) - Element {} : [[ChromeDriver: chrome on WINDOWS (904d542f2d0ad576c1096a273b8ec6db)] -> css selector: #ddlCategory] is visible on the page.
+17:06:19.168 INFO  csp.WaysToSavePage (WaysToSavePage.java:214) - Category Dropdown on Add Ways To Save Popup visibility status is true
+17:06:20.289 INFO  csp.WaysToSavePage (WaysToSavePage.java:219) - The Select Options in Category Dropdown Add Ways To Save Popup are [--Select--, Educational Tips, Programs, Rebates, Saving Tips]
+17:06:20.378 INFO  driver.Page (    Page.java:278) - Element {} : [[ChromeDriver: chrome on WINDOWS (904d542f2d0ad576c1096a273b8ec6db)] -> xpath: (//div[@class='eff_cat_space']/label)[2]] is visible on the page.
+17:06:20.379 INFO  csp.WaysToSavePage (WaysToSavePage.java:238) - Meter Type Label on Add Ways To Save Popup visibility status is true
+17:06:20.402 INFO  driver.Page (    Page.java:153) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (904d542f2d0ad576c1096a273b8ec6db)] -> xpath: (//div[@class='eff_cat_space']/label)[2]] to be visible on the page for duration of {} 120
+17:06:20.403 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+17:06:20.446 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+17:06:20.532 INFO  driver.Page (    Page.java:156) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (904d542f2d0ad576c1096a273b8ec6db)] -> xpath: (//div[@class='eff_cat_space']/label)[2]] is Meter Type
+17:06:20.571 INFO  csp.WaysToSavePage (WaysToSavePage.java:244) - Meter Type Label Text on Add Ways To Save Popup is Meter Type
+17:06:20.627 INFO  driver.Page (    Page.java:278) - Element {} : [[ChromeDriver: chrome on WINDOWS (904d542f2d0ad576c1096a273b8ec6db)] -> css selector: #ddlServiceType] is visible on the page.
+17:06:20.628 INFO  csp.WaysToSavePage (WaysToSavePage.java:253) - MeterType Dropdown on Add Ways To Save Popup visibility status is true
+17:06:21.841 INFO  csp.WaysToSavePage (WaysToSavePage.java:258) - The Select Options in MeterType Dropdown Add Ways To Save Popup are [--Select--, Gas, Power, Solar, Water]
+17:06:22.167 INFO  driver.Page (    Page.java:561) - User gets the selection as  --Select-- from Dropdown
+17:06:22.168 INFO  csp.WaysToSavePage (WaysToSavePage.java:263) - Selected option in the MeterType Filter is --Select--
+17:06:22.245 INFO  driver.Page (    Page.java:278) - Element {} : [[ChromeDriver: chrome on WINDOWS (904d542f2d0ad576c1096a273b8ec6db)] -> xpath: (//div[@class='eff_cat_space']/label)[3]] is visible on the page.
+17:06:22.246 INFO  csp.WaysToSavePage (WaysToSavePage.java:277) - Account Type Label on Add Ways To Save Popup visibility status is true
+17:06:22.265 INFO  driver.Page (    Page.java:153) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (904d542f2d0ad576c1096a273b8ec6db)] -> xpath: (//div[@class='eff_cat_space']/label)[3]] to be visible on the page for duration of {} 120
+17:06:22.266 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+17:06:22.343 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+17:06:22.446 INFO  driver.Page (    Page.java:156) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (904d542f2d0ad576c1096a273b8ec6db)] -> xpath: (//div[@class='eff_cat_space']/label)[3]] is Account Type
+17:06:22.473 INFO  csp.WaysToSavePage (WaysToSavePage.java:283) - Account Type Label Text on Add Ways To Save Popup is Account Type
+17:06:22.536 INFO  driver.Page (    Page.java:278) - Element {} : [[ChromeDriver: chrome on WINDOWS (904d542f2d0ad576c1096a273b8ec6db)] -> css selector: .modal-body button.multiselect] is visible on the page.
+17:06:22.536 INFO  csp.WaysToSavePage (WaysToSavePage.java:291) - AccountType Dropdown on Add Ways To Save Popup visibility status is true
+17:06:22.553 INFO  driver.Page (    Page.java:153) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (904d542f2d0ad576c1096a273b8ec6db)] -> css selector: .modal-body button.multiselect] to be visible on the page for duration of {} 120
+17:06:22.553 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+17:06:22.587 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+17:06:22.722 INFO  driver.Page (    Page.java:156) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (904d542f2d0ad576c1096a273b8ec6db)] -> css selector: .modal-body button.multiselect] is --Select--
+17:06:22.793 INFO  csp.WaysToSavePage (WaysToSavePage.java:297) - Selected option in the AccountType Filter is --Select--
+17:06:22.794 INFO  driver.Page (    Page.java:527) - Preparing for element to click.
+17:06:22.875 INFO  driver.Page (    Page.java:534) - Element is clicked successfully.
+17:06:22.875 INFO  csp.WaysToSavePage (WaysToSavePage.java:303) - Clicked on AccountType Dropdown on Add Ways To Save Popup
+17:06:22.966 INFO  driver.Page (    Page.java:278) - Element {} : [[ChromeDriver: chrome on WINDOWS (904d542f2d0ad576c1096a273b8ec6db)] -> css selector: .modal-body ul.multiselect-container li:nth-child(3) a label] is visible on the page.
+17:06:22.967 INFO  csp.WaysToSavePage (WaysToSavePage.java:324) - Residential AccountType Dropdown value on Add Ways To Save Popup visibility status is true
+17:06:23.001 INFO  driver.Page (    Page.java:153) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (904d542f2d0ad576c1096a273b8ec6db)] -> css selector: .modal-body ul.multiselect-container li:nth-child(3) a label] to be visible on the page for duration of {} 120
+17:06:23.001 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+17:06:23.061 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+17:06:23.285 INFO  driver.Page (    Page.java:156) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (904d542f2d0ad576c1096a273b8ec6db)] -> css selector: .modal-body ul.multiselect-container li:nth-child(3) a label] is Residential
+17:06:23.366 INFO  csp.WaysToSavePage (WaysToSavePage.java:329) - Residential AccountType Dropdown Label Value on Add Ways To Save Popup Residential
+17:06:23.442 INFO  driver.Page (    Page.java:278) - Element {} : [[ChromeDriver: chrome on WINDOWS (904d542f2d0ad576c1096a273b8ec6db)] -> css selector: .modal-body ul.multiselect-container li:nth-child(1) a label] is visible on the page.
+17:06:23.442 INFO  csp.WaysToSavePage (WaysToSavePage.java:342) - Commercial AccountType Dropdown value on Add Ways To Save Popup visibility status is true
+17:06:23.455 INFO  driver.Page (    Page.java:153) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (904d542f2d0ad576c1096a273b8ec6db)] -> css selector: .modal-body ul.multiselect-container li:nth-child(1) a label] to be visible on the page for duration of {} 120
+17:06:23.455 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+17:06:23.503 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+17:06:23.636 INFO  driver.Page (    Page.java:156) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (904d542f2d0ad576c1096a273b8ec6db)] -> css selector: .modal-body ul.multiselect-container li:nth-child(1) a label] is Commercial
+17:06:23.812 INFO  csp.WaysToSavePage (WaysToSavePage.java:347) - Commercial AccountType Dropdown Label Value on Add Ways To Save Popup Commercial
+17:06:23.891 INFO  driver.Page (    Page.java:278) - Element {} : [[ChromeDriver: chrome on WINDOWS (904d542f2d0ad576c1096a273b8ec6db)] -> css selector: .modal-body ul.multiselect-container li:nth-child(2) a label] is visible on the page.
+17:06:23.892 INFO  csp.WaysToSavePage (WaysToSavePage.java:360) - Multi-Family AccountType Dropdown value on Add Ways To Save Popup visibility status is true
+17:06:23.911 INFO  driver.Page (    Page.java:153) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (904d542f2d0ad576c1096a273b8ec6db)] -> css selector: .modal-body ul.multiselect-container li:nth-child(2) a label] to be visible on the page for duration of {} 120
+17:06:23.911 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+17:06:23.973 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+17:06:24.051 INFO  driver.Page (    Page.java:156) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (904d542f2d0ad576c1096a273b8ec6db)] -> css selector: .modal-body ul.multiselect-container li:nth-child(2) a label] is Multi-Family
+17:06:24.091 INFO  csp.WaysToSavePage (WaysToSavePage.java:365) - Multi-Family AccountType Dropdown Label Value on Add Ways To Save Popup Multi-Family
+17:06:24.091 INFO  driver.Page (    Page.java:527) - Preparing for element to click.
+17:06:24.122 INFO  driver.Page (    Page.java:534) - Element is clicked successfully.
+17:06:24.123 INFO  csp.WaysToSavePage (WaysToSavePage.java:303) - Clicked on AccountType Dropdown on Add Ways To Save Popup
+17:06:24.216 INFO  driver.Page (    Page.java:278) - Element {} : [[ChromeDriver: chrome on WINDOWS (904d542f2d0ad576c1096a273b8ec6db)] -> xpath: (//div[@class='eff_cat_space']/label)[4]] is visible on the page.
+17:06:24.216 INFO  csp.WaysToSavePage (WaysToSavePage.java:425) - Internal Label on Add Ways To Save Popup visibility status is true
+17:06:24.242 INFO  driver.Page (    Page.java:153) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (904d542f2d0ad576c1096a273b8ec6db)] -> xpath: (//div[@class='eff_cat_space']/label)[4]] to be visible on the page for duration of {} 120
+17:06:24.242 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+17:06:24.305 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+17:06:24.488 INFO  driver.Page (    Page.java:156) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (904d542f2d0ad576c1096a273b8ec6db)] -> xpath: (//div[@class='eff_cat_space']/label)[4]] is Internal
+17:06:24.522 INFO  csp.WaysToSavePage (WaysToSavePage.java:431) - Internal Label Text on Add Ways To Save Popup is Internal
+17:06:24.592 INFO  driver.Page (    Page.java:278) - Element {} : [[ChromeDriver: chrome on WINDOWS (904d542f2d0ad576c1096a273b8ec6db)] -> css selector: #chk_internal] is visible on the page.
+17:06:24.592 INFO  csp.WaysToSavePage (WaysToSavePage.java:440) - Internal Checkbox on Add Ways To Save Popup visibility status is true
+17:06:24.593 INFO  driver.Page (    Page.java:85) - Preparing for element to click.
+17:06:24.593 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+17:06:24.630 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+17:06:24.838 INFO  driver.Page (    Page.java:89) - Element is clicked successfully.
+17:06:24.838 INFO  csp.WaysToSavePage (WaysToSavePage.java:450) - Internal checkbox is unchecked successfully.
+17:06:24.907 INFO  driver.Page (    Page.java:278) - Element {} : [[ChromeDriver: chrome on WINDOWS (904d542f2d0ad576c1096a273b8ec6db)] -> css selector: #lblExtrnalLnks] is visible on the page.
+17:06:24.908 INFO  csp.WaysToSavePage (WaysToSavePage.java:458) - External Link Label on Add Ways To Save Popup visibility status is true
+17:06:24.922 INFO  driver.Page (    Page.java:153) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (904d542f2d0ad576c1096a273b8ec6db)] -> css selector: #lblExtrnalLnks] to be visible on the page for duration of {} 120
+17:06:24.923 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+17:06:25.085 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+17:06:25.180 INFO  driver.Page (    Page.java:156) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (904d542f2d0ad576c1096a273b8ec6db)] -> css selector: #lblExtrnalLnks] is External Link
+17:06:25.293 INFO  csp.WaysToSavePage (WaysToSavePage.java:464) - External Link Label Text on Add Ways To Save Popup is External Link
+17:06:25.391 INFO  driver.Page (    Page.java:278) - Element {} : [[ChromeDriver: chrome on WINDOWS (904d542f2d0ad576c1096a273b8ec6db)] -> css selector: #txtExtrnalLnks] is visible on the page.
+17:06:25.392 INFO  csp.WaysToSavePage (WaysToSavePage.java:473) - External Link Textbox on Add Ways To Save Popup visibility status is true
+17:06:25.446 INFO  driver.Page (    Page.java:278) - Element {} : [[ChromeDriver: chrome on WINDOWS (904d542f2d0ad576c1096a273b8ec6db)] -> css selector: #lblAmountsaving] is visible on the page.
+17:06:25.447 INFO  csp.WaysToSavePage (WaysToSavePage.java:492) - Annual Saving Label on Add Ways To Save Popup visibility status is true
+17:06:25.458 INFO  driver.Page (    Page.java:153) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (904d542f2d0ad576c1096a273b8ec6db)] -> css selector: #lblAmountsaving] to be visible on the page for duration of {} 120
+17:06:25.459 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+17:06:25.489 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+17:06:25.642 INFO  driver.Page (    Page.java:156) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (904d542f2d0ad576c1096a273b8ec6db)] -> css selector: #lblAmountsaving] is Annual Savings (IRR)
+17:06:25.676 INFO  csp.WaysToSavePage (WaysToSavePage.java:498) - Annual Saving Label Text on Add Ways To Save Popup is Annual Savings (IRR)
+17:06:25.742 INFO  driver.Page (    Page.java:278) - Element {} : [[ChromeDriver: chrome on WINDOWS (904d542f2d0ad576c1096a273b8ec6db)] -> css selector: input.txtAmount] is visible on the page.
+17:06:25.742 INFO  csp.WaysToSavePage (WaysToSavePage.java:512) - Annual Saving TextBox on Add Ways To Save Popup visibility status is true
+17:06:25.824 INFO  driver.Page (    Page.java:278) - Element {} : [[ChromeDriver: chrome on WINDOWS (904d542f2d0ad576c1096a273b8ec6db)] -> css selector: #PopupAddTopic .tip_title_wrapper_box > label.AddUserContentLabel:nth-of-type(1)] is visible on the page.
+17:06:25.824 INFO  csp.WaysToSavePage (WaysToSavePage.java:1014) - Topic Name English Label visibility status {}true
+17:06:25.846 INFO  driver.Page (    Page.java:153) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (904d542f2d0ad576c1096a273b8ec6db)] -> css selector: #PopupAddTopic .tip_title_wrapper_box > label.AddUserContentLabel:nth-of-type(1)] to be visible on the page for duration of {} 120
+17:06:25.846 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+17:06:25.892 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+17:06:25.954 INFO  driver.Page (    Page.java:156) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (904d542f2d0ad576c1096a273b8ec6db)] -> css selector: #PopupAddTopic .tip_title_wrapper_box > label.AddUserContentLabel:nth-of-type(1)] is Topic Name (English)
+17:06:25.985 INFO  csp.WaysToSavePage (WaysToSavePage.java:1020) - Topic Name English Label Text is Topic Name (English)
+17:06:26.043 INFO  driver.Page (    Page.java:278) - Element {} : [[ChromeDriver: chrome on WINDOWS (904d542f2d0ad576c1096a273b8ec6db)] -> css selector: #txtQuestionEN] is visible on the page.
+17:06:26.043 INFO  csp.WaysToSavePage (WaysToSavePage.java:1097) - Topic Name English TextBox visibility status {}true
+17:06:26.213 INFO  driver.Page (    Page.java:278) - Element {} : [[ChromeDriver: chrome on WINDOWS (904d542f2d0ad576c1096a273b8ec6db)] -> css selector: #PopupAddTopic .tip_title_wrapper_box > label.AddUserContentLabel:nth-of-type(2)] is visible on the page.
+17:06:26.213 INFO  csp.WaysToSavePage (WaysToSavePage.java:1028) - Description Name English Label visibility status {}true
+17:06:26.241 INFO  driver.Page (    Page.java:153) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (904d542f2d0ad576c1096a273b8ec6db)] -> css selector: #PopupAddTopic .tip_title_wrapper_box > label.AddUserContentLabel:nth-of-type(2)] to be visible on the page for duration of {} 120
+17:06:26.241 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+17:06:26.284 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+17:06:26.373 INFO  driver.Page (    Page.java:156) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (904d542f2d0ad576c1096a273b8ec6db)] -> css selector: #PopupAddTopic .tip_title_wrapper_box > label.AddUserContentLabel:nth-of-type(2)] is Description (English)
+17:06:26.423 INFO  csp.WaysToSavePage (WaysToSavePage.java:1034) - Description Name English Label Text is Description (English)
+17:06:26.505 INFO  driver.Page (    Page.java:278) - Element {} : [[ChromeDriver: chrome on WINDOWS (904d542f2d0ad576c1096a273b8ec6db)] -> xpath: //div[@id='summernoteEnglish']/following::div[1]/div[@class='note-editing-area']/div[@class='note-editable']] is visible on the page.
+17:06:26.506 INFO  csp.WaysToSavePage (WaysToSavePage.java:1122) - Description English TextBox visibility status {}true
+17:06:26.576 INFO  driver.Page (    Page.java:278) - Element {} : [[ChromeDriver: chrome on WINDOWS (904d542f2d0ad576c1096a273b8ec6db)] -> css selector: #spanTxt] is visible on the page.
+17:06:26.576 INFO  csp.WaysToSavePage (WaysToSavePage.java:1241) - Max Character Length Label English visibility status {}true
+17:06:26.594 INFO  driver.Page (    Page.java:153) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (904d542f2d0ad576c1096a273b8ec6db)] -> css selector: #spanTxt] to be visible on the page for duration of {} 120
+17:06:26.594 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+17:06:26.623 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+17:06:26.834 INFO  driver.Page (    Page.java:156) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (904d542f2d0ad576c1096a273b8ec6db)] -> css selector: #spanTxt] is Max. length: 8000 characters
+17:06:26.893 INFO  csp.WaysToSavePage (WaysToSavePage.java:1247) - Max Character Length Label English Label Text is Max. length: 8000 characters
+17:06:26.998 INFO  driver.Page (    Page.java:278) - Element {} : [[ChromeDriver: chrome on WINDOWS (904d542f2d0ad576c1096a273b8ec6db)] -> css selector: #PopupAddTopic .tip_title_wrapper_box > label.AddUserContentLabel:nth-of-type(3)] is visible on the page.
+17:06:26.999 INFO  csp.WaysToSavePage (WaysToSavePage.java:1042) - Topic Name Spanish Label visibility status {}true
+17:06:27.015 INFO  driver.Page (    Page.java:153) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (904d542f2d0ad576c1096a273b8ec6db)] -> css selector: #PopupAddTopic .tip_title_wrapper_box > label.AddUserContentLabel:nth-of-type(3)] to be visible on the page for duration of {} 120
+17:06:27.015 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+17:06:27.060 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+17:06:27.165 INFO  driver.Page (    Page.java:156) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (904d542f2d0ad576c1096a273b8ec6db)] -> css selector: #PopupAddTopic .tip_title_wrapper_box > label.AddUserContentLabel:nth-of-type(3)] is Topic Name (Spanish)
+17:06:27.200 INFO  csp.WaysToSavePage (WaysToSavePage.java:1048) - Topic Name Spanish Label Text is Topic Name (Spanish)
+17:06:27.377 INFO  driver.Page (    Page.java:278) - Element {} : [[ChromeDriver: chrome on WINDOWS (904d542f2d0ad576c1096a273b8ec6db)] -> css selector: #txtQuestionSP] is visible on the page.
+17:06:27.378 INFO  csp.WaysToSavePage (WaysToSavePage.java:1147) - Topic Name Spanish TextBox visibility status {}true
+17:06:27.447 INFO  driver.Page (    Page.java:278) - Element {} : [[ChromeDriver: chrome on WINDOWS (904d542f2d0ad576c1096a273b8ec6db)] -> css selector: #PopupAddTopic .tip_title_wrapper_box > label.AddUserContentLabel:nth-of-type(4)] is visible on the page.
+17:06:27.447 INFO  csp.WaysToSavePage (WaysToSavePage.java:1056) - Description Name Spanish Label visibility status {}true
+17:06:27.460 INFO  driver.Page (    Page.java:153) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (904d542f2d0ad576c1096a273b8ec6db)] -> css selector: #PopupAddTopic .tip_title_wrapper_box > label.AddUserContentLabel:nth-of-type(4)] to be visible on the page for duration of {} 120
+17:06:27.462 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+17:06:27.505 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+17:06:27.606 INFO  driver.Page (    Page.java:156) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (904d542f2d0ad576c1096a273b8ec6db)] -> css selector: #PopupAddTopic .tip_title_wrapper_box > label.AddUserContentLabel:nth-of-type(4)] is Description (Spanish)
+17:06:27.646 INFO  csp.WaysToSavePage (WaysToSavePage.java:1062) - Description Name Spanish Label Text is Description (Spanish)
+17:06:27.735 INFO  driver.Page (    Page.java:278) - Element {} : [[ChromeDriver: chrome on WINDOWS (904d542f2d0ad576c1096a273b8ec6db)] -> xpath: //div[@id='summernoteSpanise']/following::div[1]/div[@class='note-editing-area']/div[@class='note-editable']] is visible on the page.
+17:06:27.736 INFO  csp.WaysToSavePage (WaysToSavePage.java:1164) - Description Spanish TextBox visibility status {}true
+17:06:27.815 INFO  driver.Page (    Page.java:278) - Element {} : [[ChromeDriver: chrome on WINDOWS (904d542f2d0ad576c1096a273b8ec6db)] -> css selector: #spanTxt1] is visible on the page.
+17:06:27.816 INFO  csp.WaysToSavePage (WaysToSavePage.java:1180) - Max Character Length Label Spanish visibility status {}true
+17:06:27.852 INFO  driver.Page (    Page.java:153) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (904d542f2d0ad576c1096a273b8ec6db)] -> css selector: #spanTxt1] to be visible on the page for duration of {} 120
+17:06:27.852 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+17:06:27.979 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+17:06:28.051 INFO  driver.Page (    Page.java:156) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (904d542f2d0ad576c1096a273b8ec6db)] -> css selector: #spanTxt1] is Max. length: 8000 characters
+17:06:28.088 INFO  csp.WaysToSavePage (WaysToSavePage.java:1186) - Max Character Length Label Spanish Label Text is Max. length: 8000 characters
+17:06:28.150 INFO  driver.Page (    Page.java:278) - Element {} : [[ChromeDriver: chrome on WINDOWS (904d542f2d0ad576c1096a273b8ec6db)] -> css selector: #PopupAddTopic .tip_title_wrapper_box > label.AddUserContentLabel:nth-of-type(5)] is visible on the page.
+17:06:28.150 INFO  csp.WaysToSavePage (WaysToSavePage.java:1069) - Topic Name French Label visibility status {}true
+17:06:28.164 INFO  driver.Page (    Page.java:153) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (904d542f2d0ad576c1096a273b8ec6db)] -> css selector: #PopupAddTopic .tip_title_wrapper_box > label.AddUserContentLabel:nth-of-type(5)] to be visible on the page for duration of {} 120
+17:06:28.165 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+17:06:28.215 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+17:06:28.287 INFO  driver.Page (    Page.java:156) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (904d542f2d0ad576c1096a273b8ec6db)] -> css selector: #PopupAddTopic .tip_title_wrapper_box > label.AddUserContentLabel:nth-of-type(5)] is Topic Name (French)
+17:06:28.316 INFO  csp.WaysToSavePage (WaysToSavePage.java:1075) - Topic Name French Label Text is Topic Name (French)
+17:06:28.406 INFO  driver.Page (    Page.java:278) - Element {} : [[ChromeDriver: chrome on WINDOWS (904d542f2d0ad576c1096a273b8ec6db)] -> css selector: #txtQuestionFR] is visible on the page.
+17:06:28.407 INFO  csp.WaysToSavePage (WaysToSavePage.java:1194) - Topic Name French TextBox visibility status {}true
+17:06:28.576 INFO  driver.Page (    Page.java:278) - Element {} : [[ChromeDriver: chrome on WINDOWS (904d542f2d0ad576c1096a273b8ec6db)] -> css selector: #PopupAddTopic .tip_title_wrapper_box > label.AddUserContentLabel:nth-of-type(6)] is visible on the page.
+17:06:28.576 INFO  csp.WaysToSavePage (WaysToSavePage.java:1083) - Description Name French Label visibility status {}true
+17:06:28.608 INFO  driver.Page (    Page.java:153) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (904d542f2d0ad576c1096a273b8ec6db)] -> css selector: #PopupAddTopic .tip_title_wrapper_box > label.AddUserContentLabel:nth-of-type(6)] to be visible on the page for duration of {} 120
+17:06:28.609 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+17:06:28.666 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+17:06:28.755 INFO  driver.Page (    Page.java:156) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (904d542f2d0ad576c1096a273b8ec6db)] -> css selector: #PopupAddTopic .tip_title_wrapper_box > label.AddUserContentLabel:nth-of-type(6)] is Description (French)
+17:06:28.784 INFO  csp.WaysToSavePage (WaysToSavePage.java:1089) - Description Name French Label Text is Description (French)
+17:06:28.903 INFO  driver.Page (    Page.java:278) - Element {} : [[ChromeDriver: chrome on WINDOWS (904d542f2d0ad576c1096a273b8ec6db)] -> xpath: //div[@id='SummernoteFrench']/following::div[1]/div[@class='note-editing-area']/div[@class='note-editable']] is visible on the page.
+17:06:28.904 INFO  csp.WaysToSavePage (WaysToSavePage.java:1210) - Description French TextBox visibility status {}true
+17:06:29.001 INFO  driver.Page (    Page.java:278) - Element {} : [[ChromeDriver: chrome on WINDOWS (904d542f2d0ad576c1096a273b8ec6db)] -> css selector: #spanTxt2] is visible on the page.
+17:06:29.002 INFO  csp.WaysToSavePage (WaysToSavePage.java:1226) - Max Character Length Label French visibility status {}true
+17:06:29.015 INFO  driver.Page (    Page.java:153) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (904d542f2d0ad576c1096a273b8ec6db)] -> css selector: #spanTxt2] to be visible on the page for duration of {} 120
+17:06:29.015 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+17:06:29.161 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+17:06:29.237 INFO  driver.Page (    Page.java:156) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (904d542f2d0ad576c1096a273b8ec6db)] -> css selector: #spanTxt2] is Max. length: 8000 characters
+17:06:29.300 INFO  csp.WaysToSavePage (WaysToSavePage.java:1232) - Max Character Length Label French Label Text is Max. length: 8000 characters
+17:06:29.377 INFO  driver.Page (    Page.java:278) - Element {} : [[ChromeDriver: chrome on WINDOWS (904d542f2d0ad576c1096a273b8ec6db)] -> xpath: //label[text()='Image']] is visible on the page.
+17:06:29.378 INFO  csp.WaysToSavePage (WaysToSavePage.java:755) - Image Field on Add Ways To Save visibility status {}true
+17:06:29.393 INFO  driver.Page (    Page.java:153) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (904d542f2d0ad576c1096a273b8ec6db)] -> xpath: //label[text()='Image']] to be visible on the page for duration of {} 120
+17:06:29.394 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+17:06:29.432 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+17:06:29.524 INFO  driver.Page (    Page.java:156) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (904d542f2d0ad576c1096a273b8ec6db)] -> xpath: //label[text()='Image']] is Image
+17:06:29.560 INFO  csp.WaysToSavePage (WaysToSavePage.java:761) - Image Field on Add Ways To Save Label Text is Image
+17:06:29.598 INFO  driver.Page (    Page.java:307) - Element {} : [[[ChromeDriver: chrome on WINDOWS (904d542f2d0ad576c1096a273b8ec6db)] -> css selector: #fileUpload]] is visible on the page.
+17:06:29.599 INFO  csp.WaysToSavePage (WaysToSavePage.java:381) - Upload File Button on Add Ways To Save Popup visibility status is true
+17:06:29.742 INFO  driver.Page (    Page.java:153) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (904d542f2d0ad576c1096a273b8ec6db)] -> css selector: #lblFileupload] to be visible on the page for duration of {} 120
+17:06:29.743 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+17:06:29.804 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+17:06:29.873 INFO  driver.Page (    Page.java:156) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (904d542f2d0ad576c1096a273b8ec6db)] -> css selector: #lblFileupload] is Choose File
+17:06:29.902 INFO  csp.WaysToSavePage (WaysToSavePage.java:394) - Upload File Button Label on Add Ways To Save Popup Choose File
+17:06:30.016 INFO  driver.Page (    Page.java:278) - Element {} : [[ChromeDriver: chrome on WINDOWS (904d542f2d0ad576c1096a273b8ec6db)] -> css selector: #nofile] is visible on the page.
+17:06:30.017 INFO  csp.WaysToSavePage (WaysToSavePage.java:769) - Attached File Name on Add Ways To Save visibility status {}true
+17:06:30.072 INFO  driver.Page (    Page.java:153) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (904d542f2d0ad576c1096a273b8ec6db)] -> css selector: #nofile] to be visible on the page for duration of {} 120
+17:06:30.073 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+17:06:30.112 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+17:06:30.285 INFO  driver.Page (    Page.java:156) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (904d542f2d0ad576c1096a273b8ec6db)] -> css selector: #nofile] is No File Chosen
+17:06:30.360 INFO  csp.WaysToSavePage (WaysToSavePage.java:775) - Attached File Name on Add Ways To Save is No File Chosen
+17:06:30.493 INFO  driver.Page (    Page.java:278) - Element {} : [[ChromeDriver: chrome on WINDOWS (904d542f2d0ad576c1096a273b8ec6db)] -> css selector: #lblFileAllowExtension] is visible on the page.
+17:06:30.494 INFO  csp.WaysToSavePage (WaysToSavePage.java:786) - Allowed File Types Label on Add Ways To Save visibility status {}true
+17:06:30.515 INFO  driver.Page (    Page.java:153) - Wait for the element {} [[ChromeDriver: chrome on WINDOWS (904d542f2d0ad576c1096a273b8ec6db)] -> css selector: #lblFileAllowExtension] to be visible on the page for duration of {} 120
+17:06:30.515 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+17:06:30.570 INFO  driver.Page (    Page.java:239) - Element is visible on the page.
+17:06:30.662 INFO  driver.Page (    Page.java:156) - Text got from the locator {} [[ChromeDriver: chrome on WINDOWS (904d542f2d0ad576c1096a273b8ec6db)] -> css selector: #lblFileAllowExtension] is Allowed file types: GIF, PNG, BMP, JPEG, JPG
+17:06:30.725 INFO  csp.WaysToSavePage (WaysToSavePage.java:792) - Allowed File Types Label on Add Ways To Save is Allowed file types: GIF, PNG, BMP, JPEG, JPG
+17:06:30.876 INFO  driver.Page (    Page.java:278) - Element {} : [[ChromeDriver: chrome on WINDOWS (904d542f2d0ad576c1096a273b8ec6db)] -> css selector: #BtnAdd] is visible on the page.
+17:06:30.877 INFO  csp.WaysToSavePage (WaysToSavePage.java:410) - Add Button on Add Ways To Save Popup visibility status is true
+17:06:30.990 INFO  driver.Page (    Page.java:278) - Element {} : [[ChromeDriver: chrome on WINDOWS (904d542f2d0ad576c1096a273b8ec6db)] -> css selector: #PopupAddTopic button.close[aria-label='Click to Close']] is visible on the page.
+17:06:30.991 INFO  csp.WaysToSavePage (WaysToSavePage.java:815) - Close Button on Add Ways To Save Popup visibility status {}true
+17:06:30.991 INFO  driver.Page (    Page.java:527) - Preparing for element to click.
+17:06:31.048 INFO  driver.Page (    Page.java:534) - Element is clicked successfully.
+17:06:31.049 INFO  csp.WaysToSavePage (WaysToSavePage.java:820) - Close Button on Add Ways To Save Popup clicked successfully.
+17:06:31.049 INFO  driver.Page (    Page.java:527) - Preparing for element to click.
+17:06:31.202 INFO  driver.Page (    Page.java:534) - Element is clicked successfully.
+17:06:31.203 INFO  csp.WaysToSavePage (WaysToSavePage.java:68) - Add Ways To Save Button on Ways To Save Dashboard Clicked successfully.
+17:06:31.203 INFO  driver.Page (    Page.java:236) - Waiting for element to be visible for 120 seconds.
+17:08:37.772 INFO  driver.DriverFactory (DriverFactory.java:122) - Clearing all the cookies.
+17:08:46.139 INFO  driver.WebDriverFactory (WebDriverFactory.java:192) - Setting up the browser window to its max.
+17:08:46.372 INFO  driver.WebDriverFactory (WebDriverFactory.java:181) - Initializing the implicit wait timeout for {} 5
+17:08:46.381 INFO  driver.WebDriverFactory (WebDriverFactory.java:184) - Initializing the page load timeout.
+17:08:46.405 INFO  driver.DriverFactory (DriverFactory.java:122) - Clearing all the cookies.
+17:08:46.445 INFO  driver.DriverFactory (DriverFactory.java:59) - Open the url {} https://qa.smartcmobile.net/SCM_10.0_S-SCP/ using the selenium get() method.
+17:36:22.324 INFO  runner.TestRunner (TestRunner.java:32) - Initializing application properties config file.
+17:36:22.362 INFO  runner.TestRunner (TestRunner.java:35) - Initializing connection to the base database.
+17:36:24.274 WARN  config.DatabaseConfiguration (DatabaseConfiguration.java:84) - QA env being used by default. No env property set. This can be set in the sentinel.yml config file with a '{}=' property or on the command line with the switch '-D{}='.
+17:36:27.563 INFO  runner.TestRunner (TestRunner.java:38) - Initializing resource path config file.
+17:36:27.621 INFO  runner.TestRunner (TestRunner.java:41) - Initializing usage months config from CSP.
+17:36:28.666 INFO  runner.TestRunner (TestRunner.java:44) - Initializing date config from CSP.
+17:36:29.467 INFO  runner.TestRunner (TestRunner.java:47) - Initializing language config from CSP.
+17:36:30.231 INFO  runner.TestRunner (TestRunner.java:50) - Initializing language config from CSP.
+17:36:31.001 INFO  runner.TestRunner (TestRunner.java:53) - Initializing language config from CSP.
+17:36:31.750 INFO  runner.TestRunner (TestRunner.java:56) - Initializing user model config.
+17:36:31.882 WARN  config.Configuration (Configuration.java:231) - QA env being used by default. No env property set. This can be set in the sew.app.yml config file with a '{}=' property or on the command line with the switch '-D{}='.
+17:36:41.049 INFO  runner.TestRunner (TestRunner.java:59) - Initializing auth token config.
+17:36:41.050 INFO  runner.TestRunner (TestRunner.java:62) - Initializing Admin User config.
+17:36:44.153 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 1
+17:36:44.164 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 2
+17:36:44.165 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 3
+17:36:44.166 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 4
+17:36:44.167 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 5
+17:36:44.168 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 6
+17:36:44.169 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 7
+17:36:44.169 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 8
+17:36:44.170 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 9
+17:36:44.171 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 10
+17:36:44.172 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 11
+17:36:44.173 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 12
+17:36:44.173 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 13
+17:36:44.174 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 14
+17:36:44.175 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 15
+17:36:44.176 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 16
+17:36:44.177 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 17
+17:36:44.177 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 18
+17:36:44.178 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 19
+17:36:44.182 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 20
+17:36:44.183 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 21
+17:36:44.184 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 22
+17:36:44.185 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 23
+17:36:44.189 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 24
+17:36:44.190 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 25
+17:36:44.191 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 26
+17:36:44.192 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 27
+17:36:44.193 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 28
+17:36:44.194 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 29
+17:36:44.196 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 30
+17:36:44.197 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 31
+17:36:44.198 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 32
+17:36:44.200 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 33
+17:36:44.201 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 34
+17:36:44.202 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 35
+17:36:44.204 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 36
+17:36:44.205 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 37
+17:36:44.206 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 38
+17:36:44.208 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 39
+17:36:44.210 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 40
+17:36:44.211 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 41
+17:36:44.213 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 42
+17:36:44.214 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 43
+17:36:44.215 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 44
+17:36:44.217 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 45
+17:36:44.218 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 46
+17:36:44.230 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 47
+17:36:44.230 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 48
+17:36:44.231 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 49
+17:36:44.231 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 50
+17:36:44.232 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 51
+17:36:44.232 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 52
+17:36:44.232 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 53
+17:36:44.233 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 54
+17:36:44.233 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 55
+17:36:44.234 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 56
+17:36:44.235 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 57
+17:36:44.256 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 58
+17:36:44.257 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 59
+17:36:44.258 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 60
+17:36:44.258 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 61
+17:36:44.259 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 62
+17:36:44.259 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 63
+17:36:44.261 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 64
+17:36:44.261 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 65
+17:36:44.261 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 66
+17:36:44.261 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 67
+17:36:44.263 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 68
+17:36:44.263 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 69
+17:36:44.263 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 70
+17:36:44.264 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 71
+17:36:44.264 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 72
+17:36:44.265 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 73
+17:36:44.265 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 74
+17:36:44.266 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 75
+17:36:44.266 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 76
+17:36:44.267 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 77
+17:36:44.267 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 78
+17:36:44.267 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 79
+17:36:44.268 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 80
+17:36:44.268 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 81
+17:36:44.269 INFO  utils.ExcelUtils (ExcelUtils.java:36) - Test Runner excel row at: 82
+17:36:57.024 INFO  driver.WebDriverFactory (WebDriverFactory.java:192) - Setting up the browser window to its max.
+17:37:08.580 INFO  driver.WebDriverFactory (WebDriverFactory.java:181) - Initializing the implicit wait timeout for {} 5
+17:37:08.589 INFO  driver.WebDriverFactory (WebDriverFactory.java:184) - Initializing the page load timeout.
+17:37:08.602 INFO  driver.DriverFactory (DriverFactory.java:122) - Clearing all the cookies.
+17:37:08.621 INFO  driver.DriverFactory (DriverFactory.java:59) - Open the url {} https://qa.smartcmobile.net/SCM_10.0_S-SCP/ using the selenium get() method.
+17:38:18.604 INFO  csp.AdminLoginTests (AdminLoginTests.java:85) - To verify the tests with the below test case id's: C72375, C72374, C72373
+17:38:18.847 INFO  driver.Page (    Page.java:59) - Preparing for element to click.
+17:38:18.847 INFO  driver.Page (    Page.java:211) - Waiting for element to be clickable for 120 seconds.
+17:40:36.196 INFO  driver.DriverFactory (DriverFactory.java:122) - Clearing all the cookies.
