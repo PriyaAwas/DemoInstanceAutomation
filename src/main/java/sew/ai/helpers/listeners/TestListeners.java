@@ -60,7 +60,7 @@ public class TestListeners implements ITestListener, ISuiteListener {
     @Override
     public void onTestFailure(ITestResult result) {
         try {
-//            ExtentLogger.fail(result.getMethod().getMethodName() + " is failed", true);
+            ExtentLogger.fail(result.getMethod().getMethodName() + " is failed", true);
             ExtentLogger.fail(result.getThrowable().toString());
             ExtentLogger.fail(Arrays.toString(result.getThrowable().getStackTrace()));
         }
@@ -74,7 +74,7 @@ public class TestListeners implements ITestListener, ISuiteListener {
     @Override
     public void onTestSkipped(ITestResult result) {
         ExtentLogger.skip(result.getMethod().getMethodName() + " is skipped");
-//        ExtentLogger.skip(result.getMethod().getMethodName() + " is failed", true);
+        ExtentLogger.skip(result.getMethod().getMethodName() + " is failed", true);
     }
 
     public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
@@ -83,3 +83,4 @@ public class TestListeners implements ITestListener, ISuiteListener {
     public void onStart(ITestContext context) {
     }
 }
+

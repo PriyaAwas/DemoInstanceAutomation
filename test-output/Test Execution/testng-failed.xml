@@ -14,11 +14,12 @@
     <classes>
       <class name="demo.tests.scp.paymentInfoTests">
         <methods>
+          <include name="testPreRequisites"/>
           <include name="tearDownClasses"/>
+          <include name="verifyBankPaymentFormFieldsValidation"/>
           <include name="methodsPreRequisites"/>
-          <include name="accPaymentInformation"/>
-          <include name="classPreRequisites"/>
           <include name="tearDownMethods"/>
+          <include name="classPreRequisites"/>
         </methods>
       </class> <!-- demo.tests.scp.paymentInfoTests -->
     </classes>

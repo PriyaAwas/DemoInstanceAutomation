@@ -47,4 +47,7 @@ public class FilePaths {
 			+ File.separator;
     public static String notificationFilePath = System.getProperty("user.dir") + File.separator + "src" +
             File.separator + "test" + File.separator+ "resources" + File.separator+ "excel" +File.separator;
+    public static final String PAY_TEXT_PROPERTIES =System.getProperty("user.dir") + File.separator + "src" +
+            File.separator + "test" + File.separator + "resources" + File.separator + "textprops"
+            + File.separator + "pay" + File.separator;
 }

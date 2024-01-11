@@ -330,7 +330,7 @@ public class HomePage extends Page {
 		log.info("Current bill link clicked successfully.");
 	}
 
-	@FindBy(css = ".recurring_bill.list-group - item a")
+	@FindBy(css = ".recurring_bill.list-group-item a")
 	private WebElement lnk_autopay;
 
 	public void clickAutopayLink() {

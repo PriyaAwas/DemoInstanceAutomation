@@ -5,8 +5,8 @@ configurations:
     headless: false
     isSetProfile: false
     profileName: "Profile 4"
-    pageTimeout: 100
-    implicitTimeout: 5
+    pageTimeout: 120
+    implicitTimeout: 10
     explicitTimeout: 120
     build: "1.0.5"
     tags: "api_tests_qa"
@@ -17,15 +17,11 @@ configurations:
     downloadDirectory: "downloads/"
     testrailRunId: "1212"
     testrailPlatform: "3"
-    postResultsTestrail: true
-    //scp.url: "https://qa.smartcmobile.net/SCM_10.0_S-SCP/"
+    postResultsTestrail: false
     scp.url: "https://pwccx.smartcmobile.com/Portal/default.aspx"
-    //scp.url: "https://pwccx.smartcmobile.com/portal/"
-    //scp.url: "https://u-ugi10s.smartcmobile.net/"
-    // scp.url: "https://pwccx.smartcmobile.com/Portal/default.aspx"
     csp.url: "https://qa.smartcmobile.net/SCM_10.0_S-CSP/"
-    userName: "sew_auto01"
-    password: "Demo@123"
+    userName: "scmuser"
+    password: "scmuser@2022"
     utilityAccountNumber: "411000714880"
     commercialUserName: "ab-ios12"
     commercialPassword: "Demo@1234"
@@ -35,8 +31,6 @@ configurations:
     adminPassword: "Sew@2021$!"
     ScpReg.url: "https://u-ugi10s.smartcmobile.net/portal/customerregistrations.aspx"
   uat:
-  
-  
     name: "SEW Functional Tests UAT Run"
     headless: false
     pageTimeout: 20

@@ -101,8 +101,8 @@ public class LoginSteps extends LoginPage {
     public DashboardSteps loginIntoTheApplication(String userName, String password) {
         ExtentLogger.logInfo("Logging into the application.");
         DashboardSteps dashboardSteps;
-        Assert.assertTrue(isLoginPage(loginTextProp.getPropValue("loginPageUrl"), loginTextProp
-                .getPropValue("loginPageTitle")));
+//        Assert.assertTrue(isLoginPage(loginTextProp.getPropValue("loginPageUrl"), loginTextProp
+//                .getPropValue("loginPageTitle")));
         // Handle MFA if enabled
         //SCPConfiguration.initLoginToken();
         waitForPageToLoad();

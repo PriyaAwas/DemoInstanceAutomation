@@ -1,476 +1,468 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
 
-  <modelVersion>4.0.0</modelVersion>
 
- 
+	<groupId>sew.ai</groupId>
 
-  <groupId>sew.ai</groupId>
+	<artifactId>PwCDemoInstanceFunctionalTests</artifactId>
 
-  <artifactId>SCM10SFunctionalTests</artifactId>
+	<version>1.0-SNAPSHOT</version>
 
-  <version>1.0-SNAPSHOT</version>
+	<packaging>jar</packaging>
 
-  <packaging>jar</packaging>
 
- 
+	<name>PwCDemoInstanceFunctionalTests</name>
 
-  <name>SCM10SFunctionalTests</name>
+	<url>http://maven.apache.org</url>
 
-  <url>http://maven.apache.org</url>
 
- 
+	<organization>
+		<name>PwC</name>
+		<url>https://www.pwc.in/</url>
+	</organization>
 
-  <organization>
 
-    <name>Smart Energy Water</name>
+	<developers>
 
-    <url>https://sew.ai/</url>
+		<developer>
 
-  </organization>
+			<name>Satya Tiwari</name>
 
- 
+			<email>satya.tiwari@pwc.com</email>
 
-  <developers>
+			<organization>PwC</organization>
 
-    <developer>
+			<organizationUrl>https://www.pwc.in/</organizationUrl>
 
-      <name>Ranjit Biswal</name>
+		</developer>
 
-      <email>Ranjit.Biswal@smartenergywater.in</email>
+		<developer>
 
-      <organization>Smart Energy Water</organization>
+			<name>Priya Awasthi</name>
 
-      <organizationUrl>https://sew.ai/</organizationUrl>
+			<email>priya.awasthi@pwc.com</email>
 
-    </developer>
+			<organization>PwC</organization>
 
-    <developer>
+			<organizationUrl>https://www.pwc.in/</organizationUrl>
 
-      <name>Akhilesh Kumar Keshari</name>
+		</developer>
 
-      <email>Akhilesh.Keshari@smartenergywater.in</email>
 
-      <organization>Smart Energy Water</organization>
+	</developers>
 
-      <organizationUrl>https://sew.ai/</organizationUrl>
 
-    </developer>
+	<properties>
 
-    <developer>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-      <name>Rahul Rana</name>
+		<maven.compiler.source>17</maven.compiler.source>
 
-      <email>Rahul.Rana@smartenergywater.in</email>
+		<maven.compiler.target>17</maven.compiler.target>
 
-      <organization>Smart Energy Water</organization>
+		<selenium.java.version>4.13.0</selenium.java.version>
 
-      <organizationUrl>https://sew.ai/</organizationUrl>
+		<testng.version>7.8.0</testng.version>
 
-    </developer>
+		<webdriver.manager.version>5.5.3</webdriver.manager.version>
 
-  </developers>
+		<appium.client.version>8.3.0</appium.client.version>
 
- 
+		<apache.poi.version>5.2.2</apache.poi.version>
 
-  <properties>
+		<jackson.fasterxml.version>2.14.2</jackson.fasterxml.version>
 
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<extentreports.version>5.0.9</extentreports.version>
 
-    <maven.compiler.source>17</maven.compiler.source>
+		<extent.cucumber.reports.version>2.13.0</extent.cucumber.reports.version>
 
-    <maven.compiler.target>17</maven.compiler.target>
+		<lombok.version>1.18.24</lombok.version>
 
-    <selenium.java.version>4.13.0</selenium.java.version>
+	</properties>
 
-    <testng.version>7.8.0</testng.version>
 
-    <webdriver.manager.version>5.5.3</webdriver.manager.version>
+	<dependencies>
 
-    <appium.client.version>8.3.0</appium.client.version>
+		<!--
+		https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 
-    <apache.poi.version>5.2.2</apache.poi.version>
+		<dependency>
 
-    <jackson.fasterxml.version>2.14.2</jackson.fasterxml.version>
+			<groupId>org.seleniumhq.selenium</groupId>
 
-    <extentreports.version>5.0.9</extentreports.version>
+			<artifactId>selenium-java</artifactId>
 
-    <extent.cucumber.reports.version>2.13.0</extent.cucumber.reports.version>
+			<version>${selenium.java.version}</version>
 
-    <lombok.version>1.18.24</lombok.version>
+		</dependency>
 
-  </properties>
+		<!-- https://mvnrepository.com/artifact/org.testng/testng -->
 
- 
+		<dependency>
 
-  <dependencies>
+			<groupId>org.testng</groupId>
 
-    <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+			<artifactId>testng</artifactId>
 
-    <dependency>
+			<version>${testng.version}</version>
 
-      <groupId>org.seleniumhq.selenium</groupId>
+			<scope>test</scope>
 
-      <artifactId>selenium-java</artifactId>
+		</dependency>
 
-      <version>${selenium.java.version}</version>
+		<!-- https://mvnrepository.com/artifact/org.testng/testng -->
 
-    </dependency>
+		<dependency>
 
-    <!-- https://mvnrepository.com/artifact/org.testng/testng -->
+			<groupId>org.testng</groupId>
 
-    <dependency>
+			<artifactId>testng</artifactId>
 
-      <groupId>org.testng</groupId>
+			<version>${testng.version}</version>
 
-      <artifactId>testng</artifactId>
+		</dependency>
 
-      <version>${testng.version}</version>
+		<!--
+		https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
 
-      <scope>test</scope>
+		<dependency>
 
-    </dependency>
+			<groupId>io.github.bonigarcia</groupId>
 
-    <!-- https://mvnrepository.com/artifact/org.testng/testng -->
+			<artifactId>webdrivermanager</artifactId>
 
-    <dependency>
+			<version>${webdriver.manager.version}</version>
 
-      <groupId>org.testng</groupId>
+		</dependency>
 
-      <artifactId>testng</artifactId>
+		<!-- https://mvnrepository.com/artifact/io.appium/java-client -->
 
-      <version>${testng.version}</version>
+		<dependency>
 
-    </dependency>
+			<groupId>io.appium</groupId>
 
-    <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
+			<artifactId>java-client</artifactId>
 
-    <dependency>
+			<version>${appium.client.version}</version>
 
-      <groupId>io.github.bonigarcia</groupId>
+		</dependency>
 
-      <artifactId>webdrivermanager</artifactId>
+		<!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
 
-      <version>${webdriver.manager.version}</version>
+		<dependency>
 
-    </dependency>
+			<groupId>io.rest-assured</groupId>
 
-    <!-- https://mvnrepository.com/artifact/io.appium/java-client -->
+			<artifactId>rest-assured</artifactId>
 
-    <dependency>
+			<version>5.3.0</version>
 
-      <groupId>io.appium</groupId>
+			<scope>compile</scope>
 
-      <artifactId>java-client</artifactId>
+		</dependency>
 
-      <version>${appium.client.version}</version>
+		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
 
-    </dependency>
+		<dependency>
 
-    <!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
+			<groupId>org.apache.poi</groupId>
 
-    <dependency>
+			<artifactId>poi</artifactId>
 
-      <groupId>io.rest-assured</groupId>
+			<version>${apache.poi.version}</version>
 
-      <artifactId>rest-assured</artifactId>
+		</dependency>
 
-      <version>5.3.0</version>
+		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml-schemas -->
 
-      <scope>compile</scope>
+		<dependency>
 
-    </dependency>
+			<groupId>org.apache.poi</groupId>
 
-    <!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
+			<artifactId>poi-ooxml</artifactId>
 
-    <dependency>
+			<version>${apache.poi.version}</version>
 
-      <groupId>org.apache.poi</groupId>
+		</dependency>
 
-      <artifactId>poi</artifactId>
+		<!--
+		https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
 
-      <version>${apache.poi.version}</version>
+		<dependency>
 
-    </dependency>
+			<groupId>org.apache.logging.log4j</groupId>
 
-    <!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml-schemas -->
+			<artifactId>log4j-core</artifactId>
 
-    <dependency>
+			<version>2.19.0</version>
 
-      <groupId>org.apache.poi</groupId>
+		</dependency>
 
-      <artifactId>poi-ooxml</artifactId>
+		<!--
+		https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-api -->
 
-      <version>${apache.poi.version}</version>
+		<dependency>
 
-    </dependency>
+			<groupId>org.apache.logging.log4j</groupId>
 
-    <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
+			<artifactId>log4j-api</artifactId>
 
-    <dependency>
+			<version>2.19.0</version>
 
-      <groupId>org.apache.logging.log4j</groupId>
+		</dependency>
 
-      <artifactId>log4j-core</artifactId>
+		<!-- https://mvnrepository.com/artifact/org.yaml/snakeyaml -->
 
-      <version>2.19.0</version>
+		<dependency>
 
-    </dependency>
+			<groupId>org.yaml</groupId>
 
-    <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-api -->
+			<artifactId>snakeyaml</artifactId>
 
-    <dependency>
+			<version>1.33</version>
 
-      <groupId>org.apache.logging.log4j</groupId>
+		</dependency>
 
-      <artifactId>log4j-api</artifactId>
+		<!--
+		https://mvnrepository.com/artifact/com.github.romankh3/image-comparison -->
 
-      <version>2.19.0</version>
+		<dependency>
 
-    </dependency>
+			<groupId>com.github.romankh3</groupId>
 
-    <!-- https://mvnrepository.com/artifact/org.yaml/snakeyaml -->
+			<artifactId>image-comparison</artifactId>
 
-    <dependency>
+			<version>4.4.0</version>
 
-      <groupId>org.yaml</groupId>
+		</dependency>
 
-      <artifactId>snakeyaml</artifactId>
+		<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
 
-      <version>1.33</version>
+		<dependency>
 
-    </dependency>
+			<groupId>org.apache.commons</groupId>
 
-    <!-- https://mvnrepository.com/artifact/com.github.romankh3/image-comparison -->
+			<artifactId>commons-lang3</artifactId>
 
-    <dependency>
+			<version>3.12.0</version>
 
-      <groupId>com.github.romankh3</groupId>
+		</dependency>
 
-      <artifactId>image-comparison</artifactId>
+		<!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
 
-      <version>4.4.0</version>
+		<dependency>
 
-    </dependency>
+			<groupId>org.projectlombok</groupId>
 
-    <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
+			<artifactId>lombok</artifactId>
 
-    <dependency>
+			<version>1.18.24</version>
 
-      <groupId>org.apache.commons</groupId>
+			<scope>provided</scope>
 
-      <artifactId>commons-lang3</artifactId>
+		</dependency>
 
-      <version>3.12.0</version>
+		<!--
+		https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core -->
 
-    </dependency>
+		<dependency>
 
-    <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+			<groupId>com.fasterxml.jackson.core</groupId>
 
-    <dependency>
+			<artifactId>jackson-core</artifactId>
 
-      <groupId>org.projectlombok</groupId>
+			<version>${jackson.fasterxml.version}</version>
 
-      <artifactId>lombok</artifactId>
+		</dependency>
 
-      <version>1.18.24</version>
+		<!--
+		https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
 
-      <scope>provided</scope>
+		<dependency>
 
-    </dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
 
-    <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core -->
+			<artifactId>jackson-databind</artifactId>
 
-    <dependency>
+			<version>${jackson.fasterxml.version}</version>
 
-      <groupId>com.fasterxml.jackson.core</groupId>
+		</dependency>
 
-      <artifactId>jackson-core</artifactId>
+		<!--
+		https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-annotations -->
 
-      <version>${jackson.fasterxml.version}</version>
+		<dependency>
 
-    </dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
 
-    <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
+			<artifactId>jackson-annotations</artifactId>
 
-    <dependency>
+			<version>${jackson.fasterxml.version}</version>
 
-      <groupId>com.fasterxml.jackson.core</groupId>
+		</dependency>
 
-      <artifactId>jackson-databind</artifactId>
+		<dependency>
 
-      <version>${jackson.fasterxml.version}</version>
+			<groupId>com.fasterxml.jackson.dataformat</groupId>
 
-    </dependency>
+			<artifactId>jackson-dataformat-yaml</artifactId>
 
-    <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-annotations -->
+			<version>${jackson.fasterxml.version}</version>
 
-    <dependency>
+			<scope>test</scope>
 
-      <groupId>com.fasterxml.jackson.core</groupId>
+		</dependency>
 
-      <artifactId>jackson-annotations</artifactId>
+		<dependency>
 
-      <version>${jackson.fasterxml.version}</version>
+			<groupId>com.fasterxml.jackson.dataformat</groupId>
 
-    </dependency>
+			<artifactId>jackson-dataformat-yaml</artifactId>
 
-    <dependency>
+			<version>${jackson.fasterxml.version}</version>
 
-      <groupId>com.fasterxml.jackson.dataformat</groupId>
+			<scope>compile</scope>
 
-      <artifactId>jackson-dataformat-yaml</artifactId>
+		</dependency>
 
-      <version>${jackson.fasterxml.version}</version>
+		<!--
+		https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
 
-      <scope>test</scope>
+		<dependency>
 
-    </dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
 
-    <dependency>
+			<artifactId>jackson-databind</artifactId>
 
-      <groupId>com.fasterxml.jackson.dataformat</groupId>
+			<version>${jackson.fasterxml.version}</version>
 
-      <artifactId>jackson-dataformat-yaml</artifactId>
+			<scope>compile</scope>
 
-      <version>${jackson.fasterxml.version}</version>
+		</dependency>
 
-      <scope>compile</scope>
+		<!-- https://mvnrepository.com/artifact/org.json/json -->
 
-    </dependency>
+		<dependency>
 
-    <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
+			<groupId>org.json</groupId>
 
-    <dependency>
+			<artifactId>json</artifactId>
 
-      <groupId>com.fasterxml.jackson.core</groupId>
+			<version>20220924</version>
 
-      <artifactId>jackson-databind</artifactId>
+		</dependency>
 
-      <version>${jackson.fasterxml.version}</version>
+		<!--
+		https://mvnrepository.com/artifact/com.googlecode.json-simple/json-simple -->
 
-      <scope>compile</scope>
+		<dependency>
 
-    </dependency>
+			<groupId>com.googlecode.json-simple</groupId>
 
-    <!-- https://mvnrepository.com/artifact/org.json/json -->
+			<artifactId>json-simple</artifactId>
 
-    <dependency>
+			<version>1.1.1</version>
 
-      <groupId>org.json</groupId>
+		</dependency>
 
-      <artifactId>json</artifactId>
+		<!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
 
-      <version>20220924</version>
+		<dependency>
 
-    </dependency>
+			<groupId>com.google.code.gson</groupId>
 
-    <!-- https://mvnrepository.com/artifact/com.googlecode.json-simple/json-simple -->
+			<artifactId>gson</artifactId>
 
-    <dependency>
+			<version>2.10.1</version>
 
-      <groupId>com.googlecode.json-simple</groupId>
+		</dependency>
 
-      <artifactId>json-simple</artifactId>
+		<!--
+		https://mvnrepository.com/artifact/io.swagger.parser.v3/swagger-parser -->
 
-      <version>1.1.1</version>
+		<dependency>
 
-    </dependency>
+			<groupId>io.swagger.parser.v3</groupId>
 
-    <!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
+			<artifactId>swagger-parser</artifactId>
 
-    <dependency>
+			<version>2.1.10</version>
 
-      <groupId>com.google.code.gson</groupId>
+		</dependency>
 
-      <artifactId>gson</artifactId>
+		<!--
+		https://mvnrepository.com/artifact/com.microsoft.sqlserver/mssql-jdbc -->
 
-      <version>2.10.1</version>
+		<dependency>
 
-    </dependency>
+			<groupId>com.microsoft.sqlserver</groupId>
 
-    <!-- https://mvnrepository.com/artifact/io.swagger.parser.v3/swagger-parser -->
+			<artifactId>mssql-jdbc</artifactId>
 
-    <dependency>
+			<version>12.2.0.jre11</version>
 
-      <groupId>io.swagger.parser.v3</groupId>
+		</dependency>
 
-      <artifactId>swagger-parser</artifactId>
+		<dependency>
 
-      <version>2.1.10</version>
+			<groupId>com.aventstack</groupId>
 
-    </dependency>
+			<artifactId>extentreports</artifactId>
 
-    <!-- https://mvnrepository.com/artifact/com.microsoft.sqlserver/mssql-jdbc -->
+			<version>${extentreports.version}</version>
 
-    <dependency>
+		</dependency>
 
-      <groupId>com.microsoft.sqlserver</groupId>
+		<dependency>
 
-      <artifactId>mssql-jdbc</artifactId>
+			<groupId>org.projectlombok</groupId>
 
-      <version>12.2.0.jre11</version>
+			<artifactId>lombok</artifactId>
 
-    </dependency>
+			<version>${lombok.version}</version>
 
-    <dependency>
+		</dependency>
 
-      <groupId>com.aventstack</groupId>
+		<!-- https://mvnrepository.com/artifact/de.redsix/pdfcompare -->
 
-      <artifactId>extentreports</artifactId>
+		<dependency>
 
-      <version>${extentreports.version}</version>
+			<groupId>de.redsix</groupId>
 
-    </dependency>
+			<artifactId>pdfcompare</artifactId>
 
-    <dependency>
+			<version>1.1.61</version>
 
-      <groupId>org.projectlombok</groupId>
+		</dependency>
 
-      <artifactId>lombok</artifactId>
+		<dependency>
 
-      <version>${lombok.version}</version>
+			<groupId>org.assertj</groupId>
 
-    </dependency>
+			<artifactId>assertj-core</artifactId>
 
-    <!-- https://mvnrepository.com/artifact/de.redsix/pdfcompare -->
+			<version>3.24.2</version>
 
-    <dependency>
+			<scope>test</scope>
 
-      <groupId>de.redsix</groupId>
+		</dependency>
 
-      <artifactId>pdfcompare</artifactId>
+		<dependency>
 
-      <version>1.1.61</version>
+			<groupId>com.google.guava</groupId>
 
-    </dependency>
+			<artifactId>guava</artifactId>
 
-	<dependency>
+			<version>31.0.1-jre</version>
 
-		<groupId>org.assertj</groupId>
+		</dependency>
 
-		<artifactId>assertj-core</artifactId>
+		<dependency>
 
-		<version>3.24.2</version>
-
-		<scope>test</scope>
-
-	</dependency>
-
-	<dependency>
-
-		<groupId>com.google.guava</groupId>
-
-		<artifactId>guava</artifactId>
-
-		<version>31.0.1-jre</version>
-
-	</dependency>
-
-	<dependency>
-
-		<groupId>org.mongodb</groupId>
+			<groupId>org.mongodb</groupId>
 
 			<artifactId>mongo-java-driver</artifactId>
 
@@ -478,6 +470,6 @@
 
 		</dependency>
 
-  </dependencies>
+	</dependencies>
 
 </project>

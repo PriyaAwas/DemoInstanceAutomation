@@ -80,5 +80,5 @@ public class Constants {
     public static final String ADMIN_SERVICES_TXT_FILENAME = "adminServices_text_en.properties";
     public static final String ADMIN_SCHEDULEMAINTENANCE_TXT_FILENAME = "adminScheduleMaintenance_text_en.properties";
     public static final String ADMIN_PAYMENT_LOCATION_TXT_FILENAME ="adminPaymentLocation_text_en.properties";
-    
+    public static final String PAYMENT_INFORMATION_TEXT_FILENAME = "payment_information_text_en.properties";
 }
