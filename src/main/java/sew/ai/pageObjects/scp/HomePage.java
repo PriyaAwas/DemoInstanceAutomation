@@ -414,7 +414,8 @@ public class HomePage extends Page {
 	@FindBy(css = ".sidebar_dresponse.list-group - item a")
 	private WebElement lnk_demand_response;
 
-	@FindBy(css = "#comparelink")
+	//@FindBy(css = "#comparelink")
+	@FindBy(css = "#BillForecast > a")
 	private WebElement lnk_compare;
 
 	public void clickCompareLink() {
