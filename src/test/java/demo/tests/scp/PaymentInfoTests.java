@@ -94,7 +94,7 @@ public class PaymentInfoTests extends TestRunner {
 	}
 	
 	
-	@FrameworkAnnotations(author = { "MSNaveen" }, category = { CategoryType.SANITY,CategoryType.SCP_PAYMENT_INFO })
+	@FrameworkAnnotations(author = { "SatyaTiwari" }, category = { CategoryType.SANITY,CategoryType.SCP_PAYMENT_INFO })
 	@Test(priority = 5, description = "To verify the Bank Payment form fields.")
 	public void verifyMultipleBankPaymentProfileAndDeletion() throws SQLException, InterruptedException {
 		log.info("To Verify Adding Multiple Bank Payment profiles and deletion validation");
