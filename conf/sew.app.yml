@@ -30,6 +30,8 @@ configurations:
     adminUsername: "qauser"
     adminPassword: "Sew@2021$!"
     ScpReg.url: "https://u-ugi10s.smartcmobile.net/portal/customerregistrations.aspx"
+    scmAccountNumber: "411001984953"
+    scmEmailAdd: "varun.bhatia@smartenergywater.in"
   uat:
     name: "SEW Functional Tests UAT Run"
     headless: false
@@ -51,7 +53,6 @@ configurations:
     SewScp.url: "https://pwccx.smartcmobile.com/adminPortal/default.aspx"   
     userName: "sew_auto01"
     password: "Demo@123"
-    utilityAccountNumber: "411000714880"
     adminUsername: "qauser"
     adminPassword: "Sew@2021$!"
 ...
