@@ -203,7 +203,7 @@ public class NotificationPreferenceSteps extends NotificationPreferencePage {
 		sAssert.assertTrue(isBtnCancelQuietHours(), "cancel quiet button is not visible");
 		sAssert.assertTrue(isBtnSaveQuietHours(), "save quiet button is not visible");
 		log.info("To verify that application will not allow user to set Same From and To time");
-		selectlstStartTimeQuietHours("10:00 AM");
+		selectlstStartTimeQuietHours("10:00 PM");
 		selectlstEndTimeQuietHours("10:00 PM");
 		SaveQuietHoursBtn();
 		sAssert.assertEquals(getLblToastMessage(),
