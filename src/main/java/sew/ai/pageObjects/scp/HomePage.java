@@ -338,7 +338,7 @@ public class HomePage extends Page {
 		log.info("Autopay link clicked successfully.");
 	}
 
-	@FindBy(css = ".icon_payment_location.list-group - item a")
+	@FindBy(css = "a[href*='BillingHistory']")
 	private WebElement lnk_payment_location;
 
 	public void clickPaymentLocationLink() {
@@ -379,7 +379,7 @@ public class HomePage extends Page {
 		log.info("Clicked Rate Analysis link successfully.");
 	}
 
-	@FindBy(css = ".texttopay_ico a")
+	@FindBy(css = "a[href*='TextToPay']")
 	private WebElement lnk_text_to_pay;
 
 	public void clickTextToPayLink() {
@@ -839,5 +839,9 @@ public class HomePage extends Page {
 		log.info("Level pay link clicked successfully.");
 	}
 	
+	public String getTostMessageWithWait() {
+		String toastMsg = getText(lbl_toast_message);
+		return toastMsg;
+	}
 
 }

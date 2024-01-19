@@ -402,4 +402,11 @@ public class MathUtil {
     public static void main(String[] arg) {
         System.out.println(toRoundoff("515.2"));
     }
+    
+    public static String toRoundoff(Double value,int decimalPlace) {
+        //double roundOff = Math.round(value * 100.0) / 100.0;
+        
+        String sRoundOff = String.format("%."+Integer.toString(decimalPlace)+"f", value);
+        return sRoundOff;
+    }
 }

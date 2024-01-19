@@ -37,7 +37,7 @@ public class TestRunner {
        //DataBaseUtils.getBaseDatabaseConnection();
         // INIT RESOURCE PATH PROPERTIES
         log.info("Initializing resource path config file.");
-        PropertiesUtil.initResourcePathProps(FilePaths.API_CONFIG_PROP);
+        //PropertiesUtil.initResourcePathProps(FilePaths.API_CONFIG_PROP);
         // INIT MONTH CONFIGURED IN CSP
         log.info("Initializing usage months config from CSP.");
         //CSPConfiguration.initUsageMonthsConfig();

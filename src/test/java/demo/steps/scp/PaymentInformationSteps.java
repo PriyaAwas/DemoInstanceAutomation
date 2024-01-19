@@ -235,7 +235,7 @@ public class PaymentInformationSteps extends PaymentInformationsPage {
 	public static String copyPasteUsingActionClassInTextFeild(String Text,WebElement element) throws InterruptedException {
 		Actions actions = new Actions(driver);
 		scrollPageToElement(element);
-		clear(element);
+		//clear(element);
 		click(element);
 		 // Copy the value from the string variable
 	    actions.sendKeys(Text).keyDown(Keys.CONTROL).sendKeys("a").keyUp(Keys.CONTROL).perform();
@@ -260,7 +260,7 @@ public class PaymentInformationSteps extends PaymentInformationsPage {
 		unEnrollFromAutoTextPay();
 		homeSteps.navigateToPaymentInfo();
 		// Deleting Payment Profiles
-		//deletePaymentProfiles();
+		deletePaymentProfiles();
 		// Verifying Payment Information Page
 		Assert.assertTrue(
 				isPaymentInformationPage(paymentInformationTextProp.getPropValue("expectedPaymentInformationPageUrl"),
@@ -438,6 +438,253 @@ public class PaymentInformationSteps extends PaymentInformationsPage {
 		populateTxtState(bank.getState());
 		populateTxtZip(bank.getZipCode());
 	}
+	
+	public void deletePaymentProfiles() {
+		// Deleting payment profile
+		int paymentProfiles = listPaymentProfile().size();
+		for (int i = 0; i < paymentProfiles; i++) {
+			clickBtnThreeDots();
+			clickBtnRemove();
+			clickBtnConfirmRemove();
+			pause(5000);
+		}
+	}
+	
+	public void verifyTheAddingBankPaymentProfile(SoftAssert softAssert) throws SQLException, InterruptedException {
+		log.info("To Verify Adding the Bank Payment Profile");
+		User user = SCPConfiguration.user;
+		Bank bank = ModelsConfiguration.readBankAccounts().getBankByAccountHolderName("Henry Jacob Bank Account");
+		Map<String, String> payProfileDataMap = new HashMap<>();
+		HomeSteps homeSteps = new HomeSteps(driver);
+		// UnEnrolling of AutoPay or Text Pay
+		homeSteps.navigateToAutoPayment();
+		unEnrollFromAutoTextPay();
+		homeSteps.navigateToTextToPay();
+		unEnrollFromAutoTextPay();
+		homeSteps.navigateToPaymentInfo();
+		// Deleting Payment Profiles
+		deletePaymentProfiles();
+		// Verifying Payment Information Page
+		Assert.assertTrue(
+				isPaymentInformationPage(paymentInformationTextProp.getPropValue("expectedPaymentInformationPageUrl"),
+						paymentInformationTextProp.getPropValue("expectedPaymentInformationPageHeader")),
+				"Page URL and Header is not Matching");
+		// Verifying Payment Information Page Header
+		softAssert.assertEquals(getLblPaymentInfoPageHeadingText(),
+				paymentInformationTextProp.getPropValue("expectedPaymentInformationPageHeader"),
+				"Expected Page Title do not match");
+		// Clicking on Add Payment Link
+		clickLnkAddPaymentMethod();
+		pause(20000);
+		// Clicking on Bank Radio Button
+		clickRdoBtnBank();
+		// Populating Bank profile from with valid details
+		populateBankPaymentForm(bank);
+		// Adding Payment Profile
+		clickbtnAdd();
+		pause(5000);
+		softAssert.assertEquals(getToastMessage(), paymentInformationTextProp.getPropValue("txtSuccessAddMsg"),
+				"Blank First Name, successful Msg do not match");
+		// Verifying Bank Payment profile is visible
+		String bankAccNum = bank.getBankAccountNumber();
+		softAssert.assertTrue(isBankPaymentProfileVisible(bankAccNum.substring(bankAccNum.length() - 4)),
+				"Bank Payment profile is not visible");		
+
+		// Validating if the payment method is available in AutoPay
+		softAssert.assertTrue(isPaymentMethodVisibleInAutoPay(bank.getBankAccountNumber(), "BANK"),
+				"The payment method is not visible in Auto Pay");
+		// Validating if the payment method is available in Current
+		softAssert.assertTrue(isPaymentMethodVisibleInCurrentBill(bank.getBankAccountNumber(), "BANK"),
+				"The payment method is not visible in Current Bill");
+		// Validating if the payment method is available in Text to Pay
+		softAssert.assertTrue(isPaymentMethodVisibleInTextToPay(bank.getBankAccountNumber(), "BANK"),
+				"The payment method is not visible in Current Bill");
+
+	}
+	
+	public boolean isPaymentMethodVisibleInAutoPay(String num, String paymentType) {
+		boolean method = false;
+		HomeSteps homeSteps = new HomeSteps(driver);
+		homeSteps.navigateToAutoPayment();
+		clickBtnEnrollAutoPay();
+		pause(3000);
+		if (paymentType.equalsIgnoreCase("Bank")) {
+			clickrdoBtnBankCBill();
+			Select ddBankAccount = new Select(elementDDBankAccount());
+			List<WebElement> ddBankAccountOptions = ddBankAccount.getOptions();
+			for (WebElement option : ddBankAccountOptions) {
+				if (option.getText().contains(num.substring(num.length() - 4))) {
+					log.info("Payment Method is available in AutoPay");
+					method = true;
+				}
+			}
+		} else if (paymentType.equalsIgnoreCase("Card")) {
+			clickcardRdoBtn();
+			Select ddBankAccount = new Select(elementDDCardAccount());
+			List<WebElement> ddBankAccountOptions = ddBankAccount.getOptions();
+			for (WebElement option : ddBankAccountOptions) {
+				if (option.getText().contains(num.substring(num.length() - 4))) {
+					log.info("Payment Method is available in AutoPay");
+					method = true;
+				}
+			}
+		}
+		return method;
+	}
+	
+	public boolean isPaymentMethodVisibleInCurrentBill(String num, String paymentType) {
+		boolean method = false;
+		HomeSteps homeSteps = new HomeSteps(driver);
+		homeSteps.navigateToCurrentBill();
+		waitUntilCompletePageLoad();
+		clickBtnMakpayment();pause(5000);
+		waitUntilCompletePageLoad();
+		if (paymentType.equalsIgnoreCase("Bank")) {
+			clickrdoBtnBankCBill();
+			Select ddBankAccount = new Select(elementDDBankAccountCurrentBill());
+			List<WebElement> ddBankAccountOptions = ddBankAccount.getOptions();
+			for (WebElement option : ddBankAccountOptions) {
+				if (option.getText().contains(num.substring(num.length() - 2))) {
+					log.info("Payment Method is available in AutoPay");
+					method = true;
+				}
+			}
+		} else if (paymentType.equalsIgnoreCase("Card")) {
+			clickrdoBtnCardCBill();
+			Select ddBankAccount = new Select(elementDDCardAccountCurrentBill());
+			List<WebElement> ddBankAccountOptions = ddBankAccount.getOptions();
+			for (WebElement option : ddBankAccountOptions) {
+				if (option.getText().contains(num.substring(num.length() - 2))) {
+					log.info("Payment Method is available in AutoPay");
+					method = true;
+				}
+			}
+		}
+		return method;
+	}
+	
+	public boolean isPaymentMethodVisibleInTextToPay(String num, String paymentType) throws InterruptedException {
+		boolean method = false;
+		HomeSteps homeSteps = new HomeSteps(driver);
+		homeSteps.navigateToTextToPay();
+		clickBtnEnrollTextToPay();
+		pause(3000);
+		if (paymentType.equalsIgnoreCase("Bank")) {
+			//scrollPageToElement(elementDDBankAccountTextToPay());
+			clickrdoBtnBankCBill();
+			Select ddBankAccount = new Select(elementDDBankAccountTextToPay());
+			List<WebElement> ddBankAccountOptions = ddBankAccount.getOptions();
+			for (WebElement option : ddBankAccountOptions) {
+				if (option.getText().contains(num.substring(num.length() - 4))) {
+					log.info("Payment Method is available in AutoPay");
+					method = true;
+				}
+			}
+		} else if (paymentType.equalsIgnoreCase("Card")) {
+			clickrdoBtnCardTextToPay();
+			Select ddBankAccount = new Select(elementDDCardAccountTextToPay());
+			List<WebElement> ddBankAccountOptions = ddBankAccount.getOptions();
+			for (WebElement option : ddBankAccountOptions) {
+				if (option.getText().contains(num.substring(num.length() - 4))) {
+					log.info("Payment Method is available in AutoPay");
+					method = true;
+				}
+			}
+		}
+		return method;
+	}
+	
+	public void verifyTheMultipleBankPaymentProfileAndDeletion(SoftAssert softAssert)
+			throws SQLException, InterruptedException {
+		log.info("To Verify Adding Multiple Payment Profiles and Deletion ");
+		Bank bank = ModelsConfiguration.readBankAccounts().getBankByAccountHolderName("Henry Jacob Bank Account");
+		User user = SCPConfiguration.user;
+		// Verifying Payment Information Page
+		Assert.assertTrue(
+				isPaymentInformationPage(paymentInformationTextProp.getPropValue("expectedPaymentInformationPageUrl"),
+						paymentInformationTextProp.getPropValue("expectedPaymentInformationPageHeader")),
+				"Page URL and Header is not Matching");
+		// Verifying Payment Information Page Header
+		softAssert.assertEquals(getLblPaymentInfoPageHeadingText(),
+				paymentInformationTextProp.getPropValue("expectedPaymentInformationPageHeader"),
+				"Expected Page Title do not match");
+		// Deleting Payment Profiles
+		deletePaymentProfiles();
+		// Bank Payment Profile 1
+		// Clicking on Add Payment Link
+		clickLnkAddPaymentMethod();
+		pause(20000);
+		// Clicking on Bank Radio Button
+		clickRdoBtnBank();
+		// Populate Bank Payment form and Add
+		populateBankPaymentForm(bank);
+		clickbtnAdd();
+		pause(10000);
+
+		// Validating Duplicate Bank Payment Profile
+		// Clicking on Add Payment Link
+		clickLnkAddPaymentMethod();
+		pause(20000);
+		// Clicking on Bank Radio Button
+		clickRdoBtnBank();
+		// Populate Bank Payment form and Add
+		populateBankPaymentForm(bank);
+		clickbtnAdd();
+		pause(2000);
+		softAssert.assertEquals(getToastMessage(),
+				paymentInformationTextProp.getPropValue("txtErrMsgDuplicatePaymentProfile"),
+				"Duplicate Error Toast Message Do Not Match");
+		clickbtnCancel();
+		pause(2000);
+
+		// Bank Payment Profile 2
+		// Clicking on Add Payment Link
+		clickLnkAddPaymentMethod();
+		pause(20000);
+		// Clicking on Bank Radio Button
+		clickRdoBtnBank();
+		// Populate Bank Payment form and Add
+		populateBankPaymentForm(bank);
+		populateTxtBoxBankAccountNo(bank.getBankAccountNumber() + "0");
+		populateTxtBoxConfirmBankAccountNo(bank.getBankAccountNumber() + "0");
+		clickbtnAdd();
+		pause(10000);
+
+		// Checking Both Payment Profile with Same Routing is visible
+		// Bank Profile 1
+		String bankAccNum1 = bank.getBankAccountNumber();
+		softAssert.assertTrue(isBankPaymentProfileVisible(bankAccNum1.substring(bankAccNum1.length() - 4)),
+				"Bank Payment profile 1 is not visible");
+		softAssert.assertTrue(
+				getBankNameofPaymentProfile(bankAccNum1.substring(bankAccNum1.length() - 4))
+						.contains(paymentInformationTextProp.getPropValue("txtBankName")),
+				"Bank Payment profile 1 name do not match");
+		// Bank Profile 2
+		String bankAccNum2 = bank.getBankAccountNumber() + "0";
+		softAssert.assertTrue(isBankPaymentProfileVisible(bankAccNum2.substring(bankAccNum2.length() - 4)),
+				"Bank Payment profile 2 is not visible");
+		softAssert.assertTrue(
+				getBankNameofPaymentProfile(bankAccNum2.substring(bankAccNum2.length() - 4))
+						.contains(paymentInformationTextProp.getPropValue("txtBankName")),
+				"Bank Payment profile 2 name do not match");
+		// Validating Default Payment
+		clickBtnThreeDots();
+		clickBtnSetDefault();
+		clickBtnMakeDefault();
+		pause(5000);
+		
+		// Deleting Bank payment Profile
+		clickBtnThreeDots();
+		clickBtnRemove();
+		clickBtnConfirmRemove();
+		pause(3000);
+		softAssert.assertEquals(getTostMessageWithWait(), paymentInformationTextProp.getPropValue("txtDeleteProfile"),
+				"Expected Delete payment profile tost-Msg Do not match");
+
+		
+	}
+	
+	
 
 	
 }

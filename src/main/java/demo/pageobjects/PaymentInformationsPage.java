@@ -70,11 +70,11 @@ public class PaymentInformationsPage extends HomePage {
     	clickWithJSExecutor(btnAddPaymentMethod);
     }
     
-    @FindBy(css="li[id='SetasDefault_1'] a")
+    @FindBy(css="li[data-target='#makedefault'] a")
     private WebElement btnSetDefault;
     
     public void clickBtnSetDefault() {
-    	log.info("Clicking Set Default Payment Method Button ");
+    	log.info("Clicking Set Default Payment Method Button");
     	clickWithJSExecutor(btnSetDefault);
     }
     
@@ -1401,14 +1401,14 @@ public class PaymentInformationsPage extends HomePage {
     
     //////// PAYMENT PROFILES //////////
     
-    @FindBy(css = "div[id*=profileinfo]")
+    @FindBy(css = "div[ng-repeat*='paymentInfo']")
     private List<WebElement> listPaymentProfile;
     
     public List<WebElement> listPaymentProfile(){
     	return listPaymentProfile;
     }
     
-    @FindBy(id="navbarDropdown0")
+    @FindBy(css="button[id*='navbar']")
     private WebElement btnThreeDots;
     
     public void clickBtnThreeDots() {
@@ -1417,7 +1417,7 @@ public class PaymentInformationsPage extends HomePage {
     	clickWithJSExecutor(btnThreeDots);
     }
     
-    @FindBy(css="li[id='removePaymnetType_1'] a")
+    @FindBy(css="li[id*='delete'] a")
     private WebElement btnRemove;
     
     public void clickBtnRemove() {
@@ -1425,7 +1425,7 @@ public class PaymentInformationsPage extends HomePage {
     	clickWithJSExecutor(btnRemove);
     }
     
-    @FindBy(css="button[class='submit-button']")
+    @FindBy(xpath="//button[text()='Remove']")
     private WebElement btnConfirmRemove;
     
     public void clickBtnConfirmRemove() {
@@ -1439,7 +1439,7 @@ public class PaymentInformationsPage extends HomePage {
     }
     
     public String getBankNameofPaymentProfile(String num) {
-    	By bnkNamePaymentProfile = By.xpath("//label[contains(text(),'" + num + "')]/preceding-sibling::span");
+    	By bnkNamePaymentProfile = By.xpath("//label[contains(text(),'" + num + "')]/preceding-sibling::label");
     	return driver.findElement(bnkNamePaymentProfile).getText();
     }
     
@@ -1539,7 +1539,7 @@ public class PaymentInformationsPage extends HomePage {
     	clickWithJSExecutor(btnThreeDot);
     }
     
-    @FindBy(css=".deleterow")
+    @FindBy(css="a[aria-label='click to Un Enroll autopay']")
     private WebElement btnUnEnroll;
     
     public void clickBtnUnEnroll() {

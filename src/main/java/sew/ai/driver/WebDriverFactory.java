@@ -95,8 +95,8 @@ public class WebDriverFactory {
         options.setExperimentalOption(
                 "excludeSwitches",
                 Arrays.asList(
-                        "enable-automation",
-                        "disable-popup-blocking"
+                        "enable-automation"//"disable-popup-blocking"
+
                 )
         );
         options.setExperimentalOption("useAutomationExtension", false);

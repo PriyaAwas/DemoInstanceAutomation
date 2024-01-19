@@ -12,16 +12,16 @@
     <parameter name="platformType" value="web"/>
     <parameter name="platformName" value="chrome"/>
     <classes>
-      <class name="demo.tests.scp.paymentInfoTests">
+      <class name="demo.tests.scp.PaymentInfoTests">
         <methods>
           <include name="testPreRequisites"/>
           <include name="tearDownClasses"/>
-          <include name="verifyBankPaymentFormFieldsValidation"/>
           <include name="methodsPreRequisites"/>
-          <include name="tearDownMethods"/>
+          <include name="verifyBankPaymentFormFieldsValidation"/>
           <include name="classPreRequisites"/>
+          <include name="tearDownMethods"/>
         </methods>
-      </class> <!-- demo.tests.scp.paymentInfoTests -->
+      </class> <!-- demo.tests.scp.PaymentInfoTests -->
     </classes>
   </test> <!-- E2E Test Suite On Web - Chrome(failed) -->
 </suite> <!-- Failed suite [Test Execution] -->

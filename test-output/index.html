@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">2 methods, 1 failed,  1 skipped,  </span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -103,10 +103,24 @@
                     <div class="method-list-content failed suite-Test_Execution">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Test_Execution" title="demo.tests.scp.paymentInfoTests" class="method navigator-link" hash-for-method="verifyBankPaymentFormFieldsValidation">verifyBankPaymentFormFieldsValidation</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Test_Execution" title="demo.tests.scp.PaymentInfoTests" class="method navigator-link" hash-for-method="verifyBankPaymentFormFieldsValidation">verifyBankPaymentFormFieldsValidation</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Test_Execution -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Test_Execution" class="hide-methods skipped suite-Test_Execution"> (hide)</a> <!-- hide-methods skipped suite-Test_Execution -->
+                      <a href="#" panel-name="suite-Test_Execution" class="show-methods skipped suite-Test_Execution"> (show)</a> <!-- show-methods skipped suite-Test_Execution -->
+                    </span>
+                    <div class="method-list-content skipped suite-Test_Execution">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Test_Execution" title="demo.tests.scp.PaymentInfoTests" class="method navigator-link" hash-for-method="verifyBankPaymentFormFieldsValidation">verifyBankPaymentFormFieldsValidation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Test_Execution -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -121,7 +135,7 @@
           <div class="suite-Test_Execution-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">demo.tests.scp.paymentInfoTests</span>
+              <span class="class-name">demo.tests.scp.PaymentInfoTests</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -129,48 +143,12 @@
                   <a name="verifyBankPaymentFormFieldsValidation">
                   </a> <!-- verifyBankPaymentFormFieldsValidation -->
                   <span class="method-name">verifyBankPaymentFormFieldsValidation</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.cssSelector: .texttopay_ico a&apos; (tried for 120 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
-	at sew.ai.driver.Page.waitForElementToBeClickable(Page.java:234)
-	at sew.ai.driver.Page.click(Page.java:59)
-	at sew.ai.pageObjects.scp.HomePage.clickTextToPayLink(HomePage.java:386)
-	at sew.ai.steps.scp.HomeSteps.navigateToTextToPay(HomeSteps.java:208)
-	at demo.steps.scp.PaymentInformationSteps.verifyTheBankPaymentFormFieldValidation(PaymentInformationSteps.java:259)
-	at demo.tests.scp.paymentInfoTests.verifyBankPaymentFormFieldsValidation(paymentInfoTests.java:102)
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)&quot; because &quot;sew.ai.runner.TestRunner.driver&quot; is null
+	at sew.ai.utils.ScreenshotUtils.getBase64Image(ScreenshotUtils.java:16)
+	at sew.ai.helpers.reporters.ExtentLogger.skip(ExtentLogger.java:51)
+	at sew.ai.helpers.listeners.TestListeners.onTestSkipped(TestListeners.java:77)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.texttopay_ico a&quot;}
-  (Session info: chrome=120.0.6099.201)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8b89b708300c708cc7470490c49256d3, findElement {using=css selector, value=.texttopay_ico a}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.201, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53596}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53596/devtoo..., se:cdpVersion: 120.0.6099.201, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8b89b708300c708cc7470490c49256d3
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy39.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:37)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
-	... 34 more
-... Removed 32 stack frames
+... Removed 25 stack frames
 </div> <!-- stack-trace -->
                   <em>
 (validation on bank payment form)                  </em>
@@ -178,6 +156,47 @@ Session ID: 8b89b708300c708cc7470490c49256d3
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Test_Execution-class-failed -->
+          <div class="suite-Test_Execution-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">demo.tests.scp.PaymentInfoTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyBankPaymentFormFieldsValidation">
+                  </a> <!-- verifyBankPaymentFormFieldsValidation -->
+                  <span class="method-name">verifyBankPaymentFormFieldsValidation</span>
+                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: &apos;USZ78MBH3R&apos;, ip: &apos;192.168.29.240&apos;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:620)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:236)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:163)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:108)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:88)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:83)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:72)
+	at sew.ai.driver.WebDriverFactory.createChromeDriver(WebDriverFactory.java:173)
+	at sew.ai.driver.WebDriverFactory.instantiateWebDriver(WebDriverFactory.java:52)
+	at sew.ai.driver.DriverFactory.getWebDriver(DriverFactory.java:26)
+	at sew.ai.runner.TestRunner.methodsPreRequisites(TestRunner.java:76)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.WebDriverException: Timed out waiting for driver process to start.
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:209)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:119)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	... 42 more
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(validation on bank payment form)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Test_Execution-class-skipped -->
         </div> <!-- panel Test_Execution -->
         <div panel-name="test-xml-Test_Execution" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -199,7 +218,8 @@ Session ID: 8b89b708300c708cc7470490c49256d3
     &lt;parameter name=&quot;platformType&quot; value=&quot;web&quot;/&gt;
     &lt;parameter name=&quot;platformName&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;demo.tests.scp.paymentInfoTests&quot;/&gt;
+      &lt;class name=&quot;demo.tests.scp.PaymentInfoTests&quot;/&gt;
+      &lt;class name=&quot;demo.tests.scp.BillingHistoryTests&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- E2E Test Suite On Web - Chrome --&gt;
 &lt;/suite&gt; &lt;!-- Test Execution --&gt;
@@ -213,7 +233,7 @@ Session ID: 8b89b708300c708cc7470490c49256d3
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">E2E Test Suite On Web - Chrome (1 class)</span>
+                <span class="test-name">E2E Test Suite On Web - Chrome (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -239,16 +259,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verifyBankPaymentFormFieldsValidation')
-data.setCell(0, 2, 'demo.tests.scp.paymentInfoTests')
-data.setCell(0, 3, 184130);
+data.setCell(0, 2, 'demo.tests.scp.PaymentInfoTests')
+data.setCell(0, 3, 77436);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifyBankPaymentFormFieldsValidation')
+data.setCell(1, 2, 'demo.tests.scp.PaymentInfoTests')
+data.setCell(1, 3, 0);
 window.suiteTableData['Test_Execution']= { tableData: data, tableDiv: 'times-div-Test_Execution'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 minutes</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Test_Execution">
               </div> <!-- times-div-Test_Execution -->
             </div> <!-- times-div -->
@@ -263,9 +287,16 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Test_Execution" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">1 ignored method</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">demo.tests.scp.BillingHistoryTests</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">testPreRequisites</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Test_Execution" class="panel">
@@ -274,33 +305,21 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">demo.tests.scp.paymentInfoTests</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">demo.tests.scp.PaymentInfoTests</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">testPreRequisites(web, chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">classPreRequisites(web, chrome, null)</span>
-                <span class="method-start">1094 ms</span>
+                <span class="method-start">21539 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
-                <span class="method-name">methodsPreRequisites(web, chrome, scp, null)</span>
-                <span class="method-start">1109 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">verifyBankPaymentFormFieldsValidation</span>
-                <span class="method-start">22920 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDownMethods([TestResult name=verifyBankPaymentFormFieldsValidation status=FAILURE method=paymentInfoTests.verify...)</span>
-                <span class="method-start">207246 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-class after">
-                <span class="method-name">tearDownClasses</span>
-                <span class="method-start">208618 ms</span>
-              </div> <!-- configuration-class after -->
+                <span class="method-name">methodsPreRequisites(web, chrome, scp, null)</span>
+                <span class="method-start">22021 ms</span>
+              </div> <!-- configuration-method before -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

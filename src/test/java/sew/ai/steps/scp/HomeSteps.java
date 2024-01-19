@@ -50,7 +50,7 @@ public class HomeSteps extends HomePage {
 		clickMyAccountLink();
 		pause(2000);
 		clickPaymentInfoLink();
-		pause(2000);
+		pause(4000);
 		//waitForPageLoader();
 		log.info("Navigated to the Payment Information page.");
 	}
@@ -142,7 +142,8 @@ public class HomeSteps extends HomePage {
 		clickBillingLink();
 		pause(2000);
 		clickCurrentBillLink();
-		waitForPageLoader();
+		pause(3000);
+		//waitForPageLoader();
 		log.info("Navigated to the Current Bill page.");
 	}
 
@@ -170,7 +171,7 @@ public class HomeSteps extends HomePage {
 		clickBillingLink();
 		pause(2000);
 		clickPaymentLocationLink();
-		waitForPageLoader();
+		pause(3000);
 		log.info("Navigated to the Payment Location page.");
 	}
 
@@ -206,7 +207,7 @@ public class HomeSteps extends HomePage {
 		clickBillingLink();
 		pause(3000);
 		clickTextToPayLink();
-		waitForPageLoader();
+		pause(3000);
 		log.info("Navigated to the Text To Pay page.");
 	}
 
