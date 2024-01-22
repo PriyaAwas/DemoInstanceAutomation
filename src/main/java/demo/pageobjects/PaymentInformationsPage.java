@@ -70,7 +70,7 @@ public class PaymentInformationsPage extends HomePage {
     	clickWithJSExecutor(btnAddPaymentMethod);
     }
     
-    @FindBy(css="li[data-target='#makedefault'] a")
+    @FindBy(css="li[id='SetasDefault_1'] a")
     private WebElement btnSetDefault;
     
     public void clickBtnSetDefault() {
@@ -169,8 +169,9 @@ public class PaymentInformationsPage extends HomePage {
     @FindBy(css="label[for='accholrnm']+span")
     private WebElement errMsgAccountHolderName;
     
-    public String getErrMsgAccountHolderName() {
+    public String getErrMsgAccountHolderName() throws InterruptedException {
     	log.info("Waiting For Visiblity status of Account Holder Name Text Feild Error Message");
+    	scrollPageToElement(errMsgAccountHolderName);   	
     	waitForElementToBeVisible(errMsgAccountHolderName);
     	log.info("Visiblity status of label Account Holder Name Error Message:"+ errMsgAccountHolderName.isDisplayed());
     	return getText(errMsgAccountHolderName);
@@ -777,7 +778,7 @@ public class PaymentInformationsPage extends HomePage {
     	log.info("Clicking Add Card Radio Button ");
     	clickWithJSExecutor(rdoBtnCard);
     	}
-    
+     
     @FindBy(id="nmcrd")
     private WebElement txtBoxCardHolderName;
     
@@ -1401,14 +1402,14 @@ public class PaymentInformationsPage extends HomePage {
     
     //////// PAYMENT PROFILES //////////
     
-    @FindBy(css = "div[ng-repeat*='paymentInfo']")
+    @FindBy(css = "div[id*=profileinfo]")
     private List<WebElement> listPaymentProfile;
     
     public List<WebElement> listPaymentProfile(){
     	return listPaymentProfile;
     }
     
-    @FindBy(css="button[id*='navbar']")
+    @FindBy(id="navbarDropdown0")
     private WebElement btnThreeDots;
     
     public void clickBtnThreeDots() {
@@ -1417,7 +1418,7 @@ public class PaymentInformationsPage extends HomePage {
     	clickWithJSExecutor(btnThreeDots);
     }
     
-    @FindBy(css="li[id*='delete'] a")
+    @FindBy(css="li[id='removePaymnetType_1'] a")
     private WebElement btnRemove;
     
     public void clickBtnRemove() {
@@ -1425,7 +1426,7 @@ public class PaymentInformationsPage extends HomePage {
     	clickWithJSExecutor(btnRemove);
     }
     
-    @FindBy(xpath="//button[text()='Remove']")
+    @FindBy(css="button[class='submit-button']")
     private WebElement btnConfirmRemove;
     
     public void clickBtnConfirmRemove() {
@@ -1439,7 +1440,7 @@ public class PaymentInformationsPage extends HomePage {
     }
     
     public String getBankNameofPaymentProfile(String num) {
-    	By bnkNamePaymentProfile = By.xpath("//label[contains(text(),'" + num + "')]/preceding-sibling::label");
+    	By bnkNamePaymentProfile = By.xpath("//label[contains(text(),'" + num + "')]/preceding-sibling::span");
     	return driver.findElement(bnkNamePaymentProfile).getText();
     }
     
@@ -1539,7 +1540,7 @@ public class PaymentInformationsPage extends HomePage {
     	clickWithJSExecutor(btnThreeDot);
     }
     
-    @FindBy(css="a[aria-label='click to Un Enroll autopay']")
+    @FindBy(css=".deleterow")
     private WebElement btnUnEnroll;
     
     public void clickBtnUnEnroll() {
@@ -1657,4 +1658,82 @@ public class PaymentInformationsPage extends HomePage {
     	return ddCardAccountTextToPay;
     }
     
+
+	@FindBy(xpath = "//*[@id='option-2']")
+	private WebElement otheramountraidiobtn;
+
+	public void ScrollAndSelect() throws InterruptedException {
+		waitForElementToBeVisible(otheramountraidiobtn);
+		scrollPageToElement(otheramountraidiobtn);
+		clickElementUsingJsExecutor(otheramountraidiobtn);
+
+		log.info("Selected Other Ammount ");
+	}
+
+	@FindBy(xpath = "//*[@id='otheramount']")
+	private WebElement OtheramounttextBox;
+
+	public void EnterOtherAmmount(String amount) {
+		sendKeys(OtheramounttextBox, amount);
+		log.info("Entered Other Ammount");
+	}
+	@FindBy(css = "#tokenize_payment")
+	private WebElement ButtonNext;
+
+	public void clickNextPayementButton() {
+		click(ButtonNext);
+		log.info("Clicked on Payment Next Button");
+	}
+
+	@FindBy(xpath = "//*[@id=\"containerDiv\"]/div[2]/div[1]/div[1]/div/div[1]/ol/li[2]/span")
+	private WebElement lbl_PaymentStep2;
+
+	public String getPaymentStep2Text() {
+		log.info("Fetching Step 2 Text.");
+		String stepText = getText(lbl_PaymentStep2);
+		log.info("Payemet Step2 Text {}: " + stepText);
+		return stepText;
+	}
+
+	@FindBy(id = "st3_amount")
+	private WebElement billam;
+
+	public String getBillAmmount() {
+		String Billamt = getText(billam);
+		return Billamt;
+	}
+
+	@FindBy(id = "st3_conFee")
+	private WebElement trnfee;
+
+	public String getTranFee() {
+		String TranFee = getText(trnfee);
+		return TranFee;
+	}
+
+	@FindBy(id = "st3_totalAmount")
+	private WebElement totlefee;
+
+	public String getTotleFee() throws InterruptedException {
+		scrollPageToElement(totlefee);
+		String TtlFee = getText(totlefee);
+		return TtlFee;
+	}
+	@FindBy(id = "st3_paymetnDate")
+	private WebElement paymentDate;
+
+	public String getPayementDate() {
+		String PayDate = getText(paymentDate);
+		return PayDate;
+	}
+
+	@FindBy(xpath = ("//input[@type='button' and @class='submit-button stepperbtns stsubmitt' "
+			+ "and @value='Submit']"))
+	private WebElement btnSubmitPayment;
+
+	public void clickPaymentSubmitBtn() {
+		scrollToElement(btnSubmitPayment);
+		clickElementUsingJsExecutor(btnSubmitPayment);
+		log.info("Submit Button Clicked Sucessfully .");
+	}
 }
