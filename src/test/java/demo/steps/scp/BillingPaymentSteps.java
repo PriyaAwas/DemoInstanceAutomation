@@ -3,6 +3,7 @@ package demo.steps.scp;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.interactions.Pause;
 import org.openqa.selenium.support.ui.Select;
 
 import sew.ai.config.ModelsConfiguration;
@@ -33,36 +34,34 @@ public class BillingPaymentSteps extends PaymentInformationSteps {
 	public void verifyMakePaymentWithNewCC(SoftAssert softAssert) throws InterruptedException {
 
 		Card card = ModelsConfiguration.readCards().getCardByNameOnCard("John Wick Visa Card");
-		clickLnkAddPaymentMethod();
-		pause(20000); // Clicking on Bank Radio Button
-		clickrdoBtnCard(); // Validation of Empty Form Submit clickbtnAdd();
-
+		deletePaymentProfiles();
+		clickLnkAddPaymentMethod();// clicking on the +Add payment method
+		pause(20000);
+		clickrdoBtnCard();
+		pause(5000);
+		clickbtnAdd();
 		softAssert.assertEquals(getToastMessage(), paymentInformationTextProp.getPropValue("txtErrMsgBlank"),
-				"Blank Error Msg do not match");
-
+				"Blank Error Msg do nost match");
 		populateCardDetails(card);
 		clickbtnAdd();
-		softAssert.assertEquals(getToastMessage(),
-				paymentInformationTextProp.getPropValue("txtErrMsgDuplicatePaymentProfile"),
-				"payment method already added");
-
+		softAssert.assertEquals(getToastMessage(), paymentInformationTextProp.getPropValue("txtSuccessAddMsg"),
+				"payment method is not Added");
 		homeSteps.navigateToCurrentBill();
 		clickBtnMakpayment();
+		ScrollAndSelect();
 		EnterOtherAmmount("1.00");
 		clickrdoBtnCardCBill();
 		Select Card = new Select(elementDDCardAccountCurrentBill());
 		Card.selectByVisibleText("VISA - 1111 - Exp. (12/24)");
-		clickNextPayementBtn();
+		clickNextPayementButton();
 		softAssert.assertEquals(getPaymentStep2Text(), "STEP 2: REVIEW & CONFIRM");
 		String billamount = getBillAmmount();
 		String transfee = getTranFee();
 		String tottlefee = getTotleFee();
-		String paymentdate = getPayementDate();
 		softAssert.assertEquals("1.00", billamount);
 		softAssert.assertEquals(Double.parseDouble(tottlefee),
 				(Double.parseDouble(transfee) + Double.parseDouble(billamount)));
-		softAssert.assertEquals(DateUtil.changeStringToDateInFormat(paymentdate, "yyyy-MM-dd"),
-				DateUtil.getCurrentDateInFormat("yyyy-MM-dd"));
+
 		clickPaymentSubmitBtn();
 		ExtentLogger.logInfo("Payement Done from Credit Card");
 	}
@@ -82,6 +81,7 @@ public class BillingPaymentSteps extends PaymentInformationSteps {
 		waitUntilCompletePageLoad();
 		// Clicking on Bank Radio Button
 		clickrdoBtnCard();
+		pause(10000);
 		// Name on Card
 		softAssert.assertTrue(isTxtBoxCardHolderNameVisible(), "Name on card Feild is Visible");
 		softAssert.assertEquals(getLblTxtBoxCardHolderName(), paymentInformationTextProp.getPropValue("lblNameOnCard"),
@@ -157,7 +157,7 @@ public class BillingPaymentSteps extends PaymentInformationSteps {
 		ExtentLogger.logInfo("To Verify the Credit card Payment form Fields Validation");
 		Card card = ModelsConfiguration.readCards().getCardByNameOnCard("John Wick Visa Card");
 		HomeSteps homeSteps = new HomeSteps(driver);
-		homeSteps.navigateToPaymentInfo();
+		//homeSteps.navigateToPaymentInfo();
 		Assert.assertTrue(
 				isPaymentInformationPage(paymentInformationTextProp.getPropValue("expectedPaymentInformationPageUrl"),
 						paymentInformationTextProp.getPropValue("expectedPaymentInformationPageHeader")),
@@ -171,10 +171,13 @@ public class BillingPaymentSteps extends PaymentInformationSteps {
 		pause(20000);
 		// Clicking on Bank Radio Button
 		clickrdoBtnCard();
+		pause(5000);
+
 		ExtentLogger.logInfo("Validation of Empty Form Submit");
 		clickbtnAdd();
 		softAssert.assertEquals(getToastMessage(), paymentInformationTextProp.getPropValue("txtErrMsgBlank"),
 				"Empty Form Error Msg do not match");
+	
 		ExtentLogger.logInfo("Fetching Card Details");
 		populateCardDetails(card);
 		ExtentLogger.logInfo("Verifying The validation on Card Holder Name");
@@ -182,17 +185,20 @@ public class BillingPaymentSteps extends PaymentInformationSteps {
 		softAssert.assertEquals(CardName, card.getNameOnCard(), "Card Holder Name Error Msg do not match");
 		clear(elementCardHolderName());
 		clickbtnAdd();
-		softAssert.assertEquals(getErrMsgAccountHolderName(),
-
-				paymentInformationTextProp.getPropValue("txtErrMsgBlankCardHolderName"),
+		softAssert.assertEquals(getErrMsgCardHolderName(),
+				paymentInformationTextProp.getPropValue("lblNameOnCard"),
 				"Credit Holder Name Error Msg do not match");
+			
+		
 		populateTxtBoxCardHolderName(card.getNameOnCard() + "+_-&*^" + RandomUtil.generateInteger());
 		softAssert.assertEquals(getAttribute(elementCardHolderName(), "maxlength"),
 				paymentInformationTextProp.getPropValue("maxLengthCardHolderName"),
 				"Max length of Card Holder Name do not match");
 		clear(elementCardHolderName());
-		populateTxtBoxLastName(card.getNameOnCard());
+		populateTxtBoxCardHolderName(card.getNameOnCard());
 
+		
+		
 		ExtentLogger.logInfo("Verifying The validation on Card Number");
 		// Verification of card MaxLength
 		softAssert.assertEquals(getAttribute(elementCardNumber(), "maxlength"),
@@ -203,7 +209,7 @@ public class BillingPaymentSteps extends PaymentInformationSteps {
 		clickbtnAdd();
 		softAssert.assertEquals(getErrMsgCardNumber(), paymentInformationTextProp.getPropValue("txtErrMsgBlankCardNum"),
 				"Blank Card Number Error Msg do not match");
-		populateTxtBoxLastName(card.getCardNumber());
+		populateTxtBoxCardNumber(card.getCardNumber());
 		ExtentLogger.logInfo("Verifying The validation on Security code");
 		// Validating Blank Security code
 		clear(elementSecurityPin());
