@@ -827,5 +827,14 @@ public class Page {
 		return value;
 
 	}
+	
+	public static void waitForElementAttribute(WebElement element,String attribute,String value) {
+		log.info("Waiting for element Attribute for " + EXPLICIT_WAIT + " seconds of locator : " + element);
+		ExtentLogger.logInfo("Waiting for element Attribute for " + EXPLICIT_WAIT + " seconds of locator : " + element);
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(EXPLICIT_WAIT));
+		wait.until(ExpectedConditions.attributeToBe(element,attribute,value));		
+		log.info("Element is clickable now of locator : " + element);
+		ExtentLogger.pass("Element Attribute is for the Element  : " + element);
+	}
 
 }
