@@ -103,9 +103,10 @@ public class UsagePage extends HomePage {
     @FindBy(css = "#IDBannerUsage")
     private WebElement imgUsageBanner;
 
-    @FindBys(@FindBy(css = ".radius.chart_span_cls span"))
+    
+   @FindBys(@FindBy(css = ".radius.chart_span_cls span[style=\"color:black;\"]"))
     private List<WebElement> lblDataNotAvailable;
-
+ 
     public Boolean isDataNotAvailableLabelVisible() {
         Boolean status = isElementVisibleAlt(lblDataNotAvailable);
         log.info("Data not available label visibility status {}: " + status);
@@ -118,6 +119,13 @@ public class UsagePage extends HomePage {
         log.info("Data not available label : " + text);
         ExtentLogger.logInfo("Data not available label : " + text);
         return text;
+    }
+    
+    @FindBy(xpath="//div[@id='chart']/ span[contains(text(),'Usage Data is not available for the period.')]")
+    private WebElement lblDataNotAvailable1;
+    
+    public boolean isDataNotAvailableLableVisible1() {
+    	return isElementVisible(lblDataNotAvailable1);
     }
 
     @FindBy(css = "#averageval")
@@ -136,6 +144,8 @@ public class UsagePage extends HomePage {
         ExtentLogger.logInfo("Average this year label : " + text);
         return text;
     }
+    
+    
 
     @FindBy(css = "#monthlyAvg #averagevaltext")
     private WebElement lblAverageThisYear;
@@ -361,6 +371,7 @@ public class UsagePage extends HomePage {
     }
 
     public Boolean isWaterTabActive() {
+    	waitForElementAttribute(tabWater, "class", "active");
         String classAttr = getAttribute(tabWater, "class");
         log.info("Class attribute of water tab is : " + classAttr);
         Boolean status = classAttr.equals("active");
@@ -387,6 +398,7 @@ public class UsagePage extends HomePage {
 
     public void clickWaterTabLink() {
         click(lnkWaterTab);
+       
         log.info("Water tab link clicked successfully");
         ExtentLogger.logInfo("Water tab link clicked successfully");
     }
@@ -427,7 +439,7 @@ public class UsagePage extends HomePage {
     }
 
     public void clickGasTabLink() {
-        click(lnkGasTab);
+        clickWithJSExecutor(lnkGasTab);
         log.info("Gas tab link clicked successfully");
         ExtentLogger.logInfo("Gas tab link clicked successfully");
     }
@@ -547,6 +559,7 @@ public class UsagePage extends HomePage {
 
     public void clickMonthlyIntervalLink() {
         click(lnkMonthlyInterval);
+        waitForElementAttribute(lnkMonthlyInterval, "class", "active");
         log.info("Monthly interval tab link clicked successfully");
     }
 
@@ -577,6 +590,9 @@ public class UsagePage extends HomePage {
         click(lnkDailyInterval);
         log.info("Daily interval tab link clicked successfully");
     }
+    public void waitForDailyIntervalActive() {
+    	waitForElementAttribute(lnkDailyInterval, "class", "active");
+    }
 
     @FindBy(css = "li#ContentPlaceHolder1_HeaderUsageUI_SEW_UNIQUE_ID_ChartUsageUI_li_hourly a")
     private WebElement lnkHourlyInterval;
@@ -602,8 +618,11 @@ public class UsagePage extends HomePage {
     }
 
     public void clickHourlyIntervalLink() {
-        click(lnkHourlyInterval);
+        clickWithJSExecutor(lnkHourlyInterval);
         log.info("Hourly interval tab link clicked successfully");
+    }
+    public void waitForHourlyIntervalActive() {
+    	waitForElementAttribute(lnkHourlyInterval, "class", "active");
     }
 
     @FindBy(css = "li#ContentPlaceHolder1_HeaderUsageUI_SEW_UNIQUE_ID_ChartUsageUI_li_15min a")
@@ -632,6 +651,9 @@ public class UsagePage extends HomePage {
     public void clickMinutesIntervalLink() {
         click(lnkMinutesInterval);
         log.info("Minutes interval tab link clicked successfully");
+    }
+    public void waitForMinuteIntervalActive() {
+    	waitForElementAttribute(lnkMinutesInterval, "class", "active");
     }
 
     @FindBy(css = "li#ContentPlaceHolder1_HeaderUsageUI_SEW_UNIQUE_ID_ChartUsageUI_li_kwh #typeK")
@@ -664,6 +686,7 @@ public class UsagePage extends HomePage {
 
     public void clickMeasuringUnitLink() {
         click(lnkMeasuringUnit);
+        waitForElementAttribute(lnkMeasuringUnit, "class", "active");
         log.info("Measuring unit tab link clicked successfully");
     }
 
@@ -696,9 +719,27 @@ public class UsagePage extends HomePage {
     }
 
     public void clickCurrencyUnitLink() {
-        click(lnkCurrencyUnit);
+       // clickWithJSExecutor(lnkCurrencyUnit);
+    	
+    	click(lnkCurrencyUnit);
+    	waitForElementAttribute(lnkCurrencyUnit,"class","active");
         log.info("Currency unit tab link clicked successfully");
     }
+    
+    @FindBy(css="#usagechartdiv .highcharts-yaxis text tspan")
+    private WebElement lblwaterYaxis;
+    public Boolean isWaterRateLinkYAxisVisible() {
+        Boolean status = isElementVisible(lblwaterYaxis);
+        log.info("Water Measurig Unit link visibility status {}: " + status);
+        return status;
+    }
+    public String getWaterRateLinkYAxisLabel() {
+        String text = getText(lblwaterYaxis);
+        log.info("Water Measurig Unit label : " + text);
+        return text;
+    }
+
+    
 
     @FindBy(css = "li#ContentPlaceHolder1_HeaderUsageUI_SEW_UNIQUE_ID_ChartUsageUI_li_Gallon #typeG")
     private WebElement lnkGallonUnit;
@@ -747,6 +788,18 @@ public class UsagePage extends HomePage {
         click(lblCalendar);
         log.info("Calendar label clicked successfully.");
     }
+    @FindBy(css="#datepicker-calendar-lblCharttitle .datepicker-month-wrap .datepicker-month-prev")
+    private WebElement calenderPrevBtn;
+    public void clickPreviousMonth() {
+    	click(calenderPrevBtn);
+    }
+    @FindBy(css="#cell1-lblCharttitle")
+    private WebElement firstDate;
+    
+    public void clickFirstDate() {
+    	click(firstDate);
+    }
+   
 
     @FindBy(css = "div.calendar_wrp a[aria-labelledby='datepicker-bn-open-label-lblCharttitle']")
     private WebElement lnkCalendar;
@@ -1000,6 +1053,10 @@ public class UsagePage extends HomePage {
     @FindBy(css = ".add-card.rateid a[title='Click to view Usage rates']")
     private WebElement lnkRates;
 
+    public boolean isRateLinkLabelVisible() {
+    	log.info("Rates link visiblity is : " + lnkRates.isDisplayed());
+    	return isElementVisible(lnkRates);
+    }
     public String getRatesLinkLabel() {
         String label = getText(lnkRates);
         log.info("Rates link label is : " + label);
@@ -1010,10 +1067,19 @@ public class UsagePage extends HomePage {
         click(lnkRates);
         log.info("Rates link clicked successfully.");
     }
+    public String getRateLinkTitle() {
+    	String att=getAttribute(lnkRates, "title");
+    	log.info("Rates link title is :- "+att);
+    	return att;
+    }
 
     @FindBy(css = ".add-card.rateid i[class='material-icons']")
     private WebElement iconRates;
 
+    public boolean isRateIconLabelVisible() {
+    	log.info("Rates link visiblity is : " + iconRates.isDisplayed());
+    	return isElementVisible(iconRates);
+    }
     public String getRatesIconLabel() {
         String label = getText(iconRates);
         log.info("Rates icon label is : " + label);
@@ -1029,11 +1095,84 @@ public class UsagePage extends HomePage {
         return label;
     }
 
-    @FindBy(css = "a.fancybox - item.fancybox - close[title = 'Close']")
+    @FindBy(css = ".fancybox-item")
     private WebElement btnCloseRatesPopUp;
+    public void clickRatePopupCloseBtn(){
+        click(btnCloseRatesPopUp);
+        log.info("Rate Pop up Close btn has been Succesffully clicked.");
+    }
 
-    @FindBy(css = ".currency.highcharts-yaxis tspan")
-    private WebElement lblRatesInDollarRatesPopUp;
+    @FindBy(css = "#usageRateDiv a#btnAM")
+    private WebElement rateAmPopUp;
+    public boolean isAmActive(){
+        boolean flag=true;
+       String att= getAttribute(rateAmPopUp,"class");
+       if(att.equals("TabBtns")){
+           flag=false;
+       }
+     return flag;
+    }
+ public void clickAMBtn(){
+        click(rateAmPopUp);
+ }
+    @FindBy(css = "#usageRateDiv a#btnAM i")
+    private WebElement rateAMPopUplabel;
+ public String getRateLnkAMLabel(){
+        return getText(rateAMPopUplabel);
+ }
+    @FindBy(css = "#usageRateDiv a#btnPM")
+    private WebElement ratePmPopUp;
+    public boolean isPmActive(){
+        boolean flag=true;
+        String att= getAttribute(ratePmPopUp,"class");
+        if(att.equals("TabBtns")){
+            flag=false;
+        }
+        return flag;
+    }
+    public void clickPmBtn(){
+        click(ratePmPopUp);
+    }
+    @FindBy(css = "#usageRateDiv a#btnPM i")
+    private WebElement ratePMPopUplabel;
+    public String getRateLnkPMLabel(){
+        return getText(ratePMPopUplabel);
+    }
+
+    @FindBys(@FindBy(css=".boxRateOver .highcharts-axis-labels.highcharts-xaxis-labels text tspan"))
+    private List<WebElement> xAxisRateLnkPopUp;
+
+    public List<String> getRateLnkHistogramTime(){
+        List<String> ls=new ArrayList<>();
+        for(WebElement we:xAxisRateLnkPopUp){
+            ls.add(getText(we));
+        }
+        return ls;
+    }
+    @FindBys(@FindBy(css=".boxRateOver .highcharts-series rect"))
+    private List<WebElement> rateLnkBarElement;
+    public List<WebElement> getHistogramRateLnkBar(){
+        return rateLnkBarElement;
+    }
+    
+    @FindBys(@FindBy(css=".white_div #DivWaterRateChart :nth-child(1) .highcharts-series-group rect"))
+    private List<WebElement> ratelnkgraph;
+    public List<WebElement> getWaterHistogramBar(){
+    	return ratelnkgraph;
+    }
+    
+    @FindBys(@FindBy(css=".boxRateOver .highcharts-point"))
+    private List<WebElement> rateLnkBaElement;
+    public List<WebElement> getHistogramRateLnkBa(){
+        return rateLnkBaElement;
+    }
+    
+    @FindBys(@FindBy(css=".white_div #DivWaterRateChart :nth-child(1) .highcharts-axis-labels tspan:nth-child(1)"))
+    private List<WebElement> lblXAxis;
+    public List<WebElement> getWaterRateXAxisLabelElement(){
+    	
+    	return lblXAxis;
+    }
 
     @FindBy(css = "a#ExportTypefile")
     private WebElement lnkExportUsage;
@@ -1122,6 +1261,7 @@ public class UsagePage extends HomePage {
         return label;
     }
 
+    //Net Usage
     @FindBy(css = "div#divconfigusage")
     private WebElement divNetUsageToggle;
 
@@ -1131,6 +1271,7 @@ public class UsagePage extends HomePage {
         return status;
     }
 
+    //Net Usage
     @FindBy(css = "div#divconfigusage span[title='Net Usage']")
     private WebElement lblNetUsageToggle;
 
@@ -1139,14 +1280,38 @@ public class UsagePage extends HomePage {
         log.info("Net usage toggle label is : " + label);
         return label;
     }
+    public void waitForLblNetUsageToggleToBeVisible(){
+        waitForElementToBeVisible(lblNetUsageToggle);
+        log.info("Net usage toggle label is visible.");
+    }
 
-    @FindBy(css = "input#imgUsage ")
+    @FindBy(css = "input#imgUsage")
     private WebElement txtNetUsageToggle;
 
     public Boolean isNetUsageToggleSelected() {
         Boolean status = isElementSelected(txtNetUsageToggle);
         log.info("Net usage toggle selected status : " + status);
         return status;
+    }
+    public boolean isNetUsgaeOn(){
+        boolean status=false;
+       String att= getAttribute(txtNetUsageToggle,"aria-label");
+       if(att.equals("Net Usage On")){
+           status=true;
+       }
+       return status;
+    }
+    public void clickNetUsageToggleBtn1(){
+        click(txtNetUsageToggle);
+        log.info("net Usage Toggle Btn has been Clicked Successfully.");
+    }
+    
+    @FindBy(css="#divconfigusage label")
+    private WebElement netUsgaeTogglebtn;
+    
+    public void clickNetUsageToggleBtn() {
+    	click(netUsgaeTogglebtn);
+        log.info("net Usage Toggle Btn has been Clicked Successfully.");
     }
 
     @FindBy(css = "#divconfigusage label[title='Net Usage']")
@@ -1158,6 +1323,7 @@ public class UsagePage extends HomePage {
         return status;
     }
 
+    //Weather overlay
     @FindBy(css = "div#showWeatherOverlay")
     private WebElement divWeatherOverlayToggle;
 
@@ -1183,6 +1349,11 @@ public class UsagePage extends HomePage {
         Boolean status = isElementSelected(txtWeatherOverlayToggle);
         log.info("Net usage toggle selected status : " + status);
         return status;
+    }
+   
+    
+    public void clickWeatherOverlayToggleButton() {
+    	clickWithJSExecutor(txtWeatherOverlayToggle);
     }
 
     @FindBy(css = "div#showWeatherOverlay label[title='Weather Overlay']")
@@ -1225,7 +1396,32 @@ public class UsagePage extends HomePage {
         click(lnkEfficiencyProgramClickHere);
         log.info("Efficiency Program ClickHere link clicked successfully.");
     }
+    
+    @FindBy(css = "#lblMaxDemand")
+    private WebElement lblValMaxDemand;
+    
+    public boolean isMaxDemandVisible() {
+    	return isElementVisible(lblValMaxDemand);
+    }
 
+    public String getMaxDemandLabel() {
+    	String maxDemand=getText(lblValMaxDemand);
+    	return maxDemand;
+    }
+    
+    @FindBy(css = "#lblLoadFactor")
+    private WebElement lblValLoadFactor;
+    
+    public boolean isLoadFactorVisible() {
+    	return isElementVisible(lblValLoadFactor);
+    }
+
+    public String getLoadFactorLabel() {
+    	String loadFactor=getText(lblValLoadFactor);
+    	return loadFactor;
+    }
+    
+    
     @FindBy(css = "#lblCurrentUsage")
     private WebElement lblCurrentUsage;
 
@@ -1235,8 +1431,7 @@ public class UsagePage extends HomePage {
     @FindBy(css = "#lblEstimatedUsage")
     private WebElement lblValProjectedUsage;
 
-    @FindBy(css = "#lblMaxDemand")
-    private WebElement lblValMaxDemand;
+    
 
     @FindBy(css = "#MaxDemandVal")
     private WebElement lblMaxDemand;
@@ -1244,8 +1439,7 @@ public class UsagePage extends HomePage {
     @FindBy(css = "#LoadFactorVal")
     private WebElement lblLoadFactor;
 
-    @FindBy(css = "#lblLoadFactor")
-    private WebElement lblValLoadFactor;
+   
 
     @FindBy(css = ".highcharts-data-labels.highcharts-series-1.highcharts-column-series.highcharts-tracker texttspan:not(.highcharts-text-outline)")
     private WebElement lblUnitsGeneratedInGraph;
@@ -1282,6 +1476,33 @@ public class UsagePage extends HomePage {
         log.info("Histogram bar tool tip is : " + label);
         return label;
     }
+    
+    @FindBys(@FindBy(css = ".highcharts-tooltip .tooltipBody ul li"))
+    private List<WebElement> lblToolTipWeatherInGraphBody;
+    
+
+    public List<WebElement> getWeatherBarToolTipElement() {
+        
+        return lblToolTipWeatherInGraphBody;
+    }
+    
+    @FindBy(css = ".highcharts-label text tspan:nth-child(2)")
+    private WebElement lblRateLinkToolTipConsumedInGraphBody;
+    
+    public String getRateLinkHistogramBarToolTip(){
+    	String label = getText(lblRateLinkToolTipConsumedInGraphBody);
+        log.info("Rate link Histogram bar tool tip is : " + label);
+        return label;
+    }
+    
+    @FindBy(css = ".highcharts-label.highcharts-tooltip text")
+    private WebElement lblWaterRateLinkToolTip;
+    
+    public String getWaterRateLinkToolTipLabel(){
+    	String label = getText(lblWaterRateLinkToolTip);
+        log.info("Rate link Histogram bar tool tip is : " + label);
+        return label;
+    }
 
     @FindBy(css = "div.highcharts-label span div div")
     private WebElement lblToolTipWeatherData;
@@ -1302,8 +1523,17 @@ public class UsagePage extends HomePage {
         log.info("Found list of elements in size : " + lblHistogramBarUnits.size());
         return lblHistogramBarUnits;
     }
+    
+    @FindBys(@FindBy(css = ".highcharts-series.highcharts-series-1.highcharts-column-series.highcharts-tracker path"))
+    private List<WebElement> lblHistogramBarUnitsNetUsage;
 
-    @FindBys(@FindBy(css = ".compare_graph g.highcharts-axis-labels.highcharts-xaxis-labels >text >tspan"))
+    public List<WebElement> getSolarDataOnNetUsageElement() {
+        log.info("Found list of elements in size : " + lblHistogramBarUnits.size());
+        return lblHistogramBarUnitsNetUsage;
+    }
+    
+    //.compare_graph g.highcharts-axis-labels.highcharts-xaxis-labels >text >tspan Locator Replace by .compare_graph g.highcharts-axis-labels.highcharts-xaxis-labels >text
+    @FindBys(@FindBy(css = ".compare_graph g.highcharts-axis-labels.highcharts-xaxis-labels >text"))
     private List<WebElement> lblHistogramBarMonths;
 
     public List<WebElement> getHistogramBarMonthLabelElements() {
@@ -1318,7 +1548,20 @@ public class UsagePage extends HomePage {
         }
         return histogramMonths;
     }
-
+    @FindBy(css="a#usagePopup")
+    private WebElement setUsageAlert;
+    
+   public void clickUsageAlert() {
+	   click(setUsageAlert);
+	   log.info("Set Usage Alert link has been succesfully clicked.");
+   }
+    
+    
+    
+    
+    
+    
+    //Unused Locator
     @FindBy(css = ".compare_graph g.highcharts-axis-labels.highcharts-xaxis-labels >texton")
     private WebElement lblBiMonthNamesHistogram;
 
