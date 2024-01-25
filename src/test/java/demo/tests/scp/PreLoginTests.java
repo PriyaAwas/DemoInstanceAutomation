@@ -1,5 +1,7 @@
 package demo.tests.scp;
 
+import java.sql.SQLException;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
@@ -130,5 +132,26 @@ public class PreLoginTests extends TestRunner {
         ExtentLogger.logInfo("Reference Id: " + referenceId);
        log.info("Test Case execution for - verifyPostLoginConnectMePage - is Completed.");
      }
+    
+    @FrameworkAnnotations(author = { "Kavya BR" }, category = { CategoryType.SANITY,CategoryType.SCP_LOGIN })
+	@Test(priority = 1, description = "To verify chat functionality.")
+	public void verifyPreLogChatBox()throws SQLException {
+		log.info("To Verify Payment information feilds and Add payment method pop-up");
+		SoftAssert softAssert = new SoftAssert();
+		//SCP- Application Login
+		preLoginSteps = new PreLoginSteps(driver);
+		preLoginSteps.verifyPreLogChatBox(softAssert);
+		softAssert.assertAll();
+	}
 
+    @FrameworkAnnotations(author = { "Kavya BR" }, category = { CategoryType.SANITY,CategoryType.SCP_LOGIN })
+	@Test(priority = 1, description = "User is able to Login with valid credentials.")
+	public void verifySignOutPage() {
+		log.info("To Verify Payment information feilds and Add payment method pop-up");
+		SoftAssert softAssert = new SoftAssert();
+		//SCP- Application Login
+		preLoginSteps = new PreLoginSteps(driver);
+		preLoginSteps.loginIntoTheApplication(Configuration.toString("userName"), Configuration.toString("password"));
+		softAssert.assertAll();
+	}
 }

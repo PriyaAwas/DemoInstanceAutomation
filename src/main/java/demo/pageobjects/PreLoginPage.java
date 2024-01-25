@@ -569,6 +569,141 @@ public class PreLoginPage extends HomePage {
         log.info("Post login Customer Service Contact No is {}: " + dropdownList);
         return dropdownList;
     } 
-	
     
+    @FindBy(css = "#form2 > div.chatbot > a")
+    private WebElement btnChatBox;
+    
+    public void clickChatBox() {
+        click(btnChatBox);
+    }
+	
+    @FindBy(css = ".helptext")
+    private WebElement headerChatBox;
+    
+    public boolean isChatBoxHeaderVisible() {
+    	return headerChatBox.isDisplayed();
+    }
+    public String getChatBoxHeader() {
+		String label = getText(headerChatBox);
+		return label;
+	}
+    @FindBy(css = ".logoarea")
+    private WebElement logoSCMChatBox;
+    
+    public boolean isScmLOgoChatBoxVisible() {
+    	return logoSCMChatBox.isDisplayed();
+    }
+    
+    @FindBy(css = ".webchat__send-box__main")
+    private WebElement txtBoxChatBox;
+    
+    public boolean isChatTextBoxVisible() {
+    	return txtBoxChatBox.isDisplayed();
+    }
+    
+    public void clickChatTextBox() {
+        click(txtBoxChatBox);
+    }
+    
+    public void populateTxtMessageBody(String Text) {
+    	log.info("Waiting For Visiblity status of MessageBody Text Feild");
+    	waitForElementToBeVisible(txtBoxChatBox);
+    	log.info("Visiblity status of MessageBody Text Feild:"+ txtBoxChatBox.isDisplayed());
+    	log.info("Populating Zip Code feild with" + Text);
+      	sendKeys(txtBoxChatBox,Text);
+    	}
+    
+    public WebElement elementTextMessageBody() {
+       	log.info("Waiting For Visiblity status of Confirm Routing Number Text Feild");
+    	waitForElementToBeVisible(txtBoxChatBox);
+    	log.info("Visiblity status of Confirm Routing Number Text Feild:"+ txtBoxChatBox.isDisplayed());
+    	return txtBoxChatBox;
+    	}
+    
+    @FindBy(xpath = "//textarea[@data-id=\"webchat-sendbox-input\" and @placeholder = \"Type your message\"]")
+    private WebElement txtBoxChattxt;
+    
+    public void enterDataInChatTextBox(String datafield) {
+    	pause(10000);
+    	waitForElementToBeVisible(txtBoxChattxt);
+    	sendKeys(txtBoxChattxt, datafield);
+		log.info("Entering data in thdo you have solar panels field.");
+    }
+    
+    @FindBy(css = "button[title=\"Send\"]")
+    private WebElement btnsend;
+    
+    public boolean isChatTextSendButtonVisible() {
+    	return btnsend.isDisplayed();
+    }
+    public void clickSendBtn() {
+        click(btnsend);
+    }
+    
+    @FindBy(css = ".endchatme")
+    private WebElement btnendchat;
+    
+    public void clickEndChatBtn() {
+        click(btnendchat);
+    }
+    
+    @FindBy(css = ".cnfrmchat")
+    private WebElement btncnfrmchat;
+    
+    public void clickConfirmEndChatBtn() {
+        click(btncnfrmchat);
+    }
+    
+    public Boolean isSignOutPage(String url, String title) {
+        Boolean isSignOutPage = false;
+        log.info("Checking that the current page is login page.");
+        if (getCurrentUrl().contains(url.toLowerCase()) && getCurrentTitle().equalsIgnoreCase(title))
+            isSignOutPage = true;
+        log.info("The current page is login page {}: " + isSignOutPage);
+        return isSignOutPage;
+    }
+    
+    @FindBy(css = ".banner_logged_out h1")
+    private WebElement lbl_you_signed_out;
+
+    public String getSignOutSuccessfullyLbl() {
+        return getText(lbl_you_signed_out);
+    }
+
+    public void waitForSignOutSuccessLbl() {
+        waitForElementToBeVisible(lbl_you_signed_out);
+    }
+    
+    @FindBy(css = "a[globalize=ML_signout_txt_signin]")
+    private WebElement btn_sign_in_again;
+
+    public void clickSignInAgainBtn() {
+        click(btn_sign_in_again);
+        log.info("Sign in again button clicked.");
+    }
+    
+    @FindBy(css = "#dropdownMenuButton")
+	private WebElement img_profile_icon;
+
+	public void clickImageProfileIco() {
+		click(img_profile_icon);
+		log.info("Image profile icon clicked {}.");
+	}
+	
+	@FindBy(css = "button.userbtn.logout_header")
+	private WebElement lnk_sign_out;
+
+	public Boolean isSignOutLnkVisible() {
+		return lnk_sign_out.isDisplayed();
+	}
+	
+	public String getSignOutLinkLabel() {
+		return getText(lnk_sign_out);
+	}
+
+	public void clickSignOutLnk() {
+		pause(500);
+		click(lnk_sign_out);
+		log.info("Sign out button is clicked.");
+	}
 }
