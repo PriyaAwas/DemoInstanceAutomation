@@ -157,7 +157,7 @@ public class AccountInformationSteps extends AccountInformationPage {
 
 	}
 
-	public void verifyEditNickName(SoftAssert softAssert) {
+	public void verifyEditFunctionality(SoftAssert softAssert) {
 
 		HomeSteps homeSteps = new HomeSteps(driver);
 		homeSteps.navigateToAccountInformation();
@@ -173,29 +173,51 @@ public class AccountInformationSteps extends AccountInformationPage {
 
 		ExtentLogger.logInfo("Enter message in the message body.");
 		isAccountNickNameTxtBoxMessageBodyVisible();
-		populateTxtMessageBody("Home Test");
-		elementTextMessageBody().sendKeys(Keys.TAB);
+		String text="Home Test";
+		populateTxtMessageBody(text);
+		
 
 		ExtentLogger.logInfo("Click save button");
 		clickNickNamebtnsaveBtn();
-		pause(3000);
-	}
+		pause(10000);
+		
+				
 
-	public void verifyEditNickNameBlankValidation(SoftAssert softAssert) {
-
-		HomeSteps homeSteps = new HomeSteps(driver);
-		homeSteps.navigateToAccountInformation();
-
-		ExtentLogger.logInfo("Click three dot");
+		clickThreeDotIcon();
+		
+		clickEditBillType();
+		
+		clickBothrdbtn();
+		
+		clickCancelbtn();
+		pause(2000);
+		
 		clickThreeDotIcon();
 
-		ExtentLogger.logInfo("Click Edit Nick Name Option");
-		clickEditNickNameOption();
+		ExtentLogger.logInfo("Click Edit Mailing Address Option");
+		clickEditMailingAddOption();
 
-		ExtentLogger.logInfo("Click save button");
-		clickNickNamebtnsaveBtn();
+		ExtentLogger.logInfo("Verify edit mailing address popup");
+		softAssert.assertTrue(isMailingAddTitletextVisible(), "Edit mailing address did not displayed");
 
-	}
+		ExtentLogger.logInfo("Enter message in the message body.");
+		isAddressLineTxtBoxMessageBodyVisible();
+		populateAddTxtMessageBody("h1234");
+		pause(3000);
+		
+		ExtentLogger.logInfo("Click update button");
+		clickUpdateAddBtn();
+		ExtentLogger.logInfo("Updated Nick Name successfully");
+		updateScssPopUpDisplayed();
+		softAssert.assertEquals(getSuccessMessage(), accontInformationTextProp.getPropValue("txtMsgUpdateButtonClickMailingAddressApp"),
+				"Mailing address update success msg does not match");
+		pause(5000);
+		
+		softAssert.assertEquals(getHometiletxt(), text);
+		
+	}	
+
+
 
 	public void unlinkDefaultAcc(SoftAssert softAssert) {
 
@@ -216,21 +238,60 @@ public class AccountInformationSteps extends AccountInformationPage {
 				"Deafult Account Unlink Message does not match");
 
 	}
-
-	public void editBillType(SoftAssert softAssert) {
+	public void verifyErrorMsg(SoftAssert softAssert) {
 
 		HomeSteps homeSteps = new HomeSteps(driver);
 		homeSteps.navigateToAccountInformation();
 
 		ExtentLogger.logInfo("Click three dot");
 		clickThreeDotIcon();
+	
 
-		clickEditBillType();
+	ExtentLogger.logInfo("Click Edit Mailing Address Option");
+	clickEditMailingAddOption();
 
-		clickBothrdbtn();
+	clearAddressLineTxtBoxMessageTxt();
+	clickUpdateAddBtn();
+	addErrMsgDisplayed();
+	clickCancelBtn();
+	
+	clickThreeDotIcon();
+	clickEditMailingAddOption();
+	clearZipCodeTxtBoxMessageTxt();
+	clickUpdateAddBtn();
+	addZipCodeMsgDisplayed();
+	clickCancelBtn();
+	
+	clickThreeDotIcon();
+	clickEditMailingAddOption();
+	clearCityTxtBoxMessageTxt();
+	clickUpdateAddBtn();
+	addcityMsgDisplayed();
+	clickCancelBtn();
+	
+	clickThreeDotIcon();
+	clickEditMailingAddOption();
+	clickSelectOption();
+	clickUpdateAddBtn();
+	addSelectCityDisplayed();
+	clickCancelBtn();
+	
+	clickThreeDotIcon();
+	clickEditMailingAddOption();
+	clearCityTxtBoxMessageTxt();
+	clearZipCodeTxtBoxMessageTxt();	
+	
+	ExtentLogger.logInfo("Click update button");
+	clickUpdateAddBtn();
+	
+	isErrormsgdisplayed();
+	softAssert.assertEquals(getLblErrorMsg(), accontInformationTextProp.getPropValue("txtMsgBlankInfoApp"),
+			"Mandatory fields error msg does not match");
+	
+}
 
-		clickCancelbtn();
-
-	}
-
+	
+	
+	
+	
 }
