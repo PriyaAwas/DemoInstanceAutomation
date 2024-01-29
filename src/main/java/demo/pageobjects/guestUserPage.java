@@ -27,7 +27,7 @@ public class GuestUserPage extends HomePage {
 	private WebElement lnkGuestUserSideMenu;
 
 	@FindBy(css = "#lblMessage")
-	private WebElement labelExpiryUser;
+	private WebElement labelExpiryUser; 
 
 	public String getExpiryUserLabel() {
 		String label = getText(labelExpiryUser);
