@@ -27,7 +27,7 @@ public class NotificationPreferenceTests extends TestRunner {
         notificationPreferenceSteps = new NotificationPreferenceSteps(driver);
     }
 
-    @FrameworkAnnotations(author = {"Priya Awasthi"}, category = {CategoryType.SANITY})
+    @FrameworkAnnotations(author = {"Priya Awasthi"}, category = {CategoryType.SMOKE,CategoryType.NOTIFICATION_PREFERENCE})
     @Test( description = "To verify Notification Preference PageObjects.")
     public void verifyNotificationPreferencePageObjects() {
         SoftAssert softAssert = new SoftAssert();
@@ -44,7 +44,7 @@ public class NotificationPreferenceTests extends TestRunner {
         log.info("Test Case execution for - verifyNotificationPreferencePageObjects - is Completed.");
     }
     
-    @FrameworkAnnotations(author = {"Priya"}, category = {CategoryType.SANITY})
+    @FrameworkAnnotations(author = {"Priya"}, category = {CategoryType.SANITY,CategoryType.NOTIFICATION_PREFERENCE})
     @Test( description = "To verify the TCPA Compliance Popup.")
     public void verifyTcpaCompliancePopup() {
         SoftAssert softAssert = new SoftAssert();
@@ -61,7 +61,7 @@ public class NotificationPreferenceTests extends TestRunner {
         log.info("Test Case execution for - verifyTcpaCompliancePopup - is Completed.");
     }
      
-    @FrameworkAnnotations(author = {"Priya Awasthi"}, category = {CategoryType.SANITY})
+    @FrameworkAnnotations(author = {"Priya Awasthi"}, category = {CategoryType.SANITY,CategoryType.NOTIFICATION_PREFERENCE})
     @Test(description = "To verify QuietHoursFunctionality And UI.")
     public void verifyQuietHoursFunctionalityAndUI() throws SQLException {
          SoftAssert softAssert = new SoftAssert();
@@ -77,7 +77,7 @@ public class NotificationPreferenceTests extends TestRunner {
         log.info("Test Case execution for - QuietHoursFunctionality - is Completed.");
     }
        
-    @FrameworkAnnotations(author = {"Priya Awasthi"}, category = {CategoryType.SANITY})
+    @FrameworkAnnotations(author = {"Priya Awasthi"}, category = {CategoryType.SMOKE,CategoryType.NOTIFICATION_PREFERENCE})
     @Test( description = "To verify the add NotificationChannelFunctionality.")
     public void verifyAddNotificationChannelFunctionality() {
               SoftAssert softAssert = new SoftAssert();
@@ -92,7 +92,7 @@ public class NotificationPreferenceTests extends TestRunner {
         log.info("Test Case execution for - NotificationChannelFunctionality - is Completed.");
     }
     
-    @FrameworkAnnotations(author = {"Priya Awasthi"}, category = {CategoryType.SANITY})
+    @FrameworkAnnotations(author = {"Priya Awasthi"}, category = {CategoryType.SANITY,CategoryType.NOTIFICATION_PREFERENCE	})
     @Test(description = "To verify Notification Alerts Validati on Messages.")
     public void verifyNotificationAlertsValidationMessages() throws SQLException {
         SoftAssert softAssert = new SoftAssert();

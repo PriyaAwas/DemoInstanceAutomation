@@ -23,8 +23,8 @@ public class BillingHistoryTests extends TestRunner {
 	private BillingHistorySteps billingHistorySteps;
 
 
-	@FrameworkAnnotations(author = { "SatyaTiwari" }, category = { CategoryType.REGRESSION,CategoryType.SCP_BILLING })
-	@Test(priority = 62, description = "To verify 'Export To Excel' link and Contents in download file for Billing and Payment history.")
+	@FrameworkAnnotations(author = { "SatyaTiwari" }, category = { CategoryType.SANITY,CategoryType.SCP_BILLING })
+	@Test(priority = 1, description = "To verify 'Export To Excel' link and Contents in download file for Billing and Payment history.")
 	public void verifyExportToExcelAndItsContents() throws ParseException {
 		SoftAssert softAssert = new SoftAssert();
 		//SCP- Application Login
@@ -38,8 +38,8 @@ public class BillingHistoryTests extends TestRunner {
 	}
 	
 	@TestRail(testCaseId = { 76145, 76161, 100593 })
-	@FrameworkAnnotations(author = { "SatyaTiwari" }, category = { CategoryType.SANITY,CategoryType.SCP_BILLING })
-	@Test(priority = 60, description = "To verify Billing History page UI and Objects.")
+	@FrameworkAnnotations(author = { "SatyaTiwari" }, category = { CategoryType.SMOKE,CategoryType.SCP_BILLING })
+	@Test(priority = 2, description = "To verify Billing History page UI and Objects.")
 	public void verifyBillHistoryUIAndObjects() throws Exception {
 		SoftAssert softAssert = new SoftAssert();
 		//SCP- Application Login

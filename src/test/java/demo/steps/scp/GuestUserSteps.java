@@ -35,16 +35,17 @@ public class GuestUserSteps extends GuestUserPage {
 
 	public void verifyGuestUserPageUI(SoftAssert softAssert) throws SQLException {
 		pause(5000);
-
 		if (getListTabsGuestUserDetails().size() > 0) {
-
 			ExtentLogger.logInfo("Verify Guest User Page UI");
 			softAssert.assertTrue(isPageHeadVisible(), "Page Title is not visible");
 			softAssert.assertTrue(isInviteGuestUserSecVisible(), "Invite Guest User Section is not visible");
 			softAssert.assertTrue(isExistGuestUserSecVisible(), "Existing Guest User Section is not visible");
 			softAssert.assertTrue(isGuestUserBannerVisible(), "Guest User Banner is not visible");
 			softAssert.assertTrue(isContactUsBannerVisible(), "Contact Us Banner is not visible");
+
 			log.info("Test Case execution for - verifyGuestUserPageUI - is Completed");
+			ExtentLogger.logInfo("Guest User Page Objects are validated sucessfully");
+
 		}
 	}
 
@@ -114,6 +115,12 @@ public class GuestUserSteps extends GuestUserPage {
 				"Edit link is not displaying before approving guest user request.");
 		if (btnEditGuestuserIcon(accountNo).isDisplayed()) {
 			pause(500);
+		selectGuestUserRoleByIndex(2);
+		if (isexistinguserdisplayed()) {
+
+			ExtentLogger.logInfo("Verify that customer is able to click three dot icon successfully.");
+			clickThreeDotIconGuestBtn();
+
 			ExtentLogger.logInfo("Verify that customer is able to select edit option successfully.");
 			clickEditGuestBtn();
 			ExtentLogger.logInfo("Verify that customer is able to edit the guest user role successfully.");
