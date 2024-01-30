@@ -41,12 +41,14 @@ public class PreLoginSteps extends PreLoginPage {
 	public void populateLoginForm(String userName, String password) {
 		populateUserName(userName);
 		populatePassword(password);
+		ExtentLogger.logInfo("username and password populated");
 	}
 
 	public String loginWithBlankCreds() {
 		clickSignInBtn();
 		String errMsg = getToastMessageWithoutWait();
 		clickToastCloseBtn();
+		ExtentLogger.logInfo("cannot login with blank creds");
 		return errMsg;
 	}
 
@@ -54,6 +56,7 @@ public class PreLoginSteps extends PreLoginPage {
 		populateLoginForm(userName, password);
 		clickSignInBtn();
 		String errMsg = getToastMessage();
+		ExtentLogger.logInfo("cannot login with invalid creds");
 		return errMsg;
 	}
 
@@ -62,6 +65,7 @@ public class PreLoginSteps extends PreLoginPage {
 		populatePassword(password);
 		clickSignInBtn();
 		String errMsg = getCommonValidationMsg();
+		ExtentLogger.logInfo("cannot login with blank username");
 		return errMsg;
 	}
 
@@ -71,6 +75,7 @@ public class PreLoginSteps extends PreLoginPage {
 		populateUserName("invalid@username.com");
 		clickSignInBtn();
 		String errMsg = getToastMessage();
+		ExtentLogger.logInfo("cannot login with wrong username");
 		return errMsg;
 	}
 
@@ -80,6 +85,7 @@ public class PreLoginSteps extends PreLoginPage {
 		populatePassword("Invalid@Pass123");
 		clickSignInBtn();
 		String errMsg = getToastMessage();
+		ExtentLogger.logInfo("cannot login with wrong password");
 		return errMsg;
 	}
 
@@ -88,6 +94,7 @@ public class PreLoginSteps extends PreLoginPage {
 		populatePassword("Invalid@Password");
 		clickSignInBtn();
 		String errMsg = getToastMessage();
+		ExtentLogger.logInfo("cannot login with invalid creds");
 		return errMsg;
 	}
 
@@ -96,13 +103,7 @@ public class PreLoginSteps extends PreLoginPage {
 		clearPasswordField();
 		clickSignInBtn();
 		String errMsg = getCommonValidationMsg();
-		return errMsg;
-	}
-
-	public String loginWithDeactiveUser(String userName, String password) {
-		populateLoginForm(userName, password);
-		clickSignInBtn();
-		String errMsg = getToastMessage();
+		ExtentLogger.logInfo("cannot login with blank password");
 		return errMsg;
 	}
 
@@ -450,6 +451,7 @@ public class PreLoginSteps extends PreLoginPage {
 		String referenceId = popupContent.substring(popupContent.indexOf(":") + 1).trim();
 		clickContactUsPopupOk();
 		pause(5000);
+		ExtentLogger.logInfo(referenceId);
 		return referenceId;
 	}
 
