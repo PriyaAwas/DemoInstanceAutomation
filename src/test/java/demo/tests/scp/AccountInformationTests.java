@@ -23,10 +23,8 @@ public class AccountInformationTests extends TestRunner {
 
 	public AccountInformationTests() {
 		accountInformationSteps = new AccountInformationSteps(driver);
-
 	}
-
-	@FrameworkAnnotations(author = { "Aradhana" }, category = { CategoryType.SANITY })
+	@FrameworkAnnotations(author = { "Aradhana" }, category = { CategoryType.SMOKE,CategoryType.SCP_MYACCOUNT })
 	@Test(priority = 1, description = "To verify the dashboard page objects after login.")
 	public void verifyLinkAccountUIAndValidation() {
 		SoftAssert softAssert = new SoftAssert();
@@ -40,7 +38,7 @@ public class AccountInformationTests extends TestRunner {
 		log.info("Test Case execution for - verifyLinkAccountUIAndValidation - is Completed.");
 	}
 
-	@FrameworkAnnotations(author = { "Aradhana" }, category = { CategoryType.SANITY })
+	@FrameworkAnnotations(author = { "Aradhana" }, category = { CategoryType.SANITY,CategoryType.SCP_MYACCOUNT })
 	@Test(priority = 2, description = "To verify the dashboard page objects after login.")
 	public void verifyAccountInfoPageValidation() {
 		SoftAssert softAssert = new SoftAssert();
@@ -54,7 +52,7 @@ public class AccountInformationTests extends TestRunner {
 		log.info("Test Case execution for - Accountinfopagevalidation - is Completed.");
 	}
 
-	@FrameworkAnnotations(author = { "Aradhana" }, category = { CategoryType.SANITY })
+	@FrameworkAnnotations(author = { "Aradhana" }, category = { CategoryType.SANITY,CategoryType.SCP_MYACCOUNT })
 	@Test(priority = 3,description = "To verify the dashboard page objects after login.")
 	public void verifyLinkAccFormFieldValidation() {
 		SoftAssert softAssert = new SoftAssert();
@@ -69,34 +67,21 @@ public class AccountInformationTests extends TestRunner {
 
 	}
 
-//	@FrameworkAnnotations(author = { "Aradhana" }, category = { CategoryType.SANITY })
-//	@Test(priority = 1, description = "To verify the dashboard page objects after login.")
-//	public void verifyEditNickName() {
-//		SoftAssert softAssert = new SoftAssert();
-//		LoginSteps loginSteps = new LoginSteps(driver);
-//		accountInformationSteps = new AccountInformationSteps(driver);
-//		dashboardSteps = new DashboardSteps(driver);
-//		DashboardSteps dashboardSteps = loginSteps.loginIntoTheApplication(Configuration.toString("userName"),
-//				Configuration.toString("password"));
-//		accountInformationSteps.verifyEditNickName(softAssert);
-//		log.info("Test Case execution for - verifyEditNickName - is Completed.");
-//
-//	}
-//
-//	@FrameworkAnnotations(author = { "Aradhana" }, category = { CategoryType.SANITY })
-//	@Test(priority = 1, description = "To verify the dashboard page objects after login.")
-//	public void verifyEditNickNameBlankValidation() {
-//		SoftAssert softAssert = new SoftAssert();
-//		LoginSteps loginSteps = new LoginSteps(driver);
-//		accountInformationSteps = new AccountInformationSteps(driver);
-//		dashboardSteps = new DashboardSteps(driver);
-//		DashboardSteps dashboardSteps = loginSteps.loginIntoTheApplication(Configuration.toString("userName"),
-//				Configuration.toString("password"));
-//		accountInformationSteps.verifyEditNickNameBlankValidation(softAssert);
-//		log.info("Test Case execution for - verifyEditNickNameBlankValidation - is Completed.");
-//	}
+	@FrameworkAnnotations(author = { "Aradhana" }, category = { CategoryType.SANITY,CategoryType.SCP_MYACCOUNT })
+	@Test(priority = 1, description = "To verify the dashboard page objects after login.")
+	public void verifyEditFunctionality() {
+		SoftAssert softAssert = new SoftAssert();
+		LoginSteps loginSteps = new LoginSteps(driver);
+		accountInformationSteps = new AccountInformationSteps(driver);
+		dashboardSteps = new DashboardSteps(driver);
+		DashboardSteps dashboardSteps = loginSteps.loginIntoTheApplication(Configuration.toString("userName"),
+				Configuration.toString("password"));
+	accountInformationSteps.verifyEditFunctionality(softAssert);
+	log.info("Test Case execution for - verifyEditfunctionality - is Completed.");
 
-	@FrameworkAnnotations(author = { "Aradhana" }, category = { CategoryType.SANITY })
+	}
+
+	@FrameworkAnnotations(author = { "Aradhana" }, category = { CategoryType.SANITY,CategoryType.SCP_MYACCOUNT})
 	@Test(priority = 1, description = "To verify the dashboard page objects after login.")
 	public void verifyUnlinkDefaultAccFunctionality() {
 		SoftAssert softAssert = new SoftAssert();
@@ -108,18 +93,20 @@ public class AccountInformationTests extends TestRunner {
 		accountInformationSteps.unlinkDefaultAcc(softAssert);
 		log.info("Test Case execution for - VerifyDeaultaccUnlikingerrormsg - is Completed.");
 	}
+
+
+@FrameworkAnnotations(author = { "Aradhana" }, category = { CategoryType.SANITY })
+@Test(priority = 1, description = "To verify the dashboard page objects after login.")
+public void verifyEditMailingAddressFunctionality() {
+	SoftAssert softAssert = new SoftAssert();
+	LoginSteps loginSteps = new LoginSteps(driver);
+	accountInformationSteps = new AccountInformationSteps(driver);
+	dashboardSteps = new DashboardSteps(driver);
+	DashboardSteps dashboardSteps = loginSteps.loginIntoTheApplication(Configuration.toString("userName"),
+			Configuration.toString("password"));
+accountInformationSteps.verifyErrorMsg(softAssert);
+log.info("Test Case execution for - verifyEditMailingAddressFunctionality - is Completed.");
+
 }
 
-//	@FrameworkAnnotations(author = { "Aradhana" }, category = { CategoryType.SANITY })
-//	@Test(priority = 1, description = "To verify the dashboard page objects after login.")
-//	public void editBillType() {
-//		SoftAssert softAssert = new SoftAssert();
-//		LoginSteps loginSteps = new LoginSteps(driver);
-//		accountInformationSteps = new AccountInformationSteps(driver);
-//		dashboardSteps = new DashboardSteps(driver);
-//		DashboardSteps dashboardSteps = loginSteps.loginIntoTheApplication(Configuration.toString("userName"),
-//				Configuration.toString("password"));
-//		accountInformationSteps.editBillType(softAssert);
-//		log.info("Test Case execution for - Edit Bill Type - is Completed.");
-//	}
-//}
+}

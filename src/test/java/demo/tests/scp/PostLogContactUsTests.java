@@ -20,7 +20,7 @@ public class PostLogContactUsTests extends TestRunner {
     private static final Logger log = LogManager.getLogger(PostLogContactUsTests.class);   
     private PostLogContactUsSteps postLogContactUsSteps;
     
-    @FrameworkAnnotations(author = {"Priya"}, category = {CategoryType.SANITY})
+    @FrameworkAnnotations(author = {"Priya Awasthi"}, category = {CategoryType.SMOKE,CategoryType.SCP_CONNECTME,})
     @Test(priority = 1, description = "To verify the Post Login ContactUs Page objects.")
 
     public void verifyPostLoginContactUsPage() throws InterruptedException {
@@ -43,7 +43,7 @@ public class PostLogContactUsTests extends TestRunner {
        log.info("Test Case execution for - verifyPostLoginConnectMePage - is Completed.");
      }
     
-    @FrameworkAnnotations(author = {"Priya"}, category = {CategoryType.SANITY})
+    @FrameworkAnnotations(author = {"Priya Awasthi"}, category = {CategoryType.SANITY,CategoryType.SCP_CONNECTME})
     @Test(priority = 1, description = "To verifyPostLoginSocialMediaPage.")
 
     public void verifyPostLoginSocialMediaPage() throws InterruptedException {
@@ -62,7 +62,7 @@ public class PostLogContactUsTests extends TestRunner {
        log.info("Test Case execution for - verifyPostLoginConnectMePage - is Completed.");
      }
     
-    @FrameworkAnnotations(author = {"Priya"}, category = {CategoryType.SANITY})
+    @FrameworkAnnotations(author = {"Priya Awasthi"}, category = {CategoryType.SANITY,CategoryType.SCP_CONNECTME})
     @Test(priority = 1, description = "To verify the login page objects.")
 
     public void verifyPostLogCreateTrackContactReq() throws InterruptedException {
@@ -89,7 +89,7 @@ public class PostLogContactUsTests extends TestRunner {
        log.info("Test Case execution for - verifyPostLoginConnectMePage - is Completed.");
      }
     
-    @FrameworkAnnotations(author = {"Priya"}, category = {CategoryType.SANITY})
+    @FrameworkAnnotations(author = {"Priya Awasthi"}, category = {CategoryType.SANITY,CategoryType.SCP_CONNECTME})
     @Test(priority = 1, description = "To verify the login page objects.")
 
     public void verifyPostLoginSavedFormsPage() throws InterruptedException {
@@ -108,7 +108,7 @@ public class PostLogContactUsTests extends TestRunner {
        log.info("Test Case execution for - verifyPostLoginConnectMePage - is Completed.");
      }
     
-    @FrameworkAnnotations(author = {"Priya"}, category = {CategoryType.SANITY})
+    @FrameworkAnnotations(author = {"Priya Awasthi"}, category = {CategoryType.SANITY,CategoryType.SCP_CONNECTME})
     @Test(priority = 1, description = "To verifySubmitBillingQueryWithValidAttachment.")
     public void verifySubmitBillingQueryWithValidAttachment() throws InterruptedException {
     	log.info("Test Case execution for - verifyPostLoginConnectMePage - is Initiated");
@@ -127,7 +127,7 @@ public class PostLogContactUsTests extends TestRunner {
        log.info("Test Case execution for - verifyPostLoginConnectMePage - is Completed.");
      }
     
-    @FrameworkAnnotations(author = {"Priya Awasthi"}, category = {CategoryType.SANITY})
+    @FrameworkAnnotations(author = {"Priya Awasthi"}, category = {CategoryType.SANITY,CategoryType.SCP_CONNECTME})
     @Test(priority = 1, description = "To verify the login page objects.")
 
     public void verifySubmitBillingQueryWithInValidAttachment() throws InterruptedException {

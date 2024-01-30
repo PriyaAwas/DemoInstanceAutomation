@@ -22,7 +22,7 @@ public class NotificationTests extends TestRunner {
     private NotificationSteps notificationSteps;
     
     
-    @FrameworkAnnotations(author = {"Kavya BR"}, category = {CategoryType.SANITY})
+    @FrameworkAnnotations(author = {"Kavya BR"}, category = {CategoryType.SANITY,CategoryType.CSP_NOTIFICATIONS})
     @Test(priority = 1, description = "To Navigate to Notification page")
     public void verifyNotification() throws SQLException, InterruptedException{
     	log.info("Test Case execution - To Navigate to Notification page");
@@ -34,7 +34,7 @@ public class NotificationTests extends TestRunner {
        log.info("Test Case execution for - verifyNotification - is Completed.");
      }
         
-    @FrameworkAnnotations(author = {"Kavya BR"}, category = {CategoryType.SANITY})
+    @FrameworkAnnotations(author = {"Kavya BR"}, category = {CategoryType.SMOKE,CategoryType.CSP_NOTIFICATIONS})
     @Test(priority = 1, description = "To verify Different elements in Notification page")
     public void verifyNotificationsPageNavigationAndUI() throws SQLException, InterruptedException{
     	log.info("Test Case execution - To verify Different elements in Notification page");
@@ -47,7 +47,7 @@ public class NotificationTests extends TestRunner {
        log.info("Test Case execution for - verifyNotificationsPageNavigationAndUI - is Completed.");
      } 
     
-    @FrameworkAnnotations(author = {"Kavya BR"}, category = {CategoryType.SANITY})
+    @FrameworkAnnotations(author = {"Kavya BR"}, category = {CategoryType.SANITY,CategoryType.CSP_NOTIFICATIONS})
     @Test(priority = 1, description = "To verify Delete multiple Notifications.")
     public void verifyDeleteMultipleNotifications() throws SQLException, InterruptedException{
     	log.info("Test Case execution - To verify Delete multiple Notifications");
@@ -60,7 +60,7 @@ public class NotificationTests extends TestRunner {
        log.info("Test Case execution for - verifyDeleteMultipleNotifications - is Completed.");
      }
     
-    @FrameworkAnnotations(author = {"Kavya BR"}, category = {CategoryType.SANITY})
+    @FrameworkAnnotations(author = {"Kavya BR"}, category = {CategoryType.SANITY,CategoryType.CSP_NOTIFICATIONS})
     @Test(priority = 1, description = "To verify Delete Notification.")
     public void verifyDeleteNotification() throws SQLException, InterruptedException{
     	log.info("Test Case execution - To verify Delete Notification");
@@ -73,7 +73,7 @@ public class NotificationTests extends TestRunner {
        log.info("Test Case execution for - verifyDeleteNotification - is Completed.");
      }
     
-    @FrameworkAnnotations(author = {"Kavya BR"}, category = {CategoryType.SANITY})
+    @FrameworkAnnotations(author = {"Kavya BR"}, category = {CategoryType.SANITY,CategoryType.CSP_NOTIFICATIONS})
     @Test(priority = 1, description = "To verify Save Multiple Notifications.")
     public void verifysaveMultipleNotifications() throws SQLException, InterruptedException{
     	log.info("Test Case execution - To verify save multiple Notifications");
@@ -86,7 +86,7 @@ public class NotificationTests extends TestRunner {
        log.info("Test Case execution for - verifysaveMultipleNotifications - is Completed.");
      }
     
-    @FrameworkAnnotations(author = {"Kavya BR"}, category = {CategoryType.SANITY})
+    @FrameworkAnnotations(author = {"Kavya BR"}, category = {CategoryType.SANITY,CategoryType.CSP_NOTIFICATIONS})
     @Test(priority = 1, description = "To verify unsave all Notifications.")
     public void verifyUnsaveAllNotifications() throws SQLException, InterruptedException{
     	log.info("Test Case execution - To verify unsave all Notifications");
@@ -99,7 +99,7 @@ public class NotificationTests extends TestRunner {
        log.info("Test Case execution for - verifyUnsaveAllNotifications - is Completed.");
      }
     
-    @FrameworkAnnotations(author = {"Kavya BR"}, category = {CategoryType.SANITY})
+    @FrameworkAnnotations(author = {"Kavya BR"}, category = {CategoryType.SANITY,CategoryType.CSP_NOTIFICATIONS})
     @Test(priority = 1, description = "To verify Delete Notifications permanantly.")
     public void verifyDeleteNotificationsPermanantly() throws SQLException, InterruptedException{
     	log.info("Test Case execution - To verify Delete Notifications Permanantaly");
@@ -112,7 +112,7 @@ public class NotificationTests extends TestRunner {
        log.info("Test Case execution for - verifyDeleteNotificationsPermanantly - is Completed.");
      }
     
-    @FrameworkAnnotations(author = {"Kavya BR"}, category = {CategoryType.SANITY})
+    @FrameworkAnnotations(author = {"Kavya BR"}, category = {CategoryType.SANITY,CategoryType.CSP_NOTIFICATIONS})
     @Test(priority = 1, description = "To verify Put Back Notifications.")
     public void verifyputBackNotifications() throws SQLException, InterruptedException{
     	log.info("Test Case execution - To verify Put Back Notifications ");
@@ -125,7 +125,7 @@ public class NotificationTests extends TestRunner {
        log.info("Test Case execution for - verifyputBackNotifications - is Completed.");
      }
   
-    @FrameworkAnnotations(author = {"Kavya BR"}, category = {CategoryType.SANITY})
+    @FrameworkAnnotations(author = {"Kavya BR"}, category = {CategoryType.SMOKE,CategoryType.CSP_NOTIFICATIONS})
     @Test(priority = 1, description = "To verify Reply Notifications.")
     public void verifyReplyNotifications() throws SQLException, InterruptedException{
     	log.info("Test Case execution - To verify Reply Notifications ");
@@ -138,7 +138,7 @@ public class NotificationTests extends TestRunner {
        log.info("Test Case execution for - verifyputBackNotifications - is Completed.");
      }
     
-    @FrameworkAnnotations(author = {"Kavya BR"}, category = {CategoryType.SANITY})
+    @FrameworkAnnotations(author = {"Kavya BR"}, category = {CategoryType.SANITY,CategoryType.CSP_NOTIFICATIONS})
     @Test(priority = 1, description = "To verify Negative scenarios Notification.")
     public void verifyNegativeValidationsNotifications() throws SQLException, InterruptedException{
     	log.info("Test Case execution - To verify Negative validations Notifications ");
