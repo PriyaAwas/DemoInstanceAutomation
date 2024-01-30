@@ -16,7 +16,7 @@ public class UserDashboardTests extends TestRunner {
 	private static final Logger log = LogManager.getLogger(UserDashboardTests.class);
 	private UserDashboardSteps userdashboardSteps;
 
-	@FrameworkAnnotations(author = { "Priya" }, category = { CategoryType.SANITY })
+	@FrameworkAnnotations(author = {"Priya Awasthi"}, category = { CategoryType.SMOKE,CategoryType.SCP_DASHBOARD })
 	@Test(priority = 1, description = "To verify the dashboard page objects after login.")
 	public void verifyDashboardPageObjects() {
 		SoftAssert softAssert = new SoftAssert();
@@ -33,7 +33,7 @@ public class UserDashboardTests extends TestRunner {
 		log.info("Test Case execution for - verifyDashboardPageObjects - is Completed.");
 	}
 
-	@FrameworkAnnotations(author = { "Priya Awasthi" }, category = { CategoryType.SANITY })
+	@FrameworkAnnotations(author = {"Priya Awasthi"}, category = { CategoryType.SANITY,CategoryType.SCP_DASHBOARD })
 
 	@Test(priority = 2, description = "To verify the dashboard page bill summary section objects after login.")
 	public void verifyBillingSummarySectionObjects() {
@@ -51,7 +51,7 @@ public class UserDashboardTests extends TestRunner {
 		log.info("Test Case execution for - verifyBillingSummarySectionPageObjects - is Completed.");
 	}
 
-	@FrameworkAnnotations(author = { "Priya Awasthi" }, category = { CategoryType.SANITY })
+	@FrameworkAnnotations(author = {"Priya Awasthi"}, category = { CategoryType.SANITY,CategoryType.SCP_DASHBOARD })
 
 	@Test(priority = 3, description = "To verify the usage feature on the dashboard page.")
 	public void verifyUsageFeatureOnDashboard() {
@@ -66,7 +66,7 @@ public class UserDashboardTests extends TestRunner {
 		log.info("Test Case execution for - verifyUsageTileObjects - is Completed.");
 	}
 
-	@FrameworkAnnotations(author = { "Priya Awasthi" }, category = { CategoryType.SANITY })
+	@FrameworkAnnotations(author = {"Priya Awasthi"}, category = { CategoryType.SANITY,CategoryType.SCP_DASHBOARD })
 
 	@Test(priority = 4, description = "To verify the AutoPayCarouselfeature on the dashboard page.")
 	public void verifyAutoPayCarouselFeatureOnDashboard() {
@@ -81,7 +81,7 @@ public class UserDashboardTests extends TestRunner {
 		log.info("Test Case execution for - verifyAutoPayCarousel - is Completed.");
 	}
 
-	@FrameworkAnnotations(author = { "Priya Awasthi" }, category = { CategoryType.SANITY })
+	@FrameworkAnnotations(author = {"Priya Awasthi"}, category = { CategoryType.SANITY,CategoryType.SCP_DASHBOARD })
 
 	@Test(priority = 5, description = "To verify the SmartHomeCarousel Feature on the dashboard page.")
 	public void verifySmartHomeCarouselFeatureOnDashboard() {

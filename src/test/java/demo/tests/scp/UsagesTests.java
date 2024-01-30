@@ -22,7 +22,7 @@ public class UsagesTests extends TestRunner {
 	private UsageSteps usageSteps;
 	Meter[] meters;
 
-	@FrameworkAnnotations(author = { "SatyaTiwari" }, category = { CategoryType.SANITY, CategoryType.SCP_USAGE })
+	@FrameworkAnnotations(author = { "SatyaTiwari" }, category = {CategoryType.SMOKE,CategoryType.SANITY, CategoryType.SCP_USAGE })
 	@Test(priority = 1, description = "To verify the electric usages page objects after login.")
 	public void verifyElectricUsagePageObjects() {
 
@@ -107,7 +107,7 @@ public class UsagesTests extends TestRunner {
 		log.info("Test Case execution for - verifyElectricUsagePageObjects - is Completed.");
 	}
 
-	@FrameworkAnnotations(author = { "SatyaTiwari" }, category = { CategoryType.SANITY, CategoryType.SCP_USAGE })
+	@FrameworkAnnotations(author = { "SatyaTiwari" }, category = {CategoryType.SMOKE, CategoryType.SANITY, CategoryType.SCP_USAGE })
 	@Test(priority = 2, description = "To verify the water usages page objects after login.")
 	public void verifyWaterUsagePageObjects() {
 
@@ -185,7 +185,7 @@ public class UsagesTests extends TestRunner {
 		ExtentLogger.logInfo("Test Case execution for - verifyWaterUsagePageObjects - is Completed.");
 	}
 
-	@FrameworkAnnotations(author = { "SatyaTiwari" }, category = { CategoryType.REGRESSION, CategoryType.SCP_USAGE })
+	@FrameworkAnnotations(author = { "SatyaTiwari" }, category = { CategoryType.SMOKE,CategoryType.SANITY, CategoryType.SCP_USAGE })
 	@Test(priority = 3, description = "To verify the gas usages page objects after login.")
 	public void verifyGasUsagePageObjects() {
 		
@@ -262,7 +262,7 @@ public class UsagesTests extends TestRunner {
 		ExtentLogger.logInfo("Test Case execution for - verifyGasUsagePageObjects - is Completed.");
 	}
 
-	@FrameworkAnnotations(author = { "SatyaTiwari" }, category = { CategoryType.REGRESSION, CategoryType.SCP_USAGE })
+	@FrameworkAnnotations(author = { "SatyaTiwari" }, category = {CategoryType.SMOKE, CategoryType.SANITY, CategoryType.SCP_USAGE })
 	@Test(priority = 4, description = "To verify the solar usages page objects after login.")
 	public void verifySolarUsagePageObjects() {
 		

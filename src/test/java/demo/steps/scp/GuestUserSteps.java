@@ -35,15 +35,15 @@ public class GuestUserSteps extends GuestUserPage {
 
 	public void verifyGuestUserPageUI(SoftAssert softAssert) throws SQLException {
 		pause(5000);
-
 		if (getListTabsGuestUserDetails().size() > 0) {
-
 			ExtentLogger.logInfo("Verify Guest User Page UI");
 			softAssert.assertTrue(isPageHeadVisible(), "Page Title is not visible");
 			softAssert.assertTrue(isInviteGuestUserSecVisible(), "Invite Guest User Section is not visible");
 			softAssert.assertTrue(isExistGuestUserSecVisible(), "Existing Guest User Section is not visible");
 			softAssert.assertTrue(isGuestUserBannerVisible(), "Guest User Banner is not visible");
 			softAssert.assertTrue(isContactUsBannerVisible(), "Contact Us Banner is not visible");
+			ExtentLogger.logInfo("Guest User Page Objects are validated sucessfully");
+
 		}
 	}
 
@@ -106,7 +106,7 @@ public class GuestUserSteps extends GuestUserPage {
 
 		String accountNo = Configuration.toString("scmAccountNumber");
 		getBtnThreeDots(accountNo);
-
+		selectGuestUserRoleByIndex(2);
 		if (isexistinguserdisplayed()) {
 
 			ExtentLogger.logInfo("Verify that customer is able to click three dot icon successfully.");
