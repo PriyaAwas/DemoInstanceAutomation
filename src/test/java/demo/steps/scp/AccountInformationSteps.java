@@ -2,7 +2,6 @@ package demo.steps.scp;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.asserts.SoftAssert;
@@ -146,7 +145,7 @@ public class AccountInformationSteps extends AccountInformationPage {
 		homeSteps.navigateToAccountInformation();
 		Assert.assertTrue(
 				isAccountInformationPage(accontInformationTextProp.getPropValue("expectedAccountInformationPageUrl"),
-					accontInformationTextProp.getPropValue("expectedAccountInformationPageTitle")));
+						accontInformationTextProp.getPropValue("expectedAccountInformationPageTitle")));
 		clickBtnaccount();
 		clickRdbLinkAccResidentialPopup();
 		clickbtnLinkAccPopupSubmit();
@@ -154,7 +153,6 @@ public class AccountInformationSteps extends AccountInformationPage {
 		isErrormsgdisplayed();
 		softAssert.assertEquals(getLblErrorMsg(), accontInformationTextProp.getPropValue("txtMsgBlankInfoApp"),
 				"Mandatory fields error msg does not match");
-
 	}
 
 	public void verifyEditFunctionality(SoftAssert softAssert) {
@@ -173,25 +171,22 @@ public class AccountInformationSteps extends AccountInformationPage {
 
 		ExtentLogger.logInfo("Enter message in the message body.");
 		isAccountNickNameTxtBoxMessageBodyVisible();
-		String text="Home Test";
+		String text = "Home Test";
 		populateTxtMessageBody(text);
-		
 
 		ExtentLogger.logInfo("Click save button");
 		clickNickNamebtnsaveBtn();
 		pause(10000);
-		
-				
 
 		clickThreeDotIcon();
-		
+
 		clickEditBillType();
-		
+
 		clickBothrdbtn();
-		
+
 		clickCancelbtn();
 		pause(2000);
-		
+
 		clickThreeDotIcon();
 
 		ExtentLogger.logInfo("Click Edit Mailing Address Option");
@@ -204,20 +199,19 @@ public class AccountInformationSteps extends AccountInformationPage {
 		isAddressLineTxtBoxMessageBodyVisible();
 		populateAddTxtMessageBody("h1234");
 		pause(3000);
-		
+
 		ExtentLogger.logInfo("Click update button");
 		clickUpdateAddBtn();
 		ExtentLogger.logInfo("Updated Nick Name successfully");
 		updateScssPopUpDisplayed();
-		softAssert.assertEquals(getSuccessMessage(), accontInformationTextProp.getPropValue("txtMsgUpdateButtonClickMailingAddressApp"),
+		softAssert.assertEquals(getSuccessMessage(),
+				accontInformationTextProp.getPropValue("txtMsgUpdateButtonClickMailingAddressApp"),
 				"Mailing address update success msg does not match");
 		pause(5000);
-		
+
 		softAssert.assertEquals(getHometiletxt(), text);
-		
-	}	
 
-
+	}
 
 	public void unlinkDefaultAcc(SoftAssert softAssert) {
 
@@ -238,6 +232,7 @@ public class AccountInformationSteps extends AccountInformationPage {
 				"Deafult Account Unlink Message does not match");
 
 	}
+
 	public void verifyErrorMsg(SoftAssert softAssert) {
 
 		HomeSteps homeSteps = new HomeSteps(driver);
@@ -245,53 +240,48 @@ public class AccountInformationSteps extends AccountInformationPage {
 
 		ExtentLogger.logInfo("Click three dot");
 		clickThreeDotIcon();
-	
 
-	ExtentLogger.logInfo("Click Edit Mailing Address Option");
-	clickEditMailingAddOption();
+		ExtentLogger.logInfo("Click Edit Mailing Address Option");
+		clickEditMailingAddOption();
 
-	clearAddressLineTxtBoxMessageTxt();
-	clickUpdateAddBtn();
-	addErrMsgDisplayed();
-	clickCancelBtn();
-	
-	clickThreeDotIcon();
-	clickEditMailingAddOption();
-	clearZipCodeTxtBoxMessageTxt();
-	clickUpdateAddBtn();
-	addZipCodeMsgDisplayed();
-	clickCancelBtn();
-	
-	clickThreeDotIcon();
-	clickEditMailingAddOption();
-	clearCityTxtBoxMessageTxt();
-	clickUpdateAddBtn();
-	addcityMsgDisplayed();
-	clickCancelBtn();
-	
-	clickThreeDotIcon();
-	clickEditMailingAddOption();
-	clickSelectOption();
-	clickUpdateAddBtn();
-	addSelectCityDisplayed();
-	clickCancelBtn();
-	
-	clickThreeDotIcon();
-	clickEditMailingAddOption();
-	clearCityTxtBoxMessageTxt();
-	clearZipCodeTxtBoxMessageTxt();	
-	
-	ExtentLogger.logInfo("Click update button");
-	clickUpdateAddBtn();
-	
-	isErrormsgdisplayed();
-	softAssert.assertEquals(getLblErrorMsg(), accontInformationTextProp.getPropValue("txtMsgBlankInfoApp"),
-			"Mandatory fields error msg does not match");
-	
-}
+		clearAddressLineTxtBoxMessageTxt();
+		clickUpdateAddBtn();
+		addErrMsgDisplayed();
+		clickCancelBtn();
 
-	
-	
-	
-	
+		clickThreeDotIcon();
+		clickEditMailingAddOption();
+		clearZipCodeTxtBoxMessageTxt();
+		clickUpdateAddBtn();
+		addZipCodeMsgDisplayed();
+		clickCancelBtn();
+
+		clickThreeDotIcon();
+		clickEditMailingAddOption();
+		clearCityTxtBoxMessageTxt();
+		clickUpdateAddBtn();
+		addcityMsgDisplayed();
+		clickCancelBtn();
+
+		clickThreeDotIcon();
+		clickEditMailingAddOption();
+		clickSelectOption();
+		clickUpdateAddBtn();
+		addSelectCityDisplayed();
+		clickCancelBtn();
+
+		clickThreeDotIcon();
+		clickEditMailingAddOption();
+		clearCityTxtBoxMessageTxt();
+		clearZipCodeTxtBoxMessageTxt();
+
+		ExtentLogger.logInfo("Click update button");
+		clickUpdateAddBtn();
+
+		isErrormsgdisplayed();
+		softAssert.assertEquals(getLblErrorMsg(), accontInformationTextProp.getPropValue("txtMsgBlankInfoApp"),
+				"Mandatory fields error msg does not match");
+
+	}
+
 }

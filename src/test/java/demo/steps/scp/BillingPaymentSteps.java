@@ -61,7 +61,6 @@ public class BillingPaymentSteps extends PaymentInformationSteps {
 		softAssert.assertEquals("1.00", billamount);
 		softAssert.assertEquals(Double.parseDouble(tottlefee),
 				(Double.parseDouble(transfee) + Double.parseDouble(billamount)));
-
 		clickPaymentSubmitBtn();
 		ExtentLogger.logInfo("Payement Done from Credit Card");
 	}
