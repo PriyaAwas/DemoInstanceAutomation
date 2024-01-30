@@ -42,12 +42,14 @@ public class GuestUserSteps extends GuestUserPage {
 			softAssert.assertTrue(isExistGuestUserSecVisible(), "Existing Guest User Section is not visible");
 			softAssert.assertTrue(isGuestUserBannerVisible(), "Guest User Banner is not visible");
 			softAssert.assertTrue(isContactUsBannerVisible(), "Contact Us Banner is not visible");
+
+			log.info("Test Case execution for - verifyGuestUserPageUI - is Completed");
 			ExtentLogger.logInfo("Guest User Page Objects are validated sucessfully");
 
 		}
 	}
 
-	public void inviteNewGuestUserFunctionality(SoftAssert softAssert) throws IOException {
+	public void verifyInviteNewGuestUserFunctionnality(SoftAssert softAssert) throws IOException {
 
 		deleteGuestUser(softAssert);
 
@@ -75,6 +77,7 @@ public class GuestUserSteps extends GuestUserPage {
 		clickSubmitButton();
 		softAssert.assertEquals(getInviteGuestUserSuccessLabel(),
 				guestuserTextProp.getPropValue("txtMsgSuccessfulGuestInvite"));
+		log.info("Test Case execution for - inviteNewGuestUserFunctionality - is Completed");
 	}
 
 	public void deleteGuestUser(SoftAssert softAssert) {
@@ -102,18 +105,24 @@ public class GuestUserSteps extends GuestUserPage {
 
 		deleteGuestUser(softAssert);
 
-		inviteNewGuestUserFunctionality(softAssert);
+		verifyInviteNewGuestUserFunctionnality(softAssert);
 
 		String accountNo = Configuration.toString("scmAccountNumber");
 		getBtnThreeDots(accountNo);
+		
+		
+		softAssert.assertTrue(btnEditGuestuserIcon(accountNo).isDisplayed(),
+				"Edit link is not displaying before approving guest user request.");
+		if (btnEditGuestuserIcon(accountNo).isDisplayed()) {
+			pause(500);
 		selectGuestUserRoleByIndex(2);
 		if (isexistinguserdisplayed()) {
 
 			ExtentLogger.logInfo("Verify that customer is able to click three dot icon successfully.");
 			clickThreeDotIconGuestBtn();
+
 			ExtentLogger.logInfo("Verify that customer is able to select edit option successfully.");
 			clickEditGuestBtn();
-			pause(500);
 			ExtentLogger.logInfo("Verify that customer is able to edit the guest user role successfully.");
 			selectGuestUserRole();
 			pause(500);
@@ -124,9 +133,13 @@ public class GuestUserSteps extends GuestUserPage {
 			softAssert.assertEquals(getDetailsUpdatedLabel(),
 					guestuserTextProp.getPropValue("txtMsgSuccessfullUpdateGup"));
 		} else {
-			ExtentLogger.logInfo("Existing guest user not available.");
+			softAssert.assertTrue(btnResendInvitationIcon(accountNo).isDisplayed(),
+					"Edit User link is not displaying before approving guest user request.");
 		}
-	}
+		log.info("To verify edit guest user functionality from their guest user tab.");
+		log.info("Test Case execution for - verifyEditGuestDetailsFunction - is Completed");
+		}
+	
 
 	public void verifyResendActivationLinkFunction(SoftAssert softAssert) throws IOException, SQLException {
 

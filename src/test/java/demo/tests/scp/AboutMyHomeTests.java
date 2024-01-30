@@ -20,7 +20,7 @@ public class AboutMyHomeTests extends TestRunner {
 
 	private AboutMyHomeSteps AboutMyHomeSteps;
 
-	@FrameworkAnnotations(author = { "Neethu" }, category = { CategoryType.SANITY })
+	@FrameworkAnnotations(author = { "Neethu" }, category = { CategoryType.SMOKE,CategoryType.SCP_MYACCOUNT })
 	@Test(description = "To verify the UI And Objects on the My Account-> About My Home Page.")
 
 	public void verifyAboutMyHomePageUI() throws SQLException, InterruptedException {
@@ -40,7 +40,7 @@ public class AboutMyHomeTests extends TestRunner {
 		log.info("Test case execution for - verifyAboutMyHomePageUI - is completed.");
 	}
 
-	@FrameworkAnnotations(author = { "Neethu" }, category = { CategoryType.SANITY })
+	@FrameworkAnnotations(author = { "Neethu" }, category = { CategoryType.SANITY,CategoryType.SCP_MYACCOUNT })
 	@Test(description = "To verify that customer is able to submit the About My Home form successfully.")
 
 	public void verifyAboutMyHomeFormSubmission() throws SQLException, InterruptedException, IOException {
@@ -61,7 +61,7 @@ public class AboutMyHomeTests extends TestRunner {
 
 	}
 	
-	@FrameworkAnnotations(author = { "Neethu" }, category = { CategoryType.SANITY })
+	@FrameworkAnnotations(author = { "Neethu" }, category = { CategoryType.SANITY,CategoryType.SCP_MYACCOUNT })
 	@Test(description = "To verify that customer is unable to submit the About My Home form without filling mandatory field.")
 	
 	public void verifyMandatoryFieldForFormSubmission() throws SQLException, InterruptedException, IOException {
