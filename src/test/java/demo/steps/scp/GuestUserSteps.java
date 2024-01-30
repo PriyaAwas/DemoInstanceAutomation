@@ -43,7 +43,11 @@ public class GuestUserSteps extends GuestUserPage {
 			softAssert.assertTrue(isGuestUserBannerVisible(), "Guest User Banner is not visible");
 			softAssert.assertTrue(isContactUsBannerVisible(), "Contact Us Banner is not visible");
 
+
 			ExtentLogger.logInfo("Test Case execution for - verifyGuestUserPageUI - is Completed");
+
+
+			log.info("Test Case execution for - verifyGuestUserPageUI - is Completed");
 
 			ExtentLogger.logInfo("Guest User Page Objects are validated sucessfully");
 
@@ -111,7 +115,6 @@ public class GuestUserSteps extends GuestUserPage {
 		String accountNo = Configuration.toString("scmAccountNumber");
 		getBtnThreeDots(accountNo);
 
-			
 		softAssert.assertTrue(btnEditGuestuserIcon(accountNo).isDisplayed(),
 				"Edit link is not displaying before approving guest user request.");
 		if (btnEditGuestuserIcon(accountNo).isDisplayed()) {
@@ -121,6 +124,7 @@ public class GuestUserSteps extends GuestUserPage {
 
 			ExtentLogger.logInfo("Verify that customer is able to click three dot icon successfully.");
 			clickThreeDotIconGuestBtn();
+
 			ExtentLogger.logInfo("Verify that customer is able to select edit option successfully.");
 			clickEditGuestBtn();
 			ExtentLogger.logInfo("Verify that customer is able to edit the guest user role successfully.");

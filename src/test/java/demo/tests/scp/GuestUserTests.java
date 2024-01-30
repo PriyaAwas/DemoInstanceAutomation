@@ -20,6 +20,7 @@ public class GuestUserTests extends TestRunner {
 	private GuestUserSteps guestuserSteps;
 
 
+
 	@FrameworkAnnotations(author = { "Neethu" }, category = { CategoryType.SMOKE,CategoryType.SCP_MYACCOUNT })
 	@Test(description = "To verify Guest User page UI.")
 	public void verifyGuestUserPageUI() throws SQLException, InterruptedException {
