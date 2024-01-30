@@ -41,6 +41,7 @@ public class AboutMyHomeSteps extends AboutMyHomePage {
 		softAssert.assertTrue(isSwimmingPoolToggleVisible(), "Swimming Pool Toggle is not visible");
 		softAssert.assertTrue(isAboutMyHomeBannerVisible(), "About My Home Banner is not visible");
 		softAssert.assertTrue(isContactUsBannerVisible(), "Contact Us Banner is not visible");
+		log.info("Test Case execution for - verifyAboutMyHomePageUI - is Completed");
 	}
 
 	public void verifyAboutMyHomeFormSubmission(SoftAssert softAssert) throws IOException, SQLException {
@@ -55,6 +56,7 @@ public class AboutMyHomeSteps extends AboutMyHomePage {
 		clickAboutMyHomeFormSubmitbtn();
 		softAssert.assertEquals(getSubmitFormPopUpLabel(),
 				myaccountAboutMyHomeTextProp.getPropValue("successfulformsubmitmssg"));
+		log.info("Test Case execution for - verifyAboutMyHomeFormSubmission - is Completed");
 	}
 
 	public void verifyMandatoryFieldForFormSubmission(SoftAssert softAssert) throws IOException, SQLException {
@@ -69,6 +71,7 @@ public class AboutMyHomeSteps extends AboutMyHomePage {
 		pause(5000);
 		Assert.assertTrue(isMyAccountAboutMyHomePage(myaccountAboutMyHomeTextProp.getPropValue("expectedAboutMyHomePageUrl"),
                         myaccountAboutMyHomeTextProp.getPropValue("expectedAboutMyHomePageTitle")));
+		log.info("Test Case execution for - verifyMandatoryFieldForFormSubmission - is Completed");
 
 	}	
 }
