@@ -18,7 +18,7 @@ public class PreLoginOutagesTests extends TestRunner {
 	private PreLoginOutagesSteps preLoginOutagesSteps;
 	public static PropertiesUtil loginTextProp;
 
-	@FrameworkAnnotations(author = { "Eujin" }, category = { CategoryType.SMOKE })
+	@FrameworkAnnotations(author = { "Eujin" }, category = { CategoryType.SANITY, CategoryType.SCP_OUTAGES })
 	@Test(priority = 1, description = "To verify the pre-login outages page objects.")
 	public void verifyPreLoginOutagesPageObjects() {
 		SoftAssert softAssert = new SoftAssert();
@@ -32,7 +32,7 @@ public class PreLoginOutagesTests extends TestRunner {
 		log.info("Test Case execution for - verifyPreLoginOutagesPageObjects - is Completed.");
 	}
 
-	@FrameworkAnnotations(author = { "Eujin" }, category = { CategoryType.SMOKE })
+	@FrameworkAnnotations(author = { "Eujin" }, category = { CategoryType.SANITY, CategoryType.SCP_OUTAGES })
 	@Test(priority = 2, description = "To verify the toggle icon to switch the view between map view and list view.")
 	public void verifyOutageFunctionalities() {
 		SoftAssert softAssert = new SoftAssert();
@@ -48,7 +48,7 @@ public class PreLoginOutagesTests extends TestRunner {
 		log.info("Test Case execution for - verifyPreLoginListViewPageObjects - is Completed.");
 	}
 
-	@FrameworkAnnotations(author = { "Eujin" }, category = { CategoryType.SMOKE })
+	@FrameworkAnnotations(author = { "Eujin" }, category = { CategoryType.SANITY, CategoryType.SCP_OUTAGES })
 	@Test(priority = 3, description = "To verify the Map Legend and Weather functionality.")
 	public void verifyClickingMapLegendAndWeatherButtons() {
 		SoftAssert softAssert = new SoftAssert();

@@ -23,7 +23,7 @@ public class PreLoginTests extends TestRunner {
 	private PreLoginSteps preLoginSteps;
 	public static PropertiesUtil loginTextProp;
 	
-	@FrameworkAnnotations(author = { "Eujin" }, category = { CategoryType.SMOKE })
+	@FrameworkAnnotations(author = { "Eujin" }, category = { CategoryType.SMOKE, CategoryType.SCP_LOGIN })
 	@Test(priority = 1, description = "User is able to Login with valid credentials.")
 	public void verifyValidLogin() {
 		log.info("To Verify Payment information fields and Add payment method pop-up");
@@ -36,7 +36,7 @@ public class PreLoginTests extends TestRunner {
 	}
 	
 
-    @FrameworkAnnotations(author = {"Eujin"}, category = {CategoryType.SMOKE})
+    @FrameworkAnnotations(author = {"Eujin"}, category = {CategoryType.SMOKE, CategoryType.SCP_LOGIN})
     @Test(priority = 3, description = "To verify the login functionality with invalid credentials.")
     public void verifyInvalidLogin() {
         log.info("To verify the tests with the below test case id's: " +
@@ -52,7 +52,7 @@ public class PreLoginTests extends TestRunner {
     }
     
    
-    @FrameworkAnnotations(author = {"Eujin"}, category = {CategoryType.SMOKE})
+    @FrameworkAnnotations(author = {"Eujin"}, category = {CategoryType.SMOKE, CategoryType.SCP_LOGIN})
     @Test(priority = 1, description = "To verify the login page objects.")
     public void verifyLoginPageObjects() {
         log.info("To verify the tests with the below test case id's: " +
@@ -69,7 +69,7 @@ public class PreLoginTests extends TestRunner {
     }
     
     
-    @FrameworkAnnotations(author = {"Eujin"}, category = {CategoryType.SMOKE})
+    @FrameworkAnnotations(author = {"Eujin"}, category = {CategoryType.SANITY, CategoryType.SCP_LOGIN})
     @Test(priority = 4, description = "To verify the remember me login functionality.")
     public void verifyRememberMeLoginFunctionality() {
    
@@ -97,7 +97,7 @@ public class PreLoginTests extends TestRunner {
     }
     
     
-    @FrameworkAnnotations(author = {"Eujin"}, category = {CategoryType.SMOKE})
+    @FrameworkAnnotations(author = {"Eujin"}, category = {CategoryType.SANITY, CategoryType.SCP_CONNECTME})
     @Test(priority = 5, description = "To verify the Pre-Login Connect Me page.")
     public void verifyPreLogTrackContactReq() {
     	log.info("Test Case execution for - verifyPreLoginConnectMePage - is Initiated");
@@ -117,7 +117,7 @@ public class PreLoginTests extends TestRunner {
         ExtentLogger.logInfo("Test Case execution for - verifyPreLogTrackContactReq - is Completed.");
      }
     
-    @FrameworkAnnotations(author = {"Eujin"}, category = {CategoryType.SMOKE})
+    @FrameworkAnnotations(author = {"Eujin"}, category = {CategoryType.SANITY, CategoryType.SCP_CONNECTME})
     @Test(priority = 5, description = "Verify User is able to Submit a Contact Us Request form for Water waste, theft without logging in.")
     public void verifyPreLogTrackContactReqForWaterWaste() {
     	log.info("Test Case execution for - verifyPreLoginConnectMePageForWaterWaste - is Initiated");
@@ -138,7 +138,7 @@ public class PreLoginTests extends TestRunner {
         ExtentLogger.logInfo("Test Case execution for - verifyPreLogTrackContactReqForWaterWaste - is Completed.");
      }
     
-    @FrameworkAnnotations(author = { "Kavya BR" }, category = { CategoryType.SMOKE })
+    @FrameworkAnnotations(author = { "Kavya BR" }, category = { CategoryType.SANITY, CategoryType.SCP_LOGIN })
 	@Test(priority = 1, description = "To verify chat functionality.")
 	public void verifyPreLogChatBox()throws SQLException {
 		log.info("To Verify Payment information feilds and Add payment method pop-up");
@@ -150,7 +150,7 @@ public class PreLoginTests extends TestRunner {
         ExtentLogger.logInfo("Test Case execution for - verifyPreLogChatBox - is Completed.");
 	}
 
-    @FrameworkAnnotations(author = { "Kavya BR" }, category = { CategoryType.SMOKE })
+    @FrameworkAnnotations(author = { "Kavya BR" }, category = { CategoryType.SANITY, CategoryType.SCP_LOGIN })
 	@Test(priority = 1, description = "User is able to Login with valid credentials.")
 	public void verifySignOutPage() {
 		log.info("To Verify Payment information fields and Add payment method pop-up");
