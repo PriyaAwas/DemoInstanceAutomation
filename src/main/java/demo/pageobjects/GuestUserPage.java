@@ -641,5 +641,12 @@ public class GuestUserPage extends HomePage {
 		Boolean status = isElementVisible(guestuser);
 		return status;
 	}
+	
+	
+	public WebElement btnEditGuestuserIcon(String sAccountNumber) {
+		By btnResendInvitationIcon = By.xpath("//a[@class='edit' and contains(@accountno, '"+ sAccountNumber + "')]");
+		return driver.findElement(btnResendInvitationIcon);
+	}
+
 
 }

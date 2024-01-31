@@ -32,9 +32,9 @@ public class BillingPaymentSteps extends PaymentInformationSteps {
 	}
 
 	public void verifyMakePaymentWithNewCC(SoftAssert softAssert) throws InterruptedException {
-
+		
 		Card card = ModelsConfiguration.readCards().getCardByNameOnCard("John Wick Visa Card");
-		deletePaymentProfiles();
+		//deletePaymentProfiles();
 		clickLnkAddPaymentMethod();// clicking on the +Add payment method
 		pause(20000);
 		clickrdoBtnCard();
