@@ -32,6 +32,9 @@
             <class name="demo.tests.scp.AccountInformationTests"/> 
             <class name="demo.tests.scp.PreLoginOutagesTests"/>
             <class name="demo.tests.scp.UsagesTests"/>
+           <class name="demo.tests.scp.GuestUserTests"/>
+
+            
             
         </classes>
     </test>

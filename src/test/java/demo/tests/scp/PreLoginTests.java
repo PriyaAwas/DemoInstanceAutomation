@@ -96,7 +96,7 @@ public class PreLoginTests extends TestRunner {
         ExtentLogger.logInfo("Test Case execution for - verifyRememberMeLoginFunctionality - is Completed.");
     }
     
-    
+  
     @FrameworkAnnotations(author = {"Eujin"}, category = {CategoryType.SANITY, CategoryType.SCP_CONNECTME})
     @Test(priority = 5, description = "To verify the Pre-Login Connect Me page.")
     public void verifyPreLogTrackContactReq() {

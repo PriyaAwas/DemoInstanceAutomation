@@ -3,17 +3,23 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="demo.tests.scp.paymentInfoTests">
+      <class name="demo.tests.scp.PaymentInfoTests">
         <methods>
+          <include name="testPreRequisites"/>
+          <include name="verifyMakePaymentWithNewCC"/>
           <include name="tearDownClasses"/>
+          <include name="verifyCeditCardPaymentFormFieldsValidation"/>
           <include name="methodsPreRequisites"/>
-          <include name="accPaymentInformation"/>
-          <include name="makePaymentwithExistingCreditCard"/>
           <include name="verifyPaymentInformationPageObjects"/>
-          <include name="classPreRequisites"/>
+          <include name="verifyBankPaymentFormFieldsValidation"/>
+          <include name="verifyAddingBankPaymentProfile"/>
+          <include name="verifyMultipleBankPaymentProfileAndDeletion"/>
           <include name="tearDownMethods"/>
+          <include name="classPreRequisites"/>
+          <include name="verifyBankPaymentFormFields"/>
+          <include name="verifyCreditCardPaymentFormFields"/>
         </methods>
-      </class> <!-- demo.tests.scp.paymentInfoTests -->
+      </class> <!-- demo.tests.scp.PaymentInfoTests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

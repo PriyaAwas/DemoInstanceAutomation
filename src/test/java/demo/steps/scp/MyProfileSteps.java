@@ -20,42 +20,42 @@ public class MyProfileSteps extends MyProfilePage {
 
 	public void verifyNegativeValidationForMyProfile(SoftAssert softAssert) throws SQLException {
 
-		ExtentLogger.logInfo("Click email edit Icon.");
+		//Click email edit Icon
 		clickPrimaryEmailIdEditButton();
-		ExtentLogger.logInfo("Clear primary email textbox");
+		//Clear primary email textbox
 		clearPrimaryEmailTextBox();
-		ExtentLogger.logInfo("Save primary email textbox");
+	    //Save primary email textbox
 		clickPrimaryEmailIdSaveButton();
 		isMandatoryToastMessageDisplayed();
 		softAssert.assertEquals(getMandatoryToastMessage(), myprofileTextProp.getPropValue("mandatormailmsg"),
 				"Warning message do not match");
-		ExtentLogger.logInfo("Click username edit Icon.");
+		//("Click username edit Icon.");
 		clickUserNameEditButton();
-		ExtentLogger.logInfo("Clear username textbox");
+		//("Clear username textbox");
 		clearUserNameTextField();
-		ExtentLogger.logInfo("Save username textbox");
+		//("Save username textbox");
 		clickChangeUserNameSaveButton();
 		isMandatoryToastMessageDisplayed();
 		softAssert.assertEquals(getMandatoryToastMessage(), myprofileTextProp.getPropValue("mandatormailmsg"),
 				"Warning message do not match");
-		ExtentLogger.logInfo("Click primary phone edit Icon.");
+		//("Click primary phone edit Icon.");
 		clickPrimaryPhoneNumberEditButton();
-		ExtentLogger.logInfo("Clear primary phone textbox");
+		//("Clear primary phone textbox");
 		clearPrimaryPhoneInputField();
-		ExtentLogger.logInfo("Save primary phone textbox");
+		//("Save primary phone textbox");
 		clickPrimaryPhoneNumberSaveButton();
 		isPrimaryPhoneErrorMssgDisplayed();
 		softAssert.assertEquals(getSecondaryPhoneToastmsgLabel(), myprofileTextProp.getPropValue("PrimayphoneToastMsg"),
 				"Warning message do not match");
-		ExtentLogger.logInfo("Click password edit Icon.");
+	   //("Click password edit Icon.");
 		clickPasswordEditButton();
-		ExtentLogger.logInfo("Entering password in the password field.");
+		//("Entering password in the password field.");
 		enterPasswordInExistingPassField("scmuser@2022");
-		ExtentLogger.logInfo("Entering password in the password field.");
+		//("Entering password in the password field.");
 		enterPasswordInNewPassField("scmuser@2020");
-		ExtentLogger.logInfo("Entering password in the password field.");
+		//("Entering password in the password field.");
 		enterPasswordInVerifyNewPassField("scmuser@2021");
-		ExtentLogger.logInfo("Submit password button");
+		//("Submit password button");
 		clickSubmitPassButton();
 		isDifferentPassErrorMssgDisplayed();
 		softAssert.assertEquals(getPwdToastmsgLabel(), myprofileTextProp.getPropValue("differentpassmssg"),

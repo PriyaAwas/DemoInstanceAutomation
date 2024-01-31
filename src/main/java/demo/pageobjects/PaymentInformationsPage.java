@@ -734,6 +734,7 @@ public class PaymentInformationsPage extends HomePage {
     	scrollToElement(btnAdd);
      	log.info("Waiting For Add button to be clickable");
     	waitForElementToBeClickable(btnAdd);
+    	pause(5000);
     	click(btnAdd);
     	log.info("Add button is clicked");
     }
@@ -1402,13 +1403,15 @@ public class PaymentInformationsPage extends HomePage {
     
     //////// PAYMENT PROFILES //////////
     
-    @FindBy(css = "div[id*=profileinfo]")
+  //  @FindBy(css = "div[id*=profileinfo]")
+   
+    @FindBy(css = "div[class*='pmt_cardbox']")
     private List<WebElement> listPaymentProfile;
     
     public List<WebElement> listPaymentProfile(){
     	return listPaymentProfile;
     }
-    
+   
     @FindBy(id="navbarDropdown0")
     private WebElement btnThreeDots;
     
@@ -1440,7 +1443,7 @@ public class PaymentInformationsPage extends HomePage {
     }
     
     public String getBankNameofPaymentProfile(String num) {
-    	By bnkNamePaymentProfile = By.xpath("//label[contains(text(),'" + num + "')]/preceding-sibling::span");
+		By bnkNamePaymentProfile = By.xpath("//label[contains(text(),'" + num + "')]/preceding-sibling::span");
     	return driver.findElement(bnkNamePaymentProfile).getText();
     }
     

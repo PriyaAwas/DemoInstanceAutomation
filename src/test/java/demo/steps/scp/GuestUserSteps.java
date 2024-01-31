@@ -141,16 +141,14 @@ public class GuestUserSteps extends GuestUserPage {
 					"Edit User link is not displaying before approving guest user request.");
 		}
 		log.info("To verify edit guest user functionality from their guest user tab.");
-		log.info("Test Case execution for - verifyEditGuestDetailsFunction - is Completed");
 		}
 	}
 	
-
+	
 	public void verifyResendActivationLinkFunction(SoftAssert softAssert) throws IOException, SQLException {
 
 		String accountNo = Configuration.toString("scmAccountNumber");
 		getBtnThreeDots(accountNo);
-
 		softAssert.assertTrue(btnResendInvitationIcon(accountNo).isDisplayed(),
 				"Resend activation link is not displaying before approving guest user request.");
 		if (btnResendInvitationIcon(accountNo).isDisplayed()) {
@@ -166,7 +164,6 @@ public class GuestUserSteps extends GuestUserPage {
 					"Resend activation link is not displaying before approving guest user request.");
 		}
 		log.info("To verify resend the activation functionality from their guest user tab.");
-		log.info("Test Case execution for - verifyResendActivationLinkFunctionality - is Completed");
 	}
 
 }
