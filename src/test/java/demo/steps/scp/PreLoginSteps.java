@@ -29,6 +29,8 @@ public class PreLoginSteps extends PreLoginPage {
 	public static PropertiesUtil loginTextProp;
 	public static PropertiesUtil preLoginConnectMeProp;
 	public static PropertiesUtil signOutTextProp;
+	public static PropertiesUtil preLoginPaymentLocationsProp;
+	public static PropertiesUtil preLoginPaymentProp;
 
 	public PreLoginSteps(WebDriver driver) {
 		super(driver);
@@ -36,6 +38,8 @@ public class PreLoginSteps extends PreLoginPage {
 		preLoginConnectMeProp = new PropertiesUtil(
 				FilePaths.SCP_TEXT_PROPERTIES + Constants.PRE_LOG_CONNECT_ME_TXT_FILENAME);
 		signOutTextProp = new PropertiesUtil(FilePaths.SCP_TEXT_PROPERTIES + Constants.SIGNOUT_TXT_FILENAME);
+		preLoginPaymentLocationsProp = new PropertiesUtil(FilePaths.SCP_TEXT_PROPERTIES + Constants.SCM_PAYMENT_LOCATIONS_TXT_FILENAME);
+		preLoginPaymentProp = new PropertiesUtil(FilePaths.SCP_TEXT_PROPERTIES + Constants.SCM_PAYMENT_TXT_FILENAME);
 	}
 
 	public void populateLoginForm(String userName, String password) {
@@ -244,7 +248,7 @@ public class PreLoginSteps extends PreLoginPage {
 		selectlstConnectMeOptions("Rebates");
 		if (selectlstConnectMeOptions("Rebates")) {
 		}
-		softAssert.assertTrue(isPreLogConnectMePage(preLoginConnectMeProp.getPropValue("ConnectMePageUrl"),
+		Assert.assertTrue(isPreLogConnectMePage(preLoginConnectMeProp.getPropValue("ConnectMePageUrl"),
 				(preLoginConnectMeProp.getPropValue("ConnectMePageTitle"))), "Page Title & URL does not Match");
 		softAssert.assertTrue(isPageHeaderPostVisible(), "Contact Us Page Header is not visible");
 		softAssert.assertTrue(isSocialMediaVisible(), "Social Media Tab is not visibility");
@@ -483,5 +487,81 @@ public class PreLoginSteps extends PreLoginPage {
 				"You have signed out successfully message not matched.");
 		clickSignInAgainBtn();
 
+	}
+	
+	public boolean isPreLogPaymentLocationsPage(String url, String title) {
+		Boolean isForgetPasswordPage = false;
+		log.info("Checking that the current page is ForgetPassword Page");
+		if (getCurrentUrl().contains(url.toLowerCase()) && getCurrentTitle().equalsIgnoreCase(title))
+			isForgetPasswordPage = true;
+		log.info("The current page is ForgetPassword Page {}: " + isForgetPasswordPage);
+		return isForgetPasswordPage;
+	}
+	
+	public void verifyPaymentLocations(SoftAssert softAssert) {
+		clickPaymentLocationsLnk();
+		pause(5000);
+		Assert.assertTrue(isPreLogPaymentLocationsPage(preLoginPaymentLocationsProp.getPropValue("preLoginPageUrl"),
+				(preLoginPaymentLocationsProp.getPropValue("preLoginPageTitle"))), "Page Title & URL does not Match");
+		
+	}
+	
+	public void populatePaymentFormStepOne(String accountNumber, String phoneNumber) {
+		populateAccountNumber(accountNumber);
+		populatePhoneNumber(phoneNumber);
+		ExtentLogger.logInfo("account number and phone number populated");
+	}
+	
+	public String payWithInvalidDetails() {
+		populateAccountNumber("123456789012");
+		populatePhoneNumber("1234567890");
+		clickNextBtn();
+		String errMsg = getToastMessage();
+		ExtentLogger.logInfo("cannot pay with invalid details");
+		return errMsg;
+	}
+	
+	public String payWithBlankDetails() {
+		clickNextBtn();
+		String errMsg = getToastMessageWithoutWait();
+		clickToastCloseBtn();
+		ExtentLogger.logInfo("cannot pay with blank details");
+		return errMsg;
+	}
+	
+	public String payWithBlankAccountNumber() {
+		populatePhoneNumber("1234567890");
+		clickNextBtn();		
+		String errMsg = getErrorMessage();
+		clearPhoneNumberField();
+		ExtentLogger.logInfo("cannot pay with blank account number");
+		return errMsg;
+	}
+	
+	public String payWithBlankPhoneNumber() {
+		populateAccountNumber("123456789012");
+		clickNextBtn();
+		String errMsg = getErrorMessage();
+		clearAccountNumberField();
+		ExtentLogger.logInfo("cannot pay with blank phone number");
+		return errMsg;
+	}
+	
+	public void payTheApplicationWrongCreds(SoftAssert softAssert) {
+		clickPaymentsLnk();
+		// Verify login with blank creds
+		softAssert.assertEquals(payWithBlankDetails(), preLoginPaymentProp.getPropValue("payWithBlankCredsErrMsg"),
+				"Pay with Blank creds error message not matched.");
+		// Verify login with blank account number
+		softAssert.assertEquals(payWithBlankAccountNumber(),
+				preLoginPaymentProp.getPropValue("payWithBlankAccountNumber"),
+				"Blank username field validation not correct.");
+		// Verify login with blank phone number
+		softAssert.assertEquals(payWithBlankPhoneNumber(),
+				preLoginPaymentProp.getPropValue("payWithBlankPhoneNumber"),
+				"Blank username field validation not correct.");
+		// Verify login with wrong username and password.
+		softAssert.assertEquals(payWithInvalidDetails(), preLoginPaymentProp.getPropValue("payWithInvalidsCredsErrMsg"),
+				"Wrong toast when paying using invalid creds.");
 	}
 }
