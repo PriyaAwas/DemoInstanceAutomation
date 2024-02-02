@@ -7,10 +7,9 @@ import org.testng.asserts.SoftAssert;
 
 import demo.steps.scp.PostLogContactUsSteps;
 import sew.ai.config.Configuration;
-import sew.ai.config.SCPConfiguration;
 import sew.ai.enums.CategoryType;
+import sew.ai.helpers.anotations.ExcelTestCases;
 import sew.ai.helpers.anotations.FrameworkAnnotations;
-import sew.ai.models.User;
 import sew.ai.runner.TestRunner;
 import sew.ai.steps.scp.DashboardSteps;
 import sew.ai.steps.scp.LoginSteps;
@@ -19,7 +18,7 @@ public class PostLogContactUsTests extends TestRunner {
 	
     private static final Logger log = LogManager.getLogger(PostLogContactUsTests.class);   
     private PostLogContactUsSteps postLogContactUsSteps;
-    
+    @ExcelTestCases(Tc_id = {"Contact_Us_01","Contact_Us_02"})
     @FrameworkAnnotations(author = {"Priya Awasthi"}, category = {CategoryType.SMOKE,CategoryType.SCP_CONNECTME,})
     @Test(priority = 1, description = "To verify the Post Login ContactUs Page objects.")
 
