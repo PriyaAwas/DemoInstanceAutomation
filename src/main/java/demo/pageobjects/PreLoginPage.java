@@ -280,6 +280,48 @@ public class PreLoginPage extends HomePage {
 		return label;
 	}
 	
+	public void clickWaysToSaveLnk() {
+		log.info("Clicking the payment location button.");
+		click(lnk_waystosave);
+		log.info("contact us button clicked successfully.");
+	}
+	
+	@FindBy(xpath = "//*[@id=\"efficiencyMenubar\"]/li[1]/a")
+	private WebElement lnk_rebates;
+	
+	public String getRebatesLabel() {
+		String label = getText(lnk_rebates);
+		log.info("Forgot Username Label {}: " + label);
+		return label;
+	}
+	
+	@FindBy(xpath = "//*[@id=\"efficiencyMenubar\"]/li[2]/a")
+	private WebElement lnk_programs;
+	
+	public String getProgramsLabel() {
+		String label = getText(lnk_programs);
+		log.info("Forgot Username Label {}: " + label);
+		return label;
+	}
+	
+	@FindBy(xpath = "//*[@id=\"efficiencyMenubar\"]/li[3]/a")
+	private WebElement lnk_savings;
+	
+	public String getSavingsLabel() {
+		String label = getText(lnk_savings);
+		log.info("Forgot Username Label {}: " + label);
+		return label;
+	}
+	
+	@FindBy(xpath = "//*[@id=\"efficiencyMenubar\"]/li[4]/a")
+	private WebElement lnk_educational;
+	
+	public String getEducationalLabel() {
+		String label = getText(lnk_educational);
+		log.info("Forgot Username Label {}: " + label);
+		return label;
+	}
+	
 	@FindBy(xpath = "//*[@id=\"form2\"]/section/div[2]/div/div[4]/ul/a[6]")
 	private WebElement lnk_paymentlocations;
 

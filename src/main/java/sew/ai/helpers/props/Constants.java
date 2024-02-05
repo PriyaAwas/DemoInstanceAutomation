@@ -84,4 +84,5 @@ public class Constants {
     public static final String SCM_OUTAGES_TXT_FILENAME = "pre_log_outage.properties";
     public static final String SCM_PAYMENT_LOCATIONS_TXT_FILENAME = "pre_log_payment_locations.properties";
     public static final String SCM_PAYMENT_TXT_FILENAME = "pre_log_payment.properties";
+    public static final String SCM_WAYSTOSAVE_TXT_FILENAME = "pre_log_ways_to_save.properties";
 }
