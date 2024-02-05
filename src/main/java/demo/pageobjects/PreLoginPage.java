@@ -20,6 +20,34 @@ public class PreLoginPage extends HomePage {
         super(driver);
         PageFactory.initElements(driver, this);
     }
+    
+    @FindBy(css = "[id='txtAccountNumber']")
+	private WebElement txt_accountNumber;
+    
+    public void populateAccountNumber(String accountNumber) {
+		log.info("Populating username {} :" + accountNumber);
+		sendKeys(txt_accountNumber, accountNumber);
+		log.info("Username populated successfully.");
+	}
+    
+    public void clearAccountNumberField() {
+		clear(txt_accountNumber);
+		log.info("Account Number field cleared {}");
+	}
+    
+    @FindBy(css = "[id='txtPhoneNumber']")
+	private WebElement txt_phoneNumber;
+    
+    public void populatePhoneNumber(String phoneNumber) {
+		log.info("Populating username {} :" + phoneNumber);
+		sendKeys(txt_phoneNumber, phoneNumber);
+		log.info("Username populated successfully.");
+	}
+    
+    public void clearPhoneNumberField() {
+		clear(txt_phoneNumber);
+		log.info("Phone Number field cleared {}");
+	}
 
     @FindBy(css = "[id='txtLogin']")
 	private WebElement txt_username;
@@ -56,6 +84,24 @@ public class PreLoginPage extends HomePage {
 		log.info("Clicking the sign in button.");
 		click(btn_sign_in);
 		log.info("Sign in button clicked successfully.");
+	}
+    
+    @FindBy(css = "#btnSubmitPayment")
+	private WebElement btn_next;
+    
+    public void clickNextBtn() {
+		log.info("Clicking the next button.");
+		click(btn_next);
+		log.info("Next button clicked successfully.");
+	}
+    
+    @FindBy(css = ".error_messagecommon")
+	private WebElement lbl_error_message;
+
+	public String getErrorMessage() {
+		String toast_msg = getText(lbl_error_message);
+		log.info("Label on toast message {}: " + toast_msg);
+		return toast_msg;
 	}
     
     @FindBy(css = "#logo-container")
@@ -241,6 +287,18 @@ public class PreLoginPage extends HomePage {
 		String label = getText(lnk_paymentlocations).replace("location_on", "");
 		log.info("Forgot Username Label {}: " + label);
 		return label;
+	}
+	
+	public void clickPaymentLocationsLnk() {
+		log.info("Clicking the payment location button.");
+		click(lnk_paymentlocations);
+		log.info("contact us button clicked successfully.");
+	}
+	
+	public void clickPaymentsLnk() {
+		log.info("Clicking the payment button.");
+		click(lnk_paybill);
+		log.info("contact us button clicked successfully.");
 	}
 	
 	@FindBy(xpath = "//*[@id=\"form2\"]/section/div[2]/div/div[4]/ul/a[8]")
