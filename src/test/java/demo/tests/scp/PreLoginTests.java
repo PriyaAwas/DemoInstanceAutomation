@@ -185,5 +185,20 @@ public class PreLoginTests extends TestRunner {
         log.info("Test Case execution for - verifyInvalidPaymentDetails - is Completed.");
         ExtentLogger.logInfo("Test Case execution for - verifyInvalidPaymentDetails - is Completed.");
     }
+    
+    @FrameworkAnnotations(author = {"Eujin"}, category = {CategoryType.SMOKE, CategoryType.SCP_WAYSTOSAVE})
+    @Test(priority = 3, description = "To verify the ways to save page.")
+    public void verifyWaysToSavePage() {
+    	String[] tc_id = {"Pre_Login_12"};
+		ExtentLogger.logInfo("Test Case execution for - verifyWaysToSavePage. Test Case id's -->  " + Arrays.toString(tc_id));
+        SoftAssert softAssert = new SoftAssert();
+        // Init login steps
+        preLoginSteps = new PreLoginSteps(driver);
+        preLoginSteps.verifyWaysToSave(softAssert);
+        // Assert all the soft verification.
+        softAssert.assertAll();
+        log.info("Test Case execution for - verifyWaysToSavePage - is Completed.");
+        ExtentLogger.logInfo("Test Case execution for - verifyWaysToSavePage - is Completed.");
+    }
 
 }
