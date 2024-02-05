@@ -1,6 +1,7 @@
 package demo.tests.scp;
 
 import java.sql.SQLException;
+import java.util.Arrays;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -10,6 +11,7 @@ import org.testng.asserts.SoftAssert;
 
 import sew.ai.config.Configuration;
 import sew.ai.enums.CategoryType;
+import sew.ai.helpers.anotations.ExcelTestCases;
 import sew.ai.helpers.anotations.FrameworkAnnotations;
 import sew.ai.helpers.reporters.ExtentLogger;
 import sew.ai.runner.TestRunner;
@@ -26,6 +28,9 @@ public class PreLoginTests extends TestRunner {
 	@FrameworkAnnotations(author = { "Eujin" }, category = { CategoryType.SMOKE, CategoryType.SCP_LOGIN })
 	@Test(priority = 1, description = "User is able to Login with valid credentials.")
 	public void verifyValidLogin() {
+		String[] tc_id = {"Pre_Login_01"};
+		ExtentLogger.logInfo("Test Case execution for - verifyValidLogin. Test Case id's -->  " + Arrays.toString(tc_id));
+		
 		log.info("To Verify Payment information fields and Add payment method pop-up");
 		SoftAssert softAssert = new SoftAssert();
 		//SCP- Application Login
@@ -39,8 +44,8 @@ public class PreLoginTests extends TestRunner {
     @FrameworkAnnotations(author = {"Eujin"}, category = {CategoryType.SMOKE, CategoryType.SCP_LOGIN})
     @Test(priority = 3, description = "To verify the login functionality with invalid credentials.")
     public void verifyInvalidLogin() {
-        log.info("To verify the tests with the below test case id's: " +
-                "C75087, C75088");
+    	String[] tc_id = {"Pre_Login_02"};
+		ExtentLogger.logInfo("Test Case execution for - verifyInvalidLogin. Test Case id's -->  " + Arrays.toString(tc_id));
         SoftAssert softAssert = new SoftAssert();
         // Init login steps
         preLoginSteps = new PreLoginSteps(driver);
@@ -55,8 +60,8 @@ public class PreLoginTests extends TestRunner {
     @FrameworkAnnotations(author = {"Eujin"}, category = {CategoryType.SMOKE, CategoryType.SCP_LOGIN})
     @Test(priority = 1, description = "To verify the login page objects.")
     public void verifyLoginPageObjects() {
-        log.info("To verify the tests with the below test case id's: " +
-                "C75080, C101604");
+    	String[] tc_id = {"Pre_Login_03"};
+		ExtentLogger.logInfo("Test Case execution for - verifyLoginPageObjects. Test Case id's -->  " + Arrays.toString(tc_id));
         SoftAssert softAssert = new SoftAssert();
         // Init login steps
         preLoginSteps = new PreLoginSteps(driver);
@@ -72,7 +77,8 @@ public class PreLoginTests extends TestRunner {
     @FrameworkAnnotations(author = {"Eujin"}, category = {CategoryType.SANITY, CategoryType.SCP_LOGIN})
     @Test(priority = 4, description = "To verify the remember me login functionality.")
     public void verifyRememberMeLoginFunctionality() {
-   
+    	String[] tc_id = {"Pre_Login_04", "Pre_Login_15"};
+		ExtentLogger.logInfo("Test Case execution for - verifyRememberMeLoginFunctionality. Test Case id's -->  " + Arrays.toString(tc_id));
         SoftAssert softAssert = new SoftAssert();
         // Init login steps
         preLoginSteps = new PreLoginSteps(driver);
@@ -100,7 +106,8 @@ public class PreLoginTests extends TestRunner {
     @FrameworkAnnotations(author = {"Eujin"}, category = {CategoryType.SANITY, CategoryType.SCP_CONNECTME})
     @Test(priority = 5, description = "To verify the Pre-Login Connect Me page.")
     public void verifyPreLogTrackContactReq() {
-    	log.info("Test Case execution for - verifyPreLoginConnectMePage - is Initiated");
+    	String[] tc_id = {"Pre_Login_10"};
+		ExtentLogger.logInfo("Test Case execution for - verifyRememberMeLoginFunctionality. Test Case id's -->  " + Arrays.toString(tc_id));
         SoftAssert softAssert = new SoftAssert();        
         PreLoginSteps preLoginSteps = new PreLoginSteps(driver);
         String referenceId = null;
@@ -120,7 +127,8 @@ public class PreLoginTests extends TestRunner {
     @FrameworkAnnotations(author = {"Eujin"}, category = {CategoryType.SANITY, CategoryType.SCP_CONNECTME})
     @Test(priority = 5, description = "Verify User is able to Submit a Contact Us Request form for Water waste, theft without logging in.")
     public void verifyPreLogTrackContactReqForWaterWaste() {
-    	log.info("Test Case execution for - verifyPreLoginConnectMePageForWaterWaste - is Initiated");
+    	String[] tc_id = {"Pre_Login_13"};
+		ExtentLogger.logInfo("Test Case execution for - verifyRememberMeLoginFunctionality. Test Case id's -->  " + Arrays.toString(tc_id));
         SoftAssert softAssert = new SoftAssert();        
         PreLoginSteps preLoginSteps = new PreLoginSteps(driver);
         String referenceId = null;
@@ -141,7 +149,8 @@ public class PreLoginTests extends TestRunner {
     @FrameworkAnnotations(author = { "Kavya BR" }, category = { CategoryType.SANITY, CategoryType.SCP_LOGIN })
 	@Test(priority = 1, description = "To verify chat functionality.")
 	public void verifyPreLogChatBox()throws SQLException {
-		log.info("To Verify Payment information feilds and Add payment method pop-up");
+    	String[] tc_id = {"Pre_Login_14"};
+		ExtentLogger.logInfo("Test Case execution for - verifyRememberMeLoginFunctionality. Test Case id's -->  " + Arrays.toString(tc_id));
 		SoftAssert softAssert = new SoftAssert();
 		//SCP- Application Login
 		preLoginSteps = new PreLoginSteps(driver);
@@ -149,16 +158,32 @@ public class PreLoginTests extends TestRunner {
 		softAssert.assertAll();
         ExtentLogger.logInfo("Test Case execution for - verifyPreLogChatBox - is Completed.");
 	}
+    
+    @FrameworkAnnotations(author = {"Eujin"}, category = {CategoryType.SANITY, CategoryType.SCP_PAYMENT_LOCATIONS})
+    @Test(priority = 5, description = "To verify the Pre-Login Payment Locations page.")
+    public void verifyPreLogPaymentLocations() {
+    	String[] tc_id = {"Pre_Login_11"};
+		ExtentLogger.logInfo("Test Case execution for - verifyPreLogPaymentLocations. Test Case id's -->  " + Arrays.toString(tc_id));
+        SoftAssert softAssert = new SoftAssert();        
+        PreLoginSteps preLoginSteps = new PreLoginSteps(driver);
+        preLoginSteps.verifyPaymentLocations(softAssert); 
+        log.info("Test Case execution for - verifyPreLogPaymentLocations - is Completed.");
+        ExtentLogger.logInfo("Test Case execution for - verifyPreLogPaymentLocations - is Completed.");
+     }
+    
+    @FrameworkAnnotations(author = {"Eujin"}, category = {CategoryType.SMOKE, CategoryType.SCP_PAYMENT})
+    @Test(priority = 3, description = "To verify the payment functionality with invalid details.")
+    public void verifyInvalidPaymentDetails() {
+    	String[] tc_id = {"Pre_Login_08"};
+		ExtentLogger.logInfo("Test Case execution for - verifyInvalidPaymentDetails. Test Case id's -->  " + Arrays.toString(tc_id));
+        SoftAssert softAssert = new SoftAssert();
+        // Init login steps
+        preLoginSteps = new PreLoginSteps(driver);
+        preLoginSteps.payTheApplicationWrongCreds(softAssert);
+        // Assert all the soft verification.
+        softAssert.assertAll();
+        log.info("Test Case execution for - verifyInvalidPaymentDetails - is Completed.");
+        ExtentLogger.logInfo("Test Case execution for - verifyInvalidPaymentDetails - is Completed.");
+    }
 
-    @FrameworkAnnotations(author = { "Kavya BR" }, category = { CategoryType.SANITY, CategoryType.SCP_LOGIN })
-	@Test(priority = 1, description = "User is able to Login with valid credentials.")
-	public void verifySignOutPage() {
-		log.info("To Verify Payment information fields and Add payment method pop-up");
-		SoftAssert softAssert = new SoftAssert();
-		//SCP- Application Login
-		preLoginSteps = new PreLoginSteps(driver);
-		preLoginSteps.loginIntoTheApplication(Configuration.toString("userName"), Configuration.toString("password"));
-		softAssert.assertAll();
-        ExtentLogger.logInfo("Test Case execution for - verifySignOutPage - is Completed.");
-	}
 }
