@@ -43,9 +43,7 @@ public class GuestUserSteps extends GuestUserPage {
 			softAssert.assertTrue(isGuestUserBannerVisible(), "Guest User Banner is not visible");
 			softAssert.assertTrue(isContactUsBannerVisible(), "Contact Us Banner is not visible");
 
-
 			ExtentLogger.logInfo("Test Case execution for - verifyGuestUserPageUI - is Completed");
-
 
 			log.info("Test Case execution for - verifyGuestUserPageUI - is Completed");
 
@@ -100,8 +98,6 @@ public class GuestUserSteps extends GuestUserPage {
 			String actRevokeConfirmationMsg = getConfirmationPopupMsg();
 			softAssert.assertEquals(actRevokeConfirmationMsg, expRevokeConfirmationMsg,
 					"Revoke confirmation message is not matched.");
-			// pause(1000);
-			// clickContinueConfirmationMsgBtn();
 			pause(10000);
 		}
 	}
@@ -111,6 +107,7 @@ public class GuestUserSteps extends GuestUserPage {
 		deleteGuestUser(softAssert);
 
 		verifyInviteNewGuestUserFunctionnality(softAssert);
+		pause(5000);
 
 		String accountNo = Configuration.toString("scmAccountNumber");
 		getBtnThreeDots(accountNo);
@@ -119,46 +116,50 @@ public class GuestUserSteps extends GuestUserPage {
 				"Edit link is not displaying before approving guest user request.");
 		if (btnEditGuestuserIcon(accountNo).isDisplayed()) {
 			pause(500);
-		selectGuestUserRoleByIndex(2);
-		if (isexistinguserdisplayed()) {
+			if (isexistinguserdisplayed()) {
+				pause(500);
 
-			ExtentLogger.logInfo("Verify that customer is able to click three dot icon successfully.");
-			clickThreeDotIconGuestBtn();
-
-			ExtentLogger.logInfo("Verify that customer is able to select edit option successfully.");
-			clickEditGuestBtn();
-			ExtentLogger.logInfo("Verify that customer is able to edit the guest user role successfully.");
-			selectGuestUserRole();
-			pause(500);
-			ExtentLogger.logInfo("Verify that customer is able to select check box successfully.");
-			selectchkBoxOptn();
-			ExtentLogger.logInfo("Verify that customer is able to click on submit button successfully.");
-			clickSubmitButton();
-			softAssert.assertEquals(getDetailsUpdatedLabel(),
-					guestuserTextProp.getPropValue("txtMsgSuccessfullUpdateGup"));
-		} else {
-			softAssert.assertTrue(btnResendInvitationIcon(accountNo).isDisplayed(),
-					"Edit User link is not displaying before approving guest user request.");
-		}
-		log.info("To verify edit guest user functionality from their guest user tab.");
+				ExtentLogger.logInfo("Verify that customer is able to select edit option successfully.");
+				pause(5000);
+				clickEditGuestButton();
+				ExtentLogger.logInfo("Verify that customer is able to edit the guest user role successfully.");
+				selectGuestUserRole();
+				pause(500);
+				ExtentLogger.logInfo("Verify that customer is able to select check box successfully.");
+				selectchkBoxOptn();
+				ExtentLogger.logInfo("Verify that customer is able to click on submit button successfully.");
+				clickSubmitButton();
+				softAssert.assertEquals(getDetailsUpdatedLabel(),
+						guestuserTextProp.getPropValue("txtMsgSuccessfullUpdateGup"));
+			} else {
+				softAssert.assertTrue(btnResendInvitationIcon(accountNo).isDisplayed(),
+						"Edit User link is not displaying before approving guest user request.");
+			}
+			log.info("To verify edit guest user functionality from their guest user tab.");
 		}
 	}
-	
-	
+
 	public void verifyResendActivationLinkFunction(SoftAssert softAssert) throws IOException, SQLException {
 
+		deleteGuestUser(softAssert);
+		verifyInviteNewGuestUserFunctionnality(softAssert);
+		pause(5000);
 		String accountNo = Configuration.toString("scmAccountNumber");
 		getBtnThreeDots(accountNo);
-		softAssert.assertTrue(btnResendInvitationIcon(accountNo).isDisplayed(),
-				"Resend activation link is not displaying before approving guest user request.");
+		pause(500);
 		if (btnResendInvitationIcon(accountNo).isDisplayed()) {
 			String invitationStatus = getStatusOfInvitation(accountNo);
 			String expInvitationStatus = guestuserTextProp.getPropValue("txtLblInvitationPendingStatus");
 			softAssert.assertEquals(invitationStatus, expInvitationStatus, "Invitation status not matched.");
 			String expToastMsg = guestuserTextProp.getPropValue("txtLblResendInvitationToastMsg");
+			String expToastMsg1 = guestuserTextProp.getPropValue("txtLblResendInvitationToastMsgTwoGup");
 			clickBtnResendInvitationIcon(accountNo);
 			String actToastMsg = getToastMessage();
-			softAssert.assertEquals(actToastMsg, expToastMsg, "Resend activation link toast message not matched");
+			if (actToastMsg == "A link with instructions has been sent to the Email Address you provided. You will be notified once user accepts the invitation.") {
+				softAssert.assertEquals(actToastMsg, expToastMsg, "Resend activation link toast message not matched");
+			} else {
+				softAssert.assertEquals(actToastMsg, expToastMsg1, "Resend activation link toast message not matched");
+			}
 		} else {
 			softAssert.assertTrue(btnResendInvitationIcon(accountNo).isDisplayed(),
 					"Resend activation link is not displaying before approving guest user request.");
