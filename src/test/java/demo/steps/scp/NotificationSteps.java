@@ -1,6 +1,5 @@
 package demo.steps.scp;
 
-
 import java.sql.SQLException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -280,7 +279,7 @@ public class NotificationSteps extends NotificationsPage {
     public void negativesceNotifications(SoftAssert softAssert) throws SQLException {
 	    
 	    ExtentLogger.logInfo("Click delete Icon.");
-	    clickTrashIcon();
+	    clickDeleteButton();
 	    ExtentLogger.logInfo("Verify Warning Toast.");
 	    isWarningToastDisplayed();
 		 softAssert.assertEquals(getWarningMessage(),NotificationTextProp.getPropValue("txtWarningMessage"),
