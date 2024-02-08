@@ -42,7 +42,7 @@ public class PaymentInfoTests extends TestRunner {
 		log.info("Test Case execution for - verifyPaymentInformationPageObjects - is Completed.");
 	}
 
-	@FrameworkAnnotations(author = { "SatyaTiwari" }, category = { CategoryType.SANITY, CategoryType.SCP_PAYMENT_INFO })
+	@FrameworkAnnotations(author = { "SatyaTiwari" }, category = { CategoryType.SMOKE, CategoryType.SCP_PAYMENT_INFO })
 	@Test(priority = 2, description = "To verify the Bank Payment form fields.")
 	public void verifyBankPaymentFormFields() throws InterruptedException {
 		log.info("To Verify Bank Payment form fields");
@@ -80,7 +80,7 @@ public class PaymentInfoTests extends TestRunner {
 		log.info("Test Case execution for - verifyPaymentInformationPageObjects - is Completed.");
 	}
 
-	@FrameworkAnnotations(author = { "SatyaTiwari" }, category = { CategoryType.SANITY, CategoryType.SCP_PAYMENT_INFO })
+	@FrameworkAnnotations(author = { "SatyaTiwari" }, category = { CategoryType.SMOKE, CategoryType.SCP_PAYMENT_INFO })
 	@Test(priority = 4, description = "To verify the Bank Payment form fields.")
 	public void verifyAddingBankPaymentProfile() throws SQLException, InterruptedException {
 		log.info("To Verify Payment Bank Payment form fields validation");
@@ -118,7 +118,7 @@ public class PaymentInfoTests extends TestRunner {
 		log.info("Test Case execution for - verifyPaymentInformationPageObjects - is Completed.");
 	}
 
-	@FrameworkAnnotations(author = { "PriyaAwasthi" }, category = { CategoryType.SANITY,
+	@FrameworkAnnotations(author = { "PriyaAwasthi" }, category = { CategoryType.SMOKE,
 			CategoryType.SCP_PAYMENT_INFO })
 	@Test(priority = 6, description = "To verify the Bank Payment form fields.")
 	public void verifyMakePaymentWithNewCC() throws SQLException, InterruptedException {

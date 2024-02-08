@@ -734,6 +734,7 @@ public class PaymentInformationsPage extends HomePage {
     	scrollToElement(btnAdd);
      	log.info("Waiting For Add button to be clickable");
     	waitForElementToBeClickable(btnAdd);
+    	pause(5000);
     	click(btnAdd);
     	log.info("Add button is clicked");
     }
@@ -1440,7 +1441,7 @@ public class PaymentInformationsPage extends HomePage {
     }
     
     public String getBankNameofPaymentProfile(String num) {
-    	By bnkNamePaymentProfile = By.xpath("//label[contains(text(),'" + num + "')]/preceding-sibling::span");
+		By bnkNamePaymentProfile = By.xpath("//label[contains(text(),'" + num + "')]/preceding-sibling::span");
     	return driver.findElement(bnkNamePaymentProfile).getText();
     }
     

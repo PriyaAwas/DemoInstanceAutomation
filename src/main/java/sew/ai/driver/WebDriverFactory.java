@@ -49,7 +49,9 @@ public class WebDriverFactory {
         // Throw an error if the value isn't found.
         switch (platformName) {
             case "chrome":
-                driver = createChromeDriver();
+               // driver = createChromeDriver();
+            	WebDriverManager.chromedriver().setup();
+                driver = new ChromeDriver();
                 break;
             case "edge":
                 WebDriverManager.edgedriver().setup();

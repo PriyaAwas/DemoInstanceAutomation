@@ -13,7 +13,7 @@ import demo.steps.scp.ForgetUsernameSteps;
 public class ForgetUsernameTest extends TestRunner {
     private static final Logger log = LogManager.getLogger(ForgetUsernameTest.class);
     private ForgetUsernameSteps forgetUsernameSteps;
-	@FrameworkAnnotations(author = { "Priya" }, category = { CategoryType.SANITY, CategoryType.SCP_LOGIN })
+	@FrameworkAnnotations(author = { "Priya Awasthi" }, category = { CategoryType.SMOKE,CategoryType.SCP_LOGINHELP })
     @Test(priority = 1, description = "To verify the Forget Username page objects.")
     public void validateResetUsername() throws Exception {
         log.info("To verify that following should be displayed on validate Forgot Username.");
@@ -26,7 +26,7 @@ public class ForgetUsernameTest extends TestRunner {
                   
       }
 	
-	@FrameworkAnnotations(author = { "Priya" }, category = { CategoryType.SANITY, CategoryType.SCP_LOGIN })
+	@FrameworkAnnotations(author = { "Priya Awasthi" }, category = { CategoryType.SANITY, CategoryType.SCP_LOGINHELP })
     @Test(priority = 2, description = "To verify the Forget Username name with valid and invalid email.")
     public void resetUsernameUsingWrongEmail() {
         log.info("To verify that following should be displayed on validate Forgot Username.");

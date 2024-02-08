@@ -1,55 +1,478 @@
-14:29:59.407 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 63
-14:29:59.417 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 64
-14:29:59.418 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 65
-14:29:59.418 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 66
-14:29:59.418 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 67
-14:29:59.419 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 68
-14:29:59.419 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 69
-14:29:59.419 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 70
-14:29:59.420 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 71
-14:29:59.423 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 72
-14:29:59.423 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 73
-14:29:59.423 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 74
-14:29:59.424 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 75
-14:29:59.424 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 76
-14:29:59.425 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 77
-14:29:59.425 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 78
-14:29:59.426 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 79
-14:29:59.426 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 80
-14:29:59.426 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 81
-14:29:59.427 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 82
-14:29:59.429 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 83
-14:29:59.431 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 84
-14:29:59.433 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 85
-14:29:59.435 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 86
-14:29:59.436 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 87
-14:29:59.438 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 88
-14:29:59.439 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 89
-14:29:59.439 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 90
-14:29:59.478 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 91
-14:29:59.529 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 92
-14:29:59.618 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 93
-14:29:59.673 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 94
-14:29:59.757 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 95
-14:29:59.838 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 96
-14:30:00.002 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 97
-14:30:00.109 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 98
-14:30:00.182 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 99
-14:30:00.604 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 100
-14:30:00.604 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 101
-14:30:00.604 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 102
-14:30:00.605 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 103
-14:30:00.605 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 104
-14:30:00.605 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 105
-14:30:00.605 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 106
-14:30:00.606 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 107
-14:30:00.606 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 108
-14:30:00.606 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 109
-14:30:00.607 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 110
-14:30:00.607 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 111
-14:30:00.607 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 112
-14:30:00.608 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 113
-14:30:00.608 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 114
-14:30:00.608 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 115
-14:30:00.609 INFO  utils.ExcelUtils (ExcelUtils.java:41) - Test Runner excel row at: 116
-14:30:13.366 WARN  config.Configuration (Configuration.java:231) - QA env being used by default. No env property set. This can be set in the sew.app.yml config file with a '{}=' property or on the command line with the switch '-D{}='.
+18:11:09.522 INFO  driver.Page (    Page.java:260) - Element is visible on the page.
+18:11:09.565 INFO  driver.Page (    Page.java:164) - Text got from the locator {} [[ChromeDriver: chrome on windows (f9ded14700d0e790facb4602715b2a7c)] -> css selector: #lnkExporttoExcel] is Export to Excel
+18:11:09.600 INFO  driver.Page (    Page.java:161) - Wait for the element {} [[ChromeDriver: chrome on windows (f9ded14700d0e790facb4602715b2a7c)] -> css selector: #billpaybillingDetails > a] to be visible on the page for duration of {} 120
+18:11:09.601 INFO  driver.Page (    Page.java:257) - Waiting for element to be visible for 120 seconds.
+18:11:09.632 INFO  driver.Page (    Page.java:260) - Element is visible on the page.
+18:11:09.666 INFO  driver.Page (    Page.java:164) - Text got from the locator {} [[ChromeDriver: chrome on windows (f9ded14700d0e790facb4602715b2a7c)] -> css selector: #billpaybillingDetails > a] is BILLING
+18:11:09.700 INFO  driver.Page (    Page.java:161) - Wait for the element {} [[ChromeDriver: chrome on windows (f9ded14700d0e790facb4602715b2a7c)] -> css selector: #billpaymentDetails>a] to be visible on the page for duration of {} 120
+18:11:09.700 INFO  driver.Page (    Page.java:257) - Waiting for element to be visible for 120 seconds.
+18:11:09.733 INFO  driver.Page (    Page.java:260) - Element is visible on the page.
+18:11:09.787 INFO  driver.Page (    Page.java:164) - Text got from the locator {} [[ChromeDriver: chrome on windows (f9ded14700d0e790facb4602715b2a7c)] -> css selector: #billpaymentDetails>a] is PAYMENT
+18:11:09.830 INFO  driver.Page (    Page.java:161) - Wait for the element {} [[ChromeDriver: chrome on windows (f9ded14700d0e790facb4602715b2a7c)] -> css selector: div.fltr_btn_history>a] to be visible on the page for duration of {} 120
+18:11:09.830 INFO  driver.Page (    Page.java:257) - Waiting for element to be visible for 120 seconds.
+18:11:09.863 INFO  driver.Page (    Page.java:260) - Element is visible on the page.
+18:11:09.910 INFO  driver.Page (    Page.java:164) - Text got from the locator {} [[ChromeDriver: chrome on windows (f9ded14700d0e790facb4602715b2a7c)] -> css selector: div.fltr_btn_history>a] is FILTER
+18:11:09.953 INFO  driver.Page (    Page.java:183) - Wait for the element {} [[ChromeDriver: chrome on windows (f9ded14700d0e790facb4602715b2a7c)] -> css selector: input#from] to be visible on the page for duration of {} 120
+18:11:09.954 INFO  driver.Page (    Page.java:257) - Waiting for element to be visible for 120 seconds.
+18:11:09.998 INFO  driver.Page (    Page.java:260) - Element is visible on the page.
+18:11:10.086 INFO  driver.Page (    Page.java:187) - Text got from the locator {} [[ChromeDriver: chrome on windows (f9ded14700d0e790facb4602715b2a7c)] -> css selector: input#from] is From Date
+18:11:10.126 INFO  driver.Page (    Page.java:183) - Wait for the element {} [[ChromeDriver: chrome on windows (f9ded14700d0e790facb4602715b2a7c)] -> css selector: input#to] to be visible on the page for duration of {} 120
+18:11:10.126 INFO  driver.Page (    Page.java:257) - Waiting for element to be visible for 120 seconds.
+18:11:10.154 INFO  driver.Page (    Page.java:260) - Element is visible on the page.
+18:11:10.224 INFO  driver.Page (    Page.java:187) - Text got from the locator {} [[ChromeDriver: chrome on windows (f9ded14700d0e790facb4602715b2a7c)] -> css selector: input#to] is To Date
+18:11:10.262 INFO  driver.Page (    Page.java:161) - Wait for the element {} [[ChromeDriver: chrome on windows (f9ded14700d0e790facb4602715b2a7c)] -> css selector: #menu1 .hdrBillDate] to be visible on the page for duration of {} 120
+18:11:10.262 INFO  driver.Page (    Page.java:257) - Waiting for element to be visible for 120 seconds.
+18:11:10.286 INFO  driver.Page (    Page.java:260) - Element is visible on the page.
+18:11:10.317 INFO  driver.Page (    Page.java:164) - Text got from the locator {} [[ChromeDriver: chrome on windows (f9ded14700d0e790facb4602715b2a7c)] -> css selector: #menu1 .hdrBillDate] is STATEMENT DATE
+18:11:10.349 INFO  driver.Page (    Page.java:161) - Wait for the element {} [[ChromeDriver: chrome on windows (f9ded14700d0e790facb4602715b2a7c)] -> css selector: #menu1 .hdrBillAmountDue] to be visible on the page for duration of {} 120
+18:11:10.349 INFO  driver.Page (    Page.java:257) - Waiting for element to be visible for 120 seconds.
+18:11:10.372 INFO  driver.Page (    Page.java:260) - Element is visible on the page.
+18:11:10.404 INFO  driver.Page (    Page.java:164) - Text got from the locator {} [[ChromeDriver: chrome on windows (f9ded14700d0e790facb4602715b2a7c)] -> css selector: #menu1 .hdrBillAmountDue] is AMOUNT DUE
+18:11:10.435 INFO  driver.Page (    Page.java:161) - Wait for the element {} [[ChromeDriver: chrome on windows (f9ded14700d0e790facb4602715b2a7c)] -> css selector: .hdrBillDueDate] to be visible on the page for duration of {} 120
+18:11:10.435 INFO  driver.Page (    Page.java:257) - Waiting for element to be visible for 120 seconds.
+18:11:10.462 INFO  driver.Page (    Page.java:260) - Element is visible on the page.
+18:11:10.493 INFO  driver.Page (    Page.java:164) - Text got from the locator {} [[ChromeDriver: chrome on windows (f9ded14700d0e790facb4602715b2a7c)] -> css selector: .hdrBillDueDate] is DUE DATE
+18:11:10.524 INFO  driver.Page (    Page.java:161) - Wait for the element {} [[ChromeDriver: chrome on windows (f9ded14700d0e790facb4602715b2a7c)] -> css selector: .dataTables_info] to be visible on the page for duration of {} 120
+18:11:10.526 INFO  driver.Page (    Page.java:257) - Waiting for element to be visible for 120 seconds.
+18:11:10.549 INFO  driver.Page (    Page.java:260) - Element is visible on the page.
+18:11:10.578 INFO  driver.Page (    Page.java:164) - Text got from the locator {} [[ChromeDriver: chrome on windows (f9ded14700d0e790facb4602715b2a7c)] -> css selector: .dataTables_info] is Showing page 1 of 3
+18:11:10.614 INFO  driver.Page (    Page.java:161) - Wait for the element {} [[ChromeDriver: chrome on windows (f9ded14700d0e790facb4602715b2a7c)] -> css selector: a[id$='tblBillingHistory_previous']] to be visible on the page for duration of {} 120
+18:11:10.614 INFO  driver.Page (    Page.java:257) - Waiting for element to be visible for 120 seconds.
+18:11:10.636 INFO  driver.Page (    Page.java:260) - Element is visible on the page.
+18:11:10.667 INFO  driver.Page (    Page.java:164) - Text got from the locator {} [[ChromeDriver: chrome on windows (f9ded14700d0e790facb4602715b2a7c)] -> css selector: a[id$='tblBillingHistory_previous']] is Previous
+18:11:10.696 INFO  driver.Page (    Page.java:161) - Wait for the element {} [[ChromeDriver: chrome on windows (f9ded14700d0e790facb4602715b2a7c)] -> css selector: #tblBillingHistory_next] to be visible on the page for duration of {} 120
+18:11:10.696 INFO  driver.Page (    Page.java:257) - Waiting for element to be visible for 120 seconds.
+18:11:10.718 INFO  driver.Page (    Page.java:260) - Element is visible on the page.
+18:11:10.746 INFO  driver.Page (    Page.java:164) - Text got from the locator {} [[ChromeDriver: chrome on windows (f9ded14700d0e790facb4602715b2a7c)] -> css selector: #tblBillingHistory_next] is Next
+18:11:10.778 INFO  driver.Page (    Page.java:58) - Preparing for element to click.
+18:11:10.779 INFO  driver.Page (    Page.java:232) - Waiting for element to be clickable for 120 seconds.
+18:11:10.823 INFO  driver.Page (    Page.java:235) - Element is clickable now.
+18:11:10.918 INFO  driver.Page (    Page.java:61) - Element is clicked successfully.
+18:11:10.918 INFO  scp.HomePage (HomePage.java:762) - Fetching the Mandatory toast Message placeholder.
+18:11:10.983 INFO  driver.Page (    Page.java:169) - Text got from the locator {} [[ChromeDriver: chrome on windows (f9ded14700d0e790facb4602715b2a7c)] -> css selector: #toast-container .toast-message] is Please select from Date
+18:11:11.013 INFO  scp.HomePage (HomePage.java:765) -  Mandatory toast Message is   {}: Please select from Date
+18:11:11.027 INFO  driver.Page (    Page.java:107) - Clicking element {} [[ChromeDriver: chrome on windows (f9ded14700d0e790facb4602715b2a7c)] -> css selector: #billpaymentDetails>a]using Javascript executor.
+18:11:11.027 INFO  driver.Page (    Page.java:232) - Waiting for element to be clickable for 120 seconds.
+18:11:11.086 INFO  driver.Page (    Page.java:235) - Element is clickable now.
+18:11:11.161 INFO  driver.Page (    Page.java:111) - Element {} [[ChromeDriver: chrome on windows (f9ded14700d0e790facb4602715b2a7c)] -> css selector: #billpaymentDetails>a] clicked successfully.
+18:11:14.200 INFO  driver.Page (    Page.java:305) - Element {} : [[ChromeDriver: chrome on windows (f9ded14700d0e790facb4602715b2a7c)] -> css selector: #lnkExporttoExcel] is visible on the page.
+18:11:14.254 INFO  driver.Page (    Page.java:305) - Element {} : [[ChromeDriver: chrome on windows (f9ded14700d0e790facb4602715b2a7c)] -> css selector: #billpaybillingDetails > a] is visible on the page.
+18:11:14.320 INFO  driver.Page (    Page.java:305) - Element {} : [[ChromeDriver: chrome on windows (f9ded14700d0e790facb4602715b2a7c)] -> css selector: #billpaymentDetails>a] is visible on the page.
+18:11:14.364 INFO  driver.Page (    Page.java:305) - Element {} : [[ChromeDriver: chrome on windows (f9ded14700d0e790facb4602715b2a7c)] -> css selector: input#from] is visible on the page.
+18:11:14.410 INFO  driver.Page (    Page.java:305) - Element {} : [[ChromeDriver: chrome on windows (f9ded14700d0e790facb4602715b2a7c)] -> css selector: input#to] is visible on the page.
+18:11:14.456 INFO  driver.Page (    Page.java:305) - Element {} : [[ChromeDriver: chrome on windows (f9ded14700d0e790facb4602715b2a7c)] -> css selector: div.fltr_btn_history>a] is visible on the page.
+18:11:27.522 INFO  driver.Page (    Page.java:305) - Element {} : [[ChromeDriver: chrome on windows (f9ded14700d0e790facb4602715b2a7c)] -> css selector: .dataTables_info] is visible on the page.
+18:11:27.557 INFO  driver.Page (    Page.java:305) - Element {} : [[ChromeDriver: chrome on windows (f9ded14700d0e790facb4602715b2a7c)] -> css selector: .dataTables_info] is visible on the page.
+18:11:27.599 INFO  driver.Page (    Page.java:305) - Element {} : [[ChromeDriver: chrome on windows (f9ded14700d0e790facb4602715b2a7c)] -> css selector: #menu2 .hdrBillDate] is visible on the page.
+18:11:27.635 INFO  driver.Page (    Page.java:305) - Element {} : [[ChromeDriver: chrome on windows (f9ded14700d0e790facb4602715b2a7c)] -> css selector: #menu2 .hdrBillAmount] is visible on the page.
+18:11:27.645 INFO  driver.Page (    Page.java:161) - Wait for the element {} [[ChromeDriver: chrome on windows (f9ded14700d0e790facb4602715b2a7c)] -> css selector: #lnkExporttoExcel] to be visible on the page for duration of {} 120
+18:11:27.645 INFO  driver.Page (    Page.java:257) - Waiting for element to be visible for 120 seconds.
+18:11:27.669 INFO  driver.Page (    Page.java:260) - Element is visible on the page.
+18:11:27.698 INFO  driver.Page (    Page.java:164) - Text got from the locator {} [[ChromeDriver: chrome on windows (f9ded14700d0e790facb4602715b2a7c)] -> css selector: #lnkExporttoExcel] is Export to Excel
+18:11:27.730 INFO  driver.Page (    Page.java:161) - Wait for the element {} [[ChromeDriver: chrome on windows (f9ded14700d0e790facb4602715b2a7c)] -> css selector: #billpaybillingDetails > a] to be visible on the page for duration of {} 120
+18:11:27.731 INFO  driver.Page (    Page.java:257) - Waiting for element to be visible for 120 seconds.
+18:11:27.761 INFO  driver.Page (    Page.java:260) - Element is visible on the page.
+18:11:27.794 INFO  driver.Page (    Page.java:164) - Text got from the locator {} [[ChromeDriver: chrome on windows (f9ded14700d0e790facb4602715b2a7c)] -> css selector: #billpaybillingDetails > a] is BILLING
+18:11:27.827 INFO  driver.Page (    Page.java:161) - Wait for the element {} [[ChromeDriver: chrome on windows (f9ded14700d0e790facb4602715b2a7c)] -> css selector: div.fltr_btn_history>a] to be visible on the page for duration of {} 120
+18:11:27.827 INFO  driver.Page (    Page.java:257) - Waiting for element to be visible for 120 seconds.
+18:11:27.851 INFO  driver.Page (    Page.java:260) - Element is visible on the page.
+18:11:27.880 INFO  driver.Page (    Page.java:164) - Text got from the locator {} [[ChromeDriver: chrome on windows (f9ded14700d0e790facb4602715b2a7c)] -> css selector: div.fltr_btn_history>a] is FILTER
+18:11:27.909 INFO  driver.Page (    Page.java:183) - Wait for the element {} [[ChromeDriver: chrome on windows (f9ded14700d0e790facb4602715b2a7c)] -> css selector: input#from] to be visible on the page for duration of {} 120
+18:11:27.909 INFO  driver.Page (    Page.java:257) - Waiting for element to be visible for 120 seconds.
+18:11:27.932 INFO  driver.Page (    Page.java:260) - Element is visible on the page.
+18:11:28.015 INFO  driver.Page (    Page.java:187) - Text got from the locator {} [[ChromeDriver: chrome on windows (f9ded14700d0e790facb4602715b2a7c)] -> css selector: input#from] is From Date
+18:11:28.051 INFO  driver.Page (    Page.java:183) - Wait for the element {} [[ChromeDriver: chrome on windows (f9ded14700d0e790facb4602715b2a7c)] -> css selector: input#to] to be visible on the page for duration of {} 120
+18:11:28.051 INFO  driver.Page (    Page.java:257) - Waiting for element to be visible for 120 seconds.
+18:11:28.076 INFO  driver.Page (    Page.java:260) - Element is visible on the page.
+18:11:28.143 INFO  driver.Page (    Page.java:187) - Text got from the locator {} [[ChromeDriver: chrome on windows (f9ded14700d0e790facb4602715b2a7c)] -> css selector: input#to] is To Date
+18:11:28.181 INFO  driver.Page (    Page.java:161) - Wait for the element {} [[ChromeDriver: chrome on windows (f9ded14700d0e790facb4602715b2a7c)] -> css selector: #menu2 .hdrBillDate] to be visible on the page for duration of {} 120
+18:11:28.181 INFO  driver.Page (    Page.java:257) - Waiting for element to be visible for 120 seconds.
+18:11:28.206 INFO  driver.Page (    Page.java:260) - Element is visible on the page.
+18:11:28.237 INFO  driver.Page (    Page.java:164) - Text got from the locator {} [[ChromeDriver: chrome on windows (f9ded14700d0e790facb4602715b2a7c)] -> css selector: #menu2 .hdrBillDate] is DATE
+18:11:28.270 INFO  driver.Page (    Page.java:161) - Wait for the element {} [[ChromeDriver: chrome on windows (f9ded14700d0e790facb4602715b2a7c)] -> css selector: #menu2 .hdrBillAmount] to be visible on the page for duration of {} 120
+18:11:28.270 INFO  driver.Page (    Page.java:257) - Waiting for element to be visible for 120 seconds.
+18:11:28.297 INFO  driver.Page (    Page.java:260) - Element is visible on the page.
+18:11:28.374 INFO  driver.Page (    Page.java:164) - Text got from the locator {} [[ChromeDriver: chrome on windows (f9ded14700d0e790facb4602715b2a7c)] -> css selector: #menu2 .hdrBillAmount] is AMOUNT
+18:11:28.421 INFO  driver.Page (    Page.java:161) - Wait for the element {} [[ChromeDriver: chrome on windows (f9ded14700d0e790facb4602715b2a7c)] -> css selector: .dataTables_info] to be visible on the page for duration of {} 120
+18:11:28.421 INFO  driver.Page (    Page.java:257) - Waiting for element to be visible for 120 seconds.
+18:11:28.447 INFO  driver.Page (    Page.java:260) - Element is visible on the page.
+18:11:28.482 INFO  driver.Page (    Page.java:164) - Text got from the locator {} [[ChromeDriver: chrome on windows (f9ded14700d0e790facb4602715b2a7c)] -> css selector: .dataTables_info] is Showing page 1 of 7
+18:11:28.511 INFO  runner.TestRunner (TestRunner.java:84) - verifyBillHistoryUIAndObjects is Finished.
+18:11:28.511 INFO  driver.DriverFactory (DriverFactory.java:125) - Clearing all the cookies.
+18:11:32.979 INFO  driver.WebDriverFactory (WebDriverFactory.java:192) - Setting up the browser window to its max.
+18:11:33.198 INFO  driver.WebDriverFactory (WebDriverFactory.java:181) - Initializing the implicit wait timeout for {} 10
+18:11:33.204 INFO  driver.WebDriverFactory (WebDriverFactory.java:184) - Initializing the page load timeout.
+18:11:33.208 INFO  driver.DriverFactory (DriverFactory.java:125) - Clearing all the cookies.
+18:11:33.223 INFO  driver.DriverFactory (DriverFactory.java:62) - Open the url {} https://pwccx.smartcmobile.com/Portal/default.aspx using the selenium get() method.
+18:12:17.672 INFO  scp.NotificationTests (NotificationTests.java:40) - Test Case execution - To verify Different elements in Notification page
+18:12:19.198 INFO  scp.LoginPage (LoginPage.java:106) - Populating username {} :scmuser
+18:12:19.223 INFO  driver.Page (    Page.java:129) - Wait for element {} [[ChromeDriver: chrome on windows (b027a149160882019ab2e9b2f015b901)] -> css selector: [id='txtLogin']] to be present in the DOM for duration of {} 120
+18:12:19.223 INFO  driver.Page (    Page.java:257) - Waiting for element to be visible for 120 seconds.
+18:12:19.245 INFO  driver.Page (    Page.java:260) - Element is visible on the page.
+18:12:19.259 INFO  driver.Page (    Page.java:131) - Clearing the element {} [[ChromeDriver: chrome on windows (b027a149160882019ab2e9b2f015b901)] -> css selector: [id='txtLogin']] before sending the keys.
+18:12:19.352 INFO  driver.Page (    Page.java:133) - Sending the following keys {} scmuser to the element {} [[ChromeDriver: chrome on windows (b027a149160882019ab2e9b2f015b901)] -> css selector: [id='txtLogin']]
+18:12:19.450 INFO  scp.LoginPage (LoginPage.java:108) - Username populated successfully.
+18:12:19.450 INFO  scp.LoginPage (LoginPage.java:150) - Populating password {} :scmuser@2022
+18:12:19.456 INFO  driver.Page (    Page.java:129) - Wait for element {} [[ChromeDriver: chrome on windows (b027a149160882019ab2e9b2f015b901)] -> css selector: [id='txtpwd']] to be present in the DOM for duration of {} 120
+18:12:19.456 INFO  driver.Page (    Page.java:257) - Waiting for element to be visible for 120 seconds.
+18:12:19.505 INFO  driver.Page (    Page.java:260) - Element is visible on the page.
+18:12:19.528 INFO  driver.Page (    Page.java:131) - Clearing the element {} [[ChromeDriver: chrome on windows (b027a149160882019ab2e9b2f015b901)] -> css selector: [id='txtpwd']] before sending the keys.
+18:12:19.659 INFO  driver.Page (    Page.java:133) - Sending the following keys {} scmuser@2022 to the element {} [[ChromeDriver: chrome on windows (b027a149160882019ab2e9b2f015b901)] -> css selector: [id='txtpwd']]
+18:12:19.807 INFO  scp.LoginPage (LoginPage.java:152) - Password populated successfully.
+18:12:19.807 INFO  scp.LoginPage (LoginPage.java:186) - Clicking the sign in button.
+18:12:19.807 INFO  driver.Page (    Page.java:58) - Preparing for element to click.
+18:12:19.807 INFO  driver.Page (    Page.java:232) - Waiting for element to be clickable for 120 seconds.
+18:12:19.875 INFO  driver.Page (    Page.java:235) - Element is clickable now.
+18:12:19.977 INFO  driver.Page (    Page.java:61) - Element is clicked successfully.
+18:12:19.977 INFO  scp.LoginPage (LoginPage.java:188) - Sign in button clicked successfully.
+18:12:19.977 INFO  scp.HomePage (HomePage.java:120) - Wait for page loader visibility.
+18:12:19.977 INFO  driver.Page (    Page.java:257) - Waiting for element to be visible for 120 seconds.
+18:12:25.303 INFO  driver.Page (    Page.java:260) - Element is visible on the page.
+18:12:25.303 INFO  scp.HomePage (HomePage.java:122) - Wait for page loader invisibility.
+18:12:25.303 INFO  driver.Page (    Page.java:271) - Waiting for element to be invisible for 120 seconds.
+18:12:54.513 INFO  driver.Page (    Page.java:274) - Element is invisible from the page.
+18:12:54.519 INFO  scp.DashboardSteps (DashboardSteps.java:799) - Checking that the current page is dashboard page.
+18:12:54.520 INFO  driver.Page (    Page.java:39) - Fetching the current URL.
+18:12:54.533 INFO  driver.Page (    Page.java:40) - The Current URL is: https://pwccx.smartcmobile.com/Portal/Dashboard.aspx
+18:12:54.540 INFO  driver.Page (    Page.java:45) - Fetching the current title.
+18:12:54.564 INFO  driver.Page (    Page.java:46) - The Current Title is: Dashboard
+18:12:54.573 INFO  scp.DashboardSteps (DashboardSteps.java:802) - The current page is dashboard page {}: true
+18:12:54.663 INFO  driver.Page (    Page.java:58) - Preparing for element to click.
+18:12:54.666 INFO  driver.Page (    Page.java:232) - Waiting for element to be clickable for 120 seconds.
+18:12:54.795 INFO  driver.Page (    Page.java:235) - Element is clickable now.
+18:13:22.177 INFO  driver.Page (    Page.java:61) - Element is clicked successfully.
+18:13:22.178 INFO  pageobjects.NotificationsPage (NotificationsPage.java:25) - Notofication button has been Successfully clicked
+18:13:27.190 INFO  scp.NotificationSteps (NotificationSteps.java:121) - Checking that the current page is Notification Page
+18:13:27.190 INFO  driver.Page (    Page.java:39) - Fetching the current URL.
+18:13:27.199 INFO  driver.Page (    Page.java:40) - The Current URL is: https://pwccx.smartcmobile.com/Portal/Notification-inbox.aspx
+18:13:27.204 INFO  driver.Page (    Page.java:45) - Fetching the current title.
+18:13:27.212 INFO  driver.Page (    Page.java:46) - The Current Title is: Notifications
+18:13:27.222 INFO  scp.NotificationSteps (NotificationSteps.java:124) - The current page is Notification Page {}: true
+18:13:27.243 INFO  driver.Page (    Page.java:161) - Wait for the element {} [[ChromeDriver: chrome on windows (b027a149160882019ab2e9b2f015b901)] -> css selector: #lblInbox] to be visible on the page for duration of {} 120
+18:13:27.243 INFO  driver.Page (    Page.java:257) - Waiting for element to be visible for 120 seconds.
+18:13:27.271 INFO  driver.Page (    Page.java:260) - Element is visible on the page.
+18:13:27.311 INFO  driver.Page (    Page.java:164) - Text got from the locator {} [[ChromeDriver: chrome on windows (b027a149160882019ab2e9b2f015b901)] -> css selector: #lblInbox] is 85
+18:13:27.347 INFO  driver.Page (    Page.java:161) - Wait for the element {} [[ChromeDriver: chrome on windows (b027a149160882019ab2e9b2f015b901)] -> css selector: #notificationBadgeCount] to be visible on the page for duration of {} 120
+18:13:27.347 INFO  driver.Page (    Page.java:257) - Waiting for element to be visible for 120 seconds.
+18:13:27.373 INFO  driver.Page (    Page.java:260) - Element is visible on the page.
+18:13:27.404 INFO  driver.Page (    Page.java:164) - Text got from the locator {} [[ChromeDriver: chrome on windows (b027a149160882019ab2e9b2f015b901)] -> css selector: #notificationBadgeCount] is 85
+18:13:27.506 INFO  pageobjects.NotificationsPage (NotificationsPage.java:32) - Page Title visibility status : true
+18:13:27.539 INFO  driver.Page (    Page.java:305) - Element {} : [[ChromeDriver: chrome on windows (b027a149160882019ab2e9b2f015b901)] -> css selector: h1#PageTitle] is visible on the page.
+18:13:27.578 INFO  pageobjects.NotificationsPage (NotificationsPage.java:59) - Star visibility status : true
+18:13:27.622 INFO  driver.Page (    Page.java:305) - Element {} : [[ChromeDriver: chrome on windows (b027a149160882019ab2e9b2f015b901)] -> css selector: [id='btnSave']] is visible on the page.
+18:13:27.656 INFO  pageobjects.NotificationsPage (NotificationsPage.java:77) - Delete visibility status : true
+18:13:27.693 INFO  driver.Page (    Page.java:305) - Element {} : [[ChromeDriver: chrome on windows (b027a149160882019ab2e9b2f015b901)] -> css selector: section >.btn-group [data-original-title = 'Delete']] is visible on the page.
+18:13:27.725 INFO  pageobjects.NotificationsPage (NotificationsPage.java:95) - Refresh visibility status : true
+18:13:27.786 INFO  driver.Page (    Page.java:305) - Element {} : [[ChromeDriver: chrome on windows (b027a149160882019ab2e9b2f015b901)] -> css selector: section >.btn-group [data-original-title = 'Refresh']] is visible on the page.
+18:13:27.832 INFO  pageobjects.NotificationsPage (NotificationsPage.java:113) - Dro pdown List visibility status : true
+18:13:27.884 INFO  driver.Page (    Page.java:305) - Element {} : [[ChromeDriver: chrome on windows (b027a149160882019ab2e9b2f015b901)] -> xpath: //label[contains(text(),'Checkbox All')]] is visible on the page.
+18:13:27.936 INFO  pageobjects.NotificationsPage (NotificationsPage.java:176) - Inbox Side Folder visibility status : true
+18:13:27.972 INFO  driver.Page (    Page.java:305) - Element {} : [[ChromeDriver: chrome on windows (b027a149160882019ab2e9b2f015b901)] -> css selector: .nav_left li[id = 'inbox']] is visible on the page.
+18:13:28.013 INFO  pageobjects.NotificationsPage (NotificationsPage.java:268) - Star visibility status : true
+18:13:28.051 INFO  driver.Page (    Page.java:305) - Element {} : [[ChromeDriver: chrome on windows (b027a149160882019ab2e9b2f015b901)] -> css selector: .nav_left li[id = 'sentitem']] is visible on the page.
+18:13:28.052 INFO  pageobjects.NotificationsPage (NotificationsPage.java:296) - Checking the Visibility of Saved Link on Right Side .
+18:13:28.097 INFO  driver.Page (    Page.java:305) - Element {} : [[ChromeDriver: chrome on windows (b027a149160882019ab2e9b2f015b901)] -> css selector: .nav_left li[id = 'saved']] is visible on the page.
+18:13:28.097 INFO  pageobjects.NotificationsPage (NotificationsPage.java:341) - Checking the Visibility of Trash Side Folder Link on Right Side .
+18:13:28.137 INFO  driver.Page (    Page.java:305) - Element {} : [[ChromeDriver: chrome on windows (b027a149160882019ab2e9b2f015b901)] -> css selector: .nav_left li[id = 'trash'] span] is visible on the page.
+18:13:28.137 INFO  pageobjects.NotificationsPage (NotificationsPage.java:354) - Checking the Visibility of Trash Side Folder Link on Right Side .
+18:13:28.221 INFO  driver.Page (    Page.java:305) - Element {} : [[ChromeDriver: chrome on windows (b027a149160882019ab2e9b2f015b901)] -> css selector: .nav_left li[id = 'trash'] span] is visible on the page.
+18:13:28.222 INFO  pageobjects.NotificationsPage (NotificationsPage.java:820) - Checking the Visibility of Categories Notification Drop Down
+18:13:28.265 INFO  driver.Page (    Page.java:305) - Element {} : [[ChromeDriver: chrome on windows (b027a149160882019ab2e9b2f015b901)] -> css selector: .multiselect.dropdown-toggle.btn.btn-default] is visible on the page.
+18:13:28.291 INFO  pageobjects.NotificationsPage (NotificationsPage.java:176) - Inbox Side Folder visibility status : true
+18:13:28.333 INFO  driver.Page (    Page.java:305) - Element {} : [[ChromeDriver: chrome on windows (b027a149160882019ab2e9b2f015b901)] -> css selector: .nav_left li[id = 'inbox']] is visible on the page.
+18:13:28.362 INFO  pageobjects.NotificationsPage (NotificationsPage.java:64) - Star visibility status : true
+18:13:28.418 INFO  pageobjects.NotificationsPage (NotificationsPage.java:82) - Delete visibility status : true
+18:13:28.477 INFO  pageobjects.NotificationsPage (NotificationsPage.java:100) - Refresh visibility status : true
+18:13:28.531 INFO  pageobjects.NotificationsPage (NotificationsPage.java:118) - Dro pdown List visibility status : true
+18:13:28.584 INFO  pageobjects.NotificationsPage (NotificationsPage.java:268) - Star visibility status : true
+18:13:28.622 INFO  driver.Page (    Page.java:305) - Element {} : [[ChromeDriver: chrome on windows (b027a149160882019ab2e9b2f015b901)] -> css selector: .nav_left li[id = 'sentitem']] is visible on the page.
+18:13:28.647 INFO  pageobjects.NotificationsPage (NotificationsPage.java:268) - Star visibility status : true
+18:13:28.683 INFO  driver.Page (    Page.java:305) - Element {} : [[ChromeDriver: chrome on windows (b027a149160882019ab2e9b2f015b901)] -> css selector: .nav_left li[id = 'sentitem']] is visible on the page.
+18:13:28.683 INFO  pageobjects.NotificationsPage (NotificationsPage.java:286) - Fetching the lbl No Msg Available Error message
+18:13:28.705 INFO  driver.Page (    Page.java:161) - Wait for the element {} [[ChromeDriver: chrome on windows (b027a149160882019ab2e9b2f015b901)] -> css selector: .nav_left li[id = 'sentitem'] span] to be visible on the page for duration of {} 120
+18:13:28.705 INFO  driver.Page (    Page.java:257) - Waiting for element to be visible for 120 seconds.
+18:13:28.730 INFO  driver.Page (    Page.java:260) - Element is visible on the page.
+18:13:28.821 INFO  driver.Page (    Page.java:164) - Text got from the locator {} [[ChromeDriver: chrome on windows (b027a149160882019ab2e9b2f015b901)] -> css selector: .nav_left li[id = 'sentitem'] span] is Sent
+18:13:28.851 INFO  pageobjects.NotificationsPage (NotificationsPage.java:288) - lbl Available message {}: Sent
+18:13:28.856 INFO  pageobjects.NotificationsPage (NotificationsPage.java:341) - Checking the Visibility of Trash Side Folder Link on Right Side .
+18:13:28.902 INFO  driver.Page (    Page.java:305) - Element {} : [[ChromeDriver: chrome on windows (b027a149160882019ab2e9b2f015b901)] -> css selector: .nav_left li[id = 'trash'] span] is visible on the page.
+18:13:28.902 INFO  pageobjects.NotificationsPage (NotificationsPage.java:341) - Checking the Visibility of Trash Side Folder Link on Right Side .
+18:13:28.938 INFO  driver.Page (    Page.java:305) - Element {} : [[ChromeDriver: chrome on windows (b027a149160882019ab2e9b2f015b901)] -> css selector: .nav_left li[id = 'trash'] span] is visible on the page.
+18:13:28.938 INFO  pageobjects.NotificationsPage (NotificationsPage.java:334) - Fetching the lbl TrashSide Folder
+18:13:28.950 INFO  driver.Page (    Page.java:161) - Wait for the element {} [[ChromeDriver: chrome on windows (b027a149160882019ab2e9b2f015b901)] -> css selector: .nav_left li[id = 'trash'] span] to be visible on the page for duration of {} 120
+18:13:28.950 INFO  driver.Page (    Page.java:257) - Waiting for element to be visible for 120 seconds.
+18:13:28.973 INFO  driver.Page (    Page.java:260) - Element is visible on the page.
+18:13:29.005 INFO  driver.Page (    Page.java:164) - Text got from the locator {} [[ChromeDriver: chrome on windows (b027a149160882019ab2e9b2f015b901)] -> css selector: .nav_left li[id = 'trash'] span] is Trash
+18:13:29.024 INFO  pageobjects.NotificationsPage (NotificationsPage.java:336) - lbl Trash Side Folder message {}: Trash
+18:13:29.025 INFO  pageobjects.NotificationsPage (NotificationsPage.java:296) - Checking the Visibility of Saved Link on Right Side .
+18:13:29.060 INFO  driver.Page (    Page.java:305) - Element {} : [[ChromeDriver: chrome on windows (b027a149160882019ab2e9b2f015b901)] -> css selector: .nav_left li[id = 'saved']] is visible on the page.
+18:13:29.060 INFO  pageobjects.NotificationsPage (NotificationsPage.java:296) - Checking the Visibility of Saved Link on Right Side .
+18:13:29.091 INFO  driver.Page (    Page.java:305) - Element {} : [[ChromeDriver: chrome on windows (b027a149160882019ab2e9b2f015b901)] -> css selector: .nav_left li[id = 'saved']] is visible on the page.
+18:13:29.091 INFO  pageobjects.NotificationsPage (NotificationsPage.java:306) - Fetching the lbl save Folder
+18:13:29.102 INFO  driver.Page (    Page.java:161) - Wait for the element {} [[ChromeDriver: chrome on windows (b027a149160882019ab2e9b2f015b901)] -> css selector: .nav_left li[id = 'saved']] to be visible on the page for duration of {} 120
+18:13:29.103 INFO  driver.Page (    Page.java:257) - Waiting for element to be visible for 120 seconds.
+18:13:29.125 INFO  driver.Page (    Page.java:260) - Element is visible on the page.
+18:13:29.155 INFO  driver.Page (    Page.java:164) - Text got from the locator {} [[ChromeDriver: chrome on windows (b027a149160882019ab2e9b2f015b901)] -> css selector: .nav_left li[id = 'saved']] is Saved
+18:13:29.185 INFO  pageobjects.NotificationsPage (NotificationsPage.java:308) - lbl save Side Folder message {}: Saved
+18:13:29.185 INFO  pageobjects.NotificationsPage (NotificationsPage.java:296) - Checking the Visibility of Saved Link on Right Side .
+18:13:29.231 INFO  driver.Page (    Page.java:305) - Element {} : [[ChromeDriver: chrome on windows (b027a149160882019ab2e9b2f015b901)] -> css selector: .nav_left li[id = 'saved']] is visible on the page.
+18:13:29.231 INFO  pageobjects.NotificationsPage (NotificationsPage.java:296) - Checking the Visibility of Saved Link on Right Side .
+18:13:29.268 INFO  driver.Page (    Page.java:305) - Element {} : [[ChromeDriver: chrome on windows (b027a149160882019ab2e9b2f015b901)] -> css selector: .nav_left li[id = 'saved']] is visible on the page.
+18:13:29.268 INFO  pageobjects.NotificationsPage (NotificationsPage.java:367) - Fetching the All Mail Folder
+18:13:29.288 INFO  driver.Page (    Page.java:161) - Wait for the element {} [[ChromeDriver: chrome on windows (b027a149160882019ab2e9b2f015b901)] -> css selector: .nav_left li[id = 'allmail'] span] to be visible on the page for duration of {} 120
+18:13:29.288 INFO  driver.Page (    Page.java:257) - Waiting for element to be visible for 120 seconds.
+18:13:29.313 INFO  driver.Page (    Page.java:260) - Element is visible on the page.
+18:13:29.351 INFO  driver.Page (    Page.java:164) - Text got from the locator {} [[ChromeDriver: chrome on windows (b027a149160882019ab2e9b2f015b901)] -> css selector: .nav_left li[id = 'allmail'] span] is All Mail
+18:13:29.378 INFO  pageobjects.NotificationsPage (NotificationsPage.java:369) - lbl All Mail Folder message {}: All Mail
+18:13:29.378 INFO  scp.NotificationSteps (NotificationSteps.java:98) - To verify Navigation, UI And Objects of Notifications page
+18:13:29.379 INFO  driver.Page (    Page.java:58) - Preparing for element to click.
+18:13:29.379 INFO  driver.Page (    Page.java:232) - Waiting for element to be clickable for 120 seconds.
+18:13:29.442 INFO  driver.Page (    Page.java:235) - Element is clickable now.
+18:13:29.547 INFO  driver.Page (    Page.java:61) - Element is clicked successfully.
+18:13:29.547 INFO  pageobjects.NotificationsPage (NotificationsPage.java:517) - Notification clicked successfully.
+18:13:34.666 INFO  driver.Page (    Page.java:305) - Element {} : [[ChromeDriver: chrome on windows (b027a149160882019ab2e9b2f015b901)] -> css selector: .row .pull-right .fa-trash-o] is visible on the page.
+18:13:34.767 INFO  driver.Page (    Page.java:305) - Element {} : [[ChromeDriver: chrome on windows (b027a149160882019ab2e9b2f015b901)] -> css selector: button.btnsave] is visible on the page.
+18:13:34.871 INFO  driver.Page (    Page.java:305) - Element {} : [[ChromeDriver: chrome on windows (b027a149160882019ab2e9b2f015b901)] -> css selector: #btnBack] is visible on the page.
+18:13:34.924 INFO  driver.Page (    Page.java:305) - Element {} : [[ChromeDriver: chrome on windows (b027a149160882019ab2e9b2f015b901)] -> css selector: #subj>span:nth-child(1)] is visible on the page.
+18:13:34.976 INFO  driver.Page (    Page.java:305) - Element {} : [[ChromeDriver: chrome on windows (b027a149160882019ab2e9b2f015b901)] -> css selector: #subj span:nth-child(3)] is visible on the page.
+18:13:35.056 INFO  driver.Page (    Page.java:305) - Element {} : [[ChromeDriver: chrome on windows (b027a149160882019ab2e9b2f015b901)] -> css selector: #subj span:nth-child(4)] is visible on the page.
+18:13:35.112 INFO  driver.Page (    Page.java:305) - Element {} : [[ChromeDriver: chrome on windows (b027a149160882019ab2e9b2f015b901)] -> css selector: p.details-sender>strong] is visible on the page.
+18:13:35.154 INFO  driver.Page (    Page.java:305) - Element {} : [[ChromeDriver: chrome on windows (b027a149160882019ab2e9b2f015b901)] -> css selector: p.details-sender>span] is visible on the page.
+18:13:35.211 INFO  driver.Page (    Page.java:305) - Element {} : [[ChromeDriver: chrome on windows (b027a149160882019ab2e9b2f015b901)] -> css selector: p.date] is visible on the page.
+18:13:35.262 INFO  driver.Page (    Page.java:305) - Element {} : [[ChromeDriver: chrome on windows (b027a149160882019ab2e9b2f015b901)] -> css selector: .view-mail] is visible on the page.
+18:13:35.262 INFO  scp.NotificationTests (NotificationTests.java:47) - Test Case execution for - verifyNotificationsPageNavigationAndUI - is Completed.
+18:13:35.264 INFO  runner.TestRunner (TestRunner.java:84) - verifyNotificationsPageNavigationAndUI is Finished.
+18:13:35.264 INFO  driver.DriverFactory (DriverFactory.java:125) - Clearing all the cookies.
+18:13:39.161 INFO  driver.WebDriverFactory (WebDriverFactory.java:192) - Setting up the browser window to its max.
+18:13:39.296 INFO  driver.WebDriverFactory (WebDriverFactory.java:181) - Initializing the implicit wait timeout for {} 10
+18:13:39.298 INFO  driver.WebDriverFactory (WebDriverFactory.java:184) - Initializing the page load timeout.
+18:13:39.304 INFO  driver.DriverFactory (DriverFactory.java:125) - Clearing all the cookies.
+18:13:39.314 INFO  driver.DriverFactory (DriverFactory.java:62) - Open the url {} https://pwccx.smartcmobile.com/Portal/default.aspx using the selenium get() method.
+18:13:48.884 INFO  scp.NotificationTests (NotificationTests.java:131) - Test Case execution - To verify Reply Notifications 
+18:14:19.266 INFO  scp.LoginPage (LoginPage.java:106) - Populating username {} :scmuser
+18:14:19.286 INFO  driver.Page (    Page.java:129) - Wait for element {} [[ChromeDriver: chrome on windows (f56056a5979cf30650ba1417c57d8255)] -> css selector: [id='txtLogin']] to be present in the DOM for duration of {} 120
+18:14:19.286 INFO  driver.Page (    Page.java:257) - Waiting for element to be visible for 120 seconds.
+18:14:19.323 INFO  driver.Page (    Page.java:260) - Element is visible on the page.
+18:14:19.335 INFO  driver.Page (    Page.java:131) - Clearing the element {} [[ChromeDriver: chrome on windows (f56056a5979cf30650ba1417c57d8255)] -> css selector: [id='txtLogin']] before sending the keys.
+18:14:19.399 INFO  driver.Page (    Page.java:133) - Sending the following keys {} scmuser to the element {} [[ChromeDriver: chrome on windows (f56056a5979cf30650ba1417c57d8255)] -> css selector: [id='txtLogin']]
+18:14:19.468 INFO  scp.LoginPage (LoginPage.java:108) - Username populated successfully.
+18:14:19.469 INFO  scp.LoginPage (LoginPage.java:150) - Populating password {} :scmuser@2022
+18:14:19.484 INFO  driver.Page (    Page.java:129) - Wait for element {} [[ChromeDriver: chrome on windows (f56056a5979cf30650ba1417c57d8255)] -> css selector: [id='txtpwd']] to be present in the DOM for duration of {} 120
+18:14:19.484 INFO  driver.Page (    Page.java:257) - Waiting for element to be visible for 120 seconds.
+18:14:19.512 INFO  driver.Page (    Page.java:260) - Element is visible on the page.
+18:14:19.523 INFO  driver.Page (    Page.java:131) - Clearing the element {} [[ChromeDriver: chrome on windows (f56056a5979cf30650ba1417c57d8255)] -> css selector: [id='txtpwd']] before sending the keys.
+18:14:19.581 INFO  driver.Page (    Page.java:133) - Sending the following keys {} scmuser@2022 to the element {} [[ChromeDriver: chrome on windows (f56056a5979cf30650ba1417c57d8255)] -> css selector: [id='txtpwd']]
+18:14:19.679 INFO  scp.LoginPage (LoginPage.java:152) - Password populated successfully.
+18:14:19.679 INFO  scp.LoginPage (LoginPage.java:186) - Clicking the sign in button.
+18:14:19.683 INFO  driver.Page (    Page.java:58) - Preparing for element to click.
+18:14:19.683 INFO  driver.Page (    Page.java:232) - Waiting for element to be clickable for 120 seconds.
+18:14:19.736 INFO  driver.Page (    Page.java:235) - Element is clickable now.
+18:14:20.564 INFO  driver.Page (    Page.java:61) - Element is clicked successfully.
+18:14:20.564 INFO  scp.LoginPage (LoginPage.java:188) - Sign in button clicked successfully.
+18:14:20.564 INFO  scp.HomePage (HomePage.java:120) - Wait for page loader visibility.
+18:14:20.564 INFO  driver.Page (    Page.java:257) - Waiting for element to be visible for 120 seconds.
+18:16:21.297 INFO  runner.TestRunner (TestRunner.java:84) - verifyReplyNotifications is Finished.
+18:16:21.297 INFO  driver.DriverFactory (DriverFactory.java:125) - Clearing all the cookies.
+18:16:43.520 INFO  driver.WebDriverFactory (WebDriverFactory.java:192) - Setting up the browser window to its max.
+18:16:44.048 INFO  driver.WebDriverFactory (WebDriverFactory.java:181) - Initializing the implicit wait timeout for {} 10
+18:16:44.066 INFO  driver.WebDriverFactory (WebDriverFactory.java:184) - Initializing the page load timeout.
+18:16:44.081 INFO  driver.DriverFactory (DriverFactory.java:125) - Clearing all the cookies.
+18:16:44.199 INFO  driver.DriverFactory (DriverFactory.java:62) - Open the url {} https://pwccx.smartcmobile.com/Portal/default.aspx using the selenium get() method.
+18:17:52.977 INFO  scp.LoginPage (LoginPage.java:106) - Populating username {} :scmuser
+18:17:53.022 INFO  driver.Page (    Page.java:129) - Wait for element {} [[ChromeDriver: chrome on windows (0a912b62cfd5329146650dfdf5ff1419)] -> css selector: [id='txtLogin']] to be present in the DOM for duration of {} 120
+18:17:53.022 INFO  driver.Page (    Page.java:257) - Waiting for element to be visible for 120 seconds.
+18:17:53.091 INFO  driver.Page (    Page.java:260) - Element is visible on the page.
+18:17:53.114 INFO  driver.Page (    Page.java:131) - Clearing the element {} [[ChromeDriver: chrome on windows (0a912b62cfd5329146650dfdf5ff1419)] -> css selector: [id='txtLogin']] before sending the keys.
+18:17:53.427 INFO  driver.Page (    Page.java:133) - Sending the following keys {} scmuser to the element {} [[ChromeDriver: chrome on windows (0a912b62cfd5329146650dfdf5ff1419)] -> css selector: [id='txtLogin']]
+18:17:53.735 INFO  scp.LoginPage (LoginPage.java:108) - Username populated successfully.
+18:17:53.736 INFO  scp.LoginPage (LoginPage.java:150) - Populating password {} :scmuser@2022
+18:17:53.832 INFO  driver.Page (    Page.java:129) - Wait for element {} [[ChromeDriver: chrome on windows (0a912b62cfd5329146650dfdf5ff1419)] -> css selector: [id='txtpwd']] to be present in the DOM for duration of {} 120
+18:17:53.833 INFO  driver.Page (    Page.java:257) - Waiting for element to be visible for 120 seconds.
+18:17:53.900 INFO  driver.Page (    Page.java:260) - Element is visible on the page.
+18:17:53.922 INFO  driver.Page (    Page.java:131) - Clearing the element {} [[ChromeDriver: chrome on windows (0a912b62cfd5329146650dfdf5ff1419)] -> css selector: [id='txtpwd']] before sending the keys.
+18:17:54.150 INFO  driver.Page (    Page.java:133) - Sending the following keys {} scmuser@2022 to the element {} [[ChromeDriver: chrome on windows (0a912b62cfd5329146650dfdf5ff1419)] -> css selector: [id='txtpwd']]
+18:17:55.035 INFO  scp.LoginPage (LoginPage.java:152) - Password populated successfully.
+18:17:55.035 INFO  scp.LoginPage (LoginPage.java:186) - Clicking the sign in button.
+18:17:55.035 INFO  driver.Page (    Page.java:58) - Preparing for element to click.
+18:17:55.035 INFO  driver.Page (    Page.java:232) - Waiting for element to be clickable for 120 seconds.
+18:17:55.133 INFO  driver.Page (    Page.java:235) - Element is clickable now.
+18:17:55.215 INFO  driver.Page (    Page.java:61) - Element is clicked successfully.
+18:17:55.215 INFO  scp.LoginPage (LoginPage.java:188) - Sign in button clicked successfully.
+18:17:55.215 INFO  scp.HomePage (HomePage.java:120) - Wait for page loader visibility.
+18:17:55.216 INFO  driver.Page (    Page.java:257) - Waiting for element to be visible for 120 seconds.
+18:17:57.536 INFO  driver.Page (    Page.java:260) - Element is visible on the page.
+18:17:57.536 INFO  scp.HomePage (HomePage.java:122) - Wait for page loader invisibility.
+18:17:57.536 INFO  driver.Page (    Page.java:271) - Waiting for element to be invisible for 120 seconds.
+18:18:45.093 INFO  driver.Page (    Page.java:274) - Element is invisible from the page.
+18:18:45.097 INFO  scp.DashboardSteps (DashboardSteps.java:799) - Checking that the current page is dashboard page.
+18:18:45.097 INFO  driver.Page (    Page.java:39) - Fetching the current URL.
+18:18:45.242 INFO  driver.Page (    Page.java:40) - The Current URL is: https://pwccx.smartcmobile.com/Portal/Dashboard.aspx
+18:18:45.264 INFO  driver.Page (    Page.java:45) - Fetching the current title.
+18:18:45.280 INFO  driver.Page (    Page.java:46) - The Current Title is: Dashboard
+18:18:45.290 INFO  scp.DashboardSteps (DashboardSteps.java:802) - The current page is dashboard page {}: true
+18:18:45.291 INFO  scp.NotificationPreferenceSteps (NotificationPreferenceSteps.java:218) -  To Verify that User is not able to add same type of notification channels for a particular module
+18:18:45.291 INFO  scp.NotificationPreferenceSteps (NotificationPreferenceSteps.java:219) - To verify the redirection on Notification Preference page
+18:18:45.291 INFO  scp.HomeSteps (HomeSteps.java:68) - Navigating to the Notification Preferences page.
+18:18:48.293 INFO  driver.Page (    Page.java:58) - Preparing for element to click.
+18:18:48.296 INFO  driver.Page (    Page.java:232) - Waiting for element to be clickable for 120 seconds.
+18:18:48.505 INFO  driver.Page (    Page.java:235) - Element is clickable now.
+18:18:48.889 INFO  driver.Page (    Page.java:61) - Element is clicked successfully.
+18:18:48.890 INFO  scp.HomePage (HomePage.java:244) - My account link clicked successfully.
+18:18:51.906 INFO  driver.Page (    Page.java:58) - Preparing for element to click.
+18:18:51.913 INFO  driver.Page (    Page.java:232) - Waiting for element to be clickable for 120 seconds.
+18:18:52.035 INFO  driver.Page (    Page.java:235) - Element is clickable now.
+18:19:27.836 INFO  driver.Page (    Page.java:61) - Element is clicked successfully.
+18:19:27.836 INFO  scp.HomePage (HomePage.java:280) - My account Notification Preference info link clicked successfully.
+18:19:29.849 INFO  scp.HomeSteps (HomeSteps.java:75) - Navigated to the Notification Preferences page.
+18:19:29.853 INFO  scp.NotificationPreferenceSteps (NotificationPreferenceSteps.java:34) - Checking that the current page is Notification preference page.
+18:19:29.855 INFO  driver.Page (    Page.java:39) - Fetching the current URL.
+18:19:29.885 INFO  driver.Page (    Page.java:40) - The Current URL is: https://pwccx.smartcmobile.com/Portal/NotificationPrefrence.aspx
+18:19:29.902 INFO  driver.Page (    Page.java:45) - Fetching the current title.
+18:19:29.934 INFO  driver.Page (    Page.java:46) - The Current Title is: Notification Preferences
+18:19:30.055 INFO  scp.NotificationPreferenceSteps (NotificationPreferenceSteps.java:37) - The current page is Notification preference page {}: true
+18:19:30.055 INFO  pageobjects.NotificationPreferencePage (NotificationPreferencePage.java:29) - Checking the visibility of Notification leval on the page.
+18:19:30.271 INFO  driver.Page (    Page.java:305) - Element {} : [[ChromeDriver: chrome on windows (0a912b62cfd5329146650dfdf5ff1419)] -> css selector: .MuiGrid-root.pageheading-box #PageTitle] is visible on the page.
+18:19:30.272 INFO  pageobjects.NotificationPreferencePage (NotificationPreferencePage.java:30) - Label Notification visibility status : true
+18:19:30.352 INFO  driver.Page (    Page.java:305) - Element {} : [[ChromeDriver: chrome on windows (0a912b62cfd5329146650dfdf5ff1419)] -> css selector: .MuiGrid-root.pageheading-box #PageTitle] is visible on the page.
+18:19:30.574 INFO  pageobjects.NotificationPreferencePage (NotificationPreferencePage.java:836) - Fetching the Icon Budget Status.
+18:19:30.599 INFO  driver.Page (    Page.java:161) - Wait for the element {} [[ChromeDriver: chrome on windows (0a912b62cfd5329146650dfdf5ff1419)] -> css selector: span#ContentPlaceHolder1_ContentPlaceHolderBody_SpanBudgetStatus] to be visible on the page for duration of {} 120
+18:19:30.599 INFO  driver.Page (    Page.java:257) - Waiting for element to be visible for 120 seconds.
+18:19:30.673 INFO  driver.Page (    Page.java:260) - Element is visible on the page.
+18:19:30.748 INFO  driver.Page (    Page.java:164) - Text got from the locator {} [[ChromeDriver: chrome on windows (0a912b62cfd5329146650dfdf5ff1419)] -> css selector: span#ContentPlaceHolder1_ContentPlaceHolderBody_SpanBudgetStatus] is Off
+18:19:30.982 INFO  driver.Page (    Page.java:107) - Clicking element {} [[ChromeDriver: chrome on windows (0a912b62cfd5329146650dfdf5ff1419)] -> css selector: div#ContentPlaceHolder1_ContentPlaceHolderBody_BudgetNotification  a h5]using Javascript executor.
+18:19:30.983 INFO  driver.Page (    Page.java:232) - Waiting for element to be clickable for 120 seconds.
+18:19:32.159 INFO  driver.Page (    Page.java:235) - Element is clickable now.
+18:19:32.657 INFO  driver.Page (    Page.java:111) - Element {} [[ChromeDriver: chrome on windows (0a912b62cfd5329146650dfdf5ff1419)] -> css selector: div#ContentPlaceHolder1_ContentPlaceHolderBody_BudgetNotification  a h5] clicked successfully.
+18:19:32.658 INFO  pageobjects.NotificationPreferencePage (NotificationPreferencePage.java:822) - Label Budget Text clicked successfully.
+18:19:32.752 INFO  driver.Page (    Page.java:387) - Selecting the option by visible text {}: Email
+18:19:32.854 INFO  driver.Page (    Page.java:389) - Selecting the given option to the web element {}: [[ChromeDriver: chrome on windows (0a912b62cfd5329146650dfdf5ff1419)] -> css selector: .Budgetddl.Budgetddl0.select_effect]
+18:19:33.139 INFO  driver.Page (    Page.java:391) - Given text is selected as the option to the given select web element.
+18:19:33.140 INFO  pageobjects.NotificationPreferencePage (NotificationPreferencePage.java:873) - lstBudgetOptions selected successfully.
+18:19:33.140 INFO  driver.Page (    Page.java:77) - Preparing for element to click.
+18:19:33.140 INFO  driver.Page (    Page.java:257) - Waiting for element to be visible for 120 seconds.
+18:19:33.206 INFO  driver.Page (    Page.java:260) - Element is visible on the page.
+18:19:33.329 INFO  driver.Page (    Page.java:232) - Waiting for element to be clickable for 120 seconds.
+18:19:33.439 INFO  driver.Page (    Page.java:235) - Element is clickable now.
+18:19:33.522 INFO  driver.Page (    Page.java:85) - Element is clicked successfully.
+18:19:33.523 INFO  pageobjects.NotificationPreferencePage (NotificationPreferencePage.java:851) - check  box budget is checked successfully.
+18:19:33.605 INFO  driver.Page (    Page.java:58) - Preparing for element to click.
+18:19:33.605 INFO  driver.Page (    Page.java:232) - Waiting for element to be clickable for 120 seconds.
+18:19:33.684 INFO  driver.Page (    Page.java:235) - Element is clickable now.
+18:19:33.953 INFO  driver.Page (    Page.java:61) - Element is clicked successfully.
+18:19:33.953 INFO  pageobjects.NotificationPreferencePage (NotificationPreferencePage.java:902) - icon Budget Add Text Button clicked successfully.
+18:19:33.953 INFO  driver.Page (    Page.java:387) - Selecting the option by visible text {}: Email
+18:19:34.107 INFO  driver.Page (    Page.java:389) - Selecting the given option to the web element {}: [[ChromeDriver: chrome on windows (0a912b62cfd5329146650dfdf5ff1419)] -> css selector: #ddlBudgetOption1]
+18:19:34.241 INFO  driver.Page (    Page.java:391) - Given text is selected as the option to the given select web element.
+18:19:34.241 INFO  pageobjects.NotificationPreferencePage (NotificationPreferencePage.java:939) - lstBudgetOption1 populated successfully.
+18:19:34.241 INFO  driver.Page (    Page.java:77) - Preparing for element to click.
+18:19:34.242 INFO  driver.Page (    Page.java:257) - Waiting for element to be visible for 120 seconds.
+18:19:34.309 INFO  driver.Page (    Page.java:260) - Element is visible on the page.
+18:19:34.356 INFO  driver.Page (    Page.java:85) - Element is clicked successfully.
+18:19:34.356 INFO  pageobjects.NotificationPreferencePage (NotificationPreferencePage.java:993) - chkbox2Budget is successfully.
+18:19:34.357 INFO  driver.Page (    Page.java:58) - Preparing for element to click.
+18:19:34.357 INFO  driver.Page (    Page.java:232) - Waiting for element to be clickable for 120 seconds.
+18:19:34.523 INFO  driver.Page (    Page.java:235) - Element is clickable now.
+18:19:34.809 INFO  driver.Page (    Page.java:61) - Element is clicked successfully.
+18:19:34.809 INFO  pageobjects.NotificationPreferencePage (NotificationPreferencePage.java:925) - Budget Save Button clicked successfully.
+18:19:34.810 INFO  pageobjects.NotificationPreferencePage (NotificationPreferencePage.java:404) - Fetching the Notification  header.
+18:19:34.869 INFO  driver.Page (    Page.java:161) - Wait for the element {} [[ChromeDriver: chrome on windows (0a912b62cfd5329146650dfdf5ff1419)] -> css selector: .toast-message] to be visible on the page for duration of {} 120
+18:19:34.869 INFO  driver.Page (    Page.java:257) - Waiting for element to be visible for 120 seconds.
+18:19:34.916 INFO  driver.Page (    Page.java:260) - Element is visible on the page.
+18:19:34.969 INFO  driver.Page (    Page.java:164) - Text got from the locator {} [[ChromeDriver: chrome on windows (0a912b62cfd5329146650dfdf5ff1419)] -> css selector: .toast-message] is One Email Id is already selected
+18:19:35.018 INFO  pageobjects.NotificationPreferencePage (NotificationPreferencePage.java:406) - Notification page header is {}: One Email Id is already selected
+18:19:38.098 INFO  driver.Page (    Page.java:107) - Clicking element {} [[ChromeDriver: chrome on windows (0a912b62cfd5329146650dfdf5ff1419)] -> css selector: button.toast-close-button]using Javascript executor.
+18:19:38.098 INFO  driver.Page (    Page.java:232) - Waiting for element to be clickable for 120 seconds.
+18:19:38.185 INFO  driver.Page (    Page.java:235) - Element is clickable now.
+18:19:38.280 INFO  driver.Page (    Page.java:111) - Element {} [[ChromeDriver: chrome on windows (0a912b62cfd5329146650dfdf5ff1419)] -> css selector: button.toast-close-button] clicked successfully.
+18:19:38.280 INFO  pageobjects.NotificationPreferencePage (NotificationPreferencePage.java:389) - btnCloseMsgOnHeader clicked successfully.
+18:19:41.321 INFO  driver.Page (    Page.java:387) - Selecting the option by visible text {}: Text
+18:19:41.416 INFO  driver.Page (    Page.java:389) - Selecting the given option to the web element {}: [[ChromeDriver: chrome on windows (0a912b62cfd5329146650dfdf5ff1419)] -> css selector: .Budgetddl.Budgetddl0.select_effect]
+18:19:41.843 INFO  driver.Page (    Page.java:391) - Given text is selected as the option to the given select web element.
+18:19:41.844 INFO  pageobjects.NotificationPreferencePage (NotificationPreferencePage.java:873) - lstBudgetOptions selected successfully.
+18:19:41.844 INFO  driver.Page (    Page.java:387) - Selecting the option by visible text {}: Text
+18:19:41.921 INFO  driver.Page (    Page.java:389) - Selecting the given option to the web element {}: [[ChromeDriver: chrome on windows (0a912b62cfd5329146650dfdf5ff1419)] -> css selector: #ddlBudgetOption1]
+18:19:43.360 INFO  driver.Page (    Page.java:391) - Given text is selected as the option to the given select web element.
+18:19:43.360 INFO  pageobjects.NotificationPreferencePage (NotificationPreferencePage.java:939) - lstBudgetOption1 populated successfully.
+18:19:43.360 INFO  driver.Page (    Page.java:58) - Preparing for element to click.
+18:19:43.360 INFO  driver.Page (    Page.java:232) - Waiting for element to be clickable for 120 seconds.
+18:19:43.406 INFO  driver.Page (    Page.java:235) - Element is clickable now.
+18:19:43.494 INFO  driver.Page (    Page.java:61) - Element is clicked successfully.
+18:19:43.495 INFO  pageobjects.NotificationPreferencePage (NotificationPreferencePage.java:925) - Budget Save Button clicked successfully.
+18:19:43.495 INFO  pageobjects.NotificationPreferencePage (NotificationPreferencePage.java:404) - Fetching the Notification  header.
+18:19:43.507 INFO  driver.Page (    Page.java:161) - Wait for the element {} [[ChromeDriver: chrome on windows (0a912b62cfd5329146650dfdf5ff1419)] -> css selector: .toast-message] to be visible on the page for duration of {} 120
+18:19:43.507 INFO  driver.Page (    Page.java:257) - Waiting for element to be visible for 120 seconds.
+18:19:43.551 INFO  driver.Page (    Page.java:260) - Element is visible on the page.
+18:19:43.771 INFO  driver.Page (    Page.java:164) - Text got from the locator {} [[ChromeDriver: chrome on windows (0a912b62cfd5329146650dfdf5ff1419)] -> css selector: .toast-message] is One Mobile Number is already selected
+18:19:43.860 INFO  pageobjects.NotificationPreferencePage (NotificationPreferencePage.java:406) - Notification page header is {}: One Mobile Number is already selected
+18:19:44.111 INFO  driver.Page (    Page.java:107) - Clicking element {} [[ChromeDriver: chrome on windows (0a912b62cfd5329146650dfdf5ff1419)] -> css selector: button.toast-close-button]using Javascript executor.
+18:19:44.111 INFO  driver.Page (    Page.java:232) - Waiting for element to be clickable for 120 seconds.
+18:19:44.287 INFO  driver.Page (    Page.java:235) - Element is clickable now.
+18:19:44.555 INFO  driver.Page (    Page.java:111) - Element {} [[ChromeDriver: chrome on windows (0a912b62cfd5329146650dfdf5ff1419)] -> css selector: button.toast-close-button] clicked successfully.
+18:19:44.555 INFO  pageobjects.NotificationPreferencePage (NotificationPreferencePage.java:389) - btnCloseMsgOnHeader clicked successfully.
+18:19:48.635 INFO  driver.Page (    Page.java:387) - Selecting the option by visible text {}: IVR
+18:19:49.962 INFO  driver.Page (    Page.java:389) - Selecting the given option to the web element {}: [[ChromeDriver: chrome on windows (0a912b62cfd5329146650dfdf5ff1419)] -> css selector: .Budgetddl.Budgetddl0.select_effect]
+18:19:53.766 INFO  driver.Page (    Page.java:391) - Given text is selected as the option to the given select web element.
+18:19:53.766 INFO  pageobjects.NotificationPreferencePage (NotificationPreferencePage.java:873) - lstBudgetOptions selected successfully.
+18:19:53.767 INFO  driver.Page (    Page.java:387) - Selecting the option by visible text {}: IVR
+18:19:54.142 INFO  driver.Page (    Page.java:389) - Selecting the given option to the web element {}: [[ChromeDriver: chrome on windows (0a912b62cfd5329146650dfdf5ff1419)] -> css selector: #ddlBudgetOption1]
+18:19:54.721 INFO  driver.Page (    Page.java:391) - Given text is selected as the option to the given select web element.
+18:19:54.721 INFO  pageobjects.NotificationPreferencePage (NotificationPreferencePage.java:939) - lstBudgetOption1 populated successfully.
+18:19:54.721 INFO  driver.Page (    Page.java:58) - Preparing for element to click.
+18:19:54.721 INFO  driver.Page (    Page.java:232) - Waiting for element to be clickable for 120 seconds.
+18:19:54.848 INFO  driver.Page (    Page.java:235) - Element is clickable now.
+18:19:55.305 INFO  driver.Page (    Page.java:61) - Element is clicked successfully.
+18:19:55.305 INFO  pageobjects.NotificationPreferencePage (NotificationPreferencePage.java:925) - Budget Save Button clicked successfully.
+18:19:55.305 INFO  pageobjects.NotificationPreferencePage (NotificationPreferencePage.java:404) - Fetching the Notification  header.
+18:19:55.361 INFO  driver.Page (    Page.java:161) - Wait for the element {} [[ChromeDriver: chrome on windows (0a912b62cfd5329146650dfdf5ff1419)] -> css selector: .toast-message] to be visible on the page for duration of {} 120
+18:19:55.362 INFO  driver.Page (    Page.java:257) - Waiting for element to be visible for 120 seconds.
+18:19:57.145 INFO  driver.Page (    Page.java:260) - Element is visible on the page.
+18:19:57.202 INFO  driver.Page (    Page.java:164) - Text got from the locator {} [[ChromeDriver: chrome on windows (0a912b62cfd5329146650dfdf5ff1419)] -> css selector: .toast-message] is One IVR is already selected
+18:19:57.367 INFO  pageobjects.NotificationPreferencePage (NotificationPreferencePage.java:406) - Notification page header is {}: One IVR is already selected
+18:19:57.848 INFO  driver.Page (    Page.java:107) - Clicking element {} [[ChromeDriver: chrome on windows (0a912b62cfd5329146650dfdf5ff1419)] -> css selector: button.toast-close-button]using Javascript executor.
+18:19:57.848 INFO  driver.Page (    Page.java:232) - Waiting for element to be clickable for 120 seconds.
+18:19:57.945 INFO  driver.Page (    Page.java:235) - Element is clickable now.
+18:19:58.277 INFO  driver.Page (    Page.java:111) - Element {} [[ChromeDriver: chrome on windows (0a912b62cfd5329146650dfdf5ff1419)] -> css selector: button.toast-close-button] clicked successfully.
+18:19:58.277 INFO  pageobjects.NotificationPreferencePage (NotificationPreferencePage.java:389) - btnCloseMsgOnHeader clicked successfully.
+18:20:04.722 INFO  driver.Page (    Page.java:387) - Selecting the option by visible text {}: Whatsapp
+18:20:04.808 INFO  driver.Page (    Page.java:389) - Selecting the given option to the web element {}: [[ChromeDriver: chrome on windows (0a912b62cfd5329146650dfdf5ff1419)] -> css selector: .Budgetddl.Budgetddl0.select_effect]
+18:20:04.956 INFO  driver.Page (    Page.java:391) - Given text is selected as the option to the given select web element.
+18:20:04.956 INFO  pageobjects.NotificationPreferencePage (NotificationPreferencePage.java:873) - lstBudgetOptions selected successfully.
+18:20:04.956 INFO  driver.Page (    Page.java:387) - Selecting the option by visible text {}: Whatsapp
+18:20:05.064 INFO  driver.Page (    Page.java:389) - Selecting the given option to the web element {}: [[ChromeDriver: chrome on windows (0a912b62cfd5329146650dfdf5ff1419)] -> css selector: #ddlBudgetOption1]
+18:20:05.296 INFO  driver.Page (    Page.java:391) - Given text is selected as the option to the given select web element.
+18:20:05.296 INFO  pageobjects.NotificationPreferencePage (NotificationPreferencePage.java:939) - lstBudgetOption1 populated successfully.
+18:20:05.296 INFO  pageobjects.NotificationPreferencePage (NotificationPreferencePage.java:353) - Populating password {} :9999999990
+18:20:05.325 INFO  driver.Page (    Page.java:129) - Wait for element {} [[ChromeDriver: chrome on windows (0a912b62cfd5329146650dfdf5ff1419)] -> css selector: #TxtBudgetText0] to be present in the DOM for duration of {} 120
+18:20:05.325 INFO  driver.Page (    Page.java:257) - Waiting for element to be visible for 120 seconds.
+18:20:05.378 INFO  driver.Page (    Page.java:260) - Element is visible on the page.
+18:20:05.403 INFO  driver.Page (    Page.java:131) - Clearing the element {} [[ChromeDriver: chrome on windows (0a912b62cfd5329146650dfdf5ff1419)] -> css selector: #TxtBudgetText0] before sending the keys.
+18:20:06.996 INFO  driver.Page (    Page.java:133) - Sending the following keys {} 9999999990 to the element {} [[ChromeDriver: chrome on windows (0a912b62cfd5329146650dfdf5ff1419)] -> css selector: #TxtBudgetText0]
+18:20:07.923 INFO  pageobjects.NotificationPreferencePage (NotificationPreferencePage.java:355) - bugetFirstMobilenumber populated successfully.
+18:20:07.923 INFO  pageobjects.NotificationPreferencePage (NotificationPreferencePage.java:362) - Populating bugetSecondMobilenumber {} :9999999998
+18:20:08.011 INFO  driver.Page (    Page.java:129) - Wait for element {} [[ChromeDriver: chrome on windows (0a912b62cfd5329146650dfdf5ff1419)] -> css selector: #TxtBudgetText1] to be present in the DOM for duration of {} 120
+18:20:08.012 INFO  driver.Page (    Page.java:257) - Waiting for element to be visible for 120 seconds.
+18:20:08.069 INFO  driver.Page (    Page.java:260) - Element is visible on the page.
+18:20:08.101 INFO  driver.Page (    Page.java:131) - Clearing the element {} [[ChromeDriver: chrome on windows (0a912b62cfd5329146650dfdf5ff1419)] -> css selector: #TxtBudgetText1] before sending the keys.
+18:20:08.361 INFO  driver.Page (    Page.java:133) - Sending the following keys {} 9999999998 to the element {} [[ChromeDriver: chrome on windows (0a912b62cfd5329146650dfdf5ff1419)] -> css selector: #TxtBudgetText1]
+18:20:08.953 INFO  pageobjects.NotificationPreferencePage (NotificationPreferencePage.java:364) - txtBugetSecondMobilenumber populated successfully.
+18:20:08.954 INFO  driver.Page (    Page.java:58) - Preparing for element to click.
+18:20:08.954 INFO  driver.Page (    Page.java:232) - Waiting for element to be clickable for 120 seconds.
+18:20:09.056 INFO  driver.Page (    Page.java:235) - Element is clickable now.
+18:20:09.528 INFO  driver.Page (    Page.java:61) - Element is clicked successfully.
+18:20:09.528 INFO  pageobjects.NotificationPreferencePage (NotificationPreferencePage.java:925) - Budget Save Button clicked successfully.
+18:20:09.528 INFO  pageobjects.NotificationPreferencePage (NotificationPreferencePage.java:404) - Fetching the Notification  header.
+18:20:09.848 INFO  driver.Page (    Page.java:161) - Wait for the element {} [[ChromeDriver: chrome on windows (0a912b62cfd5329146650dfdf5ff1419)] -> css selector: .toast-message] to be visible on the page for duration of {} 120
+18:20:09.848 INFO  driver.Page (    Page.java:257) - Waiting for element to be visible for 120 seconds.
+18:20:11.311 INFO  driver.Page (    Page.java:260) - Element is visible on the page.
+18:20:11.399 INFO  driver.Page (    Page.java:164) - Text got from the locator {} [[ChromeDriver: chrome on windows (0a912b62cfd5329146650dfdf5ff1419)] -> css selector: .toast-message] is One Whatsapp is already selected
+18:20:11.469 INFO  pageobjects.NotificationPreferencePage (NotificationPreferencePage.java:406) - Notification page header is {}: One Whatsapp is already selected
+18:20:11.470 INFO  scp.NotificationPreferenceSteps (NotificationPreferenceSteps.java:275) - Test Case execution for - verifyNotificationsChannelsValidations - is finished
+18:20:11.470 INFO  scp.NotificationPreferenceTests (NotificationPreferenceTests.java:92) - Test Case execution for - NotificationChannelFunctionality - is Completed.
+18:20:11.473 INFO  runner.TestRunner (TestRunner.java:84) - verifyAddNotificationChannelFunctionality is Finished.
+18:20:11.473 INFO  driver.DriverFactory (DriverFactory.java:125) - Clearing all the cookies.
+18:20:37.256 INFO  driver.DriverFactory (DriverFactory.java:125) - Clearing all the cookies.
+18:20:38.141 INFO  driver.DriverFactory (DriverFactory.java:125) - Clearing all the cookies.
+18:20:38.200 INFO  driver.DriverFactory (DriverFactory.java:125) - Clearing all the cookies.
+18:20:38.256 INFO  driver.DriverFactory (DriverFactory.java:125) - Clearing all the cookies.
+18:20:38.606 INFO  driver.DriverFactory (DriverFactory.java:125) - Clearing all the cookies.
+18:20:38.669 INFO  driver.DriverFactory (DriverFactory.java:125) - Clearing all the cookies.

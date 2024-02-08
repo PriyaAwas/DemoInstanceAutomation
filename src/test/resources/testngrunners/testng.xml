@@ -17,14 +17,24 @@
  
         <classes>
         
-            <class name="demo.tests.scp.PaymentInfoTests"/> 
             <class name="demo.tests.scp.BillingHistoryTests"/>
             <class name="demo.tests.scp.NotificationTests"/>
-            <class name="demo.tests.scp.ForgetUsernameTest"/>    
+            <class name="demo.tests.scp.ForgetUsernameTest"/>
             <class name="demo.tests.scp.NotificationPreferenceTests"/>
             <class name="demo.tests.scp.ProblemSigningInTest"/>
             <class name="demo.tests.scp.ForgetPasswordTests"/>
+            <class name="demo.tests.scp.MyProfileTests"/>
+            <class name="demo.tests.scp.UserDashboardTests"/>
+            <class name="demo.tests.scp.PostLogContactUsTests"/>
             <class name="demo.tests.scp.PreLoginTests"/>
+            <class name="demo.tests.scp.PaymentInfoTests"/>
+            <class name="demo.tests.scp.AboutMyHomeTests"/>
+            <class name="demo.tests.scp.AccountInformationTests"/> 
+            <class name="demo.tests.scp.PreLoginOutagesTests"/>
+            <class name="demo.tests.scp.UsagesTests"/>
+           <class name="demo.tests.scp.GuestUserTests"/>
+
+            
             
         </classes>
     </test>

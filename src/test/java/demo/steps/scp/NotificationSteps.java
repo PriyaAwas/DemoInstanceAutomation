@@ -1,6 +1,5 @@
 package demo.steps.scp;
 
-
 import java.sql.SQLException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -109,10 +108,7 @@ public class NotificationSteps extends NotificationsPage {
             softAssert.assertTrue(isFromOptionVisible(), "From is not visible");
             softAssert.assertTrue(isFromValueVisible(), " From Value is not visible");
             softAssert.assertTrue(isDateVisible(), "Date is not visible");
-            softAssert.assertTrue(isMailBodyVisible(), "Mail Body is not visible");
-            
-           
-            
+            softAssert.assertTrue(isMailBodyVisible(), "Mail Body is not visible");       
             
 }
    
@@ -172,15 +168,12 @@ public class NotificationSteps extends NotificationsPage {
 	    clickCheckBox1();
 	    clickCheckBox2();
 	    
-	    ExtentLogger.logInfo("Click save Icon.");
+	 //"Click save Icon.
 	    clickSaveIcon();
 	    
 	    pause(3000);
 	    	    
-        ExtentManager.getExtentTest().addScreenCaptureFromBase64String(ScreenshotUtils.getScreenshot(driver), "Screen Capture of Saved messages - Save Notification" );
-	    ExtentLogger.logInfo("Saved messages Screenshot is captured. ");
-	    
-	    ExtentLogger.logInfo("Click save Folder.");
+      //"Click save Folder.
 	    clickSavedLink();
 	    
 	    pause(3000);
@@ -192,14 +185,14 @@ public class NotificationSteps extends NotificationsPage {
     
     public void unsaveAllNotifications(SoftAssert softAssert) throws SQLException {
 	    
-	    ExtentLogger.logInfo("Click save Folder.");
+	    //"Click save Folder.
 	    clickSavedLink();
 	    pause(5000);
 	    	    
-	    ExtentLogger.logInfo("Click All checkboxes.");
+	    //Click All checkboxes.
 	    clickAllCheckBox();
         
-        ExtentLogger.logInfo("Click save Icon.");
+        //Click save Icon.
 	    clickSaveIcon();
 	    
 	    ExtentLogger.logInfo("Verify There are no messages in this Folder Text.");
@@ -209,20 +202,20 @@ public class NotificationSteps extends NotificationsPage {
 }
     public void deleteNotificationsPermn(SoftAssert softAssert) throws SQLException {
 	   
-	    ExtentLogger.logInfo("Click Trash Folder.");
+	    //Click Trash Folder
 	    clickTrashFolder();
 	    waitForPageToLoad();
 	    
-	    ExtentLogger.logInfo("Click Multiple checkboxes.");
+	    //Click Multiple checkboxes.
 	    pause(2000);
 	    clickCheckBox();
 	    clickCheckBox1();
 	    clickCheckBox2();
 	    
-	    ExtentLogger.logInfo("Click delete Icon.");
+	   //Click delete Icon.
 	    clickDeleteButton();
 	    
-	    ExtentLogger.logInfo("Click Continue Button.");
+	  //Click Continue Button.
 	    clickDeleteContinueButton();
 	    waitForPageToLoad();
 	    
@@ -233,15 +226,15 @@ public class NotificationSteps extends NotificationsPage {
     
     public void putBackNotifications(SoftAssert softAssert) throws SQLException {
 	    
-	    ExtentLogger.logInfo("Click Trash Folder.");
+	   //Click Trash Folder
 	    clickTrashFolder();
 	    
-	    ExtentLogger.logInfo("Click Multiple checkboxes.");
+	   //("Click Multiple checkboxes.");
 	    pause(2000);
 	    clickCheckBox();
 	    clickCheckBox1();
 	    
-	    ExtentLogger.logInfo("Click put back Icon.");
+	 //("Click put back Icon.");
 	    clickPutBackIcon();
 	    
 	    isPutBackSuccessToastDisplayed();
@@ -286,7 +279,7 @@ public class NotificationSteps extends NotificationsPage {
     public void negativesceNotifications(SoftAssert softAssert) throws SQLException {
 	    
 	    ExtentLogger.logInfo("Click delete Icon.");
-	    clickTrashIcon();
+	    clickDeleteButton();
 	    ExtentLogger.logInfo("Verify Warning Toast.");
 	    isWarningToastDisplayed();
 		 softAssert.assertEquals(getWarningMessage(),NotificationTextProp.getPropValue("txtWarningMessage"),

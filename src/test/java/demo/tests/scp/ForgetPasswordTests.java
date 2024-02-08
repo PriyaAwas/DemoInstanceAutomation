@@ -14,7 +14,7 @@ public class ForgetPasswordTests extends TestRunner {
 	private static final Logger log = LogManager.getLogger(ForgetPasswordTests.class);
 	private ForgetPasswordSteps forgetPasswordSteps;
 
-	@FrameworkAnnotations(author = { "Priya Awasthi" }, category = { CategoryType.SANITY })
+	@FrameworkAnnotations(author = { "Priya Awasthi" }, category = { CategoryType.SMOKE ,CategoryType.SCP_LOGINHELP})
 	@Test(priority = 1, description = "To verify the Forget Password page objects.")
 	public void validateForgotPasswordObjects() {
 		log.info("To verify that following should be displayed on Forget Password In page.");
@@ -25,7 +25,7 @@ public class ForgetPasswordTests extends TestRunner {
 		log.info("Test Case execution for - validateForgotPasswordObjects - is Completed.");
 	}
 
-	@FrameworkAnnotations(author = { "Priya Awasthi" }, category = { CategoryType.SANITY })
+	@FrameworkAnnotations(author = { "Priya Awasthi" }, category = { CategoryType.SANITY ,CategoryType.SCP_LOGINHELP})
 
 	@Test(priority = 2, description = "To verify the Forget Password page objects.")
 	public void validateForgotPassword() {
@@ -37,7 +37,7 @@ public class ForgetPasswordTests extends TestRunner {
 		log.info("Test Case execution for - validateForgotPassword - is Completed.");
 	}
 
-	@FrameworkAnnotations(author = { "Priya Awasthi" }, category = { CategoryType.SANITY })
+	@FrameworkAnnotations(author = { "Priya Awasthi" }, category = { CategoryType.SANITY,CategoryType.SCP_LOGINHELP })
 	@Test(priority = 3, description = "To verify the Forget Password page objects.")
 	public void validateForgotPasswordWithValidandInvalidData() {
 		log.info("To verify that following should be displayed on Forget Password In page.");

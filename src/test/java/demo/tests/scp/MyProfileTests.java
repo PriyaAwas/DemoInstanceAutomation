@@ -44,7 +44,7 @@ public class MyProfileTests extends TestRunner {
 		log.info("Test Case execution for - verifyNegativeValidationForMyProfilePage - is Completed.");
 	}
 
-	@FrameworkAnnotations(author = { "Neethu" }, category = { CategoryType.SANITY, CategoryType.SCP_MYACCOUNT })
+	@FrameworkAnnotations(author = { "Neethu" }, category = { CategoryType.SMOKE, CategoryType.SCP_MYACCOUNT })
 	@Test(description = "To verify that UI And Objects on the My Account-> Profile Page.")
 	public void verifyMyProfileInformationPageUI() throws SQLException, InterruptedException {
 		SoftAssert softAssert = new SoftAssert();

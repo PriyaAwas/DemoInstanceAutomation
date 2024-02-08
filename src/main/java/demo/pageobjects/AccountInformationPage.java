@@ -771,6 +771,10 @@ public class AccountInformationPage extends HomePage {
 	public boolean isMyhomelblvisible() {
 		return isElementVisible(Myhometile);
 	}
+	public String getHometiletxt() {
+		String label = getText(Myhometile);
+		return label;
+	}
 
 	@FindBy(css = ".svcaddtxtbox")
 	private WebElement srvcaddlbl;
@@ -897,6 +901,13 @@ public class AccountInformationPage extends HomePage {
 
 	}
 
+	@FindBy(css = "#SuccessMessage_NickNameUpdated")
+	private WebElement updtmsg;
+
+	public boolean updatescssmsgdisplayed() {
+		return isElementVisible(updtmsg);
+	}
+	
 	@FindBy(css = ".toast-message")
 	private WebElement lablMsgWarning;
 
@@ -942,4 +953,138 @@ public class AccountInformationPage extends HomePage {
 		click(cancelbtn);
 		log.info("Cancel Btn clicked successfully.");
 	}
+	
+	@FindBy(css = "#btnEditMailAddress0")
+	private WebElement editmailadd;
+
+	public void clickEditMailingAddOption() {
+		click(editmailadd);
+		log.info("Edit mailing address option clicked successfully.");
+
+	}
+	@FindBy(css = "#editcommtitletxt")
+	private WebElement editmailingaddtxt;
+
+	public Boolean isMailingAddTitletextVisible() {
+		Boolean status = isElementVisible(editmailingaddtxt);
+		return status;
+	}
+	@FindBy(css = "#cust_address1")
+	private WebElement txtAddline;
+
+	public boolean isAddressLineTxtBoxMessageBodyVisible() {
+		waitForElementToBeVisible(txtAddline);
+		return txtAddline.isDisplayed();
+	}
+	
+	public void clearAddressLineTxtBoxMessageTxt() {
+		clear(txtAddline);
+	}
+
+	public void populateAddTxtMessageBody(String Text) {
+		log.info("Waiting For Visiblity status of MessageBody Text Feild");
+		waitForElementToBeVisible(txtAddline);
+		clear(txtAddline);
+		sendKeys(txtAddline, Text);
+	}
+
+	public WebElement elementAdTextMessageBody() {
+		waitForElementToBeVisible(txtAddline);
+		return txtAddline;
+	}
+	
+	@FindBy(css = "#btnUpdateAddress")
+	private WebElement updtadd;
+
+	public void clickUpdateAddBtn() {
+		scrollToElement(updtadd);
+		click(updtadd);
+	}
+	
+	@FindBy(css = ".result")
+	private WebElement updtsucpopup;
+
+	public boolean updateScssPopUpDisplayed() {
+		return isElementVisible(updtsucpopup);
+	}
+	public String getSuccessMessage() {
+		String label = getText(updtsucpopup);
+		return label;
+	}
+	
+	@FindBy(css = "#cust_Zip")
+	private WebElement txtzip;
+
+	public void clearZipCodeTxtBoxMessageTxt() {
+		clear(txtzip);
+	}
+	
+	
+	
+	@FindBy(css = ".error_messagecommon")
+	private WebElement errAdd;
+
+	public boolean addErrMsgDisplayed() {
+		return isElementVisible(errAdd);
+	}
+	
+	@FindBy(css = ".error_messagecommon")
+	private WebElement errZipCode;
+
+	public boolean addZipCodeMsgDisplayed() {
+		return isElementVisible(errZipCode);
+	}
+	
+	@FindBy(css = ".error_messagecommon")
+	private WebElement errCity;
+
+	public boolean addcityMsgDisplayed() {
+		return isElementVisible(errCity);
+	}
+	
+	@FindBy(css = ".select_effect invalidfocus")
+	private WebElement stateDrop;
+
+	public void clickStateSlDrpdwn() {
+		scrollToElement(stateDrop);
+		click(stateDrop);
+		
+		
+	}
+	
+	@FindBy(css = "#ddlState > option:nth-child(1)")
+	private WebElement slctOptn;
+
+	public void clickSelectOption() {
+		scrollToElement(slctOptn);
+		click(slctOptn);
+		
+		
+	}
+	
+
+	@FindBy(css = ".error_messagecommon")
+	private WebElement errSelectState;
+
+	public boolean addSelectCityDisplayed() {
+		return isElementVisible(errSelectState);
+	}
+	
+	@FindBy(css = "#btnUpdateCancel")
+	private WebElement cancelBtn;
+
+	public void clickCancelBtn() {
+		scrollToElement(cancelBtn);
+		click(cancelBtn);
+		
+		
+	}
+	
+	@FindBy(css = "#cust_City")
+	private WebElement txtCity;
+
+	public void clearCityTxtBoxMessageTxt() {
+		clear(txtCity);
+	}
+	
 }

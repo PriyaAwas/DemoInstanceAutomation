@@ -254,18 +254,19 @@ public class PaymentInformationSteps extends PaymentInformationsPage {
 		Bank bank = ModelsConfiguration.readBankAccounts().getBankByAccountHolderName("Henry Jacob Bank Account");
 		HomeSteps homeSteps = new HomeSteps(driver);
 		// UnEnrolling of AutoPay or Text Pay
-		homeSteps.navigateToAutoPayment();
-		unEnrollFromAutoTextPay();
-		homeSteps.navigateToTextToPay();
-		unEnrollFromAutoTextPay();
+		homeSteps.navigateToAutoPayment(); unEnrollFromAutoTextPay();
+		homeSteps.navigateToTextToPay(); unEnrollFromAutoTextPay();
+		 
 		homeSteps.navigateToPaymentInfo();
 		// Deleting Payment Profiles
-		deletePaymentProfiles();
+
+		//deletePaymentProfiles();
 		// Verifying Payment Information Page
 		Assert.assertTrue(
 				isPaymentInformationPage(paymentInformationTextProp.getPropValue("expectedPaymentInformationPageUrl"),
 						paymentInformationTextProp.getPropValue("expectedPaymentInformationPageHeader")),
 				"Page URL and Header is not Matching");
+		
 		// Verifying Payment Information Page Header
 		softAssert.assertEquals(getLblPaymentInfoPageHeadingText(),
 				paymentInformationTextProp.getPropValue("expectedPaymentInformationPageHeader"),

@@ -29,6 +29,9 @@ public class PreLoginSteps extends PreLoginPage {
 	public static PropertiesUtil loginTextProp;
 	public static PropertiesUtil preLoginConnectMeProp;
 	public static PropertiesUtil signOutTextProp;
+	public static PropertiesUtil preLoginPaymentLocationsProp;
+	public static PropertiesUtil preLoginPaymentProp;
+	public static PropertiesUtil preLoginWaysToSaveProp;
 
 	public PreLoginSteps(WebDriver driver) {
 		super(driver);
@@ -36,17 +39,22 @@ public class PreLoginSteps extends PreLoginPage {
 		preLoginConnectMeProp = new PropertiesUtil(
 				FilePaths.SCP_TEXT_PROPERTIES + Constants.PRE_LOG_CONNECT_ME_TXT_FILENAME);
 		signOutTextProp = new PropertiesUtil(FilePaths.SCP_TEXT_PROPERTIES + Constants.SIGNOUT_TXT_FILENAME);
+		preLoginPaymentLocationsProp = new PropertiesUtil(FilePaths.SCP_TEXT_PROPERTIES + Constants.SCM_PAYMENT_LOCATIONS_TXT_FILENAME);
+		preLoginPaymentProp = new PropertiesUtil(FilePaths.SCP_TEXT_PROPERTIES + Constants.SCM_PAYMENT_TXT_FILENAME);
+		preLoginWaysToSaveProp = new PropertiesUtil(FilePaths.SCP_TEXT_PROPERTIES + Constants.SCM_WAYSTOSAVE_TXT_FILENAME);
 	}
 
 	public void populateLoginForm(String userName, String password) {
 		populateUserName(userName);
 		populatePassword(password);
+		ExtentLogger.logInfo("username and password populated");
 	}
 
 	public String loginWithBlankCreds() {
 		clickSignInBtn();
 		String errMsg = getToastMessageWithoutWait();
 		clickToastCloseBtn();
+		ExtentLogger.logInfo("cannot login with blank creds");
 		return errMsg;
 	}
 
@@ -54,6 +62,7 @@ public class PreLoginSteps extends PreLoginPage {
 		populateLoginForm(userName, password);
 		clickSignInBtn();
 		String errMsg = getToastMessage();
+		ExtentLogger.logInfo("cannot login with invalid creds");
 		return errMsg;
 	}
 
@@ -62,6 +71,7 @@ public class PreLoginSteps extends PreLoginPage {
 		populatePassword(password);
 		clickSignInBtn();
 		String errMsg = getCommonValidationMsg();
+		ExtentLogger.logInfo("cannot login with blank username");
 		return errMsg;
 	}
 
@@ -71,6 +81,7 @@ public class PreLoginSteps extends PreLoginPage {
 		populateUserName("invalid@username.com");
 		clickSignInBtn();
 		String errMsg = getToastMessage();
+		ExtentLogger.logInfo("cannot login with wrong username");
 		return errMsg;
 	}
 
@@ -80,6 +91,7 @@ public class PreLoginSteps extends PreLoginPage {
 		populatePassword("Invalid@Pass123");
 		clickSignInBtn();
 		String errMsg = getToastMessage();
+		ExtentLogger.logInfo("cannot login with wrong password");
 		return errMsg;
 	}
 
@@ -88,6 +100,7 @@ public class PreLoginSteps extends PreLoginPage {
 		populatePassword("Invalid@Password");
 		clickSignInBtn();
 		String errMsg = getToastMessage();
+		ExtentLogger.logInfo("cannot login with invalid creds");
 		return errMsg;
 	}
 
@@ -96,13 +109,7 @@ public class PreLoginSteps extends PreLoginPage {
 		clearPasswordField();
 		clickSignInBtn();
 		String errMsg = getCommonValidationMsg();
-		return errMsg;
-	}
-
-	public String loginWithDeactiveUser(String userName, String password) {
-		populateLoginForm(userName, password);
-		clickSignInBtn();
-		String errMsg = getToastMessage();
+		ExtentLogger.logInfo("cannot login with blank password");
 		return errMsg;
 	}
 
@@ -243,7 +250,7 @@ public class PreLoginSteps extends PreLoginPage {
 		selectlstConnectMeOptions("Rebates");
 		if (selectlstConnectMeOptions("Rebates")) {
 		}
-		softAssert.assertTrue(isPreLogConnectMePage(preLoginConnectMeProp.getPropValue("ConnectMePageUrl"),
+		Assert.assertTrue(isPreLogConnectMePage(preLoginConnectMeProp.getPropValue("ConnectMePageUrl"),
 				(preLoginConnectMeProp.getPropValue("ConnectMePageTitle"))), "Page Title & URL does not Match");
 		softAssert.assertTrue(isPageHeaderPostVisible(), "Contact Us Page Header is not visible");
 		softAssert.assertTrue(isSocialMediaVisible(), "Social Media Tab is not visibility");
@@ -450,6 +457,7 @@ public class PreLoginSteps extends PreLoginPage {
 		String referenceId = popupContent.substring(popupContent.indexOf(":") + 1).trim();
 		clickContactUsPopupOk();
 		pause(5000);
+		ExtentLogger.logInfo(referenceId);
 		return referenceId;
 	}
 
@@ -481,5 +489,110 @@ public class PreLoginSteps extends PreLoginPage {
 				"You have signed out successfully message not matched.");
 		clickSignInAgainBtn();
 
+	}
+	
+	public boolean isPreLogPaymentLocationsPage(String url, String title) {
+		Boolean isForgetPasswordPage = false;
+		log.info("Checking that the current page is ForgetPassword Page");
+		if (getCurrentUrl().contains(url.toLowerCase()) && getCurrentTitle().equalsIgnoreCase(title))
+			isForgetPasswordPage = true;
+		log.info("The current page is ForgetPassword Page {}: " + isForgetPasswordPage);
+		return isForgetPasswordPage;
+	}
+	
+	public void verifyPaymentLocations(SoftAssert softAssert) {
+		clickPaymentLocationsLnk();
+		pause(5000);
+		Assert.assertTrue(isPreLogPaymentLocationsPage(preLoginPaymentLocationsProp.getPropValue("preLoginPageUrl"),
+				(preLoginPaymentLocationsProp.getPropValue("preLoginPageTitle"))), "Page Title & URL does not Match");
+		
+	}
+	
+	public void populatePaymentFormStepOne(String accountNumber, String phoneNumber) {
+		populateAccountNumber(accountNumber);
+		populatePhoneNumber(phoneNumber);
+		ExtentLogger.logInfo("account number and phone number populated");
+	}
+	
+	public String payWithInvalidDetails() {
+		populateAccountNumber("123456789012");
+		populatePhoneNumber("1234567890");
+		clickNextBtn();
+		String errMsg = getToastMessage();
+		ExtentLogger.logInfo("cannot pay with invalid details");
+		return errMsg;
+	}
+	
+	public String payWithBlankDetails() {
+		clickNextBtn();
+		String errMsg = getToastMessageWithoutWait();
+		clickToastCloseBtn();
+		ExtentLogger.logInfo("cannot pay with blank details");
+		return errMsg;
+	}
+	
+	public String payWithBlankAccountNumber() {
+		populatePhoneNumber("1234567890");
+		clickNextBtn();		
+		String errMsg = getErrorMessage();
+		clearPhoneNumberField();
+		ExtentLogger.logInfo("cannot pay with blank account number");
+		return errMsg;
+	}
+	
+	public String payWithBlankPhoneNumber() {
+		populateAccountNumber("123456789012");
+		clickNextBtn();
+		String errMsg = getErrorMessage();
+		clearAccountNumberField();
+		ExtentLogger.logInfo("cannot pay with blank phone number");
+		return errMsg;
+	}
+	
+	public void payTheApplicationWrongCreds(SoftAssert softAssert) {
+		clickPaymentsLnk();
+		// Verify login with blank creds
+		softAssert.assertEquals(payWithBlankDetails(), preLoginPaymentProp.getPropValue("payWithBlankCredsErrMsg"),
+				"Pay with Blank creds error message not matched.");
+		// Verify login with blank account number
+		softAssert.assertEquals(payWithBlankAccountNumber(),
+				preLoginPaymentProp.getPropValue("payWithBlankAccountNumber"),
+				"Blank username field validation not correct.");
+		// Verify login with blank phone number
+		softAssert.assertEquals(payWithBlankPhoneNumber(),
+				preLoginPaymentProp.getPropValue("payWithBlankPhoneNumber"),
+				"Blank username field validation not correct.");
+		// Verify login with wrong username and password.
+		softAssert.assertEquals(payWithInvalidDetails(), preLoginPaymentProp.getPropValue("payWithInvalidsCredsErrMsg"),
+				"Wrong toast when paying using invalid creds.");
+	}
+	
+	public boolean isPreLogWaysToSavePage(String url, String title) {
+		Boolean isForgetPasswordPage = false;
+		log.info("Checking that the current page is ForgetPassword Page");
+		if (getCurrentUrl().contains(url.toLowerCase()) && getCurrentTitle().equalsIgnoreCase(title))
+			isForgetPasswordPage = true;
+		log.info("The current page is ForgetPassword Page {}: " + isForgetPasswordPage);
+		return isForgetPasswordPage;
+	}
+	
+	public void verifyWaysToSave(SoftAssert softAssert) {
+		clickWaysToSaveLnk();
+		pause(5000);
+		Assert.assertTrue(isPreLogWaysToSavePage(preLoginWaysToSaveProp.getPropValue("preLoginPageUrl"),
+				(preLoginWaysToSaveProp.getPropValue("preLoginPageTitle"))), "Page Title & URL does not Match");
+		softAssert.assertEquals(getRebatesLabel(),
+				preLoginWaysToSaveProp.getPropValue("rebatesLbl"),
+				"Blank username field validation not correct.");
+		softAssert.assertEquals(getProgramsLabel(),
+				preLoginWaysToSaveProp.getPropValue("programsLbl"),
+				"Blank username field validation not correct.");
+		softAssert.assertEquals(getSavingsLabel(),
+				preLoginWaysToSaveProp.getPropValue("savingLbl"),
+				"Blank username field validation not correct.");
+		softAssert.assertEquals(getEducationalLabel(),
+				preLoginWaysToSaveProp.getPropValue("educationalLbl"),
+				"Blank username field validation not correct.");
+		
 	}
 }
