@@ -1402,14 +1402,14 @@ public class PaymentInformationsPage extends HomePage {
     
     //////// PAYMENT PROFILES //////////
     
-    @FindBy(css = "div[id*=profileinfo]")
+    @FindBy(css = "div[ng-repeat*='paymentInfo']")
     private List<WebElement> listPaymentProfile;
     
     public List<WebElement> listPaymentProfile(){
     	return listPaymentProfile;
     }
     
-    @FindBy(id="navbarDropdown0")
+    @FindBy(css="button[id*='navbar']")
     private WebElement btnThreeDots;
     
     public void clickBtnThreeDots() {
@@ -1418,7 +1418,7 @@ public class PaymentInformationsPage extends HomePage {
     	clickWithJSExecutor(btnThreeDots);
     }
     
-    @FindBy(css="li[id='removePaymnetType_1'] a")
+    @FindBy(css="li[class='deleterow'] a")
     private WebElement btnRemove;
     
     public void clickBtnRemove() {
@@ -1426,7 +1426,7 @@ public class PaymentInformationsPage extends HomePage {
     	clickWithJSExecutor(btnRemove);
     }
     
-    @FindBy(css="button[class='submit-button']")
+    @FindBy(xpath="//button[text()='Remove']")
     private WebElement btnConfirmRemove;
     
     public void clickBtnConfirmRemove() {
