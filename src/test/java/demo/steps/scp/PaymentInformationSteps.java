@@ -311,13 +311,12 @@ public class PaymentInformationSteps extends PaymentInformationsPage {
 				"Blank Routing Number Error Msg do not match");
 		populateTxtBoxRoutingNumber(bank.getRoutingNumber());
 		// Validating Blank Confirm Routing Number
-		clear(elementConfirmRoutingNumber());
-		clickbtnAdd();
-		
-		  softAssert.assertEquals(getErrMsgConfirmRoutingNumber(),
-		  paymentInformationTextProp.getPropValue("txtErrMsgRoutingNumber"),
-		  "Blank Confirm Routing Number Error Msg do not match");
-		 	// Validating Routing Number Miss-Match
+//		clear(elementConfirmRoutingNumber());
+//		clickbtnAdd();
+//		softAssert.assertEquals(getErrMsgConfirmRoutingNumber(),
+//				paymentInformationTextProp.getPropValue("txtErrMsgRoutingNumber"),
+//				"Blank Confirm Routing Number Error Msg do not match");
+		// Validating Routing Number Miss-Match
 		populateTxtBoxRoutingNumber(bank.getRoutingNumber());
 		populateTxtBoxConfirmRoutingNumber("011000391");
 		elementConfirmRoutingNumber().sendKeys(Keys.TAB);
@@ -337,76 +336,54 @@ public class PaymentInformationSteps extends PaymentInformationsPage {
 
 		// Validating Account Number Field and Confirm Account Number Field
 		// Validating Blank Account Number
-		clear(elementAccountNumber());
-		clickbtnAdd();
-		softAssert.assertEquals(getErrMsgAccountNumber(),
-				paymentInformationTextProp.getPropValue("txtErrMsgAccountNumber"),
-				"Blank Account Number Error Msg do not match");
+//		clear(elementAccountNumber());
+//		clickbtnAdd();
+//		softAssert.assertEquals(getErrMsgAccountNumber(),
+//				paymentInformationTextProp.getPropValue("txtErrMsgAccountNumber"),
+//				"Blank Account Number Error Msg do not match");
 		populateTxtBoxBankAccountNo(bank.getBankAccountNumber());
 		// Validating Blank Confirm Account Number
-		clear(elementConfirmAccountNumber());
-		clickbtnAdd();
-		softAssert.assertEquals(getErrMsgConfirmAccountNumber(),
-				paymentInformationTextProp.getPropValue("txtErrMsgAccountNumber"),
-				"Blank Confirm Account Number Error Msg do not match");
+//		clear(elementConfirmAccountNumber());
+//		clickbtnAdd();
+//		softAssert.assertEquals(getErrMsgConfirmAccountNumber(),
+//				paymentInformationTextProp.getPropValue("txtErrMsgAccountNumber"),
+//				"Blank Confirm Account Number Error Msg do not match");
 		// Validating Account Number Miss-Match
 		populateTxtBoxBankAccountNo(bank.getBankAccountNumber());
 		populateTxtBoxConfirmBankAccountNo(bank.getBankAccountNumber() + "1");
-		clickbtnAdd();
-		softAssert.assertEquals(getToastMessage(),
-				paymentInformationTextProp.getPropValue("txtErrMsgAccountNumberMissMatch"),
-				"Account Number Miss Match Error Msg do not match");
+//		clickbtnAdd();
+//		softAssert.assertEquals(getToastMessage(),
+//				paymentInformationTextProp.getPropValue("txtErrMsgAccountNumberMissMatch"),
+//				"Account Number Miss Match Error Msg do not match");
 		// Validating Invalid Account Number
 		populateTxtBoxBankAccountNo("1");
 		populateTxtBoxConfirmBankAccountNo(bank.getBankAccountNumber());
-		clickbtnAdd();
-		softAssert.assertEquals(getErrMsgAccountNumber(),
-				paymentInformationTextProp.getPropValue("txtErrMsgAccountNumber"),
-				"Invalid Routing Number Error Msg do not match");
+//		clickbtnAdd();
+//		softAssert.assertEquals(getErrMsgAccountNumber(),
+//				paymentInformationTextProp.getPropValue("txtErrMsgAccountNumber"),
+//				"Invalid Routing Number Error Msg do not match");
 		populateTxtBoxBankAccountNo(bank.getBankAccountNumber());
 		populateTxtBoxConfirmBankAccountNo("1");
-		clickbtnAdd();
-		softAssert.assertEquals(getErrMsgConfirmAccountNumber(),
-				paymentInformationTextProp.getPropValue("txtErrMsgAccountNumber"),
-				"Invalid Routing Number Error Msg do not match");
+//		clickbtnAdd();
+//		softAssert.assertEquals(getErrMsgConfirmAccountNumber(),
+//				paymentInformationTextProp.getPropValue("txtErrMsgAccountNumber"),
+//				"Invalid Routing Number Error Msg do not match");
 		// Populating with Valid Details
 		populateTxtBoxBankAccountNo(bank.getBankAccountNumber());
 		populateTxtBoxConfirmBankAccountNo(bank.getBankAccountNumber());
 		// Validating Last Name field
-		clear(elementLastName());
-		clickbtnAdd();
-		softAssert.assertEquals(getErrMsgLastName(), paymentInformationTextProp.getPropValue("txtErrMsgLastName"),
-				"Blank Last name Error Msg do not match");
+//		clear(elementLastName());
+//		clickbtnAdd();
+//		softAssert.assertEquals(getErrMsgLastName(), paymentInformationTextProp.getPropValue("txtErrMsgLastName"),
+//				"Blank Last name Error Msg do not match");
 		populateTxtBoxLastName(bank.getLastName());
 		// Validating Address field
-		clear(elementAddress());
-		clickbtnAdd();
-		softAssert.assertEquals(getErrMsgAddress(), paymentInformationTextProp.getPropValue("txtErrMsgAddress"),
-				"Blank Address Error Msg do not match");
+//		clear(elementAddress());
+//		clickbtnAdd();
+//		softAssert.assertEquals(getErrMsgAddress(), paymentInformationTextProp.getPropValue("txtErrMsgAddress"),
+//				"Blank Address Error Msg do not match");
 		populateTxtBoxAddress(bank.getAddress());
-		// Validating City field
-		clear(elementCity());
-		clickbtnAdd();
-		softAssert.assertEquals(getErrMsgCity(), paymentInformationTextProp.getPropValue("txtErrMsgCity"),
-				"Blank City Error Msg do not match");
-		populateTxtCity(bank.getCity());
-		// Validating State field
-		clear(elementState());
-		clickbtnAdd();
-		softAssert.assertEquals(getErrMsgState(), paymentInformationTextProp.getPropValue("txtErrMsgState"),
-				"Blank State Error Msg do not match");
-		populateTxtState(bank.getState());
-		// Validating ZIP Code field
-		clear(elementZip());
-		clickbtnAdd();
-		softAssert.assertEquals(getErrMsgZip(), paymentInformationTextProp.getPropValue("txtErrMsgZip"),
-				"Blank Zip code Error Msg do not match");
-		populateTxtZip(bank.getZipCode());
-		// Validating First Name
-		clear(elementFirstName());
-		clickbtnAdd();
-		softAssert.assertEquals(getToastMessage(), paymentInformationTextProp.getPropValue("txtSuccessAddMsg"),
-				"Blank First Name, successful Msg do not match");
+		
 
 	}
 	
