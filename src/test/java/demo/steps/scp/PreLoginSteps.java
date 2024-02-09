@@ -31,6 +31,7 @@ public class PreLoginSteps extends PreLoginPage {
 	public static PropertiesUtil signOutTextProp;
 	public static PropertiesUtil preLoginPaymentLocationsProp;
 	public static PropertiesUtil preLoginPaymentProp;
+	public static PropertiesUtil preLoginWaysToSaveProp;
 
 	public PreLoginSteps(WebDriver driver) {
 		super(driver);
@@ -40,6 +41,7 @@ public class PreLoginSteps extends PreLoginPage {
 		signOutTextProp = new PropertiesUtil(FilePaths.SCP_TEXT_PROPERTIES + Constants.SIGNOUT_TXT_FILENAME);
 		preLoginPaymentLocationsProp = new PropertiesUtil(FilePaths.SCP_TEXT_PROPERTIES + Constants.SCM_PAYMENT_LOCATIONS_TXT_FILENAME);
 		preLoginPaymentProp = new PropertiesUtil(FilePaths.SCP_TEXT_PROPERTIES + Constants.SCM_PAYMENT_TXT_FILENAME);
+		preLoginWaysToSaveProp = new PropertiesUtil(FilePaths.SCP_TEXT_PROPERTIES + Constants.SCM_WAYSTOSAVE_TXT_FILENAME);
 	}
 
 	public void populateLoginForm(String userName, String password) {
@@ -563,5 +565,34 @@ public class PreLoginSteps extends PreLoginPage {
 		// Verify login with wrong username and password.
 		softAssert.assertEquals(payWithInvalidDetails(), preLoginPaymentProp.getPropValue("payWithInvalidsCredsErrMsg"),
 				"Wrong toast when paying using invalid creds.");
+	}
+	
+	public boolean isPreLogWaysToSavePage(String url, String title) {
+		Boolean isForgetPasswordPage = false;
+		log.info("Checking that the current page is ForgetPassword Page");
+		if (getCurrentUrl().contains(url.toLowerCase()) && getCurrentTitle().equalsIgnoreCase(title))
+			isForgetPasswordPage = true;
+		log.info("The current page is ForgetPassword Page {}: " + isForgetPasswordPage);
+		return isForgetPasswordPage;
+	}
+	
+	public void verifyWaysToSave(SoftAssert softAssert) {
+		clickWaysToSaveLnk();
+		pause(5000);
+		Assert.assertTrue(isPreLogWaysToSavePage(preLoginWaysToSaveProp.getPropValue("preLoginPageUrl"),
+				(preLoginWaysToSaveProp.getPropValue("preLoginPageTitle"))), "Page Title & URL does not Match");
+		softAssert.assertEquals(getRebatesLabel(),
+				preLoginWaysToSaveProp.getPropValue("rebatesLbl"),
+				"Blank username field validation not correct.");
+		softAssert.assertEquals(getProgramsLabel(),
+				preLoginWaysToSaveProp.getPropValue("programsLbl"),
+				"Blank username field validation not correct.");
+		softAssert.assertEquals(getSavingsLabel(),
+				preLoginWaysToSaveProp.getPropValue("savingLbl"),
+				"Blank username field validation not correct.");
+		softAssert.assertEquals(getEducationalLabel(),
+				preLoginWaysToSaveProp.getPropValue("educationalLbl"),
+				"Blank username field validation not correct.");
+		
 	}
 }

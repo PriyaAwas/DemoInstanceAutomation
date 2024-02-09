@@ -11,6 +11,12 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.FindBys;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import sew.ai.helpers.reporters.ExtentLogger;
 import sew.ai.pageObjects.scp.HomePage;
@@ -585,20 +591,24 @@ public class GuestUserPage extends HomePage {
 		return status;
 	}
 
-	@FindBy(css = "#dot_drop_down3143")
+	@FindBy(xpath = "//div[@class='listing_wrapper']/div/i")
 	private WebElement threedoticonGuest;
 
 	public void clickThreeDotIconGuestBtn() {
-		click(threedoticonGuest);
+		clickWithJSExecutor(threedoticonGuest);
 		log.info("The three dot icon button clicked successfully.");
 	}
 
-	@FindBy(css = "a.edit")
+	@FindBy(css = "a.edit[title='Click to edit guest user']")
 	private WebElement editExistGuest;
 
-	public void clickEditGuestBtn() {
-		click(editExistGuest);
-		log.info("The edit guest info button clicked successfully.");
+	
+	@FindBy(css = "a.edit[title='Click to edit guest user']")
+	private List<WebElement> btnEditGuestUser;
+
+	public List<WebElement> getListBtnEditGuestUser() {
+		return btnEditGuestUser;
+		
 	}
 
 	@FindBy(xpath = "//*[@id=\"divinvitePopup\"]/div/div[1]/div[2]/div[5]/div/div/label/span[3]/span")
@@ -647,6 +657,19 @@ public class GuestUserPage extends HomePage {
 		By btnResendInvitationIcon = By.xpath("//a[@class='edit' and contains(@accountno, '"+ sAccountNumber + "')]");
 		return driver.findElement(btnResendInvitationIcon);
 	}
+	
+    @FindBy(xpath = "//a[@class='edit' and @data-target='#divinviteUser']")
+    private WebElement editGuestButton;
 
+    public void clickEditGuestButton() {
+    	pause(2000);
+    	click(editGuestButton);
+    }
+
+    public By getEditGuestButtonLocator() {
+        return By.cssSelector("a.edit[title='Click to edit guest user']");
+        
+    }
+    
 
 }
