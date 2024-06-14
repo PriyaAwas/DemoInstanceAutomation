@@ -3,23 +3,28 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="demo.tests.scp.PaymentInfoTests">
+      <class name="demo.tests.scp.LoginTests">
         <methods>
-          <include name="testPreRequisites"/>
-          <include name="verifyMakePaymentWithNewCC"/>
-          <include name="tearDownClasses"/>
-          <include name="verifyCeditCardPaymentFormFieldsValidation"/>
-          <include name="methodsPreRequisites"/>
-          <include name="verifyPaymentInformationPageObjects"/>
-          <include name="verifyBankPaymentFormFieldsValidation"/>
-          <include name="verifyAddingBankPaymentProfile"/>
-          <include name="verifyMultipleBankPaymentProfileAndDeletion"/>
+          <include name="verifyChatWindow"/>
+          <include name="verifyIPBlockOnLogin"/>
+          <include name="verifyRememberMeLoginFunctionality"/>
+          <include name="verifyLoginForMigratedUser"/>
           <include name="tearDownMethods"/>
           <include name="classPreRequisites"/>
-          <include name="verifyBankPaymentFormFields"/>
-          <include name="verifyCreditCardPaymentFormFields"/>
+          <include name="verifyLoginPageObjects"/>
+          <include name="verifyInvalidLogin"/>
+          <include name="verifyUsernamePasswordAcceptanceCriteria"/>
+          <include name="testPreRequisites"/>
+          <include name="verifyAccountBlockOnLogin"/>
+          <include name="tearDownClasses"/>
+          <include name="methodsPreRequisites"/>
+          <include name="verifyLoginWithClosedAccounts"/>
+          <include name="verifyLoginWithDeactiveUser"/>
+          <include name="verifyEfficiencyWidgetsProgram"/>
+          <include name="verifyValidLogin"/>
+          <include name="verifySwitchLanguageFunctionality"/>
         </methods>
-      </class> <!-- demo.tests.scp.PaymentInfoTests -->
+      </class> <!-- demo.tests.scp.LoginTests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

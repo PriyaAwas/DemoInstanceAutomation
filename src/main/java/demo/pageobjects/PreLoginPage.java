@@ -322,11 +322,13 @@ public class PreLoginPage extends HomePage {
 		return label;
 	}
 	
-	@FindBy(xpath = "//*[@id=\"form2\"]/section/div[2]/div/div[4]/ul/a[6]")
+	@FindBy(xpath = "//a[@id ='preloginPaymentLocationModule']")
 	private WebElement lnk_paymentlocations;
 
 	public String getPaymentLocationsLinkLabel() {
-		String label = getText(lnk_paymentlocations).replace("location_on", "");
+		waitForElementToBeVisible(lnk_paymentlocations);
+		String label = getText(lnk_paymentlocations);
+				//.replace("location_on", "").trim();
 		log.info("Forgot Username Label {}: " + label);
 		return label;
 	}
