@@ -70,7 +70,7 @@ public class GuestUserPage extends HomePage {
 
 		if (isElementVisible(ddlAccountNumber)) {
 			Select dropdown = new Select(ddlAccountNumber);
-			dropdown.selectByVisibleText("411001984953");
+			dropdown.selectByVisibleText("2711765963");
 			log.info("'411001984953' option has been successfully chosen.");
 		} else {
 			log.error("Service Account Number dropdown is not visible. Cannot choose '411001984953' option.");
@@ -510,7 +510,6 @@ public class GuestUserPage extends HomePage {
 
 	public void getBtnThreeDots(String sAccountNumber) {
 		driver.findElement(By.xpath("//label[@id='lblAccountNo_" + sAccountNumber + "']/../../div/i")).click();
-
 	}
 
 	public WebElement btnResendInvitationIcon(String sAccountNumber) {

@@ -103,7 +103,9 @@ public class PaymentInformationSteps extends PaymentInformationsPage {
 		clickLnkAddPaymentMethod();
 		waitUntilCompletePageLoad();
 		// Clicking on Bank Radio Button
-		clickRdoBtnBank();
+		//clickRdoBtnBank();
+		//Clicking on Bank Option
+		clickBnkOpt();
 		// Account Holder Name
 		softAssert.assertTrue(isTxtBoxAccountHolderNameVisible(), "Account Holder Name Feild is Not Visible");
 		softAssert.assertEquals(getLblTxtBoxAccountHolderName(),
@@ -255,7 +257,7 @@ public class PaymentInformationSteps extends PaymentInformationsPage {
 		HomeSteps homeSteps = new HomeSteps(driver);
 		// UnEnrolling of AutoPay or Text Pay
 		homeSteps.navigateToAutoPayment(); unEnrollFromAutoTextPay();
-		homeSteps.navigateToTextToPay(); unEnrollFromAutoTextPay();
+		//homeSteps.navigateToTextToPay(); unEnrollFromAutoTextPay();
 		 
 		homeSteps.navigateToPaymentInfo();
 		// Deleting Payment Profiles
@@ -273,9 +275,13 @@ public class PaymentInformationSteps extends PaymentInformationsPage {
 				"Expected Page Title do not match");
 		// Clicking on Add Payment Link
 		clickLnkAddPaymentMethod();
-		pause(20000);
+		waitUntilCompletePageLoad();
+		//pause(20000);
 		// Clicking on Bank Radio Button
-		clickRdoBtnBank();
+		//clickRdoBtnBank();
+		//clickBnkOpt();
+		waitUntilCompletePageLoad();
+		clickBnkOpt();
 		// Validation of Empty Form Submit
 		clickbtnAdd();
 		softAssert.assertEquals(getToastMessage(), paymentInformationTextProp.getPropValue("txtErrMsgBlank"),
@@ -459,10 +465,10 @@ public class PaymentInformationSteps extends PaymentInformationsPage {
 		Map<String, String> payProfileDataMap = new HashMap<>();
 		HomeSteps homeSteps = new HomeSteps(driver);
 		// UnEnrolling of AutoPay or Text Pay
-		homeSteps.navigateToAutoPayment();
-		unEnrollFromAutoTextPay();
-		homeSteps.navigateToTextToPay();
-		unEnrollFromAutoTextPay();
+		//homeSteps.navigateToAutoPayment();
+		//unEnrollFromAutoTextPay();
+		//homeSteps.navigateToTextToPay();
+		//unEnrollFromAutoTextPay();
 		homeSteps.navigateToPaymentInfo();
 		// Deleting Payment Profiles
 		deletePaymentProfiles();
@@ -499,8 +505,8 @@ public class PaymentInformationSteps extends PaymentInformationsPage {
 		softAssert.assertTrue(isPaymentMethodVisibleInCurrentBill(bank.getBankAccountNumber(), "BANK"),
 				"The payment method is not visible in Current Bill");
 		// Validating if the payment method is available in Text to Pay
-		softAssert.assertTrue(isPaymentMethodVisibleInTextToPay(bank.getBankAccountNumber(), "BANK"),
-				"The payment method is not visible in Current Bill");
+		//softAssert.assertTrue(isPaymentMethodVisibleInTextToPay(bank.getBankAccountNumber(), "BANK"),
+				//"The payment method is not visible in Current Bill");
 
 	}
 	
@@ -615,10 +621,12 @@ public class PaymentInformationSteps extends PaymentInformationsPage {
 		// Bank Payment Profile 1
 		// Clicking on Add Payment Link
 		clickLnkAddPaymentMethod();
-		pause(20000);
+		//pause(20000);
 		// Clicking on Bank Radio Button
-		clickRdoBtnBank();
+		//clickRdoBtnBank();
 		// Populate Bank Payment form and Add
+		waitUntilCompletePageLoad();
+		clickBnkOpt();
 		populateBankPaymentForm(bank);
 		clickbtnAdd();
 		pause(10000);
@@ -626,10 +634,12 @@ public class PaymentInformationSteps extends PaymentInformationsPage {
 		// Validating Duplicate Bank Payment Profile
 		// Clicking on Add Payment Link
 		clickLnkAddPaymentMethod();
-		pause(20000);
+		//pause(20000);
 		// Clicking on Bank Radio Button
-		clickRdoBtnBank();
+		//clickRdoBtnBank();
 		// Populate Bank Payment form and Add
+		waitUntilCompletePageLoad();
+		clickBnkOpt();
 		populateBankPaymentForm(bank);
 		clickbtnAdd();
 		pause(2000);

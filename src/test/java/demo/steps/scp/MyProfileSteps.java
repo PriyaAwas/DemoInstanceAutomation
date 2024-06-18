@@ -1,5 +1,6 @@
 package demo.steps.scp;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.testng.asserts.SoftAssert;
 import demo.pageobjects.MyProfilePage;
@@ -78,6 +79,8 @@ public class MyProfileSteps extends MyProfilePage {
 		softAssert.assertTrue(isPrimaryEmailIdEditButtonVisible(), "    is not visible");
 		softAssert.assertTrue(isSecondaryEmailIdEditButtonVisible(), "    is not visible");
 		softAssert.assertTrue(isUserNameVisible(), "    is not visible");
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("window.scrollBy(0, 500)");
 		softAssert.assertTrue(isMyAccountPageBannerVisible(), "    is not visible");
 		ExtentLogger.logInfo("Test Case execution for - verifyMyProfileInformationPageUI - is Completed");
 	}
