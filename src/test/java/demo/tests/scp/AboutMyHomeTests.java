@@ -26,7 +26,9 @@ public class AboutMyHomeTests extends TestRunner {
 	@Test(description = "To verify the UI And Objects on the My Account-> About My Home Page.")
 
 	public void verifyAboutMyHomePageUI() throws SQLException, InterruptedException {
-		String[] tc_id = {"About_My_Home_01"};
+		
+		String[] tc_id = {"About_My_Home_01,"};
+	
 		ExtentLogger.logInfo("Test Case execution for - verifyAboutMyHomePageUI. Test Case id's -->  " + Arrays.toString(tc_id));
 		SoftAssert softAssert = new SoftAssert();
 		// Login into The Application and Navigate to My Profile Page

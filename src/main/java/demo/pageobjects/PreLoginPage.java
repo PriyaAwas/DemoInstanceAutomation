@@ -124,6 +124,8 @@ public class PreLoginPage extends HomePage {
 		if (getCurrentUrl().contains(url.toLowerCase()) && getCurrentTitle().equalsIgnoreCase(title))
 			isLoginPage = true;
 		log.info("The current page is login page {}: " + isLoginPage);
+		
+		
 		return isLoginPage;
 	}
 	
@@ -262,7 +264,7 @@ public class PreLoginPage extends HomePage {
 		return label;
 	}
 	
-	@FindBy(xpath = "//*[@id=\"form2\"]/section/div[2]/div/div[4]/ul/a[4]")
+    @FindBy(css = "a[globalize='ML_HeaderMenu_span_Outages']")
 	private WebElement lnk_outages;
 
 	public String getOutagesLinkLabel() {
@@ -271,20 +273,62 @@ public class PreLoginPage extends HomePage {
 		return label;
 	}
 	
-	@FindBy(xpath = "//*[@id=\"form2\"]/section/div[2]/div/div[4]/ul/a[5]")
+	@FindBy(css = "a[globalize='ML_Default_Msg_LearnTips']")
 	private WebElement lnk_waystosave;
 
 	public String getWaysToSaveLinkLabel() {
-		String label = getText(lnk_waystosave).replace("monetization_on", "");
+		String label = getText(lnk_waystosave).replace("monetization_on","").trim();
 		log.info("Forgot Username Label {}: " + label);
 		return label;
 	}
 	
-	@FindBy(xpath = "//*[@id=\"form2\"]/section/div[2]/div/div[4]/ul/a[6]")
+	public void clickWaysToSaveLnk() {
+		log.info("Clicking the payment location button.");
+		click(lnk_waystosave);
+		log.info("contact us button clicked successfully.");
+	}
+	
+	@FindBy(xpath = "//*[@id=\"efficiencyMenubar\"]/li[1]/a")
+	private WebElement lnk_rebates;
+	
+	public String getRebatesLabel() {
+		String label = getText(lnk_rebates);
+		log.info("Forgot Username Label {}: " + label);
+		return label;
+	}
+	
+	@FindBy(xpath = "//*[@id=\"efficiencyMenubar\"]/li[2]/a")
+	private WebElement lnk_programs;
+	
+	public String getProgramsLabel() {
+		String label = getText(lnk_programs);
+		log.info("Forgot Username Label {}: " + label);
+		return label;
+	}
+	
+	@FindBy(xpath = "//*[@id=\"efficiencyMenubar\"]/li[3]/a")
+	private WebElement lnk_savings;
+	
+	public String getSavingsLabel() {
+		String label = getText(lnk_savings);
+		log.info("Forgot Username Label {}: " + label);
+		return label;
+	}
+	
+	@FindBy(xpath = "//*[@id=\"efficiencyMenubar\"]/li[4]/a")
+	private WebElement lnk_educational;
+	
+	public String getEducationalLabel() {
+		String label = getText(lnk_educational);
+		log.info("Forgot Username Label {}: " + label);
+		return label;
+	}
+	
+	@FindBy(xpath = "//*[@id=\"preloginPaymentLocationModule\"]")
 	private WebElement lnk_paymentlocations;
 
 	public String getPaymentLocationsLinkLabel() {
-		String label = getText(lnk_paymentlocations).replace("location_on", "");
+		String label = getText(lnk_paymentlocations).replace("location_on", "").trim();
 		log.info("Forgot Username Label {}: " + label);
 		return label;
 	}
@@ -301,11 +345,11 @@ public class PreLoginPage extends HomePage {
 		log.info("contact us button clicked successfully.");
 	}
 	
-	@FindBy(xpath = "//*[@id=\"form2\"]/section/div[2]/div/div[4]/ul/a[8]")
+	@FindBy(css = "a[id='PreLoginContactUs']")
 	private WebElement lnk_contactus;
 
 	public String getContactUsLinkLabel() {
-		String label = getText(lnk_contactus).replace("call", "");
+		String label = getText(lnk_contactus).replace("call", "").trim();
 		log.info("Forgot Username Label {}: " + label);
 		return label;
 	}
@@ -543,7 +587,6 @@ public class PreLoginPage extends HomePage {
     	log.info("Ok Button clicked {}.");
     }
     
-    
     @FindBy(xpath = "(//span[@title='Contact Us'])[1]")
     private WebElement lbl_PageHeaderPost;
     
@@ -628,7 +671,9 @@ public class PreLoginPage extends HomePage {
         return dropdownList;
     } 
     
-    @FindBy(css = "#form2 > div.chatbot > a")
+    //@FindBy(css = "#form2 > div.chatbot > a")
+    @FindBy(css = "#Footer_pnlChatbotSH > div > a")
+
     private WebElement btnChatBox;
     
     public void clickChatBox() {
