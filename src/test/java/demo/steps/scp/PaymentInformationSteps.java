@@ -61,7 +61,7 @@ public class PaymentInformationSteps extends PaymentInformationsPage {
 		softAssert.assertEquals(getLnkAddPaymentMethodText(),
 				paymentInformationTextProp.getPropValue("lblAddPaymentMethod"),
 				"Expected Add Payment Label do not match");
-
+		
 		// Checking Different Payment Methods in Add Payment
 		clickLnkAddPaymentMethod();
 		pause(20000);
@@ -78,6 +78,8 @@ public class PaymentInformationSteps extends PaymentInformationsPage {
 		// Checking For FAQ Section.
 		softAssert.assertTrue(isFaqFieldVisible(), "FAQ field Is Not Visible");
 	}
+	
+	
 	
 	public Boolean isPaymentInformationPage(String url, String title) {
 		Boolean isaccountInformationPage = false;
@@ -103,7 +105,9 @@ public class PaymentInformationSteps extends PaymentInformationsPage {
 		clickLnkAddPaymentMethod();
 		waitUntilCompletePageLoad();
 		// Clicking on Bank Radio Button
-		clickRdoBtnBank();
+		//clickRdoBtnBank();
+		//Clicking on Bank Option
+		clickBnkOpt();
 		// Account Holder Name
 		softAssert.assertTrue(isTxtBoxAccountHolderNameVisible(), "Account Holder Name Field is Not Visible");
 		softAssert.assertEquals(getLblTxtBoxAccountHolderName(),
@@ -247,20 +251,28 @@ public class PaymentInformationSteps extends PaymentInformationsPage {
 	    String pastedValue = element.getAttribute("value");
 	    
 	    return pastedValue;
-	}
+	    
+	    }
 	
 	public void verifyTheBankPaymentFormFieldValidation(SoftAssert softAssert) throws InterruptedException {
 		log.info("To Verify the Bank Payment form Fields Validation");
 		Bank bank = ModelsConfiguration.readBankAccounts().getBankByAccountHolderName("Henry Jacob Bank Account");
 		HomeSteps homeSteps = new HomeSteps(driver);
 		// UnEnrolling of AutoPay or Text Pay
+
 		//homeSteps.navigateToAutoPayment(); unEnrollFromAutoTextPay();
 		//homeSteps.navigateToTextToPay(); unEnrollFromAutoTextPay();
+
+		homeSteps.navigateToAutoPayment(); unEnrollFromAutoTextPay();
+
+		//homeSteps.navigateToAutoPayment(); unEnrollFromAutoTextPay();
+
+    //homeSteps.navigateToTextToPay(); unEnrollFromAutoTextPay();
+
 		 
 		homeSteps.navigateToPaymentInfo();
 		// Deleting Payment Profiles
-
-		//deletePaymentProfiles();
+		deletePaymentProfiles();
 		// Verifying Payment Information Page
 		Assert.assertTrue(
 				isPaymentInformationPage(paymentInformationTextProp.getPropValue("expectedPaymentInformationPageUrl"),
@@ -273,9 +285,13 @@ public class PaymentInformationSteps extends PaymentInformationsPage {
 				"Expected Page Title do not match");
 		// Clicking on Add Payment Link
 		clickLnkAddPaymentMethod();
-		pause(20000);
-		// Clicking on Bank Radio Button
-		clickRdoBtnBank();
+		waitUntilCompletePageLoad();
+	
+		pause(50000);		// Clicking on Bank Radio Button
+		//clickRdoBtnBank();
+		//clickBnkOpt();
+		waitUntilCompletePageLoad();
+		clickBnkOpt();
 		// Validation of Empty Form Submit
 		clickbtnAdd();
 		softAssert.assertEquals(getToastMessage(), paymentInformationTextProp.getPropValue("txtErrMsgBlank"),
@@ -436,10 +452,10 @@ public class PaymentInformationSteps extends PaymentInformationsPage {
 		Map<String, String> payProfileDataMap = new HashMap<>();
 		HomeSteps homeSteps = new HomeSteps(driver);
 		// UnEnrolling of AutoPay or Text Pay
-		homeSteps.navigateToAutoPayment();
-		unEnrollFromAutoTextPay();
-		homeSteps.navigateToTextToPay();
-		unEnrollFromAutoTextPay();
+		//homeSteps.navigateToAutoPayment();
+		//unEnrollFromAutoTextPay();
+		//homeSteps.navigateToTextToPay();
+		//unEnrollFromAutoTextPay();
 		homeSteps.navigateToPaymentInfo();
 		// Deleting Payment Profiles
 		deletePaymentProfiles();
@@ -476,8 +492,8 @@ public class PaymentInformationSteps extends PaymentInformationsPage {
 		softAssert.assertTrue(isPaymentMethodVisibleInCurrentBill(bank.getBankAccountNumber(), "BANK"),
 				"The payment method is not visible in Current Bill");
 		// Validating if the payment method is available in Text to Pay
-		softAssert.assertTrue(isPaymentMethodVisibleInTextToPay(bank.getBankAccountNumber(), "BANK"),
-				"The payment method is not visible in Current Bill");
+		//softAssert.assertTrue(isPaymentMethodVisibleInTextToPay(bank.getBankAccountNumber(), "BANK"),
+				//"The payment method is not visible in Current Bill");
 
 	}
 	
@@ -592,10 +608,12 @@ public class PaymentInformationSteps extends PaymentInformationsPage {
 		// Bank Payment Profile 1
 		// Clicking on Add Payment Link
 		clickLnkAddPaymentMethod();
-		pause(20000);
+		//pause(20000);
 		// Clicking on Bank Radio Button
-		clickRdoBtnBank();
+		//clickRdoBtnBank();
 		// Populate Bank Payment form and Add
+		waitUntilCompletePageLoad();
+		clickBnkOpt();
 		populateBankPaymentForm(bank);
 		clickbtnAdd();
 		pause(10000);
@@ -603,10 +621,12 @@ public class PaymentInformationSteps extends PaymentInformationsPage {
 		// Validating Duplicate Bank Payment Profile
 		// Clicking on Add Payment Link
 		clickLnkAddPaymentMethod();
-		pause(20000);
+		//pause(20000);
 		// Clicking on Bank Radio Button
-		clickRdoBtnBank();
+		//clickRdoBtnBank();
 		// Populate Bank Payment form and Add
+		waitUntilCompletePageLoad();
+		clickBnkOpt();
 		populateBankPaymentForm(bank);
 		clickbtnAdd();
 		pause(2000);

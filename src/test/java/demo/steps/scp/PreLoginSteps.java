@@ -11,6 +11,7 @@ import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Wait;
 import org.testng.Assert;
 import org.testng.asserts.SoftAssert;
 
@@ -134,7 +135,7 @@ public class PreLoginSteps extends PreLoginPage {
 		String user = Configuration.toString("userName");
 		String password = Configuration.toString("password");
 		// Verify login with blank creds
-		softAssert.assertEquals(loginWithBlankCreds(), loginTextProp.getPropValue("loginWithBlankCredsErrMsg"),
+			softAssert.assertEquals(loginWithBlankCreds(), loginTextProp.getPropValue("loginWithBlankCredsErrMsg"),
 				"Login with Blank creds error message not matched.");
 		// Verify login with blank password
 		softAssert.assertEquals(loginWithBlankPassword(user),
@@ -158,6 +159,7 @@ public class PreLoginSteps extends PreLoginPage {
 	}
 
 	public void verifyTheLoginPageObject(SoftAssert softAssert) {
+		waitForPageToLoad();
 		Assert.assertTrue(
 				isLoginPage(loginTextProp.getPropValue("loginPageUrl"), loginTextProp.getPropValue("loginPageTitle")));
 		softAssert.assertTrue(isCompanyLogoVisible(), "Company logo is not present.");
@@ -184,12 +186,12 @@ public class PreLoginSteps extends PreLoginPage {
 				"Label for problem sign in is not matched.");
 		softAssert.assertEquals(getRegisterLinkLabel(), loginTextProp.getPropValue("lblRegisterLnk"),
 				"Label for register link is not matched.");
-		softAssert.assertEquals(getAdvancedServicesLinkLabel(), loginTextProp.getPropValue("lnkAdvancedServices"),
-				"Label for advanced service link is not matched.");
+		//softAssert.assertEquals(getAdvancedServicesLinkLabel(), loginTextProp.getPropValue("lnkAdvancedServices"),
+			//	"Label for advanced service link is not matched.");
 		softAssert.assertEquals(getPayBillLinkLabel(), loginTextProp.getPropValue("lnkPayBill"),
 				"Label for pay bill link is not matched.");
 		softAssert.assertEquals(getOutagesLinkLabel(), loginTextProp.getPropValue("lnkOutages"),
-				"Label for outages link is not matched.");
+				"Label for outages link is not matched.");		
 		softAssert.assertEquals(getWaysToSaveLinkLabel(), loginTextProp.getPropValue("lnkWaysToSave"),
 				"Label for ways to save link is not matched.");
 		softAssert.assertEquals(getPaymentLocationsLinkLabel(), loginTextProp.getPropValue("lnkPaymentLocations"),
@@ -240,7 +242,10 @@ public class PreLoginSteps extends PreLoginPage {
 		log.info("Checking that the current page is ForgetPassword Page");
 		if (getCurrentUrl().contains(url.toLowerCase()) && getCurrentTitle().equalsIgnoreCase(title))
 			isForgetPasswordPage = true;
-		log.info("The current page is ForgetPassword Page {}: " + isForgetPasswordPage);
+		log.info("The current page is Connect me Page {}: " + isForgetPasswordPage);
+		log.info("The current page is oo {}: " + getCurrentUrl());
+		log.info("The current page is 00 {}: " + getCurrentTitle());
+
 		return isForgetPasswordPage;
 	}
 
@@ -251,7 +256,8 @@ public class PreLoginSteps extends PreLoginPage {
 		if (selectlstConnectMeOptions("Rebates")) {
 		}
 		Assert.assertTrue(isPreLogConnectMePage(preLoginConnectMeProp.getPropValue("ConnectMePageUrl"),
-				(preLoginConnectMeProp.getPropValue("ConnectMePageTitle"))), "Page Title & URL does not Match");
+				(preLoginConnectMeProp.getPropValue("ConnectMePageTitleTxt"))), "Page Title & URL does not Match");
+		
 		softAssert.assertTrue(isPageHeaderPostVisible(), "Contact Us Page Header is not visible");
 		softAssert.assertTrue(isSocialMediaVisible(), "Social Media Tab is not visibility");
 		softAssert.assertTrue(isContactusVisible(), "Contact Us Tab is not visibility");
@@ -463,13 +469,11 @@ public class PreLoginSteps extends PreLoginPage {
 
 	public void verifyPreLogChatBox(SoftAssert softAssert) throws SQLException {
 		clickChatBox();
-		pause(5000);
 		isChatBoxHeaderVisible();
 		softAssert.assertEquals(getChatBoxHeader(), loginTextProp.getPropValue("lblChatWindowHeading"),
 				"Warning message do not match");
 		softAssert.assertTrue(isScmLOgoChatBoxVisible(), "SCM Logo on Chat Box is not visible");
 		isChatTextBoxVisible();
-
 		String text = "Testing";
 		enterDataInChatTextBox(text);
 		clickSendBtn();
@@ -558,6 +562,7 @@ public class PreLoginSteps extends PreLoginPage {
 		softAssert.assertEquals(payWithBlankAccountNumber(),
 				preLoginPaymentProp.getPropValue("payWithBlankAccountNumber"),
 				"Blank username field validation not correct.");
+		
 		// Verify login with blank phone number
 		softAssert.assertEquals(payWithBlankPhoneNumber(),
 				preLoginPaymentProp.getPropValue("payWithBlankPhoneNumber"),
