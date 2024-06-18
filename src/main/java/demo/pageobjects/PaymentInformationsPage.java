@@ -712,7 +712,7 @@ public class PaymentInformationsPage extends HomePage {
     	log.info("Visiblity status of Zip Code Error Message:"+ errMsgZip.isDisplayed());
     	return getText(errMsgZip);
     	}
-    @FindBy(id = "submitNext")
+    @FindBy(xpath = "//*[@id='submitNext']")
     private WebElement btnAdd;
     
     public boolean isBtnAddVisible() {
@@ -1419,7 +1419,8 @@ public class PaymentInformationsPage extends HomePage {
     	clickWithJSExecutor(btnThreeDots);
     }
     
-    @FindBy(css="li[class='deleterow'] a")
+    //@FindBy(css="li[class='deleterow'] a")
+	@FindBy(css="li[id='removePaymnetType_1']")
     private WebElement btnRemove;
     
     public void clickBtnRemove() {
