@@ -8,6 +8,7 @@ import sew.ai.config.Configuration;
 import sew.ai.config.SCPConfiguration;
 import sew.ai.enums.CategoryType;
 import sew.ai.helpers.anotations.FrameworkAnnotations;
+import sew.ai.helpers.reporters.ExtentLogger;
 import sew.ai.models.User;
 import sew.ai.runner.TestRunner;
 import sew.ai.steps.scp.DashboardSteps;
@@ -16,6 +17,7 @@ import sew.ai.steps.scp.LoginSteps;
 import demo.steps.scp.MyProfileSteps;
 import java.io.IOException;
 import java.sql.SQLException;
+import java.util.Arrays;
 
 public class MyProfileTests extends TestRunner {
 	private static final Logger log = LogManager.getLogger(MyProfileTests.class);
@@ -25,6 +27,9 @@ public class MyProfileTests extends TestRunner {
 	@FrameworkAnnotations(author = { "Neethu" }, category = { CategoryType.SANITY, CategoryType.SCP_MYACCOUNT })
 	@Test(description = "To verify Negative Validation on the My Account-> Profile Page.")
 	public void verifyNegativeValidationForMyProfilePage() throws SQLException, InterruptedException {
+		String[] tc_id = {"My_Profile_01"};
+		ExtentLogger.logInfo("Test Case execution for - verifyNegativeValidationForMyProfilePage. Test Case id's -->  " + Arrays.toString(tc_id));
+		
 		SoftAssert softAssert = new SoftAssert();
 
 		// Login into The Application and Navigate to My Profile Page
@@ -47,6 +52,9 @@ public class MyProfileTests extends TestRunner {
 	@FrameworkAnnotations(author = { "Neethu" }, category = { CategoryType.SMOKE, CategoryType.SCP_MYACCOUNT })
 	@Test(description = "To verify that UI And Objects on the My Account-> Profile Page.")
 	public void verifyMyProfileInformationPageUI() throws SQLException, InterruptedException {
+		String[] tc_id = {"My_Profile_02"};
+		ExtentLogger.logInfo("Test Case execution for - verifyMyProfileInformationPageUI. Test Case id's -->  " + Arrays.toString(tc_id));
+		
 		SoftAssert softAssert = new SoftAssert();
 
 		// Login into The Application and Navigate to My Profile Page
@@ -69,6 +77,9 @@ public class MyProfileTests extends TestRunner {
 	@FrameworkAnnotations(author = { "Neethu" }, category = { CategoryType.SANITY, CategoryType.SCP_MYACCOUNT })
 	@Test(description = "Verify that User is able to download personal information or Data.")
 	public void verifyDownloadMyProfilePersonalData() throws SQLException, InterruptedException, IOException {
+		String[] tc_id = {"My_Profile_03"};
+		ExtentLogger.logInfo("Test Case execution for - verifyDownloadMyProfilePersonalData. Test Case id's -->  " + Arrays.toString(tc_id));
+		
 		SoftAssert softAssert = new SoftAssert();
 
 		// Login into The Application and Navigate to My Profile Page

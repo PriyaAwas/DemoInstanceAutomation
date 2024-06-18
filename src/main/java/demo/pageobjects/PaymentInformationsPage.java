@@ -131,7 +131,17 @@ public class PaymentInformationsPage extends HomePage {
     	pause(3000);
     	}
     
-    @FindBy(css = "div[class*='crdbt_crd'] #accholrnm")
+    @FindBy(xpath = "//*[@id=\"profile_widget\"]/section/div/div[2]/div/div/div/div/div/div[1]/div/div/section/div[1]/label/span")
+    private WebElement optnBankAcc;
+    
+    public void clickBnkOpt() {
+    	log.info("Clicking Bank Account Option ");
+    	clickWithJSExecutor(optnBankAcc);
+    	pause(3000);
+    	}
+    
+    //@FindBy(css = "div[class*='crdbt_crd'] #accholrnm")
+    @FindBy(id = "accholrnm")
     private WebElement txtBoxAccountHolderName;
     
     public boolean isTxtBoxAccountHolderNameVisible() {
@@ -712,7 +722,8 @@ public class PaymentInformationsPage extends HomePage {
     	log.info("Visiblity status of Zip Code Error Message:"+ errMsgZip.isDisplayed());
     	return getText(errMsgZip);
     	}
-    @FindBy(id = "submitNext")
+    //@FindBy(id = "//input[@id='submitNext' and @class='submit-button stepperbtns stnext']")
+    @FindBy(css = "#submitNext")
     private WebElement btnAdd;
     
     public boolean isBtnAddVisible() {
@@ -733,12 +744,23 @@ public class PaymentInformationsPage extends HomePage {
     public void clickbtnAdd() {
     	scrollToElement(btnAdd);
      	log.info("Waiting For Add button to be clickable");
-    	waitForElementToBeClickable(btnAdd);
-    	pause(5000);
-    	click(btnAdd);
+    	//waitForElementToBeClickable(btnAdd);
+    	pause(15000);
+    	clickElementUsingJsExecutor(btnAdd);
     	log.info("Add button is clicked");
     }
-	
+//    @FindBy(css = "#submitNext")
+//    private WebElement btnAdd1;
+//    
+//    public void clickbtnAdd1() {
+//    	//scrollToElement(btnAdd);
+//     	log.info("Waiting For Add button to be clickable");
+//    	//waitForElementToBeClickable(btnAdd);
+//    	pause(10000);
+//    	clickElementUsingJsExecutor(btnAdd1);
+//    	log.info("Add button is clicked");
+//    }
+    
     @FindBy(css = "#submitNext+#btnclosepopup")
     private WebElement btnCancel;
     
