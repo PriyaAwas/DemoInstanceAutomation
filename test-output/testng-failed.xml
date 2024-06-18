@@ -12,90 +12,16 @@
     <parameter name="platformType" value="web"/>
     <parameter name="platformName" value="chrome"/>
     <classes>
-      <class name="demo.tests.scp.AboutMyHomeTests">
-        <methods>
-          <include name="testPreRequisites"/>
-          <include name="tearDownClasses"/>
-          <include name="verifyAboutMyHomePageUI"/>
-          <include name="methodsPreRequisites"/>
-          <include name="tearDownMethods"/>
-          <include name="classPreRequisites"/>
-        </methods>
-      </class> <!-- demo.tests.scp.AboutMyHomeTests -->
-      <class name="demo.tests.scp.PreLoginTests">
-        <methods>
-          <include name="testPreRequisites"/>
-          <include name="tearDownClasses"/>
-          <include name="verifyValidLogin"/>
-          <include name="methodsPreRequisites"/>
-          <include name="verifyLoginPageObjects"/>
-          <include name="verifyInvalidLogin"/>
-          <include name="classPreRequisites"/>
-          <include name="tearDownMethods"/>
-        </methods>
-      </class> <!-- demo.tests.scp.PreLoginTests -->
-      <class name="demo.tests.scp.NotificationTests">
-        <methods>
-          <include name="testPreRequisites"/>
-          <include name="verifyReplyNotifications"/>
-          <include name="tearDownClasses"/>
-          <include name="methodsPreRequisites"/>
-          <include name="tearDownMethods"/>
-          <include name="classPreRequisites"/>
-        </methods>
-      </class> <!-- demo.tests.scp.NotificationTests -->
-      <class name="demo.tests.scp.AccountInformationTests">
-        <methods>
-          <include name="testPreRequisites"/>
-          <include name="tearDownClasses"/>
-          <include name="verifyLinkAccountUIAndValidation"/>
-          <include name="methodsPreRequisites"/>
-          <include name="classPreRequisites"/>
-          <include name="tearDownMethods"/>
-        </methods>
-      </class> <!-- demo.tests.scp.AccountInformationTests -->
-      <class name="demo.tests.scp.NotificationPreferenceTests">
-        <methods>
-          <include name="testPreRequisites"/>
-          <include name="tearDownClasses"/>
-          <include name="verifyNotificationPreferencePageObjects"/>
-          <include name="methodsPreRequisites"/>
-          <include name="classPreRequisites"/>
-          <include name="tearDownMethods"/>
-        </methods>
-      </class> <!-- demo.tests.scp.NotificationPreferenceTests -->
-      <class name="demo.tests.scp.PaymentInfoTests">
-        <methods>
-          <include name="testPreRequisites"/>
-          <include name="verifyMakePaymentWithNewCC"/>
-          <include name="tearDownClasses"/>
-          <include name="methodsPreRequisites"/>
-          <include name="classPreRequisites"/>
-          <include name="tearDownMethods"/>
-        </methods>
-      </class> <!-- demo.tests.scp.PaymentInfoTests -->
-      <class name="demo.tests.scp.UserDashboardTests">
-        <methods>
-          <include name="testPreRequisites"/>
-          <include name="tearDownClasses"/>
-          <include name="verifyBillingSummarySectionObjects"/>
-          <include name="methodsPreRequisites"/>
-          <include name="classPreRequisites"/>
-          <include name="tearDownMethods"/>
-          <include name="verifyDashboardPageObjects"/>
-          <include name="verifyUsageFeatureOnDashboard"/>
-        </methods>
-      </class> <!-- demo.tests.scp.UserDashboardTests -->
-      <class name="demo.tests.scp.PostLogContactUsTests">
+      <class name="demo.tests.scp.ForgetUsernameTest">
         <methods>
           <include name="testPreRequisites"/>
           <include name="tearDownClasses"/>
           <include name="methodsPreRequisites"/>
-          <include name="verifyPostLoginContactUsPage"/>
           <include name="tearDownMethods"/>
           <include name="classPreRequisites"/>
+          <include name="resetUsernameValidEmailId"/>
         </methods>
-      </class> <!-- demo.tests.scp.PostLogContactUsTests -->
+      </class> <!-- demo.tests.scp.ForgetUsernameTest -->
     </classes>
   </test> <!-- E2E Test Suite On Web - Chrome(failed) -->
 </suite> <!-- Failed suite [Test Execution] -->

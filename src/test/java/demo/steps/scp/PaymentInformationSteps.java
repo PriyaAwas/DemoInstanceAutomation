@@ -61,7 +61,7 @@ public class PaymentInformationSteps extends PaymentInformationsPage {
 		softAssert.assertEquals(getLnkAddPaymentMethodText(),
 				paymentInformationTextProp.getPropValue("lblAddPaymentMethod"),
 				"Expected Add Payment Label do not match");
-
+		
 		// Checking Different Payment Methods in Add Payment
 		clickLnkAddPaymentMethod();
 		pause(20000);
@@ -78,6 +78,8 @@ public class PaymentInformationSteps extends PaymentInformationsPage {
 		// Checking For FAQ Section.
 		softAssert.assertTrue(isFaqFieldVisible(), "FAQ field Is Not Visible");
 	}
+	
+	
 	
 	public Boolean isPaymentInformationPage(String url, String title) {
 		Boolean isaccountInformationPage = false;
@@ -247,20 +249,20 @@ public class PaymentInformationSteps extends PaymentInformationsPage {
 	    String pastedValue = element.getAttribute("value");
 	    
 	    return pastedValue;
-	}
+	    
+	    }
 	
 	public void verifyTheBankPaymentFormFieldValidation(SoftAssert softAssert) throws InterruptedException {
 		log.info("To Verify the Bank Payment form Fields Validation");
 		Bank bank = ModelsConfiguration.readBankAccounts().getBankByAccountHolderName("Henry Jacob Bank Account");
 		HomeSteps homeSteps = new HomeSteps(driver);
 		// UnEnrolling of AutoPay or Text Pay
-		homeSteps.navigateToAutoPayment(); unEnrollFromAutoTextPay();
-		homeSteps.navigateToTextToPay(); unEnrollFromAutoTextPay();
+		//homeSteps.navigateToAutoPayment(); unEnrollFromAutoTextPay();
+		//homeSteps.navigateToTextToPay(); unEnrollFromAutoTextPay();
 		 
 		homeSteps.navigateToPaymentInfo();
 		// Deleting Payment Profiles
-
-		//deletePaymentProfiles();
+		deletePaymentProfiles();
 		// Verifying Payment Information Page
 		Assert.assertTrue(
 				isPaymentInformationPage(paymentInformationTextProp.getPropValue("expectedPaymentInformationPageUrl"),
@@ -273,7 +275,7 @@ public class PaymentInformationSteps extends PaymentInformationsPage {
 				"Expected Page Title do not match");
 		// Clicking on Add Payment Link
 		clickLnkAddPaymentMethod();
-		pause(20000);
+		pause(50000);
 		// Clicking on Bank Radio Button
 		clickRdoBtnBank();
 		// Validation of Empty Form Submit
