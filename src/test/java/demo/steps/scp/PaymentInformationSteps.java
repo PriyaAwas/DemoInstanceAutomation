@@ -109,10 +109,10 @@ public class PaymentInformationSteps extends PaymentInformationsPage {
 		//Clicking on Bank Option
 		clickBnkOpt();
 		// Account Holder Name
-		softAssert.assertTrue(isTxtBoxAccountHolderNameVisible(), "Account Holder Name Feild is Not Visible");
+		softAssert.assertTrue(isTxtBoxAccountHolderNameVisible(), "Account Holder Name Field is Not Visible");
 		softAssert.assertEquals(getLblTxtBoxAccountHolderName(),
 				paymentInformationTextProp.getPropValue("lblAccountHolderName"),
-				"Account Holder Name Lable do not match");
+				"Account Holder Name Label do not match");
 		// Checking The fields are not pre populated
 		softAssert.assertEquals(getText(elementAccountHolderName()), "", "Account Holder name feild is pre-populated");
 		// Checking Copy past is not allowed
@@ -259,11 +259,16 @@ public class PaymentInformationSteps extends PaymentInformationsPage {
 		Bank bank = ModelsConfiguration.readBankAccounts().getBankByAccountHolderName("Henry Jacob Bank Account");
 		HomeSteps homeSteps = new HomeSteps(driver);
 		// UnEnrolling of AutoPay or Text Pay
+
+		//homeSteps.navigateToAutoPayment(); unEnrollFromAutoTextPay();
+		//homeSteps.navigateToTextToPay(); unEnrollFromAutoTextPay();
+
 		homeSteps.navigateToAutoPayment(); unEnrollFromAutoTextPay();
 
 		//homeSteps.navigateToAutoPayment(); unEnrollFromAutoTextPay();
 
     //homeSteps.navigateToTextToPay(); unEnrollFromAutoTextPay();
+
 		 
 		homeSteps.navigateToPaymentInfo();
 		// Deleting Payment Profiles
