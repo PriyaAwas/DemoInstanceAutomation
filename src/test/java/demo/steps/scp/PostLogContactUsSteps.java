@@ -14,16 +14,20 @@ import org.testng.asserts.SoftAssert;
 
 import demo.pageobjects.PostLogConnectUsPage;
 import sew.ai.helpers.props.FilePaths;
-
+import sew.ai.config.Configuration;
 import sew.ai.helpers.props.Constants;
 import sew.ai.utils.PropertiesUtil;
 import static sew.ai.helpers.props.FilePaths.FILE_UPLOAD_PATH;
 
 public class PostLogContactUsSteps extends PostLogConnectUsPage {
-	private static final Logger log = LogManager.getLogger(ProblemSigningInSteps.class);
 
+	private static final Logger log = LogManager.getLogger(ProblemSigningInSteps.class);
 	public static PropertiesUtil PostLogConnectMeTextProp;
 	String referenceId = null;
+	String accountNo = null;
+	String custmerName = null;
+	String email = null;
+
 
 	public PostLogContactUsSteps(WebDriver driver) {
 		super(driver);
@@ -83,15 +87,19 @@ public class PostLogContactUsSteps extends PostLogConnectUsPage {
 		if (selectlstConnectMeOptions("Rebates")) {
 		}
 		if (isServiceAccNoTxtVisible()) {
-			// String accountNo = getServiceAccNoLabel();
-			// String accountNo = gettxtAccountNo();
-			// Assert.assertEquals(user.getDefaultUtilityAccNum(), accountNo);
+			 accountNo = gettxtAccountNum();
+			
+			Assert.assertEquals(Configuration.toString("accountNumber"), accountNo);
 		}
 		if (isCustomerNameTxtVisible()) {
-			// Assert.assertEquals(user.getFullName(), getTextCustomerName());
+			 custmerName = getCustomerNameValue();
+
+			 Assert.assertEquals(Configuration.toString("customerName"),custmerName);
 		}
 		if (isEmailAddressTxtVisible()) {
-			// Assert.assertEquals(user.getEmailId(), getEmailAddressLabel());
+			email = getCustomerEmailValue();
+
+			 Assert.assertEquals(Configuration.toString("demoEmailId"), email);
 		}
 		if (isChooseFileBtnVisible()) {
 			String validAttachmentFileName = "meter-reading.jpg";
@@ -125,25 +133,18 @@ public class PostLogContactUsSteps extends PostLogConnectUsPage {
 				pause(1000);
 				break;
 			case "Customer Name":
-				// assertEquals(value, user.getFullName(), "Customer name not matched on preview
-				// your form.");
-				assertEquals(value, "John Doe", "Customer name not matched on preview your form.");
+				// assertEquals(value, user.getFullName(), "Customer name not matched on preview your form.");
+				assertEquals(value, custmerName, "Customer name not matched on preview your form.");
 				pause(1000);
 				break;
 			case "Email Address":
 				// softAssert.assertEquals(value, user.getEmailId(), "Email address not matched
 				// on preview your form");
-				softAssert.assertEquals(value, "varun.bhatia@smartenergywater.in",
-						"Email address not matched on preview your form");
+				softAssert.assertEquals(value, email,"Email address not matched on preview your form");
 				pause(1000);
 				break;
 			case "Subject":
 				softAssert.assertEquals(value, "Testing", "Subject not matched on preview your form");
-				pause(1000);
-				break;
-			case "Attachment":
-				// softAssert.assertEquals(value, fileName, "Attachment name is not matched on
-				// preview your form");
 				pause(1000);
 				break;
 			case "Comments (Optional)":

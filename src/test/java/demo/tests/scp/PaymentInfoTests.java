@@ -60,6 +60,7 @@ public class PaymentInfoTests extends TestRunner {
 		softAssert.assertAll();
 		log.info("Test Case execution for - verifyPaymentInformationPageObjects - is Completed.");
 	}
+	
 
 	@FrameworkAnnotations(author = { "SatyaTiwari" }, category = { CategoryType.SANITY, CategoryType.SCP_PAYMENT_INFO })
 	@Test(priority = 3, description = "To verify the Bank Payment form fields.")
