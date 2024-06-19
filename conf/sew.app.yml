@@ -21,7 +21,7 @@ configurations:
     scp.url: "https://pwc-ccb.smartcmobile.com/Portal/"
     csp.url: "https://qa.smartcmobile.net/SCM_10.0_S-CSP/"
     userName: "SCMDemoInstance"
-    password: "Demo@1234"
+    password: "Demo@123456"
     utilityAccountNumber: "411000714880"
     commercialUserName: "ab-ios12"
     commercialPassword: "Demo@1234"
