@@ -23,6 +23,10 @@ configurations:
     userName: "SCMDemoInstance"
     password: "Demo@123456"
     utilityAccountNumber: "411000714880"
+    accountNumber: "2711765963"
+    customerName : "McDonalds Store 2001"
+    demoEmailId  : "DemoInstance@mailinator.com"
+    
     commercialUserName: "ab-ios12"
     commercialPassword: "Demo@1234"
     multiFamilyUserName: "IronManMultifamily"
