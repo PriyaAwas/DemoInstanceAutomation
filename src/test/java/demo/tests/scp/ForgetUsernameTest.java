@@ -41,7 +41,7 @@ public class ForgetUsernameTest extends TestRunner {
       }
 	
 	@FrameworkAnnotations(author = { "Priya Awasthi" }, category = { CategoryType.SANITY, CategoryType.SCP_LOGINHELP })
-    @Test(priority = 2, description = "To verify the Forget Username name with valid email.")
+    @Test(priority = 3, description = "To verify the Forget Username name with valid email.")
     public void resetUsernameValidEmailId() {
         log.info("To verify that following should be displayed on validate Forgot Username.");
         SoftAssert softAssert = new SoftAssert();
