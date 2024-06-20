@@ -37,7 +37,6 @@ public class BillingHistoryTests extends TestRunner {
 		softAssert.assertAll();
 	}
 	
-	@TestRail(testCaseId = { 76145, 76161, 100593 })
 	@FrameworkAnnotations(author = { "SatyaTiwari" }, category = { CategoryType.SMOKE,CategoryType.SCP_BILLING })
 	@Test(priority = 2, description = "To verify Billing History page UI and Objects.")
 	public void verifyBillHistoryUIAndObjects() throws Exception {

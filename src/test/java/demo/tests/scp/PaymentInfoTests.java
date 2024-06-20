@@ -26,7 +26,7 @@ public class PaymentInfoTests extends TestRunner {
 	@FrameworkAnnotations(author = { "SatyaTiwari" }, category = { CategoryType.SANITY, CategoryType.SCP_PAYMENT_INFO })
 	@Test(priority = 1, description = "To verify the Payment information page objects after login.")
 	public void verifyPaymentInformationPageObjects() {
-		log.info("To Verify Payment information feilds and Add payment method pop-up");
+		log.info("To Verify Payment information fields and Add payment method pop-up");
 		SoftAssert softAssert = new SoftAssert();
 		// SCP- Application Login
 		LoginSteps loginSteps = new LoginSteps(driver);
@@ -60,6 +60,7 @@ public class PaymentInfoTests extends TestRunner {
 		softAssert.assertAll();
 		log.info("Test Case execution for - verifyPaymentInformationPageObjects - is Completed.");
 	}
+	
 
 	@FrameworkAnnotations(author = { "SatyaTiwari" }, category = { CategoryType.SANITY, CategoryType.SCP_PAYMENT_INFO })
 	@Test(priority = 3, description = "To verify the Bank Payment form fields.")

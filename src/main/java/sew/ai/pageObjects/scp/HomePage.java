@@ -395,7 +395,7 @@ public class HomePage extends Page {
 		log.info("Usage link clicked successfully.");
 	}
 
-	@FindBy(css = "#HeaderMenu_PUMenu")
+	@FindBy(css = "a[globalize='ML_POWERUSAGE_Navigation_Water']")
 	private WebElement lnk_usage_overview;
 
 	public void clickUsageOverviewLink() {

@@ -21,11 +21,15 @@ configurations:
     #scp.url: "https://pwc-ccb.smartcmobile.com/Portal/"
     scp.url: "https://pwc-ccb.smartcmobile.com/Portal/default.aspx"
     csp.url: "https://qa.smartcmobile.net/SCM_10.0_S-CSP/"
-    
     userNameRes: "Demo_Residential"
     passwordRes: "Demo@123"
-    
+    userName: "SCMDemoInstance"
+    password: "Demo@123456"
     utilityAccountNumber: "411000714880"
+    accountNumber: "2711765963"
+    customerName : "McDonalds Store 2001"
+    demoEmailId  : "DemoInstance@mailinator.com"
+    
     commercialUserName: "ab-ios12"
     commercialPassword: "Demo@1234"
     multiFamilyUserName: "IronManMultifamily"

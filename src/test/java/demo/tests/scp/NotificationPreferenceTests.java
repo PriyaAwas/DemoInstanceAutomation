@@ -26,7 +26,6 @@ public class NotificationPreferenceTests extends TestRunner {
     public NotificationPreferenceTests() {
         notificationPreferenceSteps = new NotificationPreferenceSteps(driver);
     }
-
     @FrameworkAnnotations(author = {"Priya Awasthi"}, category = {CategoryType.SMOKE,CategoryType.NOTIFICATION_PREFERENCE})
     @Test( description = "To verify Notification Preference PageObjects.")
     public void verifyNotificationPreferencePageObjects() {
