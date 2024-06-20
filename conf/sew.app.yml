@@ -18,8 +18,11 @@ configurations:
     testrailRunId: "1212"
     testrailPlatform: "3"
     postResultsTestrail: false
-    scp.url: "https://pwc-ccb.smartcmobile.com/Portal/"
+    #scp.url: "https://pwc-ccb.smartcmobile.com/Portal/"
+    scp.url: "https://pwc-ccb.smartcmobile.com/Portal/default.aspx"
     csp.url: "https://qa.smartcmobile.net/SCM_10.0_S-CSP/"
+    userNameRes: "Demo_Residential"
+    passwordRes: "Demo@123"
     userName: "SCMDemoInstance"
     password: "Demo@123456"
     utilityAccountNumber: "411000714880"
@@ -34,7 +37,8 @@ configurations:
     adminUsername: "qauser"
     adminPassword: "Sew@2021$!"
     ScpReg.url: "https://u-ugi10s.smartcmobile.net/portal/customerregistrations.aspx"
-    scmAccountNumber: "411001984953"
+    #scmAccountNumber: "411001984953"
+    scmAccountNumber: "2711765963"
     scmEmailAdd: "varun.bhatia@smartenergywater.in"
   uat:
     name: "SEW Functional Tests UAT Run"

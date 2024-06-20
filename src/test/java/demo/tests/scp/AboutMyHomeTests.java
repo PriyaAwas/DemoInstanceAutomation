@@ -33,8 +33,8 @@ public class AboutMyHomeTests extends TestRunner {
 		SoftAssert softAssert = new SoftAssert();
 		// Login into The Application and Navigate to My Profile Page
 		LoginSteps loginSteps = new LoginSteps(driver);
-		DashboardSteps dashboardSteps = loginSteps.loginIntoTheApplication(Configuration.toString("userName"),
-				Configuration.toString("password"));
+		DashboardSteps dashboardSteps = loginSteps.loginIntoTheApplicationWithResAcc(Configuration.toString("userNameRes"),
+				Configuration.toString("passwordRes"));
 		HomeSteps homeSteps = new HomeSteps(driver);
 		homeSteps.navigateToAboutMyHomePage();
 		// into AboutMyHomePageSteps
@@ -55,8 +55,8 @@ public class AboutMyHomeTests extends TestRunner {
 		SoftAssert softAssert = new SoftAssert();
 		// Login into The Application and Navigate to My Profile Page
 		LoginSteps loginSteps = new LoginSteps(driver);
-		DashboardSteps dashboardSteps = loginSteps.loginIntoTheApplication(Configuration.toString("userName"),
-				Configuration.toString("password"));
+		DashboardSteps dashboardSteps = loginSteps.loginIntoTheApplicationWithResAcc(Configuration.toString("userNameRes"),
+				Configuration.toString("passwordRes"));
 		HomeSteps homeSteps = new HomeSteps(driver);
 		homeSteps.navigateToAboutMyHomePage();
 		// into AboutMyHomePageSteps
@@ -78,8 +78,8 @@ public class AboutMyHomeTests extends TestRunner {
 		SoftAssert softAssert = new SoftAssert();
 		// Login into The Application and Navigate to My Profile Page
 		LoginSteps loginSteps = new LoginSteps(driver);
-		DashboardSteps dashboardSteps = loginSteps.loginIntoTheApplication(Configuration.toString("userName"),
-				Configuration.toString("password"));
+		DashboardSteps dashboardSteps = loginSteps.loginIntoTheApplicationWithResAcc(Configuration.toString("userNameRes"),
+				Configuration.toString("passwordRes"));
 		HomeSteps homeSteps = new HomeSteps(driver);
 		homeSteps.navigateToAboutMyHomePage();
 		// into AboutMyHomePageSteps

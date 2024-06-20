@@ -78,7 +78,7 @@ public class NotificationPreferenceTests extends TestRunner {
        
     @FrameworkAnnotations(author = {"Priya Awasthi"}, category = {CategoryType.SMOKE,CategoryType.NOTIFICATION_PREFERENCE})
     @Test( description = "To verify the add NotificationChannelFunctionality.")
-    public void verifyAddNotificationChannelFunctionality() {
+    public void verifyAddNotificationChannelFunctionalityForBugetOptn() {
               SoftAssert softAssert = new SoftAssert();
         // Init login steps
         LoginSteps loginSteps = new LoginSteps(driver);
