@@ -22,8 +22,6 @@ public class GuestUserTests extends TestRunner {
 	private static final Logger log = LogManager.getLogger(GuestUserTests.class);
 	private GuestUserSteps guestuserSteps;
 
-
-
 	@FrameworkAnnotations(author = { "Neethu" }, category = { CategoryType.SMOKE,CategoryType.SCP_MYACCOUNT })
 	@Test(description = "To verify Guest User page UI.")
 	public void verifyGuestUserPageUI() throws SQLException, InterruptedException {

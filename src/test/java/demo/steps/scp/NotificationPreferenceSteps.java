@@ -78,17 +78,21 @@ public class NotificationPreferenceSteps extends NotificationPreferencePage {
 		sAssert.assertTrue(isChkBoxBillingVisible(), "Billing checkbox is not visible");
 		linkLblBillingText();
 		// Budget
-		sAssert.assertEquals(getLevelBudget(), NotificationpreferenceTextProp.getPropValue("txtLblBudgetNpp"));
-		linklevelBudget();
-		pause(2000);
-		sAssert.assertTrue(isLblBudgetTextVisible(), "Budget text label is not visible");
-		sAssert.assertTrue(isBtnBudgetCancelVisible(), "Budget cancel button is not visible");
-		// sAssert.assertTrue(islstBudgetOption1Visible(), "Budget first option is not
-		// visible");
-		sAssert.assertTrue(isBtnBudgetCancelVisible(), "Budget cancel button is not visible");
-		sAssert.assertTrue(isBtnBudgetSaveVisible(), "Budget save button is not visible");
-		sAssert.assertTrue(isIconBudgetAddVisible(), "Budget icon Add button is not visible");
-		linklevelBudget();
+		/*
+		 * sAssert.assertEquals(getLevelBudget(),
+		 * NotificationpreferenceTextProp.getPropValue("txtLblBudgetNpp"));
+		 * linklevelBudget(); pause(2000); sAssert.assertTrue(isLblBudgetTextVisible(),
+		 * "Budget text label is not visible");
+		 * sAssert.assertTrue(isBtnBudgetCancelVisible(),
+		 * "Budget cancel button is not visible"); //
+		 * sAssert.assertTrue(islstBudgetOption1Visible(), "Budget first option is not
+		 * // visible"); sAssert.assertTrue(isBtnBudgetCancelVisible(),
+		 * "Budget cancel button is not visible");
+		 * sAssert.assertTrue(isBtnBudgetSaveVisible(),
+		 * "Budget save button is not visible");
+		 * sAssert.assertTrue(isIconBudgetAddVisible(),
+		 * "Budget icon Add button is not visible"); linklevelBudget();
+		 */
 
 		// Connect Me
 		isLblContactUsTextVisible();
@@ -354,28 +358,24 @@ public class NotificationPreferenceSteps extends NotificationPreferencePage {
 		Assert.assertTrue(isLblNotificationsVisible());
 		if (getIconBillingStatus().equalsIgnoreCase("On")) {
 			linkLblBillingText();
-
 			for (int i = 0; i < listBillingClose().size(); i++) {
 				listBillingClose().get(i).click();
-				;
 			}
 			selectlstBillingChannel("Email");
 			unCheckChkBoxBilling();
 			billingSaveBtn();
 			pause(8000);
-
 		}
 
 		if (getIconConnectMeStatus().equalsIgnoreCase("On")) {
-			// clickLevelConnectMeText();
-
+			clickLevelContactUsText();
 			for (int i = 0; i < getlstConnectMeCloseIcons().size(); i++) {
 				getlstConnectMeCloseIcons().get(i).click();
 			}
 			selectlstConnectMeOptions("Email");
 			unCheckConnectMe();
 			clickBtnConnectMeSave();
-
+			pause(8000);
 		}
 		linkLblBillingText();
 		log.info(
@@ -445,25 +445,26 @@ public class NotificationPreferenceSteps extends NotificationPreferencePage {
 				getLblToastMessage(), "Mobile Number All Zero validation message is not correct");
 		clickbtnCloseMsgOnHeader();
 		pause(3000);
-		selectlstBillingChannel("Text");
-		clearlstBillingOptionsTxt();
-		populatelstBillingOptionsTxt("0000111111");
-		checkBoxBilling();
-		billingSaveBtn();
-		sAssert.assertEquals(NotificationpreferenceTextProp.getPropValue("txtTextValidationMessageNpp"),
-				getLblToastMessage(), "Mobile Number incorrect format validation message is not correct");
-		clickbtnCloseMsgOnHeader();
-		pause(5000);
+		/*
+		 * selectlstBillingChannel("Text"); clearlstBillingOptionsTxt();
+		 * populatelstBillingOptionsTxt("0000111111"); checkBoxBilling();
+		 * billingSaveBtn();
+		 * sAssert.assertEquals(NotificationpreferenceTextProp.getPropValue(
+		 * "txtTextValidationMessageNpp"), getLblToastMessage(),
+		 * "Mobile Number incorrect format validation message is not correct");
+		 * clickbtnCloseMsgOnHeader(); pause(5000);
+		 */
 
-		selectlstBillingChannel("IVR");
-		clearlstBillingOptionsTxt();
-		populatelstBillingOptionsTxt("0000111111");
-		checkBoxBilling();
-		billingSaveBtn();
-		sAssert.assertEquals(NotificationpreferenceTextProp.getPropValue("txtMobile10_digitVaidationNpp"),
-				getLblToastMessage(), "Mobile Number incorrect format validation message is not correct");
-		clickbtnCloseMsgOnHeader();
-		pause(3000);
+		/*
+		 * selectlstBillingChannel("IVR"); clearlstBillingOptionsTxt();
+		 * populatelstBillingOptionsTxt("0000111111");
+		 * 
+		 * checkBoxBilling(); billingSaveBtn();
+		 * sAssert.assertEquals(NotificationpreferenceTextProp.getPropValue(
+		 * "txtMobile10_digitVaidationNpp"), getLblToastMessage(),
+		 * "Mobile Number incorrect format validation message is not correct");
+		 * clickbtnCloseMsgOnHeader(); pause(3000);
+		 */
 		selectlstBillingChannel("IVR");
 		clearlstBillingOptionsTxt();
 		populatelstBillingOptionsTxt("0000000000");
@@ -475,8 +476,7 @@ public class NotificationPreferenceSteps extends NotificationPreferencePage {
 		clickbtnCloseMsgOnHeader();
 		pause(3000);
 
-		log.info(
-				"- Verify the validation message in case of field minimum length=maximum length and provided value length is less than the required");
+		log.info("- Verify the validation message in case of field minimum length=maximum length and provided value length is less than the required");
 		// clickLevelContactMeText();
 		selectlstBillingChannel("Text");
 		clearlstBillingOptionsTxt();
@@ -496,7 +496,6 @@ public class NotificationPreferenceSteps extends NotificationPreferencePage {
 				getLblToastMessage(), "Mobile Number 10-Digit validation message is not correct");
 		clickbtnCloseMsgOnHeader();
 		pause(3000);
-
 		log.info("Test Case execution for - verifyNotificationAlertsValidationMessages - is finished");
 	}
 

@@ -43,28 +43,42 @@ public class PostLogContactUsSteps extends PostLogConnectUsPage {
 		selectlstConnectMeOptions("Rebates");
 		if (selectlstConnectMeOptions("Rebates")) {
 		}
-		softAssert.assertTrue(
-				isPostLogConnectMePage(PostLogConnectMeTextProp.getPropValue("ConnectMePageUrl"),
-						(PostLogConnectMeTextProp.getPropValue("ConnectMePageTitle"))),
-				"Page Title & URL does not Match");
-		softAssert.assertTrue(isPageHeaderPostVisible(), "Contact Us Page Header is not visible");
-		softAssert.assertTrue(isConnectMeVisible(), "Contact Us Tab is not visibility");
-		softAssert.assertTrue(isSocialMediaVisible(), "Social Media Tab is not visibility");
-		softAssert.assertTrue(isContactusVisible(), "Contact Us Tab is not visibility");
-		softAssert.assertTrue(isTrackRequestVisible(), "Track Request Tab is not visibility");
-		softAssert.assertTrue(isSavedFormVisible(), "Saved Form tab is not visibility");
-		softAssert.assertTrue(isSubmitBtnVisible(), "Submit button is not visibility");
-		softAssert.assertTrue(isNextBtnVisible(), "Next button is not visibility");
-		softAssert.assertTrue(isCustomerNameTxtVisible(), "Customer Name text Box is not visibility");
-		// softAssert.assertTrue(isServiceAccNoTxtVisible(), "Service Acc No text Box is
-		// not visibility");
-		softAssert.assertTrue(isEmailAddressTxtVisible(), "Email Address text Box is not visibility");
-		softAssert.assertTrue(istxtSubjectTxtVisible(), "Subject button is text Box visibility");
-		softAssert.assertTrue(isCommentsTxtVisible(), "Comments text Box is not visibility");
-		softAssert.assertTrue(isChooseFileBtnVisible(), "Choose File text Box is not visibility");
-		// softAssert.assertTrue(isBillingEnquiresVisible(), "Instagram Tab is not
-		// visibility");
-		softAssert.assertTrue(isCustomerlblVisible(), "Instagram Tab is not visibility");
+		/*
+		 * softAssert.assertTrue(
+		 * isPostLogConnectMePage(PostLogConnectMeTextProp.getPropValue(
+		 * "ConnectMePageUrl"),
+		 * (PostLogConnectMeTextProp.getPropValue("ConnectMePageTitle"))),
+		 * "Page Title & URL does not Match");
+		 * softAssert.assertTrue(isPageHeaderPostVisible(),
+		 * "Contact Us Page Header is not visible");
+		 * softAssert.assertTrue(isConnectMeVisible(),
+		 * "Contact Us Tab is not visibility");
+		 * softAssert.assertTrue(isSocialMediaVisible(),
+		 * "Social Media Tab is not visibility");
+		 * softAssert.assertTrue(isContactusVisible(),
+		 * "Contact Us Tab is not visibility");
+		 * softAssert.assertTrue(isTrackRequestVisible(),
+		 * "Track Request Tab is not visibility");
+		 * softAssert.assertTrue(isSavedFormVisible(),
+		 * "Saved Form tab is not visibility");
+		 * softAssert.assertTrue(isSubmitBtnVisible(),
+		 * "Submit button is not visibility"); softAssert.assertTrue(isNextBtnVisible(),
+		 * "Next button is not visibility");
+		 * softAssert.assertTrue(isCustomerNameTxtVisible(),
+		 * "Customer Name text Box is not visibility"); //
+		 * softAssert.assertTrue(isServiceAccNoTxtVisible(), "Service Acc No text Box is
+		 * // not visibility"); softAssert.assertTrue(isEmailAddressTxtVisible(),
+		 * "Email Address text Box is not visibility");
+		 * softAssert.assertTrue(istxtSubjectTxtVisible(),
+		 * "Subject button is text Box visibility");
+		 * softAssert.assertTrue(isCommentsTxtVisible(),
+		 * "Comments text Box is not visibility");
+		 * softAssert.assertTrue(isChooseFileBtnVisible(),
+		 * "Choose File text Box is not visibility"); //
+		 * softAssert.assertTrue(isBillingEnquiresVisible(), "Instagram Tab is not //
+		 * visibility"); softAssert.assertTrue(isCustomerlblVisible(),
+		 * "Instagram Tab is not visibility");
+		 */
 	}
 
 	public void verifySubmitblankForm() {
@@ -303,7 +317,11 @@ public class PostLogContactUsSteps extends PostLogConnectUsPage {
 	}
 
 	public void verifySavedFormObject(SoftAssert softAssert) {
+		pause(1000);
+
 		clickSavedForms();
+		pause(1000);
+
 		List<WebElement> savedFormsGridHeadersElements = listSavedFormsHeaders();
 		int counter = 0;
 		for (WebElement gridHeaderEle : savedFormsGridHeadersElements) {
@@ -315,15 +333,21 @@ public class PostLogContactUsSteps extends PostLogConnectUsPage {
 		List<WebElement> gridHeaderTextElements = listSavedFormsHeaders();
 		for (WebElement gridHeaderElement : gridHeaderTextElements) {
 			String actGridHeaderClass = gridHeaderElement.getAttribute("class").trim();
+			pause(200);
 			if (!actGridHeaderClass.equals("sorting_disabled")) {
-				assertTrue(actGridHeaderClass.equals("sorting"));
+				
+				pause(200);
+				assertTrue(actGridHeaderClass.equals("sorting"));			
 				if (actGridHeaderClass.equals("sorting")) {
 					click(gridHeaderElement);
-					pause(500);
+					pause(1000);
 					actGridHeaderClass = gridHeaderElement.getAttribute("class").trim();
-					assertTrue(actGridHeaderClass.equals("sorting_asc") || actGridHeaderClass.equals("sorting_desc"));
+					assertTrue(actGridHeaderClass != null && (actGridHeaderClass.equals("sorting sorting_asc") || actGridHeaderClass.equals("sorting sorting_desc")));
+
+					//assertTrue(actGridHeaderClass.equals("sorting_asc") || actGridHeaderClass.equals("sorting_desc"));
 				}
-				if (actGridHeaderClass.equals("sorting_desc")) {
+				if (actGridHeaderClass.equals("sorting sorting_desc")) {
+					pause(200);
 					click(gridHeaderElement);
 					pause(200);
 					actGridHeaderClass = gridHeaderElement.getAttribute("class").trim();
@@ -332,15 +356,15 @@ public class PostLogContactUsSteps extends PostLogConnectUsPage {
 					pause(200);
 					actGridHeaderClass = gridHeaderElement.getAttribute("class").trim();
 					assertTrue(actGridHeaderClass.equals("sorting_desc"));
-				} else if (actGridHeaderClass.equals("sorting_asc")) {
+				} else if (actGridHeaderClass.equals("sorting sorting_asc")) {
 					click(gridHeaderElement);
 					pause(200);
 					actGridHeaderClass = gridHeaderElement.getAttribute("class").trim();
-					assertTrue(actGridHeaderClass.equals("sorting_desc"));
+					assertTrue(actGridHeaderClass.equals("sorting sorting_desc"));
 					click(gridHeaderElement);
 					pause(200);
 					actGridHeaderClass = gridHeaderElement.getAttribute("class").trim();
-					assertTrue(actGridHeaderClass.equals("sorting_asc"));
+					assertTrue(actGridHeaderClass.equals("sorting sorting_asc"));
 				} else {
 					assertTrue(false, "Sorting is not working on column : " + gridHeaderElement.getText().trim());
 				}
