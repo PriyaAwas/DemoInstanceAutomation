@@ -1119,7 +1119,9 @@ public class NotificationPreferencePage extends HomePage {
 	}
 	
 	
-	@FindBy(css = ".binding_secConnectMe .input_Sec_noti:nth-of-type(1) [type='checkbox']")
+	//@FindBy(css = ".binding_secConnectMe .input_Sec_noti:nth-of-type(1) [type='checkbox']")
+	@FindBy(css = ".binding_secContactUs .input_Sec_noti:nth-of-type(1) [type='checkbox']")
+
 	private WebElement chkBoxConnectMe;
 
 	public boolean ischkBoxConnectMeVisible() {
@@ -1148,7 +1150,9 @@ public class NotificationPreferencePage extends HomePage {
 		log.info("chkBoxConnectMe is successfully.");
 	}
 
-	@FindBy(css = ".ConnectMeddl.ConnectMeddl0.select_effect")
+	//@FindBy(css = ".ConnectMeddl.ConnectMeddl0.select_effect")
+	
+	@FindBy(css = "	#ddlContactUsOption0")
 	private WebElement lstConnectMeOptions;
 
 	public boolean islstConnectMeOptionsVisible() {
@@ -1177,7 +1181,9 @@ public class NotificationPreferencePage extends HomePage {
 		log.info("lstConnectMeOptions populated successfully.");
 	}
 
-	@FindBy(css = ".binding_secConnectMe .input_Sec_noti:nth-of-type(1) .input_effect")
+	//@FindBy(css = ".binding_secConnectMe .input_Sec_noti:nth-of-type(1) .input_effect")
+	@FindBy(css = ".binding_secContactUs .input_Sec_noti:nth-of-type(1) .input_effect")
+
 	private WebElement lstConnectMeOptionsTxt;
 
 	public boolean islstConnectMeOptionsTxtVisible() {
@@ -1196,7 +1202,9 @@ public class NotificationPreferencePage extends HomePage {
 	}
 	
 
-	@FindBy(css = "a#add_ConnectMe > .material-icons")
+	//@FindBy(css = "a#add_ConnectMe > .material-icons")
+	@FindBy(css = "	a#add_ContactUs > .material-icons")
+
 	private WebElement iconConnectMeAdd;
 
 	public boolean isIconContactUsAddVisible() {
@@ -1205,7 +1213,9 @@ public class NotificationPreferencePage extends HomePage {
 		return isElementVisible(iconConnectMeAdd);
 	}
 
-	@FindBy(css = "input#connectMeCancel")
+//@FindBy(css = "input#connectMeCancel")
+	@FindBy(css = "	input#contactUsCancel")
+
 	private WebElement btnConnectMeCancel;
 
 	public boolean isBtnContactUsCancel() {
@@ -1225,7 +1235,9 @@ public class NotificationPreferencePage extends HomePage {
 	}
 	
 
-	@FindBy(css = "input#BtnConnectMeNotificationPrefrence")
+	//@FindBy(css = "input#BtnConnectMeNotificationPrefrence")
+	@FindBy(css = "	input#BtnContactUsNotificationPrefrence")
+
 	private WebElement btnConnectMeSave;
 
 	public boolean isBtnContactUsSave() {
@@ -1249,7 +1261,10 @@ public class NotificationPreferencePage extends HomePage {
 		return isElementVisible(btnConnectMeClose);
 	}
 
-	@FindBys(@FindBy(xpath = "//a[contains(@id,'remove_ConnectMe')]"))
+	//@FindBys(@FindBy(xpath = "//a[contains(@id,'remove_ConnectMe')]"))
+	
+	
+	@FindBys(@FindBy(xpath = "//a[contains(@id,'remove_ContactUs')]"))
 	private List<WebElement> lstConnectMeCloseIcons;
 
 	public List<WebElement> getlstConnectMeCloseIcons() {

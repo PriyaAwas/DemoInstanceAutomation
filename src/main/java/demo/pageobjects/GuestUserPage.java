@@ -508,8 +508,8 @@ public class GuestUserPage extends HomePage {
 	@FindBy(css = "[globalize='ML_MYACCOUNT_NotificationPreference']")
 	private WebElement lnkNotificationPrefSideMenu;
 
-	public void getBtnThreeDots(String sAccountNumber) {
-		driver.findElement(By.xpath("//label[@id='lblAccountNo_" + sAccountNumber + "']/../../div/i")).click();
+	public void getBtnThreeDots(String accountNumber) {
+		driver.findElement(By.xpath("//label[@id='lblAccountNo_" + accountNumber + "']/../../div/i")).click();
 	}
 
 	public WebElement btnResendInvitationIcon(String sAccountNumber) {
