@@ -41,6 +41,11 @@ public class LoginSteps extends LoginPage {
         populateUserName(userName);
         populatePassword(password);
     }
+    
+    public void populateLoginFormForRes(String userNameRes, String passwordRes) {
+        populateUserName(userNameRes);
+        populatePassword(passwordRes);
+    }
 
     public String loginWithBlankCreds() {
         clickSignInBtn();
@@ -107,6 +112,25 @@ public class LoginSteps extends LoginPage {
         //SCPConfiguration.initLoginToken();
         waitForPageToLoad();
         populateLoginForm(userName, password);
+        clickSignInBtn();
+        waitForPageLoader();
+        dashboardSteps = new DashboardSteps(driver);
+        ExtentLogger.logInfo("Dashboard page url : " + dashboardTextProp.getPropValue("dashboardPageUrl"));
+        ExtentLogger.logInfo("Dashboard page title : " + dashboardTextProp.getPropValue("dashboardPageHeader"));
+        Assert.assertTrue(dashboardSteps.isDashboardPage(
+                        dashboardTextProp.getPropValue("dashboardPageUrl"),
+                        dashboardTextProp.getPropValue("dashboardPageHeader")),
+                "Not navigated to dashboard page."
+        );
+        ExtentLogger.logPass("Logged into the application successfully.");
+        return dashboardSteps;
+    }
+    
+    public DashboardSteps loginIntoTheApplicationWithResAcc(String userNameRes, String passwordRes) {
+        ExtentLogger.logInfo("Logging into the application.");
+        DashboardSteps dashboardSteps;
+        waitForPageToLoad();
+        populateLoginFormForRes(userNameRes, passwordRes);
         clickSignInBtn();
         waitForPageLoader();
         dashboardSteps = new DashboardSteps(driver);

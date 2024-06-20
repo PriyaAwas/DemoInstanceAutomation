@@ -80,7 +80,7 @@ public class ForgetUsernameSteps extends ForgotUsernamePage {
 		clickSubmitBtn();
 		String SuccessToasterMsg = getToastMessage();
 		ExtentLogger.logInfo("Link send to user  " + SuccessToasterMsg);
-		 Assert.assertEquals(getToastMessage(),ForgotUsernameTextProp.getPropValue("txtSuccessToasterMsg"));
+	    Assert.assertEquals(getToastMessage(),ForgotUsernameTextProp.getPropValue("txtSuccessToasterMsg"));
 
 
 	}

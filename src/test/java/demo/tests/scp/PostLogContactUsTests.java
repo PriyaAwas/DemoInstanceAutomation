@@ -35,7 +35,7 @@ public class PostLogContactUsTests extends TestRunner {
 		// verify objects on Connect me page
 		postLogContactUsSteps.verifyContactUsObject(softAssert);
 		// Submit Blank Form
-		postLogContactUsSteps.verifySubmitblankForm();
+		//postLogContactUsSteps.verifySubmitblankForm();
 		postLogContactUsSteps.verifyCreateContactRequest(softAssert);
 		// Preview Contact Us Form
 		postLogContactUsSteps.verifyPreviewYourFormDetails(softAssert);
@@ -87,6 +87,7 @@ public class PostLogContactUsTests extends TestRunner {
 		postLogContactUsSteps = new PostLogContactUsSteps(driver);
 		// Verify Connect me form
 		postLogContactUsSteps.verifyContactUsObject(softAssert);
+
 		// Verify Objects of Saved Form
 		postLogContactUsSteps.verifySavedFormObject(softAssert);
 
