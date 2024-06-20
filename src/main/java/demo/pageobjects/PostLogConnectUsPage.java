@@ -1871,10 +1871,8 @@ public class PostLogConnectUsPage extends HomePage {
     	log.info("FAQ Top Tab clicked {}.");
     }
     
-   // @FindBy(css = "[class='usagecard_help commonmtr_dgn']")
-    @FindBy(css = "#ContentPlaceHolder1_freqQues_faqBucket > div:nth-child(11) > a > p > span")
-
-    
+    @FindBy(css = "[class='usagecard_help commonmtr_dgn']")
+    //@FindBy(css = "#ContentPlaceHolder1_freqQues_faqBucket > div:nth-child(11) > a > p > span")
     private WebElement faqUsageTab;
 
     public boolean isfaqUsageTabVisible() {

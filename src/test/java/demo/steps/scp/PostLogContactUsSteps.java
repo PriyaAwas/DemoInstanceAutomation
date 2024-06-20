@@ -220,71 +220,71 @@ public class PostLogContactUsSteps extends PostLogConnectUsPage {
 		softAssert.assertTrue(isfaqWaysToSaveTabVisible(), "Ways To Save Tab is not visibility");
 		// Click on Account FAQ
 		clickfaqAccountTab();
-		pause(1000);
+		pause(3000);
 		isFAQPageTopicVisible();
 		String lblaccount = getFAQPageTopic();
 		Assert.assertEquals(lblaccount, "Account");
 		clickFAQPageHelp();
-		pause(1000);
+		pause(3000);
 		softAssert.assertTrue(
 				isPostLogConnectMePage(PostLogConnectMeTextProp.getPropValue("ConnectMePageUrl"),
 						(PostLogConnectMeTextProp.getPropValue("ConnectMePageTitle"))),
 				"Page Title & URL does not Match");
 		// Click on Blling FAQ
 		clickfaqBillingTab();
-		pause(1000);
+		pause(3000);
 		isFAQPageTopicVisible();
 		String lblBilling = getFAQPageTopic();
 		Assert.assertEquals(lblBilling, "Billing");
 		clickFAQPageHelp();
-		pause(1000);
+		pause(3000);
 		softAssert.assertTrue(
 				isPostLogConnectMePage(PostLogConnectMeTextProp.getPropValue("ConnectMePageUrl"),
 						(PostLogConnectMeTextProp.getPropValue("ConnectMePageTitle"))),
 				"Page Title & URL does not Match");
 		// Click on Registration FAQ
 		clickfaqregistrationTab();
-		pause(1000);
+		pause(3000);
 		isFAQPageTopicVisible();
 		String lblRegistration = getFAQPageTopic();
 		Assert.assertEquals(lblRegistration, "Customer Registration");
 		clickFAQPageHelp();
-		pause(1000);
+		pause(3000);
 		softAssert.assertTrue(
 				isPostLogConnectMePage(PostLogConnectMeTextProp.getPropValue("ConnectMePageUrl"),
 						(PostLogConnectMeTextProp.getPropValue("ConnectMePageTitle"))),
 				"Page Title & URL does not Match");
 		// Click on Home FAQ
 		clickfaqHomeTab();
-		pause(1000);
+		pause(3000);
 		isFAQPageTopicVisible();
 		String lblHome = getFAQPageTopic();
-		Assert.assertEquals(lblHome, "FAQ");
+		Assert.assertEquals(lblHome, "Home");
 		clickFAQPageHelp();
-		pause(1000);
+		pause(3000);
 		softAssert.assertTrue(
 				isPostLogConnectMePage(PostLogConnectMeTextProp.getPropValue("ConnectMePageUrl"),
 						(PostLogConnectMeTextProp.getPropValue("ConnectMePageTitle"))),
 				"Page Title & URL does not Match");
 		// Click on Outage FAQ
 		clickfaqOutageTab();
-		pause(1000);
+		pause(3000);
 		isFAQPageTopicVisible();
 		String lblOutage = getFAQPageTopic();
 		Assert.assertEquals(lblOutage, "Outage");
 		clickFAQPageHelp();
-		pause(1000);
+		pause(3000);
 		softAssert.assertTrue(
 				isPostLogConnectMePage(PostLogConnectMeTextProp.getPropValue("ConnectMePageUrl"),
 						(PostLogConnectMeTextProp.getPropValue("ConnectMePageTitle"))),
 				"Page Title & URL does not Match");
 		// Click on Top FAQ
 		clickfaqTopTab();
-		pause(1000);
+		pause(3000);
 		isFAQPageTopicVisible();
 		String lblTop = getFAQPageTopic();
-		Assert.assertEquals(lblTop, "Frequently Asked Questions");
-		pause(1000);
+		Assert.assertEquals(lblTop, "Top FAQs");
+		pause(3000);
 		softAssert.assertTrue(
 				isPostLogConnectMePage(PostLogConnectMeTextProp.getPropValue("ConnectMePageUrl"),
 						(PostLogConnectMeTextProp.getPropValue("ConnectMePageTitle"))),

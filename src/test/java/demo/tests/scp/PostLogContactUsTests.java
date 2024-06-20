@@ -60,7 +60,7 @@ public class PostLogContactUsTests extends TestRunner {
 		postLogContactUsSteps = new PostLogContactUsSteps(driver);
 		// Verify Connect me form
 		postLogContactUsSteps.verifyContactUsObject(softAssert);
-		// Creat Request
+		// Create Request
 		postLogContactUsSteps.verifyCreateContactRequest(softAssert);
 		// Preview Contact Us Form
 		postLogContactUsSteps.verifyPreviewYourFormDetails(softAssert);
