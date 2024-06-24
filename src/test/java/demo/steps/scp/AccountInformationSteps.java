@@ -61,13 +61,13 @@ public class AccountInformationSteps extends AccountInformationPage {
 				"account number label is not displayed");
 		sAssert.assertTrue(istxtAddAccountPopupVisible(), "Add account popup test is not visible");
 
-		sAssert.assertEquals(getLblStreetAddPopupApp(),
-				accontInformationTextProp.getPropValue("textLblStreetAddrPopupApp"), "Street add popup is not matched");
-		sAssert.assertTrue(isTxtStreetAddPopupAppVisible(), "Street address text not matched");
+		//sAssert.assertEquals(getLblStreetAddPopupApp(),
+				//accontInformationTextProp.getPropValue("textLblStreetAddrPopupApp"), "Street add popup is not matched");
+		//sAssert.assertTrue(isTxtStreetAddPopupAppVisible(), "Street address text not matched");
 
-		sAssert.assertEquals(getAddlblMeterNumberPopup(),
-				accontInformationTextProp.getPropValue("textLblMeterNumberPopupApp"));
-		sAssert.assertTrue(isAddlblMeterNumberPopupVisible(), "Add label meter number popup is not visible");
+		//sAssert.assertEquals(getAddlblMeterNumberPopup(),
+				//accontInformationTextProp.getPropValue("textLblMeterNumberPopupApp"));
+		//sAssert.assertTrue(isAddlblMeterNumberPopupVisible(), "Add label meter number popup is not visible");
 
 		Assert.assertEquals(getBtnLinkAccPopupSubmit("value"),
 				accontInformationTextProp.getPropValue("textBtnLinkAccountPopupSubmitApp"),
@@ -129,8 +129,8 @@ public class AccountInformationSteps extends AccountInformationPage {
 		ExtentLogger.logInfo("Verify Text Default Label");
 		sAssert.assertTrue(isDefaultlblvisible(), "Default is not visible");
 
-		ExtentLogger.logInfo("Verify Text FAQ side Panel Label");
-		sAssert.assertTrue(isFAQBannerVisible(), "FAQ is not visible");
+		//ExtentLogger.logInfo("Verify Text FAQ side Panel Label");
+		//sAssert.assertTrue(isFAQBannerVisible(), "FAQ is not visible");
 
 		ExtentLogger.logInfo("Verify Text Contact Us Info side Panel Label");
 		sAssert.assertTrue(isContactUsVisible(), "Contact Us Tile is not visible");

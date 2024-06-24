@@ -26,13 +26,15 @@ public class AboutMyHomeTests extends TestRunner {
 	@Test(description = "To verify the UI And Objects on the My Account-> About My Home Page.")
 
 	public void verifyAboutMyHomePageUI() throws SQLException, InterruptedException {
-		String[] tc_id = {"About_My_Home_01"};
+		
+		String[] tc_id = {"About_My_Home_01,"};
+	
 		ExtentLogger.logInfo("Test Case execution for - verifyAboutMyHomePageUI. Test Case id's -->  " + Arrays.toString(tc_id));
 		SoftAssert softAssert = new SoftAssert();
 		// Login into The Application and Navigate to My Profile Page
 		LoginSteps loginSteps = new LoginSteps(driver);
-		DashboardSteps dashboardSteps = loginSteps.loginIntoTheApplication(Configuration.toString("userName"),
-				Configuration.toString("password"));
+		DashboardSteps dashboardSteps = loginSteps.loginIntoTheApplicationWithResAcc(Configuration.toString("userNameRes"),
+				Configuration.toString("passwordRes"));
 		HomeSteps homeSteps = new HomeSteps(driver);
 		homeSteps.navigateToAboutMyHomePage();
 		// into AboutMyHomePageSteps
@@ -53,8 +55,8 @@ public class AboutMyHomeTests extends TestRunner {
 		SoftAssert softAssert = new SoftAssert();
 		// Login into The Application and Navigate to My Profile Page
 		LoginSteps loginSteps = new LoginSteps(driver);
-		DashboardSteps dashboardSteps = loginSteps.loginIntoTheApplication(Configuration.toString("userName"),
-				Configuration.toString("password"));
+		DashboardSteps dashboardSteps = loginSteps.loginIntoTheApplicationWithResAcc(Configuration.toString("userNameRes"),
+				Configuration.toString("passwordRes"));
 		HomeSteps homeSteps = new HomeSteps(driver);
 		homeSteps.navigateToAboutMyHomePage();
 		// into AboutMyHomePageSteps
@@ -76,8 +78,8 @@ public class AboutMyHomeTests extends TestRunner {
 		SoftAssert softAssert = new SoftAssert();
 		// Login into The Application and Navigate to My Profile Page
 		LoginSteps loginSteps = new LoginSteps(driver);
-		DashboardSteps dashboardSteps = loginSteps.loginIntoTheApplication(Configuration.toString("userName"),
-				Configuration.toString("password"));
+		DashboardSteps dashboardSteps = loginSteps.loginIntoTheApplicationWithResAcc(Configuration.toString("userNameRes"),
+				Configuration.toString("passwordRes"));
 		HomeSteps homeSteps = new HomeSteps(driver);
 		homeSteps.navigateToAboutMyHomePage();
 		// into AboutMyHomePageSteps

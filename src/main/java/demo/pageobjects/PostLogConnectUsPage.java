@@ -943,6 +943,31 @@ public class PostLogConnectUsPage extends HomePage {
         return label;
     }
     
+    
+    
+    @FindBy(xpath = "//input[@globalize='ML_Master_lbl_CustName']")
+    private WebElement txtCustomerNameValue;
+    
+    public String getCustomerNameValue() {
+        log.info("Fetching Customer Name");
+        String label = getAttribute(txtCustomerNameValue,"value");
+
+        //String label = getText(txt_CustomerName);
+        log.info("Customer Name is {}: " + label);
+        return label;
+    }
+    
+    @FindBy(xpath = "//input[@inputtype='Email']")
+    private WebElement txtCustomerEmailValue;
+    
+    public String getCustomerEmailValue() {
+        log.info("Fetching Customer email");
+        String label = getAttribute(txtCustomerEmailValue,"value");
+        log.info("Customer  is {}: " + label);
+        return label;
+    }
+    
+    
     public boolean isCustomerNameVisible() {
     	log.info("Customer Name Status :" + txt_CustomerName.isDisplayed());
     	return txt_CustomerName.isDisplayed();
@@ -1412,6 +1437,17 @@ public class PostLogConnectUsPage extends HomePage {
         log.info("Checking that the Service Acc No field is visible on the Contact Us page.");
         return isElementVisible(txtServiceAccNo);
     }
+    
+   @FindBy(xpath = "//input[@inputtype='Account']")
+    private WebElement  txtAccNo;
+    
+      public String gettxtAccountNum() {
+        log.info("Fetching the Account No");
+        
+        String label = getAttribute(txtAccNo,"value");
+        log.info("Service Acc No page header is {}: " + label);
+        return label;
+    }
 
     public String getServiceAccNoMaxLength() {
         String maxLen = getAttribute(txtServiceAccNo, "maxlength");
@@ -1835,10 +1871,8 @@ public class PostLogConnectUsPage extends HomePage {
     	log.info("FAQ Top Tab clicked {}.");
     }
     
-   // @FindBy(css = "[class='usagecard_help commonmtr_dgn']")
-    @FindBy(css = "#ContentPlaceHolder1_freqQues_faqBucket > div:nth-child(11) > a > p > span")
-
-    
+    @FindBy(css = "[class='usagecard_help commonmtr_dgn']")
+    //@FindBy(css = "#ContentPlaceHolder1_freqQues_faqBucket > div:nth-child(11) > a > p > span")
     private WebElement faqUsageTab;
 
     public boolean isfaqUsageTabVisible() {

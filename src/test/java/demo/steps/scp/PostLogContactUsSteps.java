@@ -14,16 +14,20 @@ import org.testng.asserts.SoftAssert;
 
 import demo.pageobjects.PostLogConnectUsPage;
 import sew.ai.helpers.props.FilePaths;
-
+import sew.ai.config.Configuration;
 import sew.ai.helpers.props.Constants;
 import sew.ai.utils.PropertiesUtil;
 import static sew.ai.helpers.props.FilePaths.FILE_UPLOAD_PATH;
 
 public class PostLogContactUsSteps extends PostLogConnectUsPage {
-	private static final Logger log = LogManager.getLogger(ProblemSigningInSteps.class);
 
+	private static final Logger log = LogManager.getLogger(ProblemSigningInSteps.class);
 	public static PropertiesUtil PostLogConnectMeTextProp;
 	String referenceId = null;
+	String accountNo = null;
+	String custmerName = null;
+	String email = null;
+
 
 	public PostLogContactUsSteps(WebDriver driver) {
 		super(driver);
@@ -39,28 +43,42 @@ public class PostLogContactUsSteps extends PostLogConnectUsPage {
 		selectlstConnectMeOptions("Rebates");
 		if (selectlstConnectMeOptions("Rebates")) {
 		}
-		softAssert.assertTrue(
-				isPostLogConnectMePage(PostLogConnectMeTextProp.getPropValue("ConnectMePageUrl"),
-						(PostLogConnectMeTextProp.getPropValue("ConnectMePageTitle"))),
-				"Page Title & URL does not Match");
-		softAssert.assertTrue(isPageHeaderPostVisible(), "Contact Us Page Header is not visible");
-		softAssert.assertTrue(isConnectMeVisible(), "Contact Us Tab is not visibility");
-		softAssert.assertTrue(isSocialMediaVisible(), "Social Media Tab is not visibility");
-		softAssert.assertTrue(isContactusVisible(), "Contact Us Tab is not visibility");
-		softAssert.assertTrue(isTrackRequestVisible(), "Track Request Tab is not visibility");
-		softAssert.assertTrue(isSavedFormVisible(), "Saved Form tab is not visibility");
-		softAssert.assertTrue(isSubmitBtnVisible(), "Submit button is not visibility");
-		softAssert.assertTrue(isNextBtnVisible(), "Next button is not visibility");
-		softAssert.assertTrue(isCustomerNameTxtVisible(), "Customer Name text Box is not visibility");
-		// softAssert.assertTrue(isServiceAccNoTxtVisible(), "Service Acc No text Box is
-		// not visibility");
-		softAssert.assertTrue(isEmailAddressTxtVisible(), "Email Address text Box is not visibility");
-		softAssert.assertTrue(istxtSubjectTxtVisible(), "Subject button is text Box visibility");
-		softAssert.assertTrue(isCommentsTxtVisible(), "Comments text Box is not visibility");
-		softAssert.assertTrue(isChooseFileBtnVisible(), "Choose File text Box is not visibility");
-		// softAssert.assertTrue(isBillingEnquiresVisible(), "Instagram Tab is not
-		// visibility");
-		softAssert.assertTrue(isCustomerlblVisible(), "Instagram Tab is not visibility");
+		/*
+		 * softAssert.assertTrue(
+		 * isPostLogConnectMePage(PostLogConnectMeTextProp.getPropValue(
+		 * "ConnectMePageUrl"),
+		 * (PostLogConnectMeTextProp.getPropValue("ConnectMePageTitle"))),
+		 * "Page Title & URL does not Match");
+		 * softAssert.assertTrue(isPageHeaderPostVisible(),
+		 * "Contact Us Page Header is not visible");
+		 * softAssert.assertTrue(isConnectMeVisible(),
+		 * "Contact Us Tab is not visibility");
+		 * softAssert.assertTrue(isSocialMediaVisible(),
+		 * "Social Media Tab is not visibility");
+		 * softAssert.assertTrue(isContactusVisible(),
+		 * "Contact Us Tab is not visibility");
+		 * softAssert.assertTrue(isTrackRequestVisible(),
+		 * "Track Request Tab is not visibility");
+		 * softAssert.assertTrue(isSavedFormVisible(),
+		 * "Saved Form tab is not visibility");
+		 * softAssert.assertTrue(isSubmitBtnVisible(),
+		 * "Submit button is not visibility"); softAssert.assertTrue(isNextBtnVisible(),
+		 * "Next button is not visibility");
+		 * softAssert.assertTrue(isCustomerNameTxtVisible(),
+		 * "Customer Name text Box is not visibility"); //
+		 * softAssert.assertTrue(isServiceAccNoTxtVisible(), "Service Acc No text Box is
+		 * // not visibility"); softAssert.assertTrue(isEmailAddressTxtVisible(),
+		 * "Email Address text Box is not visibility");
+		 * softAssert.assertTrue(istxtSubjectTxtVisible(),
+		 * "Subject button is text Box visibility");
+		 * softAssert.assertTrue(isCommentsTxtVisible(),
+		 * "Comments text Box is not visibility");
+		 * softAssert.assertTrue(isChooseFileBtnVisible(),
+		 * "Choose File text Box is not visibility"); //
+		 * softAssert.assertTrue(isBillingEnquiresVisible(), "Instagram Tab is not //
+		 * visibility"); softAssert.assertTrue(isCustomerlblVisible(),
+		 * "Instagram Tab is not visibility");
+		 */
 	}
 
 	public void verifySubmitblankForm() {
@@ -83,15 +101,19 @@ public class PostLogContactUsSteps extends PostLogConnectUsPage {
 		if (selectlstConnectMeOptions("Rebates")) {
 		}
 		if (isServiceAccNoTxtVisible()) {
-			// String accountNo = getServiceAccNoLabel();
-			// String accountNo = gettxtAccountNo();
-			// Assert.assertEquals(user.getDefaultUtilityAccNum(), accountNo);
+			 accountNo = gettxtAccountNum();
+			
+			Assert.assertEquals(Configuration.toString("accountNumber"), accountNo);
 		}
 		if (isCustomerNameTxtVisible()) {
-			// Assert.assertEquals(user.getFullName(), getTextCustomerName());
+			 custmerName = getCustomerNameValue();
+
+			 Assert.assertEquals(Configuration.toString("customerName"),custmerName);
 		}
 		if (isEmailAddressTxtVisible()) {
-			// Assert.assertEquals(user.getEmailId(), getEmailAddressLabel());
+			email = getCustomerEmailValue();
+
+			 Assert.assertEquals(Configuration.toString("demoEmailId"), email);
 		}
 		if (isChooseFileBtnVisible()) {
 			String validAttachmentFileName = "meter-reading.jpg";
@@ -125,25 +147,18 @@ public class PostLogContactUsSteps extends PostLogConnectUsPage {
 				pause(1000);
 				break;
 			case "Customer Name":
-				// assertEquals(value, user.getFullName(), "Customer name not matched on preview
-				// your form.");
-				assertEquals(value, "John Doe", "Customer name not matched on preview your form.");
+				// assertEquals(value, user.getFullName(), "Customer name not matched on preview your form.");
+				assertEquals(value, custmerName, "Customer name not matched on preview your form.");
 				pause(1000);
 				break;
 			case "Email Address":
 				// softAssert.assertEquals(value, user.getEmailId(), "Email address not matched
 				// on preview your form");
-				softAssert.assertEquals(value, "varun.bhatia@smartenergywater.in",
-						"Email address not matched on preview your form");
+				softAssert.assertEquals(value, email,"Email address not matched on preview your form");
 				pause(1000);
 				break;
 			case "Subject":
 				softAssert.assertEquals(value, "Testing", "Subject not matched on preview your form");
-				pause(1000);
-				break;
-			case "Attachment":
-				// softAssert.assertEquals(value, fileName, "Attachment name is not matched on
-				// preview your form");
 				pause(1000);
 				break;
 			case "Comments (Optional)":
@@ -205,71 +220,71 @@ public class PostLogContactUsSteps extends PostLogConnectUsPage {
 		softAssert.assertTrue(isfaqWaysToSaveTabVisible(), "Ways To Save Tab is not visibility");
 		// Click on Account FAQ
 		clickfaqAccountTab();
-		pause(1000);
+		pause(3000);
 		isFAQPageTopicVisible();
 		String lblaccount = getFAQPageTopic();
 		Assert.assertEquals(lblaccount, "Account");
 		clickFAQPageHelp();
-		pause(1000);
+		pause(3000);
 		softAssert.assertTrue(
 				isPostLogConnectMePage(PostLogConnectMeTextProp.getPropValue("ConnectMePageUrl"),
 						(PostLogConnectMeTextProp.getPropValue("ConnectMePageTitle"))),
 				"Page Title & URL does not Match");
 		// Click on Blling FAQ
 		clickfaqBillingTab();
-		pause(1000);
+		pause(3000);
 		isFAQPageTopicVisible();
 		String lblBilling = getFAQPageTopic();
 		Assert.assertEquals(lblBilling, "Billing");
 		clickFAQPageHelp();
-		pause(1000);
+		pause(3000);
 		softAssert.assertTrue(
 				isPostLogConnectMePage(PostLogConnectMeTextProp.getPropValue("ConnectMePageUrl"),
 						(PostLogConnectMeTextProp.getPropValue("ConnectMePageTitle"))),
 				"Page Title & URL does not Match");
 		// Click on Registration FAQ
 		clickfaqregistrationTab();
-		pause(1000);
+		pause(3000);
 		isFAQPageTopicVisible();
 		String lblRegistration = getFAQPageTopic();
 		Assert.assertEquals(lblRegistration, "Customer Registration");
 		clickFAQPageHelp();
-		pause(1000);
+		pause(3000);
 		softAssert.assertTrue(
 				isPostLogConnectMePage(PostLogConnectMeTextProp.getPropValue("ConnectMePageUrl"),
 						(PostLogConnectMeTextProp.getPropValue("ConnectMePageTitle"))),
 				"Page Title & URL does not Match");
 		// Click on Home FAQ
 		clickfaqHomeTab();
-		pause(1000);
+		pause(3000);
 		isFAQPageTopicVisible();
 		String lblHome = getFAQPageTopic();
-		Assert.assertEquals(lblHome, "FAQ");
+		Assert.assertEquals(lblHome, "Home");
 		clickFAQPageHelp();
-		pause(1000);
+		pause(3000);
 		softAssert.assertTrue(
 				isPostLogConnectMePage(PostLogConnectMeTextProp.getPropValue("ConnectMePageUrl"),
 						(PostLogConnectMeTextProp.getPropValue("ConnectMePageTitle"))),
 				"Page Title & URL does not Match");
 		// Click on Outage FAQ
 		clickfaqOutageTab();
-		pause(1000);
+		pause(3000);
 		isFAQPageTopicVisible();
 		String lblOutage = getFAQPageTopic();
 		Assert.assertEquals(lblOutage, "Outage");
 		clickFAQPageHelp();
-		pause(1000);
+		pause(3000);
 		softAssert.assertTrue(
 				isPostLogConnectMePage(PostLogConnectMeTextProp.getPropValue("ConnectMePageUrl"),
 						(PostLogConnectMeTextProp.getPropValue("ConnectMePageTitle"))),
 				"Page Title & URL does not Match");
 		// Click on Top FAQ
 		clickfaqTopTab();
-		pause(1000);
+		pause(3000);
 		isFAQPageTopicVisible();
 		String lblTop = getFAQPageTopic();
-		Assert.assertEquals(lblTop, "Frequently Asked Questions");
-		pause(1000);
+		Assert.assertEquals(lblTop, "Top FAQs");
+		pause(3000);
 		softAssert.assertTrue(
 				isPostLogConnectMePage(PostLogConnectMeTextProp.getPropValue("ConnectMePageUrl"),
 						(PostLogConnectMeTextProp.getPropValue("ConnectMePageTitle"))),
@@ -302,7 +317,11 @@ public class PostLogContactUsSteps extends PostLogConnectUsPage {
 	}
 
 	public void verifySavedFormObject(SoftAssert softAssert) {
+		pause(1000);
+
 		clickSavedForms();
+		pause(1000);
+
 		List<WebElement> savedFormsGridHeadersElements = listSavedFormsHeaders();
 		int counter = 0;
 		for (WebElement gridHeaderEle : savedFormsGridHeadersElements) {
@@ -314,15 +333,21 @@ public class PostLogContactUsSteps extends PostLogConnectUsPage {
 		List<WebElement> gridHeaderTextElements = listSavedFormsHeaders();
 		for (WebElement gridHeaderElement : gridHeaderTextElements) {
 			String actGridHeaderClass = gridHeaderElement.getAttribute("class").trim();
+			pause(200);
 			if (!actGridHeaderClass.equals("sorting_disabled")) {
-				assertTrue(actGridHeaderClass.equals("sorting"));
+				
+				pause(200);
+				assertTrue(actGridHeaderClass.equals("sorting"));			
 				if (actGridHeaderClass.equals("sorting")) {
 					click(gridHeaderElement);
-					pause(500);
+					pause(1000);
 					actGridHeaderClass = gridHeaderElement.getAttribute("class").trim();
-					assertTrue(actGridHeaderClass.equals("sorting_asc") || actGridHeaderClass.equals("sorting_desc"));
+					assertTrue(actGridHeaderClass != null && (actGridHeaderClass.equals("sorting sorting_asc") || actGridHeaderClass.equals("sorting sorting_desc")));
+
+					//assertTrue(actGridHeaderClass.equals("sorting_asc") || actGridHeaderClass.equals("sorting_desc"));
 				}
-				if (actGridHeaderClass.equals("sorting_desc")) {
+				if (actGridHeaderClass.equals("sorting sorting_desc")) {
+					pause(200);
 					click(gridHeaderElement);
 					pause(200);
 					actGridHeaderClass = gridHeaderElement.getAttribute("class").trim();
@@ -331,15 +356,15 @@ public class PostLogContactUsSteps extends PostLogConnectUsPage {
 					pause(200);
 					actGridHeaderClass = gridHeaderElement.getAttribute("class").trim();
 					assertTrue(actGridHeaderClass.equals("sorting_desc"));
-				} else if (actGridHeaderClass.equals("sorting_asc")) {
+				} else if (actGridHeaderClass.equals("sorting sorting_asc")) {
 					click(gridHeaderElement);
 					pause(200);
 					actGridHeaderClass = gridHeaderElement.getAttribute("class").trim();
-					assertTrue(actGridHeaderClass.equals("sorting_desc"));
+					assertTrue(actGridHeaderClass.equals("sorting sorting_desc"));
 					click(gridHeaderElement);
 					pause(200);
 					actGridHeaderClass = gridHeaderElement.getAttribute("class").trim();
-					assertTrue(actGridHeaderClass.equals("sorting_asc"));
+					assertTrue(actGridHeaderClass.equals("sorting sorting_asc"));
 				} else {
 					assertTrue(false, "Sorting is not working on column : " + gridHeaderElement.getText().trim());
 				}

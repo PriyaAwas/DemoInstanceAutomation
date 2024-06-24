@@ -46,32 +46,47 @@ public class ForgetUsernameSteps extends ForgotUsernamePage {
 	}
 
 	public boolean isForgotUsernameInPage(String url, String title) {
-		Boolean isForgetPasswordPage = false;
+		// Boolean isForgetPasswordPage = false;
+		Boolean isForgetUserNamePage = false;
 		log.info("Checking that the current page is Forget Username Page");
 		if (getCurrentUrl().contains(url.toLowerCase()) && getCurrentTitle().equalsIgnoreCase(title))
-			isForgetPasswordPage = true;
-		log.info("The current page is ForgotUsername Page {}: " + isForgetPasswordPage);
-		return isForgetPasswordPage;
+			// isForgetPasswordPage = true;
+			isForgetUserNamePage = true;
+		// log.info("The current page is ForgotUsername Page {}: " + isForgetPasswordPage);
+		log.info("The current page is ForgotUsername Page {}: " + isForgetUserNamePage);
+		// return isForgetPasswordPage;
+		return isForgetUserNamePage;
 	}
 
-	public void enterInvalidEmail() {
+	public void emailFeildVerification() {
 		// Click Submit with blank email add
-
 		clickSubmitBtn();
-		String errMsgEmail = getlblGenericErrorMessage();
-		Assert.assertEquals(errMsgEmail, ForgotUsernameTextProp.getPropValue("txtMsgBlankEmailAddress"));
+		Assert.assertEquals(getlblGenericErrorMessage(), ForgotUsernameTextProp.getPropValue("txtMsgBlankEmailAddress"));
+		
 		// Enter Invalid Email address
-		//populateEmailAddress("hdddd");
-		//clickSubmitBtn();
-		// String invalidEmail = getlblGenericErrorMessage();
-		// Assert.assertEquals(invalidEmail,
-		// ForgotUsernameTextProp.getPropValue("txtLblEnterInvalidEmailAddress"));
-		// clearEmailAddressField();
-		// Enter Valid Email address
+		populateEmailAddress("hdddd");
+		clickSubmitBtn();
+		 Assert.assertEquals(getlblGenericErrorMessage(),ForgotUsernameTextProp.getPropValue("txtLblEnterInvalidEmailAddress"));
+		 clearEmailAddressField();
+		
+		 // Enter Valid Email address
 		populateEmailAddress("User@pwc.com");
 		clickSubmitBtn();
 		String SuccessToasterMsg = getToastMessage();
 		ExtentLogger.logInfo("Link send to user  " + SuccessToasterMsg);
 
 	}
+	
+	public void validEmailFeildVerification() {
+		
+		 // Enter Valid Email address
+		populateEmailAddress("User@pwc.com");
+		clickSubmitBtn();
+		String SuccessToasterMsg = getToastMessage();
+		ExtentLogger.logInfo("Link send to user  " + SuccessToasterMsg);
+	    Assert.assertEquals(getToastMessage(),ForgotUsernameTextProp.getPropValue("txtSuccessToasterMsg"));
+
+
+	}
+	
 }

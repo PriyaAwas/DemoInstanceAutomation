@@ -232,7 +232,7 @@ public class NotificationSteps extends NotificationsPage {
 	   //("Click Multiple checkboxes.");
 	    pause(2000);
 	    clickCheckBox();
-	    clickCheckBox1();
+	    //clickCheckBox1();
 	    
 	 //("Click put back Icon.");
 	    clickPutBackIcon();

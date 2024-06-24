@@ -15,7 +15,7 @@ public class ForgetUsernameTest extends TestRunner {
     private ForgetUsernameSteps forgetUsernameSteps;
 	@FrameworkAnnotations(author = { "Priya Awasthi" }, category = { CategoryType.SMOKE,CategoryType.SCP_LOGINHELP })
     @Test(priority = 1, description = "To verify the Forget Username page objects.")
-    public void validateResetUsername() throws Exception {
+    public void validateForgotUsernamePageObjects() throws Exception {
         log.info("To verify that following should be displayed on validate Forgot Username.");
         SoftAssert softAssert = new SoftAssert();
         // Init Forget Username Steps
@@ -28,7 +28,7 @@ public class ForgetUsernameTest extends TestRunner {
 	
 	@FrameworkAnnotations(author = { "Priya Awasthi" }, category = { CategoryType.SANITY, CategoryType.SCP_LOGINHELP })
     @Test(priority = 2, description = "To verify the Forget Username name with valid and invalid email.")
-    public void resetUsernameUsingWrongEmail() {
+    public void resetUsernameFieldVerification() {
         log.info("To verify that following should be displayed on validate Forgot Username.");
         SoftAssert softAssert = new SoftAssert();
         // Init Forget Username Steps
@@ -36,7 +36,21 @@ public class ForgetUsernameTest extends TestRunner {
         // Redirect to Forget Username Steps
         forgetUsernameSteps.verifyForgotUsernameInObject(softAssert);
         // invalid Email verification 
-        forgetUsernameSteps.enterInvalidEmail();
+        forgetUsernameSteps.emailFeildVerification();
+        log.info("Test Case execution for - resetUsernameInvalidAccountOrEmail - is Completed.");                  
+      }
+	
+	@FrameworkAnnotations(author = { "Priya Awasthi" }, category = { CategoryType.SANITY, CategoryType.SCP_LOGINHELP })
+    @Test(priority = 3, description = "To verify the Forget Username name with valid email.")
+    public void resetUsernameValidEmailId() {
+        log.info("To verify that following should be displayed on validate Forgot Username.");
+        SoftAssert softAssert = new SoftAssert();
+        // Init Forget Username Steps
+        forgetUsernameSteps = new ForgetUsernameSteps(driver);
+        // Redirect to Forget Username Steps
+        forgetUsernameSteps.verifyForgotUsernameInObject(softAssert);
+        // invalid Email verification 
+        forgetUsernameSteps.validEmailFeildVerification();
         log.info("Test Case execution for - resetUsernameInvalidAccountOrEmail - is Completed.");                  
       }
 	
