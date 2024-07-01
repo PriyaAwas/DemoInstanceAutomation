@@ -225,6 +225,62 @@ public class ForgotUsernamePage extends HomePage {
         log.info("Submit Button clicked {}.");
     }
     
+    @FindBy(xpath = "//*[@id=\"OuterHeader_homeAnchor\"]")
+    private WebElement iconHome;
+
+    public String geticonHomel() {
+        log.info("Fetching the Cancel button Text");
+        String label = getText(iconHome);
+        log.info("Cancel button Text is {}: " + label);
+        return label;
+    }
+    
+    public boolean isHomeIcon() {
+    	log.info("Cancel Button Status :" + iconHome.isDisplayed());
+    	return iconHome.isDisplayed();
+    }
+    
+    public void clickHomeIcon() {
+        click(iconHome);
+        log.info("Cancel Button clicked {}.");
+    } 
+    @FindBy(css = "[id='txtLogin']")
+	private WebElement txt_username;
+    
+    public void populateUserName(String userName) {
+		log.info("Populating username {} :" + userName);
+		sendKeys(txt_username, userName);
+		log.info("Username populated successfully.");
+	}
+    
+    public void clearUsernameField() {
+		clear(txt_username);
+		log.info("Username field cleared {}");
+	}
+    
+    @FindBy(css = "[id='txtpwd']")
+	private WebElement txt_password;
+    
+    public void populatePassword(String password) {
+		log.info("Populating password {} :" + password);
+		sendKeys(txt_password, password);
+		log.info("Password populated successfully.");
+	}
+    
+    public void clearPasswordField() {
+		clear(txt_password);
+		log.info("Password field cleared {}");
+	}
+    
+    @FindBy(css = "#btnlogin")
+	private WebElement btn_sign_in;
+    
+    public void clickSignInBtn() {
+		log.info("Clicking the sign in button.");
+		click(btn_sign_in);
+		log.info("Sign in button clicked successfully.");
+	}
+    
     
  //   txtEmailForgotUserName                 = [id='txtEmailForgotUserName']
  //   ForgetUsernameHeader		           = (//h1[text()='Forgot Username'])[1]
@@ -235,4 +291,5 @@ public class ForgotUsernamePage extends HomePage {
  //   lblEnterValidEmailAddress              = [class='error_messagecommon']
  //    btnCancel                              = [id='btnCancelForgotUserName']
  //    btnSubmit                              = [id='btnSubmitForgotUserName']		
+
 }

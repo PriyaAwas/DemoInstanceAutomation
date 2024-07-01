@@ -48,4 +48,28 @@ public class ForgetPasswordTests extends TestRunner {
 		softAssert.assertAll();
 		log.info("Test Case execution for - validateForgotPassword - is Completed.");
 	}
+	
+	@FrameworkAnnotations(author = { "Neethu" }, category = { CategoryType.SANITY,CategoryType.SCP_LOGINHELP })
+	@Test(priority = 3, description = "To check the functionality of Cancel button on Forget password page.")
+	public void checkCancelFunctnPassword() {
+		log.info("To verify the functionality of Cancel button on Forget password page");
+		SoftAssert softAssert = new SoftAssert();
+		forgetPasswordSteps = new ForgetPasswordSteps(driver);
+		// click cancel
+		forgetPasswordSteps.verifyCancelClick(softAssert);
+		softAssert.assertAll();
+		log.info("Test Case execution for - checkCancelFunctnPassword - is Completed.");
+}
+	
+//	@FrameworkAnnotations(author = { "Neethu" }, category = { CategoryType.SANITY,CategoryType.SCP_LOGINHELP })
+//	@Test(priority = 3, description = "To check the IP Lock functionality on Forget password page.")
+//	public void ipLockForgotPassword() {
+//		log.info("To verify the IP Lock functionality on Forget password page.");
+//		SoftAssert softAssert = new SoftAssert();
+//		forgetPasswordSteps = new ForgetPasswordSteps(driver);
+//		// Submit Invalid UserName
+//		forgetPasswordSteps.verifyipLockFunc(softAssert);
+//		softAssert.assertAll();
+//		log.info("Test Case execution for - checkCancelFunctnPassword - is Completed.");
+//}
 }

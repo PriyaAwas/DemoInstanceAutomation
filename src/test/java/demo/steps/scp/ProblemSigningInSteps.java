@@ -190,5 +190,33 @@ public class ProblemSigningInSteps extends ProblemSignInPage {
 		Assert.assertEquals(InvalidEmailMsg, ProblemSigningInTextProp.getPropValue("txtInvalidEmail"));
 		ExtentLogger.logInfo("verifyMinMaxValueOfTextBox Passed");
 	}
+	
+	public void verifyCancelBttnFunctn(SoftAssert softAssert) {
+		LoginSteps loginSteps;
+		loginSteps = new LoginSteps(driver);
+		Assert.assertTrue(loginSteps.isLoginPage(loginTextProp.getPropValue("loginPageUrl"),
+				loginTextProp.getPropValue("loginPageTitle")));
+		loginSteps.clickProblemSignInLnk();
+		softAssert.assertTrue(
+				isProblemSigningInPage(ProblemSigningInTextProp.getPropValue("ProblemSignInPageUrl"),
+						(ProblemSigningInTextProp.getPropValue("ProblemSignInPageTitle"))),
+				"Page Title & URL does not Match");
+		isclickCancelBtn();
+		LoginSteps loginSteps1;
+		loginSteps1 = new LoginSteps(driver);
+		loginSteps.waitForUserNameFieldVisibility();
+		Assert.assertTrue(loginSteps.isLoginPage(loginTextProp.getPropValue("loginPageUrl"),
+				loginTextProp.getPropValue("loginPageTitle")));
+
+}
+	
+//	public void enterMoreThan500Characters(SoftAssert softAssert) {
+//		clickProblemSignInLnk();
+//		istxtBoxCommentsVisible();
+//		clickCommentTxtBox();
+//		getTxtBoxCommentMaxLength();
+////		getCommentValidateMessage();
+		
+		
 
 }

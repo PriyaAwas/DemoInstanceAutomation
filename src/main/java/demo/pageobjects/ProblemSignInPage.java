@@ -262,7 +262,7 @@ public class ProblemSignInPage extends HomePage {
     }
     
     @FindBy(css = "#btnOtherLogin")
-    private WebElement btnCancel;
+	private WebElement btnCancel;
 
     public String getbtnCancel() {
         log.info("Fetching the Cancel button Text");
@@ -324,6 +324,11 @@ public class ProblemSignInPage extends HomePage {
         click(icoHome);
         log.info("icon Home clicked {}.");
     }
+    
+    @FindBy(css = "#txtComments")
+    private WebElement txtBoxCommentMax;
+    
+    
     
   //  txtBoxAccountNumberPsLsp                                 = #txtAccNumberOtherLogin
   //  txtBoxEmailAddressPsLsp                                  = #txtEmailOtherLogin

@@ -65,5 +65,29 @@ public class ProblemSigningInTest extends TestRunner {
 		problemSigningInSteps.verifyMinMaxValueOfTextBox(softAssert);
 		log.info("Test Case execution for - verifyMinMaxValueProblemsSignIn - is Completed.");
 	}
+	
+	@FrameworkAnnotations(author = {"Neethu"}, category = { CategoryType.SANITY, CategoryType.SCP_LOGINHELP })
 
+	@Test(priority = 4, description = "To check the functionality of Cancel button on Problem SignIn form ")
+	public void verifyCancelBttnFunctn() {
+
+		log.info("Test Case execution for - verifyCancelBttnFunctn - is Initiated");
+		SoftAssert softAssert = new SoftAssert(); // Init login steps
+		problemSigningInSteps = new ProblemSigningInSteps(driver); // Redirect to Problem Signing In
+		problemSigningInSteps.verifyCancelBttnFunctn(softAssert); // Verify
+		log.info("Test Case execution for - verifyCancelBttnFunctn - is Completed.");
+		
+	}
+	
+	@FrameworkAnnotations(author = {"Neethu"}, category = { CategoryType.SANITY, CategoryType.SCP_LOGINHELP })
+
+	@Test(priority = 4, description = "To check the error message of comments field on Problem SignIn form ")
+	public void verifyMinMaxValueOfTextBox() {
+
+		log.info("Test Case execution for - verifyCancelBttnFunctn - is Initiated");
+		SoftAssert softAssert = new SoftAssert(); // Init login steps
+		problemSigningInSteps = new ProblemSigningInSteps(driver); // Redirect to Problem Signing In
+		problemSigningInSteps.verifyMinMaxValueOfTextBox(softAssert); // Verify
+		log.info("Test Case execution for - verifyCommentFieldMaxValue - is Completed.");
+}
 }
