@@ -49,6 +49,45 @@ public class PreLoginPage extends HomePage {
 		log.info("Phone Number field cleared {}");
 	}
 
+	@FindBy(css = "#txtAccountNumber")
+	private WebElement accField;
+
+	public boolean isAccountNoFieldVisible() {
+		log.info("Checking that Account No field is visible on the PayBill Step 1 page." + accField.isDisplayed());
+		return isElementVisible(accField);
+	}
+
+	public void clickAccNoFld() {
+		click(accField);
+		log.info("Click on Acc No Field Successfully .");
+
+	}
+
+	public void enterAccNoInTheField(String accountNumber) {
+		sendKeys(accField, accountNumber);
+		log.info("Entered account no in the field.");
+	}
+
+	@FindBy(css = "#txtPhoneNumber")
+	private WebElement primaryPhnField;
+
+	public boolean isPrimaryPhoneNoField() {
+		log.info("Checking that Primary Phone No field is visible on the PayBill Step 1 page."
+				+ primaryPhnField.isDisplayed());
+		return isElementVisible(primaryPhnField);
+	}
+
+	public void clickPrimaryPhnFld() {
+		click(primaryPhnField);
+		log.info("Click on Primary Phone Field Successfully .");
+
+	}
+
+	public void enterPrimayPhTheField(String primaryPh) {
+		sendKeys(primaryPhnField, primaryPh);
+		log.info("Entered primary phone no in the field.");
+	}
+
     @FindBy(css = "[id='txtLogin']")
 	private WebElement txt_username;
     
@@ -94,6 +133,15 @@ public class PreLoginPage extends HomePage {
 		click(btn_next);
 		log.info("Next button clicked successfully.");
 	}
+
+	@FindBy(xpath = "//*[@id='containerDiv']/div[3]/div/div[1]/div/div[2]/div[1]/div[2]/input[1]")
+	private WebElement btn_next2;
+
+	public void clickNextBtn2() {
+		log.info("Clicking the next in page 2.");
+		click(btn_next2);
+		log.info("Next button clicked successfully.");
+	}
     
     @FindBy(css = ".error_messagecommon")
 	private WebElement lbl_error_message;
@@ -127,15 +175,6 @@ public class PreLoginPage extends HomePage {
 		
 		
 		return isLoginPage;
-	}
-	
-	@FindBy(css = "#LanguageDrpdwn_sample")
-	private WebElement dd_language;
-
-	public Boolean isLanguageDropdownVisible() {
-		log.info("Checking the visibility of language dropdown on the page.");
-		log.info("Language dropdown visibility status {}: " + isElementVisible(dd_language));
-		return isElementVisible(dd_language);
 	}
 	
 	@FindBy(css = "i.lan_txt_hide")
@@ -808,5 +847,1029 @@ public class PreLoginPage extends HomePage {
 		pause(500);
 		click(lnk_sign_out);
 		log.info("Sign out button is clicked.");
+	}
+
+	@FindBys(@FindBy(css = "#LanguageDrpdwn_dp_language li a i"))
+	private List<WebElement> dd_language_options;
+
+	public List<WebElement> getLanguageDropdownOptions() {
+		return dd_language_options;
+	}
+
+	@FindBy(css = "#LanguageDrpdwn_sample")
+	private WebElement dd_language;
+
+	public Boolean isLanguageDropdownVisible() {
+		log.info("Checking the visibility of language dropdown on the page.");
+		log.info("Language dropdown visibility status {}: " + isElementVisible(dd_language));
+		return isElementVisible(dd_language);
+	}
+
+	public void clickLanguageDropdown() {
+		click(dd_language);
+		log.info("Language drop-down clicked successfully.");
+	}
+
+	@FindBy(xpath = "//*[@class='lan_txt_hide'][contains(text(),'Espa')]")
+	private WebElement lnkSpanishLanguage;
+
+	public void clickSpanishLanguageOption() {
+		click(lnkSpanishLanguage);
+		log.info("Spanish language option clicked {}.");
+	}
+
+	@FindBy(xpath = "//*[@class='lan_txt_hide'][contains(text(),'Fran')]")
+	private WebElement lnkFrenchLanguage;
+
+	public void clickFrenchLanguageOption() {
+		click(lnkFrenchLanguage);
+		log.info("French language option clicked {}.");
+	}
+
+	@FindBy(xpath = "//*[@class='lan_txt_hide'][contains(text(),'English')]")
+	private WebElement lnkEnglishLanguage;
+
+	public void clickEnglishLanguageOption() {
+		click(lnkEnglishLanguage);
+		log.info("English language option clicked {}.");
+	}
+
+
+	@FindBy(xpath = "//*[@id=\"containerDiv\"]/div[3]/div/div[1]/h2")
+	private WebElement labelPayBillTwo;
+
+	public boolean isPayBillHeaderVisibleTwo() {
+		return isElementVisible(labelPayBillTwo);
+	}
+
+	public String getPayBillLabelTwo() {
+		String label = getText(labelPayBillTwo);
+		return label;
+	}
+
+	@FindBy(xpath = "//*[@id=\"containerDiv\"]/div[3]/div/div[1]/div/div[2]/div[1]/div[1]/div/div[2]/div[3]/span[2]")
+	private WebElement labelZeroPayBillTwo;
+
+	public String getPayBillLabelForZeroTwo() {
+		String label = getText(labelZeroPayBillTwo);
+		return label;
+	}
+
+	@FindBy(xpath = "//*[@id=\"containerDiv\"]/div[3]/div/div[1]/div/div[2]/div[1]/div[1]/div/div[2]/section/div[12]/div[1]/span[2]")
+	private WebElement labelBlankCardName;
+
+	public String getBlankCardName() {
+		String label = getText(labelBlankCardName);
+		return label;
+	}
+
+	@FindBy(xpath = "//*[@id=\"containerDiv\"]/div[3]/div/div[1]/div/div[2]/div[1]/div[1]/div/div[2]/section/div[12]/div[2]/span[2]")
+	private WebElement labelBlankCardNumber;
+
+	public String getBlankCardNumber() {
+		String label = getText(labelBlankCardNumber);
+		return label;
+	}
+
+	@FindBy(xpath = "//*[@id=\"containerDiv\"]/div[3]/div/div[1]/div/div[2]/div[1]/div[1]/div/div[2]/div[3]/span[2]")
+	private WebElement labelOverExceedingPayment;
+
+	public String getExceedingPaymentAmount() {
+		String label = getText(labelOverExceedingPayment);
+		return label;
+	}
+
+	@FindBy(xpath = "//*[@id=\"containerDiv\"]/div[3]/div/div[1]/div/div[2]/div[1]/div[1]/div/div[2]/section/div[12]/div[3]/div[1]/div/span[2]")
+	private WebElement labelBlankMonth;
+
+	public String getBlankMonth() {
+		String label = getText(labelBlankMonth);
+		return label;
+	}
+
+	@FindBy(xpath = "//*[@id=\"containerDiv\"]/div[3]/div/div[1]/div/div[2]/div[1]/div[1]/div/div[2]/section/div[12]/div[3]/div[2]/div/span[2]")
+	private WebElement labelBlankYear;
+
+	public String getBlankYear() {
+		String label = getText(labelBlankYear);
+		return label;
+	}
+
+	@FindBy(xpath = "//*[@id=\"containerDiv\"]/div[3]/div/div[1]/div/div[2]/div[1]/div[1]/div/div[2]/section/div[12]/div[3]/div[3]/div/span[2]")
+	private WebElement labelBlankSecCode;
+
+	public String getBlankSecCode() {
+		String label = getText(labelBlankSecCode);
+		return label;
+	}
+
+	@FindBy(xpath = "//*[@id=\"containerDiv\"]/div[3]/div/div[1]/div/div[2]/div[1]/div[1]/div/div[2]/div[5]/div[1]/div[2]/span[2]")
+	private WebElement labelBlankLastName;
+
+	public String getBlankLastName() {
+		String label = getText(labelBlankLastName);
+		return label;
+	}
+
+	@FindBy(xpath = "//*[@id=\"containerDiv\"]/div[3]/div/div[1]/div/div[2]/div[1]/div[1]/div/div[2]/div[5]/div[2]/span[2]")
+	private WebElement labelBlankAddress;
+
+	public String getBlankAddress() {
+		String label = getText(labelBlankAddress);
+		return label;
+	}
+
+	@FindBy(xpath = "//*[@id=\"containerDiv\"]/div[3]/div/div[1]/div/div[2]/div[1]/div[1]/div/div[2]/div[5]/div[3]/div[1]/div/span[2]")
+	private WebElement labelBlankCity;
+
+	public String getBlankCity() {
+		String label = getText(labelBlankCity);
+		return label;
+	}
+
+	@FindBy(xpath = "//*[@id=\"containerDiv\"]/div[3]/div/div[1]/div/div[2]/div[1]/div[1]/div/div[2]/div[5]/div[3]/div[2]/div/span[2]")
+	private WebElement labelBlankState;
+
+	public String getBlankState() {
+		String label = getText(labelBlankState);
+		return label;
+	}
+
+	@FindBy(xpath = "//*[@id=\"containerDiv\"]/div[3]/div/div[1]/div/div[2]/div[1]/div[1]/div/div[2]/div[5]/div[3]/div[3]/div/span[2]")
+	private WebElement labelBlankZipCode;
+
+	public String getBlankZipCode() {
+		String label = getText(labelBlankZipCode);
+		return label;
+	}
+
+	@FindBy(xpath = "//*[@id=\"containerDiv\"]/div[3]/div/div[1]/div/div[2]/div[1]/div[1]/div/div[2]/section/div[2]/label")
+	private WebElement labelCardOption;
+	public boolean isCardOptionVisible() {
+		return isElementVisible(labelCardOption);
+	}
+
+	public void clickCardOption() {
+		scrollToElement(labelCardOption);
+		click(labelCardOption);
+		log.info("Click on card option Successfully .");
+	}
+
+	@FindBy(xpath = "//*[@id=\"containerDiv\"]/div[3]/div/div[1]/div/div[2]/div[1]/div[1]/div/div[2]/section/div[1]/label")
+	private WebElement labelBankOption;
+
+	public void clickBankOption() {
+		scrollToElement(labelBankOption);
+		click(labelBankOption);
+		log.info("Click on card option Successfully .");
+	}
+
+	@FindBy(css = "#nmcrd")
+	private WebElement cardHolderNameField;
+
+	public boolean isCardHolderNameFieldVisible() {
+		log.info("Checking that Payment Amt field is visible on the PayBill Step 2 page."
+				+ cardHolderNameField.isDisplayed());
+		return isElementVisible(cardHolderNameField);
+	}
+
+	public void enterCardHolderNameInTheField(String accountNumber) {
+		sendKeys(cardHolderNameField, accountNumber);
+		log.info("Entered account no in the field.");
+	}
+
+	public void clearCardHolderNameInTheField() {
+		log.info("clear the payment amount.");
+		clear(cardHolderNameField);
+	}
+
+	@FindBy(css = "#crdno")
+	private WebElement cardNumberField;
+
+	public boolean isCardNumberFieldVisible() {
+		log.info("Checking that Payment Amt field is visible on the PayBill Step 2 page."
+				+ cardNumberField.isDisplayed());
+		return isElementVisible(cardNumberField);
+	}
+
+	public void clearCardNumberInTheField() {
+		log.info("clear the payment amount.");
+		clear(cardNumberField);
+	}
+
+	public void enterCardNumberInTheField(String accountNumber) {
+		sendKeys(cardNumberField, accountNumber);
+		log.info("Entered account no in the field.");
+	}
+
+	@FindBy(css = "#expMOnth")
+	private WebElement monthField;
+
+	public boolean isMonthFieldVisible() {
+		log.info("Checking that Payment Amt field is visible on the PayBill Step 2 page."
+				+ monthField.isDisplayed());
+		return isElementVisible(monthField);
+	}
+
+	public void clickMonthFld() {
+		scrollToElement(monthField);
+		click(monthField);
+		log.info("Click on Payment Amount Field Successfully .");
+	}
+
+
+	@FindBy(css = "#expYear")
+	private WebElement yearField;
+
+	public boolean isYearFieldVisible() {
+		log.info("Checking that Payment Amt field is visible on the PayBill Step 2 page."
+				+ yearField.isDisplayed());
+		return isElementVisible(yearField);
+	}
+
+	public void clickYearFld() {
+		scrollToElement(yearField);
+		click(yearField);
+		log.info("Click on Payment Amount Field Successfully .");
+	}
+
+	@FindBy(css = "#Security")
+	private WebElement securityField;
+
+	public boolean isSecurityCodeFieldVisible() {
+		log.info("Checking that Payment Amt field is visible on the PayBill Step 2 page."
+				+ securityField.isDisplayed());
+		return isElementVisible(securityField);
+	}
+
+	public void enterSecurityCodeInTheField(String accountNumber) {
+		sendKeys(securityField, accountNumber);
+		log.info("Entered account no in the field.");
+	}
+
+	public void clearSecCodeInTheField() {
+		log.info("clear the payment amount.");
+		clear(securityField);
+	}
+
+	@FindBy(css = "#st2_firstname")
+	private WebElement firstNameField;
+
+	public boolean isFirstNameFieldVisible() {
+		log.info("Checking that Payment Amt field is visible on the PayBill Step 2 page."
+				+ firstNameField.isDisplayed());
+		return isElementVisible(firstNameField);
+	}
+
+	public void enterFirstNameInTheField(String accountNumber) {
+		sendKeys(firstNameField, accountNumber);
+		log.info("Entered account no in the field.");
+	}
+
+	@FindBy(css = "#st2_lastname")
+	private WebElement lastNameField;
+
+	public boolean isLastNameFieldVisible() {
+		log.info("Checking that Payment Amt field is visible on the PayBill Step 2 page."
+				+ lastNameField.isDisplayed());
+		return isElementVisible(lastNameField);
+	}
+
+	public void enterLastNameInTheField(String accountNumber) {
+		sendKeys(lastNameField, accountNumber);
+		log.info("Entered account no in the field.");
+	}
+
+	public void clearLastNameInTheField() {
+		log.info("clear the payment amount.");
+		clear(lastNameField);
+	}
+
+	@FindBy(css = "#st2_address")
+	private WebElement addressField;
+
+	public boolean isAddressFieldVisible() {
+		log.info("Checking that Payment Amt field is visible on the PayBill Step 2 page."
+				+ addressField.isDisplayed());
+		return isElementVisible(addressField);
+	}
+
+	public void enterAddressInTheField(String accountNumber) {
+		sendKeys(addressField, accountNumber);
+		log.info("Entered account no in the field.");
+	}
+
+	public void clearAddressInTheField() {
+		log.info("clear the payment amount.");
+		clear(addressField);
+	}
+
+	@FindBy(css = "#st2_city")
+	private WebElement cityField;
+
+	public boolean isCityFieldVisible() {
+		log.info("Checking that Payment Amt field is visible on the PayBill Step 2 page."
+				+ cityField.isDisplayed());
+		return isElementVisible(cityField);
+	}
+
+	public void enterCityInTheField(String accountNumber) {
+		sendKeys(cityField, accountNumber);
+		log.info("Entered account no in the field.");
+	}
+
+	public void clearCityInTheField() {
+		log.info("clear the payment amount.");
+		clear(cityField);
+	}
+
+	@FindBy(css = "#st2_state")
+	private WebElement stateField;
+
+	public boolean isStateFieldVisible() {
+		log.info("Checking that Payment Amt field is visible on the PayBill Step 2 page."
+				+ stateField.isDisplayed());
+		return isElementVisible(stateField);
+	}
+
+	public void enterStateInTheField(String accountNumber) {
+		sendKeys(stateField, accountNumber);
+		log.info("Entered account no in the field.");
+	}
+
+	public void clearStateInTheField() {
+		log.info("clear the payment amount.");
+		clear(stateField);
+	}
+
+	@FindBy(css = "#st2_zipcode")
+	private WebElement zipField;
+
+	public boolean isZipCodeFieldVisible() {
+		log.info("Checking that Payment Amt field is visible on the PayBill Step 2 page."
+				+ zipField.isDisplayed());
+		return isElementVisible(zipField);
+	}
+
+	public void enterZipCodeInTheField(String accountNumber) {
+		sendKeys(zipField, accountNumber);
+		log.info("Entered account no in the field.");
+	}
+
+	public void clearZipCodeInTheField() {
+		log.info("clear the payment amount.");
+		clear(zipField);
+	}
+
+
+	@FindBy(xpath = "//*[@id=\"expMOnth\"]/option[6]")
+	private WebElement lnkmonth;
+
+	public void clickMonthOption() {
+		click(lnkmonth);
+		log.info("Spanish language option clicked {}.");
+	}
+
+	@FindBy(xpath = "//*[@id=\"expYear\"]/option[3]")
+	private WebElement lnkyear;
+
+	public void clickYearOption() {
+		click(lnkyear);
+		log.info("Spanish language option clicked {}.");
+	}
+
+	@FindBy(xpath = "//*[@id=\"expYear\"]/option[2]")
+	private WebElement lnkpastyear;
+
+	public void clickPastYearOption() {
+		click(lnkpastyear);
+		log.info("Spanish language option clicked {}.");
+	}
+
+	@FindBy(xpath = "//*[@id=\"expYear\"]/option[1]")
+	private WebElement lnkyearclear;
+
+	public void clearYearOption() {
+		click(lnkyearclear);
+		log.info("Spanish language option clicked {}.");
+	}
+
+	@FindBy(xpath = "//*[@id=\"expMOnth\"]/option[1]")
+	private WebElement lnkmonthclear;
+
+	public void clearMonthOption() {
+		click(lnkmonthclear);
+		log.info("Spanish language option clicked {}.");
+	}
+
+	@FindBy(css = "#ImgVisa")
+	private WebElement cardVisa;
+
+	public boolean isCardNumberVisa() {
+		log.info("Checking that Payment Amt field is visible on the PayBill Step 2 page."
+				+ cardVisa.isDisplayed());
+		return isElementVisible(cardVisa);
+	}
+
+	@FindBy(css = "#ImgMaster")
+	private WebElement cardMc;
+
+	public boolean isCardNumberMc() {
+		log.info("Checking that Payment Amt field is visible on the PayBill Step 2 page."
+				+ cardMc.isDisplayed());
+		return isElementVisible(cardMc);
+	}
+
+	@FindBy(css = "#ImgDiscov")
+	private WebElement cardDiscover;
+
+	public boolean isCardNumberDiscover() {
+		log.info("Checking that Payment Amt field is visible on the PayBill Step 2 page."
+				+ cardDiscover.isDisplayed());
+		return isElementVisible(cardDiscover);
+	}
+
+	@FindBy(css = "#Imgamex")
+	private WebElement cardAmex;
+
+	public boolean isCardNumberAmex() {
+		log.info("Checking that Payment Amt field is visible on the PayBill Step 2 page."
+				+ cardAmex.isDisplayed());
+		return isElementVisible(cardAmex);
+	}
+
+	@FindBy(css = "#ImgJcb")
+	private WebElement cardJcb;
+
+	public boolean isCardNumberJcb() {
+		log.info("Checking that Payment Amt field is visible on the PayBill Step 2 page."
+				+ cardJcb.isDisplayed());
+		return isElementVisible(cardJcb);
+	}
+
+	@FindBy(css = "#ImgCup")
+	private WebElement cardCup;
+
+	public boolean isCardNumberCup() {
+		log.info("Checking that Payment Amt field is visible on the PayBill Step 2 page."
+				+ cardCup.isDisplayed());
+		return isElementVisible(cardCup);
+	}
+
+	public void clickPayBillLink() {
+		// click(lnk_billing);
+		clickWithJSExecutor(lnk_paybill);
+		log.info("Pay Bill link clicked successfully.");
+	}
+
+	@FindBy(css = "#labelheader")
+	private WebElement labelPayBill;
+
+	public boolean isPayBillHeaderVisible() {
+		return isElementVisible(labelPayBill);
+	}
+
+	public String getPayBillLabel() {
+		String label = getText(labelPayBill);
+		return label;
+	}
+
+	@FindBy(xpath = "//*[@id='stepperDiv']/ol")
+	private WebElement labelPayBillStepOne;
+
+	public boolean isPayBillStepOneTitleVisible() {
+		return isElementVisible(labelPayBillStepOne);
+	}
+
+	public String getPayBillStepOne() {
+		String label = getText(labelPayBillStepOne);
+		return label;
+	}
+
+	@FindBy(xpath = "//*[@id='btnCancelPayment']")
+	private WebElement cancelStpOneField;
+
+	public boolean isCancelBttnVisible() {
+		log.info("Checking that Cancel Bttn is visible on the PayBill Step 1 page." + cancelStpOneField.isDisplayed());
+		return isElementVisible(cancelStpOneField);
+	}
+
+	public void clickCanclStpOneBttn() {
+		click(cancelStpOneField);
+		log.info("Click on Cancel Bttn Successfully .");
+
+	}
+
+	@FindBy(css = "#btnSubmitPayment")
+	private WebElement nextStpOneField;
+
+	public boolean isNextBttnVisible() {
+		log.info("Checking that Next Bttn is visible on the PayBill Step 1 page." + nextStpOneField.isDisplayed());
+		return isElementVisible(nextStpOneField);
+	}
+
+	public void clickSNextButton() {
+		click(nextStpOneField);
+		log.info("Click on next button Successfully .");
+	}
+
+	@FindBy(xpath = "//*[@id='containerDiv']/div[3]/div/div[1]/div/div[1]/ol")
+	private WebElement labelPayBillStepTwo;
+
+	public boolean isPayBillStepTwoTitleVisible() {
+		return isElementVisible(labelPayBillStepOne);
+	}
+
+	public String getPayBillStepTwo() {
+		String label = getText(labelPayBillStepOne);
+		return label;
+	}
+
+	@FindBy(xpath = "//*[@id='containerDiv']/div[3]/div/div[1]/div/div[2]/div[1]/div[1]/div/div[1]/ul/li[1]/label")
+	private WebElement nameField;
+
+	public boolean isNameFieldVisible() {
+		log.info("Checking that Name field is visible on the PayBill Step 2 page." + nameField.isDisplayed());
+		return isElementVisible(nameField);
+
+	}
+
+	@FindBy(xpath = "//*[@id='containerDiv']/div[3]/div/div[1]/div/div[2]/div[1]/div[1]/div/div[1]/ul/li[2]/label")
+	private WebElement accountTwoField;
+
+	public boolean isAccTwoFieldVisible() {
+		log.info("Checking that Account field is visible on the PayBill Step 2 page." + accountTwoField.isDisplayed());
+		return isElementVisible(accountTwoField);
+	}
+
+	@FindBy(xpath = "//*[@id='containerDiv']/div[3]/div/div[1]/div/div[2]/div[1]/div[1]/div/div[1]/ul/li[3]/label")
+	private WebElement amtDueTwoField;
+
+	public boolean isAmtDueTwoFieldVisible() {
+		log.info(
+				"Checking that Amount Due field is visible on the PayBill Step 2 page." + amtDueTwoField.isDisplayed());
+		return isElementVisible(amtDueTwoField);
+	}
+
+	@FindBy(css = "#st2_phonenumber")
+	private WebElement primPhoneTwoField;
+
+	public boolean isPrimPhTwoFieldVisible() {
+		log.info("Checking that Primary Ph field is visible on the PayBill Step 2 page."
+				+ primPhoneTwoField.isDisplayed());
+		return isElementVisible(primPhoneTwoField);
+	}
+
+	@FindBy(css = "#st2_email")
+	private WebElement emailAddTwoField;
+
+	public boolean isEmailAddTwoFieldVisible() {
+		log.info("Checking that Email Add field is visible on the PayBill Step 2 page."
+				+ emailAddTwoField.isDisplayed());
+		return isElementVisible(emailAddTwoField);
+	}
+
+	@FindBy(css = "#st2_amount")
+	private WebElement payAmtTwoField;
+
+	public boolean isPayAmtTwoFieldVisible() {
+		log.info("Checking that Payment Amt field is visible on the PayBill Step 2 page."
+				+ payAmtTwoField.isDisplayed());
+		return isElementVisible(payAmtTwoField);
+	}
+
+	public void clickPayAmtFld() {
+		scrollToElement(payAmtTwoField);
+		click(payAmtTwoField);
+		log.info("Click on Payment Amount Field Successfully .");
+	}
+
+	public void clearPayAmtFld() {
+		log.info("clear the payment amount.");
+		clear(payAmtTwoField);
+	}
+
+	public void enterPayAmtInTheField(String paymentAmt) {
+		sendKeys(payAmtTwoField, paymentAmt);
+		log.info("Entered payment amount in the field.");
+	}
+
+	@FindBy(xpath = "//*[@id='containerDiv']/div[3]/div/div[1]/div/div[2]/div[1]/div[1]/div/div[2]/h3[3]")
+	private WebElement labelPayInfoStepTwo;
+
+	public boolean isPayInfoStepTwoLableVisible() {
+		return isElementVisible(labelPayInfoStepTwo);
+	}
+
+	public String getPayInfoStepTwo() {
+		String label = getText(labelPayInfoStepTwo);
+		return label;
+	}
+
+	@FindBy(xpath = "//*[@id='containerDiv']/div[3]/div/div[1]/div/div[2]/div[1]/div[1]/div/div[2]/section/div[1]/label")
+	private WebElement bankAccOptTwoField;
+
+	public boolean isBankAccOptTwoVisible() {
+		scrollToElement(bankAccOptTwoField);
+		log.info("Checking that Bank Acc optn is visible on the PayBill Step 2 page."
+				+ bankAccOptTwoField.isDisplayed());
+		return isElementVisible(bankAccOptTwoField);
+	}
+
+	public void clickBankAccOptTwoStp() {
+		scrollToElement(bankAccOptTwoField);
+		clickWithJSExecutor(bankAccOptTwoField);
+		log.info("Click on Bank Acc Opt Successfully .");
+	}
+
+	@FindBy(css = "#accholrnm")
+	private WebElement accHoldNameField;
+
+	public boolean isAccHoldNameField() {
+		log.info("Checking that Acc Holder Name field is visible on the PayBill Step 2 page."
+				+ accHoldNameField.isDisplayed());
+		return isElementVisible(accHoldNameField);
+	}
+
+	public void clickAccHoldNameFld() {
+		click(accHoldNameField);
+		log.info("Click on Acc Holder Name Field Successfully .");
+
+	}
+
+	public void enterAccHolderNameFld(String accHoldName) {
+		sendKeys(accHoldNameField, accHoldName);
+		log.info("Entered Acc Holder Name in the field.");
+	}
+
+	@FindBy(css = "#rtno")
+	private WebElement routingNoField;
+
+	public boolean isRoutNoField() {
+		log.info(
+				"Checking that Routing No field is visible on the PayBill Step 2 page." + routingNoField.isDisplayed());
+		return isElementVisible(routingNoField);
+	}
+
+	public void clickRoutNoFld() {
+		click(routingNoField);
+		log.info("Click on Routing No Field Successfully .");
+
+	}
+
+	public void enterRoutNoFld(String routNo) {
+		sendKeys(routingNoField, routNo);
+		log.info("Entered Routing No in the field.");
+	}
+
+	@FindBy(css = "#crtno")
+	private WebElement confRoutingNoField;
+
+	public boolean isCongRoutNoField() {
+		log.info("Checking that Confirming Routing No field is visible on the PayBill Step 2 page."
+				+ confRoutingNoField.isDisplayed());
+		return isElementVisible(confRoutingNoField);
+	}
+
+	public void clickConfRoutNoFld() {
+		click(confRoutingNoField);
+		log.info("Click on Confirming Routing No Field Successfully .");
+
+	}
+
+	public void enterConfRoutNoFld(String confRoutNo) {
+		sendKeys(confRoutingNoField, confRoutNo);
+		log.info("Entered Confirm Routing No in the field.");
+	}
+
+	@FindBy(css = "#bnkaccno")
+	private WebElement bnkAccNoField;
+
+	public boolean isBnkAccNoField() {
+		log.info("Checking that Bank Account No field is visible on the PayBill Step 2 page."
+				+ bnkAccNoField.isDisplayed());
+		return isElementVisible(bnkAccNoField);
+	}
+
+	public void clickBnkAccNoFld() {
+		click(bnkAccNoField);
+		log.info("Click on Bank Account No Field Successfully .");
+
+	}
+
+	public void enterBnkAccNoFld(String bnkAccNo) {
+		sendKeys(bnkAccNoField, bnkAccNo);
+		log.info("Entered Bank Account No in the field.");
+	}
+
+	@FindBy(css = "#bnkaccnomask")
+	private WebElement confBnkAccNoField;
+
+	public boolean isConfBnkAccNoField() {
+		log.info("Checking that  Confirm Bank Account No field is visible on the PayBill Step 2 page."
+				+ confBnkAccNoField.isDisplayed());
+		return isElementVisible(confBnkAccNoField);
+	}
+
+	public void clickConfBnkAccNoFld() {
+		click(confBnkAccNoField);
+		log.info("Click on Confirm Bank Account No Field Successfully .");
+
+	}
+
+	public void enterConfBnkAccNoFld(String confBnkAccNo) {
+		sendKeys(confBnkAccNoField, confBnkAccNo);
+		log.info("Entered Confirm Bank Account No in the field.");
+	}
+
+	@FindBy(css = "#st2_accountType")
+	private WebElement sltAccTypField;
+
+	public boolean isSelectAccTypField() {
+		log.info("Checking that Select Account Type field is visible on the PayBill Step 2 page."
+				+ sltAccTypField.isDisplayed());
+		return isElementVisible(sltAccTypField);
+	}
+
+	public void clickSelectAccTypFld() {
+		click(sltAccTypField);
+		log.info("Click on Select Account Type Field Successfully .");
+
+	}
+
+	@FindBy(css = "#st2_accountType > option:nth-child(2)")
+	private WebElement optAccTypField;
+
+	public boolean isOptAccTypField() {
+		log.info("Checking that Option Account Type field is visible on the PayBill Step 2 page."
+				+ optAccTypField.isDisplayed());
+		return isElementVisible(optAccTypField);
+	}
+
+	public void clickOptAccTypFld() {
+		click(optAccTypField);
+		log.info("Click on Option Account Type Field Successfully .");
+	}
+
+	@FindBy(css = "#st2_firstname")
+	private WebElement frstNameField;
+
+	public boolean isFirstNameField() {
+		log.info("Checking that First Name field is visible on the PayBill Step 2 page." + frstNameField.isDisplayed());
+		return isElementVisible(frstNameField);
+	}
+
+	public void clickFirstNameFld() {
+		click(frstNameField);
+		log.info("Click on First Name Field Successfully .");
+
+	}
+
+	public void enterFirstNameFld(String frstName) {
+		sendKeys(frstNameField, frstName);
+		log.info("Entered First Name in the field.");
+	}
+
+	@FindBy(xpath = "//*[@id='containerDiv']/div[3]/div/div[1]/div/div[2]/div[1]/div[2]/input[2]")
+	private WebElement cancelStpTwoField;
+
+	public boolean isCnclTwoStpBttnVisible() {
+		log.info("Checking that Cancel Bttn is visible on the PayBill Step 2 page." + cancelStpTwoField.isDisplayed());
+		return isElementVisible(cancelStpTwoField);
+	}
+
+	@FindBy(xpath = "//*[@id='containerDiv']/div[3]/div/div[1]/div/div[2]/div[1]/div[2]/input[1]")
+	private WebElement nextStpTwoField;
+
+	public boolean isNextBttnTwoVisible() {
+		log.info("Checking that Next Bttn is visible on the PayBill Step 2 page." + nextStpTwoField.isDisplayed());
+		return isElementVisible(nextStpTwoField);
+	}
+
+	public void clickNxtTwoBttn() {
+		click(nextStpTwoField);
+		log.info("Click on Next Bttn Successfully .");
+	}
+
+	@FindBy(css = "#toast-container > div > div")
+	private WebElement allMandErrorMessage;
+
+	public String getallMandErrorMessage() {
+		log.info("Fetching the all mandatory fields error message.");
+		String label = getText(allMandErrorMessage);
+		log.info("All Mandatory error message is {}: " + label);
+		return label;
+	}
+
+	@FindBy(css = "#logincredentials > div:nth-child(2) > div > span.error_messagecommon")
+	private WebElement primPhErrMessage;
+
+	public String getprimaryPhErrorMessage() {
+		log.info("Fetching the primary Ph error message.");
+		String label = getText(primPhErrMessage);
+		log.info("Primary Ph Error is {}: " + label);
+		return label;
+	}
+
+	@FindBy(css = "#logincredentials > div:nth-child(1) > div > span.error_messagecommon")
+	private WebElement accNoErrMessage;
+
+	public String getacctNoErrorMessage() {
+		log.info("Fetching the account no. error message.");
+		String label = getText(accNoErrMessage);
+		log.info("Account No. Error is {}: " + label);
+		return label;
+	}
+
+	@FindBy(xpath = "//*[@id='containerDiv']/div[3]/div/div[1]/div/div[2]/div[2]/div[1]/div[1]/div/h5")
+	private WebElement accNoThreeField;
+
+	public boolean isAccNoThreeFldVisible() {
+		log.info("Checking that Account Number field is visible on the PayBill Step 3 page."
+				+ accNoThreeField.isDisplayed());
+		return isElementVisible(accNoThreeField);
+
+	}
+
+	@FindBy(xpath = "//*[@id='containerDiv']/div[3]/div/div[1]/div/div[2]/div[2]/div[1]/div[2]/div/h5")
+	private WebElement servaddThreeField;
+
+	public boolean isServAddThreeFldVisible() {
+		log.info("Checking that Service Address field is visible on the PayBill Step 3 page."
+				+ servaddThreeField.isDisplayed());
+		return isElementVisible(servaddThreeField);
+	}
+
+	@FindBy(xpath = "//*[@id='containerDiv']/div[3]/div/div[1]/div/div[2]/div[2]/div[1]/div[3]/div/h5")
+	private WebElement billAmtThreeField;
+
+	public boolean isBillAmtThreeFldVisible() {
+		log.info("Checking that Bill Amount field is visible on the PayBill Step 3 page."
+				+ billAmtThreeField.isDisplayed());
+		return isElementVisible(billAmtThreeField);
+	}
+
+	@FindBy(xpath = "//*[@id='containerDiv']/div[3]/div/div[1]/div/div[2]/div[2]/div[1]/div[4]/div/h5")
+	private WebElement transFeeThreeField;
+
+	public boolean isTransFeeThreeFldVisible() {
+		log.info("Checking that Transaction Fees field is visible on the PayBill Step 3 page."
+				+ transFeeThreeField.isDisplayed());
+		return isElementVisible(transFeeThreeField);
+	}
+
+	@FindBy(xpath = "//*[@id='containerDiv']/div[3]/div/div[1]/div/div[2]/div[2]/div[1]/div[5]/div/h5")
+	private WebElement transAmtThreeField;
+
+	public boolean isTransAmtThreeFldVisible() {
+		log.info("Checking that Transaction Amount field is visible on the PayBill Step 3 page."
+				+ transAmtThreeField.isDisplayed());
+		return isElementVisible(transAmtThreeField);
+	}
+
+	@FindBy(xpath = "//*[@id='containerDiv']/div[3]/div/div[1]/div/div[2]/div[2]/div[1]/div[6]/div/h5")
+	private WebElement payDateThreeField;
+
+	public boolean ispayDateThreeFldVisible() {
+		log.info("Checking that Payment Date field is visible on the PayBill Step 3 page."
+				+ payDateThreeField.isDisplayed());
+		return isElementVisible(payDateThreeField);
+	}
+
+	@FindBy(xpath = "//*[@id='payment_type']")
+	private WebElement bnkThreeField;
+
+	public boolean isBankThreeFldVisible() {
+		log.info("Checking that Bank field is visible on the PayBill Step 3 page." + bnkThreeField.isDisplayed());
+		return isElementVisible(bnkThreeField);
+	}
+
+	@FindBy(xpath = "//*[@id='containerDiv']/div[3]/div/div[1]/div/div[2]/div[2]/div[3]/input[2]")
+	private WebElement backStpThreeBtn;
+
+	public boolean isBackThreeStpBtnVisible() {
+		log.info("Checking that Back Bttn is visible on the PayBill Step 3 page." + backStpThreeBtn.isDisplayed());
+		return isElementVisible(backStpThreeBtn);
+	}
+
+	public void clickBackThreeBtn() {
+		click(backStpThreeBtn);
+		log.info("Click on Back Button Successfully .");
+	}
+
+	@FindBy(xpath = "//*[@id='containerDiv']/div[3]/div/div[1]/div/div[2]/div[2]/div[3]/input[1]")
+	private WebElement submitStpThreeBtn;
+
+	public boolean isSubmitBtnThreeVisible() {
+		log.info("Checking that Submit Bttn is visible on the PayBill Step 2 page." + submitStpThreeBtn.isDisplayed());
+		return isElementVisible(submitStpThreeBtn);
+	}
+
+	public void clickSubmitThreeBtn() {
+		click(submitStpThreeBtn);
+		log.info("Click on Submit Button Successfully .");
+	}
+
+	@FindBy(css = ".dlg-action.ok-action")
+	private WebElement submitStpAlertYesBtn;
+
+	public void clickYesAlertBtn() {
+		click(submitStpAlertYesBtn);
+		log.info("Click on Submit Button Successfully .");
+	}
+
+	@FindBy(xpath = "//*[@id='transFeeLimit']")
+	private WebElement discOneLableThreeStp;
+
+	public String getDiscOneLblThreeMessage() {
+		log.info("Fetching the disclaimer 1 lable message.");
+		String label = getText(discOneLableThreeStp);
+		log.info("Disclaimer 1 message is {}: " + label);
+		return label;
+
+	}
+
+	@FindBy(xpath = "/html/body/form/section[1]/div/div/div[1]/div/section/div/div[3]/div/div[2]/div/div[1]/div[1]/span")
+	private WebElement labelPaySuccessFinal;
+
+	public boolean isPaySuccessVisible() {
+		return isElementVisible(labelPaySuccessFinal);
+	}
+
+	public String getPaySuccessLabel() {
+		String label = getText(labelPaySuccessFinal);
+		return label;
+	}
+
+	@FindBy(css = "#accholrnm")
+	private WebElement lbl_accountholdername;
+
+	public String getAccountHolderName() {
+		String label = getAttribute(lbl_accountholdername, "value");
+		log.info("Forgot Username Label {}: " + label);
+		return label;
+	}
+
+	@FindBy(css = "#nmcrd")
+	private WebElement lbl_cardholdername;
+
+	public String getCardHolderName() {
+		String label = getAttribute(lbl_cardholdername, "value");
+		log.info("Forgot Username Label {}: " + label);
+		return label;
+	}
+
+	@FindBy(css = "#st2_email")
+	private WebElement emailNumberField;
+
+	public boolean isEmailFieldVisible() {
+		log.info("Checking that Payment Amt field is visible on the PayBill Step 2 page."
+				+ emailNumberField.isDisplayed());
+		return isElementVisible(emailNumberField);
+	}
+
+	public void clearEmailInTheField() {
+		log.info("clear the payment amount.");
+		clear(emailNumberField);
+	}
+
+	public void enterEmailInTheField(String accountNumber) {
+		sendKeys(emailNumberField, accountNumber);
+		log.info("Entered account no in the field.");
+	}
+
+	@FindBy(xpath = "//*[@id=\"containerDiv\"]/div[3]/div/div[1]/div/div[2]/div[1]/div[1]/div/div[2]/div[2]/span[2]")
+	private WebElement labelInvalidEmail;
+
+	public String getInvalidEmailLabelTwo() {
+		String label = getText(labelInvalidEmail);
+		return label;
+	}
+
+	@FindBy(xpath = "//*[@id=\"containerDiv\"]/div[3]/div/div[1]/div/div[2]/div[1]/div[1]/div/div[2]/div[2]/span[2]")
+	private WebElement labelInvalidPhone;
+
+	public String getInvalidPhoneLabelTwo() {
+		String label = getText(labelInvalidPhone);
+		return label;
+	}
+
+	@FindBy(css = "#st2_phonenumber")
+	private WebElement phoneNumberField;
+
+	public boolean isPhoneFieldVisible() {
+		log.info("Checking that Payment Amt field is visible on the PayBill Step 2 page."
+				+ phoneNumberField.isDisplayed());
+		return isElementVisible(phoneNumberField);
+	}
+
+	public void clearPhoneInTheField() {
+		log.info("clear the payment amount.");
+		clear(phoneNumberField);
+	}
+
+	public void enterPhoneInTheField(String accountNumber) {
+		sendKeys(phoneNumberField, accountNumber);
+		log.info("Entered account no in the field.");
 	}
 }

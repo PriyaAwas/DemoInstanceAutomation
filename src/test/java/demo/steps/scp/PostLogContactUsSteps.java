@@ -184,7 +184,8 @@ public class PostLogContactUsSteps extends PostLogConnectUsPage {
 	public boolean isPostLogConnectMePage(String url, String title) {
 		Boolean isForgetPasswordPage = false;
 		log.info("Checking that the current page is ForgetPassword Page");
-		if (getCurrentUrl().contains(url.toLowerCase()) && getCurrentTitle().equalsIgnoreCase(title))
+		log.info(getCurrentUrl().substring(0,64));
+		if (getCurrentUrl().substring(0,64).contains(url.toLowerCase()) && getCurrentTitle().equalsIgnoreCase(title))
 			isForgetPasswordPage = true;
 		log.info("The current page is ForgetPassword Page {}: " + isForgetPasswordPage);
 		return isForgetPasswordPage;
@@ -192,7 +193,7 @@ public class PostLogContactUsSteps extends PostLogConnectUsPage {
 
 	public void verifySocialMediaObject(SoftAssert softAssert) {
 		clickConnectMeLink();
-		softAssert.assertTrue(
+		assertTrue(
 				isPostLogConnectMePage(PostLogConnectMeTextProp.getPropValue("ConnectMePageUrl"),
 						(PostLogConnectMeTextProp.getPropValue("ConnectMePageTitle"))),
 				"Page Title & URL does not Match");

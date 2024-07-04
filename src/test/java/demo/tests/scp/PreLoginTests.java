@@ -1,5 +1,6 @@
 package demo.tests.scp;
 
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Arrays;
 
@@ -9,14 +10,21 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
+import sew.ai.config.CSPConfiguration;
 import sew.ai.config.Configuration;
 import sew.ai.enums.CategoryType;
 import sew.ai.helpers.anotations.FrameworkAnnotations;
+import sew.ai.helpers.props.SQLQueries;
 import sew.ai.helpers.reporters.ExtentLogger;
+import sew.ai.helpers.testrail.TestRail;
 import sew.ai.runner.TestRunner;
 import sew.ai.steps.scp.DashboardSteps;
+import sew.ai.steps.scp.LoginSteps;
+import sew.ai.utils.DataBaseUtils;
 import sew.ai.utils.PropertiesUtil;
 import demo.steps.scp.PreLoginSteps;
+
+import static sew.ai.steps.scp.LoginSteps.loginTextProp;
 
 public class PreLoginTests extends TestRunner {
 
@@ -198,6 +206,15 @@ public class PreLoginTests extends TestRunner {
 		softAssert.assertAll();
 		log.info("Test Case execution for - verifyWaysToSavePage - is Completed.");
 		ExtentLogger.logInfo("Test Case execution for - verifyWaysToSavePage - is Completed.");
+	}
+	@FrameworkAnnotations(author = {"Eujin"}, category = { CategoryType.SMOKE, CategoryType.SCP_LOGIN })
+	@Test(priority = 7, description = "To verify the language switch functionality on login page.")
+	public void verifySwitchLanguageFunctionality() {
+		SoftAssert softAssert = new SoftAssert();
+		preLoginSteps = new PreLoginSteps(driver);
+		preLoginSteps.verifyLanguageSwitchFeature(softAssert);
+		softAssert.assertAll();
+		log.info("Test Case execution for - verifySwitchLanguageFunctionality - is Completed.");
 	}
 
 }
