@@ -607,21 +607,13 @@ public class PreLoginSteps extends PreLoginPage {
 	public void verifyLanguageSwitchFeature(SoftAssert softAssert) {
 		Assert.assertTrue(isLanguageDropdownVisible(), "Language dropdown is not visible on the login page.");
 		clickLanguageDropdown();
-		pause(2000);
 		clickSpanishLanguageOption();
-		pause(2000);
 		softAssert.assertEquals(getRegisterLinkLabel(), loginTextProp.getPropValue("txLblRegistrationEspanol"));
-		pause(2000);
 		clickLanguageDropdown();
-		pause(2000);
 		clickFrenchLanguageOption();
-		pause(2000);
 		softAssert.assertEquals(getRegisterLinkLabel(), loginTextProp.getPropValue("txLblRegistrationFrance"));
-		pause(2000);
 		clickLanguageDropdown();
-		pause(2000);
 		clickEnglishLanguageOption();
-		pause(2000);
 		softAssert.assertEquals(getRegisterLinkLabel(), loginTextProp.getPropValue("txLblRegistrationEnglish"));
 	}
 }
