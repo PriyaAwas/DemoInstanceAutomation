@@ -34,7 +34,6 @@ public class PostLogContactUsSteps extends PostLogConnectUsPage {
 				FilePaths.SCP_TEXT_PROPERTIES + Constants.POST_LOG_CONNECT_ME_TXT_FILENAME);
 
 	}
-
 	public void verifyContactUsObject(SoftAssert softAssert) throws InterruptedException {
 		pause(5000);
 		clickConnectMeLink();

@@ -2,6 +2,7 @@ package demo.steps.scp;
 
 import static org.testng.Assert.assertEquals;
 import static sew.ai.steps.scp.DashboardSteps.dashboardTextProp;
+import static sew.ai.steps.scp.LoginSteps.loginTextProp;
 
 import java.sql.SQLException;
 import java.util.List;
