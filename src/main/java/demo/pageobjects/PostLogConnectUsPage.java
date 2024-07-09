@@ -2036,4 +2036,173 @@ public class PostLogConnectUsPage extends HomePage {
 		click(lnk_threeDot);
 	}
 
+    
+    public boolean selectlstConnectMeOptions(String option) {
+    	boolean b = false;
+        selectByVisibleText(dropdown, option);
+        log.info("lstConnectMeOptions populated successfully.");
+        return b;
+       
+    }
+    
+    @FindBy(css = "[class='error_messagecommon']")
+    private WebElement lblGenericErrorMessage;
+
+    public String getlblGenericErrorMessage() {
+        log.info("Fetching the label Generic Error message");
+        String label = getText(lblGenericErrorMessage);
+        log.info("label Generic Error message {}: " + label);
+        return label;
+    }
+    
+    public boolean islblGenericErrorMessageVisible() {
+    	log.info("Generic Error message visibility Status :" + lblGenericErrorMessage.isDisplayed());
+    	return lblGenericErrorMessage.isDisplayed();
+    	
+    }
+    
+    // FAQ
+       
+    @FindBy(css = "[class='myaccount_help commonmtr_dgn']")
+    private WebElement faqAccountTab;
+
+    public boolean isfaqAccountTabVisible() {
+    	log.info("FAQ Account Tab visibility Status :" + faqAccountTab.isDisplayed());
+    	return faqAccountTab.isDisplayed();    	
+    }
+    
+    public void clickfaqAccountTab() {
+    	click(faqAccountTab);
+    	log.info("FAQ Account Tab clicked {}.");
+    }
+    
+    @FindBy(css = "[class='billingpmt_help commonmtr_dgn']")
+    private WebElement faqBillingTab;
+
+    public boolean isfaqBillingTabVisible() {
+    	log.info("FAQ Billing Tab visibility Status :" + faqBillingTab.isDisplayed());
+    	return faqBillingTab.isDisplayed();    	
+    }
+    
+    public void clickfaqBillingTab() {
+    	click(faqBillingTab);
+    	log.info("FAQ Billing Tab clicked {}.");
+    }
+    
+    @FindBy(css = "[class='custo_registration commonmtr_dgn']")
+    private WebElement faqregistrationTab;
+
+    public boolean isfaqregistrationTabVisible() {
+    	log.info("FAQ registration Tab visibility Status :" + faqregistrationTab.isDisplayed());
+    	return faqregistrationTab.isDisplayed();    	
+    }
+    
+    public void clickfaqregistrationTab() {
+    	click(faqregistrationTab);
+    	log.info("FAQ registration Tab clicked {}.");
+    }
+    
+    @FindBy(css = "[class='gnrlsupprt_help commonmtr_dgn']")
+    private WebElement faqHomeTab;
+
+    public boolean isfaqHomeTabVisible() {
+    	log.info("FAQ registration Tab visibility Status :" + faqHomeTab.isDisplayed());
+    	return faqHomeTab.isDisplayed();    	
+    }
+    
+    public void clickfaqHomeTab() {
+    	click(faqHomeTab);
+    	log.info("FAQ registration Tab clicked {}.");
+    }
+    
+    @FindBy(css = "[class='outage_related_help commonmtr_dgn']")
+    private WebElement faqOutageTab;
+
+    public boolean isfaqOutageTabVisible() {
+    	log.info("FAQ Outage Tab visibility Status :" + faqOutageTab.isDisplayed());
+    	return faqOutageTab.isDisplayed();    	
+    }
+    
+    public void clickfaqOutageTab() {
+    	click(faqOutageTab);
+    	log.info("FAQ Outage Tab clicked {}.");
+    }
+    
+    @FindBy(css = "[class='prgroms_help commonmtr_dgn']")
+    private WebElement faqServiceTab;
+
+    public boolean isfaqServiceTabVisible() {
+    	log.info("FAQ Service Tab visibility Status :" + faqServiceTab.isDisplayed());
+    	return faqServiceTab.isDisplayed();    	
+    }
+    
+    public void clickfaqServiceTab() {
+    	click(faqServiceTab);
+    	log.info("FAQ Service Tab clicked {}.");
+    }
+   
+    @FindBy(css = "[class='top10faq commonmtr_dgn']")
+    private WebElement faqTopTab;
+
+    public boolean isfaqTopTabVisible() {
+    	log.info("FAQ Top Tab visibility Status :" + faqTopTab.isDisplayed());
+    	return faqTopTab.isDisplayed();    	
+    }
+    
+    public void clickfaqTopTab() {
+    	click(faqTopTab);
+    	log.info("FAQ Top Tab clicked {}.");
+    }
+    
+    @FindBy(css = "[class='usagecard_help commonmtr_dgn']")
+    //@FindBy(css = "#ContentPlaceHolder1_freqQues_faqBucket > div:nth-child(11) > a > p > span")
+    private WebElement faqUsageTab;
+
+    public boolean isfaqUsageTabVisible() {
+    	log.info("FAQ Usage Tab visibility Status :" + faqUsageTab.isDisplayed());
+    	return faqUsageTab.isDisplayed();    	
+    }
+    
+    public void clickfaqUsageTab() {
+    	click(faqUsageTab);
+    	log.info("FAQ Usage Tab clicked {}.");
+    }
+    
+    @FindBy(css = "#ContentPlaceHolder1_freqQues_faqBucket > div:nth-child(5) > a > p > span")
+    private WebElement faqWaysToSaveTab;
+
+    public boolean isfaqWaysToSaveTabVisible() {
+    	log.info("FAQ Ways To Save Tab visibility Status :" + faqWaysToSaveTab.isDisplayed());
+    	return faqWaysToSaveTab.isDisplayed();    	
+    }
+    
+    public void clickfaqWaysToSaveTab() {
+    	click(faqWaysToSaveTab);
+    	log.info("FAQ Ways To Save Tab clicked {}.");
+    }
+    
+    
+    @FindBy(css = "[id='topic']")
+    private WebElement faqPageTopic;
+    
+    public String getFAQPageTopic() {
+        log.info("FAQ Page Topic");
+        String label = getText(faqPageTopic);
+        log.info("FAQ Page Topic is {}: " + label);
+        return label;
+    }
+    
+    public boolean isFAQPageTopicVisible() {
+    	log.info("FAQ Page Topic visibility Status :" + faqPageTopic.isDisplayed());
+    	return faqPageTopic.isDisplayed();    	
+    }
+    
+    
+    @FindBy(css = ".breadcrumb li a")
+    private WebElement lnkFAQPageHelp;
+    
+    public void clickFAQPageHelp() {
+    	click(lnkFAQPageHelp);
+    	log.info("FAQ Help tab clicked {}.");
+    }
 }
