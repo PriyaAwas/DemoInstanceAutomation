@@ -54,13 +54,13 @@ public class PreLoginOutagesSteps extends PreLoginOutagesPage {
 		softAssert.assertEquals(getAccountsServedLabel(), preLoginOutagesProp.getPropValue("lblAccountsServed"),
 				"Label for accounts served button is not matched.");
 		softAssert.assertEquals(getMapLegendLabel(), preLoginOutagesProp.getPropValue("lblMapLegend"),
-				"Label for accounts map legend is not matched.");
+				"Label for map legend is not matched.");
 		softAssert.assertEquals(getWeatherLabel(), preLoginOutagesProp.getPropValue("lblWeather"),
-				"Label for accounts map legend is not matched.");
+				"Label for weather is not matched.");
 		softAssert.assertEquals(getReportOutageLabel(), preLoginOutagesProp.getPropValue("lblReportOutage"),
-				"Label for accounts map legend is not matched.");
+				"Label for report outages is not matched.");
 		softAssert.assertEquals(getInformationUpdatesLabel(), preLoginOutagesProp.getPropValue("lblInformationUpdates"),
-				"Label for accounts map legend is not matched.");
+				"Label for Info updates is not matched.");
 		softAssert.assertTrue(isCurrentActive(), "current tab is active");
 		softAssert.assertTrue(isFullscreenButtonVisible(), "fullscreen button not visible");
 		softAssert.assertTrue(isZoomInButtonVisible(), "zoomin button not visible");
@@ -83,18 +83,18 @@ public class PreLoginOutagesSteps extends PreLoginOutagesPage {
 		softAssert.assertEquals(getZipCodeLabel(), preLoginOutagesProp.getPropValue("lblZipCode"),
 				"Label for Zip COde is not matched.");
 		softAssert.assertEquals(getAreaLabel(), preLoginOutagesProp.getPropValue("lblArea"),
-				"Label for city is not matched.");
+				"Label for area is not matched.");
 		softAssert.assertEquals(getOutLabel(), preLoginOutagesProp.getPropValue("lblOut"),
-				"Label for Zip COde is not matched.");
+				"Label for Out is not matched.");
 		softAssert.assertEquals(getServedLabel(), preLoginOutagesProp.getPropValue("lblServed"),
-				"Label for city is not matched.");
+				"Label for served is not matched.");
 		clickPlannedBtn();
 		softAssert.assertEquals(getAreaLabel(), preLoginOutagesProp.getPropValue("lblArea"),
-				"Label for city is not matched.");
+				"Label for area is not matched.");
 		softAssert.assertEquals(getOutLabel(), preLoginOutagesProp.getPropValue("lblOut"),
-				"Label for Zip COde is not matched.");
+				"Label for Out is not matched.");
 		softAssert.assertEquals(getServedLabel(), preLoginOutagesProp.getPropValue("lblServed"),
-				"Label for city is not matched.");
+				"Label for served is not matched.");
 		softAssert.assertFalse(isMapLegendVisible(), "map legend is active");
 		softAssert.assertFalse(isWeatherVisible(), "weather is active");
 		clickMapViewBtn();
@@ -124,7 +124,7 @@ public class PreLoginOutagesSteps extends PreLoginOutagesPage {
 		pause(1000);
 		clickSearchBtn();
 		softAssert.assertEquals(getEmptySearchLabel(), preLoginOutagesProp.getPropValue("lblInvalidSearch"),
-				"Label for city is not matched.");
+				"Label for search is not matched.");
 		pause(1000);
 	}
 
@@ -132,7 +132,7 @@ public class PreLoginOutagesSteps extends PreLoginOutagesPage {
 		clickSearchBtn();
 		pause(3000);
 		softAssert.assertEquals(getEmptySearchLabel(), preLoginOutagesProp.getPropValue("lblEmptySearch"),
-				"Label for city is not matched.");
+				"Label for search is not matched.");
 		pause(1000);
 	}
 
@@ -144,29 +144,29 @@ public class PreLoginOutagesSteps extends PreLoginOutagesPage {
 		clickWeatherBtn();
 		pause(1000);
 		softAssert.assertEquals(getMultipleLabel(), preLoginOutagesProp.getPropValue("lblMultiple"),
-				"Label for city is not matched.");
+				"Label for multiple is not matched.");
 		softAssert.assertEquals(get1Label(), preLoginOutagesProp.getPropValue("lbl1"),
-				"Label for city is not matched.");
+				"Label for 1 is not matched.");
 		softAssert.assertEquals(get2Label(), preLoginOutagesProp.getPropValue("lbl2"),
-				"Label for city is not matched.");
+				"Label for 2 is not matched.");
 		softAssert.assertEquals(get101Label(), preLoginOutagesProp.getPropValue("lbl101"),
-				"Label for city is not matched.");
+				"Label for 101 is not matched.");
 		softAssert.assertEquals(get501Label(), preLoginOutagesProp.getPropValue("lbl501"),
-				"Label for city is not matched.");
+				"Label for 501 is not matched.");
 		softAssert.assertEquals(get2000Label(), preLoginOutagesProp.getPropValue("lbl2000"),
-				"Label for city is not matched.");
+				"Label for 2000 is not matched.");
 		softAssert.assertEquals(getSABLabel(), preLoginOutagesProp.getPropValue("lblSAB"),
-				"Label for city is not matched.");
+				"Label for SAB is not matched.");
 		softAssert.assertEquals(getRainLabel(), preLoginOutagesProp.getPropValue("lblRain"),
-				"Label for city is not matched.");
+				"Label for Rain is not matched.");
 		softAssert.assertEquals(getFrozenLabel(), preLoginOutagesProp.getPropValue("lblFrozen"),
-				"Label for city is not matched.");
+				"Label for Frozen is not matched.");
 		softAssert.assertEquals(getSnowLabel(), preLoginOutagesProp.getPropValue("lblSnow"),
-				"Label for city is not matched.");
+				"Label for Snow is not matched.");
 		softAssert.assertEquals(getLightLabel(), preLoginOutagesProp.getPropValue("lblLight"),
-				"Label for city is not matched.");
+				"Label for Light is not matched.");
 		softAssert.assertEquals(getHeavyLabel(), preLoginOutagesProp.getPropValue("lblHeavy"),
-				"Label for city is not matched.");
+				"Label for Heavy is not matched.");
 	}
 
 	public void navigateToReportOutage(SoftAssert softAssert) {
@@ -220,7 +220,7 @@ public class PreLoginOutagesSteps extends PreLoginOutagesPage {
 		pause(2000);
 		clickOption();
 		softAssert.assertEquals(getOptionLabel(), preLoginOutagesProp.getPropValue("option"),
-				"Label for city is not matched.");
+				"Label for option is not matched.");
 	}
 
 }
