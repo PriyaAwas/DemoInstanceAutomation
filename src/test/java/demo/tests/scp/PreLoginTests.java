@@ -155,7 +155,7 @@ public class PreLoginTests extends TestRunner {
 		ExtentLogger.logInfo("Test Case execution for - verifyPreLogChatBox - is Completed.");
 	}
 
-	@FrameworkAnnotations(author = { "Eujin" }, category = { CategoryType.SANITY, CategoryType.SCP_PAYMENT_LOCATIONS })
+	@FrameworkAnnotations(author = { "Eujin" }, category = { CategoryType.SANITY })
 	@Test(priority = 5, description = "To verify the Pre-Login Payment Locations page.")
 	public void verifyPreLogPaymentLocations() {
 		String[] tc_id = { "Pre_Login_11" };
@@ -168,7 +168,7 @@ public class PreLoginTests extends TestRunner {
 		ExtentLogger.logInfo("Test Case execution for - verifyPreLogPaymentLocations - is Completed.");
 	}
 
-	@FrameworkAnnotations(author = { "Eujin" }, category = { CategoryType.SMOKE, CategoryType.SCP_PAYMENT })
+	@FrameworkAnnotations(author = { "Eujin" }, category = { CategoryType.SMOKE })
 	@Test(priority = 3, description = "To verify the payment functionality with invalid details.")
 	public void verifyInvalidPaymentDetails() {
 		String[] tc_id = { "Pre_Login_08" };
