@@ -159,11 +159,18 @@ public class PreLoginServicePage extends HomePage {
 	@FindBys(@FindBy(css = ".formpreview_connectme .value"))
 	private List<WebElement> lblformpreviewValue;
 
-	public List<WebElement> getObjectsFormpreviewValue()
-	{		
+	public List<WebElement> getObjectsFormpreviewValue() {
 		log.info("ii value {}: " + lblformpreviewValue);
 		return lblformpreviewValue;
 
+	}
+
+	@FindBys(@FindBy(css = "myprofile-card mdl-card mdl-shadow--2dp"))
+	private List<WebElement> myProfileCards;
+
+	public List<WebElement> getMyProfileList() {
+		log.info("List for the my ProfileCards value {}: " + myProfileCards);
+		return myProfileCards;
 
 	}
 
@@ -373,6 +380,24 @@ public class PreLoginServicePage extends HomePage {
 		return isElementVisible(txtPreLoginMoveOutDate);
 	}
 
+	@FindBy(css = "[globalize='	ML_SERVICE_Lbl_ScheduleDate']")
+	private WebElement txtPreLoginOtherSedDate;
+
+	public Boolean isPreLoginOtherScheduleDateVisible() {
+		log.info("Checking the visibility of txtPreLoginOtherSedDate on the page.");
+		log.info("txtPreLoginMoveOutDate visibility status {}: " + isElementVisible(txtPreLoginOtherSedDate));
+		return isElementVisible(txtPreLoginOtherSedDate);
+	}
+
+	@FindBy(css = "[globalize='ML_SrvcRqust_p_WhrMove']")
+	private WebElement txtPreLoginSTDate;
+
+	public Boolean isPreLoginSTDateVisible() {
+		log.info("Checking the visibility of txtPreLoginSTDate on the page.");
+		log.info("txtPreLoginSTDate visibility status {}: " + isElementVisible(txtPreLoginSTDate));
+		return isElementVisible(txtPreLoginSTDate);
+	}
+
 	public void selectMoveOutDate() {
 		click(txtPreLoginMoveOutDate);
 		log.info("txtPreLoginMoveOutDate populated successfully.");
@@ -408,6 +433,18 @@ public class PreLoginServicePage extends HomePage {
 		log.info("Populating name {} :" + name);
 		sendKeys(txtPreLoginSerMoveInFirstName, name);
 		log.info("name populated successfully.");
+	}
+
+	public WebElement elementFirstName() {
+		waitForElementToBeVisible(txtPreLoginSerMoveInFirstName);
+		log.info("Visiblity status of element Email Add:" + txtPreLoginSerMoveInFirstName.isDisplayed());
+		return txtPreLoginSerMoveInFirstName;
+	}
+
+	public WebElement elementLastName() {
+		waitForElementToBeVisible(txtPreLoginSerMoveInLastName);
+		log.info("Visiblity status of element Email Add:" + txtPreLoginSerMoveInLastName.isDisplayed());
+		return txtPreLoginSerMoveInLastName;
 	}
 
 	@FindBy(css = "[globalize='ML_SrvcRqust_txtbx_LastName']")
@@ -452,22 +489,21 @@ public class PreLoginServicePage extends HomePage {
 
 	@FindBys(@FindBy(css = ".ui-menu-item-wrapper"))
 	public List<WebElement> cities;
-	
+
 	public void populatecity(String city) {
 		log.info("Populating city {} :" + city);
 		sendKeys(txtPreLoginSerMoveInCurrentAddCity, city);
 		pause(5000);
 		int count = autoSuggestion.size();
-		autoSuggestion.get(count-1).click();
+		autoSuggestion.get(count - 1).click();
 		log.info("state selected");
-		
+
 		/*
 		 * for (WebElement Ccity : cities) { pause(5000); Ccity.click(); break; }
 		 */
 		log.info("city populated successfully.");
 	}
-	
-	
+
 	@FindBy(xpath = "//input[@globalize='ML_MYACCOUNT_ContactNum_Primary']")
 	private WebElement txtPrimaryContactNo;
 
@@ -499,50 +535,45 @@ public class PreLoginServicePage extends HomePage {
 		selectByVisibleText(txtPreLoginSerMoveInContactType, Ctype);
 		log.info("contact selected successfully.");
 	}
-	
+
 	public void Selectcity(String city) {
-		//click(dd_StateIntellisenseOptions);
+		// click(dd_StateIntellisenseOptions);
 		sendKeys(txtPreLoginSerMoveInCurrentAddCity, city);
 
 		selectByVisibleText(dd_StateIntellisenseOptions, city);
 		log.info("contact selected successfully.");
 	}
 
-
 	public void SelectHomeType(String type) {
 		click(txtPreLoginSerMoveInCurrentAddApartment);
 		selectByVisibleText(txtPreLoginSerMoveInCurrentAddApartment, type);
 		log.info("txtPreLoginSerMoveInCurrentAddApartment selected successfully.");
 	}
-	
-	
 
 	@FindBys(@FindBy(xpath = "//ul[@class='ui-menu ui-widget ui-widget-content ui-autocomplete ui-front']/li"))
 	public List<WebElement> autoSuggestion;
-	
+
 	public void populatestate(String state) {
 		log.info("Populating state {} :" + state);
 		sendKeys(txtPreLoginSerMoveInRequestStartState, state);
 		pause(3000);
 		int count = autoSuggestion.size();
-		autoSuggestion.get(count-1).click();
+		autoSuggestion.get(count - 1).click();
 		log.info("state selected");
 	}
 
-		/*
-		 * for(WebElement option : Cstate){ pause(2000);
-		 * 
-		 * System.out.println(option); if(option.getText().equals("NEW YORK")) {
-		 * System.out.println("Trying to select: "+Cstate); option.click(); break;
-		 */
-		        
-		    
-		
-			/*
-			 * for(WebElement states : Cstate) { click(states); //break;
-			 */		
-		//log.info("state populated successfully.");
-	
+	/*
+	 * for(WebElement option : Cstate){ pause(2000);
+	 * 
+	 * System.out.println(option); if(option.getText().equals("NEW YORK")) {
+	 * System.out.println("Trying to select: "+Cstate); option.click(); break;
+	 */
+
+	/*
+	 * for(WebElement states : Cstate) { click(states); //break;
+	 */
+	// log.info("state populated successfully.");
+
 	public void populatePrimarySreetName(String Sname) {
 		log.info("Populating Cnum {} :" + Sname);
 		sendKeys(txtPreLoginSerMoveInCurrentAddStreetName, Sname);
@@ -603,16 +634,15 @@ public class PreLoginServicePage extends HomePage {
 		scrollPageToElement(txtNextbtn);
 		click(txtNextbtn);
 	}
-	
+
 	@FindBy(xpath = "//input[@globalize='ML_OTP_Btn_Submit']")
 	private WebElement btnSubmitOnReviewAndConfirmPage;
-	
-	
-	
+
 	public void clcksubmit() throws InterruptedException {
 		scrollPageToElement(btnSubmitOnReviewAndConfirmPage);
 		click(btnSubmitOnReviewAndConfirmPage);
 	}
+
 	public void selectYesNOforBillingAdd(String value) throws InterruptedException {
 		scrollPageToElement(txtPreLoginSerMoveInBillingAdd);
 		selectByVisibleText(txtPreLoginSerMoveInBillingAdd, value);
@@ -689,6 +719,11 @@ public class PreLoginServicePage extends HomePage {
 		return isElementVisible(txtPreLoginSerMoveInCurrentAddStreetNum);
 	}
 
+	public Boolean isOtherFormPersonAvailableFeildVisible() {
+		log.info("txtPreLoginPersonalInfo visibility status {}: " + isElementVisible(txtPreLoginPersonalInfo));
+		return isElementVisible(txtPreLoginPersonalInfo);
+	}
+
 	@FindBy(xpath = "(//input[@globalize ='ML_SrvcRqust_p_StrretName'])[1]")
 	private WebElement txtPreLoginSerMoveInCurrentAddStreetName;
 
@@ -753,6 +788,21 @@ public class PreLoginServicePage extends HomePage {
 		log.info("Checking the visibility of adulttoggle on the page.");
 		log.info("adulttoggle visibility status {}: " + isElementVisible(adulttoggle));
 		return isElementVisible(adulttoggle);
+	}
+
+	@FindBy(css = ".toggle_lbl_class")
+	private WebElement txttoggle;
+
+	public Boolean isLockedGates() {
+		log.info("Checking the visibility of txttoggle on the page.");
+		log.info("txtPreLoginSerMoveInBillingAdd visibility status {}: " + isElementVisible(txttoggle));
+		return isElementVisible(txttoggle);
+	}
+
+	public Boolean isPetToggleisvisible() {
+		log.info("Checking the visibility of txttoggle on the page.");
+		log.info("txtPreLoginSerMoveInBillingAdd visibility status {}: " + isElementVisible(txttoggle));
+		return isElementVisible(txttoggle);
 	}
 
 	public void clicktoggle() throws InterruptedException {
@@ -965,6 +1015,12 @@ public class PreLoginServicePage extends HomePage {
 		log.info("EmailAddress populated successfully.");
 	}
 
+	public WebElement elementEmailAdd() {
+		waitForElementToBeVisible(txtEmailAddress);
+		log.info("Visiblity status of element Email Add:" + txtEmailAddress.isDisplayed());
+		return txtEmailAddress;
+	}
+
 	@FindBy(css = " .tracking_area #btnSaveSubmit")
 	private WebElement btnPreLoginSaveFormsSubmit;
 
@@ -989,11 +1045,10 @@ public class PreLoginServicePage extends HomePage {
 	public void clickPreLoginSaveFormSubmit() {
 		click(btnPreLoginSaveFormSubmit);
 	}
+
 	public void clickOkbutton() {
 		click(btnSubmit);
 	}
-	
-	
 
 	@FindBy(css = " .srvc_rqst_btn #btnSaveToDraft")
 	private WebElement btnSaveToDraft;
@@ -1028,7 +1083,7 @@ public class PreLoginServicePage extends HomePage {
 	private WebElement btnMoveInNextsrv;
 	@FindBy(css = " #btnok")
 	private WebElement btnMoveInPopupOk;
-	@FindBy(css = "[globalize='ML_CONNECTME_Lbl_AddAttach']")
+	@FindBy(css = "[globalize='ML_Notification_Lbl_Attachment']")
 	private WebElement btnChooseFile;
 	@FindBy(css = " #navbarDropdown i")
 	private WebElement btnMorevertnavbar;
@@ -1067,9 +1122,6 @@ public class PreLoginServicePage extends HomePage {
 	private WebElement iFrmCapthaV3;
 	@FindBy(css = ".ui-menu-item-wrapper")
 	private WebElement dd_StateIntellisenseOptions;
-	
-	
-	
 
 	@FindBy(css = "#ddl_Reason.select_effect")
 	private WebElement dd_ServiceReason;
@@ -1353,15 +1405,12 @@ public class PreLoginServicePage extends HomePage {
 		log.info("txtSavebtn visibility status {}: " + isElementVisible(txtSavebtn));
 		return isElementVisible(txtSavebtn);
 	}
-	
+
 	public void clickSaveForm() {
 		log.info("Clicking the txtSavebtn Services");
 		click(txtSavebtn);
 		log.info("Pre Log  txtSavebtn clicked successfully.");
 	}
-	
-	
-	
 
 	@FindBy(xpath = "//input[@globalize='ML_Service_btn_clkToNext']")
 	private WebElement txtNextbtn;
@@ -1378,4 +1427,69 @@ public class PreLoginServicePage extends HomePage {
 		return label;
 
 	}
+
+	@FindBy(css = "	.error_messagecommon+span")
+	private WebElement asterisk;
+
+	public void vefifyAsterisk() {
+		log.info("Waiting For Visiblity status of Last Name Text Feild Error Message");
+		waitForElementToBeVisible(asterisk);
+		log.info("asterisk is displayed:" + asterisk.isDisplayed());
+	}
+
+	@FindBy(css = "div:nth-child(1) > span.error_messagecommon")
+	private WebElement errorMsgsLeft;
+
+	@FindBy(css = "div:nth-child(2) > span.error_messagecommon")
+	private WebElement errorMsgsRight;
+
+	public String getErrMsgEmail() {
+		log.info("Waiting For Visiblity status of getErrMsgEmail Text Feild Error Message");
+		waitForElementToBeVisible(errorMsgsLeft);
+		log.info("Visiblity status of Address Error Message:" + errorMsgsLeft.isDisplayed());
+		return getText(errorMsgsLeft);
+	}
+
+	public String getErrMsgZipCode() {
+		log.info("Waiting For Visiblity status of zipcode Text Feild Error Message");
+		waitForElementToBeVisible(errorMsgsRight);
+		log.info("Visiblity status of Address Error Message:" + errorMsgsRight.isDisplayed());
+		return getText(errorMsgsRight);
+	}
+
+	public String getErrMsgSteetName() {
+		log.info("Waiting For Visiblity status of Street name Text Feild Error Message");
+		waitForElementToBeVisible(errorMsgsRight);
+		log.info("Visiblity status Error Message:" + errorMsgsRight.isDisplayed());
+		return getText(errorMsgsRight);
+	}
+
+	public String getErrMsgLastName() {
+		log.info("Waiting For Visiblity status of Last name Text Feild Error Message");
+		waitForElementToBeVisible(errorMsgsRight);
+		log.info("Visiblity status Error Message:" + errorMsgsRight.isDisplayed());
+		return getText(errorMsgsRight);
+	}
+
+	public String getErrMsgSecContNum() {
+		log.info("Waiting For Visiblity status of Sec Cont Num Text Feild Error Message");
+		waitForElementToBeVisible(errorMsgsRight);
+		log.info("Visiblity status Error Message:" + errorMsgsRight.isDisplayed());
+		return getText(errorMsgsRight);
+	}
+
+	public String getErrMsgContactTyp() {
+		log.info("Waiting For Visiblity status of ContactTyp Text Feild Error Message");
+		waitForElementToBeVisible(errorMsgsRight);
+		log.info("Visiblity status Error Message:" + errorMsgsRight.isDisplayed());
+		return getText(errorMsgsRight);
+	}
+
+	public String getErrMsgFisrtName() {
+		log.info("Waiting For Visiblity status of FisrtName Text Feild Error Message");
+		waitForElementToBeVisible(errorMsgsLeft);
+		log.info("Visiblity status Error Message:" + errorMsgsLeft.isDisplayed());
+		return getText(errorMsgsLeft);
+	}
+
 }

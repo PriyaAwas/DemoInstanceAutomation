@@ -54,8 +54,8 @@ public class NotificationPreferenceTests extends TestRunner {
         User user = SCPConfiguration.user;
         // Login into the application
  	   loginSteps.loginIntoTheApplication(Configuration.toString("userName"), Configuration.toString("password"));		
-        notificationPreferenceSteps.tcpaCompliancePopup(softAssert);
-        // Assert all the soft verification.
+        notificationPreferenceSteps.tcpaCompliancePopupForOutages(softAssert);
+         // Assert all the soft verification.
         softAssert.assertAll();
         log.info("Test Case execution for - verifyTcpaCompliancePopup - is Completed.");
     }
@@ -78,14 +78,14 @@ public class NotificationPreferenceTests extends TestRunner {
        
     @FrameworkAnnotations(author = {"Priya Awasthi"}, category = {CategoryType.SMOKE,CategoryType.NOTIFICATION_PREFERENCE})
     @Test( description = "To verify the add NotificationChannelFunctionality.")
-    public void verifyAddNotificationChannelFunctionalityForBugetOptn() {
+    public void verifyAddChanelPrefrenvceForAllServices() {
               SoftAssert softAssert = new SoftAssert();
         // Init login steps
         LoginSteps loginSteps = new LoginSteps(driver);
         notificationPreferenceSteps = new NotificationPreferenceSteps(driver);
         // Login into the application
     	   loginSteps.loginIntoTheApplication(Configuration.toString("userName"), Configuration.toString("password"));		
-       notificationPreferenceSteps.addNotificationChannelFunctionality(softAssert);
+       notificationPreferenceSteps.addChanneFunctionality(softAssert);
         // Assert all the soft verification.
         softAssert.assertAll();
         log.info("Test Case execution for - NotificationChannelFunctionality - is Completed.");
