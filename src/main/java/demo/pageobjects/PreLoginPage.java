@@ -915,7 +915,7 @@ public class PreLoginPage extends HomePage {
 		return label;
 	}
 
-	@FindBy(xpath = "//*[@id=\"containerDiv\"]/div[3]/div/div[1]/div/div[2]/div[1]/div[1]/div/div[2]/section/div[12]/div[1]/span[2]")
+	@FindBy(xpath = "//*[@class='error'][contains(text(),'Please enter Card Holder Name.')]")
 	private WebElement labelBlankCardName;
 
 	public String getBlankCardName() {
@@ -923,7 +923,7 @@ public class PreLoginPage extends HomePage {
 		return label;
 	}
 
-	@FindBy(xpath = "//*[@id=\"containerDiv\"]/div[3]/div/div[1]/div/div[2]/div[1]/div[1]/div/div[2]/section/div[12]/div[2]/span[2]")
+	@FindBy(xpath = "//*[@class='error'][contains(text(),'Please enter Card Number')]")
 	private WebElement labelBlankCardNumber;
 
 	public String getBlankCardNumber() {
@@ -931,7 +931,7 @@ public class PreLoginPage extends HomePage {
 		return label;
 	}
 
-	@FindBy(xpath = "//*[@id=\"containerDiv\"]/div[3]/div/div[1]/div/div[2]/div[1]/div[1]/div/div[2]/div[3]/span[2]")
+	@FindBy(xpath = "//*[@class='error'][contains(text(),'Payment amount cannot be greater than $4000.')]")
 	private WebElement labelOverExceedingPayment;
 
 	public String getExceedingPaymentAmount() {
@@ -939,7 +939,7 @@ public class PreLoginPage extends HomePage {
 		return label;
 	}
 
-	@FindBy(xpath = "//*[@id=\"containerDiv\"]/div[3]/div/div[1]/div/div[2]/div[1]/div[1]/div/div[2]/section/div[12]/div[3]/div[1]/div/span[2]")
+	@FindBy(xpath = "//*[@class='error'][contains(text(),'Please select Month')]")
 	private WebElement labelBlankMonth;
 
 	public String getBlankMonth() {
@@ -947,7 +947,7 @@ public class PreLoginPage extends HomePage {
 		return label;
 	}
 
-	@FindBy(xpath = "//*[@id=\"containerDiv\"]/div[3]/div/div[1]/div/div[2]/div[1]/div[1]/div/div[2]/section/div[12]/div[3]/div[2]/div/span[2]")
+	@FindBy(xpath = "//*[@class='error'][contains(text(),'Please select Year')]")
 	private WebElement labelBlankYear;
 
 	public String getBlankYear() {
@@ -955,7 +955,7 @@ public class PreLoginPage extends HomePage {
 		return label;
 	}
 
-	@FindBy(xpath = "//*[@id=\"containerDiv\"]/div[3]/div/div[1]/div/div[2]/div[1]/div[1]/div/div[2]/section/div[12]/div[3]/div[3]/div/span[2]")
+	@FindBy(xpath = "//*[@class='error'][contains(text(),'Please enter 3 digit Security code')]")
 	private WebElement labelBlankSecCode;
 
 	public String getBlankSecCode() {
@@ -963,7 +963,7 @@ public class PreLoginPage extends HomePage {
 		return label;
 	}
 
-	@FindBy(xpath = "//*[@id=\"containerDiv\"]/div[3]/div/div[1]/div/div[2]/div[1]/div[1]/div/div[2]/div[5]/div[1]/div[2]/span[2]")
+	@FindBy(xpath = "//*[@class='error'][contains(text(),'Please enter Last Name')]")
 	private WebElement labelBlankLastName;
 
 	public String getBlankLastName() {
@@ -971,7 +971,7 @@ public class PreLoginPage extends HomePage {
 		return label;
 	}
 
-	@FindBy(xpath = "//*[@id=\"containerDiv\"]/div[3]/div/div[1]/div/div[2]/div[1]/div[1]/div/div[2]/div[5]/div[2]/span[2]")
+	@FindBy(xpath = "//*[@class='error'][contains(text(),'Please enter Address')]")
 	private WebElement labelBlankAddress;
 
 	public String getBlankAddress() {
@@ -979,7 +979,7 @@ public class PreLoginPage extends HomePage {
 		return label;
 	}
 
-	@FindBy(xpath = "//*[@id=\"containerDiv\"]/div[3]/div/div[1]/div/div[2]/div[1]/div[1]/div/div[2]/div[5]/div[3]/div[1]/div/span[2]")
+	@FindBy(xpath = "//*[@class='error'][contains(text(),'Please enter City')]")
 	private WebElement labelBlankCity;
 
 	public String getBlankCity() {
@@ -987,7 +987,7 @@ public class PreLoginPage extends HomePage {
 		return label;
 	}
 
-	@FindBy(xpath = "//*[@id=\"containerDiv\"]/div[3]/div/div[1]/div/div[2]/div[1]/div[1]/div/div[2]/div[5]/div[3]/div[2]/div/span[2]")
+	@FindBy(xpath = "//*[@class='error'][contains(text(),'Please enter State Code.')]")
 	private WebElement labelBlankState;
 
 	public String getBlankState() {
@@ -995,7 +995,7 @@ public class PreLoginPage extends HomePage {
 		return label;
 	}
 
-	@FindBy(xpath = "//*[@id=\"containerDiv\"]/div[3]/div/div[1]/div/div[2]/div[1]/div[1]/div/div[2]/div[5]/div[3]/div[3]/div/span[2]")
+	@FindBy(xpath = "//*[@class='error'][contains(text(),'Please enter ZIP code')]")
 	private WebElement labelBlankZipCode;
 
 	public String getBlankZipCode() {
@@ -1003,7 +1003,7 @@ public class PreLoginPage extends HomePage {
 		return label;
 	}
 
-	@FindBy(xpath = "//*[@id=\"containerDiv\"]/div[3]/div/div[1]/div/div[2]/div[1]/div[1]/div/div[2]/section/div[2]/label")
+	@FindBy(xpath = "//*[@id='containerDiv']/div[3]/div/div[1]/div/div[2]/div[1]/div[1]/div/div[2]/section/div[2]/label")
 	private WebElement labelCardOption;
 	public boolean isCardOptionVisible() {
 		return isElementVisible(labelCardOption);
@@ -1015,7 +1015,7 @@ public class PreLoginPage extends HomePage {
 		log.info("Click on card option Successfully .");
 	}
 
-	@FindBy(xpath = "//*[@id=\"containerDiv\"]/div[3]/div/div[1]/div/div[2]/div[1]/div[1]/div/div[2]/section/div[1]/label")
+	@FindBy(xpath = "//*[@id='containerDiv']/div[3]/div/div[1]/div/div[2]/div[1]/div[1]/div/div[2]/section/div[1]/label")
 	private WebElement labelBankOption;
 
 	public void clickBankOption() {
@@ -1819,6 +1819,15 @@ public class PreLoginPage extends HomePage {
 		return label;
 	}
 
+	@FindBy(css = "#nmcrd")
+	private WebElement lbl_useremail;
+
+	public String getUserEmail() {
+		String label = getAttribute(lbl_useremail, "value");
+		log.info("Forgot Username Label {}: " + label);
+		return label;
+	}
+
 	@FindBy(css = "#st2_email")
 	private WebElement emailNumberField;
 
@@ -1846,7 +1855,7 @@ public class PreLoginPage extends HomePage {
 		return label;
 	}
 
-	@FindBy(xpath = "//*[@id=\"containerDiv\"]/div[3]/div/div[1]/div/div[2]/div[1]/div[1]/div/div[2]/div[2]/span[2]")
+	@FindBy(xpath = "//*[@class='error'][contains(text(),'Please enter a valid 10-digit Phone Number..')]")
 	private WebElement labelInvalidPhone;
 
 	public String getInvalidPhoneLabelTwo() {

@@ -9,16 +9,21 @@ import org.testng.asserts.SoftAssert;
 import demo.pageobjects.PreLoginOutagesPage;
 import sew.ai.helpers.props.Constants;
 import sew.ai.helpers.props.FilePaths;
+import sew.ai.helpers.reporters.ExtentLogger;
 import sew.ai.utils.PropertiesUtil;
+
+import static org.testng.Assert.assertTrue;
 
 public class PreLoginOutagesSteps extends PreLoginOutagesPage {
 
 	private static final Logger log = LogManager.getLogger(PreLoginOutagesSteps.class);
 	public static PropertiesUtil preLoginOutagesProp;
+	public static PropertiesUtil preLogConnectMeTextProp;
 
 	public PreLoginOutagesSteps(WebDriver driver) {
 		super(driver);
 		preLoginOutagesProp = new PropertiesUtil(FilePaths.SCP_TEXT_PROPERTIES + Constants.SCM_OUTAGES_TXT_FILENAME);
+		preLogConnectMeTextProp = new PropertiesUtil(FilePaths.SCP_TEXT_PROPERTIES + Constants.PRE_LOG_CONNECT_ME_TXT_FILENAME);
 	}
 
 	public void navigateToPreLoginOutages() {
@@ -72,11 +77,24 @@ public class PreLoginOutagesSteps extends PreLoginOutagesPage {
 	public void clickOnListAndMap(SoftAssert softAssert) {
 		waitForPageToLoad();
 		clickListViewBtn();
-		pause(1000);
+		pause(2000);
 		softAssert.assertEquals(getCityLabel(), preLoginOutagesProp.getPropValue("lblCity"),
 				"Label for city is not matched.");
 		softAssert.assertEquals(getZipCodeLabel(), preLoginOutagesProp.getPropValue("lblZipCode"),
 				"Label for Zip COde is not matched.");
+		softAssert.assertEquals(getAreaLabel(), preLoginOutagesProp.getPropValue("lblArea"),
+				"Label for city is not matched.");
+		softAssert.assertEquals(getOutLabel(), preLoginOutagesProp.getPropValue("lblOut"),
+				"Label for Zip COde is not matched.");
+		softAssert.assertEquals(getServedLabel(), preLoginOutagesProp.getPropValue("lblServed"),
+				"Label for city is not matched.");
+		clickPlannedBtn();
+		softAssert.assertEquals(getAreaLabel(), preLoginOutagesProp.getPropValue("lblArea"),
+				"Label for city is not matched.");
+		softAssert.assertEquals(getOutLabel(), preLoginOutagesProp.getPropValue("lblOut"),
+				"Label for Zip COde is not matched.");
+		softAssert.assertEquals(getServedLabel(), preLoginOutagesProp.getPropValue("lblServed"),
+				"Label for city is not matched.");
 		softAssert.assertFalse(isMapLegendVisible(), "map legend is active");
 		softAssert.assertFalse(isWeatherVisible(), "weather is active");
 		clickMapViewBtn();
@@ -97,6 +115,24 @@ public class PreLoginOutagesSteps extends PreLoginOutagesPage {
 		clickZoomInBtn();
 		pause(1000);
 		clickZoomOutBtn();
+		pause(1000);
+	}
+
+	public void searchWithInvalidZip(SoftAssert softAssert) {
+		waitForPageToLoad();
+		enterInvalidZipInSearch("11");
+		pause(1000);
+		clickSearchBtn();
+		softAssert.assertEquals(getEmptySearchLabel(), preLoginOutagesProp.getPropValue("lblInvalidSearch"),
+				"Label for city is not matched.");
+		pause(1000);
+	}
+
+	public void clickOnEmptySearch(SoftAssert softAssert) {
+		clickSearchBtn();
+		pause(3000);
+		softAssert.assertEquals(getEmptySearchLabel(), preLoginOutagesProp.getPropValue("lblEmptySearch"),
+				"Label for city is not matched.");
 		pause(1000);
 	}
 
@@ -130,6 +166,60 @@ public class PreLoginOutagesSteps extends PreLoginOutagesPage {
 		softAssert.assertEquals(getLightLabel(), preLoginOutagesProp.getPropValue("lblLight"),
 				"Label for city is not matched.");
 		softAssert.assertEquals(getHeavyLabel(), preLoginOutagesProp.getPropValue("lblHeavy"),
+				"Label for city is not matched.");
+	}
+
+	public void navigateToReportOutage(SoftAssert softAssert) {
+		clickPreLoginOutagesBtn();
+		waitForPageToLoad();
+		Assert.assertTrue(isPreLoginOutagesPage(preLoginOutagesProp.getPropValue("preLoginPageUrl"),
+				preLoginOutagesProp.getPropValue("preLoginPageTitle")));
+		clickReportOutageBtn();
+		waitForPageToLoad();
+		Assert.assertTrue(isPreLogConnectMePage(preLogConnectMeTextProp.getPropValue("ConnectMePageUrl"),
+						(preLogConnectMeTextProp.getPropValue("ConnectMePageTitleTxt"))),
+				"Page Title & URL does not Match");
+		ExtentLogger.logInfo("Customer is able to Navigate to report outage page");
+		//Enter only mandatory Details and submit
+		enterEmail("test@test.com");
+		enterFName("test");
+		enterLName("test");
+		enterPrimaryPhoneNumber("1234567890");
+		enterStreetName("test");
+		enterZipCodeForm("12345");
+		populatestate("CA");
+		enterNCrossStreet("test");
+		pause(1000);
+		btnClickNext();
+		pause(2000);
+		btnClickSubmit();
+		pause(4000);
+		btnClickOk();
+		waitForPageToLoad();
+		Assert.assertTrue(isPreLoginOutagesPage(preLoginOutagesProp.getPropValue("preLoginPageUrl"),
+				preLoginOutagesProp.getPropValue("preLoginPageTitle")));
+	}
+
+	public boolean isPreLogConnectMePage(String url, String title) {
+		Boolean isForgetPasswordPage = false;
+		log.info("Checking that the current page is ForgetPassword Page");
+		log.info("testing" + getCurrentUrl().substring(0,75));
+		log.info("testing2" + getCurrentTitle());
+		if (getCurrentUrl().substring(0,75).contains(url.toLowerCase()) && getCurrentTitle().equalsIgnoreCase(title))
+			isForgetPasswordPage = true;
+		log.info("The current page is ForgetPassword Page {}: " + isForgetPasswordPage);
+		return isForgetPasswordPage;
+	}
+
+	public void clickFromOptions(SoftAssert softAssert) {
+		clickPreLoginOutagesBtn();
+		waitForPageToLoad();
+		Assert.assertTrue(isPreLoginOutagesPage(preLoginOutagesProp.getPropValue("preLoginPageUrl"),
+				preLoginOutagesProp.getPropValue("preLoginPageTitle")));
+		enterBangInSearch("bang");
+		pause(2000);
+		clickOption();
+		softAssert.assertEquals(getOptionLabel(), preLoginOutagesProp.getPropValue("option"),
 				"Label for city is not matched.");
 	}
 

@@ -5,12 +5,17 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.asserts.SoftAssert;
 import sew.ai.config.Configuration;
+import sew.ai.config.ModelsConfiguration;
 import sew.ai.helpers.props.Constants;
 import sew.ai.helpers.props.FilePaths;
 import sew.ai.helpers.reporters.ExtentLogger;
+import sew.ai.models.Bank;
+import sew.ai.models.Card;
 import sew.ai.steps.scp.DashboardSteps;
 import sew.ai.steps.scp.SignOutSteps;
 import sew.ai.utils.PropertiesUtil;
@@ -257,10 +262,11 @@ public class PreLoginPayBillCCSteps extends PreLoginPage {
 		clickCardOption();
 		pause(5000);
 		// Card Details
+		Card card = ModelsConfiguration.readCards().getCardByNameOnCard("John Wick Visa Card");
 		softAssert.assertTrue(isCardHolderNameFieldVisible(), "    is not visible");
-		enterCardHolderNameInTheField("Test");
+		enterCardHolderNameInTheField(card.getNameOnCard());
 		softAssert.assertTrue(isCardNumberFieldVisible(), "    is not visible");
-		enterCardNumberInTheField("4111111111111111");
+		enterCardNumberInTheField(card.getCardNumber());
 		softAssert.assertTrue(isMonthFieldVisible(), "    is not visible");
 		clickMonthFld();
 		pause(1000);
@@ -272,20 +278,20 @@ public class PreLoginPayBillCCSteps extends PreLoginPage {
 		clickYearOption();
 		pause(1000);
 		softAssert.assertTrue(isSecurityCodeFieldVisible(), "    is not visible");
-		enterSecurityCodeInTheField("123");
+		enterSecurityCodeInTheField(card.getCvv());
 		// Billing Address
 		softAssert.assertTrue(isFirstNameFieldVisible(), "    is not visible");
-		enterFirstNameInTheField("Test");
+		enterFirstNameInTheField(card.getFirstName());
 		softAssert.assertTrue(isLastNameFieldVisible(), "    is not visible");
-		enterLastNameInTheField("Test");
+		enterLastNameInTheField(card.getLastName());
 		softAssert.assertTrue(isAddressFieldVisible(), "    is not visible");
-		enterAddressInTheField("Test");
+		enterAddressInTheField(card.getAddress());
 		softAssert.assertTrue(isCityFieldVisible(), "    is not visible");
-		enterCityInTheField("TE");
+		enterCityInTheField(card.getCity());
 		softAssert.assertTrue(isStateFieldVisible(), "    is not visible");
-		enterStateInTheField("Test");
+		enterStateInTheField(card.getState());
 		softAssert.assertTrue(isZipCodeFieldVisible(), "    is not visible");
-		enterZipCodeInTheField("12345");
+		enterZipCodeInTheField(card.getState());
 		clickNextBtn2();
 		pause(3000);
 	}
@@ -299,12 +305,6 @@ public class PreLoginPayBillCCSteps extends PreLoginPage {
 		// add $10
 		softAssert.assertTrue(isPayAmtTwoFieldVisible(), "    is not visible");
 		pause(2000);
-		clearEmailInTheField();
-		enterEmailInTheField("test");
-
-
-
-
 		clickPayAmtFld();
 		clearPayAmtFld();
 		enterPayAmtInTheField("10");
@@ -317,10 +317,11 @@ public class PreLoginPayBillCCSteps extends PreLoginPage {
 		clickCardOption();
 		pause(5000);
 		// Card Details
+		Card card = ModelsConfiguration.readCards().getCardByNameOnCard("John Wick Visa Card");
 		softAssert.assertTrue(isCardHolderNameFieldVisible(), "    is not visible");
-		enterCardHolderNameInTheField("Test");
+		enterCardHolderNameInTheField(card.getNameOnCard());
 		softAssert.assertTrue(isCardNumberFieldVisible(), "    is not visible");
-		enterCardNumberInTheField("4111111111111111");
+		enterCardNumberInTheField(card.getCardNumber());
 		softAssert.assertTrue(isMonthFieldVisible(), "    is not visible");
 		clickMonthFld();
 		pause(1000);
@@ -332,20 +333,20 @@ public class PreLoginPayBillCCSteps extends PreLoginPage {
 		clickYearOption();
 		pause(1000);
 		softAssert.assertTrue(isSecurityCodeFieldVisible(), "    is not visible");
-		enterSecurityCodeInTheField("123");
+		enterSecurityCodeInTheField(card.getCvv());
 		// Billing Address
 		softAssert.assertTrue(isFirstNameFieldVisible(), "    is not visible");
-		enterFirstNameInTheField("Test");
+		enterFirstNameInTheField(card.getFirstName());
 		softAssert.assertTrue(isLastNameFieldVisible(), "    is not visible");
-		enterLastNameInTheField("Test");
+		enterLastNameInTheField(card.getLastName());
 		softAssert.assertTrue(isAddressFieldVisible(), "    is not visible");
-		enterAddressInTheField("Test");
+		enterAddressInTheField(card.getAddress());
 		softAssert.assertTrue(isCityFieldVisible(), "    is not visible");
-		enterCityInTheField("TE");
+		enterCityInTheField(card.getCity());
 		softAssert.assertTrue(isStateFieldVisible(), "    is not visible");
-		enterStateInTheField("Test");
+		enterStateInTheField(card.getState());
 		softAssert.assertTrue(isZipCodeFieldVisible(), "    is not visible");
-		enterZipCodeInTheField("12345");
+		enterZipCodeInTheField(card.getZipCode());
 
 		clearCardHolderNameInTheField();
 		clickNextBtn2();
@@ -449,112 +450,107 @@ public class PreLoginPayBillCCSteps extends PreLoginPage {
 		clearPayAmtFld();
 		enterPayAmtInTheField("10.12");
 		pause(1000);
+
 		// Verify the "Payment Information" Label
 		softAssert.assertEquals(getPayInfoStepTwo(), preLoginPaymentProp.getPropValue("payInfoStepTwoTitle"),
 				"Payment Information label is not matching.");
 		// Verify the "Bank Account" option on Step 2
 		softAssert.assertTrue(isCardOptionVisible(), "    is not visible");
 		clickCardOption();
-		pause(5000);
+		pause(3000);
 		// Card Details
 		softAssert.assertTrue(isCardNumberFieldVisible(), "    is not visible");
 
 		// Visa
-		enterCardNumberInTheField("4111111111111111");
+		Card card = ModelsConfiguration.readCards().getCardByNameOnCard("John Wick Visa Card");
+		enterCardNumberInTheField(card.getCardNumber());
 		softAssert.assertTrue(isCardNumberVisa(), "    is not visible");
 		clearCardNumberInTheField();
-		pause(3000);
+		pause(2000);
+		ExtentLogger.logInfo("Visa Complete");
 
 		// Mastercard
-		enterCardNumberInTheField("5555555555554444");
+		Card card2 = ModelsConfiguration.readCards().getCardByNameOnCard("Terrance Luis Master Card");
+		enterCardNumberInTheField(card2.getCardNumber());
 		softAssert.assertTrue(isCardNumberMc(), "    is not visible");
 		clearCardNumberInTheField();
-		pause(3000);
+		pause(2000);
+		ExtentLogger.logInfo("Mastercard Complete");
 
 		// Discovery
-		enterCardNumberInTheField("6011111111111117");
+		Card card3 = ModelsConfiguration.readCards().getCardByNameOnCard("John Doe Discover Card");
+		enterCardNumberInTheField(card3.getCardNumber());
 		softAssert.assertTrue(isCardNumberDiscover(), "    is not visible");
 		clearCardNumberInTheField();
-		pause(3000);
+		pause(2000);
+		ExtentLogger.logInfo("Discovery Complete");
 
 		// Amex
-		enterCardNumberInTheField("378282246310005");
+		Card card4 = ModelsConfiguration.readCards().getCardByNameOnCard("Hanna Jones AMEX");
+		enterCardNumberInTheField(card4.getCardNumber());
 		softAssert.assertTrue(isCardNumberAmex(), "    is not visible");
 		clearCardNumberInTheField();
-		pause(3000);
+		pause(2000);
+		ExtentLogger.logInfo("Amex Complete");
 
 		// Jcb
 		enterCardNumberInTheField("3530111333300000");
 		softAssert.assertTrue(isCardNumberJcb(), "    is not visible");
 		clearCardNumberInTheField();
-		pause(3000);
+		pause(2000);
+		ExtentLogger.logInfo("JCB Complete");
 
 		// Cup
 		enterCardNumberInTheField("8171999927660000");
 		softAssert.assertTrue(isCardNumberCup(), "    is not visible");
 		clearCardNumberInTheField();
-		pause(3000);
+		pause(2000);
+		ExtentLogger.logInfo("CUP Complete");
 	}
 
 	public void verifyUIOnStepFourPreLogPayBill(SoftAssert softAssert) {
-		ExtentLogger.logInfo("To perform UI Vald. on Step 4 of PayBill Page");
-		// click on PayBill link from login page
-		clickPayBillLink();
-		pause(3000);
-		// Click on the Account No Field and enter Account No
-		clickAccNoFld();
-		enterAccNoInTheField("2711765963");
-		// Click on the primary phone no. field an enter the no.
-		clickPrimaryPhnFld();
-		enterPrimayPhTheField("(424) 271-4361");
-		// Click on the Next BBt
-		clickSNextButton();
-		pause(3000);
+		waitForPageToLoad();
 		// Verify the "Payment Amount" field on Step 2, clear the existing amount and
 		// add $10
 		softAssert.assertTrue(isPayAmtTwoFieldVisible(), "    is not visible");
-		pause(5000);
+		pause(3000);
 		clickPayAmtFld();
 		pause(2000);
 		clearPayAmtFld();
 		pause(1000);
 		enterPayAmtInTheField("10.25");
-		pause(2000);
+		pause(1000);
 		// Verify the "card" option on Step 2
 		softAssert.assertTrue(isCardOptionVisible(), "    is not visible");
 		clickCardOption();
-		pause(5000);
+		pause(2000);
 		// Card Details
 		softAssert.assertTrue(isCardHolderNameFieldVisible(), "    is not visible");
 		enterCardHolderNameInTheField("Test");
 		softAssert.assertTrue(isCardNumberFieldVisible(), "    is not visible");
-		enterCardNumberInTheField("4111111111111111");
+		Card card = ModelsConfiguration.readCards().getCardByNameOnCard("John Wick Visa Card");
+		enterCardNumberInTheField(card.getCardNumber());
 		softAssert.assertTrue(isMonthFieldVisible(), "    is not visible");
 		clickMonthFld();
-		pause(1000);
 		clickMonthOption();
-		pause(1000);
 		softAssert.assertTrue(isYearFieldVisible(), "    is not visible");
 		clickYearFld();
-		pause(1000);
 		clickYearOption();
-		pause(1000);
 		softAssert.assertTrue(isSecurityCodeFieldVisible(), "    is not visible");
-		enterSecurityCodeInTheField("123");
+		enterSecurityCodeInTheField(card.getCvv());
 		// Billing Address
 		softAssert.assertTrue(isFirstNameFieldVisible(), "    is not visible");
-		enterFirstNameInTheField("Test");
+		enterFirstNameInTheField(card.getFirstName());
 		softAssert.assertTrue(isLastNameFieldVisible(), "    is not visible");
-		enterLastNameInTheField("Test");
+		enterLastNameInTheField(card.getLastName());
 		softAssert.assertTrue(isAddressFieldVisible(), "    is not visible");
-		enterAddressInTheField("Test");
+		enterAddressInTheField(card.getAddress());
 		softAssert.assertTrue(isCityFieldVisible(), "    is not visible");
-		enterCityInTheField("TE");
+		enterCityInTheField(card.getCity());
 		softAssert.assertTrue(isStateFieldVisible(), "    is not visible");
-		enterStateInTheField("Test");
+		enterStateInTheField(card.getState());
 		softAssert.assertTrue(isZipCodeFieldVisible(), "    is not visible");
-		enterZipCodeInTheField("12345");
-
+		enterZipCodeInTheField(card.getZipCode());
 
 		// Verify the "Cancel" button on Step 2
 		softAssert.assertTrue(isCnclTwoStpBttnVisible(), "    is not visible");
@@ -562,6 +558,7 @@ public class PreLoginPayBillCCSteps extends PreLoginPage {
 		softAssert.assertTrue(isNextBttnTwoVisible(), "    is not visible");
 		// Click the Next field
 		clickNextBtn2();
+		ExtentLogger.logInfo("Step-2 Complete");
 		// verify the "Pay Bill" Label
 		softAssert.assertEquals(getPayBillLabelTwo(), preLoginPaymentProp.getPropValue("preLoginPageTitle"),
 				"Pay Bill label is not matching.");
@@ -589,13 +586,12 @@ public class PreLoginPayBillCCSteps extends PreLoginPage {
 		softAssert.assertTrue(isSubmitBtnThreeVisible(), "    is not visible");
 		// Click on Submit Button to go to Step 4
 		clickSubmitThreeBtn();
+		ExtentLogger.logInfo("Step-3 Complete");
 		pause(5000);
 		clickYesAlertBtn();
 		// verify the "Payment Successful" Label
 		softAssert.assertEquals(getPaySuccessLabel(), preLoginPaymentProp.getPropValue("paymentSuccessMessage"),
 				"Pay Bill Success Message is not matchng.");
-		ExtentLogger.logInfo("Test Case execution for - verifyUIOnStepFourPreLogPayBill - is Completed");
-
 	}
 
 	public void exceedingPaymentValidationMessage(SoftAssert softAssert) {
@@ -619,10 +615,11 @@ public class PreLoginPayBillCCSteps extends PreLoginPage {
 		clickCardOption();
 		pause(5000);
 		// Card Details
+		Card card = ModelsConfiguration.readCards().getCardByNameOnCard("John Wick Visa Card");
 		softAssert.assertTrue(isCardHolderNameFieldVisible(), "    is not visible");
-		enterCardHolderNameInTheField("Test");
+		enterCardHolderNameInTheField(card.getNameOnCard());
 		softAssert.assertTrue(isCardNumberFieldVisible(), "    is not visible");
-		enterCardNumberInTheField("4111111111111111");
+		enterCardNumberInTheField(card.getCardNumber());
 		softAssert.assertTrue(isMonthFieldVisible(), "    is not visible");
 		clickMonthFld();
 		pause(1000);
@@ -634,20 +631,20 @@ public class PreLoginPayBillCCSteps extends PreLoginPage {
 		clickYearOption();
 		pause(1000);
 		softAssert.assertTrue(isSecurityCodeFieldVisible(), "    is not visible");
-		enterSecurityCodeInTheField("123");
+		enterSecurityCodeInTheField(card.getCvv());
 		// Billing Address
 		softAssert.assertTrue(isFirstNameFieldVisible(), "    is not visible");
-		enterFirstNameInTheField("Test");
+		enterFirstNameInTheField(card.getFirstName());
 		softAssert.assertTrue(isLastNameFieldVisible(), "    is not visible");
-		enterLastNameInTheField("Test");
+		enterLastNameInTheField(card.getLastName());
 		softAssert.assertTrue(isAddressFieldVisible(), "    is not visible");
-		enterAddressInTheField("Test");
+		enterAddressInTheField(card.getAddress());
 		softAssert.assertTrue(isCityFieldVisible(), "    is not visible");
-		enterCityInTheField("TE");
+		enterCityInTheField(card.getCity());
 		softAssert.assertTrue(isStateFieldVisible(), "    is not visible");
-		enterStateInTheField("Test");
+		enterStateInTheField(card.getState());
 		softAssert.assertTrue(isZipCodeFieldVisible(), "    is not visible");
-		enterZipCodeInTheField("12345");
+		enterZipCodeInTheField(card.getZipCode());
 
 		clickNextBtn2();
 		softAssert.assertEquals(getExceedingPaymentAmount(), preLoginPaymentProp.getPropValue("ExceedingPaymentMessage"),
@@ -676,10 +673,11 @@ public class PreLoginPayBillCCSteps extends PreLoginPage {
 		clickCardOption();
 		pause(5000);
 		// Card Details
+		Card card = ModelsConfiguration.readCards().getCardByNameOnCard("John Wick Visa Card");
 		softAssert.assertTrue(isCardHolderNameFieldVisible(), "    is not visible");
-		enterCardHolderNameInTheField("Test");
+		enterCardHolderNameInTheField(card.getNameOnCard());
 		softAssert.assertTrue(isCardNumberFieldVisible(), "    is not visible");
-		enterCardNumberInTheField("4111111111111111");
+		enterCardNumberInTheField(card.getCardNumber());
 		softAssert.assertTrue(isMonthFieldVisible(), "    is not visible");
 		clickMonthFld();
 		pause(1000);
@@ -691,20 +689,20 @@ public class PreLoginPayBillCCSteps extends PreLoginPage {
 		clickYearOption();
 		pause(1000);
 		softAssert.assertTrue(isSecurityCodeFieldVisible(), "    is not visible");
-		enterSecurityCodeInTheField("123");
+		enterSecurityCodeInTheField(card.getCvv());
 		// Billing Address
 		softAssert.assertTrue(isFirstNameFieldVisible(), "    is not visible");
-		enterFirstNameInTheField("Test");
+		enterFirstNameInTheField(card.getFirstName());
 		softAssert.assertTrue(isLastNameFieldVisible(), "    is not visible");
-		enterLastNameInTheField("Test");
+		enterLastNameInTheField(card.getLastName());
 		softAssert.assertTrue(isAddressFieldVisible(), "    is not visible");
-		enterAddressInTheField("Test");
+		enterAddressInTheField(card.getAddress());
 		softAssert.assertTrue(isCityFieldVisible(), "    is not visible");
-		enterCityInTheField("TE");
+		enterCityInTheField(card.getState());
 		softAssert.assertTrue(isStateFieldVisible(), "    is not visible");
-		enterStateInTheField("Test");
+		enterStateInTheField(card.getState());
 		softAssert.assertTrue(isZipCodeFieldVisible(), "    is not visible");
-		enterZipCodeInTheField("12345");
+		enterZipCodeInTheField(card.getZipCode());
 		clearCardHolderNameInTheField();
 		clickNextBtn2();
 	}
@@ -740,10 +738,11 @@ public class PreLoginPayBillCCSteps extends PreLoginPage {
 		clickCardOption();
 		pause(5000);
 		// Card Details
+		Card card = ModelsConfiguration.readCards().getCardByNameOnCard("John Wick Visa Card");
 		softAssert.assertTrue(isCardHolderNameFieldVisible(), "    is not visible");
-		enterCardHolderNameInTheField("Test");
+		enterCardHolderNameInTheField(card.getNameOnCard());
 		softAssert.assertTrue(isCardNumberFieldVisible(), "    is not visible");
-		enterCardNumberInTheField("4111111111111111");
+		enterCardNumberInTheField(card.getCardNumber());
 		softAssert.assertTrue(isMonthFieldVisible(), "    is not visible");
 		clickMonthFld();
 		pause(1000);
@@ -755,20 +754,20 @@ public class PreLoginPayBillCCSteps extends PreLoginPage {
 		clickYearOption();
 		pause(1000);
 		softAssert.assertTrue(isSecurityCodeFieldVisible(), "    is not visible");
-		enterSecurityCodeInTheField("123");
+		enterSecurityCodeInTheField(card.getCvv());
 		// Billing Address
 		softAssert.assertTrue(isFirstNameFieldVisible(), "    is not visible");
-		enterFirstNameInTheField("Test");
+		enterFirstNameInTheField(card.getFirstName());
 		softAssert.assertTrue(isLastNameFieldVisible(), "    is not visible");
-		enterLastNameInTheField("Test");
+		enterLastNameInTheField(card.getLastName());
 		softAssert.assertTrue(isAddressFieldVisible(), "    is not visible");
-		enterAddressInTheField("Test");
+		enterAddressInTheField(card.getAddress());
 		softAssert.assertTrue(isCityFieldVisible(), "    is not visible");
-		enterCityInTheField("TE");
+		enterCityInTheField(card.getCity());
 		softAssert.assertTrue(isStateFieldVisible(), "    is not visible");
-		enterStateInTheField("Test");
+		enterStateInTheField(card.getState());
 		softAssert.assertTrue(isZipCodeFieldVisible(), "    is not visible");
-		enterZipCodeInTheField("12345");
+		enterZipCodeInTheField(card.getZipCode());
 
 		//Switch to Bank
 		clickBankOption();
@@ -776,12 +775,15 @@ public class PreLoginPayBillCCSteps extends PreLoginPage {
 		softAssert.assertEquals(getAccountHolderName(), preLoginPaymentProp.getPropValue("BankHolderName"),
 				"Payment Information label is not matching.");
 		pause(2000);
+		ExtentLogger.logInfo("Switch to Bank Successful");
 
+		ExtentLogger.logInfo("......");
 		//Switch to Card
 		clickCardOption();
 		pause(3000);
 		softAssert.assertEquals(getCardHolderName(), preLoginPaymentProp.getPropValue("CardHolderName"),
 				"Payment Information label is not matching.");
 		pause(3000);
+		ExtentLogger.logInfo("Switch to Card Successful");
 	}
 }

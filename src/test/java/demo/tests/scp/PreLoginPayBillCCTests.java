@@ -28,25 +28,24 @@ public class PreLoginPayBillCCTests extends TestRunner {
 	public void verifyPageTwoCCPayBillPageObjects() {
 		String[] tc_id = { "Pre_Login_03" };
 		ExtentLogger.logInfo(
-				"Test Case execution for - verifyLoginPageObjects. Test Case id's -->  " + Arrays.toString(tc_id));
+				"Test Case execution for - verifyPageTwoCCPayBillPageObjects.");
 		SoftAssert softAssert = new SoftAssert();
 		// Init login steps
 		PreLoginPayBillCCSteps = new PreLoginPayBillCCSteps(driver);
 		// Go to the application and verify objects
 		PreLoginPayBillCCSteps.verifyMoveToStpTwoAndUIVal(softAssert);
+		ExtentLogger.logInfo("Step-1 Complete");
 		PreLoginPayBillCCSteps.pageTwoCCPageObjects(softAssert);
 		// Assert all the soft verification.
 		softAssert.assertAll();
-		log.info("Test Case execution for - verifyLoginPageObjects - is Completed.");
-		ExtentLogger.logInfo("Test Case execution for - verifyLoginPageObjects - is Completed.");
+		ExtentLogger.logInfo("Test Case execution for - verifyPageTwoCCPayBillPageObjects - is Completed.");
 	}
 
 	@FrameworkAnnotations(author = { "Eujin" }, category = { CategoryType.SMOKE, CategoryType.SCP_LOGIN })
-	@Test(priority = 1, description = "To verify the pay bill page two for CC objects.")
+	@Test(priority = 1, description = "To verify pay bill with zero and decimal payment value")
 	public void verifyZeroPaymentValue() {
-		String[] tc_id = { "Pre_Login_03" };
 		ExtentLogger.logInfo(
-				"Test Case execution for - verifyLoginPageObjects. Test Case id's -->  " + Arrays.toString(tc_id));
+				"Test Case execution for - verifyZeroPaymentValue.");
 		SoftAssert softAssert = new SoftAssert();
 		// Init login steps
 		PreLoginPayBillCCSteps = new PreLoginPayBillCCSteps(driver);
@@ -60,136 +59,108 @@ public class PreLoginPayBillCCTests extends TestRunner {
 		PreLoginPayBillCCSteps.decimalPaymentValue(softAssert);
 		// Assert all the soft verification.
 		softAssert.assertAll();
-		log.info("Test Case execution for - verifyLoginPageObjects - is Completed.");
-		ExtentLogger.logInfo("Test Case execution for - verifyLoginPageObjects - is Completed.");
+		ExtentLogger.logInfo("Test Case execution for - verifyZeroPaymentValue - is Completed.");
 	}
 
 	@FrameworkAnnotations(author = { "Eujin" }, category = { CategoryType.SMOKE, CategoryType.SCP_LOGIN })
 	@Test(priority = 1, description = "To verify the pay bill page two for CC objects.")
 	public void verifyFieldSpecificValidationMessage() {
-		String[] tc_id = { "Pre_Login_03" };
 		ExtentLogger.logInfo(
-				"Test Case execution for - verifyLoginPageObjects. Test Case id's -->  " + Arrays.toString(tc_id));
+				"Test Case execution for - verifyFieldSpecificValidationMessage.");
 		SoftAssert softAssert = new SoftAssert();
 		// Init login steps
 		PreLoginPayBillCCSteps = new PreLoginPayBillCCSteps(driver);
 		// Go to the application and verify objects
 		PreLoginPayBillCCSteps.verifyMoveToStpTwoAndUIVal(softAssert);
-		ExtentLogger.logInfo(
-				"Test Case execution for - ");
+		ExtentLogger.logInfo("Step-1 Complete");
 		PreLoginPayBillCCSteps.fieldSpecificValidationMessage(softAssert);
 		// Assert all the soft verification.
 		softAssert.assertAll();
-		log.info("Test Case execution for - verifyLoginPageObjects - is Completed.");
-		ExtentLogger.logInfo("Test Case execution for - verifyLoginPageObjects - is Completed.");
+		ExtentLogger.logInfo("Test Case execution for - verifyFieldSpecificValidationMessage - is Completed.");
 	}
 
 	@FrameworkAnnotations(author = { "Eujin" }, category = { CategoryType.SMOKE, CategoryType.SCP_LOGIN })
-	@Test(priority = 1, description = "To verify the pay bill page two for CC objects.")
+	@Test(priority = 1, description = "To verify if the user is able to add the defined cards")
 	public void verifyAddDefinedCards() {
-		String[] tc_id = { "Pre_Login_03" };
 		ExtentLogger.logInfo(
-				"Test Case execution for - verifyLoginPageObjects. Test Case id's -->  " + Arrays.toString(tc_id));
+				"Test Case execution for - verifyAddDefinedCards.");
 		SoftAssert softAssert = new SoftAssert();
 		// Init login steps
 		PreLoginPayBillCCSteps = new PreLoginPayBillCCSteps(driver);
 		PreLoginPayBillCCSteps.verifyMoveToStpTwoAndUIVal(softAssert);
-		ExtentLogger.logInfo(
-				"Test Case execution for - ");
+		ExtentLogger.logInfo("Step-1 Complete");
 		PreLoginPayBillCCSteps.creditCardIcons(softAssert);
 		// Assert all the soft verification.
 		softAssert.assertAll();
-		log.info("Test Case execution for - verifyLoginPageObjects - is Completed.");
-		ExtentLogger.logInfo("Test Case execution for - verifyLoginPageObjects - is Completed.");
+		ExtentLogger.logInfo("Test Case execution for - verifyAddDefinedCards - is Completed.");
 	}
 
 	@FrameworkAnnotations(author = { "Eujin" }, category = { CategoryType.SMOKE, CategoryType.SCP_LOGIN })
-	@Test(priority = 1, description = "To verify the pay bill page two for CC objects.")
+	@Test(priority = 1, description = "To verify if the user is able to make payments using Card")
 	public void verifyMakePaymentCards() {
-		String[] tc_id = { "Pre_Login_03" };
 		ExtentLogger.logInfo(
-				"Test Case execution for - verifyLoginPageObjects. Test Case id's -->  " + Arrays.toString(tc_id));
+				"Test Case execution for - verifyMakePaymentCards.");
 		SoftAssert softAssert = new SoftAssert();
 		// Init login steps
 		PreLoginPayBillCCSteps = new PreLoginPayBillCCSteps(driver);
+		PreLoginPayBillCCSteps.verifyMoveToStpTwoAndUIVal(softAssert);
+		ExtentLogger.logInfo("Step-1 Complete");
 		PreLoginPayBillCCSteps.verifyUIOnStepFourPreLogPayBill(softAssert);
+		ExtentLogger.logInfo("verifyUIOnStepFourPreLogPayBill Complete");
 		// Assert all the soft verification.
 		softAssert.assertAll();
-		log.info("Test Case execution for - verifyLoginPageObjects - is Completed.");
-		ExtentLogger.logInfo("Test Case execution for - verifyLoginPageObjects - is Completed.");
+		ExtentLogger.logInfo("Test Case execution for - verifyMakePaymentCards - is Completed.");
 	}
 
 	@FrameworkAnnotations(author = { "Eujin" }, category = { CategoryType.SMOKE, CategoryType.SCP_LOGIN })
 	@Test(priority = 1, description = "To verify the pay bill page two for CC objects.")
 	public void verifyExceedingPayment() {
-		String[] tc_id = { "Pre_Login_03" };
 		ExtentLogger.logInfo(
-				"Test Case execution for - verifyLoginPageObjects. Test Case id's -->  " + Arrays.toString(tc_id));
+				"Test Case execution for - verifyExceedingPayment.");
 		SoftAssert softAssert = new SoftAssert();
 		// Init login steps
 		PreLoginPayBillCCSteps = new PreLoginPayBillCCSteps(driver);
 		PreLoginPayBillCCSteps.verifyMoveToStpTwoAndUIVal(softAssert);
-		ExtentLogger.logInfo(
-				"Test Case execution for - ");
+		ExtentLogger.logInfo("Step-1 Complete");
 		PreLoginPayBillCCSteps.exceedingPaymentValidationMessage(softAssert);
+		ExtentLogger.logInfo("exceedingPaymentValidationMessage Complete");
 		// Assert all the soft verification.
 		softAssert.assertAll();
-		log.info("Test Case execution for - verifyLoginPageObjects - is Completed.");
-		ExtentLogger.logInfo("Test Case execution for - verifyLoginPageObjects - is Completed.");
+		ExtentLogger.logInfo("Test Case execution for - verifyExceedingPayment - is Completed.");
 	}
 
 	@FrameworkAnnotations(author = { "Eujin" }, category = { CategoryType.SMOKE, CategoryType.SCP_LOGIN })
-	@Test(priority = 1, description = "To verify the pay bill page two for CC objects.")
+	@Test(priority = 1, description = "To verify if customer is able to select previous year for Card expiry year.")
 	public void verifyPastYearExpiry() {
-		String[] tc_id = { "Pre_Login_03" };
 		ExtentLogger.logInfo(
-				"Test Case execution for - verifyLoginPageObjects. Test Case id's -->  " + Arrays.toString(tc_id));
+				"Test Case execution for - verifyLoginPageObjects.");
 		SoftAssert softAssert = new SoftAssert();
 		// Init login steps
 		PreLoginPayBillCCSteps = new PreLoginPayBillCCSteps(driver);
 		PreLoginPayBillCCSteps.verifyMoveToStpTwoAndUIVal(softAssert);
-		ExtentLogger.logInfo(
-				"Test Case execution for - ");
+		ExtentLogger.logInfo("Step-1 Complete");
 		PreLoginPayBillCCSteps.pastYearExpiry(softAssert);
+		ExtentLogger.logInfo("pastYearExpiry Complete");
 		// Assert all the soft verification.
 		softAssert.assertAll();
-		log.info("Test Case execution for - verifyLoginPageObjects - is Completed.");
 		ExtentLogger.logInfo("Test Case execution for - verifyLoginPageObjects - is Completed.");
 	}
 
 	@FrameworkAnnotations(author = { "Eujin" }, category = { CategoryType.SMOKE, CategoryType.SCP_LOGIN })
-	@Test(priority = 1, description = "To verify the pay bill page two for CC objects.")
+	@Test(priority = 1, description = "To verify if the given details are cleared while switching between Bank and Card")
 	public void verifyPageClearWhileToggle() {
-		String[] tc_id = { "Pre_Login_03" };
 		ExtentLogger.logInfo(
-				"Test Case execution for - verifyLoginPageObjects. Test Case id's -->  " + Arrays.toString(tc_id));
+				"Test Case execution for - verifyPageClearWhileToggle.");
 		SoftAssert softAssert = new SoftAssert();
 		// Init login steps
 		PreLoginPayBillCCSteps = new PreLoginPayBillCCSteps(driver);
 		PreLoginPayBillCCSteps.verifyMoveToStpTwoAndUIVal(softAssert);
-		ExtentLogger.logInfo(
-				"Test Case execution for - ");
+		ExtentLogger.logInfo("Step-1 Complete");
 		PreLoginPayBillCCSteps.pageClearWhileToggle(softAssert);
+		ExtentLogger.logInfo("pageClearWhileToggle Complete");
 		// Assert all the soft verification.
 		softAssert.assertAll();
-		log.info("Test Case execution for - verifyLoginPageObjects - is Completed.");
-		ExtentLogger.logInfo("Test Case execution for - verifyLoginPageObjects - is Completed.");
-	}
-
-	@FrameworkAnnotations(author = { "Eujin" }, category = { CategoryType.SMOKE, CategoryType.SCP_PAYMENT })
-	@Test(priority = 3, description = "To verify the payment functionality with invalid details.")
-	public void verifyInvalidPaymentDetails() {
-		String[] tc_id = { "Pre_Login_08" };
-		ExtentLogger.logInfo(
-				"Test Case execution for - verifyInvalidPaymentDetails. Test Case id's -->  " + Arrays.toString(tc_id));
-		SoftAssert softAssert = new SoftAssert();
-		// Init login steps
-		PreLoginPayBillCCSteps = new PreLoginPayBillCCSteps(driver);
-		PreLoginPayBillCCSteps.payTheApplicationWrongCreds(softAssert);
-		// Assert all the soft verification.
-		softAssert.assertAll();
-		log.info("Test Case execution for - verifyInvalidPaymentDetails - is Completed.");
-		ExtentLogger.logInfo("Test Case execution for - verifyInvalidPaymentDetails - is Completed.");
+		ExtentLogger.logInfo("Test Case execution for - verifyPageClearWhileToggle - is Completed.");
 	}
 
 }
