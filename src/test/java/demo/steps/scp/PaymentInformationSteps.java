@@ -29,9 +29,6 @@ import sew.ai.models.Card;
 import sew.ai.models.User;
 import sew.ai.steps.scp.DashboardSteps;
 import sew.ai.steps.scp.HomeSteps;
-import sew.ai.steps.scp.LoginSteps;
-import sew.ai.utils.DataBaseUtils;
-import sew.ai.utils.DateUtil;
 import sew.ai.utils.PropertiesUtil;
 import sew.ai.utils.RandomUtil;
 

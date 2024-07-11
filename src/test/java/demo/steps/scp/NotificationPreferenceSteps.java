@@ -375,7 +375,7 @@ public class NotificationPreferenceSteps extends NotificationPreferencePage {
 				NotificationpreferenceTextProp.getPropValue("txtLblNotificationPrefSavedAos"),
 				"Notification preferences save successfully message not matching.");
 		ExtentLogger.logInfo("Email and Text Notification Preference is validated for BILLING ");
-		
+
 		waitForPageLoader();
 
 		// NP For contactUS
@@ -446,10 +446,13 @@ public class NotificationPreferenceSteps extends NotificationPreferencePage {
 
 		sAssert.assertTrue(isLblTCPAacceptNotificatinTerms(),
 				"TCPA Compliance Terms and Conditions popup is not appearing ");
+
 		sAssert.assertEquals(NotificationpreferenceTextProp.getPropValue("txtLblAcceptNotificationPopupHeadingAos"),
 				getLblTCPAacceptNotificatinTerms(), "TCPA pop up heading is not matched");
+
 		sAssert.assertEquals(NotificationpreferenceTextProp.getPropValue("txtLblNotificationBodyTitleAos"),
 				getLbltcpaPopupBody(), "Tcpa popup body title is not matched");
+
 		Assert.assertTrue(getFullTxtTcpaPopup()
 				.contains(NotificationpreferenceTextProp.getPropValue("txtLblTcpaPopupBodyMsgOnCheckNpp")));
 		lnkTCPAagreeBtn();
@@ -458,7 +461,7 @@ public class NotificationPreferenceSteps extends NotificationPreferencePage {
 				NotificationpreferenceTextProp.getPropValue("txtLblNotificationPrefSavedAos"),
 				"Notification preferences save successfully message not matching.");
 		ExtentLogger.logInfo("Email and Text Notification Preference is validated for SERVICES ");
-          		// NP For LEAK ALERT
+		// NP For LEAK ALERT
 
 		waitForPageLoader();
 		if (getIconLeakAlertStatus().equalsIgnoreCase("On")) {
@@ -488,7 +491,7 @@ public class NotificationPreferenceSteps extends NotificationPreferencePage {
 				getLbltcpaPopupBody(), "Tcpa popup body title is not matched");
 		Assert.assertTrue(getFullTxtTcpaPopup()
 				.contains(NotificationpreferenceTextProp.getPropValue("txtLblTcpaPopupBodyMsgOnCheckNpp")));
-		
+
 		lnkTCPAagreeBtn();
 
 		Assert.assertEquals(getToastMessage(),
