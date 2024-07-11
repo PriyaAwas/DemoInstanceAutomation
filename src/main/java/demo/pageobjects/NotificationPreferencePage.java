@@ -1736,7 +1736,6 @@ public class NotificationPreferencePage extends HomePage {
 		log.info("Notification TxtCheckedType page header is {}: " + label);
 		return label;
 	}
-		
 	
 	@FindBy(css = "h4#notificationTcpaTitle")
 	private WebElement lblTCPAacceptNotificatinTerms;
