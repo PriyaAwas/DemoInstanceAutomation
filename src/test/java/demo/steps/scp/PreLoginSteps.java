@@ -2,6 +2,7 @@ package demo.steps.scp;
 
 import static org.testng.Assert.assertEquals;
 import static sew.ai.steps.scp.DashboardSteps.dashboardTextProp;
+import static sew.ai.steps.scp.LoginSteps.loginTextProp;
 
 import java.sql.SQLException;
 import java.util.List;
@@ -21,6 +22,7 @@ import sew.ai.helpers.props.Constants;
 import sew.ai.helpers.props.FilePaths;
 import sew.ai.helpers.reporters.ExtentLogger;
 import sew.ai.steps.scp.DashboardSteps;
+import sew.ai.steps.scp.LoginSteps;
 import sew.ai.steps.scp.SignOutSteps;
 import sew.ai.utils.PropertiesUtil;
 
@@ -40,9 +42,11 @@ public class PreLoginSteps extends PreLoginPage {
 		preLoginConnectMeProp = new PropertiesUtil(
 				FilePaths.SCP_TEXT_PROPERTIES + Constants.PRE_LOG_CONNECT_ME_TXT_FILENAME);
 		signOutTextProp = new PropertiesUtil(FilePaths.SCP_TEXT_PROPERTIES + Constants.SIGNOUT_TXT_FILENAME);
-		preLoginPaymentLocationsProp = new PropertiesUtil(FilePaths.SCP_TEXT_PROPERTIES + Constants.SCM_PAYMENT_LOCATIONS_TXT_FILENAME);
+		preLoginPaymentLocationsProp = new PropertiesUtil(
+				FilePaths.SCP_TEXT_PROPERTIES + Constants.SCM_PAYMENT_LOCATIONS_TXT_FILENAME);
 		preLoginPaymentProp = new PropertiesUtil(FilePaths.SCP_TEXT_PROPERTIES + Constants.SCM_PAYMENT_TXT_FILENAME);
-		preLoginWaysToSaveProp = new PropertiesUtil(FilePaths.SCP_TEXT_PROPERTIES + Constants.SCM_WAYSTOSAVE_TXT_FILENAME);
+		preLoginWaysToSaveProp = new PropertiesUtil(
+				FilePaths.SCP_TEXT_PROPERTIES + Constants.SCM_WAYSTOSAVE_TXT_FILENAME);
 	}
 
 	public void populateLoginForm(String userName, String password) {
@@ -135,7 +139,7 @@ public class PreLoginSteps extends PreLoginPage {
 		String user = Configuration.toString("userName");
 		String password = Configuration.toString("password");
 		// Verify login with blank creds
-			softAssert.assertEquals(loginWithBlankCreds(), loginTextProp.getPropValue("loginWithBlankCredsErrMsg"),
+		softAssert.assertEquals(loginWithBlankCreds(), loginTextProp.getPropValue("loginWithBlankCredsErrMsg"),
 				"Login with Blank creds error message not matched.");
 		// Verify login with blank password
 		softAssert.assertEquals(loginWithBlankPassword(user),
@@ -186,12 +190,13 @@ public class PreLoginSteps extends PreLoginPage {
 				"Label for problem sign in is not matched.");
 		softAssert.assertEquals(getRegisterLinkLabel(), loginTextProp.getPropValue("lblRegisterLnk"),
 				"Label for register link is not matched.");
-		//softAssert.assertEquals(getAdvancedServicesLinkLabel(), loginTextProp.getPropValue("lnkAdvancedServices"),
-			//	"Label for advanced service link is not matched.");
+		// softAssert.assertEquals(getAdvancedServicesLinkLabel(),
+		// loginTextProp.getPropValue("lnkAdvancedServices"),
+		// "Label for advanced service link is not matched.");
 		softAssert.assertEquals(getPayBillLinkLabel(), loginTextProp.getPropValue("lnkPayBill"),
 				"Label for pay bill link is not matched.");
 		softAssert.assertEquals(getOutagesLinkLabel(), loginTextProp.getPropValue("lnkOutages"),
-				"Label for outages link is not matched.");		
+				"Label for outages link is not matched.");
 		softAssert.assertEquals(getWaysToSaveLinkLabel(), loginTextProp.getPropValue("lnkWaysToSave"),
 				"Label for ways to save link is not matched.");
 		softAssert.assertEquals(getPaymentLocationsLinkLabel(), loginTextProp.getPropValue("lnkPaymentLocations"),
@@ -255,9 +260,11 @@ public class PreLoginSteps extends PreLoginPage {
 		selectlstConnectMeOptions("Rebates");
 		if (selectlstConnectMeOptions("Rebates")) {
 		}
-		Assert.assertTrue(isPreLogConnectMePage(preLoginConnectMeProp.getPropValue("ConnectMePageUrl"),
-				(preLoginConnectMeProp.getPropValue("ConnectMePageTitleTxt"))), "Page Title & URL does not Match");
-		
+		Assert.assertTrue(
+				isPreLogConnectMePage(preLoginConnectMeProp.getPropValue("ConnectMePageUrl"),
+						(preLoginConnectMeProp.getPropValue("ConnectMePageTitleTxt"))),
+				"Page Title & URL does not Match");
+
 		softAssert.assertTrue(isPageHeaderPostVisible(), "Contact Us Page Header is not visible");
 		softAssert.assertTrue(isSocialMediaVisible(), "Social Media Tab is not visibility");
 		softAssert.assertTrue(isContactusVisible(), "Contact Us Tab is not visibility");
@@ -494,7 +501,7 @@ public class PreLoginSteps extends PreLoginPage {
 		clickSignInAgainBtn();
 
 	}
-	
+
 	public boolean isPreLogPaymentLocationsPage(String url, String title) {
 		Boolean isForgetPasswordPage = false;
 		log.info("Checking that the current page is ForgetPassword Page");
@@ -503,21 +510,23 @@ public class PreLoginSteps extends PreLoginPage {
 		log.info("The current page is ForgetPassword Page {}: " + isForgetPasswordPage);
 		return isForgetPasswordPage;
 	}
-	
+
 	public void verifyPaymentLocations(SoftAssert softAssert) {
 		clickPaymentLocationsLnk();
 		pause(5000);
-		Assert.assertTrue(isPreLogPaymentLocationsPage(preLoginPaymentLocationsProp.getPropValue("preLoginPageUrl"),
-				(preLoginPaymentLocationsProp.getPropValue("preLoginPageTitle"))), "Page Title & URL does not Match");
-		
+		Assert.assertTrue(
+				isPreLogPaymentLocationsPage(preLoginPaymentLocationsProp.getPropValue("preLoginPageUrl"),
+						(preLoginPaymentLocationsProp.getPropValue("preLoginPageTitle"))),
+				"Page Title & URL does not Match");
+
 	}
-	
+
 	public void populatePaymentFormStepOne(String accountNumber, String phoneNumber) {
 		populateAccountNumber(accountNumber);
 		populatePhoneNumber(phoneNumber);
 		ExtentLogger.logInfo("account number and phone number populated");
 	}
-	
+
 	public String payWithInvalidDetails() {
 		populateAccountNumber("123456789012");
 		populatePhoneNumber("1234567890");
@@ -526,7 +535,7 @@ public class PreLoginSteps extends PreLoginPage {
 		ExtentLogger.logInfo("cannot pay with invalid details");
 		return errMsg;
 	}
-	
+
 	public String payWithBlankDetails() {
 		clickNextBtn();
 		String errMsg = getToastMessageWithoutWait();
@@ -534,16 +543,16 @@ public class PreLoginSteps extends PreLoginPage {
 		ExtentLogger.logInfo("cannot pay with blank details");
 		return errMsg;
 	}
-	
+
 	public String payWithBlankAccountNumber() {
 		populatePhoneNumber("1234567890");
-		clickNextBtn();		
+		clickNextBtn();
 		String errMsg = getErrorMessage();
 		clearPhoneNumberField();
 		ExtentLogger.logInfo("cannot pay with blank account number");
 		return errMsg;
 	}
-	
+
 	public String payWithBlankPhoneNumber() {
 		populateAccountNumber("123456789012");
 		clickNextBtn();
@@ -552,7 +561,7 @@ public class PreLoginSteps extends PreLoginPage {
 		ExtentLogger.logInfo("cannot pay with blank phone number");
 		return errMsg;
 	}
-	
+
 	public void payTheApplicationWrongCreds(SoftAssert softAssert) {
 		clickPaymentsLnk();
 		// Verify login with blank creds
@@ -562,16 +571,15 @@ public class PreLoginSteps extends PreLoginPage {
 		softAssert.assertEquals(payWithBlankAccountNumber(),
 				preLoginPaymentProp.getPropValue("payWithBlankAccountNumber"),
 				"Blank username field validation not correct.");
-		
+
 		// Verify login with blank phone number
-		softAssert.assertEquals(payWithBlankPhoneNumber(),
-				preLoginPaymentProp.getPropValue("payWithBlankPhoneNumber"),
+		softAssert.assertEquals(payWithBlankPhoneNumber(), preLoginPaymentProp.getPropValue("payWithBlankPhoneNumber"),
 				"Blank username field validation not correct.");
 		// Verify login with wrong username and password.
 		softAssert.assertEquals(payWithInvalidDetails(), preLoginPaymentProp.getPropValue("payWithInvalidsCredsErrMsg"),
 				"Wrong toast when paying using invalid creds.");
 	}
-	
+
 	public boolean isPreLogWaysToSavePage(String url, String title) {
 		Boolean isForgetPasswordPage = false;
 		log.info("Checking that the current page is ForgetPassword Page");
@@ -580,24 +588,180 @@ public class PreLoginSteps extends PreLoginPage {
 		log.info("The current page is ForgetPassword Page {}: " + isForgetPasswordPage);
 		return isForgetPasswordPage;
 	}
-	
+
 	public void verifyWaysToSave(SoftAssert softAssert) {
 		clickWaysToSaveLnk();
 		pause(5000);
 		Assert.assertTrue(isPreLogWaysToSavePage(preLoginWaysToSaveProp.getPropValue("preLoginPageUrl"),
 				(preLoginWaysToSaveProp.getPropValue("preLoginPageTitle"))), "Page Title & URL does not Match");
-		softAssert.assertEquals(getRebatesLabel(),
-				preLoginWaysToSaveProp.getPropValue("rebatesLbl"),
-				"Blank username field validation not correct.");
-		softAssert.assertEquals(getProgramsLabel(),
-				preLoginWaysToSaveProp.getPropValue("programsLbl"),
-				"Blank username field validation not correct.");
-		softAssert.assertEquals(getSavingsLabel(),
-				preLoginWaysToSaveProp.getPropValue("savingLbl"),
-				"Blank username field validation not correct.");
-		softAssert.assertEquals(getEducationalLabel(),
-				preLoginWaysToSaveProp.getPropValue("educationalLbl"),
-				"Blank username field validation not correct.");
-		
+		softAssert.assertEquals(getRebatesLabel(), preLoginWaysToSaveProp.getPropValue("rebatesLbl"),
+				"Rebates label does not match");
+		softAssert.assertEquals(getProgramsLabel(), preLoginWaysToSaveProp.getPropValue("programsLbl"),
+				"Programs label does not match");
+		softAssert.assertEquals(getSavingsLabel(), preLoginWaysToSaveProp.getPropValue("savingLbl"),
+				"Savings label does not match");
+		softAssert.assertEquals(getEducationalLabel(), preLoginWaysToSaveProp.getPropValue("educationalLbl"),
+				"Educational label does not match");
+		clickAccTypeDrpDwn();
+		pause(2000);
+		softAssert.assertEquals(getAllOptsLabel(), preLoginWaysToSaveProp.getPropValue("allOption"),
+				"All Options label does not match");
+		softAssert.assertEquals(getResOptLabel(), preLoginWaysToSaveProp.getPropValue("resOption"),
+				"Residential Option label does not match");
+		softAssert.assertEquals(getCommOptLabel(), preLoginWaysToSaveProp.getPropValue("commOption"),
+				"Commercial Option label does not match.");
+		softAssert.assertEquals(getMultiOptLabel(), preLoginWaysToSaveProp.getPropValue("multiOption"),
+				"Multi-Family Option label does not match.");
+
+	}
+
+	public void verifyMaxValueOfUsernamePassFld(SoftAssert softAssert) {
+		String userNameMaxLength = getTxtBoxUsernameMaxLength();
+		String passwordMaxLength = getTxtBoxPasswordMaxLength();
+		softAssert.assertEquals(userNameMaxLength, "32", "Max length username field not matched.");
+		softAssert.assertEquals(passwordMaxLength, "32", "Max length password field not matched.");
+
+	}
+
+	public void verifyHomeIconFunction(SoftAssert softAssert) {
+		clickForgotPasswordLnk();
+		clickHomeIcon();
+		LoginSteps loginSteps;
+		loginSteps = new LoginSteps(driver);
+		loginSteps.waitForUserNameFieldVisibility();
+		Assert.assertTrue(loginSteps.isLoginPage(loginTextProp.getPropValue("loginPageUrl"),
+				loginTextProp.getPropValue("loginPageTitle")));
+
+	}
+	
+	public void verifyDetailsONRebatesGrid(SoftAssert softAssert) {
+		clickWaysToSaveLnk();
+		pause(5000);
+		Assert.assertTrue(isPreLogWaysToSavePage(preLoginWaysToSaveProp.getPropValue("preLoginPageUrl"),
+				(preLoginWaysToSaveProp.getPropValue("preLoginPageTitle"))), "Page Title & URL does not Match");
+		softAssert.assertEquals(getRebatesLabel(), preLoginWaysToSaveProp.getPropValue("rebatesLbl"),
+				"Rebates label does not match");
+		softAssert.assertEquals(getProgramsLabel(), preLoginWaysToSaveProp.getPropValue("programsLbl"),
+				"Programs label does not match");
+		softAssert.assertEquals(getSavingsLabel(), preLoginWaysToSaveProp.getPropValue("savingLbl"),
+				"Savings label does not match");
+		softAssert.assertEquals(getEducationalLabel(), preLoginWaysToSaveProp.getPropValue("educationalLbl"),
+				"Educational label does not match");
+		pause(2000);
+		softAssert.assertEquals(getRebateImg(),preLoginWaysToSaveProp.getPropValue("rebateImg"),
+				"Rebates image not available");
+		softAssert.assertEquals(getRebateTitleLabel(), preLoginWaysToSaveProp.getPropValue("rebateTitle"),
+				"Title of Rebates label does not match");
+		softAssert.assertEquals(getRebateDescptLabel(),preLoginWaysToSaveProp.getPropValue("rebateDescpt"),
+				"Description of Rebates not available");
+		softAssert.assertEquals(getRebateReadMoreLabel(),preLoginWaysToSaveProp.getPropValue("rebateReadMore"),
+				"Read More option is not available");
+//		softAssert.assertEquals(getRebateViewLabel(),preLoginWaysToSaveProp.getPropValue("rebateViews"),
+//				"Views label is not available");
+		softAssert.assertEquals(getRebateLikeLabel(),preLoginWaysToSaveProp.getPropValue("rebateLike"),
+				"Likes label is not available");
+	}
+	
+	public void verifyDisclaimerOnWaysToSave(SoftAssert softAssert) {
+		clickWaysToSaveLnk();
+		pause(5000);
+		Assert.assertTrue(isPreLogWaysToSavePage(preLoginWaysToSaveProp.getPropValue("preLoginPageUrl"),
+				(preLoginWaysToSaveProp.getPropValue("preLoginPageTitle"))), "Page Title & URL does not Match");
+		softAssert.assertEquals(getDisclaimer(), preLoginWaysToSaveProp.getPropValue("disclaimerWaysToSave"),
+				"Rebates label does not match");
+
+}
+	
+	public void verifyDetailsONProgramsGrid(SoftAssert softAssert) {
+		clickWaysToSaveLnk();
+		pause(5000);
+		Assert.assertTrue(isPreLogWaysToSavePage(preLoginWaysToSaveProp.getPropValue("preLoginPageUrl"),
+				(preLoginWaysToSaveProp.getPropValue("preLoginPageTitle"))), "Page Title & URL does not Match");
+		softAssert.assertEquals(getRebatesLabel(), preLoginWaysToSaveProp.getPropValue("rebatesLbl"),
+				"Rebates label does not match");
+		softAssert.assertEquals(getProgramsLabel(), preLoginWaysToSaveProp.getPropValue("programsLbl"),
+				"Programs label does not match");
+		softAssert.assertEquals(getSavingsLabel(), preLoginWaysToSaveProp.getPropValue("savingLbl"),
+				"Savings label does not match");
+		softAssert.assertEquals(getEducationalLabel(), preLoginWaysToSaveProp.getPropValue("educationalLbl"),
+				"Educational label does not match");
+		pause(2000);
+		clickProgramsOptn();
+		pause(2000);
+		softAssert.assertEquals(getProgramImg(),preLoginWaysToSaveProp.getPropValue("programImg"),
+				"Programs image not available");
+		softAssert.assertEquals(getProgramTitleLabel(), preLoginWaysToSaveProp.getPropValue("programTitle"),
+				"Title of Programs label does not match");
+		softAssert.assertEquals(getProgramDescptLabel(),preLoginWaysToSaveProp.getPropValue("programDescpt"),
+				"Description of Programs not available");
+		softAssert.assertEquals(getProgramReadMoreLabel(),preLoginWaysToSaveProp.getPropValue("programReadMore"),
+				"Read More option for Programs is not available");
+//		softAssert.assertEquals(getProgramViewLabel(),preLoginWaysToSaveProp.getPropValue("programViews"),
+//				"Views label is not available for Programs");
+		softAssert.assertEquals(getProgramLikeLabel(),preLoginWaysToSaveProp.getPropValue("programLike"),
+				"Likes label is not available for Programs");
+
+	}
+	
+	public void verifyDetailsONSavingTipsGrid(SoftAssert softAssert) {
+		clickWaysToSaveLnk();
+		pause(5000);
+		Assert.assertTrue(isPreLogWaysToSavePage(preLoginWaysToSaveProp.getPropValue("preLoginPageUrl"),
+				(preLoginWaysToSaveProp.getPropValue("preLoginPageTitle"))), "Page Title & URL does not Match");
+		softAssert.assertEquals(getRebatesLabel(), preLoginWaysToSaveProp.getPropValue("rebatesLbl"),
+				"Rebates label does not match");
+		softAssert.assertEquals(getProgramsLabel(), preLoginWaysToSaveProp.getPropValue("programsLbl"),
+				"Programs label does not match");
+		softAssert.assertEquals(getSavingsLabel(), preLoginWaysToSaveProp.getPropValue("savingLbl"),
+				"Savings label does not match");
+		softAssert.assertEquals(getEducationalLabel(), preLoginWaysToSaveProp.getPropValue("educationalLbl"),
+				"Educational label does not match");
+		pause(2000);
+		clickSavingsTipOptn();
+		pause(2000);
+		softAssert.assertEquals(getSavingsTipImg(),preLoginWaysToSaveProp.getPropValue("savingsImg"),
+				"Saving Tips image not available");
+		softAssert.assertEquals(getSavingsTipTitleLabel(), preLoginWaysToSaveProp.getPropValue("savingsTitle"),
+				"Title of Saving Tips label does not match");
+		softAssert.assertEquals(getSavingsTipDescptLabel(),preLoginWaysToSaveProp.getPropValue("savingsDescpt"),
+				"Description of Saving Tips not available");
+		softAssert.assertEquals(getSavingsTipReadMoreLabel(),preLoginWaysToSaveProp.getPropValue("savingsReadMore"),
+				"Read More option for Savings Tips is not available");
+//		softAssert.assertEquals(getSavingsTipViewLabel(),preLoginWaysToSaveProp.getPropValue("savingsViews"),
+//				"Views label is not available for Saving Tips");
+		softAssert.assertEquals(getSavingsTipLikeLabel(),preLoginWaysToSaveProp.getPropValue("savingsLike"),
+				"Likes label is not available for Savings Tips");
+
+	}
+	
+	public void verifyDetailsONEducationalTipsGrid(SoftAssert softAssert) {
+		clickWaysToSaveLnk();
+		pause(5000);
+		Assert.assertTrue(isPreLogWaysToSavePage(preLoginWaysToSaveProp.getPropValue("preLoginPageUrl"),
+				(preLoginWaysToSaveProp.getPropValue("preLoginPageTitle"))), "Page Title & URL does not Match");
+		softAssert.assertEquals(getRebatesLabel(), preLoginWaysToSaveProp.getPropValue("rebatesLbl"),
+				"Rebates label does not match");
+		softAssert.assertEquals(getProgramsLabel(), preLoginWaysToSaveProp.getPropValue("programsLbl"),
+				"Programs label does not match");
+		softAssert.assertEquals(getSavingsLabel(), preLoginWaysToSaveProp.getPropValue("savingLbl"),
+				"Savings label does not match");
+		softAssert.assertEquals(getEducationalLabel(), preLoginWaysToSaveProp.getPropValue("educationalLbl"),
+				"Educational label does not match");
+		pause(2000);
+		clickEducationTipsOptn();
+		pause(2000);
+		softAssert.assertEquals(getEducationalTipImg(),preLoginWaysToSaveProp.getPropValue("educationImg"),
+				"Educational Tips image not available");
+		softAssert.assertEquals(getEducationalTipTitleLabel(), preLoginWaysToSaveProp.getPropValue("educationTitle"),
+				"Title of Educational Tips label does not match");
+		softAssert.assertEquals(getEducationalTipDescptLabel(),preLoginWaysToSaveProp.getPropValue("educationDescpt"),
+				"Description of Educational Tips not available");
+		softAssert.assertEquals(getEducationalTipReadMoreLabel(),preLoginWaysToSaveProp.getPropValue("educationReadMore"),
+				"Read More option for Educational Tips is not available");
+//		softAssert.assertEquals(getEducationalTipViewLabel(),preLoginWaysToSaveProp.getPropValue("educationViews"),
+//				"Views label is not available for Educational Tips");
+		softAssert.assertEquals(getEducationalTipLikeLabel(),preLoginWaysToSaveProp.getPropValue("educationLike"),
+				"Likes label is not available for Educational Tips");
+
 	}
 }

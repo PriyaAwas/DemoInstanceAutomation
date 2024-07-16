@@ -14,88 +14,100 @@ import sew.ai.helpers.reporters.ExtentLogger;
 import sew.ai.pageObjects.scp.HomePage;
 
 public class PreLoginPage extends HomePage {
-    private static final Logger log = LogManager.getLogger(PreLoginPage.class);
+	private static final Logger log = LogManager.getLogger(PreLoginPage.class);
 
-    public PreLoginPage(WebDriver driver) {
-        super(driver);
-        PageFactory.initElements(driver, this);
-    }
-    
-    @FindBy(css = "[id='txtAccountNumber']")
+	public PreLoginPage(WebDriver driver) {
+		super(driver);
+		PageFactory.initElements(driver, this);
+	}
+
+	@FindBy(css = "[id='txtAccountNumber']")
 	private WebElement txt_accountNumber;
-    
-    public void populateAccountNumber(String accountNumber) {
+
+	public void populateAccountNumber(String accountNumber) {
 		log.info("Populating username {} :" + accountNumber);
 		sendKeys(txt_accountNumber, accountNumber);
 		log.info("Username populated successfully.");
 	}
-    
-    public void clearAccountNumberField() {
+
+	public void clearAccountNumberField() {
 		clear(txt_accountNumber);
 		log.info("Account Number field cleared {}");
 	}
-    
-    @FindBy(css = "[id='txtPhoneNumber']")
+
+	@FindBy(css = "[id='txtPhoneNumber']")
 	private WebElement txt_phoneNumber;
-    
-    public void populatePhoneNumber(String phoneNumber) {
+
+	public void populatePhoneNumber(String phoneNumber) {
 		log.info("Populating username {} :" + phoneNumber);
 		sendKeys(txt_phoneNumber, phoneNumber);
 		log.info("Username populated successfully.");
 	}
-    
-    public void clearPhoneNumberField() {
+
+	public void clearPhoneNumberField() {
 		clear(txt_phoneNumber);
 		log.info("Phone Number field cleared {}");
 	}
 
-    @FindBy(css = "[id='txtLogin']")
+	@FindBy(css = "[id='txtLogin']")
 	private WebElement txt_username;
-    
-    public void populateUserName(String userName) {
+
+	public void populateUserName(String userName) {
 		log.info("Populating username {} :" + userName);
 		sendKeys(txt_username, userName);
 		log.info("Username populated successfully.");
 	}
-    
-    public void clearUsernameField() {
+
+	public void clearUsernameField() {
 		clear(txt_username);
 		log.info("Username field cleared {}");
 	}
-    
-    @FindBy(css = "[id='txtpwd']")
+
+	public String getTxtBoxUsernameMaxLength() {
+		String maxLen = getAttribute(txt_username, "maxlength");
+		log.info("Max length of usernmae field is {} " + maxLen);
+		return maxLen;
+	}
+
+	@FindBy(css = "[id='txtpwd']")
 	private WebElement txt_password;
-    
-    public void populatePassword(String password) {
+
+	public void populatePassword(String password) {
 		log.info("Populating password {} :" + password);
 		sendKeys(txt_password, password);
 		log.info("Password populated successfully.");
 	}
-    
-    public void clearPasswordField() {
+
+	public void clearPasswordField() {
 		clear(txt_password);
 		log.info("Password field cleared {}");
 	}
-    
-    @FindBy(css = "#btnlogin")
+
+	public String getTxtBoxPasswordMaxLength() {
+		String maxLen = getAttribute(txt_password, "maxlength");
+		log.info("Max length of password field is {} " + maxLen);
+		return maxLen;
+	}
+
+	@FindBy(css = "#btnlogin")
 	private WebElement btn_sign_in;
-    
-    public void clickSignInBtn() {
+
+	public void clickSignInBtn() {
 		log.info("Clicking the sign in button.");
 		click(btn_sign_in);
 		log.info("Sign in button clicked successfully.");
 	}
-    
-    @FindBy(css = "#btnSubmitPayment")
+
+	@FindBy(css = "#btnSubmitPayment")
 	private WebElement btn_next;
-    
-    public void clickNextBtn() {
+
+	public void clickNextBtn() {
 		log.info("Clicking the next button.");
 		click(btn_next);
 		log.info("Next button clicked successfully.");
 	}
-    
-    @FindBy(css = ".error_messagecommon")
+
+	@FindBy(css = ".error_messagecommon")
 	private WebElement lbl_error_message;
 
 	public String getErrorMessage() {
@@ -103,8 +115,8 @@ public class PreLoginPage extends HomePage {
 		log.info("Label on toast message {}: " + toast_msg);
 		return toast_msg;
 	}
-    
-    @FindBy(css = "#logo-container")
+
+	@FindBy(css = "#logo-container")
 	private WebElement img_header_logo;
 
 	public Boolean isCompanyLogoVisible() {
@@ -112,7 +124,7 @@ public class PreLoginPage extends HomePage {
 		log.info("Company logo visibility status {}: " + isElementVisible(img_header_logo));
 		return isElementVisible(img_header_logo);
 	}
-	
+
 	@FindBy(css = "div.tagove-livechat-widget .aio-widget-frame iframe")
 	private WebElement iFrmOpenChatWindow;
 	@FindBy(css = ".grecaptcha-logo")
@@ -124,11 +136,10 @@ public class PreLoginPage extends HomePage {
 		if (getCurrentUrl().contains(url.toLowerCase()) && getCurrentTitle().equalsIgnoreCase(title))
 			isLoginPage = true;
 		log.info("The current page is login page {}: " + isLoginPage);
-		
-		
+
 		return isLoginPage;
 	}
-	
+
 	@FindBy(css = "#LanguageDrpdwn_sample")
 	private WebElement dd_language;
 
@@ -137,7 +148,7 @@ public class PreLoginPage extends HomePage {
 		log.info("Language dropdown visibility status {}: " + isElementVisible(dd_language));
 		return isElementVisible(dd_language);
 	}
-	
+
 	@FindBy(css = "i.lan_txt_hide")
 	private WebElement dd_language_selected_option;
 
@@ -147,7 +158,7 @@ public class PreLoginPage extends HomePage {
 		log.info("Language dropdown selected option value {}: " + option);
 		return option;
 	}
-	
+
 	@FindBy(css = ".loginPaper .Loginpagehead")
 	private WebElement lbl_login_header;
 
@@ -157,13 +168,12 @@ public class PreLoginPage extends HomePage {
 		log.info("Login page header is {}: " + label);
 		return label;
 	}
-	
-	
+
 	public Boolean isUsernameTxtVisible() {
 		log.info("Checking that the username field is visible on the login page.");
 		return isElementVisible(txt_username);
 	}
-	
+
 	@FindBy(css = "#txtLogin ~ label[class='effect_lbl']")
 	private WebElement lbl_username;
 
@@ -173,10 +183,9 @@ public class PreLoginPage extends HomePage {
 		log.info("Username placeholder {}: " + label);
 		return label;
 	}
-	
+
 	@FindBy(css = "#txtpwd ~ label[class='effect_lbl']")
 	private WebElement lbl_password;
-	
 
 	public Boolean isPasswordTxtVisible() {
 		log.info("Checking that the password field is visible on the login page.");
@@ -189,7 +198,7 @@ public class PreLoginPage extends HomePage {
 		log.info("Password placeholder {}: " + label);
 		return label;
 	}
-	
+
 	@FindBy(css = "input#rmbrme")
 	private WebElement txt_remember_me;
 	@FindBys(@FindBy(css = ".mtrl_chkbx_new span"))
@@ -201,14 +210,13 @@ public class PreLoginPage extends HomePage {
 		log.info("Remember me checkbox visible status {}: " + chb_remember_mes.size());
 		return isElementVisibleAlt(chb_remember_mes);
 	}
-	
 
 	public String getSignInBtnLabel() {
 		String label = getText(btn_sign_in);
 		log.info("Sign in button label {}: " + label);
 		return label;
 	}
-	
+
 	@FindBy(linkText = "Forgot Username")
 	private WebElement lnk_forgot_username;
 
@@ -217,17 +225,16 @@ public class PreLoginPage extends HomePage {
 		log.info("Forgot Username Label {}: " + label);
 		return label;
 	}
-	
-	
+
 	@FindBy(linkText = "Forgot Password")
 	private WebElement lnk_forgot_password;
-	
+
 	public String getForgotPasswordLabel() {
 		String label = getText(lnk_forgot_password);
 		log.info("Forgot Username Label {}: " + label);
 		return label;
 	}
-		
+
 	@FindBy(css = ".sign_in_text")
 	private WebElement lnk_problems_sign_in;
 
@@ -236,7 +243,7 @@ public class PreLoginPage extends HomePage {
 		log.info("Forgot Username Label {}: " + label);
 		return label;
 	}
-	
+
 	@FindBy(css = "#btnResidentialType")
 	private WebElement lnk_register;
 
@@ -245,7 +252,7 @@ public class PreLoginPage extends HomePage {
 		log.info("Forgot Username Label {}: " + label);
 		return label;
 	}
-	
+
 	@FindBy(xpath = "//*[@id=\"form2\"]/section/div[2]/div/div[4]/ul/a[1]")
 	private WebElement lnk_advancedservices;
 
@@ -263,8 +270,8 @@ public class PreLoginPage extends HomePage {
 		log.info("Forgot Username Label {}: " + label);
 		return label;
 	}
-	
-    @FindBy(css = "a[globalize='ML_HeaderMenu_span_Outages']")
+
+	@FindBy(css = "a[globalize='ML_HeaderMenu_span_Outages']")
 	private WebElement lnk_outages;
 
 	public String getOutagesLinkLabel() {
@@ -272,58 +279,370 @@ public class PreLoginPage extends HomePage {
 		log.info("Forgot Username Label {}: " + label);
 		return label;
 	}
-	
+
 	@FindBy(css = "a[globalize='ML_Default_Msg_LearnTips']")
 	private WebElement lnk_waystosave;
 
 	public String getWaysToSaveLinkLabel() {
-		String label = getText(lnk_waystosave).replace("monetization_on","").trim();
+		String label = getText(lnk_waystosave).replace("monetization_on", "").trim();
 		log.info("Forgot Username Label {}: " + label);
 		return label;
 	}
-	
+
 	public void clickWaysToSaveLnk() {
 		log.info("Clicking the payment location button.");
 		click(lnk_waystosave);
 		log.info("contact us button clicked successfully.");
 	}
 	
+	@FindBy(css = "#form1 > section.drHeading > div > div > div > div > div > div > button")
+	private WebElement drop_acctype;
+
+	public void clickAccTypeDrpDwn() {
+		log.info("Clicking the payment location button.");
+		click(drop_acctype);
+		log.info("account type drop-down clicked successfully.");
+	}
+	
+	@FindBy(css = "#form1 > section.drHeading > div > div > div > div > div > div > ul > li:nth-child(1)")
+	private WebElement opt_All;
+
+	public String getAllOptsLabel() {
+		String label = getText(opt_All);
+		log.info("All Options Label {}: " + label);
+		return label;
+	}
+	
+	@FindBy(css = "#form1 > section.drHeading > div > div > div > div > div > div > ul > li:nth-child(2)")
+	private WebElement opt_Res;
+
+	public String getResOptLabel() {
+		String label = getText(opt_Res);
+		log.info("Residential Option Label {}: " + label);
+		return label;
+	}
+	
+	@FindBy(css = "#form1 > section.drHeading > div > div > div > div > div > div > ul > li:nth-child(3)")
+	private WebElement opt_Comm;
+
+	public String getCommOptLabel() {
+		String label = getText(opt_Comm);
+		log.info("Commercial Option Label {}: " + label);
+		return label;
+	}
+	
+	@FindBy(css = "#form1 > section.drHeading > div > div > div > div > div > div > ul > li:nth-child(4)")
+	private WebElement opt_Multi;
+
+	public String getMultiOptLabel() {
+		String label = getText(opt_Multi);
+		log.info("Multi-Family Option Label {}: " + label);
+		return label;
+	}
+	
+	@FindBy(css = "#imgsrcId_6")
+	private WebElement img_Rebates;
+
+	public String getRebateImg() {
+		String label = getText(img_Rebates);
+		log.info("Rebates Image {}: " + label);
+		return label;
+	}
+	
+	@FindBy(css = "#title_6")
+	private WebElement title_Rebates;
+
+	public String getRebateTitleLabel() {
+		String label = getText(title_Rebates);
+		log.info("Rebates Title Label {}: " + label);
+		return label;
+	}
+	
+	@FindBy(css = "#description_6")
+	private WebElement description_Rebates;
+
+	public String getRebateDescptLabel() {
+		String label = getText(description_Rebates);
+		log.info("Rebates description Label {}: " + label);
+		return label;
+	}
+	
+	@FindBy(css = "#dvrebateCardData > div:nth-child(2) > div > div.mid_section > a")
+	private WebElement readmore_Rebates;
+
+	public String getRebateReadMoreLabel() {
+		String label = getText(readmore_Rebates);
+		log.info("Rebates Read more Label {}: " + label);
+		return label;
+	}
+	
+	public void clickRebatesReadMore() {
+		click(readmore_Rebates);
+		log.info("Rebates Read More option clicked {}.");
+	}
+	
+	@FindBy(css = "#dvrebateCardData > div:nth-child(2) > div > div.bottom_efficiency > h4 > b:nth-child(2)")
+	private WebElement views_Rebates;
+
+	public String getRebateViewLabel() {
+		String label = getText(views_Rebates);
+		log.info("Rebates Views Label {}: " + label);
+		return label;
+	}
+	
+	@FindBy(css = "#dvrebateCardData > div:nth-child(2) > div > div.bottom_efficiency > h4 > b:nth-child(1)")
+	private WebElement likes_Rebates;
+
+	public String getRebateLikeLabel() {
+		String label = getText(likes_Rebates);
+		log.info("Rebates likes Label {}: " + label);
+		return label;
+	}
+	
+	@FindBy(xpath = "/html/body/form/section[2]/div/div[1]/div[3]/div[3]/div/div[1]/h5/span")
+	private WebElement title_RebatesReadmore;
+
+	public String getRebateReadmoreTitleLabel() {
+		String label = getText(title_RebatesReadmore);
+		log.info("Rebates Title Label {}: " + label);
+		return label;
+	}
+	
+	@FindBy(xpath = "/html/body/form/section[2]/div/div[1]/div[3]/div[3]/div/div[1]/div[3]/ul/li[3]/text()")
+	private WebElement likes_RebatesReadmore;
+
+	public String getRebateReadmoreLikeLabel() {
+		String label = getText(likes_RebatesReadmore);
+		log.info("Rebates likes Label {}: " + label);
+		return label;
+	}
+	
+	@FindBy(css = "#imgsrcId_2")
+	private WebElement img_Programs;
+
+	public String getProgramImg() {
+		String label = getText(img_Programs);
+		log.info("Programs Image {}: " + label);
+		return label;
+	}
+	
+	@FindBy(css = "#title_2")
+	private WebElement title_Programs;
+
+	public String getProgramTitleLabel() {
+		String label = getText(title_Programs);
+		log.info("Programs Title Label {}: " + label);
+		return label;
+	}
+	
+	@FindBy(css = "#description_2")
+	private WebElement description_Programs;
+
+	public String getProgramDescptLabel() {
+		String label = getText(description_Programs);
+		log.info("Programs description Label {}: " + label);
+		return label;
+	}
+	
+	@FindBy(css = "#dvProgramCardData > div:nth-child(1) > div > div.mid_section > a")
+	private WebElement readmore_Programs;
+
+	public String getProgramReadMoreLabel() {
+		String label = getText(readmore_Programs);
+		log.info("Programs Read more Label {}: " + label);
+		return label;
+	}
+	
+	@FindBy(css = "#dvProgramCardData > div:nth-child(1) > div > div.bottom_efficiency > h4 > b:nth-child(2)")
+	private WebElement views_Programs;
+
+	public String getProgramViewLabel() {
+		String label = getText(views_Programs);
+		log.info("Programs Views Label {}: " + label);
+		return label;
+	}
+	
+	@FindBy(css = "#dvProgramCardData > div:nth-child(1) > div > div.bottom_efficiency > h4 > b:nth-child(1)")
+	private WebElement likes_Programs;
+
+	public String getProgramLikeLabel() {
+		String label = getText(likes_Programs);
+		log.info("Programs likes Label {}: " + label);
+		return label;
+	}
+	
+	@FindBy(css = "#imgsrcId_4")
+	private WebElement img_SavingTips;
+
+	public String getSavingsTipImg() {
+		String label = getText(img_SavingTips);
+		log.info("Savings Tip Image {}: " + label);
+		return label;
+	}
+	
+	@FindBy(css = "#title_4")
+	private WebElement title_SavingsTips;
+
+	public String getSavingsTipTitleLabel() {
+		String label = getText(title_SavingsTips);
+		log.info("Savings Tip Title Label {}: " + label);
+		return label;
+	}
+	
+	@FindBy(css = "#description_4")
+	private WebElement description_SavingsTip;
+
+	public String getSavingsTipDescptLabel() {
+		String label = getText(description_SavingsTip);
+		log.info("Savings Tip description Label {}: " + label);
+		return label;
+	}
+	
+	@FindBy(css = "#dvSavingTipCardData > div:nth-child(1) > div > div.mid_section > a")
+	private WebElement readmore_SavingsTips;
+
+	public String getSavingsTipReadMoreLabel() {
+		String label = getText(readmore_SavingsTips);
+		log.info("Savings Tips Read more Label {}: " + label);
+		return label;
+	}
+	
+	@FindBy(css = "#dvSavingTipCardData > div:nth-child(1) > div > div.bottom_efficiency > h4 > b:nth-child(2)")
+	private WebElement views_SavingsTip;
+
+	public String getSavingsTipViewLabel() {
+		String label = getText(views_SavingsTip);
+		log.info("Savings Tip Views Label {}: " + label);
+		return label;
+	}
+	
+	@FindBy(css = "#dvSavingTipCardData > div:nth-child(1) > div > div.bottom_efficiency > h4 > b:nth-child(1)")
+	private WebElement likes_SavingsTip;
+
+	public String getSavingsTipLikeLabel() {
+		String label = getText(likes_SavingsTip);
+		log.info("Savings Tip likes Label {}: " + label);
+		return label;
+	}
+	
+	@FindBy(css = "#imgsrcId_1")
+	private WebElement img_EducationalTips;
+
+	public String getEducationalTipImg() {
+		String label = getText(img_EducationalTips);
+		log.info("Educational Tip Image {}: " + label);
+		return label;
+	}
+	
+	@FindBy(css = "#title_1")
+	private WebElement title_EuducationalTips;
+
+	public String getEducationalTipTitleLabel() {
+		String label = getText(title_EuducationalTips);
+		log.info("Educational Tip Title Label {}: " + label);
+		return label;
+	}
+	
+	@FindBy(css = "#description_1")
+	private WebElement description_EducationalTip;
+
+	public String getEducationalTipDescptLabel() {
+		String label = getText(description_EducationalTip);
+		log.info("Educational Tip description Label {}: " + label);
+		return label;
+	}
+	
+	@FindBy(css = "#dvEducationTipCardData > div:nth-child(1) > div > div.mid_section > a")
+	private WebElement readmore_EducationalTips;
+
+	public String getEducationalTipReadMoreLabel() {
+		String label = getText(readmore_EducationalTips);
+		log.info("Educational Tips Read more Label {}: " + label);
+		return label;
+	}
+	
+	@FindBy(css = "#dvEducationTipCardData > div:nth-child(1) > div > div.bottom_efficiency > h4 > b:nth-child(2)")
+	private WebElement views_EducationalTip;
+
+	public String getEducationalTipViewLabel() {
+		String label = getText(views_EducationalTip);
+		log.info("Educational Tip Views Label {}: " + label);
+		return label;
+	}
+	
+	@FindBy(css = "#dvEducationTipCardData > div:nth-child(1) > div > div.bottom_efficiency > h4 > b:nth-child(1)")
+	private WebElement likes_EducationalTip;
+
+	public String getEducationalTipLikeLabel() {
+		String label = getText(likes_EducationalTip);
+		log.info("Educational Tip likes Label {}: " + label);
+		return label;
+	}
+	
+	@FindBy(css = "#dvDataFound")
+	private WebElement disclaimer_WaysToSave;
+	
+	public String getDisclaimer() {
+		scrollToElement(disclaimer_WaysToSave);
+		String label = getText(disclaimer_WaysToSave);
+		log.info("Ways To Save Disclaimer Label {}: " + label);
+		return label;
+	}
+
 	@FindBy(xpath = "//*[@id=\"efficiencyMenubar\"]/li[1]/a")
 	private WebElement lnk_rebates;
-	
+
 	public String getRebatesLabel() {
 		String label = getText(lnk_rebates);
 		log.info("Forgot Username Label {}: " + label);
 		return label;
 	}
-	
+
 	@FindBy(xpath = "//*[@id=\"efficiencyMenubar\"]/li[2]/a")
 	private WebElement lnk_programs;
-	
+
 	public String getProgramsLabel() {
 		String label = getText(lnk_programs);
 		log.info("Forgot Username Label {}: " + label);
 		return label;
 	}
 	
+	public void clickProgramsOptn() {
+		log.info("Clicking the Programs Option.");
+		click(lnk_programs);
+		log.info("programs option clicked successfully.");
+	}
+
 	@FindBy(xpath = "//*[@id=\"efficiencyMenubar\"]/li[3]/a")
 	private WebElement lnk_savings;
-	
+
 	public String getSavingsLabel() {
 		String label = getText(lnk_savings);
 		log.info("Forgot Username Label {}: " + label);
 		return label;
 	}
 	
+	public void clickSavingsTipOptn() {
+		log.info("Clicking the Savings Tip Option.");
+		click(lnk_savings);
+		log.info("Savings Tip option clicked successfully.");
+	}
+
 	@FindBy(xpath = "//*[@id=\"efficiencyMenubar\"]/li[4]/a")
 	private WebElement lnk_educational;
-	
+
 	public String getEducationalLabel() {
 		String label = getText(lnk_educational);
 		log.info("Forgot Username Label {}: " + label);
 		return label;
 	}
 	
+	public void clickEducationTipsOptn() {
+		log.info("Clicking the Education Tips Option.");
+		click(lnk_educational);
+		log.info("Education Tips option clicked successfully.");
+	}
+
 	@FindBy(xpath = "//*[@id=\"preloginPaymentLocationModule\"]")
 	private WebElement lnk_paymentlocations;
 
@@ -332,19 +651,19 @@ public class PreLoginPage extends HomePage {
 		log.info("Forgot Username Label {}: " + label);
 		return label;
 	}
-	
+
 	public void clickPaymentLocationsLnk() {
 		log.info("Clicking the payment location button.");
 		click(lnk_paymentlocations);
 		log.info("contact us button clicked successfully.");
 	}
-	
+
 	public void clickPaymentsLnk() {
 		log.info("Clicking the payment button.");
 		click(lnk_paybill);
 		log.info("contact us button clicked successfully.");
 	}
-	
+
 	@FindBy(css = "a[id='PreLoginContactUs']")
 	private WebElement lnk_contactus;
 
@@ -353,13 +672,13 @@ public class PreLoginPage extends HomePage {
 		log.info("Forgot Username Label {}: " + label);
 		return label;
 	}
-	
+
 	public void clickContactUsLnk() {
 		log.info("Clicking the contact us button.");
 		click(lnk_contactus);
 		log.info("contact us button clicked successfully.");
 	}
-	
+
 	@FindBy(css = "#idReportWaterLeak")
 	private WebElement lnk_reportleaks;
 
@@ -368,13 +687,13 @@ public class PreLoginPage extends HomePage {
 		log.info("Forgot Username Label {}: " + label);
 		return label;
 	}
-	
+
 	public void clickWaterLeakLnk() {
 		log.info("Clicking the contact us button.");
 		click(lnk_reportleaks);
 		log.info("contact us button clicked successfully.");
 	}
-	
+
 	@FindBy(xpath = "//*[@id=\"faqlink\"]/a")
 	private WebElement lnk_faqs;
 
@@ -383,7 +702,7 @@ public class PreLoginPage extends HomePage {
 		log.info("Forgot Username Label {}: " + label);
 		return label;
 	}
-	
+
 	@FindBy(className = "PreloginConnectMe")
 	private WebElement lnk_footercontactus;
 
@@ -392,7 +711,7 @@ public class PreLoginPage extends HomePage {
 		log.info("Forgot Username Label {}: " + label);
 		return label;
 	}
-	
+
 	@FindBy(className = "PreloginTnC")
 	private WebElement lnk_termsandconditions;
 
@@ -401,7 +720,7 @@ public class PreLoginPage extends HomePage {
 		log.info("Forgot Username Label {}: " + label);
 		return label;
 	}
-	
+
 	@FindBy(css = "#PreloginPrivacyPolicy")
 	private WebElement lnk_privacypolicy;
 
@@ -410,7 +729,7 @@ public class PreLoginPage extends HomePage {
 		log.info("Forgot Username Label {}: " + label);
 		return label;
 	}
-	
+
 	public Boolean isRememberMeChbChecked() {
 		log.info("Remember me checkbox visible status {}: " + chb_remember_me.isDisplayed());
 		return chb_remember_me.isDisplayed();
@@ -420,386 +739,383 @@ public class PreLoginPage extends HomePage {
 		check(chb_remember_me);
 		log.info("Remember me checkbox checked.");
 	}
-	
+
 	public void waitForUserNameFieldVisibility() {
 		waitForElementToBeVisible(txt_username);
 		log.info("Wait for username field to be displayed.");
 	}
-	
+
 	public String getPopulatedUsernameValue() {
 		log.info("Fetching the auto populated username.");
 		return getAttribute(txt_username, "value");
 	}
-	
-	
+
 	@FindBy(css = "select#ML_NCR_DDL_Topic")
-    private WebElement dropdown;
-	
+	private WebElement dropdown;
+
 	public boolean selectlstConnectMeOptions(String option) {
-    	boolean b = true;
-        selectByVisibleText(dropdown, option);
-        log.info("lstConnectMeOptions populated successfully.");
-        return b;   
-    }
-	
+		boolean b = true;
+		selectByVisibleText(dropdown, option);
+		log.info("lstConnectMeOptions populated successfully.");
+		return b;
+	}
+
 	@FindBy(xpath = "//label[text()='Account Number']/..//input")
-    private WebElement  txtServiceAccNo;
-    
-    public boolean isServiceAccNoTxtVisible() {
-        log.info("Checking that the Service Acc No field is visible on the Contact Us page.");
-        return isElementVisible(txtServiceAccNo);
-    }
-    
-    public void populateServiceAccNo(String accountNo) {
-        log.info("Subject {} :" + accountNo);
-        sendKeys(txtServiceAccNo, accountNo);
-        log.info("Subject populated successfully.");
-    }
-    
-    @FindBy(css = "input[globalize='ML_Master_lbl_CustName']")
-    private WebElement txtContactUsCustomerName;
-    
-    public boolean isCustomerNameTxtVisible() {
-        log.info("Checking that the Customer Name field is visible on the Contact Us page.");
-        return isElementVisible(txtContactUsCustomerName);
-    }
-    
-    public void populateCustomerName(String customerName) {
-        log.info("Customer {} :" + customerName);
-        sendKeys(txtContactUsCustomerName, customerName);
-        log.info("Customer populated successfully.");
-    }
-    
-    @FindBy(xpath = "//label[text()='Email Address']/..//input")
-    private WebElement txtEmailAddress;
-    
-    public boolean isEmailAddressTxtVisible() {
-        log.info("Checking that the Email Address field is visible on the Contact Us page.");
-        return isElementVisible(txtEmailAddress);
-    }
-    
-    public void populateEmailAddress(String emailAddress) {
-        log.info("Email Address {} :" + emailAddress);
-        sendKeys(txtEmailAddress, emailAddress);
-        log.info("Email Address populated successfully.");
-    }
-    
-    
-    @FindBy(css = "[id='FileUpload1']")
-    private WebElement btnChooseFile;
-    
-    public boolean isChooseFileBtnVisible() {
-    	log.info("Choose File Button Status :" + btnChooseFile.isDisplayed());
-    	return btnChooseFile.isDisplayed();
-    }
-    
-    public void addAttachmentToChooseFile(String value) {
-        sendKeysWithoutCheckingVisibility(btnChooseFile, value);
-        log.info("Choose File Button added successfully with File Value " + value);
-        ExtentLogger.logInfo("Choose File Button added successfully with File Value " + value);
-    }
-    
-    @FindBy(css = ".Subject.input_effect")
-    private WebElement  txtSubject;
-    
-    public boolean istxtSubjectTxtVisible() {
-        log.info("Checking that the Subject field is visible on the Contact Us page.");
-        return isElementVisible(txtSubject);
-    }
-    
-    public void populateSubject(String subject) {
-        log.info("Subject {} :" + subject);
-        sendKeys(txtSubject, subject);
-        log.info("Subject populated successfully.");
-    }
-    
-    @FindBy(xpath = "//label[contains(text(),'Comments')]/..//textarea[@globalize='ML_CONNECTME_Lbl_Comments']")
-    private WebElement txtComments;
-    
-    public boolean isCommentsTxtVisible() {
-        log.info("Checking that the Comments field is visible on the Contact Us page.");
-        return isElementVisible(txtComments);
-    }
-    
-    public void populateComments(String Comments) {
-        log.info("Subject {} :" + Comments);
-        sendKeys(txtComments, Comments);
-        log.info("Comments populated successfully.");
-    }
-    
-    @FindBy(css = "[id='btnNext']")
-    private WebElement btnContactUsNext;
-    
-    public void btnClickNext() {
-    	click(btnContactUsNext);
-    	log.info("Next Button clicked {}.");
-    }
-    
-    @FindBys(@FindBy(css = "#dvPreviewForm .column"))
-    private List<WebElement> lbl_PreviewYourFormColumn;
-    
+	private WebElement txtServiceAccNo;
 
-    public List<WebElement> listPreviewYourFormColumn() {
-        return lbl_PreviewYourFormColumn;
-    }
-    
-    @FindBys(@FindBy(css = "#dvPreviewForm .value"))
-    private List<WebElement> lbl_PreviewYourFormValue;
-    
-    public List<WebElement> listPreviewYourFormValue() {
-        return lbl_PreviewYourFormValue;
-    }
-    
-    @FindBy(css = "input#BtnSubmitCommentNew")
-    private WebElement btnContactUsSubmit;
-    
-    public void btnClickSubmit() {
-    	click(btnContactUsSubmit);
-    	log.info("Submit Button clicked {}.");
-    }
-    
-    public boolean isSubmitBtnVisible() {
-    	log.info("Submit Button Status :" + btnContactUsSubmit.isDisplayed());
-    	return btnContactUsSubmit.isDisplayed();
-    }
-    
-    @FindBy(css = ".modal-body #txtBody")
-    private WebElement txtPopupThankYou;
-    
-    public boolean isLblPopupThankYouVisible() {
-    	log.info("Thank you lbl Status is:" + txtPopupThankYou.isDisplayed());
-    	return txtPopupThankYou.isDisplayed();
-    }
-    
-    
-    public String getlblPopupThankYou() {
-        log.info("Fetching Thank You lbl");
-        String label = getText(txtPopupThankYou);
-        log.info("Thank You lbl is {}: " + label);
-        return label;
-    }
-    
-    @FindBy(css = "[id='btnok']")
-    private WebElement btnContactUsPopupOk;
-    
-    public void clickContactUsPopupOk() {
-    	click(btnContactUsPopupOk);
-    	log.info("Ok Button clicked {}.");
-    }
-    
-    @FindBy(xpath = "(//span[@title='Contact Us'])[1]")
-    private WebElement lbl_PageHeaderPost;
-    
-    public boolean isPageHeaderPostVisible() {
-    	log.info("Page Header Post visibility Status :" + lbl_PageHeaderPost.isDisplayed());
-    	return lbl_PageHeaderPost.isDisplayed();
-    }
-    
-    
-    @FindBy(css = "ul #social_newtb")
-    private WebElement lnkSocialMedia;
-    
-    public boolean isSocialMediaVisible() {
-    	log.info("Social Media visibility Status :" + lnkSocialMedia.isDisplayed());
-    	return lnkSocialMedia.isDisplayed();
-    }
-    
-    
-    @FindBy(css = ".icon_contact.active a")
-    private WebElement lnkContactus;
-    
-    public boolean isContactusVisible() {
-    	log.info("Contact Us visibility Status :" + lnkContactus.isDisplayed());
-    	return lnkContactus.isDisplayed();
-    }
-    
-    @FindBy(css = "[globalize='ML_Track_Request']")
-    private WebElement Btn_TrackRequest;
-    
-    public String getTrackRequest() {
-        log.info("Fetching Track Request");
-        String label = getText(Btn_TrackRequest);
-        log.info("Track Request is {}: " + label);
-        return label;
-    }
-    
-    public boolean isTrackRequestVisible() {
-    	log.info("Track Request Status :" + Btn_TrackRequest.isDisplayed());
-    	return Btn_TrackRequest.isDisplayed();
-    }
-    
-    @FindBy(css = ".icon_SavedForms a")
-    private WebElement lnk_SavedForms;
-    
-    public void clickSavedForms() {
-        click(lnk_SavedForms);
-        log.info("Saved Forms clicked.");
-    }
-  
-    public boolean isSavedFormVisible() {
-    	log.info("Page Active Status :" + lnk_SavedForms.isDisplayed());
-    	return lnk_SavedForms.isDisplayed();
-    }
-    
-    public boolean isNextBtnVisible() {
-    	log.info("Next Button Status :" + btnContactUsNext.isDisplayed());
-    	return btnContactUsNext.isDisplayed();
-    }
-    
-    @FindBy(css = "#lblCustomer")
-    private WebElement lbl_Customer;
-    
-    public String getCustomerlbl() {
-        log.info("Fetching Customer lbl");
-        String label = getText(lbl_Customer);
-        log.info("Customer lbl is {}: " + label);
-        return label;
-    }
-    
-    public boolean isCustomerlblVisible() {
-    	log.info("Customer lbl Status :" + lbl_Customer.isDisplayed());
-    	return lbl_Customer.isDisplayed();
-    }
-    
-    @FindBys(@FindBy(css = "select#ML_NCR_DDL_Topic"))
-    private WebElement dropdownOptions;
-    
-    public List<String> getdropdownOptions() {
-        log.info("Fetching Post login Customer Service Contact No");
-        List<String> dropdownList = getAllOptionsInListBox(dropdownOptions);
-        log.info("Post login Customer Service Contact No is {}: " + dropdownList);
-        return dropdownList;
-    } 
-    
-    //@FindBy(css = "#form2 > div.chatbot > a")
-    @FindBy(css = "#Footer_pnlChatbotSH > div > a")
+	public boolean isServiceAccNoTxtVisible() {
+		log.info("Checking that the Service Acc No field is visible on the Contact Us page.");
+		return isElementVisible(txtServiceAccNo);
+	}
 
-    private WebElement btnChatBox;
-    
-    public void clickChatBox() {
-        click(btnChatBox);
-    }
-	
-    @FindBy(css = ".helptext")
-    private WebElement headerChatBox;
-    
-    public boolean isChatBoxHeaderVisible() {
-    	return headerChatBox.isDisplayed();
-    }
-    public String getChatBoxHeader() {
+	public void populateServiceAccNo(String accountNo) {
+		log.info("Subject {} :" + accountNo);
+		sendKeys(txtServiceAccNo, accountNo);
+		log.info("Subject populated successfully.");
+	}
+
+	@FindBy(css = "input[globalize='ML_Master_lbl_CustName']")
+	private WebElement txtContactUsCustomerName;
+
+	public boolean isCustomerNameTxtVisible() {
+		log.info("Checking that the Customer Name field is visible on the Contact Us page.");
+		return isElementVisible(txtContactUsCustomerName);
+	}
+
+	public void populateCustomerName(String customerName) {
+		log.info("Customer {} :" + customerName);
+		sendKeys(txtContactUsCustomerName, customerName);
+		log.info("Customer populated successfully.");
+	}
+
+	@FindBy(xpath = "//label[text()='Email Address']/..//input")
+	private WebElement txtEmailAddress;
+
+	public boolean isEmailAddressTxtVisible() {
+		log.info("Checking that the Email Address field is visible on the Contact Us page.");
+		return isElementVisible(txtEmailAddress);
+	}
+
+	public void populateEmailAddress(String emailAddress) {
+		log.info("Email Address {} :" + emailAddress);
+		sendKeys(txtEmailAddress, emailAddress);
+		log.info("Email Address populated successfully.");
+	}
+
+	@FindBy(css = "[id='FileUpload1']")
+	private WebElement btnChooseFile;
+
+	public boolean isChooseFileBtnVisible() {
+		log.info("Choose File Button Status :" + btnChooseFile.isDisplayed());
+		return btnChooseFile.isDisplayed();
+	}
+
+	public void addAttachmentToChooseFile(String value) {
+		sendKeysWithoutCheckingVisibility(btnChooseFile, value);
+		log.info("Choose File Button added successfully with File Value " + value);
+		ExtentLogger.logInfo("Choose File Button added successfully with File Value " + value);
+	}
+
+	@FindBy(css = ".Subject.input_effect")
+	private WebElement txtSubject;
+
+	public boolean istxtSubjectTxtVisible() {
+		log.info("Checking that the Subject field is visible on the Contact Us page.");
+		return isElementVisible(txtSubject);
+	}
+
+	public void populateSubject(String subject) {
+		log.info("Subject {} :" + subject);
+		sendKeys(txtSubject, subject);
+		log.info("Subject populated successfully.");
+	}
+
+	@FindBy(xpath = "//label[contains(text(),'Comments')]/..//textarea[@globalize='ML_CONNECTME_Lbl_Comments']")
+	private WebElement txtComments;
+
+	public boolean isCommentsTxtVisible() {
+		log.info("Checking that the Comments field is visible on the Contact Us page.");
+		return isElementVisible(txtComments);
+	}
+
+	public void populateComments(String Comments) {
+		log.info("Subject {} :" + Comments);
+		sendKeys(txtComments, Comments);
+		log.info("Comments populated successfully.");
+	}
+
+	@FindBy(css = "[id='btnNext']")
+	private WebElement btnContactUsNext;
+
+	public void btnClickNext() {
+		click(btnContactUsNext);
+		log.info("Next Button clicked {}.");
+	}
+
+	@FindBys(@FindBy(css = "#dvPreviewForm .column"))
+	private List<WebElement> lbl_PreviewYourFormColumn;
+
+	public List<WebElement> listPreviewYourFormColumn() {
+		return lbl_PreviewYourFormColumn;
+	}
+
+	@FindBys(@FindBy(css = "#dvPreviewForm .value"))
+	private List<WebElement> lbl_PreviewYourFormValue;
+
+	public List<WebElement> listPreviewYourFormValue() {
+		return lbl_PreviewYourFormValue;
+	}
+
+	@FindBy(css = "input#BtnSubmitCommentNew")
+	private WebElement btnContactUsSubmit;
+
+	public void btnClickSubmit() {
+		click(btnContactUsSubmit);
+		log.info("Submit Button clicked {}.");
+	}
+
+	public boolean isSubmitBtnVisible() {
+		log.info("Submit Button Status :" + btnContactUsSubmit.isDisplayed());
+		return btnContactUsSubmit.isDisplayed();
+	}
+
+	@FindBy(css = ".modal-body #txtBody")
+	private WebElement txtPopupThankYou;
+
+	public boolean isLblPopupThankYouVisible() {
+		log.info("Thank you lbl Status is:" + txtPopupThankYou.isDisplayed());
+		return txtPopupThankYou.isDisplayed();
+	}
+
+	public String getlblPopupThankYou() {
+		log.info("Fetching Thank You lbl");
+		String label = getText(txtPopupThankYou);
+		log.info("Thank You lbl is {}: " + label);
+		return label;
+	}
+
+	@FindBy(css = "[id='btnok']")
+	private WebElement btnContactUsPopupOk;
+
+	public void clickContactUsPopupOk() {
+		click(btnContactUsPopupOk);
+		log.info("Ok Button clicked {}.");
+	}
+
+	@FindBy(xpath = "(//span[@title='Contact Us'])[1]")
+	private WebElement lbl_PageHeaderPost;
+
+	public boolean isPageHeaderPostVisible() {
+		log.info("Page Header Post visibility Status :" + lbl_PageHeaderPost.isDisplayed());
+		return lbl_PageHeaderPost.isDisplayed();
+	}
+
+	@FindBy(css = "ul #social_newtb")
+	private WebElement lnkSocialMedia;
+
+	public boolean isSocialMediaVisible() {
+		log.info("Social Media visibility Status :" + lnkSocialMedia.isDisplayed());
+		return lnkSocialMedia.isDisplayed();
+	}
+
+	@FindBy(css = ".icon_contact.active a")
+	private WebElement lnkContactus;
+
+	public boolean isContactusVisible() {
+		log.info("Contact Us visibility Status :" + lnkContactus.isDisplayed());
+		return lnkContactus.isDisplayed();
+	}
+
+	@FindBy(css = "[globalize='ML_Track_Request']")
+	private WebElement Btn_TrackRequest;
+
+	public String getTrackRequest() {
+		log.info("Fetching Track Request");
+		String label = getText(Btn_TrackRequest);
+		log.info("Track Request is {}: " + label);
+		return label;
+	}
+
+	public boolean isTrackRequestVisible() {
+		log.info("Track Request Status :" + Btn_TrackRequest.isDisplayed());
+		return Btn_TrackRequest.isDisplayed();
+	}
+
+	@FindBy(css = ".icon_SavedForms a")
+	private WebElement lnk_SavedForms;
+
+	public void clickSavedForms() {
+		click(lnk_SavedForms);
+		log.info("Saved Forms clicked.");
+	}
+
+	public boolean isSavedFormVisible() {
+		log.info("Page Active Status :" + lnk_SavedForms.isDisplayed());
+		return lnk_SavedForms.isDisplayed();
+	}
+
+	public boolean isNextBtnVisible() {
+		log.info("Next Button Status :" + btnContactUsNext.isDisplayed());
+		return btnContactUsNext.isDisplayed();
+	}
+
+	@FindBy(css = "#lblCustomer")
+	private WebElement lbl_Customer;
+
+	public String getCustomerlbl() {
+		log.info("Fetching Customer lbl");
+		String label = getText(lbl_Customer);
+		log.info("Customer lbl is {}: " + label);
+		return label;
+	}
+
+	public boolean isCustomerlblVisible() {
+		log.info("Customer lbl Status :" + lbl_Customer.isDisplayed());
+		return lbl_Customer.isDisplayed();
+	}
+
+	@FindBys(@FindBy(css = "select#ML_NCR_DDL_Topic"))
+	private WebElement dropdownOptions;
+
+	public List<String> getdropdownOptions() {
+		log.info("Fetching Post login Customer Service Contact No");
+		List<String> dropdownList = getAllOptionsInListBox(dropdownOptions);
+		log.info("Post login Customer Service Contact No is {}: " + dropdownList);
+		return dropdownList;
+	}
+
+	// @FindBy(css = "#form2 > div.chatbot > a")
+	@FindBy(css = "#Footer_pnlChatbotSH > div > a")
+
+	private WebElement btnChatBox;
+
+	public void clickChatBox() {
+		click(btnChatBox);
+	}
+
+	@FindBy(css = ".helptext")
+	private WebElement headerChatBox;
+
+	public boolean isChatBoxHeaderVisible() {
+		return headerChatBox.isDisplayed();
+	}
+
+	public String getChatBoxHeader() {
 		String label = getText(headerChatBox);
 		return label;
 	}
-    @FindBy(css = ".logoarea")
-    private WebElement logoSCMChatBox;
-    
-    public boolean isScmLOgoChatBoxVisible() {
-    	return logoSCMChatBox.isDisplayed();
-    }
-    
-    @FindBy(css = ".webchat__send-box__main")
-    private WebElement txtBoxChatBox;
-    
-    public boolean isChatTextBoxVisible() {
-    	return txtBoxChatBox.isDisplayed();
-    }
-    
-    public void clickChatTextBox() {
-        click(txtBoxChatBox);
-    }
-    
-    public void populateTxtMessageBody(String Text) {
-    	log.info("Waiting For Visiblity status of MessageBody Text Feild");
-    	waitForElementToBeVisible(txtBoxChatBox);
-    	log.info("Visiblity status of MessageBody Text Feild:"+ txtBoxChatBox.isDisplayed());
-    	log.info("Populating Zip Code feild with" + Text);
-      	sendKeys(txtBoxChatBox,Text);
-    	}
-    
-    public WebElement elementTextMessageBody() {
-       	log.info("Waiting For Visiblity status of Confirm Routing Number Text Feild");
-    	waitForElementToBeVisible(txtBoxChatBox);
-    	log.info("Visiblity status of Confirm Routing Number Text Feild:"+ txtBoxChatBox.isDisplayed());
-    	return txtBoxChatBox;
-    	}
-    
-    @FindBy(xpath = "//textarea[@data-id=\"webchat-sendbox-input\" and @placeholder = \"Type your message\"]")
-    private WebElement txtBoxChattxt;
-    
-    public void enterDataInChatTextBox(String datafield) {
-    	pause(10000);
-    	waitForElementToBeVisible(txtBoxChattxt);
-    	sendKeys(txtBoxChattxt, datafield);
+
+	@FindBy(css = ".logoarea")
+	private WebElement logoSCMChatBox;
+
+	public boolean isScmLOgoChatBoxVisible() {
+		return logoSCMChatBox.isDisplayed();
+	}
+
+	@FindBy(css = ".webchat__send-box__main")
+	private WebElement txtBoxChatBox;
+
+	public boolean isChatTextBoxVisible() {
+		return txtBoxChatBox.isDisplayed();
+	}
+
+	public void clickChatTextBox() {
+		click(txtBoxChatBox);
+	}
+
+	public void populateTxtMessageBody(String Text) {
+		log.info("Waiting For Visiblity status of MessageBody Text Feild");
+		waitForElementToBeVisible(txtBoxChatBox);
+		log.info("Visiblity status of MessageBody Text Feild:" + txtBoxChatBox.isDisplayed());
+		log.info("Populating Zip Code feild with" + Text);
+		sendKeys(txtBoxChatBox, Text);
+	}
+
+	public WebElement elementTextMessageBody() {
+		log.info("Waiting For Visiblity status of Confirm Routing Number Text Feild");
+		waitForElementToBeVisible(txtBoxChatBox);
+		log.info("Visiblity status of Confirm Routing Number Text Feild:" + txtBoxChatBox.isDisplayed());
+		return txtBoxChatBox;
+	}
+
+	@FindBy(xpath = "//textarea[@data-id=\"webchat-sendbox-input\" and @placeholder = \"Type your message\"]")
+	private WebElement txtBoxChattxt;
+
+	public void enterDataInChatTextBox(String datafield) {
+		pause(10000);
+		waitForElementToBeVisible(txtBoxChattxt);
+		sendKeys(txtBoxChattxt, datafield);
 		log.info("Entering data in thdo you have solar panels field.");
-    }
-    
-    @FindBy(css = "button[title=\"Send\"]")
-    private WebElement btnsend;
-    
-    public boolean isChatTextSendButtonVisible() {
-    	return btnsend.isDisplayed();
-    }
-    public void clickSendBtn() {
-        click(btnsend);
-    }
-    
-    @FindBy(css = ".endchatme")
-    private WebElement btnendchat;
-    
-    public void clickEndChatBtn() {
-        click(btnendchat);
-    }
-    
-    @FindBy(css = ".cnfrmchat")
-    private WebElement btncnfrmchat;
-    
-    public void clickConfirmEndChatBtn() {
-        click(btncnfrmchat);
-    }
-    
-    public Boolean isSignOutPage(String url, String title) {
-        Boolean isSignOutPage = false;
-        log.info("Checking that the current page is login page.");
-        if (getCurrentUrl().contains(url.toLowerCase()) && getCurrentTitle().equalsIgnoreCase(title))
-            isSignOutPage = true;
-        log.info("The current page is login page {}: " + isSignOutPage);
-        return isSignOutPage;
-    }
-    
-    @FindBy(css = ".banner_logged_out h1")
-    private WebElement lbl_you_signed_out;
+	}
 
-    public String getSignOutSuccessfullyLbl() {
-        return getText(lbl_you_signed_out);
-    }
+	@FindBy(css = "button[title=\"Send\"]")
+	private WebElement btnsend;
 
-    public void waitForSignOutSuccessLbl() {
-        waitForElementToBeVisible(lbl_you_signed_out);
-    }
-    
-    @FindBy(css = "a[globalize=ML_signout_txt_signin]")
-    private WebElement btn_sign_in_again;
+	public boolean isChatTextSendButtonVisible() {
+		return btnsend.isDisplayed();
+	}
 
-    public void clickSignInAgainBtn() {
-        click(btn_sign_in_again);
-        log.info("Sign in again button clicked.");
-    }
-    
-    @FindBy(css = "#dropdownMenuButton")
+	public void clickSendBtn() {
+		click(btnsend);
+	}
+
+	@FindBy(css = ".endchatme")
+	private WebElement btnendchat;
+
+	public void clickEndChatBtn() {
+		click(btnendchat);
+	}
+
+	@FindBy(css = ".cnfrmchat")
+	private WebElement btncnfrmchat;
+
+	public void clickConfirmEndChatBtn() {
+		click(btncnfrmchat);
+	}
+
+	public Boolean isSignOutPage(String url, String title) {
+		Boolean isSignOutPage = false;
+		log.info("Checking that the current page is login page.");
+		if (getCurrentUrl().contains(url.toLowerCase()) && getCurrentTitle().equalsIgnoreCase(title))
+			isSignOutPage = true;
+		log.info("The current page is login page {}: " + isSignOutPage);
+		return isSignOutPage;
+	}
+
+	@FindBy(css = ".banner_logged_out h1")
+	private WebElement lbl_you_signed_out;
+
+	public String getSignOutSuccessfullyLbl() {
+		return getText(lbl_you_signed_out);
+	}
+
+	public void waitForSignOutSuccessLbl() {
+		waitForElementToBeVisible(lbl_you_signed_out);
+	}
+
+	@FindBy(css = "a[globalize=ML_signout_txt_signin]")
+	private WebElement btn_sign_in_again;
+
+	public void clickSignInAgainBtn() {
+		click(btn_sign_in_again);
+		log.info("Sign in again button clicked.");
+	}
+
+	@FindBy(css = "#dropdownMenuButton")
 	private WebElement img_profile_icon;
 
 	public void clickImageProfileIco() {
 		click(img_profile_icon);
 		log.info("Image profile icon clicked {}.");
 	}
-	
+
 	@FindBy(css = "button.userbtn.logout_header")
 	private WebElement lnk_sign_out;
 
 	public Boolean isSignOutLnkVisible() {
 		return lnk_sign_out.isDisplayed();
 	}
-	
+
 	public String getSignOutLinkLabel() {
 		return getText(lnk_sign_out);
 	}
@@ -808,5 +1124,33 @@ public class PreLoginPage extends HomePage {
 		pause(500);
 		click(lnk_sign_out);
 		log.info("Sign out button is clicked.");
+	}
+
+	@FindBy(css = "[id='LoginForgetPassword']")
+	private WebElement lnkFogotPassword;
+
+	public void clickForgotPasswordLnk() {
+		click(lnkFogotPassword);
+		log.info("Forgot password link clicked {}.");
+	}
+
+	@FindBy(xpath = "//*[@id=\"OuterHeader_homeAnchor\"]")
+	private WebElement iconHome;
+
+	public String geticonHomel() {
+		log.info("Fetching the Cancel button Text");
+		String label = getText(iconHome);
+		log.info("Cancel button Text is {}: " + label);
+		return label;
+	}
+
+	public boolean isHomeIcon() {
+		log.info("Cancel Button Status :" + iconHome.isDisplayed());
+		return iconHome.isDisplayed();
+	}
+
+	public void clickHomeIcon() {
+		click(iconHome);
+		log.info("Cancel Button clicked {}.");
 	}
 }
