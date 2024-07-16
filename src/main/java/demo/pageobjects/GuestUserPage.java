@@ -11,13 +11,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.FindBys;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
 import sew.ai.helpers.reporters.ExtentLogger;
 import sew.ai.pageObjects.scp.HomePage;
 
@@ -33,7 +26,7 @@ public class GuestUserPage extends HomePage {
 	private WebElement lnkGuestUserSideMenu;
 
 	@FindBy(css = "#lblMessage")
-	private WebElement labelExpiryUser; 
+	private WebElement labelExpiryUser;
 
 	public String getExpiryUserLabel() {
 		String label = getText(labelExpiryUser);
@@ -71,9 +64,9 @@ public class GuestUserPage extends HomePage {
 		if (isElementVisible(ddlAccountNumber)) {
 			Select dropdown = new Select(ddlAccountNumber);
 			dropdown.selectByVisibleText("2711765963");
-			log.info("'411001984953' option has been successfully chosen.");
+			log.info("'2711765963' option has been successfully chosen.");
 		} else {
-			log.error("Service Account Number dropdown is not visible. Cannot choose '411001984953' option.");
+			log.error("Service Account Number dropdown is not visible. Cannot choose '2711765963' option.");
 		}
 	}
 
@@ -354,6 +347,30 @@ public class GuestUserPage extends HomePage {
 		return listAccountNumberOpt;
 	}
 
+	// owner account
+
+	@FindBy(css = "#lbldhome0")
+	private WebElement accNo;
+
+	public String getAccountNo() {
+		log.info("Fetching the Street Popup App");
+		scrollToElement(accNo);
+		String label = getText(accNo);
+		log.info("Account No page header is {}: " + label);
+		return label;
+	}
+
+	@FindBy(css = "#ContentPlaceHolder1_ContentPlaceHolderBody_tblViewaccount > li > div > div.card_bottom_Sec > div > i.acc_txtlbl.roleno")
+	private WebElement role;
+
+	public String getRole() {
+		log.info("Fetching the Street Popup App");
+		scrollToElement(role);
+		String label = getText(role);
+		log.info("Account No page header is {}: " + label);
+		return label;
+	}
+
 	@FindBy(css = "#divinviteUsermodal > .modal-header button")
 	private WebElement btnCloseInviteUserPopup;
 
@@ -601,13 +618,12 @@ public class GuestUserPage extends HomePage {
 	@FindBy(css = "a.edit[title='Click to edit guest user']")
 	private WebElement editExistGuest;
 
-	
 	@FindBy(css = "a.edit[title='Click to edit guest user']")
 	private List<WebElement> btnEditGuestUser;
 
 	public List<WebElement> getListBtnEditGuestUser() {
 		return btnEditGuestUser;
-		
+
 	}
 
 	@FindBy(xpath = "//*[@id=\"divinvitePopup\"]/div/div[1]/div[2]/div[5]/div/div/label/span[3]/span")
@@ -650,25 +666,34 @@ public class GuestUserPage extends HomePage {
 		Boolean status = isElementVisible(guestuser);
 		return status;
 	}
-	
-	
+
 	public WebElement btnEditGuestuserIcon(String sAccountNumber) {
-		By btnResendInvitationIcon = By.xpath("//a[@class='edit' and contains(@accountno, '"+ sAccountNumber + "')]");
+		By btnResendInvitationIcon = By.xpath("//a[@class='edit' and contains(@accountno, '" + sAccountNumber + "')]");
 		return driver.findElement(btnResendInvitationIcon);
 	}
-	
-    @FindBy(xpath = "//a[@class='edit' and @data-target='#divinviteUser']")
-    private WebElement editGuestButton;
 
-    public void clickEditGuestButton() {
-    	pause(2000);
-    	click(editGuestButton);
-    }
+	@FindBy(xpath = "//a[@class='edit' and @data-target='#divinviteUser']")
+	private WebElement editGuestButton;
 
-    public By getEditGuestButtonLocator() {
-        return By.cssSelector("a.edit[title='Click to edit guest user']");
-        
-    }
-    
+	public void clickEditGuestButton() {
+		pause(2000);
+		click(editGuestButton);
+	}
+
+	public By getEditGuestButtonLocator() {
+		return By.cssSelector("a.edit[title='Click to edit guest user']");
+
+	}
+
+	@FindBys(@FindBy(css = "myprofile-card mdl-card mdl-shadow--2dp"))
+	private List<WebElement> myProfileCards;
+
+	public List<WebElement> getMyProfileListvalue() {
+		log.info("List for the my ProfileCards value {}: " + myProfileCards);
+		int count = myProfileCards.size();
+
+		return myProfileCards;
+
+	}
 
 }

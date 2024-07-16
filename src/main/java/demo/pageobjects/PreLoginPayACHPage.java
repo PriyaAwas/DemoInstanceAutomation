@@ -209,6 +209,7 @@ public class PreLoginPayACHPage extends HomePage {
 
 	public void clearPayAmtFld() {
 		log.info("clear the payment amount.");
+		payAmtTwoField.isDisplayed();
 		clear(payAmtTwoField);
 	}
 
@@ -650,4 +651,23 @@ public class PreLoginPayACHPage extends HomePage {
 		String label = getText(labelPaySuccessFinal);
 		return label;
 	}
+	
+	@FindBy(id = "st2_accountType")
+    private WebElement ddBankAccountType;
+
+    public boolean isDDBankAccountTypeVisible() {
+        scrollToElement(ddBankAccountType);
+        log.info("Waiting For Visiblity status of DD Bank Account Type Text Feild");
+        waitForElementToBeVisible(ddBankAccountType);
+        log.info("Visiblity status of DD Bank Account Type Text Feild:" + ddBankAccountType.isDisplayed());
+        return ddBankAccountType.isDisplayed();
+    }
+
+    public WebElement elementDDBankAccountType() {
+        log.info("Waiting For Visiblity status of DD Bank Account Type Text Feild");
+        waitForElementToBeVisible(confBnkAccNoField);
+        log.info("Visiblity status of Confirm Bank Account Number Text Feild:" + confBnkAccNoField.isDisplayed());
+        log.info("Returning the DD Bank account Type");
+        return ddBankAccountType;
+    }
 }

@@ -184,8 +184,8 @@ public class PreLoginTests extends TestRunner {
 		ExtentLogger.logInfo("Test Case execution for - verifyInvalidPaymentDetails - is Completed.");
 	}
 
-	@FrameworkAnnotations(author = { "Eujin" }, category = { CategoryType.SMOKE, CategoryType.SCP_WAYSTOSAVE })
-	@Test(priority = 3, description = "To verify the ways to save page.")
+	@FrameworkAnnotations(author = { "Neethu" }, category = { CategoryType.SMOKE, CategoryType.SCP_WAYSTOSAVE })
+	@Test(priority = 3, description = "To verify the ways to save page and it's sub-module.")
 	public void verifyWaysToSavePage() {
 		String[] tc_id = { "Pre_Login_12" };
 		ExtentLogger.logInfo(
@@ -200,4 +200,111 @@ public class PreLoginTests extends TestRunner {
 		ExtentLogger.logInfo("Test Case execution for - verifyWaysToSavePage - is Completed.");
 	}
 
+	@FrameworkAnnotations(author = { "Neethu" }, category = { CategoryType.SMOKE, CategoryType.SANITY })
+	@Test(priority = 3, description = "To verify maximum length for username and password field.")
+	public void verifyMaxValueOfUsernamePassFld() {
+		ExtentLogger.logInfo("Test Case execution for - verifyMaxValueOfUsernamePassFld");
+		SoftAssert softAssert = new SoftAssert();
+		// Init login steps
+		preLoginSteps = new PreLoginSteps(driver);
+		preLoginSteps.verifyMaxValueOfUsernamePassFld(softAssert);
+		// Assert all the soft verification.
+		softAssert.assertAll();
+		log.info("Test Case execution for - verifyMaxValueOfUsernamePassFld - is Completed.");
+		ExtentLogger.logInfo("Test Case execution for - verifyMaxValueOfUsernamePassFld - is Completed.");
+	}
+
+	@FrameworkAnnotations(author = { "Neethu" }, category = { CategoryType.SMOKE, CategoryType.SANITY })
+	@Test(priority = 3, description = "To verify home icon functionality")
+	public void verifyHomeIconFunction() {
+		ExtentLogger.logInfo("Test Case execution for - verifyHomeIconFunction");
+		SoftAssert softAssert = new SoftAssert();
+		// Init login steps
+		preLoginSteps = new PreLoginSteps(driver);
+		preLoginSteps.verifyHomeIconFunction(softAssert);
+		// Assert all the soft verification.
+		softAssert.assertAll();
+		log.info("Test Case execution for - verifyHomeIconFunction - is Completed.");
+		ExtentLogger.logInfo("Test Case execution for - verifyHomeIconFunction - is Completed.");
+	}
+	
+	@FrameworkAnnotations(author = { "Neethu" }, category = { CategoryType.SMOKE, CategoryType.SCP_WAYSTOSAVE })
+	@Test(priority = 3, description = "To verify the details on Rebates grid.")
+	public void verifyDetailsONRebatesGrid() {
+		String[] tc_id = { "Pre_Login_12" };
+		ExtentLogger.logInfo(
+				"Test Case execution for - verifyDetailsONRebatesGrid. Test Case id's -->  " + Arrays.toString(tc_id));
+		SoftAssert softAssert = new SoftAssert();
+		// Init login steps
+		preLoginSteps = new PreLoginSteps(driver);
+		preLoginSteps.verifyDetailsONRebatesGrid(softAssert);
+		// Assert all the soft verification.
+		softAssert.assertAll();
+		log.info("Test Case execution for - verifyDetailsONRebatesGrid - is Completed.");
+		ExtentLogger.logInfo("Test Case execution for - verifyDetailsONRebatesGrid - is Completed.");
+	}
+	
+	@FrameworkAnnotations(author = { "Neethu" }, category = { CategoryType.SMOKE, CategoryType.SCP_WAYSTOSAVE })
+	@Test(priority = 3, description = "To verify the disclaimer on Ways To Save page.")
+	public void verifyDisclaimerOnWaysToSave() {
+		String[] tc_id = { "Pre_Login_12" };
+		ExtentLogger.logInfo(
+				"Test Case execution for - verifyDisclaimerOnWaysToSave. Test Case id's -->  " + Arrays.toString(tc_id));
+		SoftAssert softAssert = new SoftAssert();
+		// Init login steps
+		preLoginSteps = new PreLoginSteps(driver);
+		preLoginSteps.verifyDisclaimerOnWaysToSave(softAssert);
+		// Assert all the soft verification.
+		softAssert.assertAll();
+		log.info("Test Case execution for - verifyDisclaimerOnWaysToSave - is Completed.");
+		ExtentLogger.logInfo("Test Case execution for - verifyDisclaimerOnWaysToSave - is Completed.");
+	}
+	
+	@FrameworkAnnotations(author = { "Neethu" }, category = { CategoryType.SMOKE, CategoryType.SCP_WAYSTOSAVE })
+	@Test(priority = 3, description = "To verify the details on Programs grid.")
+	public void verifyDetailsONProgramsGrid() {
+		String[] tc_id = { "Pre_Login_12" };
+		ExtentLogger.logInfo(
+				"Test Case execution for - verifyDetailsONProgramsGrid. Test Case id's -->  " + Arrays.toString(tc_id));
+		SoftAssert softAssert = new SoftAssert();
+		// Init login steps
+		preLoginSteps = new PreLoginSteps(driver);
+		preLoginSteps.verifyDetailsONProgramsGrid(softAssert);
+		// Assert all the soft verification.
+		softAssert.assertAll();
+		log.info("Test Case execution for - verifyDetailsONProgramsGrid - is Completed.");
+		ExtentLogger.logInfo("Test Case execution for - verifyDetailsONProgramsGrid - is Completed.");
+	}
+	
+	@FrameworkAnnotations(author = { "Neethu" }, category = { CategoryType.SMOKE, CategoryType.SCP_WAYSTOSAVE })
+	@Test(priority = 3, description = "To verify the details on Savings Tips grid.")
+	public void verifyDetailsONSavingTipsGrid() {
+		String[] tc_id = { "Pre_Login_12" };
+		ExtentLogger.logInfo(
+				"Test Case execution for - verifyDetailsONSavingTipsGrid. Test Case id's -->  " + Arrays.toString(tc_id));
+		SoftAssert softAssert = new SoftAssert();
+		// Init login steps
+		preLoginSteps = new PreLoginSteps(driver);
+		preLoginSteps.verifyDetailsONSavingTipsGrid(softAssert);
+		// Assert all the soft verification.
+		softAssert.assertAll();
+		log.info("Test Case execution for - verifyDetailsONSavingTipsGrid - is Completed.");
+		ExtentLogger.logInfo("Test Case execution for - verifyDetailsONSavingTipsGrid - is Completed.");
+	}
+	
+	@FrameworkAnnotations(author = { "Neethu" }, category = { CategoryType.SMOKE, CategoryType.SCP_WAYSTOSAVE })
+	@Test(priority = 3, description = "To verify the details on Educational Tips grid.")
+	public void verifyDetailsONEducationalTipsGrid() {
+		String[] tc_id = { "Pre_Login_12" };
+		ExtentLogger.logInfo(
+				"Test Case execution for - verifyDetailsONEducationalTipsGrid. Test Case id's -->  " + Arrays.toString(tc_id));
+		SoftAssert softAssert = new SoftAssert();
+		// Init login steps
+		preLoginSteps = new PreLoginSteps(driver);
+		preLoginSteps.verifyDetailsONEducationalTipsGrid(softAssert);
+		// Assert all the soft verification.
+		softAssert.assertAll();
+		log.info("Test Case execution for - verifyDetailsONEducationalTipsGrid - is Completed.");
+		ExtentLogger.logInfo("Test Case execution for - verifyDetailsONEducationalTipsGrid - is Completed.");
+	}
 }
