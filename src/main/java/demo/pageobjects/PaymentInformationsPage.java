@@ -1417,7 +1417,10 @@ public class PaymentInformationsPage extends HomePage {
 
     //////// PAYMENT PROFILES //////////
 
-    @FindBy(css = "div[ng-repeat*='paymentInfo']")
+//    @FindBy(css = "div[ng-repeat*='paymentInfo']")
+//    private List<WebElement> listPaymentProfile;
+
+    @FindBy(css = ".pmt_cardbox")
     private List<WebElement> listPaymentProfile;
 
     public List<WebElement> listPaymentProfile() {
@@ -1599,6 +1602,42 @@ public class PaymentInformationsPage extends HomePage {
         clickWithJSExecutor(rdoBtnBankCBill);
     }
 
+    @FindBy(css = "label[for='control_01'] span[class='material-icons']")
+    private WebElement rdoBtnBankC2Bill;
+
+    public void clickrdoBtnBankC2Bill() {
+        scrollToElement(rdoBtnBankC2Bill);
+        log.info("Waiting For Visiblity status of bank radio button");
+        waitForElementToBeClickable(rdoBtnBankC2Bill);
+        log.info("Visiblity status of bank radio button:" + rdoBtnBankC2Bill.isDisplayed());
+        log.info("Clicking bank radio button");
+        clickWithJSExecutor(rdoBtnBankC2Bill);
+    }
+
+    @FindBy(css = "#otherPaymentMethod")
+    private WebElement newMethod;
+
+    public void clickNewMethod() {
+        scrollToElement(newMethod);
+        log.info("Waiting For Visiblity status of bank radio button");
+        waitForElementToBeClickable(newMethod);
+        log.info("Visiblity status of bank radio button:" + newMethod.isDisplayed());
+        log.info("Clicking bank radio button");
+        clickWithJSExecutor(newMethod);
+    }
+
+    @FindBy(css = "#selectPaymentMethod")
+    private WebElement savedMethod;
+
+    public void clickSavedMethod() {
+        scrollToElement(savedMethod);
+        log.info("Waiting For Visiblity status of bank radio button");
+        waitForElementToBeClickable(savedMethod);
+        log.info("Visiblity status of bank radio button:" + savedMethod.isDisplayed());
+        log.info("Clicking bank radio button");
+        clickWithJSExecutor(savedMethod);
+    }
+
     @FindBy(id = "bank_dropdown")
     private WebElement ddBankAccountCurrentBill;
 
@@ -1687,7 +1726,13 @@ public class PaymentInformationsPage extends HomePage {
         log.info("Selected Other Ammount ");
     }
 
-    @FindBy(xpath = "//*[@id='otheramount']")
+    public void clickPayAmtFld() {
+        scrollToElement(otheramountraidiobtn);
+        click(otheramountraidiobtn);
+        log.info("Click on Payment Amount Field Successfully .");
+    }
+
+    @FindBy(css = "#otheramount")
     private WebElement OtheramounttextBox;
 
     public void EnterOtherAmmount(String amount) {
@@ -1703,12 +1748,30 @@ public class PaymentInformationsPage extends HomePage {
         log.info("Clicked on Payment Next Button");
     }
 
-    @FindBy(xpath = "//*[@id=\"containerDiv\"]/div[2]/div[1]/div[1]/div/div[1]/ol/li[2]/span")
+    @FindBy(css = "#submitNext")
+    private WebElement ButtonNewNext;
+
+    public void clickNewNextPayementButton() {
+        click(ButtonNewNext);
+        log.info("Clicked on Payment Next Button");
+    }
+
+    @FindBy(xpath = "//*[@id='containerDiv']/div[3]/div[1]/div[1]/div/div[1]/ol/li[2]/span")
     private WebElement lbl_PaymentStep2;
 
     public String getPaymentStep2Text() {
         log.info("Fetching Step 2 Text.");
         String stepText = getText(lbl_PaymentStep2);
+        log.info("Payemet Step2 Text {}: " + stepText);
+        return stepText;
+    }
+
+    @FindBy(css = ".error")
+    private WebElement lbl_RoutingNumber;
+
+    public String getRoutingNumberError() {
+        log.info("Fetching Step 2 Text.");
+        String stepText = getText(lbl_RoutingNumber);
         log.info("Payemet Step2 Text {}: " + stepText);
         return stepText;
     }
@@ -1754,5 +1817,191 @@ public class PaymentInformationsPage extends HomePage {
         scrollToElement(btnSubmitPayment);
         clickElementUsingJsExecutor(btnSubmitPayment);
         log.info("Submit Button Clicked Sucessfully .");
+    }
+
+    @FindBy(css = "#accholrnm")
+    private WebElement accountHolderNameField;
+
+    public void enterAccountHolderNameInTheField(String accountNumber) {
+        sendKeys(accountHolderNameField, accountNumber);
+        log.info("Entered account no in the field.");
+    }
+
+    @FindBy(css = "#rtno")
+    private WebElement routingField;
+
+    public void enterRoutingNumberInTheField(String accountNumber) {
+        sendKeys(routingField, accountNumber);
+        log.info("Entered account no in the field.");
+    }
+
+    @FindBy(css = "#crtno")
+    private WebElement routingConfirmField;
+
+    public void enterConfirmRoutingNumberInTheField(String accountNumber) {
+        sendKeys(routingConfirmField, accountNumber);
+        log.info("Entered account no in the field.");
+    }
+
+    @FindBy(css = "#bnkname")
+    private WebElement bankNameField;
+
+    public void enterBankNameInTheField(String accountNumber) {
+        sendKeys(bankNameField, accountNumber);
+        log.info("Entered account no in the field.");
+    }
+
+    public String getBankName() {
+        log.info("Fetching Step 2 Text.");
+        String stepText = getText(bankNameField);
+        log.info("Payemet Step2 Text {}: " + stepText);
+        return stepText;
+    }
+
+    @FindBy(css = "#bnkaccno")
+    private WebElement bankAccountNumberField;
+
+    public void enterBankAccountNumberInTheField(String accountNumber) {
+        sendKeys(bankAccountNumberField, accountNumber);
+        log.info("Entered account no in the field.");
+    }
+
+    public void clearBankAccountNumberInTheField() {
+        log.info("clear the payment amount.");
+        clear(bankAccountNumberField);
+    }
+
+    @FindBy(css = "#bnkaccnomask")
+    private WebElement bankConfirmAccountNumberField;
+
+    public void enterConfirmBankAccountNumberInTheField(String accountNumber) {
+        sendKeys(bankConfirmAccountNumberField, accountNumber);
+        log.info("Entered account no in the field.");
+    }
+
+    @FindBy(css = "#st2_accountType")
+    private WebElement accountTypeField;
+
+    public void clickAccountTypeFld() {
+        scrollToElement(accountTypeField);
+        click(accountTypeField);
+        log.info("Click on Payment Amount Field Successfully .");
+    }
+
+    @FindBy(xpath = "//*[@id='st2_accountType']/option[5]")
+    private WebElement lnkaccountype;
+
+    public void clickAccountTypeOption() {
+        click(lnkaccountype);
+        log.info("Spanish language option clicked {}.");
+    }
+
+    @FindBy(css = "#st2_firstname")
+    private WebElement firstNameField;
+
+    public boolean isFirstNameFieldVisible() {
+        log.info("Checking that Payment Amt field is visible on the PayBill Step 2 page."
+                + firstNameField.isDisplayed());
+        return isElementVisible(firstNameField);
+    }
+
+    public void enterFirstNameInTheField(String accountNumber) {
+        sendKeys(firstNameField, accountNumber);
+        log.info("Entered account no in the field.");
+    }
+
+    @FindBy(css = "#st2_lastname")
+    private WebElement lastNameField;
+
+    public boolean isLastNameFieldVisible() {
+        log.info("Checking that Payment Amt field is visible on the PayBill Step 2 page."
+                + lastNameField.isDisplayed());
+        return isElementVisible(lastNameField);
+    }
+
+    public void enterLastNameInTheField(String accountNumber) {
+        sendKeys(lastNameField, accountNumber);
+        log.info("Entered account no in the field.");
+    }
+
+    public void clearLastNameInTheField() {
+        log.info("clear the payment amount.");
+        clear(lastNameField);
+    }
+
+    @FindBy(css = "#st2_address")
+    private WebElement addressField;
+
+    public boolean isAddressFieldVisible() {
+        log.info("Checking that Payment Amt field is visible on the PayBill Step 2 page."
+                + addressField.isDisplayed());
+        return isElementVisible(addressField);
+    }
+
+    public void enterAddressInTheField(String accountNumber) {
+        sendKeys(addressField, accountNumber);
+        log.info("Entered account no in the field.");
+    }
+
+    public void clearAddressInTheField() {
+        log.info("clear the payment amount.");
+        clear(addressField);
+    }
+
+    @FindBy(css = "#st2_city")
+    private WebElement cityField;
+
+    public boolean isCityFieldVisible() {
+        log.info("Checking that Payment Amt field is visible on the PayBill Step 2 page."
+                + cityField.isDisplayed());
+        return isElementVisible(cityField);
+    }
+
+    public void enterCityInTheField(String accountNumber) {
+        sendKeys(cityField, accountNumber);
+        log.info("Entered account no in the field.");
+    }
+
+    public void clearCityInTheField() {
+        log.info("clear the payment amount.");
+        clear(cityField);
+    }
+
+    @FindBy(css = "#st2_state")
+    private WebElement stateField;
+
+    public boolean isStateFieldVisible() {
+        log.info("Checking that Payment Amt field is visible on the PayBill Step 2 page."
+                + stateField.isDisplayed());
+        return isElementVisible(stateField);
+    }
+
+    public void enterStateInTheField(String accountNumber) {
+        sendKeys(stateField, accountNumber);
+        log.info("Entered account no in the field.");
+    }
+
+    public void clearStateInTheField() {
+        log.info("clear the payment amount.");
+        clear(stateField);
+    }
+
+    @FindBy(css = "#st2_zipcode")
+    private WebElement zipField;
+
+    public boolean isZipCodeFieldVisible() {
+        log.info("Checking that Payment Amt field is visible on the PayBill Step 2 page."
+                + zipField.isDisplayed());
+        return isElementVisible(zipField);
+    }
+
+    public void enterZipCodeInTheField(String accountNumber) {
+        sendKeys(zipField, accountNumber);
+        log.info("Entered account no in the field.");
+    }
+
+    public void clearZipCodeInTheField() {
+        log.info("clear the payment amount.");
+        clear(zipField);
     }
 }
