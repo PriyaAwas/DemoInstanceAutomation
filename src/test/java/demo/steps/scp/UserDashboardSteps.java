@@ -264,4 +264,44 @@ public class UserDashboardSteps extends DashboardPage {
 		pause(2000);
 
 	}
+	
+	/**
+	 * This method verifies Bottom pane elements.
+	 *
+	 * @param softAssert verify all the assertions
+	 */
+	public void verifyBottompaneElements(SoftAssert softAssert) {
+		// Scroll to bottom
+		scrollToBottom();
+		pause(1000);
+		// Check if Post login FAQ button is visible	
+		softAssert.assertTrue(isPostloginFAQ_buttonVisible(),"Postlogin_FAQ button is not visible.");	
+		// Check if Post login ConnectMe button is visible
+		softAssert.assertTrue(isPostloginConnect_buttonVisible(),"Postlogin_ConnectMe button is not visible.");
+		// Check if Post login Terms and Conditions link is visible
+		softAssert.assertTrue(ispostlogin_TermsConditions(),"Postlogin_TermsConditions link is not visible.");
+		// Check if Post login Terms and Conditions link is visible
+		softAssert.assertTrue(ispostlogin_PrivacyPolicy(),"Postlogin_PrivacyPolicy link is not visible.");
+	}
+	/**
+	 * This method verifies Bottom pane elements.
+	 *
+	 * @param softAssert verify all the assertions
+	 */
+	public void verifyCompareConsumption(SoftAssert softAssert) {
+		// Scroll to bottom
+		scrollToBottom();
+		pause(1000);
+		// Check if label how are you doing so far is visible	
+		softAssert.assertTrue(isLabelHowareyoudoingVisible(),"label How are you doing so far is not visible.");	
+		// Check if label compare your consumption over time is visible
+		softAssert.assertTrue(isLabelCompareyourConsumptionovertimeVisible(),"Comapare your consumption over time is not visible.");
+		// Click on Compare link
+		clickCompareBtn();
+		pause(5000);
+		// Check if Post login Terms and Conditions link is visible
+		softAssert.assertTrue(ispostlogin_PrivacyPolicy(),"Postlogin_PrivacyPolicy link is not visible.");
+	}
+			
 }
+

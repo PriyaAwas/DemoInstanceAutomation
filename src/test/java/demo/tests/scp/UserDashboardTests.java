@@ -96,4 +96,33 @@ public class UserDashboardTests extends TestRunner {
 		log.info("Test Case execution for - verifySmartHomeCarousel - is Completed.");
 	}
 
+	@FrameworkAnnotations(author = {"Prashant Kumar"}, category = { CategoryType.SANITY,CategoryType.SCP_DASHBOARD })
+
+	@Test(priority = 5, description = "To Verify the objects on Bottom pane of the dashboard page.")
+	public void verifyBottomPaneOnDashboard() {
+		SoftAssert softAssert = new SoftAssert();
+		LoginSteps loginSteps = new LoginSteps(driver);
+		loginSteps.loginIntoTheApplication(Configuration.toString("userName"), Configuration.toString("password"));
+		// Verify the user landed to the dashboard page
+		UserDashboardSteps userdashboardSteps = new UserDashboardSteps(driver);
+		softAssert.assertTrue(userdashboardSteps.isProfileIconVisible(), "User profile icon not visible.");
+		userdashboardSteps.verifyBottompaneElements(softAssert); // Assert all the
+		softAssert.assertAll();
+		log.info("Test Case execution for - verifyBottompaneElements - is Completed.");
+	}
+	
+	@FrameworkAnnotations(author = {"Prashant Kumar"}, category = { CategoryType.SANITY,CategoryType.SCP_DASHBOARD })
+
+	@Test(priority = 5, description = "To Verify the objects on Bottom pane of the dashboard page.")
+	public void verifyCompareConsumptionOnDashboard() {
+		SoftAssert softAssert = new SoftAssert();
+		LoginSteps loginSteps = new LoginSteps(driver);
+		loginSteps.loginIntoTheApplication(Configuration.toString("userName"), Configuration.toString("password"));
+		// Verify the user landed to the dashboard page
+		UserDashboardSteps userdashboardSteps = new UserDashboardSteps(driver);
+		softAssert.assertTrue(userdashboardSteps.isProfileIconVisible(), "User profile icon not visible.");
+		userdashboardSteps.verifyBottompaneElements(softAssert); // Assert all the
+		softAssert.assertAll();
+		log.info("Test Case execution for - verifyBottompaneElements - is Completed.");
+	}
 }
