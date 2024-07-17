@@ -10,6 +10,7 @@ import sew.ai.config.ModelsConfiguration;
 import sew.ai.helpers.props.Constants;
 import sew.ai.helpers.props.FilePaths;
 import sew.ai.helpers.reporters.ExtentLogger;
+import sew.ai.models.Bank;
 import sew.ai.models.Card;
 import sew.ai.steps.scp.HomeSteps;
 import sew.ai.utils.DateUtil;
@@ -62,7 +63,156 @@ public class BillingPaymentSteps extends PaymentInformationSteps {
 		softAssert.assertEquals(Double.parseDouble(tottlefee),
 				(Double.parseDouble(transfee) + Double.parseDouble(billamount)));
 		clickPaymentSubmitBtn();
-		ExtentLogger.logInfo("Payement Done from Credit Card");
+		ExtentLogger.logInfo("Payment Done from Credit Card");
+	}
+
+	public void verifyMakePaymentWithNewBank(SoftAssert softAssert) throws InterruptedException {
+
+		Bank bank = ModelsConfiguration.readBankAccounts().getBankByAccountHolderName("Henry Jacob Bank Account");
+
+		homeSteps.navigateToCurrentBill();
+		clickBtnMakpayment();
+		waitUntilCompletePageLoad();
+		clickPayAmtFld();
+		pause(2000);
+		EnterOtherAmmount("10.00");
+		clickNewMethod();
+		clickrdoBtnBankC2Bill();
+
+		clickNewNextPayementButton();
+		softAssert.assertEquals(getToastMessage(), paymentInformationTextProp.getPropValue("txtErrMsgBlank"),
+				"Blank Error Msg do nost match");
+
+		enterAccountHolderNameInTheField(bank.getAccountHolderName());
+		enterRoutingNumberInTheField(bank.getRoutingNumber());
+		enterConfirmRoutingNumberInTheField(bank.getRoutingNumber());
+		//enterBankNameInTheField(bank.getBankName());
+		enterBankAccountNumberInTheField(bank.getBankAccountNumber());
+		pause(5000);
+		enterConfirmBankAccountNumberInTheField(bank.getBankAccountNumber());
+		clickAccountTypeFld();
+		pause(1000);
+		clickAccountTypeOption();
+		pause(1000);
+
+        enterFirstNameInTheField(bank.getFirstName());
+        enterLastNameInTheField(bank.getLastName());
+        enterAddressInTheField(bank.getAddress());
+        enterCityInTheField(bank.getCity());
+        enterStateInTheField(bank.getState());
+        enterZipCodeInTheField(bank.getZipCode());
+
+
+		clickNewNextPayementButton();
+		softAssert.assertEquals(getPaymentStep2Text(), "STEP 2: REVIEW & CONFIRM");
+		String billamount = getBillAmmount();
+		String transfee = getTranFee();
+		String tottlefee = getTotleFee();
+		softAssert.assertEquals("10.00", billamount);
+		softAssert.assertEquals(Double.parseDouble(tottlefee),
+				(Double.parseDouble(transfee) + Double.parseDouble(billamount)));
+		clickPaymentSubmitBtn();
+		ExtentLogger.logInfo("Payment Done from new bank account");
+	}
+
+	public void verifyNegMakePaymentWithNewBank(SoftAssert softAssert) throws InterruptedException {
+
+		Bank bank = ModelsConfiguration.readBankAccounts().getBankByAccountHolderName("Henry Jacob Bank Account");
+
+		homeSteps.navigateToCurrentBill();
+		clickBtnMakpayment();
+		waitUntilCompletePageLoad();
+		clickPayAmtFld();
+		pause(2000);
+		EnterOtherAmmount("10.00");
+		clickNewMethod();
+		clickrdoBtnBankC2Bill();
+
+		clickNewNextPayementButton();
+		softAssert.assertEquals(getToastMessage(), paymentInformationTextProp.getPropValue("txtErrMsgBlank"),
+				"Blank Error Msg do nost match");
+
+		enterAccountHolderNameInTheField(bank.getAccountHolderName());
+		enterRoutingNumberInTheField("12345");
+		enterConfirmRoutingNumberInTheField("12345");
+
+		enterBankAccountNumberInTheField(bank.getBankAccountNumber());
+		pause(5000);
+		softAssert.assertEquals(getRoutingNumberError(), paymentInformationTextProp.getPropValue("txtErrMsgValidRouting"),
+				"Blank Error Msg do nost match");
+		enterConfirmBankAccountNumberInTheField(bank.getBankAccountNumber());
+		clickAccountTypeFld();
+		pause(1000);
+		clickAccountTypeOption();
+		pause(1000);
+
+		enterFirstNameInTheField(bank.getFirstName());
+		enterLastNameInTheField(bank.getLastName());
+		enterAddressInTheField(bank.getAddress());
+		enterCityInTheField(bank.getCity());
+		enterStateInTheField(bank.getState());
+		enterZipCodeInTheField(bank.getZipCode());
+
+		clickNewNextPayementButton();
+		softAssert.assertEquals(getToastMessage(), paymentInformationTextProp.getPropValue("txtErrMsgBlank"),
+				"Blank Error Msg do nost match");
+
+//		enterRoutingNumberInTheField(bank.getRoutingNumber());
+//		enterConfirmRoutingNumberInTheField(bank.getRoutingNumber());
+//
+//		clearBankAccountNumberInTheField();
+//		pause(5000);
+//		clearBankAccountNumberInTheField();
+//		enterBankAccountNumberInTheField("123");
+//		enterConfirmBankAccountNumberInTheField("123");
+//		clickNewNextPayementButton();
+//		softAssert.assertEquals(getPaymentStep2Text(), "STEP 2: REVIEW & CONFIRM");
+
+//		softAssert.assertEquals(getToastMessage(), paymentInformationTextProp.getPropValue("txtErrMsgBlank"),
+//				"Blank Error Msg do nost match");
+	}
+
+	public void verifyMakePaymentWithBank(SoftAssert softAssert) throws InterruptedException {
+
+		Bank bank = ModelsConfiguration.readBankAccounts().getBankByAccountHolderName("Henry Jacob Bank Account");
+
+		deletePaymentProfiles();
+		clickLnkAddPaymentMethod();// clicking on the +Add payment method
+		pause(10000);
+		clickRdoBtnBank();
+		pause(5000);
+		clickbtnAdd();
+		softAssert.assertEquals(getToastMessage(), paymentInformationTextProp.getPropValue("txtErrMsgBlank"),
+				"Blank Error Msg do not match");
+		populateBankDetails(bank);
+		clickbtnAdd();
+		softAssert.assertEquals(getToastMessage(), paymentInformationTextProp.getPropValue("txtSuccessAddMsg"),
+				"payment method is not Added");
+		pause(7000);
+		homeSteps.navigateToCurrentBill();
+		clickBtnMakpayment();
+		waitUntilCompletePageLoad();
+		clickPayAmtFld();
+		pause(2000);
+		EnterOtherAmmount("10.00");
+		pause(5000);
+
+		clickSavedMethod();
+		clickrdoBtnBankCBill();
+
+		Select Bank = new Select(elementDDBankAccountCurrentBill());
+		Bank.selectByVisibleText("BANK OF AMERICA N.A,1881");
+
+		clickNextPayementButton();
+		softAssert.assertEquals(getPaymentStep2Text(), "STEP 2: REVIEW & CONFIRM");
+		String billamount = getBillAmmount();
+		String transfee = getTranFee();
+		String tottlefee = getTotleFee();
+		softAssert.assertEquals("10.00", billamount);
+		softAssert.assertEquals(Double.parseDouble(tottlefee),
+				(Double.parseDouble(transfee) + Double.parseDouble(billamount)));
+		clickPaymentSubmitBtn();
+		ExtentLogger.logInfo("Payment Done from Bank");
 	}
 
 	public void verifyCreditCardPaymentFormFields(SoftAssert softAssert) throws InterruptedException {
@@ -272,5 +422,27 @@ public class BillingPaymentSteps extends PaymentInformationSteps {
 		populateTxtCity(card.getCity());
 		populateTxtState(card.getState());
 		populateTxtZip(card.getZipCode());
+	}
+	public void populateBankDetails(Bank bank) throws InterruptedException {
+
+		enterAccountHolderNameInTheField(bank.getAccountHolderName());
+		enterRoutingNumberInTheField(bank.getRoutingNumber());
+		enterConfirmRoutingNumberInTheField(bank.getRoutingNumber());
+		//enterBankNameInTheField(bank.getBankName());
+		enterBankAccountNumberInTheField(bank.getBankAccountNumber());
+		enterConfirmBankAccountNumberInTheField(bank.getBankAccountNumber());
+		pause(5000);
+		clickAccountTypeFld();
+		pause(1000);
+		clickAccountTypeOption();
+		pause(1000);
+
+		enterFirstNameInTheField(bank.getFirstName());
+		enterLastNameInTheField(bank.getLastName());
+		enterAddressInTheField(bank.getAddress());
+		enterCityInTheField(bank.getCity());
+		enterStateInTheField(bank.getState());
+		enterZipCodeInTheField(bank.getZipCode());
+
 	}
 }
