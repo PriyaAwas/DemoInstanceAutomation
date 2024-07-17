@@ -1962,7 +1962,79 @@ public class DashboardPage extends HomePage {
 	}
 
 
+	@FindBy(xpath = "//*[@id=\"PostLoginFAQ\"]")
+	private WebElement postloginbutton_FAQ;
 
+	public Boolean isPostloginFAQ_buttonVisible() {
+		Boolean isVisible = isElementVisible(postloginbutton_FAQ);
+		log.info("Postlogin FAQ button visibility status {}" + isVisible);
+		return isVisible;
+	}
 
+	@FindBy(xpath = "//*[@id=\"PostloginConnectMe\"]")
+	private WebElement postloginbutton_ConnectMe;
 
+	public Boolean isPostloginConnect_buttonVisible() {
+		Boolean isVisible = isElementVisible(postloginbutton_ConnectMe);
+		log.info("Postlogin ConnectMe button visibility status {}" + isVisible);
+		return isVisible;
+	}
+	
+	@FindBy(xpath = "//*[@title=\"Accept Terms & Conditions\"]")
+	private WebElement postlogin_Terms_and_Conditions;
+	
+	public Boolean ispostlogin_TermsConditions() {
+		Boolean isVisible = isElementVisible(postlogin_Terms_and_Conditions);
+		log.info("Postlogin Terms and Conditions link visibility status {}" + isVisible);
+		return isVisible;	
+	}
+	
+	@FindBy(xpath = "//*[@title=\"Privacy Policy\"]")
+	private WebElement postlogin_PrivacyPolicy;
+	
+	public Boolean ispostlogin_PrivacyPolicy() {
+		Boolean isVisible = isElementVisible(postlogin_PrivacyPolicy);
+		log.info("Postlogin Privacy Policy link visibility status {}" + isVisible);
+		return isVisible;	
+	}
+	
+	@FindBy(xpath = "(//*[@class=\"swiper-button-next swiper-button-white\"])[1]")
+	private WebElement button_rightCarousel;
+	
+	public Boolean isbutton_RightCarouselVisible() {
+		Boolean isVisible = isElementVisible(button_rightCarousel);
+		log.info("Postlogin Right Carousel button visibility status {}" + isVisible);
+		return isVisible;	
+	}
+	
+	public void clickRtCarouselBtn() {
+		click(button_rightCarousel);
+		log.info("Next Carousel button clicked {}.");
+	}
+	
+	@FindBy(xpath = "//*[@id=\"form1\"]/div[10]/div/div/div[2]/div/h5")
+	private WebElement how_are_you_doing_sofar;
+	
+	public boolean isLabelHowareyoudoingVisible() {
+		Boolean isVisible = isElementVisible(how_are_you_doing_sofar);
+		log.info("Consumer label visibility status {}" + isVisible);
+		return isVisible;
+	}
+	
+	@FindBy(xpath = "//*[@id=\"BillForecast\"]/span")
+	private WebElement labelCompareyourConsumptionovertime;
+	
+	public boolean isLabelCompareyourConsumptionovertimeVisible() {
+		Boolean isVisible = isElementVisible(labelCompareyourConsumptionovertime);
+		log.info("Compare your consumption over time visibility status {}" + isVisible);
+		return isVisible;
+	}
+	
+	@FindBy(xpath = "(//*[@id=\"comparelink\"]")
+	private WebElement link_Compare;
+	
+	public void clickCompareBtn() {
+		click(link_Compare);
+		log.info("Comapare Link is clicked");
+	}
 }
