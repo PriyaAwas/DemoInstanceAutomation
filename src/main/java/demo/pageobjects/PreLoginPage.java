@@ -88,7 +88,7 @@ public class PreLoginPage extends HomePage {
 		log.info("Entered primary phone no in the field.");
 	}
 
-    @FindBy(css = "[id='txtLogin']")
+	@FindBy(css = "[id='txtLogin']")
 	private WebElement txt_username;
 
 	public void populateUserName(String userName) {
@@ -145,6 +145,7 @@ public class PreLoginPage extends HomePage {
 		click(btn_next);
 		log.info("Next button clicked successfully.");
 	}
+
 	
 	@FindBy(xpath = "//*[@id='containerDiv']/div[3]/div/div[1]/div/div[2]/div[1]/div[2]/input[1]")
 	private WebElement btn_next2;
@@ -155,7 +156,10 @@ public class PreLoginPage extends HomePage {
 		log.info("Next button clicked successfully.");
 	}
     
-    @FindBy(css = ".error_messagecommon")
+
+
+	@FindBy(css = ".error_messagecommon")
+
 	private WebElement lbl_error_message;
 
 	public String getErrorMessage() {
@@ -195,6 +199,7 @@ public class PreLoginPage extends HomePage {
 		log.info("Checking the visibility of language dropdown on the page.");
 		log.info("Language dropdown visibility status {}: " + isElementVisible(dd_language));
 		return isElementVisible(dd_language);
+
 	}	
 	@FindBy(css = "i.lan_txt_hide")
 	private WebElement dd_language_selected_option;
@@ -1200,6 +1205,7 @@ public class PreLoginPage extends HomePage {
 		click(iconHome);
 		log.info("Cancel Button clicked {}.");
 	}
+
 	
 	@FindBys(@FindBy(css = "#LanguageDrpdwn_dp_language li a i"))
 	private List<WebElement> dd_language_options;
@@ -2233,4 +2239,5 @@ public class PreLoginPage extends HomePage {
 		sendKeys(phoneNumberField, accountNumber);
 		log.info("Entered account no in the field.");
 	}
+
 }

@@ -768,6 +768,7 @@ public class PreLoginSteps extends PreLoginPage {
 
 	}
 
+
 	public void verifyLanguageSwitchFeature(SoftAssert softAssert) {
 		Assert.assertTrue(isLanguageDropdownVisible(), "Language dropdown is not visible on the login page.");
 		clickLanguageDropdown();
@@ -780,5 +781,6 @@ public class PreLoginSteps extends PreLoginPage {
 		clickEnglishLanguageOption();
 		softAssert.assertEquals(getRegisterLinkLabel(), loginTextProp.getPropValue("txLblRegistrationEnglish"));
 	}
+
 
 }
