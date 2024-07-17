@@ -24,7 +24,7 @@ configurations:
     userNameRes: "Demo_Residential"
     passwordRes: "Demo@123"
     userName: "SCMDemoInstance"
-    password: "Demo@123456"
+    password: "Demo@1122"
     utilityAccountNumber: "411000714880"
     accountNumber: "2711765963"
     customerName : "McDonalds Store 2001"
@@ -40,6 +40,8 @@ configurations:
     #scmAccountNumber: "411001984953"
     scmAccountNumber: "2711765963"
     scmEmailAdd: "varun.bhatia@smartenergywater.in"
+    SupportEmailId : "Support@SEW1.in"
+    SupportPhnNo : "7370739998"
   uat:
     name: "SEW Functional Tests UAT Run"
     headless: false

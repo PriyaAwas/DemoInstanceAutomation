@@ -7,6 +7,7 @@ import org.testng.asserts.SoftAssert;
 import sew.ai.config.Configuration;
 import sew.ai.enums.CategoryType;
 import sew.ai.helpers.anotations.FrameworkAnnotations;
+import sew.ai.helpers.reporters.ExtentLogger;
 import sew.ai.runner.TestRunner;
 import sew.ai.steps.scp.DashboardSteps;
 import sew.ai.steps.scp.HomeSteps;
@@ -157,6 +158,63 @@ public class PaymentInfoTests extends TestRunner {
 		// Assert all the soft verification.
 		softAssert.assertAll();
 		log.info("Test Case execution for - verifyCreditCardPaymentFormFields - is Completed.");
+	}
+
+	@FrameworkAnnotations(author = { "Eujin" }, category = { CategoryType.SANITY,
+			CategoryType.SCP_PAYMENT_INFO })
+	@Test(priority = 7, description = "To verify the payment with existing bank account")
+	public void verifyBankPayment() throws SQLException, InterruptedException {
+		SoftAssert softAssert = new SoftAssert();
+		// SCP- Application Login & Navigating to Payment information Page
+		LoginSteps loginSteps = new LoginSteps(driver);
+		DashboardSteps dashboardSteps = loginSteps.loginIntoTheApplication(Configuration.toString("userName"),
+				Configuration.toString("password"));
+		ExtentLogger.logInfo("Login done");
+		HomeSteps homeSteps = new HomeSteps(driver);
+		homeSteps.navigateToPaymentInfo();
+		ExtentLogger.logInfo("Added bank account");
+		// Verifying Bank Payment form field Validation
+		billingPaymentSteps = new BillingPaymentSteps(driver);
+		billingPaymentSteps.verifyMakePaymentWithBank(softAssert);
+		// Assert all the soft verification.
+		softAssert.assertAll();
+		ExtentLogger.logInfo("Test Case execution for - verifyBankPayment - is Completed.");
+	}
+
+	@FrameworkAnnotations(author = { "Eujin" }, category = { CategoryType.SANITY,
+			CategoryType.SCP_PAYMENT_INFO })
+	@Test(priority = 7, description = "To verify making a payment with new bank account")
+	public void verifyNewBankPayment() throws SQLException, InterruptedException {
+		SoftAssert softAssert = new SoftAssert();
+		// SCP- Application Login & Navigating to Payment information Page
+		LoginSteps loginSteps = new LoginSteps(driver);
+		DashboardSteps dashboardSteps = loginSteps.loginIntoTheApplication(Configuration.toString("userName"),
+				Configuration.toString("password"));
+		ExtentLogger.logInfo("Login done");
+		// Verifying Bank Payment form field Validation
+		billingPaymentSteps = new BillingPaymentSteps(driver);
+		billingPaymentSteps.verifyMakePaymentWithNewBank(softAssert);
+		// Assert all the soft verification.
+		softAssert.assertAll();
+		ExtentLogger.logInfo("Test Case execution for - verifyNewBankPayment - is Completed.");
+	}
+
+	@FrameworkAnnotations(author = { "Eujin" }, category = { CategoryType.SANITY,
+			CategoryType.SCP_PAYMENT_INFO })
+	@Test(priority = 7, description = "To Verify negative scenarios with new bank detail fields")
+	public void verifyNegNewBankPayment() throws SQLException, InterruptedException {
+		SoftAssert softAssert = new SoftAssert();
+		// SCP- Application Login & Navigating to Payment information Page
+		LoginSteps loginSteps = new LoginSteps(driver);
+		DashboardSteps dashboardSteps = loginSteps.loginIntoTheApplication(Configuration.toString("userName"),
+				Configuration.toString("password"));
+		ExtentLogger.logInfo("Login done");
+		// Verifying Bank Payment form field Validation
+		billingPaymentSteps = new BillingPaymentSteps(driver);
+		billingPaymentSteps.verifyNegMakePaymentWithNewBank(softAssert);
+		// Assert all the soft verification.
+		softAssert.assertAll();
+		ExtentLogger.logInfo("Test Case execution for - verifyNegNewBankPayment - is Completed.");
 	}
 
 	@FrameworkAnnotations(author = { "Priya Awasthi" }, category = { CategoryType.SANITY,

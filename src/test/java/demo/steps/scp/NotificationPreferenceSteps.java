@@ -7,15 +7,17 @@ import org.testng.Assert;
 import org.testng.asserts.SoftAssert;
 import sew.ai.helpers.props.Constants;
 import sew.ai.helpers.props.FilePaths;
+import sew.ai.helpers.reporters.ExtentLogger;
 import demo.pageobjects.NotificationPreferencePage;
 import sew.ai.steps.scp.HomeSteps;
 import sew.ai.utils.PropertiesUtil;
 import java.sql.SQLException;
+
 public class NotificationPreferenceSteps extends NotificationPreferencePage {
 	private static final Logger log = LogManager.getLogger(NotificationPreferenceSteps.class);
 	public static PropertiesUtil NotificationpreferenceTextProp;
 	HomeSteps homeSteps = new HomeSteps(driver);
-	
+
 	public NotificationPreferenceSteps(WebDriver driver) {
 		super(driver);
 		NotificationpreferenceTextProp = new PropertiesUtil(
@@ -125,23 +127,23 @@ public class NotificationPreferenceSteps extends NotificationPreferencePage {
 		log.info("To Verify that notification PreferencePageObjects are visible on page");
 	}
 
-	public void tcpaCompliancePopup(SoftAssert sAssert) {
+	public void tcpaCompliancePopupForOutages(SoftAssert sAssert) {
 		HomeSteps homeSteps = new HomeSteps(driver);
 
 		// Navigating to the notification preferences module.
-
 		log.info("To verify the redirection on " + "Notification Preference page");
 		homeSteps.navigateToNotificationPreferences();
 		Assert.assertTrue(isNotificationPreferencePage(
 				NotificationpreferenceTextProp.getPropValue("expectedNotificationPrePageUrl"),
 				NotificationpreferenceTextProp.getPropValue("expectedNotificationPrePageTitle")));
+
 		if (getLblIconOutageStatus().equalsIgnoreCase("On")) {
 			clickLevelOutage();
 			for (int i = 0; i < getlstOutageRemoveIcons().size(); i++) {
 				getlstOutageRemoveIcons().get(i).click();
 			}
+			pause(5000);
 			selectlstOutageChannel("Email");
-
 			unCheckChkBoxOutage();
 			btnOutageSaveBtn();
 		}
@@ -151,24 +153,32 @@ public class NotificationPreferenceSteps extends NotificationPreferencePage {
 		Assert.assertEquals(getToastMessage(),
 				NotificationpreferenceTextProp.getPropValue("txtLblNotificationPrefSavedAos"),
 				"Notification preferences save successfully message not matching.");
-		// Verify on clicking save button TCPA compliance pop up is not
-		// displaying.
+		// Verify on clicking save button TCPA compliance pop up is not displaying.
 		pause(5000);
 		Assert.assertFalse(isLblTCPAacceptNotificatinTerms());
 		clickLevelOutage();
 		// Verify the on enable and disable of TEXT checkboxes TCPA
 		// popup is coming
+		pause(5000);
 		selectlstOutageChannel("Text");
 		checkChkBoxOutage();
 		populateFirstMobilenumber("9999999999");
 		btnOutageSaveBtn();
 		pause(5000);
+
 		sAssert.assertTrue(isLblTCPAacceptNotificatinTerms(),
 				"TCPA Compliance Terms and Conditions popup is not appearing ");
 		sAssert.assertEquals(NotificationpreferenceTextProp.getPropValue("txtLblAcceptNotificationPopupHeadingAos"),
 				getLblTCPAacceptNotificatinTerms(), "TCPA pop up heading is not matched");
 		sAssert.assertEquals(NotificationpreferenceTextProp.getPropValue("txtLblNotificationBodyTitleAos"),
 				getLbltcpaPopupBody(), "Tcpa popup body title is not matched");
+		Assert.assertTrue(getFullTxtTcpaPopup()
+				.contains(NotificationpreferenceTextProp.getPropValue("txtLblTcpaPopupBodyMsgOnCheckNpp")));
+		Assert.assertTrue(
+				getTxtchekedType().contains(NotificationpreferenceTextProp.getPropValue("txtOutageTextCheckedType")));
+
+		ExtentLogger.logInfo("TCPA Verification Done for the Text Channel for OUTAGE");
+
 		// Verify that On disgree TCPA, changes are not saving for
 		// TEXT
 		lnkTCPAagreeBtn();
@@ -180,8 +190,68 @@ public class NotificationPreferenceSteps extends NotificationPreferencePage {
 		pause(5000);
 		sAssert.assertTrue(isLblTCPAacceptNotificatinTerms(),
 				"TCPA Compliance Terms and Conditions popup is not appearing ");
-		lnkTCPDisAagreeBtn();
+		// Assert.assertTrue(getFullTxtTcpaPopup().contains(NotificationpreferenceTextProp.getPropValue("txtLblTcpaPopupBodyMsgOnUncheck")));
 
+		sAssert.assertTrue(islnkTCPDisAagreeBtnVisible());
+		sAssert.assertTrue(islnkTCPAagreeBtnIsVisible());
+		lnkTCPDisAagreeBtn();
+		btnDisagreeCancel();
+		lnkTCPDisAagreeBtn();
+		btnDisagreeOk();
+		ExtentLogger.logInfo("Verify the flow when Customer disagree TCPA compliance.");
+
+		// Check TCPA For IVR
+		pause(5000);
+		clickLevelOutage();
+
+		selectlstOutageChannel("IVR");
+		checkChkBoxOutage();
+		populateFirstMobilenumber("8888888888");
+		btnOutageSaveBtn();
+		pause(5000);
+
+		sAssert.assertTrue(isLblTCPAacceptNotificatinTerms(),
+				"TCPA Compliance Terms and Conditions popup is not appearing ");
+		sAssert.assertEquals(NotificationpreferenceTextProp.getPropValue("txtLblAcceptNotificationPopupHeadingAos"),
+				getLblTCPAacceptNotificatinTerms(), "TCPA pop up heading is not matched");
+		sAssert.assertEquals(NotificationpreferenceTextProp.getPropValue("txtLblNotificationBodyTitleAos"),
+				getLbltcpaPopupBody(), "Tcpa popup body title is not matched");
+		Assert.assertTrue(getFullTxtTcpaPopup()
+				.contains(NotificationpreferenceTextProp.getPropValue("txtLblTcpaPopupBodyMsgOnCheckNpp")));
+		Assert.assertTrue(
+				getTxtchekedType().contains(NotificationpreferenceTextProp.getPropValue("txtOutageIVRCheckedType")));
+		ExtentLogger.logInfo("TCPA Verification Done for the IVR Channel for OUTAGE");
+
+		// Checking for both Text and IVR
+		lnkTCPDisAagreeBtn();
+		btnDisagreeOk();
+
+		pause(5000);
+		clickLevelOutage();
+
+		selectlstOutageChannel("IVR");
+		checkChkBoxOutage();
+		populateFirstMobilenumber("8888888888");
+		clickIconOutageAdd();
+		select2ndOutageChannel("Text");
+		checkChkBoxOutage();
+		populateFirstMobilenumber("9999999999");
+
+		btnOutageSaveBtn();
+		pause(5000);
+
+		sAssert.assertTrue(isLblTCPAacceptNotificatinTerms(),
+				"TCPA Compliance Terms and Conditions popup is not appearing ");
+		sAssert.assertEquals(NotificationpreferenceTextProp.getPropValue("txtLblAcceptNotificationPopupHeadingAos"),
+				getLblTCPAacceptNotificatinTerms(), "TCPA pop up heading is not matched");
+		sAssert.assertEquals(NotificationpreferenceTextProp.getPropValue("txtLblNotificationBodyTitleAos"),
+				getLbltcpaPopupBody(), "Tcpa popup body title is not matched");
+		Assert.assertTrue(
+				getTxtchekedType().contains(NotificationpreferenceTextProp.getPropValue("txtOutageIVRCheckedType")));
+		Assert.assertTrue(
+				getTxtchekedType().contains(NotificationpreferenceTextProp.getPropValue("txtOutageTextCheckedType")));
+
+		ExtentLogger.logInfo("TCPA Verification Done for the IVR and TEXT (both)Channel for OUTAGE");
 	}
 
 	public void quietHoursFunctionalityAndUI(SoftAssert sAssert) throws SQLException {
@@ -215,10 +285,9 @@ public class NotificationPreferenceSteps extends NotificationPreferencePage {
 		log.info("To Verify If the Quite Hours are Active then the set Start Time and End ");
 
 		log.info("Test Case execution for - verifyQuietHoursFunctionalityAndUI - is completed");
-
 	}
 
-	public void addNotificationChannelFunctionality(SoftAssert sAssert) {
+	public void addChanneFunctionality(SoftAssert sAssert) {
 		log.info(" To Verify that User is not able to add same type of notification channels for a particular module");
 		log.info("To verify the redirection on " + "Notification Preference page");
 		homeSteps.navigateToNotificationPreferences();
@@ -226,126 +295,257 @@ public class NotificationPreferenceSteps extends NotificationPreferencePage {
 				NotificationpreferenceTextProp.getPropValue("expectedNotificationPrePageUrl"),
 				NotificationpreferenceTextProp.getPropValue("expectedNotificationPrePageTitle")));
 		Assert.assertTrue(isLblNotificationsVisible());
-		if (getIconBudgetStatus().equalsIgnoreCase("On")) {
-			getLevelBudget();
-			for (int i = 0; i < listBudgetCloseIcons().size(); i++) {
-				listBudgetCloseIcons().get(i).click();
-				;
+
+		// NP For outage
+
+		if (getLblIconOutageStatus().equalsIgnoreCase("On")) {
+			clickLevelOutage();
+			for (int i = 0; i < getlstOutageRemoveIcons().size(); i++) {
+				getlstOutageRemoveIcons().get(i).click();
 			}
-			selectBudgetOptions("Email");
-			unCheckBoxBudget();
-			BudgetSaveBtn();
 			pause(5000);
-
-		}
-		linklevelBudget();
-		selectBudgetOptions("Email");
-		checkBoxBudget();
-		IconBudgetAdd();
-		selectlstBudgetOption("Email");
-		checkChkbox2Budget();
-		BudgetSaveBtn();
-		sAssert.assertEquals(getLblToastMessage(),
-				NotificationpreferenceTextProp.getPropValue("txtSameEmailChannelNpp"),
-				"Toast message is appearing wrong for same email channel ");
-		pause(3000);
-		clickbtnCloseMsgOnHeader();
-		pause(3000);
-		selectBudgetOptions("Text");
-		selectlstBudgetOption("Text");
-		BudgetSaveBtn();
-		sAssert.assertEquals(getLblToastMessage(),
-				NotificationpreferenceTextProp.getPropValue("txtSameTextNumberChannelNpp"),
-				"Toast message is appearing wrong for same Text channel ");
-		clickbtnCloseMsgOnHeader();
-		pause(3000);
-		selectBudgetOptions("IVR");
-		selectlstBudgetOption("IVR");
-		BudgetSaveBtn();
-		sAssert.assertEquals(getLblToastMessage(),
-				NotificationpreferenceTextProp.getPropValue("txtSameIVRNumberChannelNpp"),
-				"Toast message is appearing wrong for same IVR channel ");
-		clickbtnCloseMsgOnHeader();
-		pause(3000);
-		selectBudgetOptions("Whatsapp");
-		selectlstBudgetOption("Whatsapp");
-		populateBugetFirstMobilenumber("9999999990");
-		populateBugetSecondMobilenumber("9999999998");
-		BudgetSaveBtn();
-		sAssert.assertEquals(getLblToastMessage(),
-				NotificationpreferenceTextProp.getPropValue("txtSameWhatsappNumberChannelNpp"),
-				"Toast message is appearing wrong for same whatsapp channel ");
-
-		log.info("Test Case execution for - verifyNotificationsChannelsValidations - is finished");
-	}
-
-	public void notificationsChannelsValidations(SoftAssert sAssert) {
-		log.info("To verify the redirection on " + "Notification Preference page");
-		homeSteps.navigateToNotificationPreferences();
-		Assert.assertTrue(isNotificationPreferencePage(
-				NotificationpreferenceTextProp.getPropValue("expectedNotificationPrePageUrl"),
-				NotificationpreferenceTextProp.getPropValue("expectedNotificationPrePageTitle")));
-		Assert.assertTrue(isLblNotificationsVisible());
-		if (getIconBudgetStatus().equalsIgnoreCase("On")) {
-			linklevelBudget();
-
-			for (int i = 0; i < listBudgetCloseIcons().size(); i++) {
-				listBudgetCloseIcons().get(i).click();
-			}
-			selectBudgetOptions("Email");
-			unCheckBoxBudget();
-			BudgetSaveBtn();
+			selectlstOutageChannel("Email");
+			btnOutageSaveBtn();
+			Assert.assertEquals(getToastMessage(),
+					NotificationpreferenceTextProp.getPropValue("txtLblNotificationPrefSavedAos"),
+					"Notification preferences save successfully message not matching.");
 		}
 		pause(8000);
-		linklevelBudget();
-		selectBudgetOptions("Email");
-		pause(3000);
-		checkBoxBudget();
-		BudgetSaveBtn();
-		pause(5000);
-		linklevelBudget();
-		pause(2000);
-		clickIconBudgetDisabled();
-		selectlstBudgetOption("Email");
-		checkChkbox2Budget();
-		BudgetSaveBtn();
-		pause(2000);
-		sAssert.assertEquals(getLblToastMessage(),
-				NotificationpreferenceTextProp.getPropValue("txtSameEmailChannelNpp"),
-				"Toast message is appearing wrong for same email channel ");
-		clickbtnCloseMsgOnHeader();
-		pause(3000);
-		selectBudgetOptions("Text");
-		selectlstBudgetOption("Text");
-		BudgetSaveBtn();
-		sAssert.assertEquals(getLblToastMessage(),
-				NotificationpreferenceTextProp.getPropValue("txtSameTextNumberChannelNpp"),
-				"Toast message is appearing wrong for same Text channel ");
-		clickbtnCloseMsgOnHeader();
-		pause(3000);
-		selectBudgetOptions("IVR");
-		selectlstBudgetOption("IVR");
-		BudgetSaveBtn();
-		pause(2000);
-		sAssert.assertEquals(getLblToastMessage(),
-				NotificationpreferenceTextProp.getPropValue("txtSameIVRNumberChannelNpp"),
-				"Toast message is appearing wrong for same IVR channel ");
-		clickbtnCloseMsgOnHeader();
-		pause(3000);
-		selectBudgetOptions("Whatsapp");
-		selectlstBudgetOption("Whatsapp");
-		populateBugetFirstMobilenumber("9999999990");
-		populateBugetSecondMobilenumber("9999999998");
+		clickLevelOutage();
+		selectlstOutageChannel("Text");
+		checkChkBoxOutage();
+		saveOutageNotificationBtn();
 
-		BudgetSaveBtn();
-		sAssert.assertEquals(getLblToastMessage(),
-				NotificationpreferenceTextProp.getPropValue("txtSameWhatsappNumberChannelNpp"),
-				"Toast message is appearing wrong for same whatsapp channel ");
-		clickbtnCloseMsgOnHeader();
-		pause(3000);
-		log.info("Test Case execution for - verifyNotificationsChannelsValidations - is finished");
+		sAssert.assertTrue(isLblTCPAacceptNotificatinTerms(),
+				"TCPA Compliance Terms and Conditions popup is not appearing ");
+		sAssert.assertEquals(NotificationpreferenceTextProp.getPropValue("txtLblAcceptNotificationPopupHeadingAos"),
+				getLblTCPAacceptNotificatinTerms(), "TCPA pop up heading is not matched");
+		sAssert.assertEquals(NotificationpreferenceTextProp.getPropValue("txtLblNotificationBodyTitleAos"),
+				getLbltcpaPopupBody(), "Tcpa popup body title is not matched");
+		Assert.assertTrue(getFullTxtTcpaPopup()
+				.contains(NotificationpreferenceTextProp.getPropValue("txtLblTcpaPopupBodyMsgOnCheckNpp")));
+		Assert.assertTrue(
+				getTxtchekedType().contains(NotificationpreferenceTextProp.getPropValue("txtOutageTextCheckedType")));
+		lnkTCPAagreeBtn();
+		pause(500);
+		Assert.assertEquals(getToastMessage(),
+				NotificationpreferenceTextProp.getPropValue("txtLblNotificationPrefSavedAos"),
+				"Notification preferences save successfully message not matching.");
+
+		pause(5000);
+		ExtentLogger.logInfo("Email and Text Notification Preference is validated for OUTAGE ");
+
+		// NP For billing
+		if (getIconBillingStatus().equalsIgnoreCase("On")) {
+			pause(1000);
+			linkLblBillingText();
+			pause(100);
+			// linkLblBillingText();
+			for (int i = 0; i < listBillingClose().size(); i++) {
+				listBillingClose().get(i).click();
+			}
+			selectBillingOptions("Email");
+			billingSaveBtn();
+			pause(2000);
+
+			Assert.assertEquals(getToastMessage(),
+					NotificationpreferenceTextProp.getPropValue("txtLblNotificationPrefSavedAos"),
+					"Notification preferences save successfully message not matching.");
+		}
+		pause(5000);
+		linkLblBillingText();
+		pause(1000);
+
+		selectBillingOptions("Text");
+		checkBoxBilling();
+		billingSaveBtn();
+		pause(2000);
+		sAssert.assertTrue(isLblTCPAacceptNotificatinTerms(),
+				"TCPA Compliance Terms and Conditions popup is not appearing ");
+		sAssert.assertEquals(NotificationpreferenceTextProp.getPropValue("txtLblAcceptNotificationPopupHeadingAos"),
+				getLblTCPAacceptNotificatinTerms(), "TCPA pop up heading is not matched");
+		sAssert.assertEquals(NotificationpreferenceTextProp.getPropValue("txtLblNotificationBodyTitleAos"),
+				getLbltcpaPopupBody(), "Tcpa popup body title is not matched");
+		Assert.assertTrue(getFullTxtTcpaPopup()
+				.contains(NotificationpreferenceTextProp.getPropValue("txtLblTcpaPopupBodyMsgOnCheckNpp")));
+		lnkTCPAagreeBtn();
+		pause(500);
+
+		Assert.assertEquals(getToastMessage(),
+				NotificationpreferenceTextProp.getPropValue("txtLblNotificationPrefSavedAos"),
+				"Notification preferences save successfully message not matching.");
+		ExtentLogger.logInfo("Email and Text Notification Preference is validated for BILLING ");
+
+		waitForPageLoader();
+
+		// NP For contactUS
+
+		if (getIconConnectMeStatus().equalsIgnoreCase("On")) {
+			linkLblContactUsText();
+			pause(100);
+			for (int i = 0; i < getlstConnectMeCloseIcons().size(); i++) {
+				getlstConnectMeCloseIcons().get(i).click();
+			}
+			selectlstConnectMeOptions("Email");
+			clickBtnConnectMeSave();
+			pause(2000);
+			Assert.assertEquals(getToastMessage(),
+					NotificationpreferenceTextProp.getPropValue("txtLblNotificationPrefSavedAos"),
+					"Notification preferences save successfully message not matching.");
+		}
+
+		pause(2000);
+
+		linkLblContactUsText();
+		pause(2000);
+
+		selectlstConnectMeOptions("Text");
+		checkConnectMe();
+		clickBtnConnectMeSave();
+		pause(5000);
+
+		sAssert.assertTrue(isLblTCPAacceptNotificatinTerms(),
+				"TCPA Compliance Terms and Conditions popup is not appearing ");
+		sAssert.assertEquals(NotificationpreferenceTextProp.getPropValue("txtLblAcceptNotificationPopupHeadingAos"),
+				getLblTCPAacceptNotificatinTerms(), "TCPA pop up heading is not matched");
+		sAssert.assertEquals(NotificationpreferenceTextProp.getPropValue("txtLblNotificationBodyTitleAos"),
+				getLbltcpaPopupBody(), "Tcpa popup body title is not matched");
+		Assert.assertTrue(getFullTxtTcpaPopup()
+				.contains(NotificationpreferenceTextProp.getPropValue("txtLblTcpaPopupBodyMsgOnCheckNpp")));
+		lnkTCPAagreeBtn();
+
+		pause(200);
+
+		Assert.assertEquals(getToastMessage(),
+				NotificationpreferenceTextProp.getPropValue("txtLblNotificationPrefSavedAos"),
+				"Notification preferences save successfully message not matching.");
+		pause(5000);
+		ExtentLogger.logInfo("Email and Text Notification Preference is validated for  CONTACTUS ");
+
+		// NP For Services
+
+		if (getIconServicesStatus().equalsIgnoreCase("On")) {
+
+			clickLevelServiceText();
+			for (int i = 0; i < getlstServicesCloseIcons().size(); i++) {
+				getlstServicesCloseIcons().get(i).click();
+			}
+			selectlstServiceOptions("Email");
+			clickServicesSave();
+			pause(2000);
+			Assert.assertEquals(getToastMessage(),
+					NotificationpreferenceTextProp.getPropValue("txtLblNotificationPrefSavedAos"),
+					"Notification preferences save successfully message not matching.");
+			pause(5000);
+		}
+		clickLevelServiceText();
+		selectlstServiceOptions("Text");
+		checkChkBoxServices();
+		clickServicesSave();
+		pause(5000);
+
+		sAssert.assertTrue(isLblTCPAacceptNotificatinTerms(),
+				"TCPA Compliance Terms and Conditions popup is not appearing ");
+
+		sAssert.assertEquals(NotificationpreferenceTextProp.getPropValue("txtLblAcceptNotificationPopupHeadingAos"),
+				getLblTCPAacceptNotificatinTerms(), "TCPA pop up heading is not matched");
+
+		sAssert.assertEquals(NotificationpreferenceTextProp.getPropValue("txtLblNotificationBodyTitleAos"),
+				getLbltcpaPopupBody(), "Tcpa popup body title is not matched");
+
+		Assert.assertTrue(getFullTxtTcpaPopup()
+				.contains(NotificationpreferenceTextProp.getPropValue("txtLblTcpaPopupBodyMsgOnCheckNpp")));
+		lnkTCPAagreeBtn();
+
+		Assert.assertEquals(getToastMessage(),
+				NotificationpreferenceTextProp.getPropValue("txtLblNotificationPrefSavedAos"),
+				"Notification preferences save successfully message not matching.");
+		ExtentLogger.logInfo("Email and Text Notification Preference is validated for SERVICES ");
+		// NP For LEAK ALERT
+
+		waitForPageLoader();
+		if (getIconLeakAlertStatus().equalsIgnoreCase("On")) {
+			linkLeakalertText();
+			for (int i = 0; i < lstLeakAlertCloseIcons().size(); i++) {
+				lstLeakAlertCloseIcons().get(i).click();
+			}
+			selectlstLeakAlertOptions("Email");
+			leakAlertSaveBtn();
+			pause(2000);
+			Assert.assertEquals(getToastMessage(),
+					NotificationpreferenceTextProp.getPropValue("txtLblNotificationPrefSavedAos"),
+					"Notification preferences save successfully message not matching.");
+			pause(5000);
+		}
+		linkLeakalertText();
+		selectlstLeakAlertOptions("Text");
+		checkchkBoxLeakAlert();
+		leakAlertSaveBtn();
+		pause(1000);
+
+		sAssert.assertTrue(isLblTCPAacceptNotificatinTerms(),
+				"TCPA Compliance Terms and Conditions popup is not appearing ");
+		sAssert.assertEquals(NotificationpreferenceTextProp.getPropValue("txtLblAcceptNotificationPopupHeadingAos"),
+				getLblTCPAacceptNotificatinTerms(), "TCPA pop up heading is not matched");
+		sAssert.assertEquals(NotificationpreferenceTextProp.getPropValue("txtLblNotificationBodyTitleAos"),
+				getLbltcpaPopupBody(), "Tcpa popup body title is not matched");
+		Assert.assertTrue(getFullTxtTcpaPopup()
+				.contains(NotificationpreferenceTextProp.getPropValue("txtLblTcpaPopupBodyMsgOnCheckNpp")));
+
+		lnkTCPAagreeBtn();
+
+		Assert.assertEquals(getToastMessage(),
+				NotificationpreferenceTextProp.getPropValue("txtLblNotificationPrefSavedAos"),
+				"Notification preferences save successfully message not matching.");
+		pause(5000);
+		ExtentLogger.logInfo("Email and Text Notification Preference is validated for LEAK ALERT ");
 
 	}
+//As Budget option is not avilable
+	/*
+	 * public void notificationsChannelsValidations(SoftAssert sAssert) {
+	 * log.info("To verify the redirection on " + "Notification Preference page");
+	 * homeSteps.navigateToNotificationPreferences();
+	 * Assert.assertTrue(isNotificationPreferencePage(
+	 * NotificationpreferenceTextProp.getPropValue("expectedNotificationPrePageUrl")
+	 * , NotificationpreferenceTextProp.getPropValue(
+	 * "expectedNotificationPrePageTitle")));
+	 * Assert.assertTrue(isLblNotificationsVisible()); if
+	 * (getIconBudgetStatus().equalsIgnoreCase("On")) { linklevelBudget();
+	 * 
+	 * for (int i = 0; i < listBudgetCloseIcons().size(); i++) {
+	 * listBudgetCloseIcons().get(i).click(); } selectBudgetOptions("Email");
+	 * unCheckBoxBudget(); BudgetSaveBtn(); } pause(8000); linklevelBudget();
+	 * selectBudgetOptions("Email"); pause(3000); checkBoxBudget(); BudgetSaveBtn();
+	 * pause(5000); linklevelBudget(); pause(2000); clickIconBudgetDisabled();
+	 * selectlstBudgetOption("Email"); checkChkbox2Budget(); BudgetSaveBtn();
+	 * pause(2000); sAssert.assertEquals(getLblToastMessage(),
+	 * NotificationpreferenceTextProp.getPropValue("txtSameEmailChannelNpp"),
+	 * "Toast message is appearing wrong for same email channel ");
+	 * clickbtnCloseMsgOnHeader(); pause(3000); selectBudgetOptions("Text");
+	 * selectlstBudgetOption("Text"); BudgetSaveBtn();
+	 * sAssert.assertEquals(getLblToastMessage(),
+	 * NotificationpreferenceTextProp.getPropValue("txtSameTextNumberChannelNpp"),
+	 * "Toast message is appearing wrong for same Text channel ");
+	 * clickbtnCloseMsgOnHeader(); pause(3000); selectBudgetOptions("IVR");
+	 * selectlstBudgetOption("IVR"); BudgetSaveBtn(); pause(2000);
+	 * sAssert.assertEquals(getLblToastMessage(),
+	 * NotificationpreferenceTextProp.getPropValue("txtSameIVRNumberChannelNpp"),
+	 * "Toast message is appearing wrong for same IVR channel ");
+	 * clickbtnCloseMsgOnHeader(); pause(3000); selectBudgetOptions("Whatsapp");
+	 * selectlstBudgetOption("Whatsapp");
+	 * populateBugetFirstMobilenumber("9999999990");
+	 * populateBugetSecondMobilenumber("9999999998");
+	 * 
+	 * BudgetSaveBtn(); sAssert.assertEquals(getLblToastMessage(),
+	 * NotificationpreferenceTextProp.getPropValue("txtSameWhatsappNumberChannelNpp"
+	 * ), "Toast message is appearing wrong for same whatsapp channel ");
+	 * clickbtnCloseMsgOnHeader(); pause(3000); log.
+	 * info("Test Case execution for - verifyNotificationsChannelsValidations - is finished"
+	 * );
+	 * 
+	 * }
+	 */
 
 	public void notificationAlertsValidationMessages(SoftAssert sAssert) throws SQLException {
 		log.info("To Verify that application will display common message if more than one mandatory field "
@@ -476,7 +676,8 @@ public class NotificationPreferenceSteps extends NotificationPreferencePage {
 		clickbtnCloseMsgOnHeader();
 		pause(3000);
 
-		log.info("- Verify the validation message in case of field minimum length=maximum length and provided value length is less than the required");
+		log.info(
+				"- Verify the validation message in case of field minimum length=maximum length and provided value length is less than the required");
 		// clickLevelContactMeText();
 		selectlstBillingChannel("Text");
 		clearlstBillingOptionsTxt();
