@@ -4,7 +4,11 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 import org.testng.asserts.SoftAssert;
+
+import sew.ai.config.Configuration;
 import sew.ai.helpers.props.Constants;
 import sew.ai.helpers.props.FilePaths;
 import sew.ai.helpers.reporters.ExtentLogger;
@@ -23,6 +27,7 @@ public class ForgetUsernameSteps extends ForgotUsernamePage {
 		super(driver);
 		ForgotUsernameTextProp = new PropertiesUtil(
 				FilePaths.SCP_TEXT_PROPERTIES + Constants.FORGET_USERNAME_IN_TXT_FILENAME);
+		loginTextProp = new PropertiesUtil(FilePaths.SCP_TEXT_PROPERTIES + Constants.LOGIN_TXT_FILENAME);
 	}
 
 	public void verifyForgotUsernameInObject(SoftAssert softAssert) {
@@ -57,32 +62,205 @@ public class ForgetUsernameSteps extends ForgotUsernamePage {
 	public void emailFeildVerification() {
 		// Click Submit with blank email add
 		clickSubmitBtn();
-		Assert.assertEquals(getlblGenericErrorMessage(), ForgotUsernameTextProp.getPropValue("txtMsgBlankEmailAddress"));
-		
+		Assert.assertEquals(getlblGenericErrorMessage(),
+				ForgotUsernameTextProp.getPropValue("txtMsgBlankEmailAddress"));
+
 		// Enter Invalid Email address
 		populateEmailAddress("hdddd");
 		clickSubmitBtn();
-		 Assert.assertEquals(getlblGenericErrorMessage(),ForgotUsernameTextProp.getPropValue("txtLblEnterInvalidEmailAddress"));
-		 clearEmailAddressField();
-		
-		 // Enter Valid Email address
+		Assert.assertEquals(getlblGenericErrorMessage(),
+				ForgotUsernameTextProp.getPropValue("txtLblEnterInvalidEmailAddress"));
+		clearEmailAddressField();
+
+		// Enter Valid Email address
 		populateEmailAddress("User@pwc.com");
 		clickSubmitBtn();
 		String SuccessToasterMsg = getToastMessage();
 		ExtentLogger.logInfo("Link send to user  " + SuccessToasterMsg);
 
 	}
-	
+
 	public void validEmailFeildVerification() {
-		
-		 // Enter Valid Email address
+
+		// Enter Valid Email address
 		populateEmailAddress("User@pwc.com");
 		clickSubmitBtn();
 		String SuccessToasterMsg = getToastMessage();
 		ExtentLogger.logInfo("Link send to user  " + SuccessToasterMsg);
-	    Assert.assertEquals(getToastMessage(),ForgotUsernameTextProp.getPropValue("txtSuccessToasterMsg"));
-
+		Assert.assertEquals(getToastMessage(), ForgotUsernameTextProp.getPropValue("txtSuccessToasterMsg"));
 
 	}
+
+	public void cancelBttnVerification() {
+
+		// Enter Valid Email address
+		populateEmailAddress("User@pwc.com");
+		clickCancelBtn();
+		LoginSteps loginSteps;
+		loginSteps = new LoginSteps(driver);
+		Assert.assertTrue(loginSteps.isLoginPage(loginTextProp.getPropValue("loginPageUrl"),
+				loginTextProp.getPropValue("loginPageTitle")));
+		ExtentLogger.logInfo("checkCancelFunctnUsername Passed");
+
+	}
+
+	public void homeIconVerification() {
+
+		// Enter Valid Email address
+		populateEmailAddress("User@pwc.com");
+		clickHomeIcon();
+		LoginSteps loginSteps;
+		loginSteps = new LoginSteps(driver);
+		Assert.assertTrue(loginSteps.isLoginPage(loginTextProp.getPropValue("loginPageUrl"),
+				loginTextProp.getPropValue("loginPageTitle")));
+		ExtentLogger.logInfo("checkHomeIconFunctnUsername Passed");
+	}
+
+	public void populateLoginForm(String userName, String password) {
+		populateUserName(userName);
+		populatePassword(password);
+		ExtentLogger.logInfo("username and password populated");
+	}
+
+	public String loginWithBlankUsername(String password) {
+		clearUsernameField();
+		populatePassword(password);
+		clickSignInBtn();
+		String errMsg = getCommonValidationMsg();
+		ExtentLogger.logInfo("cannot login with blank username");
+		return errMsg;
+	}
+
+	@FindBy(css = "[id='txtLogin']")
+	private WebElement txt_username;
+
+	public void populateUserName(String userName) {
+		log.info("Populating username {} :" + userName);
+		sendKeys(txt_username, userName);
+		log.info("Username populated successfully.");
+	}
+
+	public void clearUsernameField() {
+		clear(txt_username);
+		log.info("Username field cleared {}");
+	}
+
+	@FindBy(css = "[id='txtpwd']")
+	private WebElement txt_password;
+
+	public void populatePassword(String password) {
+		log.info("Populating password {} :" + password);
+		sendKeys(txt_password, password);
+		log.info("Password populated successfully.");
+	}
+
+	public void clearPasswordField() {
+		clear(txt_password);
+		log.info("Password field cleared {}");
+	}
+
+	@FindBy(css = "#btnlogin")
+	private WebElement btn_sign_in;
+
+	public void clickSignInBtn() {
+		log.info("Clicking the sign in button.");
+		click(btn_sign_in);
+		log.info("Sign in button clicked successfully.");
+	}
+
+	public String loginWithWrongUsername(String userName, String password) {
+		populateLoginForm(userName, password);
+		clearUsernameField();
+		populateUserName("invalid@username.com");
+		String errMsg = getToastMessage();
+		ExtentLogger.logInfo("cannot login with wrong username");
+		return errMsg;
+	}
+
+	public String loginWithWrongPassword(String userName, String password) {
+		populateLoginForm(userName, password);
+		clearPasswordField();
+		populatePassword("Invalid@Pass123");
+		clickSignInBtn();
+		
+		String errMsg = getToastMessage();
+		ExtentLogger.logInfo("cannot login with wrong password");
+		return errMsg;
+	}
+
+	public void loginWithInvalidCreds() {
+		populateUserName("Invalid@Username");
+		populatePassword("Invalid@Password");
+		clickSignInBtn();
+		/*
+		 * String errMsg = getToastMessage();
+		 * ExtentLogger.logInfo("cannot login with invalid creds"); return errMsg;
+		 */
+	}
+
+//	public void loginIntoTheApplicationWrongCreds(SoftAssert softAssert) {
+//		String username = null;
+//		String Pass = null;
+//		int totalAttempts = 6;
+//		while(totalAttempts !=0) {
+//			
+//		if(username == invaliduser && Pass = invalidpas )
+//		
+//		{
+//			
+//			
+//				Assert.assertEquals(getToastMessage(), loginTextProp.getPropValue("invalidCredentialsErrMsg"));
+//
+//			}
+//			}
+			
+			//Assert.assertEquals(loginWithInvalidCreds(), loginTextProp.getPropValue("invalidCredentialsErrMsg"));
+		
+			
+		//}
+		/*
+		 * // Attempt 1 to login with invalid username and password.
+		 * Assert.assertEquals(loginWithInvalidCreds(),
+		 * loginTextProp.getPropValue("invalidCredentialsErrMsg"));
+		 * 
+		 * // Attempt 2 to login with invalid username and password.
+		 * Assert.assertEquals(loginWithInvalidCreds(),
+		 * loginTextProp.getPropValue("invalidCredentialsErrMsg"));
+		 * 
+		 * // Attempt 3 to login with invalid username and password.
+		 * Assert.assertEquals(loginWithInvalidCreds(),
+		 * loginTextProp.getPropValue("invalidCredentialsErrMsg"));
+		 * 
+		 * // Attempt 4 to login with invalid username and password.
+		 * Assert.assertEquals(loginWithInvalidCreds(),
+		 * loginTextProp.getPropValue("invalidCredentialsErrMsg"));
+		 * 
+		 * // Attempt 5 to login with invalid username and password.
+		 * Assert.assertEquals(loginWithInvalidCreds(),
+		 * loginTextProp.getPropValue("invalidCredentialsErrMsg"));
+		 * 
+		 * // Attempt 6 to login with invalid username and password.
+		 * Assert.assertEquals(loginWithInvalidCreds(),
+		 * loginTextProp.getPropValue("acctIPLockedErrMsg"));
+		 * 
+		 * log.info("IP lock functionality tested successfully");
+		 */
+
 	
+
+public String verifyAccountIPLockFunctionality(SoftAssert softAssert ) {
+	 int attempt = 6;
+       for (int i = 0; i < attempt; i++) {
+           pause(500);
+           populateLoginForm(Configuration.toString("userName"), "invalid@password");
+           clickSignInBtn();
+           softAssert.assertEquals(getToastMessage(), loginTextProp.getPropValue("acctIPLockedErrMsg"),
+                   "Invalid credential error message not matched.");
+       }
+       pause(500);
+       populateLoginForm(Configuration.toString("userName"), "invalid@password");
+       clickSignInBtn();
+       return getToastMessage();
+  
+}
 }

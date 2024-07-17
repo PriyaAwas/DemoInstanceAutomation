@@ -1,4 +1,5 @@
 package demo.steps.scp;
+
 import static sew.ai.steps.scp.LoginSteps.loginTextProp;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -28,9 +29,9 @@ public class ForgetPasswordSteps extends ForgotPasswordPage {
 	public void verifyForgetPasswordObject(SoftAssert softAssert) {
 		LoginSteps loginSteps;
 		loginSteps = new LoginSteps(driver);
-		  Assert.assertTrue(loginSteps.isLoginPage(loginTextProp.getPropValue(
-		  "loginPageUrl"), loginTextProp.getPropValue("loginPageTitle")));
-		 
+		Assert.assertTrue(loginSteps.isLoginPage(loginTextProp.getPropValue("loginPageUrl"),
+				loginTextProp.getPropValue("loginPageTitle")));
+
 		clickForgotPasswordLnk();
 		softAssert.assertTrue(
 				isForgetPasswordPage(ForgotPasswordTextProp.getPropValue("ForgetPasswordPageUrl"),
@@ -41,7 +42,7 @@ public class ForgetPasswordSteps extends ForgotPasswordPage {
 		softAssert.assertTrue(isSubmitBtnVisible(), "Submit Button is not visible");
 		softAssert.assertTrue(isCancelBtnVisible(), "Cancel Button is not visible");
 	}
-	
+
 	public LoginSteps verifyPreLoginUrlTitle(SoftAssert softAssert) {
 		LoginSteps loginSteps;
 		loginSteps = new LoginSteps(driver);
@@ -77,13 +78,14 @@ public class ForgetPasswordSteps extends ForgotPasswordPage {
 				loginTextProp.getPropValue("loginPageTitle")));
 		ExtentLogger.logInfo("Bug exist");
 	}
+
 	/**
 	 * To verify the validation for invalid and valid user name
 	 */
 
 	public void verifyInvalidUserName(SoftAssert softAssert) {
 		clickForgotPasswordLnk();
-		populateUserName(Configuration.toString("userName"));	
+		populateUserName(Configuration.toString("userName"));
 		pause(500);
 		clickSubmitBtn();
 		String SuccessToasterMsg = getToastMessage();
@@ -94,14 +96,62 @@ public class ForgetPasswordSteps extends ForgotPasswordPage {
 		populateUserName("Invalid@Username....12");
 		clickSubmitBtn();
 		String errMsg = getToastMessage();
-		//Assert.assertEquals(errMsg, ForgotPasswordTextProp.getPropValue("InvalidUserNameToastMsg"));
+		// Assert.assertEquals(errMsg,
+		// ForgotPasswordTextProp.getPropValue("InvalidUserNameToastMsg"));
 		LoginSteps loginSteps;
 		loginSteps = new LoginSteps(driver);
 		loginSteps.waitForUserNameFieldVisibility();
 		Assert.assertTrue(loginSteps.isLoginPage(loginTextProp.getPropValue("loginPageUrl"),
 				loginTextProp.getPropValue("loginPageTitle")));
-			}
+	}
 
+	public void verifyCancelClick(SoftAssert softAssert) {
+		clickForgotPasswordLnk();
+		clickCancelBtn();
+		LoginSteps loginSteps;
+		loginSteps = new LoginSteps(driver);
+		loginSteps.waitForUserNameFieldVisibility();
+		Assert.assertTrue(loginSteps.isLoginPage(loginTextProp.getPropValue("loginPageUrl"),
+				loginTextProp.getPropValue("loginPageTitle")));
+
+	}
 	
+	public String loginWithInvalidUserName() {
+		populateUserName("Invalid@Username");
+		clickSignInBtn();
+		String errMsg = getToastMessage();
+		ExtentLogger.logInfo("cannot login with invalid creds");
+		return errMsg;
+	}
+	
+//	public void verifyipLockFunc(SoftAssert softAssert) {
+//		String user = Configuration.toString("userName");
+//		clickForgotPasswordLnk();
+//		
+//		// Attempt 1 to login with invalid username.
+//		Assert.assertEquals(loginWithInvalidUserName(), loginTextProp.getPropValue("invalidCredentialsErrMsg"));
+//
+//		// Attempt 2 to login with invalid username.
+//		Assert.assertEquals(loginWithInvalidUserName(), loginTextProp.getPropValue("invalidCredentialsErrMsg"));
+//				
+//		// Attempt 3 to login with invalid username.
+//		Assert.assertEquals(loginWithInvalidUserName(), loginTextProp.getPropValue("invalidCredentialsErrMsg"));
+//				
+//		// Attempt 4 to login with invalid username.
+//		Assert.assertEquals(loginWithInvalidUserName(), loginTextProp.getPropValue("invalidCredentialsErrMsg"));
+//
+//		// Attempt 5 to login with invalid username.
+//		Assert.assertEquals(loginWithInvalidUserName(), loginTextProp.getPropValue("invalidCredentialsErrMsg"));
+//				
+//		// Attempt 6 to login with invalid username.
+//		Assert.assertEquals(loginWithInvalidUserName(), loginTextProp.getPropValue("acctIPLockedErrMsg"));
+//
+//		log.info("IP lock functionality tested successfully");
 
+
+		
+		
+		
+		
+		
 }

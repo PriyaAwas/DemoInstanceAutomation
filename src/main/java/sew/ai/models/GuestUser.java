@@ -30,6 +30,11 @@ public class GuestUser {
 	public String getGuestName() {
 		return guestName;
 	}
+	
+	public GuestUser getGuestUserName(String guestName) {
+        return Arrays.stream(guestUser).filter(bank -> bank.getGuestName()
+                .equalsIgnoreCase(guestName)).findFirst().get();
+    }
 
 
 	public void setGuestName(String guestName) {

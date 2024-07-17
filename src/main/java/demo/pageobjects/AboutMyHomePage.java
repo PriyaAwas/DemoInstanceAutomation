@@ -120,6 +120,40 @@ public class AboutMyHomePage extends HomePage {
 		sendKeys(lblHaveSolarPanelsField, datafield);
 		log.info("Entering data in the do you have solar panels field.");
 	}
+	
+	public String getTxtBoxSolarPanelMaxLength() {
+        String maxLen = getAttribute(lblHaveSolarPanelsField, "maxlength");
+        log.info("Max length of Solar Panel field is {} " + maxLen);
+        return maxLen;
+    }
+	
+	public String getTxtBoxSolarPanelInputMode() {
+        String inputMode = getAttribute(lblHaveSolarPanelsField, "inputmode");
+        log.info("Input mode of Solar Panel field is {} " + inputMode);
+        return inputMode;
+    }
+
+	@FindBy(css = "#formfieldlist > div:nth-child(4) > div > a")
+	private WebElement iconHaveSolarPanelsField;
+
+	public boolean isIconSolarPanelsVisible() {
+		log.info("Checking that Do you have solar panels info icon is visible on the About My Home page."
+				+ iconHaveSolarPanelsField.isDisplayed());
+		return isElementVisible(iconHaveSolarPanelsField);
+
+	}
+
+	public void clickIconSolarPanels() {
+		click(iconHaveSolarPanelsField);
+		log.info("Do you have solar panels info icon has been successfully clicked.");
+
+	}
+	
+	public String getSolarPanelInfoIcon() {
+		log.info("Fetching the info icon details on Solar Panels field");
+		String tooltip = iconHaveSolarPanelsField.getAttribute("aria-label");
+		return tooltip;
+	}
 
 	@FindBy(xpath = "//*[contains(@tcollectionid,'1821')]")
 	private WebElement lblYourHomeSizeField;
@@ -135,6 +169,40 @@ public class AboutMyHomePage extends HomePage {
 		sendKeys(lblYourHomeSizeField, datafield);
 		log.info("Entering data in the what is your home size field.");
 
+	}
+	
+	public String getTxtBoxYourHomeSizeMaxLength() {
+        String maxLen = getAttribute(lblYourHomeSizeField, "maxlength");
+        log.info("Max length of Your Home Size field is {} " + maxLen);
+        return maxLen;
+    }
+	
+	public String getTxtBoxYourHomeSizeInputMode() {
+        String inputMode = getAttribute(lblYourHomeSizeField, "inputmode");
+        log.info("Input mode of Your Home Size field is {} " + inputMode);
+        return inputMode;
+    }
+	
+	@FindBy(css = "#formfieldlist > div:nth-child(5) > div > a")
+	private WebElement iconHomeSizeField;
+
+	public boolean isIconHomeSizeVisible() {
+		log.info("Checking that Home size info icon is visible on the About My Home page."
+				+ iconHomeSizeField.isDisplayed());
+		return isElementVisible(iconHomeSizeField);
+
+	}
+
+	public void clickIconHomeSize() {
+		click(iconHomeSizeField);
+		log.info("Home size info icon has been successfully clicked.");
+
+	}
+	
+	public String getHomeSizeInfoIcon() {
+		log.info("Fetching the info icon details on Home Size field");
+		String tooltip = iconHomeSizeField.getAttribute("aria-label");
+		return tooltip;
 	}
 
 	@FindBy(xpath = "//*[contains(@tcollectionid,'1822')]")
@@ -152,6 +220,18 @@ public class AboutMyHomePage extends HomePage {
 		log.info("Entering data in the how many floors does your home have field.");
 
 	}
+	
+	public String getTxtBoxHowManyFloorsMaxLength() {
+        String maxLen = getAttribute(lblHowManyFloorsField, "maxlength");
+        log.info("Max length of How Many Floor field is {} " + maxLen);
+        return maxLen;
+    }
+	
+	public String getTxtBoxHowManyFloorsInputMode() {
+        String inputMode = getAttribute(lblHowManyFloorsField, "inputmode");
+        log.info("Input mode of How Many Floor field is {} " + inputMode);
+        return inputMode;
+    }
 
 	@FindBy(xpath = "//*[contains(@tcollectionid,'1823')]")
 	private WebElement lblOwnAnEVToggle;
@@ -172,6 +252,24 @@ public class AboutMyHomePage extends HomePage {
 		return isElementVisible(lblYearOfHouseBuildField);
 
 	}
+	
+	public void enterDataInYrOfBuiltField(String datafield) {
+		sendKeys(lblYearOfHouseBuildField, datafield);
+		log.info("Entering data in the house build year field.");
+
+	}
+	
+	public String getTxtBoxHouseBuildYrMaxLength() {
+        String maxLen = getAttribute(lblYearOfHouseBuildField, "maxlength");
+        log.info("Max length of House Build Year field is {} " + maxLen);
+        return maxLen;
+    }
+	
+	public String getTxtBoxHouseBuildYrInputMode() {
+        String inputMode = getAttribute(lblYearOfHouseBuildField, "inputmode");
+        log.info("Input mode of House Build Year field is {} " + inputMode);
+        return inputMode;
+    }
 
 	@FindBy(xpath = "//*[contains(@tcollectionid,'1825')]")
 	private WebElement lblHowManyBathroomsField;
@@ -182,6 +280,24 @@ public class AboutMyHomePage extends HomePage {
 		return isElementVisible(lblHowManyBathroomsField);
 
 	}
+	
+	public void enterDataInBathroomNoField(String datafield) {
+		sendKeys(lblHowManyBathroomsField, datafield);
+		log.info("Entering data in the no of bathrooms field.");
+
+	}
+	
+	public String getTxtBoxHowManyBathMaxLength() {
+        String maxLen = getAttribute(lblHowManyBathroomsField, "maxlength");
+        log.info("Max length of How Many Bathroom field is {} " + maxLen);
+        return maxLen;
+    }
+	
+	public String getTxtBoxHowManyBathInputMode() {
+        String inputMode = getAttribute(lblHowManyBathroomsField, "inputmode");
+        log.info("Input mode of How Many Bathroom field is {} " + inputMode);
+        return inputMode;
+    }
 
 	@FindBy(xpath = "//*[contains(@tcollectionid,'1826')]")
 	private WebElement lblHowManyHighEfficiencyAppsField;
@@ -193,6 +309,47 @@ public class AboutMyHomePage extends HomePage {
 		return isElementVisible(lblHowManyHighEfficiencyAppsField);
 
 	}
+	
+	public void enterDataInHighEfficiencyField(String datafield) {
+		sendKeys(lblHowManyHighEfficiencyAppsField, datafield);
+		log.info("Entering data in the high efficiency apps field.");
+
+	}
+	
+	public String getTxtBoxHowManyHighEfficiencyMaxLength() {
+        String maxLen = getAttribute(lblHowManyHighEfficiencyAppsField, "maxlength");
+        log.info("Max length of How many high efficiency field is {} " + maxLen);
+        return maxLen;
+    }
+	
+	public String getTxtBoxHowManyHighEfficiencyInputMode() {
+        String inputMode = getAttribute(lblHowManyHighEfficiencyAppsField, "inputmode");
+        log.info("Input mode of How many high efficiency field is {} " + inputMode);
+        return inputMode;
+    }
+	
+	@FindBy(css = "#formfieldlist > div:nth-child(10) > div > a")
+	private WebElement iconHaveHighEfficiencyField;
+
+	public boolean isIconHighEfficiencyVisible() {
+		log.info("Checking that Do you have high efficiency info icon is visible on the About My Home page."
+				+ iconHaveSolarPanelsField.isDisplayed());
+		scrollToElement(iconHaveHighEfficiencyField);
+		return isElementVisible(iconHaveHighEfficiencyField);
+
+	}
+	
+	public void clickIconHighEfficiency() {
+		click(iconHaveHighEfficiencyField);
+		log.info("High efficiency info icon has been successfully clicked.");
+
+	}
+	
+	public String getHighEfficiencyInfoIcon() {
+		log.info("Fetching the info icon details on High Efficiency field");
+		String tooltip = iconHaveHighEfficiencyField.getAttribute("aria-label");
+		return tooltip;
+	}
 
 	@FindBy(xpath = "//*[contains(@tcollectionid,'1827')]")
 	private WebElement lblLotSizeField;
@@ -202,6 +359,46 @@ public class AboutMyHomePage extends HomePage {
 				+ lblLotSizeField.isDisplayed());
 		return isElementVisible(lblLotSizeField);
 
+	}
+	
+	public void enterDataInLotSizeField(String datafield) {
+		sendKeys(lblLotSizeField, datafield);
+		log.info("Entering data in the lot size field.");
+
+	}
+	public String getTxtBoxLotSizeMaxLength() {
+        String maxLen = getAttribute(lblLotSizeField, "maxlength");
+        log.info("Max length of Lot Size field is {} " + maxLen);
+        return maxLen;
+    }
+	
+	public String getTxtBoxLotSizeInputMode() {
+        String inputMode = getAttribute(lblLotSizeField, "inputmode");
+        log.info("Input mode of Lot Size field is {} " + inputMode);
+        return inputMode;
+    }
+	
+	@FindBy(css = "#formfieldlist > div:nth-child(11) > div > a")
+	private WebElement iconLotSizeField;
+
+	public boolean isIconLotSizeVisible() {
+		log.info("Checking that Do you have lot size info icon is visible on the About My Home page."
+				+ iconLotSizeField.isDisplayed());
+		scrollToElement(iconLotSizeField);
+		return isElementVisible(iconLotSizeField);
+
+	}
+	
+	public void clickIconLotSize() {
+		click(iconLotSizeField);
+		log.info("Lot Size info icon has been successfully clicked.");
+
+	}
+	
+	public String getLotSizeInfoIcon() {
+		log.info("Fetching the info icon details on Lot Size field");
+		String tooltip = iconLotSizeField.getAttribute("aria-label");
+		return tooltip;
 	}
 
 	@FindBy(xpath = "//*[contains(@tcollectionid,'1828')]")
@@ -213,6 +410,46 @@ public class AboutMyHomePage extends HomePage {
 		return isElementVisible(lblLandscapeAreaField);
 
 	}
+	
+	public void enterDataInLandscapeAreaField(String datafield) {
+		sendKeys(lblLandscapeAreaField, datafield);
+		log.info("Entering data in the landscape area field.");
+
+	}
+	public String getTxtBoxLandscapeAreaMaxLength() {
+        String maxLen = getAttribute(lblLandscapeAreaField, "maxlength");
+        log.info("Max length of Landscape Area field is {} " + maxLen);
+        return maxLen;
+    }
+	
+	public String getTxtBoxLandscapeAreaInputMode() {
+        String inputMode = getAttribute(lblLandscapeAreaField, "inputmode");
+        log.info("Input mode of Landscape Area field is {} " + inputMode);
+        return inputMode;
+    }
+	
+	@FindBy(css = "#formfieldlist > div:nth-child(12) > div > a")
+	private WebElement iconLandscapeAreaField;
+
+	public boolean isIconLandscapeAreaVisible() {
+		log.info("Checking that Do you have landscape area info icon is visible on the About My Home page."
+				+ iconLandscapeAreaField.isDisplayed());
+		scrollToElement(iconLandscapeAreaField);
+		return isElementVisible(iconLandscapeAreaField);
+
+	}
+	
+	public void clickIconLandscapeArea() {
+		click(iconLandscapeAreaField);
+		log.info("Landscape area info icon has been successfully clicked.");
+
+	}
+	
+	public String getLandscapeAreaInfoIcon() {
+		log.info("Fetching the info icon details on Landscape Area field");
+		String tooltip = iconLandscapeAreaField.getAttribute("aria-label");
+		return tooltip;
+	}
 
 	@FindBy(xpath = "//*[contains(@tcollectionid,'1829')]")
 	private WebElement lblSizeOfSpecialLandscapeField;
@@ -222,6 +459,46 @@ public class AboutMyHomePage extends HomePage {
 				+ lblSizeOfSpecialLandscapeField.isDisplayed());
 		return isElementVisible(lblSizeOfSpecialLandscapeField);
 
+	}
+	
+	public void enterDataInLandscapeSizeField(String datafield) {
+		sendKeys(lblSizeOfSpecialLandscapeField, datafield);
+		log.info("Entering data in the landscape size field.");
+
+	}
+	public String getTxtBoxLandscapeSizeMaxLength() {
+        String maxLen = getAttribute(lblSizeOfSpecialLandscapeField, "maxlength");
+        log.info("Max length of Landscape Size field is {} " + maxLen);
+        return maxLen;
+    }
+	
+	public String getTxtBoxLandscapeSizeInputMode() {
+        String inputMode = getAttribute(lblSizeOfSpecialLandscapeField, "inputmode");
+        log.info("Input mode of Landscape Size field is {} " + inputMode);
+        return inputMode;
+    }
+	
+	@FindBy(css = "#formfieldlist > div:nth-child(13) > div > a")
+	private WebElement iconLandscapeSizeField;
+
+	public boolean isIconLandscapeSizeVisible() {
+		log.info("Checking that Do you have landscape size info icon is visible on the About My Home page."
+				+ iconLandscapeSizeField.isDisplayed());
+		scrollToElement(iconLandscapeSizeField);
+		return isElementVisible(iconLandscapeSizeField);
+
+	}
+	
+	public void clickIconLandscapeSize() {
+		click(iconLandscapeSizeField);
+		log.info("Landscape Size info icon has been successfully clicked.");
+
+	}
+	
+	public String getLandscapeSizeInfoIcon() {
+		log.info("Fetching the info icon details on Landscape Size field");
+		String tooltip = iconLandscapeSizeField.getAttribute("aria-label");
+		return tooltip;
 	}
 
 	@FindBy(xpath = "//*[contains(@tcollectionid,'1853')]")
@@ -289,6 +566,26 @@ public class AboutMyHomePage extends HomePage {
 			isMyAccountAboutMyHomePage = true;
 		log.info("The current page is My Profile {}: " + isMyAccountAboutMyHomePage);
 		return isMyAccountAboutMyHomePage;
+	}
+	
+	@FindBy(xpath = "//*[@id='toast-container']/div")
+	private WebElement lblZeroValSub;
+
+	public String getZeroValPopUpLabel() {
+		log.info("Fetching the validation message when customer enters all 0 in fields");
+		String label = getText(lblZeroValSub);
+		return label;
+
+	}
+	
+	@FindBy(xpath = "//*[@id=\"toast-container\"]/div/div")
+	private WebElement lbl1900ValSub;
+
+	public String get1900PopUpLabel() {
+		log.info("Fetching the validation message when customer enters less than 1900 in fields");
+		String label = getText(lbl1900ValSub);
+		return label;
+
 	}
 
 }

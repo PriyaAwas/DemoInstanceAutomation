@@ -307,7 +307,8 @@ public class ModelsConfiguration {
 	public static GuestUser readGuestUserObject() {
 		byte[] jsonData = null;
 		ObjectMapper objectMapper = new ObjectMapper();
-		String file = FilePaths.DATA_CONFIG + "datamodels/guestUser.json";
+		//String file = FilePaths.DATA_CONFIG + "datamodels/guestUser.json";
+		String file = FilePaths.DATA_CONFIG + "datamodels/TestGuestUser.json";
 		try {
 			jsonData = Files.readAllBytes(FileUtils.getFile(FileUtil.getFile(file)).toPath());
 		} catch (IOException e) {
