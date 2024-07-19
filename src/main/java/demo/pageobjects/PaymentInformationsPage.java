@@ -1426,6 +1426,14 @@ public class PaymentInformationsPage extends HomePage {
     public List<WebElement> listPaymentProfile() {
         return listPaymentProfile;
     }
+    
+    @FindBy(css = ".defautl_btn")
+    private List<WebElement> listDefaultPayment;
+
+    public List<WebElement> listDefaultPayment() {
+        return listDefaultPayment;
+    }
+    
 
     @FindBy(css = "button[id*='navbar']")
     private WebElement btnThreeDots;
