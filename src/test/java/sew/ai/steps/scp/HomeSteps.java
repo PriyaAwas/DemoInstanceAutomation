@@ -3,6 +3,8 @@ package sew.ai.steps.scp;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 import org.testng.asserts.SoftAssert;
 import sew.ai.helpers.props.Constants;
 import sew.ai.helpers.props.FilePaths;
@@ -303,6 +305,14 @@ public class HomeSteps extends HomePage {
 		clickContactUsLink();
 		waitForPageLoader();
 		log.info("Navigated to the Outages page.");
+	}
+	@FindBy(css = "a[globalize='ML_BILLING_Navigation_ConnectMe']")
+	private WebElement linkBillingQueries;
+	
+	public void navigateToBillinQueries() {
+		clickBillingLink();
+		click(linkBillingQueries);
+		log.info("Navigated to billing dropdown is clicked");
 	}
 
 	// Navigation Ways To Save
