@@ -673,7 +673,7 @@ public class MyProfilePage extends HomePage {
 		return label;
 	}
 
-	@FindBy(xpath = " (//div[@class='col-lg-4 col-sm-3 col-xs-12 profileStatic']/h3)[4]")
+	@FindBy(xpath = "(//div[@class='col-lg-4 col-sm-3 col-xs-12 profileStatic']/h3)[4]")
 	private WebElement lblPrimaryContactNum;
 
 	public String getPrimaryContactNumLabel() {
@@ -780,17 +780,25 @@ public class MyProfilePage extends HomePage {
 
 	@FindBy(css = ".deleteaccount")
 	private WebElement btnDelete;
-	@FindBy(css = "#deletemyprofilepopup")
+	@FindBy(css = "#btnShowPasswordValidate")
 	private WebElement lnkDeleteMyProfile;
 
 	public void clickDeleteMyProfile() {
 		click(lnkDeleteMyProfile);
 		log.info("Delete My Profile link has been successfully Clicked");
 
-	}
+	}	
 
 	public String getDeleteMyProfileLable() {
 		String label = getText(lnkDeleteMyProfile);
+		return label;
+	}
+	@FindBy(css = "#enterpasswordpopupDP")
+	private WebElement DMPPopupTxt;
+	
+
+	public String getDeleteMyProfilePopupLable() {
+		String label = getText(DMPPopupTxt);
 		return label;
 	}
 
@@ -814,7 +822,7 @@ public class MyProfilePage extends HomePage {
 		return label;
 	}
 
-	@FindBy(css = "#btnDecline")
+	@FindBy(css = "#btnenterPasswordCancelDP")
 	private WebElement btnDeleteMyProfileCancelWarn;
 
 	public String getDMPCancelButtonlabel() {
@@ -915,7 +923,7 @@ public class MyProfilePage extends HomePage {
 	@FindBy(css = ".w2ui-centered.w2ui-alert- msg")
 	private WebElement lblMsgAlertChangeEmailAddPopup;
 
-	@FindBy(xpath = " //div[@class='modal-dialog']//button[@class='closepopup']/following-sibling::h3")
+	@FindBy(xpath = "//div[@class='modal-dialog']//button[@class='closepopup']/following-sibling::h3")
 	private WebElement lblDownloadMydata;
 
 	public String getDownloadMyDataPopUpLabel() {
@@ -923,8 +931,21 @@ public class MyProfilePage extends HomePage {
 		String label = getText(lblDownloadMydata);
 		return label;
 	}
+	
+	@FindBy(css = "#btnSubmitPassword")
+	private WebElement btnSubmitDownloadMyData;
 
-	@FindBy(xpath = " //div[@class ='modal-content']//div[@class ='modal-body']/div/h4")
+	public boolean isSubmitDownloadEnable() {
+		return btnSubmitDownloadMyData.isDisplayed();
+
+	}
+	public void clickDownloadMyDataSubmitbtn() {
+		click(btnSubmitDownloadMyData);
+		log.info("Download My Data Password hab been successfully submitted");
+	}
+
+	
+	@FindBy(css = "#divEnterPassword > div > div > div.modal-body > div:nth-child(1) > h4")
 	private WebElement lblDownloadMydataVerification;
 
 	public String getDownloadMydataVerificationLabel() {
@@ -987,6 +1008,13 @@ public class MyProfilePage extends HomePage {
 		return isElementVisible(txtPwdForChngUsername);
 	}
 
+	public String getTxtBoxChangePassMaxLength() {
+		String maxLen = getAttribute(txtPwdForChngUsername, "maxlength");
+		log.info("Max length of User Name field is {} " + maxLen);
+		return maxLen;
+	}
+	
+	
 	public String getPwdForUpdateUserNameLabel() {
 		log.info("Fetching the Password for Change User Name placeholder.");
 		String label = getText(txtPwdForChngUsername);
@@ -1046,6 +1074,9 @@ public class MyProfilePage extends HomePage {
 		String label = getText(txtPwdForDownloadMyData1);
 		return label;
 	}
+	
+	
+	
 
 	@FindBy(css = "#txtpwd1")
 	private WebElement txtPwdForDownloadMyData;
@@ -1061,15 +1092,15 @@ public class MyProfilePage extends HomePage {
 		log.info("Password is Successfully Entered for Downloading My Data.");
 	}
 
-	@FindBy(css = "#btnSubmitPassword")
-	private WebElement btnSubmitDownloadMyData;
+	@FindBy(css = "#btnSubmitPasswordDP")
+	private WebElement btnDP;
 
-	public boolean isSubmitDownloadEnable() {
-		return btnSubmitDownloadMyData.isDisplayed();
+	public boolean isSubmitDPisVisible() {
+		return btnDP.isDisplayed();
 	}
 
-	public void clickDownloadMyDataSubmitbtn() {
-		click(btnSubmitDownloadMyData);
+	public void clickDPSubmitbtn() {
+		click(btnDP);
 		log.info("Download My Data Password hab been successfully submitted");
 	}
 
@@ -1434,7 +1465,18 @@ public class MyProfilePage extends HomePage {
 		String label = getText(lblLinkAccountPopupHeading);
 		return label;
 	}
+	
+	@FindBy(css = " #enterpasswordpopup")
+	private WebElement downloadMyData;
 
+	public String getDownloadMydataTxt() {
+		String label = getText(downloadMyData);
+		return label;
+	}
+
+	
+	
+	
 	public boolean getLinkAccountPopupHeadingVisible() {
 		return isElementVisible(lblLinkAccountPopupHeading);
 	}
@@ -1501,7 +1543,7 @@ public class MyProfilePage extends HomePage {
 		click(btnLinkAccount);
 	}
 
-	@FindBy(css = "#btncloseForgetMepopup")
+	@FindBy(css = "#divEnterPasswordDeleteProfile > div > div > div.modal-header > button")
 	private WebElement deleteMyProfileCrossBtn;
 
 	public boolean isDMPCrossBtnVisible() {
@@ -1935,4 +1977,222 @@ public class MyProfilePage extends HomePage {
 		click(btnSubmitPassword);
 		log.info("Click on submit password button Successfully .");
 	}
+	 @FindBy(css = "div.MarketingPrefContainer h5")
+	    private WebElement lblHeadingMarketingPreferences;
+	    public String getMarketingPreferenceLabel() {
+	        String label = getText(lblHeadingMarketingPreferences);
+	        log.info("Marketing Preferences Label  is : " + label);
+	        return label;
+	    }
+	    @FindBy(css = "div.lft_profile_sec>div>h4")
+	    private WebElement lblMarketingPreferencesDesc;
+	    public String getMarketingPreferenceDescLabel() {
+	        String label = getText(lblMarketingPreferencesDesc);
+	        log.info("Marketing Preferences Description Label  is : " + label);
+	        return label;
+	    }
+	    @FindBys(@FindBy(css = "ul.MPLists.MainConst input"))
+	    private List<WebElement> lstChkBoxMarketingPreferences;
+	     public List<WebElement> getLstChkBoxMarketingPreferences(){
+	         return lstChkBoxMarketingPreferences;
+	    }
+
+	    public void unCheckAllMarketingPrefBox(){
+	        for( WebElement lstChkBoxMarketingPreferences1 :getLstChkBoxMarketingPreferences())
+	         unCheck(lstChkBoxMarketingPreferences1);
+	        log.info("Marketing Preference Check Box has been Successfully UnChecked");
+	    }
+	    public void checkAllMarketingPrefBox(){
+	        for( WebElement lstChkBoxMarketingPreferences1 :getLstChkBoxMarketingPreferences())
+	            check(lstChkBoxMarketingPreferences1);
+	        log.info("Marketing Preference Check Box has been Successfully UnChecked");
+	    }
+	    @FindBys(@FindBy (css="div[class='radio-button-box chkboxCustomact']"))
+	    private List<WebElement> MarketingPrefElem;
+	    public List<WebElement> getMarketingPrefElem(){return MarketingPrefElem;}
+	    
+	    @FindBys(@FindBy (css="label[class='mtrl_chkbx_new'] span [type='checkbox']"))
+	    private List<WebElement> marketingprefCheckBox;
+	    public List<WebElement> getmarketingprefCheckBox(){return marketingprefCheckBox;}
+
+	    @FindBy(css = "div.MPButtonRightArea>input")
+	    private WebElement btnMarketingPreferencesSave;
+	    public void clickSetPreferenceButton(){
+	        click(btnMarketingPreferencesSave);
+	        log.info("Set Preference Button has been Successfully Clicked");
+	    }
+	    public boolean isSetPreferenceBtnClickable(){
+	     return isElementEnabled(btnMarketingPreferencesSave);
+	    }
+
+	    @FindBy(css = "#lblID1")
+	    private WebElement lblChkBoxNewsReleases;
+	    public String getNewsReleasesLabel() {
+	        String label = getText(lblChkBoxNewsReleases);
+	        log.info("News Releases  Label  is On Marketing Preference Page: " + label);
+	        return label;
+	    }
+	    public boolean isNewsReleasesVisible() {
+	        log.info("Checking the Visibility of News Releases Status ."+ lblChkBoxNewsReleases.isDisplayed());
+	        return isElementVisible(lblChkBoxNewsReleases);
+	    }
+	    @FindBy(css = "#lblID2")
+	    private WebElement lblChkBoxServiceOfferings;
+	    public String getServiceOfferingsLabel() {
+	        String label = getText(lblChkBoxServiceOfferings);
+	        log.info("Service Offerings  Label  is On Marketing Preference Page : " + label);
+	        return label;
+	    }
+	    public boolean isServiceOfferingsVisible() {
+	        log.info("Checking the Visibility of Service Offerings Status ."+ lblChkBoxServiceOfferings.isDisplayed());
+	        return isElementVisible(lblChkBoxServiceOfferings);
+	    }
+	    @FindBy(css = "#lblID3")
+	    private WebElement lblChkBoxNewsletters;
+	    public String getNewslettersLabel() {
+	        String label = getText(lblChkBoxNewsletters);
+	        log.info("News letters  Label  is On Marketing Preference Page : " + label);
+	        return label;
+	    }
+	    public boolean isNewslettersVisible() {
+	        log.info("Checking the Visibility of Newsletters Status ."+ lblChkBoxNewsletters.isDisplayed());
+	        return isElementVisible(lblChkBoxNewsletters);
+	    }
+	    @FindBy(css = "#lblID4")
+	    private WebElement lblChkBoxEnergySavingsToolkits;
+	    public String getEnergySavingsToolkitsLabel() {
+	        String label = getText(lblChkBoxEnergySavingsToolkits);
+	        log.info("Energy Savings Tool kits  Label  is On Marketing Preference Page : " + label);
+	        return label;
+	    }
+	    public boolean isEnergySavingsToolkitsVisible() {
+	        log.info("Checking the Visibility of Energy Savings Toolkits Status ."+ lblChkBoxEnergySavingsToolkits.isDisplayed());
+	        return isElementVisible(lblChkBoxEnergySavingsToolkits);
+	    }
+	    @FindBy(css = "#lblID5")
+	    private WebElement lblChkBoxCoolTipsBrochures;
+	    public String getCoolTipsBrochuresLabel() {
+	        String label = getText(lblChkBoxCoolTipsBrochures);
+	        log.info("Cool Tips Brochures  Label  is On Marketing Preference Page : " + label);
+	        return label;
+	    }
+	    public boolean isCoolTipsBrochuresVisible() {
+	        log.info("Checking the Visibility of Cool Tips Brochures Status ."+ lblChkBoxCoolTipsBrochures.isDisplayed());
+	        return isElementVisible(lblChkBoxCoolTipsBrochures);
+	    }
+	    @FindBy(css = "#lblID6")
+	    private WebElement lblChkBoxCommunityBenefitPrograms;
+	    public String getCommunityBenefitProgramsLabel() {
+	        String label = getText(lblChkBoxCommunityBenefitPrograms);
+	        log.info("Community Benefit Programs  Label  is On Marketing Preference Page : " + label);
+	        return label;
+	    }
+	    public boolean isCommunityBenefitProgramsVisible() {
+	        log.info("Checking the Visibility of Community Benefit Programs Status ."+ lblChkBoxCommunityBenefitPrograms.isDisplayed());
+	        return isElementVisible(lblChkBoxCommunityBenefitPrograms);
+	    }
+	    @FindBy(css = "input#chkID1")
+	    private WebElement chkBoxNewsReleases;
+	    public boolean isNewsReleasesBoxChecked(){
+	        // log.info("News Releases Check Box is Already Selected"+chkBoxNewsReleases.isSelected());
+	        return chkBoxNewsReleases.isSelected();
+
+	    }
+	    public boolean isNewsReleasesCheckBoxVisible() {
+	        log.info("Checking the Visibility of Newsletters Check Box ."+ chkBoxNewsReleases.isDisplayed());
+	        return isElementVisible(chkBoxNewsReleases);
+	    }
+
+	    @FindBy(css = "input#chkID2")
+	    private WebElement chkBoxServiceOfferings;
+	    public boolean isServiceOfferingsBoxChecked(){
+	        // log.info("Service Offerings Check Box is Already Selected"+chkBoxNewsReleases.isSelected());
+	        return chkBoxServiceOfferings.isSelected();
+
+	    }
+	    public boolean isServiceOfferingsCheckBoxVisible() {
+	        log.info("Checking the Visibility of Service Offerings Check Box ."+ chkBoxServiceOfferings.isDisplayed());
+	        return isElementVisible(chkBoxServiceOfferings);
+	    }
+	    @FindBy(css = "input#chkID3")
+	    private WebElement chkBoxNewsletters;
+	    public boolean isNewslettersBoxChecked(){
+	        // log.info("Service Offerings Check Box is Already Selected"+chkBoxNewsReleases.isSelected());
+	        return chkBoxNewsletters.isSelected();
+
+	    }
+	    public boolean isNewslettersCheckBoxVisible() {
+	        log.info("Checking the Visibility of Newsletters Check Box ."+ chkBoxNewsletters.isDisplayed());
+	        return isElementVisible(chkBoxNewsletters);
+	    }
+	    @FindBy(css = "input#chkID4")
+	    private WebElement chkBoxEnergySavingsToolkits;
+	    public boolean isEnergySavingsToolkitsBoxChecked(){
+	        // log.info("Service Offerings Check Box is Already Selected"+chkBoxNewsReleases.isSelected());
+	        return chkBoxEnergySavingsToolkits.isSelected();
+	    }
+	    public boolean isEnergySavingsToolkitsCheckBoxVisible() {
+	        log.info("Checking the Visibility of Energy Savings Toolkits Check Box ."+ chkBoxEnergySavingsToolkits.isDisplayed());
+	        return isElementVisible(chkBoxEnergySavingsToolkits);
+	    }
+	    @FindBy(css = "input#chkID5")
+	    private WebElement chkBoxCoolTipsBrochures;
+	    public boolean isCoolTipsBrochuresBoxChecked(){
+	        // log.info("Service Offerings Check Box is Already Selected"+chkBoxNewsReleases.isSelected());
+	        return chkBoxCoolTipsBrochures.isSelected();
+	    }
+	    public boolean isCoolTipsBrochuresCheckBoxVisible() {
+	        log.info("Checking the Visibility of Cool Tips Brochures Check Box ."+ chkBoxCoolTipsBrochures.isDisplayed());
+	        return isElementVisible(chkBoxCoolTipsBrochures);
+	    }
+	    @FindBy(css = "input#chkID6")
+	    private WebElement chkBoxCommunityBenefitPrograms;
+	    public boolean isCommunityBenefitProgramsBoxChecked(){
+	        // log.info("Service Offerings Check Box is Already Selected"+chkBoxNewsReleases.isSelected());
+	        return chkBoxCommunityBenefitPrograms.isSelected();
+	    }
+	    public boolean isCommunityBenefitProgramsCheckBoxVisible() {
+	        log.info("Checking the Visibility of Community Benefit Programs Check Box ."+ chkBoxCommunityBenefitPrograms.isDisplayed());
+	        return isElementVisible(chkBoxCommunityBenefitPrograms);
+	    }
+	    public boolean isMarketingPreferencesPage(String url, String title){
+	        boolean isMarketingPreferencesPage=false;
+	        log.info("Checking that the current page is My Profile/Marketing Preference page.");
+	        if (getCurrentUrl().contains(url.toLowerCase()) && getCurrentTitle().equalsIgnoreCase(title))
+	            isMarketingPreferencesPage = true;
+	        log.info("The current page is My Profile/Marketing Preference {}: " + isMarketingPreferencesPage);
+	        return isMarketingPreferencesPage;
+	    }
+	    
+	    @FindBys(@FindBy(css = ".testclass"))
+		private List<WebElement> txtPIBannes;
+
+		public List<WebElement> getProfileInfoBanner() {
+			return txtPIBannes;
+		}   
+		 @FindBy(css = "#demo1 > div > h4")
+		    private WebElement updatemailingaddressQuesTxt;
+		 public String getMailingAddUpdateQues() {
+				String label = getText(updatemailingaddressQuesTxt);
+				log.info("MyProfile PageHeader Label  is : " + label);
+				return label;
+			}
+		 
+	    @FindBy(css = "#demo1 > div > div > p > span")
+	    private WebElement updatemailingaddressAnstxt;
+
+	    public String getMailingAddUpdateAns() {
+			String label = getText(updatemailingaddressAnstxt);
+			log.info("MyProfile PageHeader Label  is : " + label);
+			return label;
+		}
+
+	    @FindBys(@FindBy(css = ".ico_conta_wrpp"))
+		private List<WebElement> contactUsDetailTxt;
+
+		public List<WebElement> getContactUsDetail() {
+			return contactUsDetailTxt;
+		}  
+		
+	    
 }
