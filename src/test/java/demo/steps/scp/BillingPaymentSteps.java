@@ -35,22 +35,54 @@ public class BillingPaymentSteps extends PaymentInformationSteps {
 	public void verifyMakePaymentWithNewCC(SoftAssert softAssert) throws InterruptedException {
 		
 		Card card = ModelsConfiguration.readCards().getCardByNameOnCard("John Wick Visa Card");
-		//deletePaymentProfiles();
+		homeSteps.navigateToCurrentBill();
+		clickBtnMakpayment();
+		pause(10000);
+		clickPayAmtFld();
+		pause(1000);
+		EnterOtherAmmount("10.00");
+
+		clickNewMethod();
+		clickrdoBtnCardC2Bill();
+		pause(1000);
+		populateCardDetails(card);
+
+		clickNewNextPayementButton();
+		softAssert.assertEquals(getPaymentStep2Text(), "STEP 2: REVIEW & CONFIRM");
+		String billamount = getBillAmmount();
+		String transfee = getTranFee();
+		String tottlefee = getTotleFee();
+		softAssert.assertEquals("10.00", billamount);
+		softAssert.assertEquals(Double.parseDouble(tottlefee),
+				(Double.parseDouble(transfee) + Double.parseDouble(billamount)));
+		clickPaymentSubmitBtn();
+		ExtentLogger.logInfo("Payment Done from Credit Card");
+	}
+
+	public void verifyMakePaymentWithExistingCC(SoftAssert softAssert) throws InterruptedException {
+
+		Card card = ModelsConfiguration.readCards().getCardByNameOnCard("John Wick Visa Card");
+		deletePaymentProfiles();
 		clickLnkAddPaymentMethod();// clicking on the +Add payment method
 		pause(20000);
 		clickrdoBtnCard();
 		pause(5000);
-		clickbtnAdd();
-		softAssert.assertEquals(getToastMessage(), paymentInformationTextProp.getPropValue("txtErrMsgBlank"),
-				"Blank Error Msg do nost match");
+		// Uncomment next lines when you are able to click the ADD button twice (it gets disabled now after first click)
+//		clickbtnAdd();
+//		softAssert.assertEquals(getToastMessage(), paymentInformationTextProp.getPropValue("txtErrMsgBlank"),
+//				"Blank Error Msg do nost match");
 		populateCardDetails(card);
 		clickbtnAdd();
+		pause(3000);
 		softAssert.assertEquals(getToastMessage(), paymentInformationTextProp.getPropValue("txtSuccessAddMsg"),
 				"payment method is not Added");
+		pause(3000);
 		homeSteps.navigateToCurrentBill();
 		clickBtnMakpayment();
-		ScrollAndSelect();
-		EnterOtherAmmount("1.00");
+		pause(10000);
+		clickPayAmtFld();
+		pause(1000);
+		EnterOtherAmmount("10.00");
 		clickrdoBtnCardCBill();
 		Select Card = new Select(elementDDCardAccountCurrentBill());
 		Card.selectByVisibleText("VISA - 1111 - Exp. (12/24)");
@@ -59,7 +91,7 @@ public class BillingPaymentSteps extends PaymentInformationSteps {
 		String billamount = getBillAmmount();
 		String transfee = getTranFee();
 		String tottlefee = getTotleFee();
-		softAssert.assertEquals("1.00", billamount);
+		softAssert.assertEquals("10.00", billamount);
 		softAssert.assertEquals(Double.parseDouble(tottlefee),
 				(Double.parseDouble(transfee) + Double.parseDouble(billamount)));
 		clickPaymentSubmitBtn();
@@ -443,6 +475,92 @@ public class BillingPaymentSteps extends PaymentInformationSteps {
 		enterCityInTheField(bank.getCity());
 		enterStateInTheField(bank.getState());
 		enterZipCodeInTheField(bank.getZipCode());
+
+	}
+
+	public void creditCardIcons(SoftAssert softAssert) {
+
+		homeSteps.navigateToCurrentBill();
+		clickBtnMakpayment();
+		waitUntilCompletePageLoad();
+		clickPayAmtFld();
+		pause(2000);
+		EnterOtherAmmount("10.00");
+		clickNewMethod();
+		clickrdoBtnCardC2Bill();
+		pause(1000);
+
+		// Visa
+		Card card = ModelsConfiguration.readCards().getCardByNameOnCard("John Wick Visa Card");
+		populateTxtBoxCardNumber(card.getCardNumber());
+		softAssert.assertTrue(isCardNumberVisa(), "Card number is not visible");
+		clearCardNumberInTheField();
+		pause(2000);
+		ExtentLogger.logInfo("Visa Complete");
+
+		// Mastercard
+		Card card2 = ModelsConfiguration.readCards().getCardByNameOnCard("Terrance Luis Master Card");
+		populateTxtBoxCardNumber(card2.getCardNumber());
+		softAssert.assertTrue(isCardNumberMc(), "Card number is not visible");
+		clearCardNumberInTheField();
+		pause(2000);
+		ExtentLogger.logInfo("Mastercard Complete");
+
+		// Discovery
+		Card card3 = ModelsConfiguration.readCards().getCardByNameOnCard("John Doe Discover Card");
+		populateTxtBoxCardNumber(card3.getCardNumber());
+		softAssert.assertTrue(isCardNumberDiscover(), "Card number is not visible");
+		clearCardNumberInTheField();
+		pause(2000);
+		ExtentLogger.logInfo("Discovery Complete");
+
+		// Amex
+		Card card4 = ModelsConfiguration.readCards().getCardByNameOnCard("Hanna Jones AMEX");
+		populateTxtBoxCardNumber(card4.getCardNumber());
+		softAssert.assertTrue(isCardNumberAmex(), "Card number is not visible");
+		clearCardNumberInTheField();
+		pause(2000);
+		ExtentLogger.logInfo("Amex Complete");
+
+		// Jcb
+		populateTxtBoxCardNumber("3530111333300000");
+		softAssert.assertTrue(isCardNumberJcb(), "Card number is not visible");
+		clearCardNumberInTheField();
+		pause(2000);
+		ExtentLogger.logInfo("JCB Complete");
+
+		// Cup
+		populateTxtBoxCardNumber("8171999927660000");
+		softAssert.assertTrue(isCardNumberCup(), "Card number is not visible");
+		clearCardNumberInTheField();
+		pause(2000);
+		ExtentLogger.logInfo("CUP Complete");
+
+		// Invalid
+		Card card5 = ModelsConfiguration.readCards().getCardByNameOnCard("John Wick Visa Card");
+		populateTxtBoxCardHolderName(card5.getNameOnCard());
+		populateTxtBoxCardNumber("1234567890123456");
+//		softAssert.assertTrue(isCardNumberCup(), "Card number is not visible");
+//		clearCardNumberInTheField();
+//		pause(2000);
+
+		Select month = new Select(elementDDExpMonth());
+		month.selectByVisibleText("Dec");
+		Select year = new Select(elementDDExpYear());
+		year.selectByVisibleText("2024");
+		populateTxtBoxSecurityPin(card5.getCvv());
+		populateTxtBoxFirstName(card5.getFirstName());
+		populateTxtBoxLastName(card5.getLastName());
+		populateTxtBoxAddress(card5.getAddress());
+		populateTxtCity(card5.getCity());
+		populateTxtState(card5.getState());
+		populateTxtZip(card5.getZipCode());
+
+		clickNewNextPayementButton();
+		//Have to replace prop value when the defect is pushed
+		softAssert.assertEquals(getToastMessage(), paymentInformationTextProp.getPropValue("txtErrMsgBlank"),
+				"Blank Error Msg do nost match");
+
 
 	}
 }
