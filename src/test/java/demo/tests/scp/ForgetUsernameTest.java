@@ -54,4 +54,16 @@ public class ForgetUsernameTest extends TestRunner {
         log.info("Test Case execution for - resetUsernameInvalidAccountOrEmail - is Completed.");                  
       }
 	
+	@FrameworkAnnotations(author = { "Priya Awasthi" }, category = { CategoryType.SANITY, CategoryType.SCP_LOGINHELP })
+    @Test(priority = 3, description = "To verify the Forget Username name with valid email.")
+    public void max() {
+        log.info("To verify that following should be displayed on validate Forgot Username.");
+        SoftAssert softAssert = new SoftAssert();
+        // Init Forget Username Steps
+        forgetUsernameSteps = new ForgetUsernameSteps(driver);
+        forgetUsernameSteps.validEmailFeildVerification();
+        log.info("Test Case execution for - resetUsernameInvalidAccountOrEmail - is Completed.");                  
+      }
+
+	
   }
