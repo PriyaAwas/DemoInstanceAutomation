@@ -34,6 +34,8 @@
             <class name="demo.tests.scp.UsagesTests"/>
            <class name="demo.tests.scp.GuestUserTests"/>
             <class name="demo.tests.scp.PreLoginPayBillCCTests"/>
+            <class name="demo.tests.scp.PostLogServicesTests"/>
+            
 
             
             
