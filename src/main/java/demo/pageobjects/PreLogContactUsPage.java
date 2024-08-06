@@ -508,6 +508,10 @@ public class PreLogContactUsPage extends HomePage {
 		return isElementVisible(dropdownptns);	
 
 	}
+	public boolean isPrimarySreetNameVisible (String option) {
+		return isElementVisible(dropdownptns);	
+
+	}
 	
 	@FindBy(css = "[globalize=\"ML_CONNECTME_Lbl_Outage\"]")
 	protected WebElement Outageptns;
