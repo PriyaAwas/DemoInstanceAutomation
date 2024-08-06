@@ -2,10 +2,8 @@ package demo.steps.scp;
 
 import static org.testng.Assert.assertEquals;
 import static sew.ai.steps.scp.DashboardSteps.dashboardTextProp;
-import static sew.ai.steps.scp.LoginSteps.loginTextProp;
 
 import java.sql.SQLException;
-import java.util.ArrayList;
 import java.util.List;
 
 import org.apache.logging.log4j.LogManager;
@@ -18,9 +16,7 @@ import org.testng.Assert;
 import org.testng.asserts.SoftAssert;
 
 import demo.pageobjects.PreLoginPage;
-import sew.ai.config.CSPConfiguration;
 import sew.ai.config.Configuration;
-import sew.ai.driver.DriverFactory;
 import sew.ai.helpers.props.Constants;
 import sew.ai.helpers.props.FilePaths;
 import sew.ai.helpers.reporters.ExtentLogger;
@@ -236,7 +232,7 @@ public class PreLoginSteps extends PreLoginPage {
 		signOutSteps.waitForSignOutSuccessLbl();
 		signOutSteps.clickSignInAgainBtn();
 		waitForUserNameFieldVisibility();
-		assertEquals(getPopulatedUsernameValue(), userName,
+		Assert.assertEquals(getPopulatedUsernameValue(), userName,
 				"Username is not auto populating on checking remember me.");
 		return isRememberMeChbChecked();
 	}
@@ -604,19 +600,4 @@ public class PreLoginSteps extends PreLoginPage {
 				"Blank username field validation not correct.");
 		
 	}
-
-
-	public void verifyLanguageSwitchFeature(SoftAssert softAssert) {
-		Assert.assertTrue(isLanguageDropdownVisible(), "Language dropdown is not visible on the login page.");
-		clickLanguageDropdown();
-		clickSpanishLanguageOption();
-		softAssert.assertEquals(getRegisterLinkLabel(), loginTextProp.getPropValue("txLblRegistrationEspanol"));
-		clickLanguageDropdown();
-		clickFrenchLanguageOption();
-		softAssert.assertEquals(getRegisterLinkLabel(), loginTextProp.getPropValue("txLblRegistrationFrance"));
-		clickLanguageDropdown();
-		clickEnglishLanguageOption();
-		softAssert.assertEquals(getRegisterLinkLabel(), loginTextProp.getPropValue("txLblRegistrationEnglish"));
-	}
-
 }

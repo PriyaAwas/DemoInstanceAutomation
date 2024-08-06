@@ -260,13 +260,13 @@ public class PaymentInformationSteps extends PaymentInformationsPage {
         // UnEnrolling of AutoPay or Text Pay
         //homeSteps.navigateToAutoPayment(); unEnrollFromAutoTextPay();
         //homeSteps.navigateToTextToPay(); unEnrollFromAutoTextPay();
-        //homeSteps.navigateToAutoPayment();
-        //unEnrollFromAutoTextPay();
+        homeSteps.navigateToAutoPayment();
+        unEnrollFromAutoTextPay();
         //homeSteps.navigateToAutoPayment(); unEnrollFromAutoTextPay();
         //homeSteps.navigateToTextToPay(); unEnrollFromAutoTextPay();
         homeSteps.navigateToPaymentInfo();
         // Deleting Payment Profiles
-        //deletePaymentProfiles();
+        deletePaymentProfiles();
         // Verifying Payment Information Page
         Assert.assertTrue(
                 isPaymentInformationPage(paymentInformationTextProp.getPropValue("expectedPaymentInformationPageUrl"),
@@ -281,15 +281,16 @@ public class PaymentInformationSteps extends PaymentInformationsPage {
         clickLnkAddPaymentMethod();
         waitUntilCompletePageLoad();
 
-        pause(20000);        // Clicking on Bank Radio Button
+        pause(50000);        // Clicking on Bank Radio Button
         //clickRdoBtnBank();
         //clickBnkOpt();
-        //waitUntilCompletePageLoad();
+        waitUntilCompletePageLoad();
         clickBnkOpt();
-        //Validation of Empty Form Submit
+        // Validation of Empty Form Submit
         clickbtnAdd();
-        softAssert.assertEquals(getToastMessage(), paymentInformationTextProp.getPropValue("txtErrMsgBlank"),"Blank Error Msg do not match");
-        //Populating Bank payment form
+        softAssert.assertEquals(getToastMessage(), paymentInformationTextProp.getPropValue("txtErrMsgBlank"),
+                "Blank Error Msg do not match");
+        // Populating Bank payment form
         populateBankPaymentForm(bank);
         // Verifying The Bank Name is pre-populated
         String bankName = getAttribute(elementBankName(), "value");
@@ -392,6 +393,8 @@ public class PaymentInformationSteps extends PaymentInformationsPage {
 //		softAssert.assertEquals(getErrMsgAddress(), paymentInformationTextProp.getPropValue("txtErrMsgAddress"),
 //				"Blank Address Error Msg do not match");
         populateTxtBoxAddress(bank.getAddress());
+
+
     }
 
     public void unEnrollFromAutoTextPay() {

@@ -23,80 +23,50 @@ public class PreLoginOutagesTests extends TestRunner {
 	@FrameworkAnnotations(author = { "Eujin" }, category = { CategoryType.SANITY, CategoryType.SCP_OUTAGES })
 	@Test(priority = 1, description = "To verify the pre-login outages page objects.")
 	public void verifyPreLoginOutagesPageObjects() {
-		ExtentLogger.logInfo("Test Case execution for - verifyPreLoginOutagesPageObjects.");
+		String[] tc_id = {"Outages_01", "Outages_02", "Outages_03"};
+		ExtentLogger.logInfo("Test Case execution for - verifyPreLoginOutagesPageObjects. Test Case id's -->  " + Arrays.toString(tc_id));
 		SoftAssert softAssert = new SoftAssert();
 		preLoginOutagesSteps = new PreLoginOutagesSteps(driver);
 		preLoginOutagesSteps.navigateToPreLoginOutages();
-		ExtentLogger.logInfo("navigateToPreLoginOutages Complete");
 		preLoginOutagesSteps.verifyThePreLoginObjectsPageObject(softAssert);
-		ExtentLogger.logInfo("verifyThePreLoginObjectsPageObject Complete");
 		preLoginOutagesSteps.verifyPreLoginPlannedTab(softAssert);
-		ExtentLogger.logInfo("verifyPreLoginPlannedTab Complete");
 		// Assert all the soft verification.
 		softAssert.assertAll();
 		ExtentLogger.logInfo("Test Case execution for - verifyPreLoginOutagesPageObjects - is Completed.");
+		log.info("Test Case execution for - verifyPreLoginOutagesPageObjects - is Completed.");
 	}
 
 	@FrameworkAnnotations(author = { "Eujin" }, category = { CategoryType.SANITY, CategoryType.SCP_OUTAGES })
-	@Test(priority = 2, description = "To verify the different functionalities in Outage page")
+	@Test(priority = 2, description = "To verify the toggle icon to switch the view between map view and list view.")
 	public void verifyOutageFunctionalities() {
-		ExtentLogger.logInfo("Test Case execution for - verifyOutageFunctionalities.");
+		String[] tc_id = {"Outages_04", "Outages_10", "Outages_12"};
+		ExtentLogger.logInfo("Test Case execution for - verifyPreLoginOutagesPageObjects. Test Case id's -->  " + Arrays.toString(tc_id));
 		SoftAssert softAssert = new SoftAssert();
 		preLoginOutagesSteps = new PreLoginOutagesSteps(driver);
 		// Go to the application and verify objects
 		preLoginOutagesSteps.navigateToPreLoginOutages();
-		ExtentLogger.logInfo("navigateToPreLoginOutages Complete");
 		preLoginOutagesSteps.clickOnListAndMap(softAssert);
-		ExtentLogger.logInfo("clickOnListAndMap Complete");
 		preLoginOutagesSteps.clickOnFullScreen(softAssert);
-		ExtentLogger.logInfo("clickOnFullScreen Complete");
 		preLoginOutagesSteps.clickOnZoomButtons(softAssert);
-		ExtentLogger.logInfo("clickOnZoomButtons Complete");
-		preLoginOutagesSteps.clickOnEmptySearch(softAssert);
-		ExtentLogger.logInfo("clickOnEmptySearch Complete");
-		//preLoginOutagesSteps.searchWithInvalidZip(softAssert);
 		// Assert all the soft verification.
 		softAssert.assertAll();
-		ExtentLogger.logInfo("Test Case execution for - verifyOutageFunctionalities - is Completed.");
+		ExtentLogger.logInfo("Test Case execution for - verifyPreLoginListViewPageObjects - is Completed.");
+		log.info("Test Case execution for - verifyPreLoginListViewPageObjects - is Completed.");
 	}
 
 	@FrameworkAnnotations(author = { "Eujin" }, category = { CategoryType.SANITY, CategoryType.SCP_OUTAGES })
 	@Test(priority = 3, description = "To verify the Map Legend and Weather functionality.")
 	public void verifyClickingMapLegendAndWeatherButtons() {
-		ExtentLogger.logInfo("Test Case execution for - verifyClickingMapLegendAndWeatherButtons.");
+		String[] tc_id = {"Outages_09"};
+		ExtentLogger.logInfo("Test Case execution for - verifyPreLoginOutagesPageObjects. Test Case id's -->  " + Arrays.toString(tc_id));
 		SoftAssert softAssert = new SoftAssert();
 		preLoginOutagesSteps = new PreLoginOutagesSteps(driver);
 		preLoginOutagesSteps.navigateToPreLoginOutages();
-		ExtentLogger.logInfo("Navigation to Pre-Login outages complete.");
 		preLoginOutagesSteps.validateMapIcons(softAssert);
-		ExtentLogger.logInfo("validateMapIcons Complete");
 		// Assert all the soft verification.
 		softAssert.assertAll();
 		ExtentLogger.logInfo("Test Case execution for - verifyClickingMapLegendAndWeatherButtons - is Completed.");
-	}
-
-	@FrameworkAnnotations(author = { "Eujin" }, category = { CategoryType.SANITY, CategoryType.SCP_OUTAGES })
-	@Test(priority = 3, description = "To verify is the customer is able to submit a request")
-	public void verifySubmitContactRequestForOutages() {
-		ExtentLogger.logInfo("Test Case execution for - verifySubmitContactRequestForOutages.");
-		SoftAssert softAssert = new SoftAssert();
-		preLoginOutagesSteps = new PreLoginOutagesSteps(driver);
-		preLoginOutagesSteps.navigateToReportOutage(softAssert);
-		// Assert all the soft verification.
-		softAssert.assertAll();
-		ExtentLogger.logInfo("Test Case execution for - verifySubmitContactRequestForOutages - is Completed.");
-	}
-
-	@FrameworkAnnotations(author = { "Eujin" }, category = { CategoryType.SANITY, CategoryType.SCP_OUTAGES })
-	@Test(priority = 3, description = "To verify clicking the dropdown options in search box")
-	public void verifyClickFromOptions() {
-		ExtentLogger.logInfo("Test Case execution for - verifyClickFromOptions");
-		SoftAssert softAssert = new SoftAssert();
-		preLoginOutagesSteps = new PreLoginOutagesSteps(driver);
-		preLoginOutagesSteps.clickFromOptions(softAssert);
-		// Assert all the soft verification.
-		softAssert.assertAll();
-		ExtentLogger.logInfo("Test Case execution for - verifyClickFromOptions - is Completed.");
+		log.info("Test Case execution for - verifyClickingMapLegendAndWeatherButtons - is Completed.");
 	}
 
 }

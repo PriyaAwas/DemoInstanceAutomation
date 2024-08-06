@@ -233,29 +233,6 @@ public class PreLoginOutagesPage extends HomePage {
 		click(txt_zoomout);
 		log.info("Sign in button clicked successfully.");
 	}
-
-	@FindBy(css = "#ZipOrCountySearch")
-	private WebElement txt_search;
-
-	public void clickSearchBtn() {
-		log.info("Clicking the sign in button.");
-		click(txt_search);
-		log.info("Sign in button clicked successfully.");
-	}
-
-	public void enterInvalidZipInSearch(String accountNumber) {
-		sendKeys(txt_search, accountNumber);
-		log.info("Entered account no in the field.");
-	}
-
-	@FindBy(xpath = "//*[@id='toast-container']/div/div")
-	private WebElement lnk_emptysearcherror;
-
-	public String getEmptySearchLabel() {
-		String label = getText(lnk_emptysearcherror);
-		log.info("Forgot Username Label {}: " + label);
-		return label;
-	}
 	
 	@FindBy(css = "a[aria-label='Click to Grid view']")
 	private WebElement txt_gridview;
@@ -328,7 +305,7 @@ public class PreLoginOutagesPage extends HomePage {
 		return label;
 	}
 	
-	@FindBy(xpath = "//*[text()='Area']")
+	@FindBy(xpath = "//*[@id='table1']/thead/tr/th[1]")
 	private WebElement lbl_area	;
 
 	public String getAreaLabel() {
@@ -338,7 +315,7 @@ public class PreLoginOutagesPage extends HomePage {
 		return label;
 	}
 	
-	@FindBy(xpath = "//*[text()='Out']")
+	@FindBy(xpath = "//*[@id='table1']/thead/tr/th[2]")
 	private WebElement lbl_out	;
 
 	public String getOutLabel() {
@@ -348,7 +325,7 @@ public class PreLoginOutagesPage extends HomePage {
 		return label;
 	}
 	
-	@FindBy(xpath = "//*[text()='Served']")
+	@FindBy(xpath = "//*[@id='table1']/thead/tr/th[3]")
 	private WebElement lbl_served	;
 
 	public String getServedLabel() {
@@ -477,7 +454,10 @@ public class PreLoginOutagesPage extends HomePage {
 		log.info("Username placeholder {}: " + label);
 		return label;
 	}
-
+	
+	
+	
+	
 
     @FindBy(css = "[id='txtLogin']")
 	private WebElement txt_username;
@@ -904,14 +884,6 @@ public class PreLoginOutagesPage extends HomePage {
     	click(btnContactUsSubmit);
     	log.info("Submit Button clicked {}.");
     }
-
-	@FindBy(css = "#btnok")
-	private WebElement BtnContactUsPopupOk;
-
-	public void btnClickOk() {
-		click(BtnContactUsPopupOk);
-		log.info("Submit Button clicked {}.");
-	}
     
     public boolean isSubmitBtnVisible() {
     	log.info("Submit Button Status :" + btnContactUsSubmit.isDisplayed());
@@ -1025,107 +997,7 @@ public class PreLoginOutagesPage extends HomePage {
         List<String> dropdownList = getAllOptionsInListBox(dropdownOptions);
         log.info("Post login Customer Service Contact No is {}: " + dropdownList);
         return dropdownList;
-    }
-
-	@FindBy(xpath = " (//input[@globalize='ML_SrvcRqust_txtbx_MState'])[1]")
-	private WebElement txtPreLoginSerMoveInRequestStartState;
-
-	public Boolean isPreLoginSerMoveInCurrentAddStateVisible() {
-		log.info("txtPreLoginSerMoveInRequestStartState visibility status {}: "
-			+ isElementVisible(txtPreLoginSerMoveInRequestStartState));
-		return isElementVisible(txtPreLoginSerMoveInRequestStartState);
-	}
-
-	@FindBys(@FindBy(xpath = "//ul[@class='ui-menu ui-widget ui-widget-content ui-autocomplete ui-front']/li"))
-	public List<WebElement> autoSuggestion;
-
-	public void populatestate(String state) {
-		log.info("Populating state {} :" + state);
-		sendKeys(txtPreLoginSerMoveInRequestStartState, state);
-		pause(3000);
-		int count = autoSuggestion.size();
-		autoSuggestion.get(count - 1).click();
-		log.info("state selected");
-	}
-
-	@FindBy(xpath = "//input[@globalize='ML_MakeOTP_txt_EmailId']")
-	private WebElement txt_email;
-
-	public void enterEmail(String accountNumber) {
-		sendKeys(txt_email, accountNumber);
-		log.info("Entered account no in the field.");
-	}
-
-	@FindBy(xpath = "//input[@globalize='ML_CONNECTME_Lbl_FName']")
-	private WebElement txt_fname;
-
-	public void enterFName(String accountNumber) {
-		sendKeys(txt_fname, accountNumber);
-		log.info("Entered account no in the field.");
-	}
-
-	@FindBy(xpath = "//input[@globalize='ML_Register_Lbl_LastName']")
-	private WebElement txt_lname;
-
-	public void enterLName(String accountNumber) {
-		sendKeys(txt_lname, accountNumber);
-		log.info("Entered account no in the field.");
-	}
-
-	@FindBy(xpath = "//input[@globalize='ML_SrvcRqust_txtbx_Contact']")
-	private WebElement txt_ppnumber;
-
-	public void enterPrimaryPhoneNumber(String accountNumber) {
-		sendKeys(txt_ppnumber, accountNumber);
-		log.info("Entered account no in the field.");
-	}
-
-	@FindBy(xpath = "//input[@globalize='ML_SrvcRqust_txtbx_StreetN']")
-	private WebElement txt_streetname;
-
-	public void enterStreetName(String accountNumber) {
-		sendKeys(txt_streetname, accountNumber);
-		log.info("Entered account no in the field.");
-	}
-
-	@FindBy(xpath = "//input[@globalize='ML_CONNECTME_Lbl_Zip']")
-	private WebElement txt_zipcode;
-
-	public void enterZipCodeForm(String accountNumber) {
-		sendKeys(txt_zipcode, accountNumber);
-		log.info("Entered account no in the field.");
-	}
-
-	@FindBy(xpath = "//input[@globalize='ML_CONNECTME_Lbl_NearestStreet']")
-	private WebElement txt_ncrossstreet;
-
-	public void enterNCrossStreet(String accountNumber) {
-		sendKeys(txt_ncrossstreet, accountNumber);
-		log.info("Entered account no in the field.");
-	}
-
-	@FindBy(css = "#ZipOrCountyInputSearch")
-	private WebElement txt_bang;
-
-	public void enterBangInSearch(String accountNumber) {
-		sendKeys(txt_bang, accountNumber);
-		log.info("Entered account no in the field.");
-	}
-
-	@FindBy(xpath = "/html/body/div[2]/div[2]/span[3]")
-	private WebElement BtnOption;
-
-	public void clickOption() {
-		click(BtnOption);
-		log.info("Submit Button clicked {}.");
-	}
-
-	public String getOptionLabel() {
-		log.info("Fetching the username placeholder.");
-		String label = getText(BtnOption);
-		log.info("Username placeholder {}: " + label);
-		return label;
-	}
+    } 
 	
     
 }

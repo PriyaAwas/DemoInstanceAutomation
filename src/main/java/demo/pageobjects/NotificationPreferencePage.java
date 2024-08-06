@@ -409,7 +409,7 @@ public class NotificationPreferencePage extends HomePage {
 
 	@FindBy(css = ".disclaimer_footer .cls_disclaimer")
 	private WebElement lblDisclaimer;
-	@FindBy(css = "#agree.submit-button")
+	@FindBy(css = "#iagree.submit-button")
 	private WebElement btnIagreeOnAcptTerms;
 	@FindBy(css = "#disagree.cancel-button")
 	private WebElement btnIdisagreeOnAcptTerms;
@@ -427,7 +427,7 @@ public class NotificationPreferencePage extends HomePage {
 	private WebElement lstNotificationCommunicationsLabels;
 	@FindBy(css = "tbody tr td.txtDiv [type='checkbox']")
 	private WebElement lstNotificationCommunicationsCheckboxes;
-	@FindBy(css = "div.modal-body #divagree")
+	@FindBy(css = "#divagree")
 	private WebElement lblAgreeTextAcceptNotificationOptsOutPopU;
 	@FindBy(css = "div.w2ui-centered")
 	private WebElement lblDisagreeTextDisagreeConfirmationPopUp;
@@ -509,15 +509,6 @@ public class NotificationPreferencePage extends HomePage {
 		log.info("Check Box Outage  visibility status : " + isElementVisible(lstOutageChannel));
 		return isElementVisible(lstOutageChannel);
 	}
-	
-	@FindBy(css = "#ddlOutageOption1")
-	private WebElement secondOutageChannel;
-
-	public void select2ndOutageChannel(String option) {
-		selectByVisibleText(secondOutageChannel, option);
-		log.info("secondOutageChannel populated successfully.");
-	}
-
 
 	public void selectlstOutageChannel(String option) {
 		selectByVisibleText(lstOutageChannel, option);
@@ -637,7 +628,7 @@ public class NotificationPreferencePage extends HomePage {
 
 	public String getLevelBilling() {
 		log.info("Fetching the Billing  header.");
-		scrollToElement(lblBillingText);
+		scrollToElement(lblOutageText);
 		String label = getText(lblBillingText);
 		log.info("Notification page header is {}: " + label);
 		return label;
@@ -648,14 +639,6 @@ public class NotificationPreferencePage extends HomePage {
 		click(lblBillingText);
 		log.info("Label Billing Text Button clicked successfully.");
 	}
-	
-	public void linkLblContactUsText() {
-		scrollToElement(lblConnectMe);
-		click(lblConnectMe);
-		log.info("Label Billing Text Button clicked successfully.");
-	}
-	
-	
 
 	@FindBy(css = "span#ContentPlaceHolder1_ContentPlaceHolderBody_SpanbillingStatus")
 	private WebElement IconBillingStatus;
@@ -740,15 +723,6 @@ public class NotificationPreferencePage extends HomePage {
 		log.info("Populating password {} :" + billingoptionstext);
 		sendKeys(lstBillingOptionsTxt, billingoptionstext);
 		log.info("billingoptionstext populated successfully.");
-	}
-	
-	@FindBy(css = "input#TxtBillingText1")
-	private WebElement SecondBillingOptionsTxt;
-
-	public void populate2ndBillingOptionsTxt(String billingoptionstext) {
-		log.info("Populating password {} :" + billingoptionstext);
-		sendKeys(SecondBillingOptionsTxt, billingoptionstext);
-		log.info("2ndBillingOptionsTxt populated successfully.");
 	}
 
 	@FindBy(css = "div#ContentPlaceHolder1_ContentPlaceHolderBody_BilingNotification h5")
@@ -883,16 +857,7 @@ public class NotificationPreferencePage extends HomePage {
 		log.info("check  box budget is un checked successfully.");
 
 	}
-	
-	@FindBy(css = ".Billingddl.Billingddl0.select_effect")
-	private WebElement lstBillingOptions;
-	
-	public void selectBillingOptions(String option) {
-		scrollToElement(lstBillingOptions);
-		selectByVisibleText(lstBillingOptions, option);
-		log.info("lstBillingOptions selected successfully.");
-	}
-	
+
 	@FindBy(css = ".Budgetddl.Budgetddl0.select_effect")
 	private WebElement lstBudgetOptions;
 
@@ -936,13 +901,6 @@ public class NotificationPreferencePage extends HomePage {
 		click(iconBudgetAdd);
 		log.info("icon Budget Add Text Button clicked successfully.");
 	}
-	
-	public void IconBillingAdd() {
-		scrollToElement(iconBillingAdd);
-		click(iconBillingAdd);
-		log.info("icon iconBillingAdd Add Text Button clicked successfully.");
-	}
-	
 
 	@FindBy(css = "input#budgetCancel")
 	private WebElement btnBudgetCancel;
@@ -981,17 +939,6 @@ public class NotificationPreferencePage extends HomePage {
 		log.info("lstBudgetOption1 populated successfully.");
 	}
 
-
-	@FindBy(css = "#ddlBillingOption1")
-	private WebElement lstBillingOption1;
-	
-
-	public void selectlstBillingOption(String serviceOptions) {
-		selectByVisibleText(lstBillingOption1, serviceOptions);
-		log.info("lstBillingOption1 populated successfully.");
-	}
-	
-	
 	@FindBy(css = "#ddlBudgetOption2")
 	private WebElement lstBudgetOption2;
 
@@ -1045,27 +992,6 @@ public class NotificationPreferencePage extends HomePage {
 		check(chkbox2Budget);
 		log.info("chkbox2Budget is successfully.");
 	}
-	
-	
-	@FindBy(css = "#chkBillingText1")
-	private WebElement chkbox2Billing;
-
-	public void unCheckChkbox2Billing() {
-
-		unCheck(chkbox2Billing);
-		log.info("chkbox2Billing is successfully.");
-	}
-
-	public void checkChkbox2Billing() {
-
-		check(chkbox2Billing);
-		log.info("chkbox2Billing is successfully.");
-	}
-	
-	
-	
-	
-	
 
 	@FindBy(css = "#chkBudgetText2")
 	private WebElement chkbox3Budget;
@@ -1226,7 +1152,7 @@ public class NotificationPreferencePage extends HomePage {
 
 	//@FindBy(css = ".ConnectMeddl.ConnectMeddl0.select_effect")
 	
-	@FindBy(css = "#ddlContactUsOption0")
+	@FindBy(css = "	#ddlContactUsOption0")
 	private WebElement lstConnectMeOptions;
 
 	public boolean islstConnectMeOptionsVisible() {
@@ -1720,24 +1646,7 @@ public class NotificationPreferencePage extends HomePage {
 		log.info("Notification page header is {}: " + label);
 		return label;
 	}
-	
-	public String getFullTxtTcpaPopup() {
-		log.info("Fetching the Notification  header.");
-		String label = getText(lblAgreeTextAcceptNotificationOptsOutPopU);
-		log.info("Notification page header is {}: " + label);
-		return label;
-	}
-	@FindBy(css = "#divagree>#checkedType")
-	private WebElement TxtCheckedType;
-	
-	public String getTxtchekedType() {
-		log.info("Fetching the Notification  header.");
-		String label = getText(TxtCheckedType);
-		log.info("Notification TxtCheckedType page header is {}: " + label);
-		return label;
-	}
-		
-	
+
 	@FindBy(css = "h4#notificationTcpaTitle")
 	private WebElement lblTCPAacceptNotificatinTerms;
 
@@ -1764,44 +1673,13 @@ public class NotificationPreferencePage extends HomePage {
 		click(lnkTCPAagree);
 		log.info("lnkTCPAagree Button clicked successfully.");
 	}
-	
-	
-	public boolean islnkTCPAagreeBtnIsVisible() {
-		log.info("Checking the visibility of lnkTCPADisAgree on the page.");
-		log.info("lnkTCPAagree visibility status : " + isElementVisible(lnkTCPAagree));
-		return isElementVisible(lnkTCPAagree);
-	}
-	@FindBy(css = "#btnDisagreeCancel")
-	private WebElement btnDisagreeCancel;
 
-	
-	
-	public void btnDisagreeCancel() {
-		click(btnDisagreeCancel);
-		log.info("btnDisagreeCancel Button clicked successfully.");
-	}
-	
 	@FindBy(css = "button#btndisagree")
 	private WebElement lnkTCPADisAgree;
 
 	public void lnkTCPDisAagreeBtn() {
 		click(lnkTCPADisAgree);
 		log.info("lnkTCPADisAgree Button clicked successfully.");
-	}
-	
-	public boolean islnkTCPDisAagreeBtnVisible() {
-		log.info("Checking the visibility of lnkTCPADisAgree on the page.");
-		log.info("lnkTCPADisAgree visibility status : " + isElementVisible(lnkTCPADisAgree));
-		return isElementVisible(lnkTCPADisAgree);
-	}
-	
-
-	@FindBy(css = "#btnDisagreeOk")
-	private WebElement btnDisagreeOk;
-
-	public void btnDisagreeOk() {
-		click(btnDisagreeOk);
-		log.info("btnDisagreeOk Button clicked successfully.");
 	}
 
 	@FindBy(css = "button#dLabel")
