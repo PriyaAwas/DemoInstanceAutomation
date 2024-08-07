@@ -262,16 +262,35 @@ public class PaymentInfoTests extends TestRunner {
 		SoftAssert softAssert = new SoftAssert();
 		// SCP- Application Login & Navigating to Payment information Page
 		LoginSteps loginSteps = new LoginSteps(driver);
+	   loginSteps.loginIntoTheApplication(Configuration.toString("userName"),
+				Configuration.toString("password"));
+		// Verifying Bank Payment form field Validation
+		billingPaymentSteps = new BillingPaymentSteps(driver);
+		billingPaymentSteps.verifyTheMultipleCCPaymentProfileAndDeletion(softAssert);
+		// Assert all the soft verification.
+		softAssert.assertAll();
+		log.info("Test Case execution for - verifyCeditCardPaymentFormFieldsValidation - is Completed.");
+	}
+	
+	@FrameworkAnnotations(author = { "Priya Awasthi" }, category = { CategoryType.SANITY,
+			CategoryType.SCP_PAYMENT_INFO })
+	@Test(priority = 7, description = "To verify the CeditCardPayment Form Fields Validation .")
+	public void verifyAddNewPaymentBasedOnCustomerID() throws SQLException, InterruptedException {
+		log.info("To verify Add New Payment BasedOnCustomerID");
+		SoftAssert softAssert = new SoftAssert();
+		// SCP- Application Login & Navigating to Payment information Page
+		LoginSteps loginSteps = new LoginSteps(driver);
 		DashboardSteps dashboardSteps = loginSteps.loginIntoTheApplication(Configuration.toString("userName"),
 				Configuration.toString("password"));
 		HomeSteps homeSteps = new HomeSteps(driver);
 		homeSteps.navigateToPaymentInfo();
 		// Verifying Bank Payment form field Validation
 		billingPaymentSteps = new BillingPaymentSteps(driver);
-		billingPaymentSteps.verifyCeditCardPaymentFormFieldsValidation(softAssert);
+		billingPaymentSteps.verifyAddNewPaymentBasedOnSelectedAcc(softAssert);
 		// Assert all the soft verification.
 		softAssert.assertAll();
-		log.info("Test Case execution for - verifyCeditCardPaymentFormFieldsValidation - is Completed.");
+		log.info("Test Case execution for - verifyAddNewPaymentBasedOnSelectedAcc - is Completed.");
 	}
+	
 
 }

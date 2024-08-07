@@ -1,13 +1,9 @@
 package demo.steps.scp;
 
-import java.awt.print.PrinterException;
-import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.Set;
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.Keys;
@@ -23,11 +19,8 @@ import sew.ai.config.ModelsConfiguration;
 import sew.ai.config.SCPConfiguration;
 import sew.ai.helpers.props.Constants;
 import sew.ai.helpers.props.FilePaths;
-import sew.ai.helpers.props.SQLQueries;
 import sew.ai.models.Bank;
-import sew.ai.models.Card;
 import sew.ai.models.User;
-import sew.ai.steps.scp.DashboardSteps;
 import sew.ai.steps.scp.HomeSteps;
 import sew.ai.utils.PropertiesUtil;
 import sew.ai.utils.RandomUtil;
@@ -671,6 +664,7 @@ public class PaymentInformationSteps extends PaymentInformationsPage {
 
 
     }
-
+    
+   
 
 }
