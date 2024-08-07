@@ -50,4 +50,6 @@ public class FilePaths {
     public static final String PAY_TEXT_PROPERTIES =System.getProperty("user.dir") + File.separator + "src" +
             File.separator + "test" + File.separator + "resources" + File.separator + "textprops"
             + File.separator + "pay" + File.separator;
+    public static final String Download_Path = System.getProperty("user.home") + File.separator + "Downloads" + File.separator;
+     
 }

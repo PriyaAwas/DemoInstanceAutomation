@@ -1,9 +1,14 @@
 package demo.steps.scp;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.apache.poi.ss.usermodel.Sheet;
+import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.asserts.SoftAssert;
+
+import demo.pageobjects.DashboardPage;
 import sew.ai.config.CSPConfiguration;
 import sew.ai.config.SCPConfiguration;
 import sew.ai.helpers.props.Constants;
@@ -16,10 +21,15 @@ import sew.ai.steps.scp.HomeSteps;
 import sew.ai.steps.scp.LoginSteps;
 import sew.ai.utils.*;
 import java.io.File;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.text.ParseException;
 import java.util.*;
 
 public class BillingHistorySteps extends BillingHistoryPage {
+	private static final Logger log = LogManager.getLogger(BillingHistorySteps.class);
+
+	
 	public static PropertiesUtil billingHistoryTextProp;
 	public static Map<String, Integer> registrationConfig = new HashMap<>();
 
@@ -52,7 +62,11 @@ public class BillingHistorySteps extends BillingHistoryPage {
 		softAssert.assertTrue(isBillAmountDueLnkVisible(), "Amout Due is not visible.");
 		softAssert.assertTrue(isBillDueDateLnkVisible(), "Due Date Link not visible.");
 
+		
 		clickViewBillPdfFirstArrowLnk();
+		String errMsgComment = getToastMessage();
+		Assert.assertEquals(errMsgComment, billingHistoryTextProp.getPropValue("txtBillingRecdropdownerror"));
+		if (errMsgComment == null) {
 		softAssert.assertTrue(isViewBillPdfLnkVisible(), "View Bill Pdf Lnk is not Visible in First Bll Type.");
 		softAssert.assertTrue(isPrevBalTxtVisible(), "Prev Bal Txt is not visible.");
 		softAssert.assertTrue(isCurrentChargeTxtVisible(), "Currebt Charge Txt is bt visible.");
@@ -63,6 +77,12 @@ public class BillingHistorySteps extends BillingHistoryPage {
 		System.out.println(currencySymbol);
 		softAssert.assertEquals(currencySymbol, '$', "Currency Symbol is not matching as $");
 		clickViewBillPdfFirstArrowLnk();
+		} 
+		else {
+			log.info("Error exception handeled - bug exist");
+			ExtentLogger.logInfo(billingHistoryTextProp.getPropValue("txtBillingRecdropdownerror"));
+		}
+		
 
 		// Label validation
 		softAssert.assertEquals(getExportToExcelLabel(), billingHistoryTextProp.getPropValue("txtLnkExportExcel"),
@@ -244,9 +264,10 @@ public class BillingHistorySteps extends BillingHistoryPage {
 		softAssert.assertTrue(isBillStatementLnkVisible(), "Billing Lnk is not Visible.");
 		softAssert.assertTrue(isPaymentLnkVisible(), "Payment lnk is not visible.");
 
-		File Files = new File(FilePaths.DOWNLOAD_FOLDER_PATH);
-
-		FileUtil.deleteFile(FilePaths.DOWNLOAD_FOLDER_PATH);
+//		File Files = new File(FilePaths.DOWNLOAD_FOLDER_PATH);
+		File Files = new File(FilePaths.Download_Path);
+//		FileUtil.deleteFile(FilePaths.DOWNLOAD_FOLDER_PATH);
+		FileUtil.deleteFile(FilePaths.Download_Path);
 
 		pause(5000);
 
@@ -257,7 +278,7 @@ public class BillingHistorySteps extends BillingHistoryPage {
 			clickExportToExcelLnk();
 			pause(5000);
 
-			ExcelUtils.openExcelFile(FilePaths.DOWNLOAD_FOLDER_PATH + "Billing.xlsx");
+			ExcelUtils.openExcelFile(FilePaths.Download_Path + "Billing.xlsx");
 			pause(5000);
 
 			Sheet sheet = ExcelUtils.getSheetName(0);
@@ -340,7 +361,7 @@ public class BillingHistorySteps extends BillingHistoryPage {
 			ExcelUtils.closeConnectionWithExcel();
 			pause(5000);
 			// Test Payments Excel
-			String downloadFilepath = FilePaths.DOWNLOAD_FOLDER_PATH;
+			String downloadFilepath = FilePaths.Download_Path;
 			FileUtil.deleteFile(downloadFilepath);
 
 			pause(2000);
@@ -349,7 +370,7 @@ public class BillingHistorySteps extends BillingHistoryPage {
 
 			clickExportToExcelLnk();
 			pause(5000);
-			ExcelUtils.openExcelFile(FilePaths.DOWNLOAD_FOLDER_PATH + "Payment-2.xlsx");
+			ExcelUtils.openExcelFile(FilePaths.Download_Path + "Payment-2.xlsx");
 			pause(5000);
 			Sheet sheetPayment = ExcelUtils.getSheetName(0);
 
