@@ -804,8 +804,8 @@ public class PaymentInformationsPage extends HomePage {
         return txtBoxCardHolderName.isDisplayed();
     }
 
-    public void populateTxtBoxCardHolderName(String Text) throws InterruptedException {
-        scrollPageToElement(txtBoxCardHolderName);
+    public void populateTxtBoxCardHolderName(String Text) {
+        //scrollPageToElement(txtBoxCardHolderName);
         log.info("Waiting For Visiblity status of Account Holder Name Text Feild");
         waitForElementToBeVisible(txtBoxCardHolderName);
         log.info("Visiblity status of Account Holder Name Text Feild:" + txtBoxCardHolderName.isDisplayed());
@@ -858,6 +858,11 @@ public class PaymentInformationsPage extends HomePage {
         log.info("Populating Card Number feild with" + Text);
         clear(txtBoxCardNumber);
         sendKeys(txtBoxCardNumber, Text);
+    }
+
+    public void clearCardNumberInTheField() {
+        log.info("clear the payment amount.");
+        clear(txtBoxCardNumber);
     }
 
     public WebElement elementCardNumber() {
@@ -1658,6 +1663,72 @@ public class PaymentInformationsPage extends HomePage {
         log.info("Visiblity status of Card radio button:" + rdoBtnCardCBill.isDisplayed());
         log.info("Clicking Card radio button");
         clickWithJSExecutor(rdoBtnCardCBill);
+    }
+
+    @FindBy(id = "control_02")
+    private WebElement rdoBtnCardC2Bill;
+
+    public void clickrdoBtnCardC2Bill() {
+        scrollToElement(rdoBtnCardC2Bill);
+        log.info("Waiting For Visiblity status of Card radio button");
+        waitForElementToBeClickable(rdoBtnCardC2Bill);
+        log.info("Visiblity status of Card radio button:" + rdoBtnCardC2Bill.isDisplayed());
+        log.info("Clicking Card radio button");
+        clickWithJSExecutor(rdoBtnCardC2Bill);
+    }
+
+    @FindBy(css = "#ImgVisa")
+    private WebElement cardVisa;
+
+    public boolean isCardNumberVisa() {
+        log.info("Checking that Payment Amt field is visible on the PayBill Step 2 page."
+                + cardVisa.isDisplayed());
+        return isElementVisible(cardVisa);
+    }
+
+    @FindBy(css = "#ImgMaster")
+    private WebElement cardMc;
+
+    public boolean isCardNumberMc() {
+        log.info("Checking that Payment Amt field is visible on the PayBill Step 2 page."
+                + cardMc.isDisplayed());
+        return isElementVisible(cardMc);
+    }
+
+    @FindBy(css = "#ImgDiscov")
+    private WebElement cardDiscover;
+
+    public boolean isCardNumberDiscover() {
+        log.info("Checking that Payment Amt field is visible on the PayBill Step 2 page."
+                + cardDiscover.isDisplayed());
+        return isElementVisible(cardDiscover);
+    }
+
+    @FindBy(css = "#Imgamex")
+    private WebElement cardAmex;
+
+    public boolean isCardNumberAmex() {
+        log.info("Checking that Payment Amt field is visible on the PayBill Step 2 page."
+                + cardAmex.isDisplayed());
+        return isElementVisible(cardAmex);
+    }
+
+    @FindBy(css = "#ImgJcb")
+    private WebElement cardJcb;
+
+    public boolean isCardNumberJcb() {
+        log.info("Checking that Payment Amt field is visible on the PayBill Step 2 page."
+                + cardJcb.isDisplayed());
+        return isElementVisible(cardJcb);
+    }
+
+    @FindBy(css = "#ImgCup")
+    private WebElement cardCup;
+
+    public boolean isCardNumberCup() {
+        log.info("Checking that Payment Amt field is visible on the PayBill Step 2 page."
+                + cardCup.isDisplayed());
+        return isElementVisible(cardCup);
     }
 
     @FindBy(id = "card_dropdown")

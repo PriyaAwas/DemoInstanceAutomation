@@ -131,10 +131,29 @@ public class PaymentInfoTests extends TestRunner {
 		DashboardSteps dashboardSteps = loginSteps.loginIntoTheApplication(Configuration.toString("userName"),
 				Configuration.toString("password"));
 		HomeSteps homeSteps = new HomeSteps(driver);
-		homeSteps.navigateToPaymentInfo();
 		// Verifying Bank Payment form field Validation
 		billingPaymentSteps = new BillingPaymentSteps(driver);
 		billingPaymentSteps.verifyMakePaymentWithNewCC(softAssert);
+		// Assert all the soft verification.
+		softAssert.assertAll();
+		log.info("Test Case execution for - verifyMakePaymentWithNewCC - is Completed.");
+	}
+
+	@FrameworkAnnotations(author = { "PriyaAwasthi" }, category = { CategoryType.SMOKE,
+			CategoryType.SCP_PAYMENT_INFO })
+	@Test(priority = 6, description = "To verify the Bank Payment form fields.")
+	public void verifyMakePaymentWithExistingCC() throws SQLException, InterruptedException {
+		log.info("To Verify Adding CC Payement and making payment");
+		SoftAssert softAssert = new SoftAssert();
+		// SCP- Application Login & Navigating to Payment information Page
+		LoginSteps loginSteps = new LoginSteps(driver);
+		DashboardSteps dashboardSteps = loginSteps.loginIntoTheApplication(Configuration.toString("userName"),
+				Configuration.toString("password"));
+		HomeSteps homeSteps = new HomeSteps(driver);
+		homeSteps.navigateToPaymentInfo();
+		// Verifying Bank Payment form field Validation
+		billingPaymentSteps = new BillingPaymentSteps(driver);
+		billingPaymentSteps.verifyMakePaymentWithExistingCC(softAssert);
 		// Assert all the soft verification.
 		softAssert.assertAll();
 		log.info("Test Case execution for - verifyMakePaymentWithNewCC - is Completed.");
@@ -212,6 +231,24 @@ public class PaymentInfoTests extends TestRunner {
 		// Verifying Bank Payment form field Validation
 		billingPaymentSteps = new BillingPaymentSteps(driver);
 		billingPaymentSteps.verifyNegMakePaymentWithNewBank(softAssert);
+		// Assert all the soft verification.
+		softAssert.assertAll();
+		ExtentLogger.logInfo("Test Case execution for - verifyNegNewBankPayment - is Completed.");
+	}
+
+	@FrameworkAnnotations(author = { "Eujin" }, category = { CategoryType.SANITY,
+			CategoryType.SCP_PAYMENT_INFO })
+	@Test(priority = 7, description = "To Verify negative scenarios with new bank detail fields")
+	public void verifyCCIcons() throws SQLException, InterruptedException {
+		SoftAssert softAssert = new SoftAssert();
+		// SCP- Application Login & Navigating to Payment information Page
+		LoginSteps loginSteps = new LoginSteps(driver);
+		DashboardSteps dashboardSteps = loginSteps.loginIntoTheApplication(Configuration.toString("userName"),
+				Configuration.toString("password"));
+		ExtentLogger.logInfo("Login done");
+		// Verifying Bank Payment form field Validation
+		billingPaymentSteps = new BillingPaymentSteps(driver);
+		billingPaymentSteps.creditCardIcons(softAssert);
 		// Assert all the soft verification.
 		softAssert.assertAll();
 		ExtentLogger.logInfo("Test Case execution for - verifyNegNewBankPayment - is Completed.");
